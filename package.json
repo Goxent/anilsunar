@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@google/genai": "^1.41.0",
+    "@tailwindcss/postcss": "^4.2.0",
     "clsx": "^2.1.1",
     "framer-motion": "^12.34.2",
     "lucide-react": "^0.564.0",
