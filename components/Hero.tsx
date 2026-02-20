@@ -4,20 +4,22 @@ import { ArrowDown } from 'lucide-react';
 const Hero: React.FC = () => {
   return (
     <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden bg-luxury-950">
-      {/* Background Gradients */}
-      <div className="absolute top-0 left-1/4 w-96 h-96 bg-gold-500/10 rounded-full blur-3xl animate-pulse-slow"></div>
-      <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-purple-500/5 rounded-full blur-3xl animate-pulse-slow" style={{ animationDelay: '2s' }}></div>
+      {/* Premium Background Gradients */}
+      <div className="absolute top-0 left-1/4 w-[500px] h-[500px] bg-gold-500/15 rounded-full blur-[120px] animate-pulse-slow"></div>
+      <div className="absolute bottom-0 right-1/4 w-[600px] h-[600px] bg-purple-900/20 rounded-full blur-[150px] animate-pulse-slow" style={{ animationDelay: '2s' }}></div>
+      <div className="absolute inset-0 bg-[url('https://grainy-gradients.vercel.app/noise.svg')] opacity-[0.03] mix-blend-overlay"></div>
 
       <div className="relative z-10 text-center px-4 max-w-5xl mx-auto">
-        <h2 className="text-gold-500 text-sm md:text-base font-bold tracking-[0.3em] uppercase mb-4 animate-[fadeInUp_1s_ease-out]">
-          Portfolio
+        <h2 className="text-gold-500 text-sm md:text-sm font-semibold tracking-[0.4em] uppercase mb-6 animate-[fadeInUp_1s_ease-out]">
+          Welcome to the Portfolio of
         </h2>
         <h1 className="text-5xl md:text-8xl font-serif font-bold text-white mb-6 leading-tight animate-[fadeInUp_1s_ease-out_0.2s_both]">
           Goxent
         </h1>
         <div className="h-px w-24 bg-gold-500/50 mx-auto mb-8 animate-[fadeInUp_1s_ease-out_0.4s_both]"></div>
         <p className="text-slate-400 text-lg md:text-2xl max-w-2xl mx-auto font-light leading-relaxed animate-[fadeInUp_1s_ease-out_0.6s_both]">
-          Bridging the precision of <span className="text-white font-medium">Accounting</span> with the rhythm of <span className="text-white font-medium">Poetry & Rap</span>.
+          Tech Enthusiast <span className="text-gold-500">•</span> Auditor <span className="text-gold-500">•</span> Poet <span className="text-gold-500">•</span> UI/UX Designer <br />
+          <span className="text-base md:text-xl mt-2 block">Crafting precision in numbers, rhythm in words, and beauty in pixels.</span>
         </p>
 
         <div className="mt-12 flex flex-col md:flex-row gap-4 justify-center items-center animate-[fadeInUp_1s_ease-out_0.8s_both]">

@@ -59,6 +59,14 @@ export const EXPERIENCE_DATA: ExperienceItem[] = [
     period: '2020 - 2021',
     description: 'Assisted in preparation of monthly financial reports, bank reconciliations, and managing accounts payable/receivable. Streamlined documentation processes for faster retrieval.',
     skills: ['Bookkeeping', 'Excel', 'Reconciliation', 'Reporting']
+  },
+  {
+    id: '3',
+    role: 'UI/UX Designer & Tech Enthusiast',
+    company: 'Freelance / Personal Projects',
+    period: 'Ongoing',
+    description: 'Designing premium, modern, and highly interactive user interfaces. Passionate about exploring new technologies, frameworks, and creating visually stunning digital experiences.',
+    skills: ['UI/UX Design', 'React / Vite', 'Tailwind CSS', 'Framer Motion']
   }
 ];
 
