@@ -9,35 +9,42 @@ const ExperienceCard: React.FC<{ item: typeof EXPERIENCE_DATA[0]; index: number 
       initial={{ opacity: 0, y: 50 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, margin: "-100px" }}
-      transition={{ duration: 0.7, delay: index * 0.2 }}
-      className="relative pl-8 md:pl-0 md:grid md:grid-cols-5 gap-8"
+      transition={{ duration: 0.8, delay: index * 0.2, type: 'spring', stiffness: 50 }}
+      className="relative pl-10 md:pl-0 md:flex items-center gap-12 group"
     >
-      {/* Date (Left on Desktop) */}
-      <div className="md:col-span-1 md:text-right mb-2 md:mb-0">
-        <span className="inline-block py-1 px-3 rounded-full bg-white/5 border border-white/10 text-xs text-gold-500 font-bold tracking-wider">
+      {/* Date */}
+      <div className="md:w-1/4 md:text-right mb-4 md:mb-0 shrink-0">
+        <span className="inline-block py-2 px-4 rounded-full bg-gold-500/10 border border-gold-500/20 text-xs text-gold-400 font-bold tracking-[0.2em] uppercase shadow-[0_0_15px_rgba(251,191,36,0.1)] group-hover:bg-gold-500/20 group-hover:shadow-[0_0_20px_rgba(251,191,36,0.3)] transition-all duration-500">
           {item.period}
         </span>
       </div>
 
-      {/* Timeline Line/Dot */}
-      <div className="absolute left-0 top-0 bottom-0 w-px bg-white/10 md:left-auto md:right-auto md:relative md:w-auto md:flex md:justify-center md:bg-transparent">
-        <div className="absolute top-2 -left-1.5 md:static w-3 h-3 rounded-full bg-gold-500 shadow-[0_0_15px_rgba(251,191,36,0.5)] z-10"></div>
-        <div className="hidden md:block absolute top-3 bottom-0 w-px bg-white/10 -z-0"></div>
+      {/* Center UI - Glowing Timeline Dot */}
+      <div className="absolute left-0 top-0 bottom-0 flex justify-center md:relative md:w-auto md:h-auto z-10">
+        <div className="absolute top-3 -left-[5px] md:static w-4 h-4 rounded-full bg-luxury-900 border-2 border-gold-500 shadow-[0_0_20px_rgba(251,191,36,0.6)] group-hover:scale-125 group-hover:bg-gold-500 transition-all duration-500"></div>
+        {/* Vertical Line */}
+        <div className="hidden md:block absolute top-8 bottom-[-48px] left-[7px] w-px bg-gradient-to-b from-gold-500/50 to-white/5 group-hover:from-gold-500 group-hover:to-gold-500/20 transition-all duration-500 -z-10"></div>
       </div>
 
-      {/* Content */}
-      <div className="md:col-span-3 glass-card p-6 rounded-xl hover:bg-white/5 transition-colors duration-300 border border-white/5 hover:border-gold-500/30 group">
-        <h3 className="text-xl font-bold text-white mb-1 flex items-center gap-2 group-hover:text-gold-400 transition-colors">
-          <Briefcase size={16} className="text-slate-500 group-hover:text-gold-500" />
+      {/* Content Card */}
+      <div className="md:w-3/4 bg-white/5 backdrop-blur-md p-8 rounded-3xl border border-white/10 hover:border-gold-500/50 transition-all duration-500 hover:bg-white/10 hover:-translate-y-2 hover:shadow-[0_20px_40px_rgba(0,0,0,0.4)] relative overflow-hidden">
+
+        {/* Subtle inner glow on hover */}
+        <div className="absolute inset-0 bg-gradient-to-br from-gold-500/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-700 pointer-events-none"></div>
+
+        <h3 className="text-2xl font-serif font-bold text-white mb-2 flex items-center gap-3">
+          <Briefcase size={20} className="text-gold-500/70 group-hover:text-gold-400 transition-colors" />
           {item.role}
         </h3>
-        <h4 className="text-slate-400 text-sm mb-4 font-serif italic">{item.company}</h4>
-        <p className="text-slate-300 mb-6 text-sm leading-relaxed">
+        <h4 className="text-gold-500/80 text-sm mb-5 font-medium tracking-wide uppercase">{item.company}</h4>
+
+        <p className="text-slate-300 mb-8 text-base leading-relaxed opacity-80 group-hover:opacity-100 transition-opacity duration-500">
           {item.description}
         </p>
-        <div className="flex flex-wrap gap-2">
+
+        <div className="flex flex-wrap gap-3">
           {item.skills.map(skill => (
-            <span key={skill} className="text-xs text-slate-400 bg-black/50 px-2 py-1 rounded border border-white/5 group-hover:border-gold-500/20 transition-colors">
+            <span key={skill} className="text-xs font-mono text-slate-400 bg-luxury-950/80 px-3 py-1.5 rounded-lg border border-white/5 group-hover:border-gold-500/30 group-hover:text-white transition-all duration-300">
               {skill}
             </span>
           ))}
@@ -57,28 +64,29 @@ const Experience: React.FC = () => {
   const opacity = useTransform(scrollYProgress, [0, 0.2, 0.9, 1], [0, 1, 1, 0]);
 
   return (
-    <section id="experience" ref={containerRef} className="py-24 bg-luxury-900 relative">
-      {/* Background Elements */}
-      <div className="absolute top-1/2 left-0 w-64 h-64 bg-blue-900/10 rounded-full blur-[80px]"></div>
-      <div className="absolute bottom-0 right-0 w-96 h-96 bg-gold-500/5 rounded-full blur-[100px]"></div>
+    <section id="experience" ref={containerRef} className="py-32 bg-luxury-950 relative">
+      {/* Premium Background Elements */}
+      <div className="absolute top-1/4 left-[-10%] w-[500px] h-[500px] bg-purple-900/10 rounded-full blur-[100px] pointer-events-none"></div>
+      <div className="absolute bottom-1/4 right-[-10%] w-[600px] h-[600px] bg-gold-500/5 rounded-full blur-[120px] pointer-events-none"></div>
 
       <motion.div
         style={{ opacity }}
-        className="max-w-5xl mx-auto px-6 relative z-10"
+        className="max-w-6xl mx-auto px-6 relative z-10"
       >
-        <div className="text-center mb-16">
+        <div className="text-center mb-24">
           <motion.div
-            initial={{ opacity: 0, y: 20 }}
+            initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
+            transition={{ duration: 0.8, type: 'spring' }}
           >
-            <span className="text-gold-500 uppercase tracking-widest text-sm font-semibold">Career Path</span>
-            <h2 className="text-3xl md:text-5xl font-serif mt-4 text-white">Professional Journey</h2>
+            <span className="text-gold-500 font-bold uppercase tracking-[0.3em] text-xs">Career Path</span>
+            <h2 className="text-5xl md:text-7xl font-serif mt-6 text-white tracking-tight">Professional Journey</h2>
+            <div className="h-px w-24 bg-gradient-to-r from-transparent via-gold-500 to-transparent mx-auto mt-8 opacity-50"></div>
           </motion.div>
         </div>
 
-        <div className="space-y-12 md:space-y-16">
+        <div className="space-y-16 md:space-y-24">
           {EXPERIENCE_DATA.map((item, index) => (
             <ExperienceCard key={item.id} item={item} index={index} />
           ))}
