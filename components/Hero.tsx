@@ -13,21 +13,21 @@ const Hero: React.FC = () => {
           Portfolio
         </h2>
         <h1 className="text-5xl md:text-8xl font-serif font-bold text-white mb-6 leading-tight animate-[fadeInUp_1s_ease-out_0.2s_both]">
-          Anil Sunar
+          Goxent
         </h1>
         <div className="h-px w-24 bg-gold-500/50 mx-auto mb-8 animate-[fadeInUp_1s_ease-out_0.4s_both]"></div>
         <p className="text-slate-400 text-lg md:text-2xl max-w-2xl mx-auto font-light leading-relaxed animate-[fadeInUp_1s_ease-out_0.6s_both]">
           Bridging the precision of <span className="text-white font-medium">Accounting</span> with the rhythm of <span className="text-white font-medium">Poetry & Rap</span>.
         </p>
-        
+
         <div className="mt-12 flex flex-col md:flex-row gap-4 justify-center items-center animate-[fadeInUp_1s_ease-out_0.8s_both]">
-          <a 
+          <a
             href="#about"
             className="px-8 py-3 rounded-full text-sm uppercase tracking-widest border border-white/20 hover:bg-white/5 hover:border-gold-500/50 hover:text-gold-400 transition-all duration-300 w-48"
           >
             Explore
           </a>
-          <a 
+          <a
             href="#contact"
             className="px-8 py-3 rounded-full text-sm uppercase tracking-widest bg-gold-500 text-black font-semibold hover:bg-gold-400 transition-all duration-300 w-48 shadow-[0_0_20px_rgba(245,158,11,0.3)] hover:shadow-[0_0_30px_rgba(245,158,11,0.5)]"
           >

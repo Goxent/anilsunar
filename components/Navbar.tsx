@@ -24,7 +24,7 @@ const Navbar: React.FC = () => {
     >
       <div className="max-w-7xl mx-auto px-6 flex justify-between items-center">
         <a href="#home" className="text-2xl font-serif font-bold tracking-tighter hover:text-gold-500 transition-colors">
-          Anil<span className="text-gold-500">.</span>
+          Goxent<span className="text-gold-500">.</span>
         </a>
 
         {/* Desktop Menu */}

@@ -22,7 +22,7 @@ const About: React.FC = () => {
           {/* Using a high-quality abstract placeholder or actual image if provided */}
           <img
             src="https://images.unsplash.com/photo-1507679799987-c73779587ccf?q=80&w=2071&auto=format&fit=crop"
-            alt="Anil Sunar"
+            alt="Goxent"
             className="w-full h-full object-cover opacity-60 group-hover:opacity-80 transition-opacity duration-700 group-hover:scale-105"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-luxury-950 via-transparent to-transparent opacity-90"></div>

@@ -12,10 +12,10 @@ const Footer: React.FC = () => {
             <p className="text-slate-400 text-lg max-w-md">
               Whether it's about a financial audit or a collaboration on a new track, I'm always open to interesting conversations.
             </p>
-            
-            <a href="mailto:contact@anilsunar.com.np" className="inline-flex items-center gap-3 mt-8 text-gold-500 hover:text-gold-400 transition-colors text-xl font-medium group">
+
+            <a href="mailto:Anil99senchury@gmail.com" className="inline-flex items-center gap-3 mt-8 text-gold-500 hover:text-gold-400 transition-colors text-xl font-medium group">
               <Mail />
-              <span>contact@anilsunar.com.np</span>
+              <span>Anil99senchury@gmail.com</span>
               <span className="h-px w-0 bg-gold-400 group-hover:w-full transition-all duration-300"></span>
             </a>
           </div>
@@ -24,7 +24,7 @@ const Footer: React.FC = () => {
             <span className="text-slate-500 text-sm uppercase tracking-widest">Social Media</span>
             <div className="flex gap-4">
               {SOCIAL_LINKS.map((link) => (
-                <a 
+                <a
                   key={link.platform}
                   href={link.url}
                   target="_blank"
@@ -40,7 +40,7 @@ const Footer: React.FC = () => {
         </div>
 
         <div className="flex flex-col md:flex-row justify-between items-center pt-8 border-t border-white/5 text-slate-600 text-sm">
-          <p>&copy; {new Date().getFullYear()} Anil Sunar. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} Goxent. All rights reserved.</p>
           <div className="flex gap-6 mt-4 md:mt-0">
             <a href="#" className="hover:text-slate-400 transition-colors">Privacy Policy</a>
             <a href="#" className="hover:text-slate-400 transition-colors">Terms of Service</a>

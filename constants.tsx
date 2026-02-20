@@ -28,7 +28,7 @@ export const SOCIAL_LINKS: SocialLink[] = [
   },
   {
     platform: 'Email',
-    url: 'mailto:contact@anilsunar.com.np',
+    url: 'mailto:Anil99senchury@gmail.com',
     icon: Mail,
     color: 'hover:text-gold-500'
   }
