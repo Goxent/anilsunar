@@ -1,0 +1,29 @@
+{
+  "_CONTENT_GUIDE": "id: unique string, title: Post Title, excerpt: short text, date: YYYY-MM-DD, url: link to full post, platform: 'medium' | 'linkedin' | 'blog'",
+  "posts": [
+    {
+      "id": "p1",
+      "title": "The Psychology of Nepali Retail Investors",
+      "excerpt": "Why do most retail investors lose money in a bull run? A psychological breakdown of NEPSE trends.",
+      "date": "2026-04-15",
+      "url": "https://medium.com/@anilsunar",
+      "platform": "medium"
+    },
+    {
+      "id": "p2",
+      "title": "My Journey Building a Custom Trading Terminal",
+      "excerpt": "How I combined React, Playwright, and AI to build an ultimate edge in the market.",
+      "date": "2026-04-05",
+      "url": "https://linkedin.com/in/anil-sunar",
+      "platform": "linkedin"
+    },
+    {
+      "id": "p3",
+      "title": "Smart Money Concepts: Fact or Fiction?",
+      "excerpt": "Breaking down whether SMC actually works in a market as manipulated as NEPSE.",
+      "date": "2026-03-12",
+      "url": "#",
+      "platform": "blog"
+    }
+  ]
+}

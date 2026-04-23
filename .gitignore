@@ -23,7 +23,6 @@ dist-ssr
 *.sln
 *.sw?
 
-src/content/posts.json
 
 # Environment variables
 .env
