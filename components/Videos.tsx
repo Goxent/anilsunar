@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Youtube, Calendar } from 'lucide-react';
-import videosData from '../content/videos.json';
+import videosData from '../src/content/videos.json';
 
 export default function Videos() {
   const { videos } = videosData;
