@@ -11,14 +11,14 @@ const Posts: React.FC = () => {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {postsData.map((post) => (
+          {postsData.posts.map((post) => (
             <div
               key={post.id}
               className="group p-8 rounded-2xl border border-slate-200 bg-white transition-all duration-300 hover:shadow-lg hover:border-gold-500/30 flex flex-col h-full"
             >
               <div className="flex justify-between items-center mb-6">
                 <span className="text-xs uppercase tracking-widest text-gold-500 border border-gold-500/20 px-3 py-1 rounded-full bg-gold-500/5">
-                  {post.tag}
+                  {post.platform}
                 </span>
                 <span className="text-xs text-slate-400 font-mono">
                   {new Date(post.date).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' })}
@@ -34,7 +34,7 @@ const Posts: React.FC = () => {
               </p>
 
               <div className="mt-auto pt-6 border-t border-slate-100 flex items-center justify-between text-slate-500 group-hover:text-gold-500 transition-colors text-sm font-bold uppercase tracking-widest">
-                <a href={`#writing/${post.slug}`} className="flex items-center gap-2">
+                <a href={post.url} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
                   Read more <span>&rarr;</span>
                 </a>
               </div>

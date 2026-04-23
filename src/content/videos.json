@@ -1,0 +1,29 @@
+{
+  "_CONTENT_GUIDE": "id: unique string, title: Video Title, youtubeId: 11-char YouTube ID (e.g., dQw4w9WgXcQ), description: short text, date: YYYY-MM-DD, thumbnail: image path or URL",
+  "videos": [
+    {
+      "id": "v1",
+      "title": "NEPSE Technical Analysis Masterclass",
+      "youtubeId": "dQw4w9WgXcQ",
+      "description": "Learn the hidden secrets of smart money concepts in the Nepali stock market.",
+      "date": "2026-04-10",
+      "thumbnail": "https://img.youtube.com/vi/dQw4w9WgXcQ/maxresdefault.jpg"
+    },
+    {
+      "id": "v2",
+      "title": "Top 5 Undervalued Hydropower Stocks",
+      "youtubeId": "jNQXAC9IVRw",
+      "description": "A deep dive into the most promising hydropower companies in Nepal.",
+      "date": "2026-03-25",
+      "thumbnail": "https://img.youtube.com/vi/jNQXAC9IVRw/maxresdefault.jpg"
+    },
+    {
+      "id": "v3",
+      "title": "How to Use the Goxent Terminal",
+      "youtubeId": "3JZ_D3ELwOQ",
+      "description": "Complete tutorial on maximizing your profits using our custom trading dashboard.",
+      "date": "2026-04-20",
+      "thumbnail": "https://img.youtube.com/vi/3JZ_D3ELwOQ/maxresdefault.jpg"
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+name: Automated Sasto Premium Sync
+
+on:
+  schedule:
+    # Runs at 10:00 AM UTC (3:45 PM Nepal Time) Monday through Friday
+    # This ensures the bot syncs right after the NEPSE market closes
+    - cron: '0 10 * * 1-5'
+  
+  # Allows you to trigger the sync manually from the GitHub Actions tab
+  workflow_dispatch:
+
+jobs:
+  sync-premium-data:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Install Dependencies
+        run: npm install
+
+      - name: Install Playwright Browsers
+        run: npx playwright install chromium --with-deps
+
+      - name: Run Sasto Bot
+        env:
+          SASTO_EMAIL: ${{ secrets.SASTO_EMAIL }}
+          SASTO_PASSWORD: ${{ secrets.SASTO_PASSWORD }}
+        run: npm run sasto-sync
+
+      - name: Commit and Push Updated Data
+        run: |
+          git config --global user.name "Anil Sunar"
+          git config --global user.email "anil99senchury@gmail.com"
+          git add nepse-dashboard/src/data/sasto_full_report.json
+          git commit -m "chore: auto-update sasto market data 🤖" || echo "No changes to commit"
+          git push origin main

@@ -5,6 +5,7 @@ import TechStack from './components/TechStack';
 import About from './components/About';
 import Experience from './components/Experience';
 import Projects from './components/Projects';
+import Videos from './components/Videos';
 import Creative from './components/Creative';
 import Courses from './components/Courses';
 import Posts from './components/Posts';
@@ -23,6 +24,7 @@ function App() {
         <About />
         <Experience />
         <Projects />
+        <Videos />
         <Creative />
         <Courses />
         <Posts />

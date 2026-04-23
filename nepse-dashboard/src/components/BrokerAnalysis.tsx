@@ -1,10 +1,12 @@
 import { AlertTriangle, Shield, TrendingUp, TrendingDown, Eye, Crown } from 'lucide-react'
 import { ACCUMULATION_SIGNALS } from '../data/sampleData'
 import sastoReport from '../data/sasto_premium_report.json'
+import superData from '../data/super_intelligence.json'
 
 export default function BrokerAnalysis() {
   const sorted = [...ACCUMULATION_SIGNALS].sort((a, b) => b.score - a.score)
   const premiumData = sastoReport?.data || []
+  const brokerData = (superData as any)?.brokerData || []
 
   return (
     <div>
@@ -67,48 +69,41 @@ export default function BrokerAnalysis() {
 
       {/* Signals Table */}
       <div className="card" style={{ padding: 0, overflow: 'auto' }}>
-        <table>
-          <thead>
-            <tr>
-              <th>Signal</th>
-              <th>Score</th>
-              <th>Symbol</th>
-              <th>Broker</th>
-              <th>Net Qty</th>
-              <th>Total Bought</th>
-              <th>Total Sold</th>
-              <th>Days Active</th>
-            </tr>
-          </thead>
-          <tbody>
-            {sorted.map((s, i) => (
-              <tr key={i}>
-                <td>
-                  <span className={`badge ${s.signal === 'Distribution' ? 'badge-red' : s.signal === 'Strong Accumulation' ? 'badge-gold' : 'badge-green'}`}>
-                    {s.signal === 'Distribution' ? <AlertTriangle size={12} /> : s.signal === 'Strong Accumulation' ? <Shield size={12} /> : <TrendingUp size={12} />}
-                    {s.signal}
-                  </span>
-                </td>
-                <td>
-                  <div style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
-                    <div style={{ width: 50, height: 6, borderRadius: 3, background: 'var(--border)', overflow: 'hidden' }}>
-                      <div style={{ width: `${s.score}%`, height: '100%', borderRadius: 3, background: s.score >= 80 ? 'var(--gold)' : s.score >= 60 ? 'var(--green)' : '#555' }}></div>
-                    </div>
-                    <span style={{ fontWeight: 700, fontSize: 13 }}>{s.score}</span>
-                  </div>
-                </td>
-                <td style={{ fontWeight: 700, color: 'var(--gold)' }}>{s.symbol}</td>
-                <td>{s.brokerName}</td>
-                <td style={{ fontWeight: 600, color: s.netQty >= 0 ? 'var(--green)' : 'var(--red)' }}>
-                  {s.netQty >= 0 ? '+' : ''}{s.netQty.toLocaleString()}
-                </td>
-                <td style={{ color: 'var(--green)' }}>{s.totalBought.toLocaleString()}</td>
-                <td style={{ color: 'var(--red)' }}>{s.totalSold.toLocaleString()}</td>
-                <td>{s.daysActive} days</td>
+        {brokerData && brokerData.length > 0 ? (
+          <table>
+            <thead>
+              <tr>
+                <th>Broker Name</th>
+                <th>Symbol</th>
+                <th>Buy Qty</th>
+                <th>Sell Qty</th>
+                <th>Net Position</th>
               </tr>
-            ))}
-          </tbody>
-        </table>
+            </thead>
+            <tbody>
+              {brokerData.map((row: any, i: number) => {
+                const netPos = parseInt(row[4] || '0')
+                return (
+                  <tr key={i}>
+                    <td>{row[0] || '-'}</td>
+                    <td style={{ fontWeight: 700, color: 'var(--gold)' }}>{row[1] || '-'}</td>
+                    <td style={{ color: 'var(--green)' }}>{row[2] || '-'}</td>
+                    <td style={{ color: 'var(--red)' }}>{row[3] || '-'}</td>
+                    <td style={{ fontWeight: 600, color: netPos >= 0 ? 'var(--green)' : 'var(--red)' }}>
+                      {netPos >= 0 ? '+' : ''}{netPos.toLocaleString()}
+                    </td>
+                  </tr>
+                )
+              })}
+            </tbody>
+          </table>
+        ) : (
+          <div style={{ padding: 32, textAlign: 'center', color: 'var(--text-secondary)' }}>
+            <AlertTriangle size={32} style={{ margin: '0 auto 16px', opacity: 0.5 }} />
+            <p>Data not yet synced</p>
+            <p style={{ fontSize: 12, marginTop: 8 }}>Run the sasto-analyzer bot to populate this data.</p>
+          </div>
+        )}
       </div>
 
       {/* Disclaimer */}

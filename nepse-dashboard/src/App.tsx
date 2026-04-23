@@ -1,11 +1,12 @@
 import { useState, ReactNode } from 'react'
-import { BarChart3, Search, Users, Brain, TrendingUp, Lock, LogOut, LayoutDashboard } from 'lucide-react'
+import { BarChart3, Search, Users, Brain, TrendingUp, Lock, LogOut, LayoutDashboard, Pencil } from 'lucide-react'
 import './App.css'
 import MarketOverview from './components/MarketOverview'
 import MarketIntelligence from './components/MarketIntelligence'
 import StockScreener from './components/StockScreener'
 import BrokerAnalysis from './components/BrokerAnalysis'
 import AIResearch from './components/AIResearch'
+import ContentStudio from './components/ContentStudio'
 
 const TABS = [
   { id: 'market', label: 'Market Overview', icon: LayoutDashboard },
@@ -13,6 +14,7 @@ const TABS = [
   { id: 'screener', label: 'Stock Screener', icon: Search },
   { id: 'broker', label: 'Broker Analysis', icon: Users },
   { id: 'ai', label: 'AI Research', icon: Brain },
+  { id: 'studio', label: 'Content Studio', icon: Pencil },
 ]
 
 // Simple password auth gate
@@ -134,6 +136,7 @@ function App() {
           {activeTab === 'screener' && <StockScreener />}
           {activeTab === 'broker' && <BrokerAnalysis />}
           {activeTab === 'ai' && <AIResearch />}
+          {activeTab === 'studio' && <ContentStudio />}
         </main>
       </div>
     </AuthGate>
