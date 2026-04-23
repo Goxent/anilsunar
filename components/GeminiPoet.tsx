@@ -70,68 +70,39 @@ const GeminiPoet: React.FC = () => {
 
   return (
     <section id="ai-interact" className="py-32 bg-luxury-950 border-t border-white/5 relative overflow-hidden">
-      {/* Premium AI Aura Background */}
-      <motion.div
-        animate={{
-          scale: isFocused ? 1.1 : 1,
-          opacity: isFocused ? 0.8 : 0.4
-        }}
-        transition={{ duration: 2, ease: "easeInOut" }}
-        className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-gradient-to-tr from-gold-500/10 via-purple-500/10 to-transparent rounded-full blur-[150px] pointer-events-none"
-      ></motion.div>
-      <div className="absolute inset-0 bg-[url('https://grainy-gradients.vercel.app/noise.svg')] opacity-[0.03] pointer-events-none mix-blend-overlay"></div>
+      {/* AI Background Aura - Simplified */}
+      <div 
+        className={`absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-gold-500/5 rounded-full transition-all duration-1000 blur-[20px] pointer-events-none ${isFocused ? 'opacity-100 scale-110' : 'opacity-50 scale-100'}`}
+      ></div>
 
       <div className="max-w-4xl mx-auto px-6 relative z-10 flex flex-col items-center">
 
         {/* Header Badge */}
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-white/5 border border-white/10 text-gold-400 text-xs uppercase tracking-[0.2em] mb-8 shadow-lg shadow-black/50 backdrop-blur-md"
-        >
+        <div className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-white/5 border border-white/10 text-gold-400 text-xs uppercase tracking-[0.2em] mb-8 shadow-md">
           <Sparkles size={14} className="animate-pulse" />
           <span className="font-semibold">Gemini 2.0 AI Core</span>
-        </motion.div>
+        </div>
 
         {/* Title */}
-        <motion.h2
-          className="text-5xl md:text-7xl font-serif text-white mb-6 text-center leading-tight tracking-tight"
-          initial={{ opacity: 0, scale: 0.95 }}
-          whileInView={{ opacity: 1, scale: 1 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.8 }}
-        >
+        <h2 className="text-5xl md:text-7xl font-serif text-white mb-6 text-center leading-tight tracking-tight">
           Converse with <br />
-          <span className="text-transparent bg-clip-text bg-gradient-to-r from-gold-300 via-gold-500 to-yellow-600 drop-shadow-[0_0_30px_rgba(251,191,36,0.3)]">Goxent's Digital Twin</span>
-        </motion.h2>
+          <span className="text-transparent bg-clip-text bg-gradient-to-r from-gold-300 via-gold-500 to-yellow-600">Goxent's Digital Twin</span>
+        </h2>
 
-        <motion.p
-          className="text-slate-400 mb-16 max-w-xl mx-auto text-center text-lg md:text-xl font-light leading-relaxed"
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ delay: 0.2, duration: 0.8 }}
-        >
+        <p className="text-slate-400 mb-16 max-w-xl mx-auto text-center text-lg md:text-xl font-light leading-relaxed">
           Drop a topic below. I'll synthesize tech logic, financial precision, and poetic rhythm into a unique verse just for you.
-        </motion.p>
+        </p>
 
         {/* Input Area */}
-        <motion.div
-          className={`w-full max-w-2xl bg-luxury-900/50 backdrop-blur-xl p-2.5 rounded-3xl border transition-all duration-500 flex items-center gap-3 relative z-20 ${isFocused
-              ? 'border-gold-500/50 shadow-[0_0_50px_rgba(251,191,36,0.15)] bg-luxury-900/80'
-              : 'border-white/10 shadow-2xl'
+        <div
+          className={`w-full max-w-2xl bg-luxury-900/50 p-2.5 rounded-3xl border transition-all duration-500 flex items-center gap-3 relative z-20 ${isFocused
+              ? 'border-gold-500/50 bg-luxury-900/80 shadow-lg'
+              : 'border-white/10 shadow-md'
             }`}
-          initial={{ opacity: 0, y: 40 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ delay: 0.4, type: "spring", stiffness: 100 }}
           onClick={() => inputRef.current?.focus()}
         >
-          {/* Glowing dot indicator */}
-          <div className="pl-5 relative">
-            <div className={`absolute inset-0 bg-gold-500 rounded-full blur-md transition-opacity duration-500 ${isFocused ? 'opacity-50' : 'opacity-0'}`}></div>
-            <Bot size={24} className={`relative z-10 transition-colors duration-500 ${isFocused ? 'text-gold-400' : 'text-slate-500'}`} />
+          <div className="pl-5">
+            <Bot size={24} className={`transition-colors duration-500 ${isFocused ? 'text-gold-400' : 'text-slate-500'}`} />
           </div>
 
           <input
@@ -150,13 +121,13 @@ const GeminiPoet: React.FC = () => {
             onClick={handleGenerate}
             disabled={isLoading || !prompt}
             className={`p-4 rounded-2xl transition-all duration-300 flex items-center justify-center min-w-[56px] ${prompt && !isLoading
-                ? 'bg-gold-500 text-luxury-950 hover:bg-gold-400 hover:scale-105 active:scale-95 shadow-[0_0_20px_rgba(251,191,36,0.4)]'
+                ? 'bg-gold-500 text-luxury-950 hover:bg-gold-400 hover:scale-105 active:scale-95'
                 : 'bg-white/5 text-slate-500 cursor-not-allowed'
               }`}
           >
             {isLoading ? <Loader2 className="animate-spin" size={22} /> : <Send size={22} className={prompt ? "translate-x-0.5 -translate-y-0.5" : ""} />}
           </button>
-        </motion.div>
+        </div>
 
         {/* AI Output Area */}
         <div className="w-full max-w-2xl mt-8 min-h-[200px] flex flex-col items-center">
@@ -164,9 +135,9 @@ const GeminiPoet: React.FC = () => {
             {isLoading && (
               <motion.div
                 key="loading"
-                initial={{ opacity: 0, scale: 0.9 }}
-                animate={{ opacity: 1, scale: 1 }}
-                exit={{ opacity: 0, scale: 0.9 }}
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                exit={{ opacity: 0 }}
                 className="flex items-center gap-3 text-gold-500/70"
               >
                 <Loader2 className="animate-spin" size={20} />
@@ -177,16 +148,13 @@ const GeminiPoet: React.FC = () => {
             {output && !isLoading && (
               <motion.div
                 key="output"
-                initial={{ opacity: 0, y: 20 }}
+                initial={{ opacity: 0, y: 10 }}
                 animate={{ opacity: 1, y: 0 }}
                 className="w-full"
               >
-                <div className="bg-luxury-900/40 backdrop-blur-md border border-white/5 p-8 md:p-10 rounded-[32px] relative shadow-2xl overflow-hidden group">
-                  {/* Subtle decorative gradient */}
-                  <div className="absolute top-0 right-0 w-32 h-32 bg-gold-500/10 blur-[50px] rounded-full pointer-events-none"></div>
-
+                <div className="bg-luxury-900/40 border border-white/5 p-8 md:p-10 rounded-[32px] relative shadow-lg overflow-hidden group">
                   <div className="flex gap-6 items-start">
-                    <div className="shrink-0 p-3 bg-gradient-to-br from-gold-500/20 to-purple-500/20 rounded-2xl border border-white/10 shadow-inner">
+                    <div className="shrink-0 p-3 bg-white/5 rounded-2xl border border-white/10">
                       <Sparkles className="text-gold-400" size={24} />
                     </div>
 

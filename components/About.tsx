@@ -1,87 +1,63 @@
-import React, { useRef } from 'react';
-import { motion, useInView } from 'framer-motion';
+import React from 'react';
+import { Award, GraduationCap } from 'lucide-react';
+import { QUALIFICATIONS } from '../constants';
 
 const About: React.FC = () => {
-  const ref = useRef(null);
-  const isInView = useInView(ref, { once: true, margin: "-100px" });
-
   return (
-    <section id="about" className="py-24 md:py-32 relative bg-luxury-900 overflow-hidden">
-      {/* Decorative Elements */}
-      <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-gold-500/5 rounded-full blur-[100px] pointer-events-none"></div>
-
-      <div ref={ref} className="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-16 items-center">
-
-        {/* Image / Visual Placeholder */}
-        <motion.div
-          className="relative aspect-[4/5] md:aspect-[3/4] rounded-3xl overflow-hidden shadow-2xl shadow-gold-500/5 border border-white/10 group"
-          initial={{ opacity: 0, x: -50 }}
-          animate={isInView ? { opacity: 1, x: 0 } : {}}
-          transition={{ duration: 0.8, type: "spring", stiffness: 50 }}
-        >
-          {/* Using a high-quality premium abstract image */}
-          <img
-            src="https://images.unsplash.com/photo-1620641788421-7a1c342ea42e?q=80&w=1974&auto=format&fit=crop"
-            alt="Goxent"
-            className="w-full h-full object-cover opacity-70 group-hover:opacity-100 transition-all duration-1000 group-hover:scale-110"
-          />
-          <div className="absolute inset-0 bg-gradient-to-t from-luxury-950 via-luxury-950/40 to-transparent opacity-90"></div>
-
-          <div className="absolute inset-0 border border-white/10 rounded-3xl scale-95 group-hover:scale-100 transition-transform duration-700 pointer-events-none"></div>
-
-          <div className="absolute bottom-8 left-8 right-8">
-            <div className="flex items-center gap-3 mb-3">
-              <span className="h-px w-8 bg-gold-500"></span>
-              <div className="text-gold-500 text-xs font-bold tracking-widest uppercase">My Philosophy</div>
-            </div>
-            <p className="text-white font-serif text-2xl italic leading-relaxed">
-              "Precision in numbers, <br /> fluidity in words."
-            </p>
-          </div>
-        </motion.div>
-
-        {/* Text Content */}
-        <motion.div
-          className="space-y-8"
-          initial={{ opacity: 0, x: 50 }}
-          animate={isInView ? { opacity: 1, x: 0 } : {}}
-          transition={{ duration: 0.8, delay: 0.2 }}
-        >
-          <div>
-            <span className="text-gold-500 uppercase tracking-widest text-sm font-semibold">About Me</span>
-            <h2 className="text-4xl md:text-6xl font-serif mt-4 mb-6 leading-tight text-white">
-              A Blend of <span className="text-transparent bg-clip-text bg-gradient-to-r from-gold-400 to-gold-600 italic">Tech</span>, <span className="text-transparent bg-clip-text bg-gradient-to-r from-gold-400 to-gold-600 italic">Logic</span>, and <span className="text-transparent bg-clip-text bg-gradient-to-r from-gold-400 to-gold-600 italic">Lyricism</span>
-            </h2>
-          </div>
-
-          <div className="space-y-6 text-slate-400 text-lg leading-relaxed">
-            <p>
-              I inhabit multiple worlds often seen as distinct. As an <strong className="text-white font-medium">Auditor</strong>, I navigate the rigorous landscape of financial reporting and compliance with unwavering precision.
-            </p>
-            <p>
-              Simultaneously, I am a passionate <strong className="text-white font-medium">Tech Enthusiast and UI/UX Designer</strong>. I love crafting premium, beautiful digital experiences, ensuring every pixel feels intentional and luxurious.
-            </p>
-            <p>
-              But when the screens turn off, the notebook opens. As a <strong className="text-white font-medium">Poet and Rapper</strong>, I explore the human experience through rhythm and rhyme, finding stories in art just as I find structure in audits and design.
-            </p>
-          </div>
-
-          <div className="grid grid-cols-2 gap-8 pt-8 border-t border-white/10">
-            <div>
-              <h3 className="text-4xl md:text-5xl font-serif text-white flex items-baseline">
-                Multidisciplinary
-              </h3>
-              <p className="text-sm text-slate-500 uppercase tracking-wider mt-2">Approach</p>
-            </div>
-            <div>
-              <h3 className="text-4xl md:text-5xl font-serif text-white flex items-baseline">
-                Premium
-              </h3>
-              <p className="text-sm text-slate-500 uppercase tracking-wider mt-2">UI/UX Design</p>
+    <section id="about" className="py-32 bg-luxury-950 relative overflow-hidden">
+      <div className="max-w-7xl mx-auto px-6 relative z-10">
+        <div className="grid md:grid-cols-2 gap-16 items-start">
+          {/* Bio Column */}
+          <div className="fade-in">
+            <span className="text-gold-500 font-bold uppercase tracking-[0.3em] text-xs">About Me</span>
+            <h2 className="text-5xl md:text-6xl font-serif mt-6 text-white mb-10">My Story</h2>
+            
+            <div className="space-y-6 text-slate-300 text-lg leading-relaxed font-light">
+              <p>
+                I'm Anil Sunar — a Chartered Accountant from ICAN, Nepal, and an Audit Manager with hands-on experience leading complex audit engagements across diverse industries. My academic foundation is a Bachelor of Business Studies (BBS), which shaped my analytical approach to finance and business.
+              </p>
+              <p>
+                Beyond the audit room, I'm a builder. I designed and developed a web application that automates operational workflows — combining my deep understanding of business processes with a passion for technology and software.
+              </p>
+              <p>
+                I also go by Goxent — my creative identity. I write poetry and rap, exploring themes of life, finance, and the human experience. I share my creative work on my YouTube channel @goxent and on Instagram @goxent.
+              </p>
             </div>
           </div>
-        </motion.div>
 
+          {/* Stats & Qualifications Column */}
+          <div className="space-y-12 fade-in" style={{ animationDelay: '0.2s' }}>
+            {/* Stats Strip */}
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 py-8 border-y border-white/5">
+              <div className="text-center">
+                <span className="block text-3xl font-serif text-white font-bold">3+</span>
+                <span className="text-xs uppercase tracking-widest text-slate-500 mt-1 block">Years Auditing</span>
+              </div>
+              <div className="text-center">
+                <span className="block text-3xl font-serif text-white font-bold">1</span>
+                <span className="text-xs uppercase tracking-widest text-slate-500 mt-1 block">Automation System</span>
+              </div>
+              <div className="text-center">
+                <span className="block text-3xl font-serif text-white font-bold">2</span>
+                <span className="text-xs uppercase tracking-widest text-slate-500 mt-1 block">Creative Brands</span>
+              </div>
+            </div>
+
+            {/* Qualifications Grid */}
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+              {QUALIFICATIONS.map((qual, idx) => (
+                <div key={idx} className="p-6 rounded-2xl border border-white/5 bg-white/5 hover:border-gold-500/30 transition-all duration-500 group">
+                  <div className="mb-4 text-gold-500/50 group-hover:text-gold-500 transition-colors">
+                    {qual.credential.includes('Accountant') ? <Award size={24} /> : <GraduationCap size={24} />}
+                  </div>
+                  <h3 className="text-gold-500 font-bold text-sm uppercase tracking-wide mb-2">{qual.credential}</h3>
+                  <p className="text-slate-400 text-xs leading-relaxed">{qual.body}</p>
+                  <p className="text-slate-600 text-[10px] mt-3 font-mono">{qual.year}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
       </div>
     </section>
   );

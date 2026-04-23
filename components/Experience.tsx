@@ -14,24 +14,20 @@ const ExperienceCard: React.FC<{ item: typeof EXPERIENCE_DATA[0]; index: number 
     >
       {/* Date */}
       <div className="md:w-1/4 md:text-right mb-4 md:mb-0 shrink-0">
-        <span className="inline-block py-2 px-4 rounded-full bg-gold-500/10 border border-gold-500/20 text-xs text-gold-400 font-bold tracking-[0.2em] uppercase shadow-[0_0_15px_rgba(251,191,36,0.1)] group-hover:bg-gold-500/20 group-hover:shadow-[0_0_20px_rgba(251,191,36,0.3)] transition-all duration-500">
+        <span className="inline-block py-2 px-4 rounded-full bg-gold-500/10 border border-gold-500/20 text-xs text-gold-400 font-bold tracking-[0.2em] uppercase transition-all duration-500">
           {item.period}
         </span>
       </div>
 
-      {/* Center UI - Glowing Timeline Dot */}
+      {/* Center UI - Timeline Dot */}
       <div className="absolute left-0 top-0 bottom-0 flex justify-center md:relative md:w-auto md:h-auto z-10">
-        <div className="absolute top-3 -left-[5px] md:static w-4 h-4 rounded-full bg-luxury-900 border-2 border-gold-500 shadow-[0_0_20px_rgba(251,191,36,0.6)] group-hover:scale-125 group-hover:bg-gold-500 transition-all duration-500"></div>
+        <div className="absolute top-3 -left-[5px] md:static w-4 h-4 rounded-full bg-luxury-900 border-2 border-gold-500 group-hover:scale-125 group-hover:bg-gold-500 transition-all duration-500"></div>
         {/* Vertical Line */}
         <div className="hidden md:block absolute top-8 bottom-[-48px] left-[7px] w-px bg-gradient-to-b from-gold-500/50 to-white/5 group-hover:from-gold-500 group-hover:to-gold-500/20 transition-all duration-500 -z-10"></div>
       </div>
 
       {/* Content Card */}
-      <div className="md:w-3/4 bg-white/5 backdrop-blur-md p-8 rounded-3xl border border-white/10 hover:border-gold-500/50 transition-all duration-500 hover:bg-white/10 hover:-translate-y-2 hover:shadow-[0_20px_40px_rgba(0,0,0,0.4)] relative overflow-hidden">
-
-        {/* Subtle inner glow on hover */}
-        <div className="absolute inset-0 bg-gradient-to-br from-gold-500/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-700 pointer-events-none"></div>
-
+      <div className="md:w-3/4 bg-white/5 p-8 rounded-3xl border border-white/10 hover:border-gold-500/50 transition-all duration-500 hover:bg-white/10 hover:-translate-y-2 relative overflow-hidden">
         <h3 className="text-2xl font-serif font-bold text-white mb-2 flex items-center gap-3">
           <Briefcase size={20} className="text-gold-500/70 group-hover:text-gold-400 transition-colors" />
           {item.role}
@@ -65,9 +61,8 @@ const Experience: React.FC = () => {
 
   return (
     <section id="experience" ref={containerRef} className="py-32 bg-luxury-950 relative">
-      {/* Premium Background Elements */}
-      <div className="absolute top-1/4 left-[-10%] w-[500px] h-[500px] bg-purple-900/10 rounded-full blur-[100px] pointer-events-none"></div>
-      <div className="absolute bottom-1/4 right-[-10%] w-[600px] h-[600px] bg-gold-500/5 rounded-full blur-[120px] pointer-events-none"></div>
+      <div className="absolute top-1/4 left-[-10%] w-[500px] h-[500px] bg-purple-900/5 rounded-full blur-[20px] pointer-events-none"></div>
+      <div className="absolute bottom-1/4 right-[-10%] w-[600px] h-[600px] bg-gold-500/5 rounded-full blur-[20px] pointer-events-none"></div>
 
       <motion.div
         style={{ opacity }}

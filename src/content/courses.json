@@ -1,0 +1,50 @@
+[
+  {
+    "id": "1",
+    "title": "Introduction to NEPSE Trading",
+    "description": "Understanding the basics of Nepal Stock Exchange — how to open a DEMAT account, place orders, and read market data.",
+    "youtubeId": "",
+    "category": "NEPSE Basics",
+    "platform": "youtube"
+  },
+  {
+    "id": "2",
+    "title": "How to Read Financial Statements for Stock Analysis",
+    "description": "A chartered accountant's guide to reading balance sheets, income statements, and cash flow statements for investment decisions.",
+    "youtubeId": "",
+    "category": "Finance",
+    "platform": "youtube"
+  },
+  {
+    "id": "3",
+    "title": "The Ledger of Life — Spoken Word",
+    "description": "A spoken word piece blending audit terminology with life philosophy. From the Goxent creative series.",
+    "youtubeId": "",
+    "category": "Poetry",
+    "platform": "youtube"
+  },
+  {
+    "id": "4",
+    "title": "Smart Money Concepts Explained for NEPSE",
+    "description": "Breaking down Order Blocks, Fair Value Gaps, and Break of Structure — applied to Nepali stocks.",
+    "youtubeId": "",
+    "category": "NEPSE Basics",
+    "platform": "youtube"
+  },
+  {
+    "id": "5",
+    "title": "Building an Automation System as an Auditor",
+    "description": "How I built a full-stack web app to automate audit workflows — from idea to deployment.",
+    "youtubeId": "",
+    "category": "Tech",
+    "platform": "youtube"
+  },
+  {
+    "id": "6",
+    "title": "Flow State — Freestyle Rap Session",
+    "description": "A freestyle rap about balancing sheets and beats. Numbers on the screen, rhythm in my veins.",
+    "youtubeId": "",
+    "category": "Poetry",
+    "platform": "instagram"
+  }
+]

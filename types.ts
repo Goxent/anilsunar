@@ -19,10 +19,24 @@ export interface ExperienceItem {
 export interface CreativeWork {
   id: string;
   title: string;
-  type: 'Poetry' | 'Rap';
+  type: 'Poetry' | 'Rap' | 'YouTube';
   excerpt: string;
   content?: string;
   link?: string;
+}
+
+export interface Qualification {
+  credential: string;
+  body: string;
+  year: string;
+}
+
+export interface Project {
+  id: string;
+  title: string;
+  description: string;
+  tags: string[];
+  status: string;
 }
 
 export interface NavItem {

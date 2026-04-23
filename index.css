@@ -57,7 +57,21 @@
 }
 
 .glass-card {
-  @apply bg-white/5 backdrop-blur-md border border-white/10;
+  @apply bg-white/5 border border-white/10;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.fade-in {
+  animation: fadeIn 0.6s ease-out forwards;
+}
+
+.hero-bg {
+  background: radial-gradient(circle at 50% 50%, rgba(245, 158, 11, 0.08) 0%, transparent 70%),
+              #020617;
 }
 
 .text-gradient-gold {

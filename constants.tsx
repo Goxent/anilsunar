@@ -1,28 +1,22 @@
 import { Facebook, Instagram, Linkedin, Youtube, Mail } from 'lucide-react';
-import { SocialLink, ExperienceItem, CreativeWork, NavItem } from './types';
+import { SocialLink, ExperienceItem, CreativeWork, NavItem, Qualification, Project } from './types';
 
 export const SOCIAL_LINKS: SocialLink[] = [
   {
-    platform: 'Instagram',
-    url: 'https://instagram.com',
-    icon: Instagram,
-    color: 'hover:text-pink-500'
-  },
-  {
-    platform: 'Facebook',
-    url: 'https://facebook.com',
-    icon: Facebook,
-    color: 'hover:text-blue-500'
-  },
-  {
     platform: 'LinkedIn',
-    url: 'https://linkedin.com',
+    url: 'https://www.linkedin.com/in/anil-sunar-842626229/',
     icon: Linkedin,
     color: 'hover:text-blue-400'
   },
   {
+    platform: 'Instagram',
+    url: 'https://www.instagram.com/goxent',
+    icon: Instagram,
+    color: 'hover:text-pink-500'
+  },
+  {
     platform: 'YouTube',
-    url: 'https://youtube.com',
+    url: 'https://www.youtube.com/@goxent',
     icon: Youtube,
     color: 'hover:text-red-500'
   },
@@ -38,35 +32,52 @@ export const NAV_ITEMS: NavItem[] = [
   { label: 'Home', href: '#home' },
   { label: 'About', href: '#about' },
   { label: 'Experience', href: '#experience' },
+  { label: 'Projects', href: '#projects' },
   { label: 'Creative', href: '#creative' },
-  { label: 'AI Interact', href: '#ai-interact' },
+  { label: 'Courses', href: '#courses' },
+  { label: 'Writing', href: '#writing' },
   { label: 'Contact', href: '#contact' },
 ];
 
 export const EXPERIENCE_DATA: ExperienceItem[] = [
   {
     id: '1',
-    role: 'Audit Associate',
-    company: 'Leading Audit Firm',
-    period: '2021 - Present',
-    description: 'Managed comprehensive financial audits for diverse clientele. Specialized in risk assessment, internal controls, and regulatory compliance. Led teams in analyzing financial statements to ensure accuracy and adherence to standards.',
-    skills: ['Auditing', 'Financial Analysis', 'Taxation', 'Team Leadership']
+    role: 'Audit Manager',
+    company: 'Audit Firm, Nepal',
+    period: 'Present',
+    description: 'Leading audit engagements across diverse industry clients. Responsible for planning, executing, and reporting on financial audits, risk assessments, and internal control reviews. Managing junior audit teams and coordinating with clients to ensure compliance with Nepal Standards on Auditing.',
+    skills: ['Auditing', 'Risk Assessment', 'Financial Reporting', 'Team Management', 'Nepal Standards on Auditing']
   },
   {
     id: '2',
-    role: 'Accounting Intern',
-    company: 'Corporate Finance Dept',
-    period: '2020 - 2021',
-    description: 'Assisted in preparation of monthly financial reports, bank reconciliations, and managing accounts payable/receivable. Streamlined documentation processes for faster retrieval.',
-    skills: ['Bookkeeping', 'Excel', 'Reconciliation', 'Reporting']
+    role: 'Audit Associate',
+    company: 'Audit Firm, Nepal',
+    period: '2021 – 2023',
+    description: 'Conducted financial statement audits, tax compliance work, and internal control assessments for a range of private and public sector clients.',
+    skills: ['Audit Execution', 'Taxation', 'Excel', 'Compliance']
   },
   {
     id: '3',
-    role: 'UI/UX Designer & Tech Enthusiast',
-    company: 'Freelance / Personal Projects',
-    period: 'Ongoing',
-    description: 'Designing premium, modern, and highly interactive user interfaces. Passionate about exploring new technologies, frameworks, and creating visually stunning digital experiences.',
-    skills: ['UI/UX Design', 'React / Vite', 'Tailwind CSS', 'Framer Motion']
+    role: 'Accounting Intern',
+    company: 'Corporate Finance',
+    period: '2020 – 2021',
+    description: 'Supported preparation of monthly financial reports, bank reconciliations, and management of accounts payable and receivable.',
+    skills: ['Bookkeeping', 'Reconciliation', 'Reporting']
+  }
+];
+
+export const QUALIFICATIONS: Qualification[] = [
+  { credential: "Chartered Accountant (CA)", body: "ICAN – Institute of Chartered Accountants of Nepal", year: "2023" },
+  { credential: "Bachelor of Business Studies (BBS)", body: "Tribhuvan University, Nepal", year: "2020" }
+];
+
+export const PROJECTS: Project[] = [
+  {
+    id: "1",
+    title: "Operational Workflow Automation System",
+    description: "Designed and built a full-stack web application to automate repetitive operational workflows within the firm. Reduced manual processing time significantly by digitizing and automating data entry, approval chains, and reporting pipelines.",
+    tags: ["Web Application", "Automation", "Process Optimization", "Full-Stack"],
+    status: "Live"
   }
 ];
 
@@ -119,5 +130,12 @@ My legacy written in the pavement.`
 Hidden in the vaults of what could have been.
 Invest in the voice, let the capital grow,
 For silence is a debt that we all surely owe.`
+  },
+  {
+    id: '4',
+    title: 'Goxent — YouTube Channel',
+    type: 'YouTube',
+    excerpt: 'A creative channel exploring the intersection of finance, technology, poetry and life. Subscribe at @goxent.',
+    content: 'https://www.youtube.com/@goxent'
   }
 ];
