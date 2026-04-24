@@ -59,11 +59,11 @@ export default function MarketOverview() {
         </div>
         <div style={{
           display: 'flex', alignItems: 'center', gap: 8,
-          color: change >= 0 ? 'var(--green)' : 'var(--red)',
+          color: parseFloat(change || '0') >= 0 ? 'var(--green)' : 'var(--red)',
           fontSize: 20, fontWeight: 700,
         }}>
-          {change >= 0 ? <TrendingUp size={24} /> : <TrendingDown size={24} />}
-          {change > 0 ? '+' : ''}{change} ({changePct}%)
+          {parseFloat(change || '0') >= 0 ? <TrendingUp size={24} /> : <TrendingDown size={24} />}
+          {change} ({changePct}%)
         </div>
         <div style={{ marginLeft: 'auto', display: 'flex', gap: 32, flexWrap: 'wrap' }}>
           <div><p style={{ fontSize: 11, color: 'var(--text-secondary)', textTransform: 'uppercase' }}>Turnover</p><p style={{ fontWeight: 700 }}>{turnover || 'N/A'}</p></div>
