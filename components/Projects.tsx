@@ -1,5 +1,5 @@
 import React from 'react';
-import { PROJECTS } from '../constants';
+import PROJECTS from '../src/content/projects.json';
 import { ExternalLink } from 'lucide-react';
 
 const Projects: React.FC = () => {

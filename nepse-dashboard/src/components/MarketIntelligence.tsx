@@ -1,5 +1,14 @@
-import { TrendingUp, ShieldAlert, BarChart3, Target, Crown, ArrowUpRight, ArrowDownRight, Info, MessageSquare, Zap, Activity } from 'lucide-react'
-import deepData from '../data/deep_intelligence.json'
+import { Crown, ArrowUpRight, Activity, Zap, MessageSquare } from 'lucide-react'
+import deepDataRaw from '../data/deep_intelligence.json'
+
+// Type-safe cast for the JSON data
+const deepData = deepDataRaw as {
+  signals: any[],
+  rotation: any[],
+  sentiment: any[],
+  picks: any[],
+  updatedAt: string
+};
 
 export default function MarketIntelligence() {
   const { signals, rotation, sentiment, picks, updatedAt } = deepData;

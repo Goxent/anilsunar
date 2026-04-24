@@ -14,6 +14,8 @@ export interface StockData {
   volume: number
   turnover: number
   prevClose: number
+  score?: number
+  signal?: string
 }
 
 export interface BrokerTrade {

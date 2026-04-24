@@ -1,6 +1,6 @@
 import React, { useRef } from 'react';
 import { motion, useScroll, useTransform } from 'framer-motion';
-import { EXPERIENCE_DATA } from '../constants';
+import EXPERIENCE_DATA from '../src/content/experience.json';
 import { Briefcase } from 'lucide-react';
 
 const ExperienceCard: React.FC<{ item: typeof EXPERIENCE_DATA[0]; index: number }> = ({ item, index }) => {

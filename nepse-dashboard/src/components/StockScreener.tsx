@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from 'react'
-import { Filter, ChevronDown, ChevronUp, Search, TrendingUp, AlertTriangle, Shield, Activity, BrainCircuit } from 'lucide-react'
+import React, { useState } from 'react'
+import { Filter, ChevronDown, ChevronUp, Activity, BrainCircuit } from 'lucide-react'
 import { SAMPLE_STOCKS } from '../data/sampleData'
 
 export default function StockScreener() {
@@ -19,16 +19,16 @@ export default function StockScreener() {
 
   let filtered = stocks.filter(s => {
     if (sectorFilter !== 'All' && s.sector !== sectorFilter) return false
-    if (minVolume && parseInt(s.volume.replace(/,/g, '')) < parseInt(minVolume)) return false
-    if (signalFilter !== 'All' && s.signal !== signalFilter) return false
+    if (minVolume && s.volume < parseInt(minVolume)) return false
+    if (signalFilter !== 'All' && (s.signal || 'Neutral') !== signalFilter) return false
     return true
   })
 
   // Sorting
-  filtered = filtered.sort((a, b) => {
-    if (sortBy === 'score') return b.score - a.score
-    if (sortBy === 'volume') return parseInt(b.volume.replace(/,/g, '')) - parseInt(a.volume.replace(/,/g, ''))
-    if (sortBy === 'change') return parseFloat(b.changePct) - parseFloat(a.changePct)
+  filtered = [...filtered].sort((a, b) => {
+    if (sortBy === 'score') return (b.score || 0) - (a.score || 0)
+    if (sortBy === 'volume') return b.volume - a.volume
+    if (sortBy === 'change') return b.changePct - a.changePct
     return 0
   })
 
@@ -145,20 +145,20 @@ export default function StockScreener() {
                   <td>{s.ltp}</td>
                   <td style={{ color: parseFloat(s.changePct) >= 0 ? 'var(--green)' : 'var(--red)', fontWeight: 600 }}>{s.changePct}%</td>
                   <td>{s.volume}</td>
-                  <td style={{ color: 'var(--text-secondary)' }}>{(parseInt(s.volume.replace(/,/g, '')) * 0.8).toLocaleString()}</td>
+                  <td style={{ color: 'var(--text-secondary)' }}>{(s.volume * 0.8).toLocaleString()}</td>
                   <td><span style={{ color: 'var(--green)' }}>1.2x</span></td>
-                  <td style={{ color: s.signal.includes('Accumulation') ? 'var(--green)' : 'var(--red)' }}>
-                    {s.signal.includes('Accumulation') ? '+45,000' : '-12,000'}
+                  <td style={{ color: (s.signal || '').includes('Accumulation') ? 'var(--green)' : 'var(--red)' }}>
+                    {(s.signal || '').includes('Accumulation') ? '+45,000' : '-12,000'}
                   </td>
                   <td>
                     <div style={{ display: 'flex', alignItems: 'center', gap: 6 }}>
                       <div style={{ width: 40, height: 4, background: '#333', borderRadius: 2, overflow: 'hidden' }}>
-                        <div style={{ width: `${s.score}%`, height: '100%', background: s.score > 70 ? 'var(--green)' : s.score < 30 ? 'var(--red)' : 'var(--gold)' }} />
+                        <div style={{ width: `${s.score || 0}%`, height: '100%', background: (s.score || 0) > 70 ? 'var(--green)' : (s.score || 0) < 30 ? 'var(--red)' : 'var(--gold)' }} />
                       </div>
-                      <span style={{ fontSize: 12 }}>{s.score}</span>
+                      <span style={{ fontSize: 12 }}>{s.score || 0}</span>
                     </div>
                   </td>
-                  <td>{getSignalBadge(s.signal)}</td>
+                  <td>{getSignalBadge(s.signal || 'Neutral')}</td>
                 </tr>
                 {expandedRow === s.symbol && (
                   <tr style={{ background: 'rgba(245,158,11,0.02)' }}>

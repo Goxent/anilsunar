@@ -4,7 +4,7 @@ import { Youtube, Calendar } from 'lucide-react';
 import videosData from '../src/content/videos.json';
 
 export default function Videos() {
-  const { videos } = videosData;
+  const videos = videosData;
 
   return (
     <section id="videos" className="py-24 relative overflow-hidden">

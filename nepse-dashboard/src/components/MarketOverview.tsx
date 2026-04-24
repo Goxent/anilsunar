@@ -1,4 +1,4 @@
-import { TrendingUp, TrendingDown, BarChart3, Activity, ArrowUpRight, ArrowDownRight, Clock, AlertCircle } from 'lucide-react'
+import { TrendingUp, TrendingDown, BarChart3, Activity, Clock } from 'lucide-react'
 import { useState, useEffect } from 'react'
 
 export default function MarketOverview() {

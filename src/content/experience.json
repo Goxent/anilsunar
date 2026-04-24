@@ -1,0 +1,26 @@
+[
+  {
+    "id": "1",
+    "role": "Audit Manager",
+    "company": "Audit Firm, Nepal",
+    "period": "Present",
+    "description": "Leading audit engagements across diverse industry clients. Responsible for planning, executing, and reporting on financial audits, risk assessments, and internal control reviews. Managing junior audit teams and coordinating with clients to ensure compliance with Nepal Standards on Auditing.",
+    "skills": ["Auditing", "Risk Assessment", "Financial Reporting", "Team Management", "Nepal Standards on Auditing"]
+  },
+  {
+    "id": "2",
+    "role": "Audit Associate",
+    "company": "Audit Firm, Nepal",
+    "period": "2021 – 2023",
+    "description": "Conducted financial statement audits, tax compliance work, and internal control assessments for a range of private and public sector clients.",
+    "skills": ["Audit Execution", "Taxation", "Excel", "Compliance"]
+  },
+  {
+    "id": "3",
+    "role": "Accounting Intern",
+    "company": "Corporate Finance",
+    "period": "2020 – 2021",
+    "description": "Supported preparation of monthly financial reports, bank reconciliations, and management of accounts payable and receivable.",
+    "skills": ["Bookkeeping", "Reconciliation", "Reporting"]
+  }
+]

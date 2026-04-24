@@ -1,10 +1,9 @@
-import { AlertTriangle, Shield, TrendingUp, TrendingDown, Eye, Crown } from 'lucide-react'
+import { AlertTriangle, Eye, Crown } from 'lucide-react'
 import { ACCUMULATION_SIGNALS } from '../data/sampleData'
 import sastoReport from '../data/sasto_premium_report.json'
 import superData from '../data/super_intelligence.json'
 
 export default function BrokerAnalysis() {
-  const sorted = [...ACCUMULATION_SIGNALS].sort((a, b) => b.score - a.score)
   const premiumData = sastoReport?.data || []
   const brokerData = (superData as any)?.brokerData || []
 

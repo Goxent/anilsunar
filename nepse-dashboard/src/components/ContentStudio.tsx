@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react'
-import { Pencil, Lightbulb, Search, TrendingUp, Save, Copy, Trash2, Plus, MessageSquare } from 'lucide-react'
+import { Lightbulb, Search, TrendingUp, Save, Copy, Trash2, Plus, MessageSquare } from 'lucide-react'
 
 type Idea = {
   id: string;

@@ -11,7 +11,7 @@ const Posts: React.FC = () => {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {postsData.posts.map((post) => (
+          {postsData.map((post) => (
             <div
               key={post.id}
               className="group p-8 rounded-2xl border border-slate-200 bg-white transition-all duration-300 hover:shadow-lg hover:border-gold-500/30 flex flex-col h-full"

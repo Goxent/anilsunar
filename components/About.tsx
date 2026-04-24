@@ -1,6 +1,6 @@
 import React from 'react';
 import { Award, GraduationCap } from 'lucide-react';
-import { QUALIFICATIONS } from '../constants';
+import QUALIFICATIONS from '../src/content/qualifications.json';
 
 const About: React.FC = () => {
   return (

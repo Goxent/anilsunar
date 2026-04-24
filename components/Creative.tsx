@@ -1,6 +1,6 @@
 import React, { useState, useRef } from 'react';
 import { motion, AnimatePresence, useInView } from 'framer-motion';
-import { CREATIVE_WORKS } from '../constants';
+import CREATIVE_WORKS from '../src/content/creative.json';
 import { Mic2, Feather, Youtube, Instagram, Play, X } from 'lucide-react';
 import { CreativeWork } from '../types';
 

@@ -1,5 +1,5 @@
 import { useState, ReactNode } from 'react'
-import { BarChart3, Search, Users, Brain, TrendingUp, Lock, LogOut, LayoutDashboard, Pencil } from 'lucide-react'
+import { Search, Users, Brain, TrendingUp, Lock, LogOut, LayoutDashboard, Pencil } from 'lucide-react'
 import './App.css'
 import MarketOverview from './components/MarketOverview'
 import MarketIntelligence from './components/MarketIntelligence'

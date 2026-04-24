@@ -1,0 +1,41 @@
+name: Notion CMS Sync
+
+on:
+  schedule:
+    # Runs every 6 hours
+    - cron: '0 */6 * * *'
+  workflow_dispatch: # Allows manual trigger from GitHub UI
+
+jobs:
+  sync-notion:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Install Dependencies
+        run: npm install
+
+      - name: Sync Notion Content
+        env:
+          NOTION_TOKEN: ${{ secrets.NOTION_TOKEN }}
+          NOTION_POSTS_DB_ID: ${{ secrets.NOTION_POSTS_DB_ID }}
+          NOTION_EXPERIENCE_DB_ID: ${{ secrets.NOTION_EXPERIENCE_DB_ID }}
+          NOTION_PROJECTS_DB_ID: ${{ secrets.NOTION_PROJECTS_DB_ID }}
+        run: npm run content
+
+      - name: Commit and Push
+        run: |
+          git config --global user.name "Goxent Bot"
+          git config --global user.email "bot@goxent.com"
+          git add src/content/*.json
+          git commit -m "chore: sync content from Notion 📝" || echo "No changes to commit"
+          git push origin main
