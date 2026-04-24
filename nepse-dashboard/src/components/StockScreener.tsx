@@ -143,7 +143,7 @@ export default function StockScreener() {
                     {s.symbol}
                   </td>
                   <td>{s.ltp}</td>
-                  <td style={{ color: parseFloat(s.changePct) >= 0 ? 'var(--green)' : 'var(--red)', fontWeight: 600 }}>{s.changePct}%</td>
+                  <td style={{ color: s.changePct >= 0 ? 'var(--green)' : 'var(--red)', fontWeight: 600 }}>{s.changePct}%</td>
                   <td>{s.volume}</td>
                   <td style={{ color: 'var(--text-secondary)' }}>{(s.volume * 0.8).toLocaleString()}</td>
                   <td><span style={{ color: 'var(--green)' }}>1.2x</span></td>
@@ -177,9 +177,9 @@ export default function StockScreener() {
                         <div style={{ width: 300, background: 'var(--bg-secondary)', padding: 16, borderRadius: 8, border: '1px solid var(--border)' }}>
                           <h4 style={{ fontSize: 12, color: 'var(--text-secondary)', marginBottom: 12, textTransform: 'uppercase' }}>SMC Metrics (Est.)</h4>
                           <div style={{ display: 'flex', flexDirection: 'column', gap: 8, fontSize: 12 }}>
-                            <div style={{ display: 'flex', justifyContent: 'space-between' }}><span>Key Support:</span><span style={{ color: 'var(--green)' }}>Rs. {parseInt(s.ltp) * 0.95}</span></div>
-                            <div style={{ display: 'flex', justifyContent: 'space-between' }}><span>Key Resistance:</span><span style={{ color: 'var(--red)' }}>Rs. {parseInt(s.ltp) * 1.1}</span></div>
-                            <div style={{ display: 'flex', justifyContent: 'space-between' }}><span>Order Block:</span><span>Rs. {parseInt(s.ltp) * 0.92} - {parseInt(s.ltp) * 0.94}</span></div>
+                            <div style={{ display: 'flex', justifyContent: 'space-between' }}><span>Key Support:</span><span style={{ color: 'var(--green)' }}>Rs. {Math.round(s.ltp * 0.95)}</span></div>
+                            <div style={{ display: 'flex', justifyContent: 'space-between' }}><span>Key Resistance:</span><span style={{ color: 'var(--red)' }}>Rs. {Math.round(s.ltp * 1.1)}</span></div>
+                            <div style={{ display: 'flex', justifyContent: 'space-between' }}><span>Order Block:</span><span>Rs. {Math.round(s.ltp * 0.92)} - {Math.round(s.ltp * 0.94)}</span></div>
                             <div style={{ display: 'flex', justifyContent: 'space-between' }}><span>FVG Zone:</span><span style={{ color: 'var(--gold)' }}>Active</span></div>
                           </div>
                         </div>
