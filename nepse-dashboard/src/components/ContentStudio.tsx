@@ -196,7 +196,7 @@ export default function ContentStudio() {
                           });
                           if (res.ok) alert("Research sent successfully!");
                           else throw new Error("Failed to send");
-                        } catch (err) {
+                        } catch (err: any) {
                           alert("Error sending email: " + err.message);
                         }
                       }}

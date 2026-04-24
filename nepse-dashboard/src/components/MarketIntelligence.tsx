@@ -1,4 +1,4 @@
-import { Crown, ArrowUpRight, Activity, Zap, MessageSquare } from 'lucide-react'
+import { Activity, Zap, MessageSquare } from 'lucide-react'
 import deepDataRaw from '../data/deep_intelligence.json'
 
 // Type-safe cast for the JSON data
@@ -11,7 +11,7 @@ const deepData = deepDataRaw as {
 };
 
 export default function MarketIntelligence() {
-  const { signals, rotation, sentiment, picks, updatedAt } = deepData;
+  const { rotation, sentiment, picks, updatedAt } = deepData;
 
   return (
     <div>
