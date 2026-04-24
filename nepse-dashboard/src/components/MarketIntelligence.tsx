@@ -17,90 +17,78 @@ export default function MarketIntelligence() {
     <div>
       <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-end', marginBottom: 32 }}>
         <div>
-          <h2 style={{ fontSize: 28, fontWeight: 700, marginBottom: 8 }}>Market Intelligence</h2>
-          <p style={{ color: 'var(--text-secondary)' }}>Full Sasto Premium Integration — Refined Trading Terminal</p>
+          <div className="terminal-text" style={{ marginBottom: 4 }}>SYSTEM://TERMINAL_ALPHA_V1</div>
+          <h2 style={{ fontSize: 32, fontWeight: 800, marginBottom: 8, letterSpacing: '-0.03em' }}>Market Intelligence</h2>
+          <p style={{ color: 'var(--text-secondary)', display: 'flex', alignItems: 'center' }}>
+            <span className="pulse"></span> 
+            Sasto Premium Real-time Data Pipeline Active
+          </p>
         </div>
-        <p style={{ fontSize: 11, color: 'var(--text-secondary)', background: 'var(--bg-secondary)', padding: '6px 12px', borderRadius: 8, border: '1px solid var(--border)' }}>
-          Last Deep Sync: {updatedAt}
-        </p>
+        <div style={{ textAlign: 'right' }}>
+          <p style={{ fontSize: 10, color: 'var(--text-secondary)', textTransform: 'uppercase', letterSpacing: '0.1em', marginBottom: 4 }}>Secure Access Session</p>
+          <p style={{ fontSize: 13, fontWeight: 700, color: 'var(--gold)' }}>{updatedAt || 'SYNCING...'}</p>
+        </div>
       </div>
 
-      <div style={{ display: 'grid', gridTemplateColumns: '2fr 1fr', gap: 24 }}>
-        {/* Left Column: Signals & Picks */}
-        <div style={{ display: 'flex', flexDirection: 'column', gap: 24 }}>
-          
-          {/* VIP Picks */}
-          <div className="card" style={{ border: '1px solid rgba(245,158,11,0.2)', background: 'linear-gradient(180deg, rgba(245,158,11,0.05) 0%, transparent 100%)' }}>
-            <h3 style={{ fontSize: 16, fontWeight: 800, display: 'flex', alignItems: 'center', gap: 10, marginBottom: 20 }}>
-              <Crown size={20} style={{ color: 'var(--gold)' }} /> Sasto Premium Picks
+      <div style={{ display: 'grid', gridTemplateColumns: '1.2fr 1.8fr 1fr', gap: 20, marginBottom: 24 }}>
+        {/* Sector Rotation Card */}
+        <div className="card" style={{ background: 'linear-gradient(180deg, rgba(255,255,255,0.03) 0%, transparent 100%)' }}>
+          <h3 style={{ fontSize: 12, fontWeight: 700, color: 'var(--text-secondary)', textTransform: 'uppercase', letterSpacing: '0.1em', marginBottom: 20, display: 'flex', alignItems: 'center', gap: 8 }}>
+            <Activity size={14} /> Sector Momentum
+          </h3>
+          <div style={{ display: 'flex', flexDirection: 'column', gap: 12 }}>
+            {rotation.length > 0 ? rotation.map((r, i) => (
+              <div key={i} style={{ display: 'flex', justifyContent: 'space-between', fontSize: 13 }}>
+                <span>{r}</span>
+                <span style={{ color: 'var(--green)' }}>↑</span>
+              </div>
+            )) : <div style={{ opacity: 0.3 }}>Scanning sectors...</div>}
+          </div>
+        </div>
+
+        {/* VIP Signals Table */}
+        <div className="card" style={{ padding: 0, overflow: 'hidden' }}>
+          <div style={{ padding: '16px 24px', borderBottom: '1px solid var(--border)', display: 'flex', justifyContent: 'space-between' }}>
+            <h3 style={{ fontSize: 12, fontWeight: 700, color: 'var(--gold)', textTransform: 'uppercase', letterSpacing: '0.1em', display: 'flex', alignItems: 'center', gap: 8 }}>
+              <Zap size={14} /> Sasto Premium Signals
             </h3>
-            <table>
+            <span className="terminal-text">ALPHA_ONLY</span>
+          </div>
+          <div style={{ maxHeight: 300, overflowY: 'auto' }}>
+            <table style={{ margin: 0, width: '100%' }}>
               <thead>
-                <tr>
-                  <th>Symbol</th>
-                  <th>Target</th>
-                  <th>Signal</th>
-                  <th>Action</th>
+                <tr style={{ background: 'rgba(255,255,255,0.02)' }}>
+                  <th style={{ fontSize: 10 }}>Symbol</th>
+                  <th style={{ fontSize: 10 }}>Entry Zone</th>
+                  <th style={{ fontSize: 10 }}>Target</th>
+                  <th style={{ fontSize: 10 }}>Strength</th>
                 </tr>
               </thead>
               <tbody>
-                {picks.map((pick, i) => (
+                {picks.length > 0 ? picks.map((pick, i) => (
                   <tr key={i}>
-                    <td style={{ fontWeight: 800, color: 'var(--gold)' }}>{pick.symbol}</td>
+                    <td style={{ fontWeight: 800 }}>{pick.symbol}</td>
+                    <td style={{ color: 'var(--text-secondary)' }}>{pick.entry || 'CMP'}</td>
                     <td style={{ color: 'var(--green)', fontWeight: 700 }}>{pick.target}</td>
-                    <td><span className="badge badge-gold">{pick.signal}</span></td>
-                    <td><button className="btn" style={{ padding: '4px 8px', fontSize: 10 }}>Trade</button></td>
+                    <td><div style={{ width: 40, height: 4, background: 'var(--gold)', borderRadius: 2 }}></div></td>
                   </tr>
-                ))}
+                )) : (
+                  <tr><td colSpan={4} style={{ textAlign: 'center', padding: 40, opacity: 0.3 }}>Waiting for market signals...</td></tr>
+                )}
               </tbody>
             </table>
           </div>
-
-          {/* Technical Breakouts */}
-          <div className="card">
-            <h3 style={{ fontSize: 14, fontWeight: 700, marginBottom: 20, display: 'flex', alignItems: 'center', gap: 8 }}>
-              <Zap size={16} style={{ color: 'var(--gold)' }} /> Technical Breakouts (Signals)
-            </h3>
-            <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 12 }}>
-              {signals.map((s, i) => (
-                <div key={i} style={{ padding: 12, borderRadius: 12, border: '1px solid var(--border)', background: 'var(--bg-secondary)', display: 'flex', justifyContent: 'space-between' }}>
-                  <span style={{ fontWeight: 700 }}>{s.symbol}</span>
-                  <span style={{ color: 'var(--green)', fontSize: 12, fontWeight: 600 }}>{s.signal}</span>
-                </div>
-              ))}
-            </div>
-          </div>
         </div>
 
-        {/* Right Column: Sentiment & Rotation */}
-        <div style={{ display: 'flex', flexDirection: 'column', gap: 24 }}>
-          
-          {/* Market Sentiment */}
-          <div className="card" style={{ background: '#0c0c14' }}>
-            <h3 style={{ fontSize: 14, fontWeight: 700, marginBottom: 16, display: 'flex', alignItems: 'center', gap: 8 }}>
-              <MessageSquare size={16} style={{ color: 'var(--gold)' }} /> Alpha Sentiment
-            </h3>
-            <div style={{ display: 'flex', flexDirection: 'column', gap: 12 }}>
-              {sentiment.map((text, i) => (
-                <div key={i} style={{ fontSize: 12, color: 'var(--text-secondary)', padding: '10px 0', borderBottom: '1px solid var(--border)', lineHeight: 1.5 }}>
-                  {text.length > 120 ? text.substring(0, 120) + '...' : text}
-                </div>
-              ))}
-            </div>
-          </div>
-
-          {/* Sector Momentum */}
-          <div className="card">
-            <h3 style={{ fontSize: 14, fontWeight: 700, marginBottom: 16, display: 'flex', alignItems: 'center', gap: 8 }}>
-              <Activity size={16} style={{ color: 'var(--gold)' }} /> Sector Momentum
-            </h3>
-            <div style={{ display: 'flex', flexDirection: 'column', gap: 8 }}>
-              {rotation.map((r, i) => (
-                <div key={i} style={{ padding: '8px 12px', borderRadius: 8, background: 'var(--bg-secondary)', fontSize: 12, display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-                  {r} <ArrowUpRight size={12} style={{ color: 'var(--green)' }} />
-                </div>
-              ))}
-            </div>
+        {/* Sentiment Analyzer */}
+        <div className="card">
+          <h3 style={{ fontSize: 12, fontWeight: 700, color: 'var(--text-secondary)', textTransform: 'uppercase', letterSpacing: '0.1em', marginBottom: 20, display: 'flex', alignItems: 'center', gap: 8 }}>
+            <MessageSquare size={14} /> Alpha Sentiment
+          </h3>
+          <div style={{ display: 'flex', flexDirection: 'column', gap: 16 }}>
+             {sentiment.length > 0 ? sentiment.map((s, i) => (
+               <p key={i} style={{ fontSize: 12, lineHeight: 1.5, color: 'var(--text-secondary)', borderLeft: '2px solid var(--gold)', paddingLeft: 12 }}>{s}</p>
+             )) : <p style={{ opacity: 0.3 }}>Listening to market chatter...</p>}
           </div>
         </div>
       </div>
