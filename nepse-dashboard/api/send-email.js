@@ -15,7 +15,7 @@ export default async function handler(req, res) {
 
   try {
     const data = await resend.emails.send({
-      from: 'Goxent Research <onboarding@resend.dev>', // You can change this once you verify your domain
+      from: 'Goxent Research <research@anilsunar.com.np>', 
       to: [to],
       subject: subject,
       html: html,
