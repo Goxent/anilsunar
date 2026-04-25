@@ -106,15 +106,21 @@ async function runProdSync() {
     // SAVE DATA
     const fs = require('fs');
     const path = require('path');
-    const dataPath = path.join(__dirname, '../nepse-dashboard/src/data/sasto_full_report.json');
-    fs.writeFileSync(dataPath, JSON.stringify(report, null, 2));
+    const dataDir = path.join(__dirname, '../nepse-dashboard/src/data');
+    const dataPath = path.join(dataDir, 'sasto_full_report.json');
     
+    if (!fs.existsSync(dataDir)) {
+      fs.mkdirSync(dataDir, { recursive: true });
+    }
+
+    fs.writeFileSync(dataPath, JSON.stringify(report, null, 2));
     console.log('💾 Production Sasto Report generated at:', dataPath);
 
   } catch (err) {
     console.error('❌ Bot Execution Failed:', err.message);
+    process.exit(1); // Fail the GitHub Action if the bot fails
   } finally {
-    await browser.close();
+    if (browser) await browser.close();
   }
 }
 
