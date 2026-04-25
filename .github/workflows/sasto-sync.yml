@@ -41,6 +41,6 @@ jobs:
         run: |
           git config --global user.name "Anil Sunar"
           git config --global user.email "anil99senchury@gmail.com"
-          git add nepse-dashboard/src/data/sasto_full_report.json
+          git add nepse-dashboard/src/data/deep_intelligence.json
           git commit -m "chore: auto-update sasto market data 🤖" || echo "No changes to commit"
           git push origin main

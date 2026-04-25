@@ -53,72 +53,104 @@ async function runProdSync() {
       floorsheetTop20: []
     };
 
-    // 2. BROKER ANALYSIS
+    // 2. QUANT RANKINGS & SCORES (Scraping the overview of top stocks)
     await retry(async () => {
-      console.log('📊 Scraping Broker Analysis...');
-      await page.goto('https://nepsealpha.com/sastoshare/broker-analysis', { waitUntil: 'domcontentloaded' });
-      // Wait for table body to load
-      await page.waitForSelector('table tbody tr', { timeout: 10000 });
-      await page.mouse.wheel(0, 500); // Trigger lazy loads
-      await page.waitForTimeout(1000);
+      console.log('📊 Scraping Quant Rankings & Health Scores...');
+      await page.goto('https://nepsealpha.com/sastoshare/stock-analysis', { waitUntil: 'domcontentloaded' });
+      await page.waitForSelector('.quant-ranking, table', { timeout: 15000 }).catch(() => null);
       
-      report.brokerAccumulation = await page.evaluate(() => {
-        const rows = Array.from(document.querySelectorAll('table tbody tr'));
-        return rows.map(r => Array.from(r.querySelectorAll('td')).map(td => td.innerText.trim()));
+      report.quantAnalysis = await page.evaluate(() => {
+        const rows = Array.from(document.querySelectorAll('table tbody tr')).slice(0, 30);
+        return rows.map(r => {
+          const cells = r.querySelectorAll('td');
+          return {
+            symbol: cells[0]?.innerText.trim(),
+            fScore: cells[5]?.innerText.trim(), // Assuming F-Score is in col 5
+            momentum: cells[2]?.innerText.trim(),
+            value: cells[3]?.innerText.trim(),
+          };
+        });
       });
-      console.log(`✅ Extracted ${report.brokerAccumulation.length} broker rows.`);
+      console.log(`✅ Extracted Quant data for ${report.quantAnalysis.length} stocks.`);
     });
 
-    // 3. SMC SIGNALS
+    // 3. AI SIGNALS (Swing & Breakout)
     await retry(async () => {
-      console.log('📈 Scraping SMC Signals...');
-      // Note: nepsealpha might have different URLs. Assuming /sastoshare/smc-signals or /sastoshare/signal-explorer
+      console.log('📈 Scraping AI Swing Signals...');
       await page.goto('https://nepsealpha.com/sastoshare/signal-explorer', { waitUntil: 'domcontentloaded' }); 
-      await page.waitForSelector('table tbody tr', { timeout: 10000 }).catch(() => null);
+      await page.waitForSelector('.signal-card, tr', { timeout: 10000 }).catch(() => null);
       
       report.smcSignals = await page.evaluate(() => {
-        const rows = Array.from(document.querySelectorAll('table tbody tr')).slice(0, 50);
-        return rows.map(r => Array.from(r.querySelectorAll('td')).map(td => td.innerText.trim()));
-      });
-      console.log(`✅ Extracted ${report.smcSignals.length} SMC signals.`);
-    });
-
-    // 4. FLOORSHEET (Top 20)
-    await retry(async () => {
-      console.log('📑 Scraping Live Floorsheet...');
-      await page.goto('https://nepsealpha.com/floorsheet', { waitUntil: 'domcontentloaded' });
-      await page.waitForSelector('table tbody tr', { timeout: 10000 }).catch(() => null);
-      
-      report.floorsheetTop20 = await page.evaluate(() => {
         const rows = Array.from(document.querySelectorAll('table tbody tr')).slice(0, 20);
-        return rows.map(r => Array.from(r.querySelectorAll('td')).map(td => td.innerText.trim()));
+        return rows.map(r => {
+          const cells = r.querySelectorAll('td');
+          return {
+            symbol: cells[0]?.innerText.trim(),
+            signal: cells[1]?.innerText.trim(),
+            type: 'Swing'
+          };
+        });
       });
-      console.log(`✅ Extracted top 20 floorsheet entries.`);
+      console.log(`✅ Extracted ${report.smcSignals.length} high-probability signals.`);
     });
 
-    // 5. SUMMARY GENERATION
-    if (report.brokerAccumulation.length > 0) {
-      report.summary.topAccumulatingBroker = report.brokerAccumulation[0][0] || 'N/A';
-      report.summary.topBuySymbol = report.brokerAccumulation[0][1] || 'N/A';
-      report.summary.marketSentiment = 'Bullish'; // Simple mock logic based on successful data
-    }
+    // 4. BROKER HOLDING (Accumulation)
+    await retry(async () => {
+      console.log('📑 Scraping Broker Accumulation...');
+      await page.goto('https://nepsealpha.com/sastoshare/broker-analysis', { waitUntil: 'domcontentloaded' });
+      await page.waitForSelector('table', { timeout: 10000 }).catch(() => null);
+      
+      report.brokerAccumulation = await page.evaluate(() => {
+        const rows = Array.from(document.querySelectorAll('table tbody tr')).slice(0, 15);
+        return rows.map(r => ({
+          broker: r.querySelectorAll('td')[0]?.innerText.trim(),
+          topBuy: r.querySelectorAll('td')[1]?.innerText.trim(),
+          netHolding: r.querySelectorAll('td')[4]?.innerText.trim()
+        }));
+      });
+      console.log(`✅ Extracted top broker holdings.`);
+    });
+
+    // 5. AUTO-ANALYSIS LOGIC (Mapping to Dashboard)
+    const finalData = {
+      updatedAt: new Date().toLocaleTimeString(),
+      picks: report.quantAnalysis
+        .filter(s => parseInt(s.fScore) >= 7)
+        .map(s => ({
+          symbol: s.symbol,
+          entry: 'F-Score: ' + s.fScore,
+          target: s.momentum === 'A' ? 'STRONG BUY' : 'ACCUMULATE',
+          strength: s.momentum === 'A' ? 100 : 80
+        })),
+      signals: report.smcSignals.map(s => ({
+        symbol: s.symbol,
+        signal: s.signal,
+        type: s.type
+      })),
+      sentiment: [
+        `Market Sentiment: ${report.smcSignals.length > 5 ? 'Bullish' : 'Neutral'}`,
+        `Top Quality Pick: ${report.quantAnalysis[0]?.symbol || 'N/A'} (F-Score: ${report.quantAnalysis[0]?.fScore})`,
+        `Strategy: Focus on ${report.quantAnalysis.filter(s => s.value === 'A').length} stocks identified as 'Value A' stocks.`
+      ],
+      rotation: report.quantAnalysis.slice(0, 5).map(s => s.symbol + ' (M: ' + s.momentum + ')')
+    };
 
     // SAVE DATA
     const fs = require('fs');
     const path = require('path');
     const dataDir = path.join(__dirname, '../nepse-dashboard/src/data');
-    const dataPath = path.join(dataDir, 'sasto_full_report.json');
+    const dataPath = path.join(dataDir, 'deep_intelligence.json'); // Changed to match dashboard import
     
     if (!fs.existsSync(dataDir)) {
       fs.mkdirSync(dataDir, { recursive: true });
     }
 
-    fs.writeFileSync(dataPath, JSON.stringify(report, null, 2));
-    console.log('💾 Production Sasto Report generated at:', dataPath);
+    fs.writeFileSync(dataPath, JSON.stringify(finalData, null, 2));
+    console.log('💾 AI Analysis saved to:', dataPath);
 
   } catch (err) {
     console.error('❌ Bot Execution Failed:', err.message);
-    process.exit(1); // Fail the GitHub Action if the bot fails
+    process.exit(1); 
   } finally {
     if (browser) await browser.close();
   }
