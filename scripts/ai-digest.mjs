@@ -8,6 +8,29 @@ dotenv.config();
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
+// Firebase Firestore REST (no SDK needed in Node script)
+const FIREBASE_API_KEY = 'AIzaSyDktrGzsvcJKuch0XJxGt6_ZmukN8V3ar8';
+const FIREBASE_PROJECT = 'app-anil-sunar';
+const FIRESTORE_BASE = `https://firestore.googleapis.com/v1/projects/${FIREBASE_PROJECT}/databases/(default)/documents`;
+
+async function getActiveSubscribers() {
+  try {
+    const res = await fetch(`${FIRESTORE_BASE}/subscribers?key=${FIREBASE_API_KEY}`);
+    const data = await res.json();
+    if (!data.documents) return [];
+    return data.documents
+      .filter(d => d.fields?.active?.booleanValue === true)
+      .map(d => ({
+        email: d.fields?.email?.stringValue,
+        name: d.fields?.name?.stringValue || ''
+      }))
+      .filter(s => s.email);
+  } catch (err) {
+    console.warn('⚠️  Could not fetch subscribers:', err.message);
+    return [];
+  }
+}
+
 async function sendDigestEmail(digest) {
   const RESEND_API_KEY = process.env.RESEND_API_KEY;
   const TO_EMAIL = process.env.TO_EMAIL || 'anil99senchury@gmail.com';
@@ -16,6 +39,15 @@ async function sendDigestEmail(digest) {
     console.log('⚠️  No RESEND_API_KEY found — skipping email');
     return;
   }
+
+  // Fetch all active subscribers + always include the owner
+  const subscribers = await getActiveSubscribers();
+  const recipients = [
+    { email: TO_EMAIL, name: 'Anil Sunar' },
+    ...subscribers.filter(s => s.email !== TO_EMAIL)
+  ];
+
+  console.log(`📧 Sending digest to ${recipients.length} recipient(s)...`);
 
   const linkedinHtml = (digest.linkedinIdeas || []).map(idea => `
     <div style="background:#1a1a2e;border:1px solid #2d2d5e;border-radius:12px;padding:20px;margin:12px 0;">
@@ -71,26 +103,30 @@ async function sendDigestEmail(digest) {
     </html>
   `;
 
-  const res = await fetch('https://api.resend.com/emails', {
-    method: 'POST',
-    headers: {
-      'Authorization': `Bearer ${RESEND_API_KEY}`,
-      'Content-Type': 'application/json'
-    },
-    body: JSON.stringify({
-      from: 'Goxent Brief <brief@anilsunar.com.np>',
-      to: [TO_EMAIL],
-      subject: `📊 NEPSE Daily Brief — ${new Date().toLocaleDateString('en-NP')}`,
-      html
-    })
-  });
-
-  if (res.ok) {
-    console.log(`✅ Email sent to ${TO_EMAIL}`);
-  } else {
-    const err = await res.json();
-    console.error('❌ Email failed:', err);
+  let sent = 0;
+  for (const recipient of recipients) {
+    const res = await fetch('https://api.resend.com/emails', {
+      method: 'POST',
+      headers: {
+        'Authorization': `Bearer ${RESEND_API_KEY}`,
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({
+        from: 'Goxent Brief <brief@anilsunar.com.np>',
+        to: [recipient.email],
+        subject: `📊 NEPSE Daily Brief — ${new Date().toLocaleDateString('en-NP')}`,
+        html
+      })
+    });
+    if (res.ok) {
+      console.log(`✅ Sent to ${recipient.email}`);
+      sent++;
+    } else {
+      const err = await res.json();
+      console.error(`❌ Failed for ${recipient.email}:`, err.message || err);
+    }
   }
+  console.log(`📬 Digest delivered to ${sent}/${recipients.length} subscribers.`);
 }
 
 async function run() {

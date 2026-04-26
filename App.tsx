@@ -12,6 +12,7 @@ import Posts from './components/Posts';
 import GeminiPoet from './components/GeminiPoet';
 import Footer from './components/Footer';
 import CustomCursor from './components/CustomCursor';
+import NewsletterSignup from './components/NewsletterSignup';
 
 function App() {
   return (
@@ -30,6 +31,7 @@ function App() {
         <Posts />
         <GeminiPoet />
       </main>
+      <NewsletterSignup />
       <Footer />
     </div>
   );

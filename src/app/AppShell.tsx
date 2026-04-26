@@ -9,7 +9,8 @@ import {
   Settings, 
   Lock, 
   LogOut,
-  ChevronRight
+  ChevronRight,
+  Mail
 } from 'lucide-react'
 import MarketOverview from './components/MarketOverview'
 import MarketIntelligence from './components/MarketIntelligence'
@@ -17,6 +18,7 @@ import StockScreener from './components/StockScreener'
 import BrokerAnalysis from './components/BrokerAnalysis'
 import AIResearch from './components/AIResearch'
 import ContentStudio from './components/ContentStudio'
+import NewsletterAdmin from './components/NewsletterAdmin'
 import AdminDashboard from '../../components/AdminDashboard'
 
 const TABS = [
@@ -26,6 +28,7 @@ const TABS = [
   { id: 'broker', label: 'Broker Analysis', icon: Users, component: BrokerAnalysis },
   { id: 'ai', label: 'AI Research', icon: Brain, component: AIResearch },
   { id: 'studio', label: 'Content Studio', icon: Pencil, component: ContentStudio },
+  { id: 'newsletter', label: 'Newsletter', icon: Mail, component: NewsletterAdmin },
   { id: 'admin', label: 'Admin Panel', icon: Settings, component: AdminDashboard },
 ]
 
