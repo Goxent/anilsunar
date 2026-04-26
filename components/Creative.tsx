@@ -9,7 +9,7 @@ const Creative: React.FC = () => {
   const isInView = useInView(ref, { once: true, margin: "-100px" });
   const [selectedWork, setSelectedWork] = useState<CreativeWork | null>(null);
 
-  const handleReadMore = (work: CreativeWork) => {
+  const handleReadMore = (work: any) => {
     if (work.type === 'YouTube' || work.link) {
       window.open(work.link || work.content, '_blank', 'noopener,noreferrer');
     } else {

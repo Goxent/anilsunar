@@ -2,7 +2,7 @@ import { Activity, Zap, Star, TrendingUp, Info } from 'lucide-react'
 import aiDataRaw from '../data/ai_digest.json'
 
 // Type-safe cast for the JSON data
-const aiData = aiDataRaw as {
+const aiData = aiDataRaw as unknown as {
   timestamp: string;
   marketSummary: string;
   topPicks: Array<{

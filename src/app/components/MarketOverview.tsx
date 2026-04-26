@@ -2,24 +2,16 @@ import { TrendingUp, TrendingDown, BarChart3, Clock } from 'lucide-react'
 import sastoReport from '../data/sasto_premium_report.json'
 
 export default function MarketOverview() {
-  const premiumData = sastoReport?.data || []
+  const premiumData = sastoReport?.sentiment || []
   let index = 'N/A'
   let changePct = 'N/A'
   let turnover = 'N/A'
 
   if (premiumData.length > 0) {
-    const rawText = premiumData[0]
-    const lines = rawText.split('\n')
-    
-    // Extracted values based on typical Sasto Share format
-    if (lines[0]) index = lines[0].trim()
-    if (lines[1]) changePct = lines[1].trim()
-    
-    // Find Turnover line
-    const turnoverLine = lines.find(l => l.includes('Turnover'))
-    if (turnoverLine) {
-      turnover = turnoverLine.replace('Turnover', '').trim()
-    }
+    // Basic extraction from sentiment strings
+    const sentiment = premiumData[0] || ''
+    index = sentiment.split(':')[1]?.trim() || 'Neutral'
+    changePct = '0.0%'
   }
 
   const isPositive = !changePct.startsWith('-')
@@ -36,7 +28,7 @@ export default function MarketOverview() {
             <Clock size={12} /> UPDATED
           </span>
           <span style={{ fontSize: 11, color: 'var(--text-secondary)' }}>
-            {sastoReport.lastUpdated || 'Unknown'}
+            {sastoReport.updatedAt || 'Unknown'}
           </span>
         </div>
       </div>

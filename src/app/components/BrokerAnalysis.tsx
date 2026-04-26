@@ -1,16 +1,28 @@
-import { AlertTriangle, Eye, Crown } from 'lucide-react'
+import { AlertTriangle, Eye, Crown, Clock } from 'lucide-react'
 import { ACCUMULATION_SIGNALS } from '../data/sampleData'
 import sastoReport from '../data/sasto_premium_report.json'
 import superData from '../data/super_intelligence.json'
 
 export default function BrokerAnalysis() {
-  const premiumData = sastoReport?.data || []
+  const premiumData = (sastoReport as any)?.sentiment || []
   const brokerData = (superData as any)?.brokerData || []
 
   return (
     <div>
-      <h2 style={{ fontSize: 28, fontWeight: 700, marginBottom: 8 }}>Broker Analysis</h2>
-      <p style={{ color: 'var(--text-secondary)', marginBottom: 32 }}>Detect accumulation, distribution, and potential insider activity from floorsheet data</p>
+      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 32 }}>
+        <div>
+          <h2 style={{ fontSize: 28, fontWeight: 700, marginBottom: 8 }}>Broker Analysis</h2>
+          <p style={{ color: 'var(--text-secondary)' }}>Daily net accumulation and broker holding patterns.</p>
+        </div>
+        <div style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
+          <span className="badge badge-gold" style={{ display: 'flex', alignItems: 'center', gap: 4 }}>
+            <Clock size={12} /> UPDATED
+          </span>
+          <span style={{ fontSize: 11, color: 'var(--text-secondary)' }}>
+            {(sastoReport as any).updatedAt || 'Unknown'}
+          </span>
+        </div>
+      </div>
 
       {/* Sasto Premium Insights */}
       {premiumData.length > 0 && (
@@ -19,15 +31,12 @@ export default function BrokerAnalysis() {
             <Crown size={16} /> Sasto Share Premium Insights
           </h3>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(300px, 1fr))', gap: 16 }}>
-            {premiumData.map((text, i) => (
+            {premiumData.map((text: string, i: number) => (
               <div key={i} style={{ padding: 12, borderRadius: 8, background: 'rgba(255,255,255,0.03)', fontSize: 13, color: 'var(--text-primary)', borderLeft: '2px solid var(--gold)' }}>
                 {text.length > 200 ? text.substring(0, 200) + '...' : text}
               </div>
             ))}
           </div>
-          <p style={{ fontSize: 10, color: 'var(--text-secondary)', marginTop: 12, textAlign: 'right' }}>
-            Last Synced: {sastoReport.lastUpdated}
-          </p>
         </div>
       )}
 
