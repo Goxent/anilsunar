@@ -10,7 +10,7 @@
     "deploy": "gh-pages -d dist",
     "build": "npm run content && vite build",
     "preview": "vite preview",
-    "sasto-sync": "node scripts/sasto-analyzer.cjs",
+    "sasto-sync": "node scripts/omni-crawler.mjs",
     "ai-digest": "node scripts/ai-digest.mjs",
     "daily-sync": "npm run sasto-sync && npm run ai-digest",
     "auto-sync": "node scripts/auto-sync.js",

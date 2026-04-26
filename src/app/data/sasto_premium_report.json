@@ -1,13 +1,10 @@
 {
-  "lastUpdated": "4/23/2026, 11:15:01 PM",
-  "data": [
-    "2,787.15\n -0.60%\nTurnover  509.59 Cr.\nGainers 20.37 %\nNeutral 3.40 %\nLosers 76.23 %\nAs of 23rd Apr, 2:59 PM",
-    "Leading Sectors\nManufacturing And Processing\n 12.62%\nHotels\n 5.68%\nHydro Power\n -0.50%",
-    "Daily GainersWeekly GainerMonthly GainerDaily TurnoverWeekly TurnoverMonthly Turnover\nAll\nValue\nGrowth\nMomentum\nHigh Cap\nMid Cap\nSmall Cap\nSymbol\tPrice(NPR)\tChange\tVolume\tR-Volume\tFloat Cap\tMarket Cap",
-    "Symbol\tPrice(NPR)\tChange\tVolume\tR-Volume\tFloat Cap\tMarket Cap",
-    "Symbol\tPrice(NPR)\tChange\tVolume\tR-Volume\tFloat Cap\tMarket Cap",
-    "Daily LosersWeekly LosersMonthly Losers\nAll\nValue\nGrowth\nMomentum\nHigh Cap\nMid Cap\nSmall Cap\nSymbol\tPrice(NPR)\tChange\tVolume\tR-Volume\tFloat Cap\tMarket Cap",
-    "Symbol\tPrice(NPR)\tChange\tVolume\tR-Volume\tFloat Cap\tMarket Cap",
-    "Symbol\tPrice(NPR)\tChange\tVolume\tR-Volume\tFloat Cap\tMarket Cap"
-  ]
+  "updatedAt": "12:03:13 AM",
+  "picks": [],
+  "signals": [],
+  "sentiment": [
+    "Market Sentiment: Neutral",
+    "Strategy: Focus on 0 Value A stocks."
+  ],
+  "rotation": []
 }

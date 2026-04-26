@@ -20,7 +20,8 @@ async function retry(fn, retries = 3, delay = 2000) {
 
 async function runProdSync() {
   console.log('🚀 Initiating Production Sasto Share Bot...');
-  const browser = await chromium.launch({ headless: true });
+  // Headless changed to false so you can watch it live!
+  const browser = await chromium.launch({ headless: false });
   const context = await browser.newContext({ userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36' });
   const page = await context.newPage();
 
@@ -97,7 +98,7 @@ async function runProdSync() {
     // 4. BROKER HOLDING (Accumulation)
     await retry(async () => {
       console.log('📑 Scraping Broker Accumulation...');
-      await page.goto('https://nepsealpha.com/sastoshare/broker-analysis', { waitUntil: 'domcontentloaded' });
+      await page.goto('https://nepsealpha.com/sastoshare/floorsheet/broker-holding', { waitUntil: 'domcontentloaded' });
       await page.waitForSelector('table', { timeout: 10000 }).catch(() => null);
       
       report.brokerAccumulation = await page.evaluate(() => {

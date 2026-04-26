@@ -136,28 +136,37 @@ async function run() {
     process.exit(1);
   }
 
-  // Load market data from sasto_premium_report.json
-  const dataPath = path.join(__dirname, '../src/app/data/sasto_premium_report.json');
+  // Load market data from the massive omni-data lake
+  const dataPath = path.join(__dirname, '../src/app/data/market-omni-data.json');
   let marketData = {};
   if (fs.existsSync(dataPath)) {
     marketData = JSON.parse(fs.readFileSync(dataPath, 'utf8'));
   }
 
-  const prompt = `You are an expert in Nepal finance, auditing, accounting, 
-corporate law, taxation, and NEPSE stock market analysis.
+  // To prevent token limit blowouts, stringify safely (limit to first 100kb if it's ridiculously huge)
+  let dataStr = JSON.stringify(marketData);
+  if (dataStr.length > 80000) dataStr = dataStr.slice(0, 80000) + '... [TRUNCATED]';
 
-Here is today's NEPSE market data:
-${JSON.stringify(marketData, null, 2)}
+  const prompt = `You are an elite quantitative analyst, auditor, and financial expert in Nepal.
 
-The user is a professional in Nepal with expertise in:
-- Auditing and accounting (Nepal Standards on Auditing, ICAN)
-- NEPSE stock market analysis
+Here is a massive data lake scraped dynamically from NepseAlpha/SastoShare today containing raw tables of floorsheets, broker analysis, technical signals, and fundamentals:
+${dataStr}
+
+The user is a professional CA in Nepal with expertise in:
+- Auditing, accounting, and taxation
+- NEPSE stock market anomalies and technical/fundamental crossovers
 - Corporate finance and business strategy
-- Nepal corporate law (Companies Act, Securities Act)
-- Nepal taxation (Income Tax Act, VAT, TDS rules)
 
-Generate exactly 6 LinkedIn post ideas for their personal brand. 
-Mix the topics — do not give all 6 on the same subject.
+Analyze this entire data lake to find hidden correlations (e.g., heavily accumulated stocks by specific brokers that also have bullish technical signals or high F-Scores). 
+
+Write a 5-sentence "Alpha Market Summary" that exposes the most interesting anomaly or trend you found across the entire data lake.
+
+Then, generate exactly 6 LinkedIn post ideas for their personal brand. Mix the topics:
+- 2 ideas about NEPSE/Finance exposing the specific anomalies you found in the data lake.
+- 1 idea about Auditing or Accounting
+- 1 idea about Nepal Taxation
+- 1 idea about Corporate Law or Companies Act Nepal
+- 1 idea about general Finance or Business insight
 
 Each idea must have:
 - topic: one of ["Auditing", "Accounting", "NEPSE", "Corporate Law", "Taxation", "Finance"]
@@ -165,20 +174,12 @@ Each idea must have:
 - angle: the unique insight or perspective to share (2-3 sentences)
 - hook: the very first sentence of the post that stops the scroll (1 punchy sentence)
 - keyTakeaway: what the reader will learn or feel after reading (1 sentence)
-- bestTimeToPost: "Morning" or "Evening" based on topic seriousness
-
-Topic distribution must be:
-- 2 ideas about NEPSE/Finance (use today's market data)
-- 1 idea about Auditing or Accounting
-- 1 idea about Nepal Taxation
-- 1 idea about Corporate Law or Companies Act Nepal
-- 1 idea about general Finance or Business insight
-
-Also write a 5-sentence NEPSE market summary for today based on the data.
+- bestTimeToPost: "Morning" or "Evening"
 
 Respond ONLY in valid JSON with keys: marketSummary (string), linkedinIdeas (array of 6 objects)`;
 
   try {
+    console.log('🧠 Sending Omni-Data Lake to Claude 3.5 Sonnet for Deep Analysis...');
     const response = await fetch('https://api.anthropic.com/v1/messages', {
       method: 'POST',
       headers: {
@@ -187,8 +188,8 @@ Respond ONLY in valid JSON with keys: marketSummary (string), linkedinIdeas (arr
         'anthropic-version': '2023-06-01'
       },
       body: JSON.stringify({
-        model: 'claude-3-haiku-20240307',
-        max_tokens: 2000,
+        model: 'claude-3-5-sonnet-20241022',
+        max_tokens: 4000,
         messages: [{ role: 'user', content: prompt }]
       })
     });

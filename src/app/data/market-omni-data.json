@@ -1,0 +1,6091 @@
+{
+  "timestamp": "2026-04-26T18:24:12.453Z",
+  "scrapedPages": [
+    {
+      "title": "Sasto Share | Home",
+      "url": "https://nepsealpha.com/sastoshare/home",
+      "tables": [
+        {
+          "tableIndex": 2,
+          "headers": [
+            "Symbol",
+            "Price(NPR)",
+            "Change",
+            "Volume",
+            "R-Volume",
+            "Float Cap",
+            "Market Cap"
+          ],
+          "rows": [
+            {
+              "Symbol": "MKHL",
+              "Price(NPR)": "724.50",
+              "Change": "15.00%",
+              "Volume": "13,466.00",
+              "R-Volume": "116.77 %",
+              "Float Cap": "108.59 Cr.",
+              "Market Cap": "284.12 Cr."
+            },
+            {
+              "Symbol": "PCIL",
+              "Price(NPR)": "971.40",
+              "Change": "15.00%",
+              "Volume": "9,180.00",
+              "R-Volume": "-",
+              "Float Cap": "728.55 Cr.",
+              "Market Cap": "3,642.75 Cr."
+            },
+            {
+              "Symbol": "SIPD",
+              "Price(NPR)": "920.10",
+              "Change": "15.00%",
+              "Volume": "1,800.00",
+              "R-Volume": "-",
+              "Float Cap": "294.40 Cr.",
+              "Market Cap": "901.70 Cr."
+            },
+            {
+              "Symbol": "CORBL",
+              "Price(NPR)": "2,407.00",
+              "Change": "12.62%",
+              "Volume": "60,220.00",
+              "R-Volume": "391.62 %",
+              "Float Cap": "379.10 Cr.",
+              "Market Cap": "1,263.67 Cr."
+            },
+            {
+              "Symbol": "SAIL",
+              "Price(NPR)": "1,218.00",
+              "Change": "4.91%",
+              "Volume": "50,963.00",
+              "R-Volume": "64.06 %",
+              "Float Cap": "397.37 Cr.",
+              "Market Cap": "1,986.86 Cr."
+            },
+            {
+              "Symbol": "RLEL",
+              "Price(NPR)": "1,321.10",
+              "Change": "3.22%",
+              "Volume": "46,369.00",
+              "R-Volume": "-",
+              "Float Cap": "344.41 Cr.",
+              "Market Cap": "1,565.50 Cr."
+            },
+            {
+              "Symbol": "NMB50",
+              "Price(NPR)": "10.66",
+              "Change": "3.19%",
+              "Volume": "1,500.00",
+              "R-Volume": "-",
+              "Float Cap": "0.00 Cr.",
+              "Market Cap": "0.00 Cr."
+            },
+            {
+              "Symbol": "CCBD88",
+              "Price(NPR)": "1,278.00",
+              "Change": "2.98%",
+              "Volume": "30.00",
+              "R-Volume": "-",
+              "Float Cap": "- Cr.",
+              "Market Cap": "0.00 Cr."
+            },
+            {
+              "Symbol": "SDBD87",
+              "Price(NPR)": "1,176.00",
+              "Change": "2.98%",
+              "Volume": "10.00",
+              "R-Volume": "-",
+              "Float Cap": "- Cr.",
+              "Market Cap": "0.00 Cr."
+            },
+            {
+              "Symbol": "HLICF",
+              "Price(NPR)": "9.30",
+              "Change": "2.88%",
+              "Volume": "2,100.00",
+              "R-Volume": "-",
+              "Float Cap": "- Cr.",
+              "Market Cap": "0.00 Cr."
+            }
+          ]
+        },
+        {
+          "tableIndex": 3,
+          "headers": [
+            "Symbol",
+            "Current Price",
+            "Last Price",
+            "Percent Change",
+            "Volume",
+            "Turnover"
+          ],
+          "rows": [
+            {
+              "Symbol": "PCIL",
+              "Current Price": "971.4",
+              "Last Price": "483.1",
+              "Percent Change": "101.08%",
+              "Volume": "17580",
+              "Turnover": "15343209"
+            },
+            {
+              "Symbol": "SIPD",
+              "Current Price": "920.1",
+              "Last Price": "457.6",
+              "Percent Change": "101.07%",
+              "Volume": "5180",
+              "Turnover": "4049070"
+            },
+            {
+              "Symbol": "SKHEL",
+              "Current Price": "1635",
+              "Last Price": "1186.1",
+              "Percent Change": "37.85%",
+              "Volume": "173901",
+              "Turnover": "285109502"
+            },
+            {
+              "Symbol": "CORBL",
+              "Current Price": "2407",
+              "Last Price": "1790",
+              "Percent Change": "34.47%",
+              "Volume": "195128",
+              "Turnover": "402870436"
+            },
+            {
+              "Symbol": "JHAPA",
+              "Current Price": "1600",
+              "Last Price": "1287.1",
+              "Percent Change": "24.31%",
+              "Volume": "163697",
+              "Turnover": "241888472"
+            },
+            {
+              "Symbol": "HFIN",
+              "Current Price": "1195",
+              "Last Price": "1096.9",
+              "Percent Change": "8.94%",
+              "Volume": "980897",
+              "Turnover": "1218641286"
+            },
+            {
+              "Symbol": "RLEL",
+              "Current Price": "1321.1",
+              "Last Price": "1252.4",
+              "Percent Change": "5.49%",
+              "Volume": "409114",
+              "Turnover": "546228105"
+            },
+            {
+              "Symbol": "NABBC",
+              "Current Price": "1236",
+              "Last Price": "1176",
+              "Percent Change": "5.10%",
+              "Volume": "104566",
+              "Turnover": "127751724"
+            },
+            {
+              "Symbol": "ENL",
+              "Current Price": "898",
+              "Last Price": "873",
+              "Percent Change": "2.86%",
+              "Volume": "6970",
+              "Turnover": "6275944"
+            },
+            {
+              "Symbol": "BNT",
+              "Current Price": "11790",
+              "Last Price": "11500.1",
+              "Percent Change": "2.52%",
+              "Volume": "289",
+              "Turnover": "3362619"
+            }
+          ]
+        },
+        {
+          "tableIndex": 4,
+          "headers": [
+            "Symbol",
+            "Current Price",
+            "Last Price",
+            "Percent Change",
+            "Volume",
+            "Turnover"
+          ],
+          "rows": [
+            {
+              "Symbol": "SKHEL",
+              "Current Price": "1635",
+              "Last Price": "378.2",
+              "Percent Change": "332.31%",
+              "Volume": "182351",
+              "Turnover": "292897304"
+            },
+            {
+              "Symbol": "HFIN",
+              "Current Price": "1195",
+              "Last Price": "349.8",
+              "Percent Change": "241.62%",
+              "Volume": "1016057",
+              "Turnover": "1249814896"
+            },
+            {
+              "Symbol": "RLEL",
+              "Current Price": "1321.1",
+              "Last Price": "399.3",
+              "Percent Change": "230.85%",
+              "Volume": "434584",
+              "Turnover": "573755751"
+            },
+            {
+              "Symbol": "SKHL",
+              "Current Price": "1124",
+              "Last Price": "483.1",
+              "Percent Change": "132.66%",
+              "Volume": "663632",
+              "Turnover": "792142200"
+            },
+            {
+              "Symbol": "BJHL",
+              "Current Price": "1142",
+              "Last Price": "578.6",
+              "Percent Change": "97.37%",
+              "Volume": "585691",
+              "Turnover": "661132011"
+            },
+            {
+              "Symbol": "RSML",
+              "Current Price": "4220",
+              "Last Price": "2679.3",
+              "Percent Change": "57.50%",
+              "Volume": "1438263",
+              "Turnover": "5923011431"
+            },
+            {
+              "Symbol": "CORBL",
+              "Current Price": "2407",
+              "Last Price": "1900",
+              "Percent Change": "26.68%",
+              "Volume": "279638",
+              "Turnover": "554427439"
+            },
+            {
+              "Symbol": "SOHL",
+              "Current Price": "814.9",
+              "Last Price": "691.1",
+              "Percent Change": "17.91%",
+              "Volume": "5325275",
+              "Turnover": "4108659575"
+            },
+            {
+              "Symbol": "JHAPA",
+              "Current Price": "1600",
+              "Last Price": "1387.9",
+              "Percent Change": "15.28%",
+              "Volume": "306049",
+              "Turnover": "430308143"
+            },
+            {
+              "Symbol": "HHL",
+              "Current Price": "388",
+              "Last Price": "357",
+              "Percent Change": "8.68%",
+              "Volume": "2882055",
+              "Turnover": "1123691563"
+            }
+          ]
+        },
+        {
+          "tableIndex": 5,
+          "headers": [
+            "Symbol",
+            "Current Price",
+            "Turn Over"
+          ],
+          "rows": [
+            {
+              "Symbol": "RIDI",
+              "Current Price": "362",
+              "Turn Over": "NPR 273,847,896.50"
+            },
+            {
+              "Symbol": "RSML",
+              "Current Price": "4220",
+              "Turn Over": "NPR 249,297,973.10"
+            },
+            {
+              "Symbol": "NHPC",
+              "Current Price": "312.5",
+              "Turn Over": "NPR 244,474,308.20"
+            },
+            {
+              "Symbol": "SOHL",
+              "Current Price": "814.9",
+              "Turn Over": "NPR 237,800,948.20"
+            },
+            {
+              "Symbol": "AKJCL",
+              "Current Price": "389.9",
+              "Turn Over": "NPR 202,992,633.20"
+            },
+            {
+              "Symbol": "SYPNL",
+              "Current Price": "1579",
+              "Turn Over": "NPR 145,145,112.40"
+            },
+            {
+              "Symbol": "SHIVM",
+              "Current Price": "669.7",
+              "Turn Over": "NPR 131,755,834.60"
+            },
+            {
+              "Symbol": "HFIN",
+              "Current Price": "1195",
+              "Turn Over": "NPR 128,612,529.40"
+            },
+            {
+              "Symbol": "CORBL",
+              "Current Price": "2407",
+              "Turn Over": "NPR 127,689,149.90"
+            },
+            {
+              "Symbol": "NRIC",
+              "Current Price": "917",
+              "Turn Over": "NPR 127,494,611.90"
+            }
+          ]
+        },
+        {
+          "tableIndex": 6,
+          "headers": [
+            "Symbol",
+            "Current Price",
+            "Turn Over"
+          ],
+          "rows": [
+            {
+              "Symbol": "NHPC",
+              "Current Price": "312.5",
+              "Turn Over": "NPR 4,095,306,346.80"
+            },
+            {
+              "Symbol": "RSML",
+              "Current Price": "4220",
+              "Turn Over": "NPR 3,270,430,111.80"
+            },
+            {
+              "Symbol": "SOHL",
+              "Current Price": "814.9",
+              "Turn Over": "NPR 2,887,333,835.00"
+            },
+            {
+              "Symbol": "RIDI",
+              "Current Price": "362",
+              "Turn Over": "NPR 2,389,133,911.40"
+            },
+            {
+              "Symbol": "AKJCL",
+              "Current Price": "389.9",
+              "Turn Over": "NPR 2,143,178,505.00"
+            },
+            {
+              "Symbol": "SYPNL",
+              "Current Price": "1579",
+              "Turn Over": "NPR 2,106,598,243.20"
+            },
+            {
+              "Symbol": "SHIVM",
+              "Current Price": "669.7",
+              "Turn Over": "NPR 2,085,349,314.20"
+            },
+            {
+              "Symbol": "NGPL",
+              "Current Price": "445",
+              "Turn Over": "NPR 1,668,934,615.10"
+            },
+            {
+              "Symbol": "HDHPC",
+              "Current Price": "229.8",
+              "Turn Over": "NPR 1,494,949,673.90"
+            },
+            {
+              "Symbol": "NRN",
+              "Current Price": "1490",
+              "Turn Over": "NPR 1,269,899,468.00"
+            }
+          ]
+        },
+        {
+          "tableIndex": 7,
+          "headers": [
+            "Symbol",
+            "Current Price",
+            "Turn Over"
+          ],
+          "rows": [
+            {
+              "Symbol": "NHPC",
+              "Current Price": "312.5",
+              "Turn Over": "NPR 6,759,776,019.40"
+            },
+            {
+              "Symbol": "RSML",
+              "Current Price": "4220",
+              "Turn Over": "NPR 5,923,011,431.40"
+            },
+            {
+              "Symbol": "RIDI",
+              "Current Price": "362",
+              "Turn Over": "NPR 4,871,498,965.90"
+            },
+            {
+              "Symbol": "SHIVM",
+              "Current Price": "669.7",
+              "Turn Over": "NPR 4,603,126,894.20"
+            },
+            {
+              "Symbol": "SYPNL",
+              "Current Price": "1579",
+              "Turn Over": "NPR 4,600,587,947.90"
+            },
+            {
+              "Symbol": "AKJCL",
+              "Current Price": "389.9",
+              "Turn Over": "NPR 4,414,524,588.20"
+            },
+            {
+              "Symbol": "HRL",
+              "Current Price": "683",
+              "Turn Over": "NPR 4,148,552,540.50"
+            },
+            {
+              "Symbol": "NGPL",
+              "Current Price": "445",
+              "Turn Over": "NPR 4,116,146,108.00"
+            },
+            {
+              "Symbol": "SOHL",
+              "Current Price": "814.9",
+              "Turn Over": "NPR 4,108,659,574.60"
+            },
+            {
+              "Symbol": "NRN",
+              "Current Price": "1490",
+              "Turn Over": "NPR 3,809,748,077.10"
+            }
+          ]
+        },
+        {
+          "tableIndex": 8,
+          "headers": [
+            "Symbol",
+            "Price(NPR)",
+            "Change",
+            "Volume",
+            "R-Volume",
+            "Float Cap",
+            "Market Cap"
+          ],
+          "rows": [
+            {
+              "Symbol": "PBD88",
+              "Price(NPR)": "1,221.10",
+              "Change": "-4.59%",
+              "Volume": "68.00",
+              "R-Volume": "-",
+              "Float Cap": "- Cr.",
+              "Market Cap": "0.00 Cr."
+            },
+            {
+              "Symbol": "MCHL",
+              "Price(NPR)": "350.30",
+              "Change": "-3.50%",
+              "Volume": "8,872.00",
+              "R-Volume": "110.94 %",
+              "Float Cap": "38.52 Cr.",
+              "Market Cap": "190.07 Cr."
+            },
+            {
+              "Symbol": "NICFC",
+              "Price(NPR)": "9.20",
+              "Change": "-3.16%",
+              "Volume": "1,100.00",
+              "R-Volume": "-",
+              "Float Cap": "- Cr.",
+              "Market Cap": "0.00 Cr."
+            },
+            {
+              "Symbol": "KBLD89",
+              "Price(NPR)": "1,297.70",
+              "Change": "-3.00%",
+              "Volume": "1.00",
+              "R-Volume": "-",
+              "Float Cap": "- Cr.",
+              "Market Cap": "0.00 Cr."
+            },
+            {
+              "Symbol": "SBLD89",
+              "Price(NPR)": "1,260.10",
+              "Change": "-2.99%",
+              "Volume": "25.00",
+              "R-Volume": "-",
+              "Float Cap": "- Cr.",
+              "Market Cap": "0.00 Cr."
+            },
+            {
+              "Symbol": "EHPL",
+              "Price(NPR)": "390.00",
+              "Change": "-2.99%",
+              "Volume": "66,734.00",
+              "R-Volume": "130.28 %",
+              "Float Cap": "241.80 Cr.",
+              "Market Cap": "241.80 Cr."
+            },
+            {
+              "Symbol": "RMF2",
+              "Price(NPR)": "10.01",
+              "Change": "-2.82%",
+              "Volume": "17,200.00",
+              "R-Volume": "-",
+              "Float Cap": "- Cr.",
+              "Market Cap": "0.00 Cr."
+            },
+            {
+              "Symbol": "BNHC",
+              "Price(NPR)": "329.00",
+              "Change": "-2.66%",
+              "Volume": "32,814.00",
+              "R-Volume": "70.97 %",
+              "Float Cap": "263.20 Cr.",
+              "Market Cap": "263.20 Cr."
+            },
+            {
+              "Symbol": "NRIC",
+              "Price(NPR)": "917.00",
+              "Change": "-2.56%",
+              "Volume": "140,081.00",
+              "R-Volume": "165.92 %",
+              "Float Cap": "1,969.30 Cr.",
+              "Market Cap": "12,308.15 Cr."
+            },
+            {
+              "Symbol": "BGWT",
+              "Price(NPR)": "735.00",
+              "Change": "-2.52%",
+              "Volume": "4,080.00",
+              "R-Volume": "109.44 %",
+              "Float Cap": "73.28 Cr.",
+              "Market Cap": "498.51 Cr."
+            }
+          ]
+        },
+        {
+          "tableIndex": 9,
+          "headers": [
+            "Symbol",
+            "Current Price",
+            "Last Price",
+            "Percent Change",
+            "Volume",
+            "Turnover"
+          ],
+          "rows": [
+            {
+              "Symbol": "DOLTI",
+              "Current Price": "382",
+              "Last Price": "449",
+              "Percent Change": "-14.92%",
+              "Volume": "637239",
+              "Turnover": "250732801"
+            },
+            {
+              "Symbol": "SYPNL",
+              "Current Price": "1579",
+              "Last Price": "1750",
+              "Percent Change": "-9.77%",
+              "Volume": "505956",
+              "Turnover": "832562441"
+            },
+            {
+              "Symbol": "MCHL",
+              "Current Price": "350.3",
+              "Last Price": "388",
+              "Percent Change": "-9.72%",
+              "Volume": "39424",
+              "Turnover": "14748724"
+            },
+            {
+              "Symbol": "GMLI",
+              "Current Price": "1375",
+              "Last Price": "1520",
+              "Percent Change": "-9.54%",
+              "Volume": "17882",
+              "Turnover": "25389529"
+            },
+            {
+              "Symbol": "BEDC",
+              "Current Price": "386.9",
+              "Last Price": "427.6",
+              "Percent Change": "-9.52%",
+              "Volume": "577132",
+              "Turnover": "232886635"
+            },
+            {
+              "Symbol": "RSML",
+              "Current Price": "4220",
+              "Last Price": "4649.1",
+              "Percent Change": "-9.23%",
+              "Volume": "318438",
+              "Turnover": "1374231657"
+            },
+            {
+              "Symbol": "KKHC",
+              "Current Price": "272",
+              "Last Price": "299",
+              "Percent Change": "-9.03%",
+              "Volume": "400090",
+              "Turnover": "113055386"
+            },
+            {
+              "Symbol": "CHL",
+              "Current Price": "292",
+              "Last Price": "316",
+              "Percent Change": "-7.59%",
+              "Volume": "184524",
+              "Turnover": "55175111"
+            },
+            {
+              "Symbol": "NMIC",
+              "Current Price": "1078",
+              "Last Price": "1165.1",
+              "Percent Change": "-7.48%",
+              "Volume": "48808",
+              "Turnover": "54348426"
+            },
+            {
+              "Symbol": "NRIC",
+              "Current Price": "917",
+              "Last Price": "987.9",
+              "Percent Change": "-7.18%",
+              "Volume": "362777",
+              "Turnover": "338262377"
+            }
+          ]
+        },
+        {
+          "tableIndex": 10,
+          "headers": [
+            "Symbol",
+            "Current Price",
+            "Last Price",
+            "Percent Change",
+            "Volume",
+            "Turnover"
+          ],
+          "rows": [
+            {
+              "Symbol": "BEDC",
+              "Current Price": "386.9",
+              "Last Price": "509",
+              "Percent Change": "-23.99%",
+              "Volume": "1783928",
+              "Turnover": "756826017"
+            },
+            {
+              "Symbol": "DOLTI",
+              "Current Price": "382",
+              "Last Price": "498.5",
+              "Percent Change": "-23.37%",
+              "Volume": "734754",
+              "Turnover": "296332570"
+            },
+            {
+              "Symbol": "NRIC",
+              "Current Price": "917",
+              "Last Price": "1179",
+              "Percent Change": "-22.22%",
+              "Volume": "1981216",
+              "Turnover": "1999503590"
+            },
+            {
+              "Symbol": "GMLI",
+              "Current Price": "1375",
+              "Last Price": "1725",
+              "Percent Change": "-20.29%",
+              "Volume": "74707",
+              "Turnover": "113570287"
+            },
+            {
+              "Symbol": "HRL",
+              "Current Price": "683",
+              "Last Price": "835",
+              "Percent Change": "-18.20%",
+              "Volume": "5637045",
+              "Turnover": "4148552541"
+            },
+            {
+              "Symbol": "SYPNL",
+              "Current Price": "1579",
+              "Last Price": "1899.9",
+              "Percent Change": "-16.89%",
+              "Volume": "2563884",
+              "Turnover": "4600587948"
+            },
+            {
+              "Symbol": "SAPDBL",
+              "Current Price": "803",
+              "Last Price": "954.4",
+              "Percent Change": "-15.86%",
+              "Volume": "888563",
+              "Turnover": "762629220"
+            },
+            {
+              "Symbol": "NMIC",
+              "Current Price": "1078",
+              "Last Price": "1274",
+              "Percent Change": "-15.38%",
+              "Volume": "164536",
+              "Turnover": "191817923"
+            },
+            {
+              "Symbol": "UNLB",
+              "Current Price": "1479",
+              "Last Price": "1745",
+              "Percent Change": "-15.24%",
+              "Volume": "44444",
+              "Turnover": "69781243"
+            },
+            {
+              "Symbol": "MCHL",
+              "Current Price": "350.3",
+              "Last Price": "411",
+              "Percent Change": "-14.77%",
+              "Volume": "121249",
+              "Turnover": "46930561"
+            }
+          ]
+        },
+        {
+          "tableIndex": 11,
+          "headers": [
+            "Sector",
+            "0-15",
+            "15-30",
+            "30-50",
+            "50-75",
+            "75-100",
+            "> 100"
+          ],
+          "rows": [
+            {
+              "Sector": "Commercial Banks",
+              "0-15": "9",
+              "15-30": "7",
+              "30-50": "2",
+              "50-75": "0",
+              "75-100": "0",
+              "> 100": "1"
+            },
+            {
+              "Sector": "Development Banks",
+              "0-15": "0",
+              "15-30": "5",
+              "30-50": "3",
+              "50-75": "2",
+              "75-100": "2",
+              "> 100": "1"
+            },
+            {
+              "Sector": "Finance",
+              "0-15": "1",
+              "15-30": "3",
+              "30-50": "2",
+              "50-75": "2",
+              "75-100": "1",
+              "> 100": "3"
+            },
+            {
+              "Sector": "Hotels",
+              "0-15": "0",
+              "15-30": "0",
+              "30-50": "0",
+              "50-75": "0",
+              "75-100": "1",
+              "> 100": "3"
+            },
+            {
+              "Sector": "Hydro Power",
+              "0-15": "1",
+              "15-30": "3",
+              "30-50": "14",
+              "50-75": "15",
+              "75-100": "7",
+              "> 100": "23"
+            },
+            {
+              "Sector": "Investment",
+              "0-15": "0",
+              "15-30": "0",
+              "30-50": "2",
+              "50-75": "1",
+              "75-100": "2",
+              "> 100": "2"
+            },
+            {
+              "Sector": "Life Insurance",
+              "0-15": "0",
+              "15-30": "0",
+              "30-50": "4",
+              "50-75": "3",
+              "75-100": "3",
+              "> 100": "4"
+            },
+            {
+              "Sector": "Manufacturing And Processing",
+              "0-15": "1",
+              "15-30": "1",
+              "30-50": "3",
+              "50-75": "0",
+              "75-100": "1",
+              "> 100": "3"
+            },
+            {
+              "Sector": "Microfinance",
+              "0-15": "0",
+              "15-30": "16",
+              "30-50": "13",
+              "50-75": "9",
+              "75-100": "6",
+              "> 100": "4"
+            },
+            {
+              "Sector": "Non Life Insurance",
+              "0-15": "0",
+              "15-30": "0",
+              "30-50": "3",
+              "50-75": "3",
+              "75-100": "1",
+              "> 100": "5"
+            },
+            {
+              "Sector": "Others",
+              "0-15": "0",
+              "15-30": "0",
+              "30-50": "1",
+              "50-75": "1",
+              "75-100": "1",
+              "> 100": "4"
+            },
+            {
+              "Sector": "Tradings",
+              "0-15": "0",
+              "15-30": "0",
+              "30-50": "0",
+              "50-75": "0",
+              "75-100": "0",
+              "> 100": "1"
+            }
+          ]
+        },
+        {
+          "tableIndex": 12,
+          "headers": [
+            "Sector",
+            "0-1",
+            "1-2",
+            "2-4",
+            "4-6",
+            "6-10",
+            "> 10"
+          ],
+          "rows": [
+            {
+              "Sector": "Commercial Banks",
+              "0-1": "2",
+              "1-2": "13",
+              "2-4": "4",
+              "4-6": "0",
+              "6-10": "0",
+              "> 10": "0"
+            },
+            {
+              "Sector": "Development Banks",
+              "0-1": "0",
+              "1-2": "0",
+              "2-4": "9",
+              "4-6": "1",
+              "6-10": "2",
+              "> 10": "3"
+            },
+            {
+              "Sector": "Finance",
+              "0-1": "0",
+              "1-2": "0",
+              "2-4": "6",
+              "4-6": "7",
+              "6-10": "1",
+              "> 10": "0"
+            },
+            {
+              "Sector": "Hotels",
+              "0-1": "0",
+              "1-2": "0",
+              "2-4": "1",
+              "4-6": "2",
+              "6-10": "3",
+              "> 10": "1"
+            },
+            {
+              "Sector": "Hydro Power",
+              "0-1": "0",
+              "1-2": "0",
+              "2-4": "42",
+              "4-6": "32",
+              "6-10": "18",
+              "> 10": "3"
+            },
+            {
+              "Sector": "Investment",
+              "0-1": "0",
+              "1-2": "0",
+              "2-4": "2",
+              "4-6": "0",
+              "6-10": "3",
+              "> 10": "2"
+            },
+            {
+              "Sector": "Life Insurance",
+              "0-1": "0",
+              "1-2": "0",
+              "2-4": "8",
+              "4-6": "3",
+              "6-10": "1",
+              "> 10": "2"
+            },
+            {
+              "Sector": "Manufacturing And Processing",
+              "0-1": "1",
+              "1-2": "0",
+              "2-4": "4",
+              "4-6": "2",
+              "6-10": "3",
+              "> 10": "4"
+            },
+            {
+              "Sector": "Microfinance",
+              "0-1": "0",
+              "1-2": "0",
+              "2-4": "6",
+              "4-6": "22",
+              "6-10": "15",
+              "> 10": "7"
+            },
+            {
+              "Sector": "Non Life Insurance",
+              "0-1": "0",
+              "1-2": "0",
+              "2-4": "12",
+              "4-6": "0",
+              "6-10": "0",
+              "> 10": "1"
+            },
+            {
+              "Sector": "Others",
+              "0-1": "0",
+              "1-2": "1",
+              "2-4": "0",
+              "4-6": "3",
+              "6-10": "3",
+              "> 10": "2"
+            },
+            {
+              "Sector": "Tradings",
+              "0-1": "0",
+              "1-2": "0",
+              "2-4": "0",
+              "4-6": "0",
+              "6-10": "0",
+              "> 10": "1"
+            }
+          ]
+        },
+        {
+          "tableIndex": 13,
+          "headers": [
+            "Sector",
+            "1-100",
+            "100-300",
+            "300-500",
+            "500-1000",
+            "1000-2500",
+            "> 2500"
+          ],
+          "rows": [
+            {
+              "Sector": "Commercial Banks",
+              "1-100": "0",
+              "100-300": "12",
+              "300-500": "5",
+              "500-1000": "3",
+              "1000-2500": "0",
+              "> 2500": "0"
+            },
+            {
+              "Sector": "Development Banks",
+              "1-100": "0",
+              "100-300": "0",
+              "300-500": "8",
+              "500-1000": "4",
+              "1000-2500": "4",
+              "> 2500": "0"
+            },
+            {
+              "Sector": "Finance",
+              "1-100": "0",
+              "100-300": "0",
+              "300-500": "7",
+              "500-1000": "8",
+              "1000-2500": "0",
+              "> 2500": "0"
+            },
+            {
+              "Sector": "Hotels",
+              "1-100": "0",
+              "100-300": "0",
+              "300-500": "1",
+              "500-1000": "6",
+              "1000-2500": "1",
+              "> 2500": "0"
+            },
+            {
+              "Sector": "Hydro Power",
+              "1-100": "0",
+              "100-300": "19",
+              "300-500": "38",
+              "500-1000": "40",
+              "1000-2500": "5",
+              "> 2500": "0"
+            },
+            {
+              "Sector": "Investment",
+              "1-100": "0",
+              "100-300": "3",
+              "300-500": "0",
+              "500-1000": "2",
+              "1000-2500": "3",
+              "> 2500": "0"
+            },
+            {
+              "Sector": "Life Insurance",
+              "1-100": "0",
+              "100-300": "0",
+              "300-500": "9",
+              "500-1000": "3",
+              "1000-2500": "2",
+              "> 2500": "0"
+            },
+            {
+              "Sector": "Manufacturing And Processing",
+              "1-100": "0",
+              "100-300": "1",
+              "300-500": "2",
+              "500-1000": "3",
+              "1000-2500": "5",
+              "> 2500": "4"
+            },
+            {
+              "Sector": "Microfinance",
+              "1-100": "0",
+              "100-300": "0",
+              "300-500": "0",
+              "500-1000": "24",
+              "1000-2500": "23",
+              "> 2500": "3"
+            },
+            {
+              "Sector": "Non Life Insurance",
+              "1-100": "0",
+              "100-300": "0",
+              "300-500": "5",
+              "500-1000": "7",
+              "1000-2500": "1",
+              "> 2500": "1"
+            },
+            {
+              "Sector": "Others",
+              "1-100": "0",
+              "100-300": "0",
+              "300-500": "1",
+              "500-1000": "6",
+              "1000-2500": "2",
+              "> 2500": "0"
+            },
+            {
+              "Sector": "Tradings",
+              "1-100": "0",
+              "100-300": "0",
+              "300-500": "0",
+              "500-1000": "0",
+              "1000-2500": "0",
+              "> 2500": "2"
+            }
+          ]
+        },
+        {
+          "tableIndex": 14,
+          "headers": [
+            "Sector",
+            "0-2.5%",
+            "2.5%-5%",
+            ">5%"
+          ],
+          "rows": [
+            {
+              "Sector": "Commercial Banks",
+              "0-2.5%": "4",
+              "2.5%-5%": "9",
+              ">5%": "0"
+            },
+            {
+              "Sector": "Development Banks",
+              "0-2.5%": "5",
+              "2.5%-5%": "4",
+              ">5%": "0"
+            },
+            {
+              "Sector": "Finance",
+              "0-2.5%": "2",
+              "2.5%-5%": "2",
+              ">5%": "0"
+            },
+            {
+              "Sector": "Hotels",
+              "0-2.5%": "4",
+              "2.5%-5%": "0",
+              ">5%": "0"
+            },
+            {
+              "Sector": "Hydro Power",
+              "0-2.5%": "22",
+              "2.5%-5%": "6",
+              ">5%": "0"
+            },
+            {
+              "Sector": "Investment",
+              "0-2.5%": "6",
+              "2.5%-5%": "1",
+              ">5%": "0"
+            },
+            {
+              "Sector": "Life Insurance",
+              "0-2.5%": "3",
+              "2.5%-5%": "8",
+              ">5%": "0"
+            },
+            {
+              "Sector": "Manufacturing And Processing",
+              "0-2.5%": "4",
+              "2.5%-5%": "1",
+              ">5%": "1"
+            },
+            {
+              "Sector": "Microfinance",
+              "0-2.5%": "22",
+              "2.5%-5%": "1",
+              ">5%": "0"
+            },
+            {
+              "Sector": "Non Life Insurance",
+              "0-2.5%": "8",
+              "2.5%-5%": "3",
+              ">5%": "0"
+            },
+            {
+              "Sector": "Others",
+              "0-2.5%": "3",
+              "2.5%-5%": "1",
+              ">5%": "0"
+            },
+            {
+              "Sector": "Tradings",
+              "0-2.5%": "1",
+              "2.5%-5%": "0",
+              ">5%": "0"
+            }
+          ]
+        },
+        {
+          "tableIndex": 15,
+          "headers": [],
+          "rows": [
+            {
+              "Col_0": "Commercial Banking",
+              "Col_1": "10 %",
+              "Col_2": "10 %",
+              "Col_3": "40 %",
+              "Col_4": "75 %",
+              "Col_5": "75 %"
+            },
+            {
+              "Col_0": "Development Bank",
+              "Col_1": "12.5 %",
+              "Col_2": "12.5 %",
+              "Col_3": "18.75 %",
+              "Col_4": "43.75 %",
+              "Col_5": "68.75 %"
+            },
+            {
+              "Col_0": "Finance",
+              "Col_1": "0 %",
+              "Col_2": "0 %",
+              "Col_3": "0 %",
+              "Col_4": "20 %",
+              "Col_5": "60 %"
+            },
+            {
+              "Col_0": "Hotels and Tourism",
+              "Col_1": "12.5 %",
+              "Col_2": "12.5 %",
+              "Col_3": "0 %",
+              "Col_4": "12.5 %",
+              "Col_5": "12.5 %"
+            },
+            {
+              "Col_0": "Hydropower",
+              "Col_1": "6.8 %",
+              "Col_2": "11.65 %",
+              "Col_3": "12.62 %",
+              "Col_4": "36.89 %",
+              "Col_5": "49.51 %"
+            },
+            {
+              "Col_0": "INVESTMENT",
+              "Col_1": "12.5 %",
+              "Col_2": "12.5 %",
+              "Col_3": "0 %",
+              "Col_4": "0 %",
+              "Col_5": "12.5 %"
+            },
+            {
+              "Col_0": "Life Insurance",
+              "Col_1": "0 %",
+              "Col_2": "0 %",
+              "Col_3": "0 %",
+              "Col_4": "7.14 %",
+              "Col_5": "57.14 %"
+            },
+            {
+              "Col_0": "Manufacturing and Processing",
+              "Col_1": "20 %",
+              "Col_2": "13.33 %",
+              "Col_3": "13.33 %",
+              "Col_4": "13.33 %",
+              "Col_5": "33.33 %"
+            },
+            {
+              "Col_0": "Microfinance",
+              "Col_1": "4 %",
+              "Col_2": "4 %",
+              "Col_3": "6 %",
+              "Col_4": "10 %",
+              "Col_5": "26 %"
+            },
+            {
+              "Col_0": "Nonlife Insurance",
+              "Col_1": "0 %",
+              "Col_2": "0 %",
+              "Col_3": "7.14 %",
+              "Col_4": "7.14 %",
+              "Col_5": "14.29 %"
+            },
+            {
+              "Col_0": "Others",
+              "Col_1": "22.22 %",
+              "Col_2": "11.11 %",
+              "Col_3": "11.11 %",
+              "Col_4": "11.11 %",
+              "Col_5": "33.33 %"
+            },
+            {
+              "Col_0": "Trading",
+              "Col_1": "50 %",
+              "Col_2": "50 %",
+              "Col_3": "50 %",
+              "Col_4": "50 %",
+              "Col_5": "50 %"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "EOD Summary",
+      "url": "https://nepsealpha.com/sastoshare/daily-summary",
+      "tables": [
+        {
+          "tableIndex": 1,
+          "headers": [],
+          "rows": [
+            {
+              "Col_0": "NEPSE"
+            },
+            {
+              "Col_0": "Date",
+              "Col_1": "April 24, 2026"
+            },
+            {
+              "Col_0": "Current",
+              "Col_1": "2,788.70"
+            },
+            {
+              "Col_0": "Daily Gain",
+              "Col_1": "0.05 %"
+            },
+            {
+              "Col_0": "Turnover",
+              "Col_1": "NPR.5,270,399,727.64"
+            },
+            {
+              "Col_0": "52Wks Change",
+              "Col_1": "5.00 %"
+            }
+          ]
+        },
+        {
+          "tableIndex": 2,
+          "headers": [
+            "Sector",
+            "Current",
+            "Daily Gain",
+            "Turnover",
+            "+Ve Stocks",
+            "-Ve Stocks",
+            "52 weeks Change"
+          ],
+          "rows": [
+            {
+              "Sector": "BANKING",
+              "Current": "1446.82",
+              "Daily Gain": "0.22 %",
+              "Turnover": "342929917.8",
+              "+Ve Stocks": "14",
+              "-Ve Stocks": "6",
+              "52 weeks Change": "8.42 %"
+            },
+            {
+              "Sector": "TRADING",
+              "Current": "3821.95",
+              "Daily Gain": "0.58 %",
+              "Turnover": "55114484",
+              "+Ve Stocks": "2",
+              "-Ve Stocks": "0",
+              "52 weeks Change": "-14.05 %"
+            },
+            {
+              "Sector": "HOTELS",
+              "Current": "8167.38",
+              "Daily Gain": "0.32 %",
+              "Turnover": "174790978.2",
+              "+Ve Stocks": "6",
+              "-Ve Stocks": "2",
+              "52 weeks Change": "25.91 %"
+            },
+            {
+              "Sector": "DEVBANK",
+              "Current": "5980.07",
+              "Daily Gain": "0.22 %",
+              "Turnover": "430017756.8",
+              "+Ve Stocks": "3",
+              "-Ve Stocks": "12",
+              "52 weeks Change": "9.75 %"
+            },
+            {
+              "Sector": "HYDROPOWER",
+              "Current": "3999.67",
+              "Daily Gain": "0.25 %",
+              "Turnover": "2576810202",
+              "+Ve Stocks": "32",
+              "-Ve Stocks": "61",
+              "52 weeks Change": "15.13 %"
+            },
+            {
+              "Sector": "FINANCE",
+              "Current": "2380.8",
+              "Daily Gain": "0.62 %",
+              "Turnover": "72364255.3",
+              "+Ve Stocks": "4",
+              "-Ve Stocks": "11",
+              "52 weeks Change": "-3.63 %"
+            },
+            {
+              "Sector": "NONLIFEINSU",
+              "Current": "10881.84",
+              "Daily Gain": "0.06 %",
+              "Turnover": "64950913",
+              "+Ve Stocks": "4",
+              "-Ve Stocks": "9",
+              "52 weeks Change": "-12.06 %"
+            },
+            {
+              "Sector": "MANUFACTURE",
+              "Current": "11702.19",
+              "Daily Gain": "0.66 %",
+              "Turnover": "732833517",
+              "+Ve Stocks": "4",
+              "-Ve Stocks": "8",
+              "52 weeks Change": "62.13 %"
+            },
+            {
+              "Sector": "OTHERS",
+              "Current": "2012.43",
+              "Daily Gain": "1.02 %",
+              "Turnover": "291536078.6",
+              "+Ve Stocks": "1",
+              "-Ve Stocks": "8",
+              "52 weeks Change": "-15.42 %"
+            },
+            {
+              "Sector": "MICROFINANCE",
+              "Current": "4825.55",
+              "Daily Gain": "0.35 %",
+              "Turnover": "153641718.7",
+              "+Ve Stocks": "14",
+              "-Ve Stocks": "35",
+              "52 weeks Change": "1.23 %"
+            },
+            {
+              "Sector": "LIFEINSU",
+              "Current": "12543.62",
+              "Daily Gain": "0.26 %",
+              "Turnover": "91852097.3",
+              "+Ve Stocks": "3",
+              "-Ve Stocks": "10",
+              "52 weeks Change": "-4.85 %"
+            },
+            {
+              "Sector": "INVESTMENT",
+              "Current": "104.24",
+              "Daily Gain": "0.02 %",
+              "Turnover": "181634085.8",
+              "+Ve Stocks": "3",
+              "-Ve Stocks": "5",
+              "52 weeks Change": "-7.87 %"
+            }
+          ]
+        },
+        {
+          "tableIndex": 3,
+          "headers": [
+            "Symbol",
+            "Sector",
+            "LTP",
+            "Daily Chg",
+            "Intraday gain",
+            "52 Wks Hi/Lo",
+            "Volume"
+          ],
+          "rows": [
+            {
+              "Symbol": "MKHL",
+              "Sector": "Hydro Power",
+              "LTP": "724.5",
+              "Daily Chg": "15.00 %",
+              "Intraday gain": "18.56 %",
+              "52 Wks Hi/Lo": "994.22 / 630.00",
+              "Volume": "13466"
+            },
+            {
+              "Symbol": "CORBL",
+              "Sector": "Development Banks",
+              "LTP": "2407",
+              "Daily Chg": "12.62 %",
+              "Intraday gain": "14.62 %",
+              "52 Wks Hi/Lo": "2,688.88 / 1,450.00",
+              "Volume": "60220"
+            },
+            {
+              "Symbol": "PCIL",
+              "Sector": "Manufacturing And Processing",
+              "LTP": "971.4",
+              "Daily Chg": "15.00 %",
+              "Intraday gain": "9.61 %",
+              "52 Wks Hi/Lo": "971.40 / 330.00",
+              "Volume": "9180"
+            },
+            {
+              "Symbol": "SIPD",
+              "Sector": "Hydro Power",
+              "LTP": "920.1",
+              "Daily Chg": "15.00 %",
+              "Intraday gain": "9.52 %",
+              "52 Wks Hi/Lo": "920.10 / 312.70",
+              "Volume": "1800"
+            },
+            {
+              "Symbol": "CKHL",
+              "Sector": "Hydro Power",
+              "LTP": "688",
+              "Daily Chg": "1.91 %",
+              "Intraday gain": "7.17 %",
+              "52 Wks Hi/Lo": "774.00 / 564.10",
+              "Volume": "3413"
+            },
+            {
+              "Symbol": "ILBS",
+              "Sector": "Microfinance",
+              "LTP": "957",
+              "Daily Chg": "0.53 %",
+              "Intraday gain": "5.82 %",
+              "52 Wks Hi/Lo": "1,267.12 / 805.32",
+              "Volume": "9268"
+            },
+            {
+              "Symbol": "RFPL",
+              "Sector": "Hydro Power",
+              "LTP": "373",
+              "Daily Chg": "0.30 %",
+              "Intraday gain": "5.55 %",
+              "52 Wks Hi/Lo": "455.10 / 282.05",
+              "Volume": "83952"
+            },
+            {
+              "Symbol": "SKHL",
+              "Sector": "Hydro Power",
+              "LTP": "1124",
+              "Daily Chg": "2.18 %",
+              "Intraday gain": "5.33 %",
+              "52 Wks Hi/Lo": "1,285.00 / 330.00",
+              "Volume": "46323"
+            },
+            {
+              "Symbol": "RHGCL",
+              "Sector": "Hydro Power",
+              "LTP": "300",
+              "Daily Chg": "0.00 %",
+              "Intraday gain": "5.26 %",
+              "52 Wks Hi/Lo": "431.00 / 226.00",
+              "Volume": "47921"
+            },
+            {
+              "Symbol": "SAIL",
+              "Sector": "Manufacturing And Processing",
+              "LTP": "1218",
+              "Daily Chg": "4.91 %",
+              "Intraday gain": "4.91 %",
+              "52 Wks Hi/Lo": "1,555.00 / 331.80",
+              "Volume": "50963"
+            }
+          ]
+        },
+        {
+          "tableIndex": 4,
+          "headers": [
+            "Symbol",
+            "Sector",
+            "LTP",
+            "Daily Chg",
+            "Intraday Loss",
+            "52 Wks Hi/Lo",
+            "Volume"
+          ],
+          "rows": [
+            {
+              "Symbol": "NRIC",
+              "Sector": "Others",
+              "LTP": "917",
+              "Daily Chg": "-2.56 %",
+              "Intraday Loss": "-7.20 %",
+              "52 Wks Hi/Lo": "1,731.89 / 917.00",
+              "Volume": "140081"
+            },
+            {
+              "Symbol": "BEDC",
+              "Sector": "Hydro Power",
+              "LTP": "386.9",
+              "Daily Chg": "-2.05 %",
+              "Intraday Loss": "-6.70 %",
+              "52 Wks Hi/Lo": "862.62 / 386.90",
+              "Volume": "63573"
+            },
+            {
+              "Symbol": "EHPL",
+              "Sector": "Hydro Power",
+              "LTP": "390",
+              "Daily Chg": "-2.99 %",
+              "Intraday Loss": "-6.70 %",
+              "52 Wks Hi/Lo": "661.54 / 390.00",
+              "Volume": "66734"
+            },
+            {
+              "Symbol": "RLFL",
+              "Sector": "Finance",
+              "LTP": "430",
+              "Daily Chg": "-2.03 %",
+              "Intraday Loss": "-6.68 %",
+              "52 Wks Hi/Lo": "542.90 / 405.00",
+              "Volume": "10579"
+            },
+            {
+              "Symbol": "SLBBL",
+              "Sector": "Microfinance",
+              "LTP": "810",
+              "Daily Chg": "-1.22 %",
+              "Intraday Loss": "-5.92 %",
+              "52 Wks Hi/Lo": "1,001.43 / 691.51",
+              "Volume": "1618"
+            },
+            {
+              "Symbol": "SHINE",
+              "Sector": "Development Banks",
+              "LTP": "402.1",
+              "Daily Chg": "-1.23 %",
+              "Intraday Loss": "-5.92 %",
+              "52 Wks Hi/Lo": "475.73 / 378.64",
+              "Volume": "21616"
+            },
+            {
+              "Symbol": "NMBMF",
+              "Sector": "Microfinance",
+              "LTP": "652",
+              "Daily Chg": "-1.20 %",
+              "Intraday Loss": "-5.89 %",
+              "52 Wks Hi/Lo": "812.20 / 617.10",
+              "Volume": "559"
+            },
+            {
+              "Symbol": "UPCL",
+              "Sector": "Hydro Power",
+              "LTP": "378",
+              "Daily Chg": "-1.05 %",
+              "Intraday Loss": "-5.76 %",
+              "52 Wks Hi/Lo": "433.45 / 324.87",
+              "Volume": "49753"
+            },
+            {
+              "Symbol": "CFCL",
+              "Sector": "Finance",
+              "LTP": "505",
+              "Daily Chg": "-0.79 %",
+              "Intraday Loss": "-5.50 %",
+              "52 Wks Hi/Lo": "592.00 / 462.10",
+              "Volume": "6030"
+            },
+            {
+              "Symbol": "ULBSL",
+              "Sector": "Microfinance",
+              "LTP": "3054.9",
+              "Daily Chg": "-0.62 %",
+              "Intraday Loss": "-5.35 %",
+              "52 Wks Hi/Lo": "4,325.00 / 2,975.02",
+              "Volume": "3738"
+            }
+          ]
+        },
+        {
+          "tableIndex": 5,
+          "headers": [
+            "Symbol",
+            "Sector",
+            "LTP",
+            "Daily Chg",
+            "52 Wks Hi/Lo",
+            "Volume"
+          ],
+          "rows": [
+            {
+              "Symbol": "MKHL",
+              "Sector": "Hydro Power",
+              "LTP": "724.5",
+              "Daily Chg": "15.00 %",
+              "52 Wks Hi/Lo": "994.22 / 630.00",
+              "Volume": "13466"
+            },
+            {
+              "Symbol": "PCIL",
+              "Sector": "Manufacturing And Processing",
+              "LTP": "971.4",
+              "Daily Chg": "15.00 %",
+              "52 Wks Hi/Lo": "971.40 / 330.00",
+              "Volume": "9180"
+            },
+            {
+              "Symbol": "SIPD",
+              "Sector": "Hydro Power",
+              "LTP": "920.1",
+              "Daily Chg": "15.00 %",
+              "52 Wks Hi/Lo": "920.10 / 312.70",
+              "Volume": "1800"
+            },
+            {
+              "Symbol": "CORBL",
+              "Sector": "Development Banks",
+              "LTP": "2407",
+              "Daily Chg": "12.62 %",
+              "52 Wks Hi/Lo": "2,688.88 / 1,450.00",
+              "Volume": "60220"
+            },
+            {
+              "Symbol": "SAIL",
+              "Sector": "Manufacturing And Processing",
+              "LTP": "1218",
+              "Daily Chg": "4.91 %",
+              "52 Wks Hi/Lo": "1,555.00 / 331.80",
+              "Volume": "50963"
+            },
+            {
+              "Symbol": "RLEL",
+              "Sector": "Hydro Power",
+              "LTP": "1321.1",
+              "Daily Chg": "3.22 %",
+              "52 Wks Hi/Lo": "1,400.00 / 330.00",
+              "Volume": "46369"
+            },
+            {
+              "Symbol": "NMB50",
+              "Sector": "Mutual Fund",
+              "LTP": "10.66",
+              "Daily Chg": "3.19 %",
+              "52 Wks Hi/Lo": "- / -",
+              "Volume": "1500"
+            },
+            {
+              "Symbol": "CCBD88",
+              "Sector": "CORPDEBEN",
+              "LTP": "1278",
+              "Daily Chg": "2.98 %",
+              "52 Wks Hi/Lo": "- / -",
+              "Volume": "30"
+            },
+            {
+              "Symbol": "SDBD87",
+              "Sector": "CORPDEBEN",
+              "LTP": "1176",
+              "Daily Chg": "2.98 %",
+              "52 Wks Hi/Lo": "- / -",
+              "Volume": "10"
+            },
+            {
+              "Symbol": "HLICF",
+              "Sector": "Mutual Fund",
+              "LTP": "9.3",
+              "Daily Chg": "2.88 %",
+              "52 Wks Hi/Lo": "- / -",
+              "Volume": "2100"
+            }
+          ]
+        },
+        {
+          "tableIndex": 6,
+          "headers": [
+            "Symbol",
+            "Sector",
+            "LTP",
+            "Daily Chg",
+            "52 Wks Hi/Lo",
+            "Volume"
+          ],
+          "rows": [
+            {
+              "Symbol": "PBD88",
+              "Sector": "CORPDEBEN",
+              "LTP": "1221.1",
+              "Daily Chg": "-4.59 %",
+              "52 Wks Hi/Lo": "- / -",
+              "Volume": "68"
+            },
+            {
+              "Symbol": "MCHL",
+              "Sector": "Hydro Power",
+              "LTP": "350.3",
+              "Daily Chg": "-3.50 %",
+              "52 Wks Hi/Lo": "625.67 / 350.30",
+              "Volume": "8872"
+            },
+            {
+              "Symbol": "NICFC",
+              "Sector": "Mutual Fund",
+              "LTP": "9.2",
+              "Daily Chg": "-3.16 %",
+              "52 Wks Hi/Lo": "- / -",
+              "Volume": "1100"
+            },
+            {
+              "Symbol": "KBLD89",
+              "Sector": "CORPDEBEN",
+              "LTP": "1297.7",
+              "Daily Chg": "-3.00 %",
+              "52 Wks Hi/Lo": "- / -",
+              "Volume": "1"
+            },
+            {
+              "Symbol": "SBLD89",
+              "Sector": "CORPDEBEN",
+              "LTP": "1260.1",
+              "Daily Chg": "-2.99 %",
+              "52 Wks Hi/Lo": "- / -",
+              "Volume": "25"
+            },
+            {
+              "Symbol": "RBCLPO",
+              "Sector": "PROMOTSHARE",
+              "LTP": "11901",
+              "Daily Chg": "-2.99 %",
+              "52 Wks Hi/Lo": "- / -",
+              "Volume": "30"
+            },
+            {
+              "Symbol": "EHPL",
+              "Sector": "Hydro Power",
+              "LTP": "390",
+              "Daily Chg": "-2.99 %",
+              "52 Wks Hi/Lo": "661.54 / 390.00",
+              "Volume": "66734"
+            },
+            {
+              "Symbol": "RMF2",
+              "Sector": "Mutual Fund",
+              "LTP": "10.01",
+              "Daily Chg": "-2.82 %",
+              "52 Wks Hi/Lo": "- / -",
+              "Volume": "17200"
+            },
+            {
+              "Symbol": "BNHC",
+              "Sector": "Hydro Power",
+              "LTP": "329",
+              "Daily Chg": "-2.66 %",
+              "52 Wks Hi/Lo": "380.00 / 250.50",
+              "Volume": "32814"
+            },
+            {
+              "Symbol": "NRIC",
+              "Sector": "Others",
+              "LTP": "917",
+              "Daily Chg": "-2.56 %",
+              "52 Wks Hi/Lo": "1,731.89 / 917.00",
+              "Volume": "140081"
+            }
+          ]
+        },
+        {
+          "tableIndex": 7,
+          "headers": [
+            "Symbol",
+            "Sector",
+            "LTP",
+            "Daily Chg",
+            "Market Captial",
+            "52 Wks Hi/Lo",
+            "Volume"
+          ],
+          "rows": [
+            {
+              "Symbol": "BBC",
+              "Sector": "Tradings",
+              "LTP": "4888.8",
+              "Daily Chg": "0.51 %",
+              "Market Captial": "196,040,880,000.00",
+              "52 Wks Hi/Lo": "5,990.00 / 4,566.10",
+              "Volume": "488"
+            },
+            {
+              "Symbol": "NABIL",
+              "Sector": "Commercial Banks",
+              "LTP": "518",
+              "Daily Chg": "-0.38 %",
+              "Market Captial": "166,055,244,460.00",
+              "52 Wks Hi/Lo": "554.63 / 476.94",
+              "Volume": "38819"
+            },
+            {
+              "Symbol": "NTC",
+              "Sector": "Others",
+              "LTP": "870",
+              "Daily Chg": "-0.23 %",
+              "Market Captial": "156,600,000,000.00",
+              "52 Wks Hi/Lo": "929.41 / 808.00",
+              "Volume": "5466"
+            },
+            {
+              "Symbol": "NRIC",
+              "Sector": "Others",
+              "LTP": "917",
+              "Daily Chg": "-2.56 %",
+              "Market Captial": "123,081,457,907.80",
+              "52 Wks Hi/Lo": "1,731.89 / 917.00",
+              "Volume": "140081"
+            },
+            {
+              "Symbol": "CIT",
+              "Sector": "Investment",
+              "LTP": "1772.4",
+              "Daily Chg": "-0.43 %",
+              "Market Captial": "120,625,961,314.95",
+              "52 Wks Hi/Lo": "2,000.16 / 1,681.90",
+              "Volume": "7476"
+            },
+            {
+              "Symbol": "EBL",
+              "Sector": "Commercial Banks",
+              "LTP": "693.6",
+              "Daily Chg": "0.23 %",
+              "Market Captial": "95,171,461,306.70",
+              "52 Wks Hi/Lo": "722.01 / 577.74",
+              "Volume": "26222"
+            },
+            {
+              "Symbol": "GBIME",
+              "Sector": "Commercial Banks",
+              "LTP": "232.5",
+              "Daily Chg": "-0.21 %",
+              "Market Captial": "88,619,358,185.47",
+              "52 Wks Hi/Lo": "270.86 / 214.78",
+              "Volume": "74675"
+            },
+            {
+              "Symbol": "SOHL",
+              "Sector": "Hydropower",
+              "LTP": "814.9",
+              "Daily Chg": "2.50 %",
+              "Market Captial": "81,490,000,000.00",
+              "52 Wks Hi/Lo": "849.00 / 330.00",
+              "Volume": "294511"
+            },
+            {
+              "Symbol": "RSML",
+              "Sector": "Manufacturing And Processing",
+              "LTP": "4220",
+              "Daily Chg": "-2.31 %",
+              "Market Captial": "80,180,000,000.00",
+              "52 Wks Hi/Lo": "4,799.00 / 330.00",
+              "Volume": "58569"
+            },
+            {
+              "Symbol": "HRL",
+              "Sector": "Others",
+              "LTP": "683",
+              "Daily Chg": "-0.29 %",
+              "Market Captial": "74,228,440,000.00",
+              "52 Wks Hi/Lo": "1,103.73 / 683.00",
+              "Volume": "123903"
+            }
+          ]
+        },
+        {
+          "tableIndex": 8,
+          "headers": [
+            "Symbol",
+            "Sector",
+            "LTP",
+            "Daily Chg",
+            "Turnover",
+            "52 Wks Hi/Lo",
+            "Volume"
+          ],
+          "rows": [
+            {
+              "Symbol": "RIDI",
+              "Sector": "Hydro Power",
+              "LTP": "362",
+              "Daily Chg": "1.26 %",
+              "Turnover": "273,847,896.50",
+              "52 Wks Hi/Lo": "380.00 / 209.00",
+              "Volume": "757379"
+            },
+            {
+              "Symbol": "RSML",
+              "Sector": "Manufacturing And Processing",
+              "LTP": "4220",
+              "Daily Chg": "-2.31 %",
+              "Turnover": "249,297,973.10",
+              "52 Wks Hi/Lo": "4,799.00 / 330.00",
+              "Volume": "58569"
+            },
+            {
+              "Symbol": "NHPC",
+              "Sector": "Hydro Power",
+              "LTP": "312.5",
+              "Daily Chg": "1.79 %",
+              "Turnover": "244,474,308.20",
+              "52 Wks Hi/Lo": "331.20 / 178.60",
+              "Volume": "790498"
+            },
+            {
+              "Symbol": "SOHL",
+              "Sector": "Hydropower",
+              "LTP": "814.9",
+              "Daily Chg": "2.50 %",
+              "Turnover": "237,800,948.20",
+              "52 Wks Hi/Lo": "849.00 / 330.00",
+              "Volume": "294511"
+            },
+            {
+              "Symbol": "AKJCL",
+              "Sector": "Hydro Power",
+              "LTP": "389.9",
+              "Daily Chg": "-0.79 %",
+              "Turnover": "202,992,633.20",
+              "52 Wks Hi/Lo": "419.00 / 173.00",
+              "Volume": "520164"
+            },
+            {
+              "Symbol": "SYPNL",
+              "Sector": "Manufacturing And Processing",
+              "LTP": "1579",
+              "Daily Chg": "-1.31 %",
+              "Turnover": "145,145,112.40",
+              "52 Wks Hi/Lo": "2,132.00 / 351.70",
+              "Volume": "92456"
+            },
+            {
+              "Symbol": "SHIVM",
+              "Sector": "Manufacturing And Processing",
+              "LTP": "669.7",
+              "Daily Chg": "-0.49 %",
+              "Turnover": "131,755,834.60",
+              "52 Wks Hi/Lo": "720.00 / 488.83",
+              "Volume": "197127"
+            },
+            {
+              "Symbol": "HFIN",
+              "Sector": "Hotels",
+              "LTP": "1195",
+              "Daily Chg": "1.27 %",
+              "Turnover": "128,612,529.40",
+              "52 Wks Hi/Lo": "1,386.00 / 111.80",
+              "Volume": "111477"
+            },
+            {
+              "Symbol": "CORBL",
+              "Sector": "Development Banks",
+              "LTP": "2407",
+              "Daily Chg": "12.62 %",
+              "Turnover": "127,689,149.90",
+              "52 Wks Hi/Lo": "2,688.88 / 1,450.00",
+              "Volume": "60220"
+            },
+            {
+              "Symbol": "NRIC",
+              "Sector": "Others",
+              "LTP": "917",
+              "Daily Chg": "-2.56 %",
+              "Turnover": "127,494,611.90",
+              "52 Wks Hi/Lo": "1,731.89 / 917.00",
+              "Volume": "140081"
+            }
+          ]
+        },
+        {
+          "tableIndex": 9,
+          "headers": [
+            "Symbol",
+            "Sector",
+            "LTP",
+            "Daily Chg",
+            "Sharp Ratio",
+            "52 Wks Hi/Lo",
+            "Volume"
+          ],
+          "rows": [
+            {
+              "Symbol": "AKJCL",
+              "Sector": "Hydro Power",
+              "LTP": "389.9",
+              "Daily Chg": "-0.79 %",
+              "Sharp Ratio": "2.99",
+              "52 Wks Hi/Lo": "419.00 / 173.00",
+              "Volume": "520164"
+            },
+            {
+              "Symbol": "NHPC",
+              "Sector": "Hydro Power",
+              "LTP": "312.5",
+              "Daily Chg": "1.79 %",
+              "Sharp Ratio": "1.92",
+              "52 Wks Hi/Lo": "331.20 / 178.60",
+              "Volume": "790498"
+            },
+            {
+              "Symbol": "RIDI",
+              "Sector": "Hydro Power",
+              "LTP": "362",
+              "Daily Chg": "1.26 %",
+              "Sharp Ratio": "1.82",
+              "52 Wks Hi/Lo": "380.00 / 209.00",
+              "Volume": "757379"
+            },
+            {
+              "Symbol": "NABBC",
+              "Sector": "Development Banks",
+              "LTP": "1236",
+              "Daily Chg": "-1.90 %",
+              "Sharp Ratio": "1.56",
+              "52 Wks Hi/Lo": "1,789.90 / 675.70",
+              "Volume": "18199"
+            },
+            {
+              "Symbol": "API",
+              "Sector": "Hydro Power",
+              "LTP": "339.9",
+              "Daily Chg": "0.00 %",
+              "Sharp Ratio": "1.42",
+              "52 Wks Hi/Lo": "364.20 / 247.71",
+              "Volume": "255929"
+            },
+            {
+              "Symbol": "HIMSTAR",
+              "Sector": "Hydro Power",
+              "LTP": "892.9",
+              "Daily Chg": "-1.34 %",
+              "Sharp Ratio": "1.26",
+              "52 Wks Hi/Lo": "1,171.00 / 267.50",
+              "Volume": "6686"
+            },
+            {
+              "Symbol": "NGPL",
+              "Sector": "Hydro Power",
+              "LTP": "445",
+              "Daily Chg": "0.02 %",
+              "Sharp Ratio": "1.14",
+              "52 Wks Hi/Lo": "491.00 / 325.03",
+              "Volume": "263519"
+            },
+            {
+              "Symbol": "SBL",
+              "Sector": "Commercial Banks",
+              "LTP": "389.9",
+              "Daily Chg": "-0.28 %",
+              "Sharp Ratio": "1.05",
+              "52 Wks Hi/Lo": "415.70 / 250.41",
+              "Volume": "52172"
+            },
+            {
+              "Symbol": "KBL",
+              "Sector": "Commercial Banks",
+              "LTP": "223",
+              "Daily Chg": "0.36 %",
+              "Sharp Ratio": "1.03",
+              "52 Wks Hi/Lo": "246.70 / 176.50",
+              "Volume": "261219"
+            },
+            {
+              "Symbol": "MFIL",
+              "Sector": "Finance",
+              "LTP": "774",
+              "Daily Chg": "-0.39 %",
+              "Sharp Ratio": "0.96",
+              "52 Wks Hi/Lo": "900.00 / 561.30",
+              "Volume": "29134"
+            }
+          ]
+        },
+        {
+          "tableIndex": 10,
+          "headers": [
+            "Symbol",
+            "Sector",
+            "LTP",
+            "Daily Chg",
+            "Alpha Annualized",
+            "52 Wks Hi/Lo",
+            "Volume"
+          ],
+          "rows": [
+            {
+              "Symbol": "AKJCL",
+              "Sector": "Hydro Power",
+              "LTP": "389.9",
+              "Daily Chg": "-0.79 %",
+              "Alpha Annualized": "193.07 %",
+              "52 Wks Hi/Lo": "419.00 / 173.00",
+              "Volume": "520164"
+            },
+            {
+              "Symbol": "NHPC",
+              "Sector": "Hydro Power",
+              "LTP": "312.5",
+              "Daily Chg": "1.79 %",
+              "Alpha Annualized": "98.36 %",
+              "52 Wks Hi/Lo": "331.20 / 178.60",
+              "Volume": "790498"
+            },
+            {
+              "Symbol": "NABBC",
+              "Sector": "Development Banks",
+              "LTP": "1236",
+              "Daily Chg": "-1.90 %",
+              "Alpha Annualized": "97.29 %",
+              "52 Wks Hi/Lo": "1,789.90 / 675.70",
+              "Volume": "18199"
+            },
+            {
+              "Symbol": "RIDI",
+              "Sector": "Hydro Power",
+              "LTP": "362",
+              "Daily Chg": "1.26 %",
+              "Alpha Annualized": "93.89 %",
+              "52 Wks Hi/Lo": "380.00 / 209.00",
+              "Volume": "757379"
+            },
+            {
+              "Symbol": "HIMSTAR",
+              "Sector": "Hydro Power",
+              "LTP": "892.9",
+              "Daily Chg": "-1.34 %",
+              "Alpha Annualized": "82.85 %",
+              "52 Wks Hi/Lo": "1,171.00 / 267.50",
+              "Volume": "6686"
+            },
+            {
+              "Symbol": "CORBL",
+              "Sector": "Development Banks",
+              "LTP": "2407",
+              "Daily Chg": "12.62 %",
+              "Alpha Annualized": "52.63 %",
+              "52 Wks Hi/Lo": "2,688.88 / 1,450.00",
+              "Volume": "60220"
+            },
+            {
+              "Symbol": "TVCL",
+              "Sector": "Hydro Power",
+              "LTP": "570",
+              "Daily Chg": "0.00 %",
+              "Alpha Annualized": "33.24 %",
+              "52 Wks Hi/Lo": "676.00 / 378.40",
+              "Volume": "9441"
+            },
+            {
+              "Symbol": "SANVI",
+              "Sector": "Hydro Power",
+              "LTP": "710",
+              "Daily Chg": "0.85 %",
+              "Alpha Annualized": "31.90 %",
+              "52 Wks Hi/Lo": "1,015.00 / 394.90",
+              "Volume": "17649"
+            },
+            {
+              "Symbol": "HDHPC",
+              "Sector": "Hydro Power",
+              "LTP": "229.8",
+              "Daily Chg": "-0.30 %",
+              "Alpha Annualized": "31.39 %",
+              "52 Wks Hi/Lo": "265.00 / 165.00",
+              "Volume": "469482"
+            },
+            {
+              "Symbol": "API",
+              "Sector": "Hydro Power",
+              "LTP": "339.9",
+              "Daily Chg": "0.00 %",
+              "Alpha Annualized": "30.59 %",
+              "52 Wks Hi/Lo": "364.20 / 247.71",
+              "Volume": "255929"
+            }
+          ]
+        },
+        {
+          "tableIndex": 11,
+          "headers": [
+            "Symbol",
+            "Sector",
+            "LTP",
+            "Daily Chg",
+            "3M Beta",
+            "52 Wks Hi/Lo",
+            "Volume"
+          ],
+          "rows": [
+            {
+              "Symbol": "PURE",
+              "Sector": "Others",
+              "LTP": "917",
+              "Daily Chg": "-0.33 %",
+              "3M Beta": "1.88",
+              "52 Wks Hi/Lo": "1,220.00 / 318.20",
+              "Volume": "10714"
+            },
+            {
+              "Symbol": "TTL",
+              "Sector": "Others",
+              "LTP": "810.1",
+              "Daily Chg": "-1.21 %",
+              "3M Beta": "1.85",
+              "52 Wks Hi/Lo": "1,148.00 / 402.70",
+              "Volume": "21960"
+            },
+            {
+              "Symbol": "SSHL",
+              "Sector": "Hydro Power",
+              "LTP": "219.4",
+              "Daily Chg": "0.41 %",
+              "3M Beta": "1.79",
+              "52 Wks Hi/Lo": "243.90 / 151.50",
+              "Volume": "183355"
+            },
+            {
+              "Symbol": "HIMSTAR",
+              "Sector": "Hydro Power",
+              "LTP": "892.9",
+              "Daily Chg": "-1.34 %",
+              "3M Beta": "1.79",
+              "52 Wks Hi/Lo": "1,171.00 / 267.50",
+              "Volume": "6686"
+            },
+            {
+              "Symbol": "HDHPC",
+              "Sector": "Hydro Power",
+              "LTP": "229.8",
+              "Daily Chg": "-0.30 %",
+              "3M Beta": "1.76",
+              "52 Wks Hi/Lo": "265.00 / 165.00",
+              "Volume": "469482"
+            },
+            {
+              "Symbol": "LEC",
+              "Sector": "Hydro Power",
+              "LTP": "232",
+              "Daily Chg": "0.43 %",
+              "3M Beta": "1.74",
+              "52 Wks Hi/Lo": "268.80 / 185.90",
+              "Volume": "144741"
+            },
+            {
+              "Symbol": "BHL",
+              "Sector": "Hydro Power",
+              "LTP": "220.9",
+              "Daily Chg": "-0.05 %",
+              "3M Beta": "1.72",
+              "52 Wks Hi/Lo": "257.70 / 167.00",
+              "Volume": "148761"
+            },
+            {
+              "Symbol": "RHGCL",
+              "Sector": "Hydro Power",
+              "LTP": "300",
+              "Daily Chg": "0.00 %",
+              "3M Beta": "1.70",
+              "52 Wks Hi/Lo": "431.00 / 226.00",
+              "Volume": "47921"
+            },
+            {
+              "Symbol": "SINDU",
+              "Sector": "Development Banks",
+              "LTP": "735",
+              "Daily Chg": "-1.21 %",
+              "3M Beta": "1.69",
+              "52 Wks Hi/Lo": "1,039.27 / 618.00",
+              "Volume": "7659"
+            },
+            {
+              "Symbol": "BARUN",
+              "Sector": "Hydro Power",
+              "LTP": "346",
+              "Daily Chg": "0.00 %",
+              "3M Beta": "1.69",
+              "52 Wks Hi/Lo": "438.68 / 277.19",
+              "Volume": "62666"
+            }
+          ]
+        },
+        {
+          "tableIndex": 12,
+          "headers": [
+            "Symbol",
+            "Sector",
+            "LTP",
+            "Daily Chg",
+            "3M Beta",
+            "52 Wks Hi/Lo",
+            "Volume"
+          ],
+          "rows": [
+            {
+              "Symbol": "NTC",
+              "Sector": "Others",
+              "LTP": "870",
+              "Daily Chg": "-0.23 %",
+              "3M Beta": "0.37",
+              "52 Wks Hi/Lo": "929.41 / 808.00",
+              "Volume": "5466"
+            },
+            {
+              "Symbol": "KBSH",
+              "Sector": "Hydro Power",
+              "LTP": "1630",
+              "Daily Chg": "-1.21 %",
+              "3M Beta": "0.38",
+              "52 Wks Hi/Lo": "1,945.45 / 1,563.64",
+              "Volume": "92"
+            },
+            {
+              "Symbol": "MSHL",
+              "Sector": "Hydro Power",
+              "LTP": "730",
+              "Daily Chg": "0.00 %",
+              "3M Beta": "0.39",
+              "52 Wks Hi/Lo": "874.00 / 720.09",
+              "Volume": "877"
+            },
+            {
+              "Symbol": "TRH",
+              "Sector": "Hotels",
+              "LTP": "752",
+              "Daily Chg": "0.80 %",
+              "3M Beta": "0.40",
+              "52 Wks Hi/Lo": "1,037.82 / 686.90",
+              "Volume": "401"
+            },
+            {
+              "Symbol": "BNL",
+              "Sector": "Manufacturing And Processing",
+              "LTP": "15198",
+              "Daily Chg": "-0.99 %",
+              "3M Beta": "0.41",
+              "52 Wks Hi/Lo": "18,440.00 / 14,798.20",
+              "Volume": "10"
+            },
+            {
+              "Symbol": "EBL",
+              "Sector": "Commercial Banks",
+              "LTP": "693.6",
+              "Daily Chg": "0.23 %",
+              "3M Beta": "0.47",
+              "52 Wks Hi/Lo": "722.01 / 577.74",
+              "Volume": "26222"
+            },
+            {
+              "Symbol": "SMB",
+              "Sector": "Microfinance",
+              "LTP": "1750",
+              "Daily Chg": "0.00 %",
+              "3M Beta": "0.47",
+              "52 Wks Hi/Lo": "2,316.77 / 1,722.37",
+              "Volume": "795"
+            },
+            {
+              "Symbol": "NMFBS",
+              "Sector": "Microfinance",
+              "LTP": "1098.2",
+              "Daily Chg": "-0.18 %",
+              "3M Beta": "0.52",
+              "52 Wks Hi/Lo": "1,291.54 / 1,028.53",
+              "Volume": "7214"
+            },
+            {
+              "Symbol": "STC",
+              "Sector": "Tradings",
+              "LTP": "5770",
+              "Daily Chg": "1.41 %",
+              "3M Beta": "0.53",
+              "52 Wks Hi/Lo": "6,294.00 / 4,850.00",
+              "Volume": "9254"
+            },
+            {
+              "Symbol": "BGWT",
+              "Sector": "Hydro Power",
+              "LTP": "735",
+              "Daily Chg": "-2.52 %",
+              "3M Beta": "0.54",
+              "52 Wks Hi/Lo": "957.81 / 715.00",
+              "Volume": "4080"
+            }
+          ]
+        },
+        {
+          "tableIndex": 13,
+          "headers": [
+            "Symbol",
+            "Sector",
+            "LTP",
+            "Daily Chg",
+            "PE Ratio TTM",
+            "52 Wks Hi/Lo",
+            "Volume"
+          ],
+          "rows": [
+            {
+              "Symbol": "PFL",
+              "Sector": "Finance",
+              "LTP": "381.2",
+              "Daily Chg": "-0.73 %",
+              "PE Ratio TTM": "4.1",
+              "52 Wks Hi/Lo": "454.16 / 355.00",
+              "Volume": "3345"
+            },
+            {
+              "Symbol": "NBL",
+              "Sector": "Commercial Banks",
+              "LTP": "274",
+              "Daily Chg": "1.48 %",
+              "PE Ratio TTM": "8.7",
+              "52 Wks Hi/Lo": "307.98 / 230.00",
+              "Volume": "66386"
+            },
+            {
+              "Symbol": "PRVU",
+              "Sector": "Commercial Banks",
+              "LTP": "201.3",
+              "Daily Chg": "0.15 %",
+              "PE Ratio TTM": "9.3",
+              "52 Wks Hi/Lo": "245.34 / 181.20",
+              "Volume": "127874"
+            },
+            {
+              "Symbol": "PCBL",
+              "Sector": "Commercial Banks",
+              "LTP": "242.5",
+              "Daily Chg": "0.62 %",
+              "PE Ratio TTM": "12.1",
+              "52 Wks Hi/Lo": "269.00 / 214.81",
+              "Volume": "58022"
+            },
+            {
+              "Symbol": "ADBL",
+              "Sector": "Commercial Banks",
+              "LTP": "313",
+              "Daily Chg": "0.32 %",
+              "PE Ratio TTM": "12.2",
+              "52 Wks Hi/Lo": "334.90 / 269.08",
+              "Volume": "17185"
+            },
+            {
+              "Symbol": "NIMB",
+              "Sector": "Commercial Banks",
+              "LTP": "203.5",
+              "Daily Chg": "0.79 %",
+              "PE Ratio TTM": "12.5",
+              "52 Wks Hi/Lo": "242.64 / 184.60",
+              "Volume": "70685"
+            },
+            {
+              "Symbol": "KBL",
+              "Sector": "Commercial Banks",
+              "LTP": "223",
+              "Daily Chg": "0.36 %",
+              "PE Ratio TTM": "12.8",
+              "52 Wks Hi/Lo": "246.70 / 176.50",
+              "Volume": "261219"
+            },
+            {
+              "Symbol": "MBL",
+              "Sector": "Commercial Banks",
+              "LTP": "244.6",
+              "Daily Chg": "-0.16 %",
+              "PE Ratio TTM": "13.3",
+              "52 Wks Hi/Lo": "276.00 / 203.06",
+              "Volume": "60787"
+            },
+            {
+              "Symbol": "SBL",
+              "Sector": "Commercial Banks",
+              "LTP": "389.9",
+              "Daily Chg": "-0.28 %",
+              "PE Ratio TTM": "13.8",
+              "52 Wks Hi/Lo": "415.70 / 250.41",
+              "Volume": "52172"
+            },
+            {
+              "Symbol": "GBIME",
+              "Sector": "Commercial Banks",
+              "LTP": "232.5",
+              "Daily Chg": "-0.21 %",
+              "PE Ratio TTM": "13.8",
+              "52 Wks Hi/Lo": "270.86 / 214.78",
+              "Volume": "74675"
+            }
+          ]
+        },
+        {
+          "tableIndex": 14,
+          "headers": [
+            "Symbol",
+            "Sector",
+            "LTP",
+            "Daily Chg",
+            "PB Ratio",
+            "52 Wks Hi/Lo",
+            "Volume"
+          ],
+          "rows": [
+            {
+              "Symbol": "NBL",
+              "Sector": "Commercial Banks",
+              "LTP": "274",
+              "Daily Chg": "1.48 %",
+              "PB Ratio": "1.04",
+              "52 Wks Hi/Lo": "307.98 / 230.00",
+              "Volume": "66386"
+            },
+            {
+              "Symbol": "NIMB",
+              "Sector": "Commercial Banks",
+              "LTP": "203.5",
+              "Daily Chg": "0.79 %",
+              "PB Ratio": "1.04",
+              "52 Wks Hi/Lo": "242.64 / 184.60",
+              "Volume": "70685"
+            },
+            {
+              "Symbol": "HBL",
+              "Sector": "Commercial Banks",
+              "LTP": "206.4",
+              "Daily Chg": "-1.24 %",
+              "PB Ratio": "1.18",
+              "52 Wks Hi/Lo": "249.98 / 186.00",
+              "Volume": "32258"
+            },
+            {
+              "Symbol": "LSL",
+              "Sector": "Commercial Banks",
+              "LTP": "215",
+              "Daily Chg": "-0.28 %",
+              "PB Ratio": "1.29",
+              "52 Wks Hi/Lo": "240.00 / 185.21",
+              "Volume": "94523"
+            },
+            {
+              "Symbol": "GBIME",
+              "Sector": "Commercial Banks",
+              "LTP": "232.5",
+              "Daily Chg": "-0.21 %",
+              "PB Ratio": "1.33",
+              "52 Wks Hi/Lo": "270.86 / 214.78",
+              "Volume": "74675"
+            },
+            {
+              "Symbol": "PRVU",
+              "Sector": "Commercial Banks",
+              "LTP": "201.3",
+              "Daily Chg": "0.15 %",
+              "PB Ratio": "1.38",
+              "52 Wks Hi/Lo": "245.34 / 181.20",
+              "Volume": "127874"
+            },
+            {
+              "Symbol": "CZBIL",
+              "Sector": "Commercial Banks",
+              "LTP": "208",
+              "Daily Chg": "0.48 %",
+              "PB Ratio": "1.39",
+              "52 Wks Hi/Lo": "235.00 / 186.00",
+              "Volume": "79575"
+            },
+            {
+              "Symbol": "ADBL",
+              "Sector": "Commercial Banks",
+              "LTP": "313",
+              "Daily Chg": "0.32 %",
+              "PB Ratio": "1.40",
+              "52 Wks Hi/Lo": "334.90 / 269.08",
+              "Volume": "17185"
+            },
+            {
+              "Symbol": "NMB",
+              "Sector": "Commercial Banks",
+              "LTP": "244.9",
+              "Daily Chg": "0.82 %",
+              "PB Ratio": "1.45",
+              "52 Wks Hi/Lo": "269.80 / 221.43",
+              "Volume": "27487"
+            },
+            {
+              "Symbol": "PCBL",
+              "Sector": "Commercial Banks",
+              "LTP": "242.5",
+              "Daily Chg": "0.62 %",
+              "PB Ratio": "1.46",
+              "52 Wks Hi/Lo": "269.00 / 214.81",
+              "Volume": "58022"
+            }
+          ]
+        },
+        {
+          "tableIndex": 15,
+          "headers": [
+            "Symbol",
+            "Sector",
+            "LTP",
+            "Daily Chg",
+            "PEG Ratio",
+            "52 Wks Hi/Lo",
+            "Volume"
+          ],
+          "rows": [
+            {
+              "Symbol": "PRVU",
+              "Sector": "Commercial Banks",
+              "LTP": "201.3",
+              "Daily Chg": "0.15 %",
+              "PEG Ratio": "0.31",
+              "52 Wks Hi/Lo": "245.34 / 181.20",
+              "Volume": "127874"
+            },
+            {
+              "Symbol": "PCBL",
+              "Sector": "Commercial Banks",
+              "LTP": "242.5",
+              "Daily Chg": "0.62 %",
+              "PEG Ratio": "0.40",
+              "52 Wks Hi/Lo": "269.00 / 214.81",
+              "Volume": "58022"
+            },
+            {
+              "Symbol": "NIMB",
+              "Sector": "Commercial Banks",
+              "LTP": "203.5",
+              "Daily Chg": "0.79 %",
+              "PEG Ratio": "0.49",
+              "52 Wks Hi/Lo": "242.64 / 184.60",
+              "Volume": "70685"
+            },
+            {
+              "Symbol": "DDBL",
+              "Sector": "Microfinance",
+              "LTP": "826.3",
+              "Daily Chg": "-0.92 %",
+              "PEG Ratio": "0.64",
+              "52 Wks Hi/Lo": "914.90 / 692.36",
+              "Volume": "3592"
+            },
+            {
+              "Symbol": "ILBS",
+              "Sector": "Microfinance",
+              "LTP": "957",
+              "Daily Chg": "0.53 %",
+              "PEG Ratio": "0.64",
+              "52 Wks Hi/Lo": "1,267.12 / 805.32",
+              "Volume": "9268"
+            },
+            {
+              "Symbol": "AVYAN",
+              "Sector": "Microfinance",
+              "LTP": "1089.7",
+              "Daily Chg": "-0.94 %",
+              "PEG Ratio": "0.65",
+              "52 Wks Hi/Lo": "1,365.70 / 920.60",
+              "Volume": "2458"
+            },
+            {
+              "Symbol": "ADBL",
+              "Sector": "Commercial Banks",
+              "LTP": "313",
+              "Daily Chg": "0.32 %",
+              "PEG Ratio": "0.70",
+              "52 Wks Hi/Lo": "334.90 / 269.08",
+              "Volume": "17185"
+            },
+            {
+              "Symbol": "NUBL",
+              "Sector": "Microfinance",
+              "LTP": "679",
+              "Daily Chg": "-1.28 %",
+              "PEG Ratio": "0.76",
+              "52 Wks Hi/Lo": "797.78 / 620.96",
+              "Volume": "2774"
+            },
+            {
+              "Symbol": "RADHI",
+              "Sector": "Hydro Power",
+              "LTP": "790",
+              "Daily Chg": "0.13 %",
+              "PEG Ratio": "0.79",
+              "52 Wks Hi/Lo": "920.00 / 616.56",
+              "Volume": "36399"
+            },
+            {
+              "Symbol": "JBLB",
+              "Sector": "Microfinance",
+              "LTP": "1273",
+              "Daily Chg": "-0.21 %",
+              "PEG Ratio": "0.80",
+              "52 Wks Hi/Lo": "1,456.00 / 1,124.48",
+              "Volume": "3709"
+            }
+          ]
+        },
+        {
+          "tableIndex": 16,
+          "headers": [
+            "Symbol",
+            "Sector",
+            "LTP",
+            "Daily Chg",
+            "PS TTM",
+            "52 Wks Hi/Lo",
+            "Volume"
+          ],
+          "rows": [
+            {
+              "Symbol": "ADBL",
+              "Sector": "Commercial Banks",
+              "LTP": "313",
+              "Daily Chg": "0.32 %",
+              "PS TTM": "1.36",
+              "52 Wks Hi/Lo": "334.90 / 269.08",
+              "Volume": "17185"
+            },
+            {
+              "Symbol": "NLIC",
+              "Sector": "Life Insurance",
+              "LTP": "770",
+              "Daily Chg": "-0.13 %",
+              "PS TTM": "1.42",
+              "52 Wks Hi/Lo": "840.10 / 676.19",
+              "Volume": "29170"
+            },
+            {
+              "Symbol": "NLICL",
+              "Sector": "Life Insurance",
+              "LTP": "580",
+              "Daily Chg": "-1.02 %",
+              "PS TTM": "1.42",
+              "52 Wks Hi/Lo": "650.55 / 528.85",
+              "Volume": "13878"
+            },
+            {
+              "Symbol": "BNT",
+              "Sector": "Manufacturing And Processing",
+              "LTP": "11790",
+              "Daily Chg": "2.48 %",
+              "PS TTM": "1.78",
+              "52 Wks Hi/Lo": "13,133.58 / 10,700.00",
+              "Volume": "40"
+            },
+            {
+              "Symbol": "SJLIC",
+              "Sector": "Life Insurance",
+              "LTP": "432",
+              "Daily Chg": "-0.69 %",
+              "PS TTM": "1.79",
+              "52 Wks Hi/Lo": "484.90 / 397.00",
+              "Volume": "6710"
+            },
+            {
+              "Symbol": "STC",
+              "Sector": "Tradings",
+              "LTP": "5770",
+              "Daily Chg": "1.41 %",
+              "PS TTM": "1.81",
+              "52 Wks Hi/Lo": "6,294.00 / 4,850.00",
+              "Volume": "9254"
+            },
+            {
+              "Symbol": "NBL",
+              "Sector": "Commercial Banks",
+              "LTP": "274",
+              "Daily Chg": "1.48 %",
+              "PS TTM": "1.83",
+              "52 Wks Hi/Lo": "307.98 / 230.00",
+              "Volume": "66386"
+            },
+            {
+              "Symbol": "HBL",
+              "Sector": "Commercial Banks",
+              "LTP": "206.4",
+              "Daily Chg": "-1.24 %",
+              "PS TTM": "1.87",
+              "52 Wks Hi/Lo": "249.98 / 186.00",
+              "Volume": "32258"
+            },
+            {
+              "Symbol": "KBL",
+              "Sector": "Commercial Banks",
+              "LTP": "223",
+              "Daily Chg": "0.36 %",
+              "PS TTM": "1.88",
+              "52 Wks Hi/Lo": "246.70 / 176.50",
+              "Volume": "261219"
+            },
+            {
+              "Symbol": "CZBIL",
+              "Sector": "Commercial Banks",
+              "LTP": "208",
+              "Daily Chg": "0.48 %",
+              "PS TTM": "2.00",
+              "52 Wks Hi/Lo": "235.00 / 186.00",
+              "Volume": "79575"
+            }
+          ]
+        },
+        {
+          "tableIndex": 17,
+          "headers": [
+            "Symbol",
+            "Sector",
+            "LTP",
+            "Daily Chg",
+            "Dividend Yield",
+            "52 Wks Hi/Lo",
+            "Volume"
+          ],
+          "rows": [
+            {
+              "Symbol": "MNBBL",
+              "Sector": "Development Banks",
+              "LTP": "375",
+              "Daily Chg": "0.00 %",
+              "Dividend Yield": "4.85 %",
+              "52 Wks Hi/Lo": "432.77 / 308.69",
+              "Volume": "34176"
+            },
+            {
+              "Symbol": "ILI",
+              "Sector": "Life Insurance",
+              "LTP": "437.8",
+              "Daily Chg": "0.32 %",
+              "Dividend Yield": "4.81 %",
+              "52 Wks Hi/Lo": "493.68 / 411.10",
+              "Volume": "8418"
+            },
+            {
+              "Symbol": "LSL",
+              "Sector": "Commercial Banks",
+              "LTP": "215",
+              "Daily Chg": "-0.28 %",
+              "Dividend Yield": "4.65 %",
+              "52 Wks Hi/Lo": "240.00 / 185.21",
+              "Volume": "94523"
+            },
+            {
+              "Symbol": "SNLI",
+              "Sector": "Life Insurance",
+              "LTP": "453",
+              "Daily Chg": "-0.22 %",
+              "Dividend Yield": "4.42 %",
+              "52 Wks Hi/Lo": "504.49 / 392.38",
+              "Volume": "13590"
+            },
+            {
+              "Symbol": "CLI",
+              "Sector": "Life Insurance",
+              "LTP": "459",
+              "Daily Chg": "0.59 %",
+              "Dividend Yield": "4.36 %",
+              "52 Wks Hi/Lo": "526.33 / 412.00",
+              "Volume": "10823"
+            },
+            {
+              "Symbol": "ADBL",
+              "Sector": "Commercial Banks",
+              "LTP": "313",
+              "Daily Chg": "0.32 %",
+              "Dividend Yield": "4.15 %",
+              "52 Wks Hi/Lo": "334.90 / 269.08",
+              "Volume": "17185"
+            },
+            {
+              "Symbol": "NMB",
+              "Sector": "Commercial Banks",
+              "LTP": "244.9",
+              "Daily Chg": "0.82 %",
+              "Dividend Yield": "4.08 %",
+              "52 Wks Hi/Lo": "269.80 / 221.43",
+              "Volume": "27487"
+            },
+            {
+              "Symbol": "SMH",
+              "Sector": "Hydro Power",
+              "LTP": "577",
+              "Daily Chg": "-1.87 %",
+              "Dividend Yield": "3.66 %",
+              "52 Wks Hi/Lo": "776.42 / 577.00",
+              "Volume": "27748"
+            },
+            {
+              "Symbol": "JFL",
+              "Sector": "Finance",
+              "LTP": "413.1",
+              "Daily Chg": "-0.46 %",
+              "Dividend Yield": "3.63 %",
+              "52 Wks Hi/Lo": "542.14 / 402.70",
+              "Volume": "4147"
+            },
+            {
+              "Symbol": "SAHAS",
+              "Sector": "Hydro Power",
+              "LTP": "610.1",
+              "Daily Chg": "-0.80 %",
+              "Dividend Yield": "3.61 %",
+              "52 Wks Hi/Lo": "636.00 / 411.64",
+              "Volume": "62397"
+            }
+          ]
+        },
+        {
+          "tableIndex": 18,
+          "headers": [
+            "Symbol",
+            "Sector",
+            "LTP",
+            "Daily Chg",
+            "Rsi-14",
+            "52 Wks Hi/Lo",
+            "Volume"
+          ],
+          "rows": [
+            {
+              "Symbol": "RLEL",
+              "Sector": "Hydro Power",
+              "LTP": "1321.1",
+              "Daily Chg": "3.22 %",
+              "Rsi-14": "87.92",
+              "52 Wks Hi/Lo": "1,400.00 / 330.00",
+              "Volume": "46369"
+            },
+            {
+              "Symbol": "SKHEL",
+              "Sector": "Hydro Power",
+              "LTP": "1635",
+              "Daily Chg": "2.75 %",
+              "Rsi-14": "85.30",
+              "52 Wks Hi/Lo": "1,803.80 / 312.70",
+              "Volume": "40161"
+            },
+            {
+              "Symbol": "HFIN",
+              "Sector": "Hotels",
+              "LTP": "1195",
+              "Daily Chg": "1.27 %",
+              "Rsi-14": "79.42",
+              "52 Wks Hi/Lo": "1,386.00 / 111.80",
+              "Volume": "111477"
+            },
+            {
+              "Symbol": "BJHL",
+              "Sector": "Hydro Power",
+              "LTP": "1142",
+              "Daily Chg": "0.96 %",
+              "Rsi-14": "77.81",
+              "52 Wks Hi/Lo": "1,286.00 / 297.10",
+              "Volume": "20195"
+            },
+            {
+              "Symbol": "SKHL",
+              "Sector": "Hydro Power",
+              "LTP": "1124",
+              "Daily Chg": "2.18 %",
+              "Rsi-14": "75.85",
+              "52 Wks Hi/Lo": "1,285.00 / 330.00",
+              "Volume": "46323"
+            },
+            {
+              "Symbol": "SOHL",
+              "Sector": "Hydropower",
+              "LTP": "814.9",
+              "Daily Chg": "2.50 %",
+              "Rsi-14": "74.04",
+              "52 Wks Hi/Lo": "849.00 / 330.00",
+              "Volume": "294511"
+            },
+            {
+              "Symbol": "RSML",
+              "Sector": "Manufacturing And Processing",
+              "LTP": "4220",
+              "Daily Chg": "-2.31 %",
+              "Rsi-14": "69.74",
+              "52 Wks Hi/Lo": "4,799.00 / 330.00",
+              "Volume": "58569"
+            },
+            {
+              "Symbol": "CORBL",
+              "Sector": "Development Banks",
+              "LTP": "2407",
+              "Daily Chg": "12.62 %",
+              "Rsi-14": "68.77",
+              "52 Wks Hi/Lo": "2,688.88 / 1,450.00",
+              "Volume": "60220"
+            },
+            {
+              "Symbol": "JHAPA",
+              "Sector": "Others",
+              "LTP": "1600",
+              "Daily Chg": "-0.74 %",
+              "Rsi-14": "66.27",
+              "52 Wks Hi/Lo": "1,680.00 / 311.20",
+              "Volume": "23374"
+            },
+            {
+              "Symbol": "ANLB",
+              "Sector": "Microfinance",
+              "LTP": "6282",
+              "Daily Chg": "0.74 %",
+              "Rsi-14": "60.25",
+              "52 Wks Hi/Lo": "6,590.00 / 4,513.35",
+              "Volume": "503"
+            }
+          ]
+        },
+        {
+          "tableIndex": 19,
+          "headers": [
+            "Symbol",
+            "Sector",
+            "LTP",
+            "Daily Chg",
+            "Rsi-14",
+            "52 Wks Hi/Lo",
+            "Volume"
+          ],
+          "rows": [
+            {
+              "Symbol": "PCIL",
+              "Sector": "Manufacturing And Processing",
+              "LTP": "971.4",
+              "Daily Chg": "15.00 %",
+              "Rsi-14": "0.00",
+              "52 Wks Hi/Lo": "971.40 / 330.00",
+              "Volume": "9180"
+            },
+            {
+              "Symbol": "SIPD",
+              "Sector": "Hydro Power",
+              "LTP": "920.1",
+              "Daily Chg": "15.00 %",
+              "Rsi-14": "0.00",
+              "52 Wks Hi/Lo": "920.10 / 312.70",
+              "Volume": "1800"
+            },
+            {
+              "Symbol": "DOLTI",
+              "Sector": "Hydro Power",
+              "LTP": "382",
+              "Daily Chg": "-1.77 %",
+              "Rsi-14": "20.34",
+              "52 Wks Hi/Lo": "644.38 / 382.00",
+              "Volume": "87118"
+            },
+            {
+              "Symbol": "GMLI",
+              "Sector": "Life Insurance",
+              "LTP": "1375",
+              "Daily Chg": "-1.08 %",
+              "Rsi-14": "22.09",
+              "52 Wks Hi/Lo": "2,648.22 / 1,375.00",
+              "Volume": "2713"
+            },
+            {
+              "Symbol": "BEDC",
+              "Sector": "Hydro Power",
+              "LTP": "386.9",
+              "Daily Chg": "-2.05 %",
+              "Rsi-14": "23.81",
+              "52 Wks Hi/Lo": "862.62 / 386.90",
+              "Volume": "63573"
+            },
+            {
+              "Symbol": "NRIC",
+              "Sector": "Others",
+              "LTP": "917",
+              "Daily Chg": "-2.56 %",
+              "Rsi-14": "25.75",
+              "52 Wks Hi/Lo": "1,731.89 / 917.00",
+              "Volume": "140081"
+            },
+            {
+              "Symbol": "IHL",
+              "Sector": "Hydro Power",
+              "LTP": "440.6",
+              "Daily Chg": "-2.11 %",
+              "Rsi-14": "26.22",
+              "52 Wks Hi/Lo": "661.81 / 440.60",
+              "Volume": "7989"
+            },
+            {
+              "Symbol": "UNLB",
+              "Sector": "Microfinance",
+              "LTP": "1479",
+              "Daily Chg": "-0.54 %",
+              "Rsi-14": "26.49",
+              "52 Wks Hi/Lo": "2,455.01 / 1,478.80",
+              "Volume": "775"
+            },
+            {
+              "Symbol": "HRL",
+              "Sector": "Others",
+              "LTP": "683",
+              "Daily Chg": "-0.29 %",
+              "Rsi-14": "28.88",
+              "52 Wks Hi/Lo": "1,103.73 / 683.00",
+              "Volume": "123903"
+            },
+            {
+              "Symbol": "NMIC",
+              "Sector": "Non Life Insurance",
+              "LTP": "1078",
+              "Daily Chg": "-1.64 %",
+              "Rsi-14": "28.94",
+              "52 Wks Hi/Lo": "2,457.60 / 947.80",
+              "Volume": "9058"
+            }
+          ]
+        },
+        {
+          "tableIndex": 20,
+          "headers": [
+            "Symbol",
+            "Sector",
+            "LTP",
+            "Daily Chg",
+            "Relative Strength",
+            "52 Wks Hi/Lo",
+            "Volume"
+          ],
+          "rows": [
+            {
+              "Symbol": "AKJCL",
+              "Sector": "Hydro Power",
+              "LTP": "389.9",
+              "Daily Chg": "-0.79 %",
+              "Relative Strength": "100.00",
+              "52 Wks Hi/Lo": "419.00 / 173.00",
+              "Volume": "520164"
+            },
+            {
+              "Symbol": "RIDI",
+              "Sector": "Hydro Power",
+              "LTP": "362",
+              "Daily Chg": "1.26 %",
+              "Relative Strength": "99.60",
+              "52 Wks Hi/Lo": "380.00 / 209.00",
+              "Volume": "757379"
+            },
+            {
+              "Symbol": "NHPC",
+              "Sector": "Hydro Power",
+              "LTP": "312.5",
+              "Daily Chg": "1.79 %",
+              "Relative Strength": "99.20",
+              "52 Wks Hi/Lo": "331.20 / 178.60",
+              "Volume": "790498"
+            },
+            {
+              "Symbol": "CORBL",
+              "Sector": "Development Banks",
+              "LTP": "2407",
+              "Daily Chg": "12.62 %",
+              "Relative Strength": "98.80",
+              "52 Wks Hi/Lo": "2,688.88 / 1,450.00",
+              "Volume": "60220"
+            },
+            {
+              "Symbol": "TVCL",
+              "Sector": "Hydro Power",
+              "LTP": "570",
+              "Daily Chg": "0.00 %",
+              "Relative Strength": "98.41",
+              "52 Wks Hi/Lo": "676.00 / 378.40",
+              "Volume": "9441"
+            },
+            {
+              "Symbol": "SSHL",
+              "Sector": "Hydro Power",
+              "LTP": "219.4",
+              "Daily Chg": "0.41 %",
+              "Relative Strength": "98.01",
+              "52 Wks Hi/Lo": "243.90 / 151.50",
+              "Volume": "183355"
+            },
+            {
+              "Symbol": "HDHPC",
+              "Sector": "Hydro Power",
+              "LTP": "229.8",
+              "Daily Chg": "-0.30 %",
+              "Relative Strength": "97.61",
+              "52 Wks Hi/Lo": "265.00 / 165.00",
+              "Volume": "469482"
+            },
+            {
+              "Symbol": "KBL",
+              "Sector": "Commercial Banks",
+              "LTP": "223",
+              "Daily Chg": "0.36 %",
+              "Relative Strength": "97.21",
+              "52 Wks Hi/Lo": "246.70 / 176.50",
+              "Volume": "261219"
+            },
+            {
+              "Symbol": "KKHC",
+              "Sector": "Hydro Power",
+              "LTP": "272",
+              "Daily Chg": "0.37 %",
+              "Relative Strength": "96.81",
+              "52 Wks Hi/Lo": "321.00 / 212.00",
+              "Volume": "43817"
+            },
+            {
+              "Symbol": "BHL",
+              "Sector": "Hydro Power",
+              "LTP": "220.9",
+              "Daily Chg": "-0.05 %",
+              "Relative Strength": "96.41",
+              "52 Wks Hi/Lo": "257.70 / 167.00",
+              "Volume": "148761"
+            }
+          ]
+        },
+        {
+          "tableIndex": 21,
+          "headers": [
+            "Broker No.",
+            "Purchase Amount",
+            "Sales Amount",
+            "Turnover",
+            "Turnover Vs Market"
+          ],
+          "rows": [
+            {
+              "Broker No.": "58",
+              "Purchase Amount": "408,241,353.00",
+              "Sales Amount": "391,435,062.00",
+              "Turnover": "799,676,415.00",
+              "Turnover Vs Market": "15.17 %"
+            },
+            {
+              "Broker No.": "42",
+              "Purchase Amount": "220,867,983.00",
+              "Sales Amount": "183,664,546.00",
+              "Turnover": "404,532,529.00",
+              "Turnover Vs Market": "7.68 %"
+            },
+            {
+              "Broker No.": "34",
+              "Purchase Amount": "181,631,736.00",
+              "Sales Amount": "195,085,516.00",
+              "Turnover": "376,717,252.00",
+              "Turnover Vs Market": "7.15 %"
+            },
+            {
+              "Broker No.": "45",
+              "Purchase Amount": "147,263,959.00",
+              "Sales Amount": "197,180,666.00",
+              "Turnover": "344,444,625.00",
+              "Turnover Vs Market": "6.54 %"
+            },
+            {
+              "Broker No.": "57",
+              "Purchase Amount": "150,390,325.00",
+              "Sales Amount": "178,665,087.00",
+              "Turnover": "329,055,412.00",
+              "Turnover Vs Market": "6.24 %"
+            },
+            {
+              "Broker No.": "48",
+              "Purchase Amount": "166,315,387.00",
+              "Sales Amount": "155,041,015.00",
+              "Turnover": "321,356,402.00",
+              "Turnover Vs Market": "6.10 %"
+            },
+            {
+              "Broker No.": "38",
+              "Purchase Amount": "147,593,250.00",
+              "Sales Amount": "127,570,089.00",
+              "Turnover": "275,163,339.00",
+              "Turnover Vs Market": "5.22 %"
+            },
+            {
+              "Broker No.": "56",
+              "Purchase Amount": "132,525,321.00",
+              "Sales Amount": "116,735,329.00",
+              "Turnover": "249,260,650.00",
+              "Turnover Vs Market": "4.73 %"
+            },
+            {
+              "Broker No.": "39",
+              "Purchase Amount": "113,974,232.00",
+              "Sales Amount": "110,539,955.00",
+              "Turnover": "224,514,187.00",
+              "Turnover Vs Market": "4.26 %"
+            },
+            {
+              "Broker No.": "44",
+              "Purchase Amount": "115,902,513.00",
+              "Sales Amount": "108,112,189.00",
+              "Turnover": "224,014,702.00",
+              "Turnover Vs Market": "4.25 %"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Alpha Folio",
+      "url": "https://nepsealpha.com/sastoshare/portfolio/me",
+      "tables": [
+        {
+          "tableIndex": 1,
+          "headers": [
+            "Unrealized\nGain",
+            "Realized\nGain"
+          ],
+          "rows": [
+            {},
+            {
+              "Unrealized\nGain": "3.00%\nNPR 14,699.19",
+              "Realized\nGain": "NPR 16,614.37"
+            }
+          ]
+        },
+        {
+          "tableIndex": 2,
+          "headers": [
+            "Commission",
+            "SEBON Fees",
+            "DP Charges",
+            "CGT",
+            "Total"
+          ],
+          "rows": [
+            {
+              "Commission": "NPR. 3,258.58",
+              "SEBON Fees": "NPR. 139.94",
+              "DP Charges": "NPR. 750.00",
+              "CGT": "NPR. 1,212.84",
+              "Total": "NPR. 5,361.36"
+            }
+          ]
+        },
+        {
+          "tableIndex": 3,
+          "headers": [],
+          "rows": [
+            {
+              "Col_0": "Top Holding LBBL NPR 121,750.00",
+              "Col_1": "Least Holding RLFL NPR 21,500.00"
+            },
+            {
+              "Col_0": "Top Investment KSBBL 22.47% Gain",
+              "Col_1": "Top Underperformer IHL -16.17% Gain"
+            },
+            {
+              "Col_0": "Top Net Profit LBBL NPR 21,520.00",
+              "Col_1": "Top Net Loser PHCL NPR -8,645.00"
+            },
+            {
+              "Col_0": "Low Volatile Stock NTC",
+              "Col_1": "High Volatile Stock All Low Volatile"
+            },
+            {
+              "Col_0": "Most Liquid Stock SSHL",
+              "Col_1": "Least Liquid Stock IHL"
+            },
+            {
+              "Col_0": "Top Trending in Price SSHL",
+              "Col_1": "Portfolio Laggard in Price Trend IHL"
+            }
+          ]
+        },
+        {
+          "tableIndex": 4,
+          "headers": [
+            "S.N",
+            "Holding",
+            "1 Month",
+            "Daily Gain",
+            "Qty",
+            "Purch Price",
+            "LTP",
+            "Purch Value",
+            "Market Value",
+            "Total Profit",
+            "Unrealized",
+            "Breakeven(%)"
+          ],
+          "rows": [
+            {
+              "S.N": "1",
+              "Holding": "SSHL",
+              "1 Month": "Chart\nChart with 22 data points.\nThe chart has 1 X axis displaying values. Data ranges from 1 to 22.\nThe chart has 1 Y axis displaying values. Data ranges from 199 to 243.9.\nEnd of interactive chart.",
+              "Daily Gain": "0.41%",
+              "Qty": "100",
+              "Purch Price": "236.23",
+              "LTP": "219.40",
+              "Purch Value": "23,623.00",
+              "Market Value": "21,940.00",
+              "Total Profit": "NPR -1,683.00",
+              "Unrealized": "-7.13%",
+              "Breakeven(%)": "7.67%"
+            },
+            {
+              "S.N": "2",
+              "Holding": "PHCL",
+              "1 Month": "Chart\nChart with 22 data points.\nThe chart has 1 X axis displaying values. Data ranges from 1 to 22.\nThe chart has 1 Y axis displaying values. Data ranges from 292 to 346.\nEnd of interactive chart.",
+              "Daily Gain": "-0.59%",
+              "Qty": "265",
+              "Purch Price": "335.62",
+              "LTP": "303.00",
+              "Purch Value": "88,939.30",
+              "Market Value": "80,295.00",
+              "Total Profit": "NPR -8,645.00",
+              "Unrealized": "-9.72%",
+              "Breakeven(%)": "10.77%"
+            },
+            {
+              "S.N": "3",
+              "Holding": "RLFL",
+              "1 Month": "Chart\nChart with 22 data points.\nThe chart has 1 X axis displaying values. Data ranges from 1 to 22.\nThe chart has 1 Y axis displaying values. Data ranges from 425 to 493.\nEnd of interactive chart.",
+              "Daily Gain": "-2.03%",
+              "Qty": "50",
+              "Purch Price": "502.48",
+              "LTP": "430.00",
+              "Purch Value": "25,124.00",
+              "Market Value": "21,500.00",
+              "Total Profit": "NPR -3,624.00",
+              "Unrealized": "-14.42%",
+              "Breakeven(%)": "16.86%"
+            },
+            {
+              "S.N": "4",
+              "Holding": "LBBL",
+              "1 Month": "Chart\nChart with 22 data points.\nThe chart has 1 X axis displaying values. Data ranges from 1 to 22.\nThe chart has 1 Y axis displaying values. Data ranges from 467 to 524.\nEnd of interactive chart.",
+              "Daily Gain": "-0.61%",
+              "Qty": "250",
+              "Purch Price": "400.92",
+              "LTP": "487.00",
+              "Purch Value": "100,230.00",
+              "Market Value": "121,750.00",
+              "Total Profit": "NPR 21,520.00",
+              "Unrealized": "21.47%",
+              "Breakeven(%)": "In Profit"
+            },
+            {
+              "S.N": "5",
+              "Holding": "JFL",
+              "1 Month": "Chart\nChart with 22 data points.\nThe chart has 1 X axis displaying values. Data ranges from 1 to 22.\nThe chart has 1 Y axis displaying values. Data ranges from 406.2 to 456.\nEnd of interactive chart.",
+              "Daily Gain": "-0.46%",
+              "Qty": "100",
+              "Purch Price": "462.98",
+              "LTP": "413.10",
+              "Purch Value": "46,298.00",
+              "Market Value": "41,310.00",
+              "Total Profit": "NPR -4,988.00",
+              "Unrealized": "-10.77%",
+              "Breakeven(%)": "12.07%"
+            },
+            {
+              "S.N": "6",
+              "Holding": "NTC",
+              "1 Month": "Chart\nChart with 22 data points.\nThe chart has 1 X axis displaying values. Data ranges from 1 to 22.\nThe chart has 1 Y axis displaying values. Data ranges from 858.5 to 904.9.\nEnd of interactive chart.",
+              "Daily Gain": "-0.23%",
+              "Qty": "50",
+              "Purch Price": "909.90",
+              "LTP": "870.00",
+              "Purch Value": "45,495.00",
+              "Market Value": "43,500.00",
+              "Total Profit": "NPR -1,995.00",
+              "Unrealized": "-4.38%",
+              "Breakeven(%)": "4.59%"
+            },
+            {
+              "S.N": "7",
+              "Holding": "KSBBL",
+              "1 Month": "Chart\nChart with 22 data points.\nThe chart has 1 X axis displaying values. Data ranges from 1 to 22.\nThe chart has 1 Y axis displaying values. Data ranges from 460 to 506.\nEnd of interactive chart.",
+              "Daily Gain": "-0.31%",
+              "Qty": "117",
+              "Purch Price": "390.29",
+              "LTP": "478.00",
+              "Purch Value": "45,663.93",
+              "Market Value": "55,926.00",
+              "Total Profit": "NPR 10,262.00",
+              "Unrealized": "22.47%",
+              "Breakeven(%)": "In Profit"
+            },
+            {
+              "S.N": "8",
+              "Holding": "SHIVM",
+              "1 Month": "Chart\nChart with 22 data points.\nThe chart has 1 X axis displaying values. Data ranges from 1 to 22.\nThe chart has 1 Y axis displaying values. Data ranges from 646 to 708.\nEnd of interactive chart.",
+              "Daily Gain": "-0.49%",
+              "Qty": "82",
+              "Purch Price": "603.84",
+              "LTP": "669.70",
+              "Purch Value": "49,514.88",
+              "Market Value": "54,915.40",
+              "Total Profit": "NPR 5,401.00",
+              "Unrealized": "10.91%",
+              "Breakeven(%)": "In Profit"
+            },
+            {
+              "S.N": "9",
+              "Holding": "IHL",
+              "1 Month": "Chart\nChart with 22 data points.\nThe chart has 1 X axis displaying values. Data ranges from 1 to 22.\nThe chart has 1 Y axis displaying values. Data ranges from 440.6 to 521.\nEnd of interactive chart.",
+              "Daily Gain": "-2.11%",
+              "Qty": "50",
+              "Purch Price": "525.56",
+              "LTP": "440.60",
+              "Purch Value": "26,278.00",
+              "Market Value": "22,030.00",
+              "Total Profit": "NPR -4,248.00",
+              "Unrealized": "-16.17%",
+              "Breakeven(%)": "19.28%"
+            },
+            {
+              "S.N": "10",
+              "Holding": "NBL",
+              "1 Month": "Chart\nChart with 22 data points.\nThe chart has 1 X axis displaying values. Data ranges from 1 to 22.\nThe chart has 1 Y axis displaying values. Data ranges from 257 to 288.\nEnd of interactive chart.",
+              "Daily Gain": "1.48%",
+              "Qty": "150",
+              "Purch Price": "256.00",
+              "LTP": "274.00",
+              "Purch Value": "38,400.00",
+              "Market Value": "41,100.00",
+              "Total Profit": "NPR 2,699.00",
+              "Unrealized": "7.03%",
+              "Breakeven(%)": "In Profit"
+            }
+          ]
+        },
+        {
+          "tableIndex": 5,
+          "headers": [
+            "Action",
+            "Symbol",
+            "Date",
+            "Type",
+            "Quantity",
+            "Purchase Price",
+            "SEBON Fees",
+            "Commission",
+            "DP Charge",
+            "Amount Paid",
+            "Effective Rate"
+          ],
+          "rows": [
+            {
+              "Action": "",
+              "Symbol": "SSHL",
+              "Date": "2026-03-29  १५ चैत्र २०८२",
+              "Type": "Secondary",
+              "Quantity": "100",
+              "Purchase Price": "235.10",
+              "SEBON Fees": "3.53",
+              "Commission": "84.64",
+              "DP Charge": "25.00",
+              "Amount Paid": "23,623.16",
+              "Effective Rate": "236.23"
+            },
+            {
+              "Action": "",
+              "Symbol": "PHCL",
+              "Date": "2026-03-26  १२ चैत्र २०८२",
+              "Type": "Secondary",
+              "Quantity": "165",
+              "Purchase Price": "341.00",
+              "SEBON Fees": "8.44",
+              "Commission": "185.67",
+              "DP Charge": "25.00",
+              "Amount Paid": "56,484.11",
+              "Effective Rate": "342.33"
+            },
+            {
+              "Action": "",
+              "Symbol": "RLFL",
+              "Date": "2026-03-25  ११ चैत्र २०८२",
+              "Type": "Secondary",
+              "Quantity": "50",
+              "Purchase Price": "500.10",
+              "SEBON Fees": "3.75",
+              "Commission": "90.02",
+              "DP Charge": "25.00",
+              "Amount Paid": "25,123.77",
+              "Effective Rate": "502.48"
+            },
+            {
+              "Action": "",
+              "Symbol": "JFL",
+              "Date": "2026-03-23  ९ चैत्र २०८२",
+              "Type": "Secondary",
+              "Quantity": "100",
+              "Purchase Price": "461.00",
+              "SEBON Fees": "6.92",
+              "Commission": "165.96",
+              "DP Charge": "25.00",
+              "Amount Paid": "46,297.88",
+              "Effective Rate": "462.98"
+            },
+            {
+              "Action": "",
+              "Symbol": "NTC",
+              "Date": "2026-03-23  ९ चैत्र २०८२",
+              "Type": "Secondary",
+              "Quantity": "50",
+              "Purchase Price": "906.00",
+              "SEBON Fees": "6.79",
+              "Commission": "163.08",
+              "DP Charge": "25.00",
+              "Amount Paid": "45,494.88",
+              "Effective Rate": "909.90"
+            },
+            {
+              "Action": "",
+              "Symbol": "CITY",
+              "Date": "2026-03-19  ५ चैत्र २०८२",
+              "Type": "Right",
+              "Quantity": "3",
+              "Purchase Price": "100.00",
+              "SEBON Fees": "0.00",
+              "Commission": "0.00",
+              "DP Charge": "0.00",
+              "Amount Paid": "300.00",
+              "Effective Rate": "100.00"
+            },
+            {
+              "Action": "",
+              "Symbol": "SICL",
+              "Date": "2026-03-19  ५ चैत्र २०८२",
+              "Type": "Bonus",
+              "Quantity": "5",
+              "Purchase Price": "100.00",
+              "SEBON Fees": "0.00",
+              "Commission": "0.00",
+              "DP Charge": "0.00",
+              "Amount Paid": "0.00",
+              "Effective Rate": "100.00"
+            },
+            {
+              "Action": "",
+              "Symbol": "KSBBL",
+              "Date": "2026-03-19  ५ चैत्र २०८२",
+              "Type": "Bonus",
+              "Quantity": "17",
+              "Purchase Price": "100.00",
+              "SEBON Fees": "0.00",
+              "Commission": "0.00",
+              "DP Charge": "0.00",
+              "Amount Paid": "0.00",
+              "Effective Rate": "100.00"
+            },
+            {
+              "Action": "",
+              "Symbol": "LBBL",
+              "Date": "2026-03-19  ५ चैत्र २०८२",
+              "Type": "Bonus",
+              "Quantity": "8",
+              "Purchase Price": "100.00",
+              "SEBON Fees": "0.00",
+              "Commission": "0.00",
+              "DP Charge": "0.00",
+              "Amount Paid": "0.00",
+              "Effective Rate": "100.00"
+            },
+            {
+              "Action": "",
+              "Symbol": "IHL",
+              "Date": "2026-03-19  ५ चैत्र २०८२",
+              "Type": "Secondary",
+              "Quantity": "50",
+              "Purchase Price": "523.10",
+              "SEBON Fees": "3.92",
+              "Commission": "94.16",
+              "DP Charge": "25.00",
+              "Amount Paid": "26,278.08",
+              "Effective Rate": "525.56"
+            }
+          ]
+        },
+        {
+          "tableIndex": 6,
+          "headers": [
+            "Action",
+            "Symbol",
+            "Date",
+            "Type",
+            "Quantity",
+            "Sell Amount",
+            "Sell Price",
+            "Commission",
+            "SEBON Fees",
+            "DP Charge",
+            "CGT",
+            "Net Received",
+            "Profit Amount"
+          ],
+          "rows": [
+            {
+              "Action": "",
+              "Symbol": "HHL",
+              "Date": "2026-03-26  १२ चैत्र २०८२",
+              "Type": "Secondary",
+              "Quantity": "150",
+              "Sell Amount": "57,000.00",
+              "Sell Price": "380.00",
+              "Commission": "188.02",
+              "SEBON Fees": "8.55",
+              "DP Charge": "25.00",
+              "CGT": "79.65",
+              "Net Received": "56,698.79",
+              "Profit Amount": "982.31"
+            },
+            {
+              "Action": "",
+              "Symbol": "CITY",
+              "Date": "2026-03-23  ९ चैत्र २०८२",
+              "Type": "Secondary",
+              "Quantity": "6",
+              "Sell Amount": "3,060.00",
+              "Sell Price": "510.00",
+              "Commission": "10.93",
+              "SEBON Fees": "0.46",
+              "DP Charge": "25.00",
+              "CGT": "24.46",
+              "Net Received": "2,999.15",
+              "Profit Amount": "464.82"
+            },
+            {
+              "Action": "",
+              "Symbol": "SICL",
+              "Date": "2026-03-23  ९ चैत्र २०८२",
+              "Type": "Secondary",
+              "Quantity": "55",
+              "Sell Amount": "37,290.00",
+              "Sell Price": "678.00",
+              "Commission": "134.15",
+              "SEBON Fees": "5.59",
+              "DP Charge": "25.00",
+              "CGT": "0.00",
+              "Net Received": "37,125.26",
+              "Profit Amount": "-36.62"
+            },
+            {
+              "Action": "",
+              "Symbol": "LBBL",
+              "Date": "2026-03-23  ९ चैत्र २०८२",
+              "Type": "Secondary",
+              "Quantity": "49",
+              "Sell Amount": "25,431.00",
+              "Sell Price": "519.00",
+              "Commission": "91.46",
+              "SEBON Fees": "3.81",
+              "DP Charge": "25.00",
+              "CGT": "283.28",
+              "Net Received": "25,027.44",
+              "Profit Amount": "5,382.40"
+            },
+            {
+              "Action": "",
+              "Symbol": "EBL",
+              "Date": "2026-03-19  ५ चैत्र २०८२",
+              "Type": "Secondary",
+              "Quantity": "5",
+              "Sell Amount": "3,566.00",
+              "Sell Price": "713.20",
+              "Commission": "12.75",
+              "SEBON Fees": "0.53",
+              "DP Charge": "25.00",
+              "CGT": "151.39",
+              "Net Received": "3,376.34",
+              "Profit Amount": "2,876.34"
+            },
+            {
+              "Action": "",
+              "Symbol": "SHIVM",
+              "Date": "2026-03-19  ५ चैत्र २०८२",
+              "Type": "Secondary",
+              "Quantity": "48",
+              "Sell Amount": "29,663.52",
+              "Sell Price": "617.99",
+              "Commission": "106.70",
+              "SEBON Fees": "4.45",
+              "DP Charge": "25.00",
+              "CGT": "40.74",
+              "Net Received": "29,486.63",
+              "Profit Amount": "502.47"
+            },
+            {
+              "Action": "",
+              "Symbol": "LBBL",
+              "Date": "2024-09-05  २० भाद्र २०८१",
+              "Type": "Secondary",
+              "Quantity": "19",
+              "Sell Amount": "9,652.00",
+              "Sell Price": "508.00",
+              "Commission": "34.66",
+              "SEBON Fees": "1.44",
+              "DP Charge": "25.00",
+              "CGT": "136.22",
+              "Net Received": "9,454.68",
+              "Profit Amount": "1,680.03"
+            },
+            {
+              "Action": "",
+              "Symbol": "SHIVM",
+              "Date": "2024-09-05  २० भाद्र २०८१",
+              "Type": "Secondary",
+              "Quantity": "50",
+              "Sell Amount": "30,770.00",
+              "Sell Price": "615.40",
+              "Commission": "110.68",
+              "SEBON Fees": "4.61",
+              "DP Charge": "25.00",
+              "CGT": "32.84",
+              "Net Received": "30,596.87",
+              "Profit Amount": "405.03"
+            },
+            {
+              "Action": "",
+              "Symbol": "LBBL",
+              "Date": "2024-08-15  ३१ श्रावण २०८१",
+              "Type": "Secondary",
+              "Quantity": "50",
+              "Sell Amount": "26,775.00",
+              "Sell Price": "535.50",
+              "Commission": "96.30",
+              "SEBON Fees": "4.01",
+              "DP Charge": "25.00",
+              "CGT": "464.26",
+              "Net Received": "26,185.43",
+              "Profit Amount": "5,725.84"
+            },
+            {
+              "Action": "",
+              "Symbol": "NBL",
+              "Date": "2024-07-30  १५ श्रावण २०८१",
+              "Type": "Secondary",
+              "Quantity": "50",
+              "Sell Amount": "11,500.00",
+              "Sell Price": "230.00",
+              "Commission": "41.31",
+              "SEBON Fees": "1.72",
+              "DP Charge": "25.00",
+              "CGT": "0.00",
+              "Net Received": "11,431.97",
+              "Profit Amount": "-1,368.27"
+            }
+          ]
+        },
+        {
+          "tableIndex": 8,
+          "headers": [
+            "Symbol",
+            "Alpha 30",
+            "Sector Rotation",
+            "Momentum",
+            "Value Rank",
+            "Growth Rank",
+            "Size"
+          ],
+          "rows": [
+            {
+              "Symbol": "NBL",
+              "Alpha 30": "",
+              "Sector Rotation": "",
+              "Momentum": "A",
+              "Value Rank": "A",
+              "Growth Rank": "C",
+              "Size": "High Cap"
+            },
+            {
+              "Symbol": "KSBBL",
+              "Alpha 30": "",
+              "Sector Rotation": "",
+              "Momentum": "B",
+              "Value Rank": "A",
+              "Growth Rank": "A",
+              "Size": "High Cap"
+            },
+            {
+              "Symbol": "LBBL",
+              "Alpha 30": "",
+              "Sector Rotation": "",
+              "Momentum": "C",
+              "Value Rank": "B",
+              "Growth Rank": "C",
+              "Size": "Mid Cap"
+            },
+            {
+              "Symbol": "JFL",
+              "Alpha 30": "",
+              "Sector Rotation": "",
+              "Momentum": "C",
+              "Value Rank": "B",
+              "Growth Rank": "C",
+              "Size": "Low Cap"
+            },
+            {
+              "Symbol": "RLFL",
+              "Alpha 30": "",
+              "Sector Rotation": "",
+              "Momentum": "C",
+              "Value Rank": "A",
+              "Growth Rank": "C",
+              "Size": "Mid Cap"
+            },
+            {
+              "Symbol": "SSHL",
+              "Alpha 30": "",
+              "Sector Rotation": "",
+              "Momentum": "A",
+              "Value Rank": "B",
+              "Growth Rank": "C",
+              "Size": "Mid Cap"
+            },
+            {
+              "Symbol": "SHIVM",
+              "Alpha 30": "",
+              "Sector Rotation": "",
+              "Momentum": "A",
+              "Value Rank": "A",
+              "Growth Rank": "A",
+              "Size": "High Cap"
+            },
+            {
+              "Symbol": "NTC",
+              "Alpha 30": "",
+              "Sector Rotation": "",
+              "Momentum": "B",
+              "Value Rank": "A",
+              "Growth Rank": "C",
+              "Size": "High Cap"
+            },
+            {
+              "Symbol": "PHCL",
+              "Alpha 30": "",
+              "Sector Rotation": "",
+              "Momentum": "A",
+              "Value Rank": "C",
+              "Growth Rank": "C",
+              "Size": "Mid Cap"
+            },
+            {
+              "Symbol": "IHL",
+              "Alpha 30": "",
+              "Sector Rotation": "",
+              "Momentum": "C",
+              "Value Rank": "B",
+              "Growth Rank": "C",
+              "Size": "Low Cap"
+            }
+          ]
+        },
+        {
+          "tableIndex": 9,
+          "headers": [
+            "Date",
+            "Symbol",
+            "Buy Amount",
+            "Sell Amount",
+            "Balance"
+          ],
+          "rows": [
+            {
+              "Date": "2024-07-24 23:04:22",
+              "Symbol": "SICL",
+              "Buy Amount": "NPR -36,661.88",
+              "Sell Amount": "NPR 0.00",
+              "Balance": "NPR -36,661.88"
+            },
+            {
+              "Date": "2024-07-24 23:07:14",
+              "Symbol": "SHIVM",
+              "Buy Amount": "NPR -40,897.70",
+              "Sell Amount": "NPR 0.00",
+              "Balance": "NPR -77,559.57"
+            },
+            {
+              "Date": "2024-07-24 23:08:11",
+              "Symbol": "LBBL",
+              "Buy Amount": "NPR -121,186.57",
+              "Sell Amount": "NPR 0.00",
+              "Balance": "NPR -198,746.15"
+            },
+            {
+              "Date": "2024-07-24 23:09:34",
+              "Symbol": "NBL",
+              "Buy Amount": "NPR -51,200.95",
+              "Sell Amount": "NPR 0.00",
+              "Balance": "NPR -249,947.10"
+            },
+            {
+              "Date": "2024-07-24 23:10:42",
+              "Symbol": "KSBBL",
+              "Buy Amount": "NPR -17,590.63",
+              "Sell Amount": "NPR 0.00",
+              "Balance": "NPR -267,537.72"
+            },
+            {
+              "Date": "2024-07-24 23:11:29",
+              "Symbol": "EBL",
+              "Buy Amount": "NPR 0.00",
+              "Sell Amount": "NPR 0.00",
+              "Balance": "NPR -267,537.72"
+            },
+            {
+              "Date": "2024-07-24 23:12:10",
+              "Symbol": "CITY",
+              "Buy Amount": "NPR -2,234.33",
+              "Sell Amount": "NPR 0.00",
+              "Balance": "NPR -269,772.05"
+            },
+            {
+              "Date": "2024-07-30 17:37:38",
+              "Symbol": "NBL",
+              "Buy Amount": "NPR 0.00",
+              "Sell Amount": "NPR 11,431.97",
+              "Balance": "NPR -258,340.08"
+            },
+            {
+              "Date": "2024-08-06 13:49:08",
+              "Symbol": "SHIVM",
+              "Buy Amount": "NPR -12,431.35",
+              "Sell Amount": "NPR 0.00",
+              "Balance": "NPR -270,771.43"
+            },
+            {
+              "Date": "2024-08-06 14:44:27",
+              "Symbol": "SHIVM",
+              "Buy Amount": "NPR -7,101.44",
+              "Sell Amount": "NPR 0.00",
+              "Balance": "NPR -277,872.87"
+            },
+            {
+              "Date": "2024-08-06 14:54:33",
+              "Symbol": "SHIVM",
+              "Buy Amount": "NPR -12,391.20",
+              "Sell Amount": "NPR 0.00",
+              "Balance": "NPR -290,264.07"
+            },
+            {
+              "Date": "2024-08-13 18:12:34",
+              "Symbol": "SHIVM",
+              "Buy Amount": "NPR -35,868.91",
+              "Sell Amount": "NPR 0.00",
+              "Balance": "NPR -326,132.98"
+            },
+            {
+              "Date": "2024-08-13 18:14:10",
+              "Symbol": "LBBL",
+              "Buy Amount": "NPR -26,122.50",
+              "Sell Amount": "NPR 0.00",
+              "Balance": "NPR -352,255.48"
+            },
+            {
+              "Date": "2024-08-15 15:50:18",
+              "Symbol": "LBBL",
+              "Buy Amount": "NPR 0.00",
+              "Sell Amount": "NPR 26,185.43",
+              "Balance": "NPR -326,070.05"
+            },
+            {
+              "Date": "2024-08-21 13:11:35",
+              "Symbol": "KSBBL",
+              "Buy Amount": "NPR -26,373.44",
+              "Sell Amount": "NPR 0.00",
+              "Balance": "NPR -352,443.49"
+            },
+            {
+              "Date": "2024-09-05 08:00:00",
+              "Symbol": "LBBL",
+              "Buy Amount": "NPR 0.00",
+              "Sell Amount": "NPR 9,454.68",
+              "Balance": "NPR -342,988.81"
+            },
+            {
+              "Date": "2024-09-05 08:00:00",
+              "Symbol": "SHIVM",
+              "Buy Amount": "NPR 0.00",
+              "Sell Amount": "NPR 30,596.87",
+              "Balance": "NPR -312,391.94"
+            },
+            {
+              "Date": "2026-03-16 08:34:09",
+              "Symbol": "HHL",
+              "Buy Amount": "NPR -55,716.47",
+              "Sell Amount": "NPR 0.00",
+              "Balance": "NPR -368,108.42"
+            },
+            {
+              "Date": "2026-03-16 08:34:09",
+              "Symbol": "PHCL",
+              "Buy Amount": "NPR -32,456.16",
+              "Sell Amount": "NPR 0.00",
+              "Balance": "NPR -400,564.58"
+            },
+            {
+              "Date": "2026-03-19 20:44:14",
+              "Symbol": "IHL",
+              "Buy Amount": "NPR -26,278.08",
+              "Sell Amount": "NPR 0.00",
+              "Balance": "NPR -426,842.66"
+            },
+            {
+              "Date": "2026-03-19 20:49:20",
+              "Symbol": "LBBL",
+              "Buy Amount": "NPR 0.00",
+              "Sell Amount": "NPR 0.00",
+              "Balance": "NPR -426,842.66"
+            },
+            {
+              "Date": "2026-03-19 20:51:47",
+              "Symbol": "SHIVM",
+              "Buy Amount": "NPR 0.00",
+              "Sell Amount": "NPR 29,486.63",
+              "Balance": "NPR -397,356.03"
+            },
+            {
+              "Date": "2026-03-19 20:57:18",
+              "Symbol": "KSBBL",
+              "Buy Amount": "NPR 0.00",
+              "Sell Amount": "NPR 0.00",
+              "Balance": "NPR -397,356.03"
+            },
+            {
+              "Date": "2026-03-19 20:58:36",
+              "Symbol": "EBL",
+              "Buy Amount": "NPR 0.00",
+              "Sell Amount": "NPR 3,376.34",
+              "Balance": "NPR -393,979.69"
+            },
+            {
+              "Date": "2026-03-19 20:59:15",
+              "Symbol": "SICL",
+              "Buy Amount": "NPR 0.00",
+              "Sell Amount": "NPR 0.00",
+              "Balance": "NPR -393,979.69"
+            },
+            {
+              "Date": "2026-03-19 21:00:26",
+              "Symbol": "CITY",
+              "Buy Amount": "NPR -300.00",
+              "Sell Amount": "NPR 0.00",
+              "Balance": "NPR -394,279.69"
+            },
+            {
+              "Date": "2026-03-23 21:59:19",
+              "Symbol": "JFL",
+              "Buy Amount": "NPR -46,297.88",
+              "Sell Amount": "NPR 0.00",
+              "Balance": "NPR -440,577.57"
+            },
+            {
+              "Date": "2026-03-23 21:59:19",
+              "Symbol": "NTC",
+              "Buy Amount": "NPR -45,494.88",
+              "Sell Amount": "NPR 0.00",
+              "Balance": "NPR -486,072.44"
+            },
+            {
+              "Date": "2026-03-23 22:06:03",
+              "Symbol": "LBBL",
+              "Buy Amount": "NPR 0.00",
+              "Sell Amount": "NPR 25,027.44",
+              "Balance": "NPR -461,045.00"
+            },
+            {
+              "Date": "2026-03-23 22:06:34",
+              "Symbol": "SICL",
+              "Buy Amount": "NPR 0.00",
+              "Sell Amount": "NPR 37,125.26",
+              "Balance": "NPR -423,919.74"
+            }
+          ]
+        },
+        {
+          "tableIndex": 10,
+          "headers": [
+            "Date",
+            "Portfolio Value",
+            "Market Value",
+            "Current Investment",
+            "Daily Gain",
+            "Daily Gain %",
+            "Unrealized Gain",
+            "Unrealized Gain %"
+          ],
+          "rows": [
+            {
+              "Date": "4/24/2026",
+              "Portfolio Value": "NPR 504,266.40",
+              "Market Value": "NPR 504,266.40",
+              "Current Investment": "NPR 487,067.21",
+              "Daily Gain": "NPR -2,193.10",
+              "Daily Gain %": "-0.43%",
+              "Unrealized Gain": "NPR 14,699.19",
+              "Unrealized Gain %": "3.00%"
+            },
+            {
+              "Date": "4/23/2026",
+              "Portfolio Value": "NPR 506,459.50",
+              "Market Value": "NPR 506,459.50",
+              "Current Investment": "NPR 487,067.21",
+              "Daily Gain": "NPR -4,873.50",
+              "Daily Gain %": "-0.95%",
+              "Unrealized Gain": "NPR 16,892.29",
+              "Unrealized Gain %": "3.45%"
+            },
+            {
+              "Date": "4/22/2026",
+              "Portfolio Value": "NPR 511,333.00",
+              "Market Value": "NPR 511,333.00",
+              "Current Investment": "NPR 487,067.21",
+              "Daily Gain": "NPR 3,176.70",
+              "Daily Gain %": "0.63%",
+              "Unrealized Gain": "NPR 21,765.79",
+              "Unrealized Gain %": "4.45%"
+            },
+            {
+              "Date": "4/21/2026",
+              "Portfolio Value": "NPR 508,156.30",
+              "Market Value": "NPR 508,156.30",
+              "Current Investment": "NPR 487,067.21",
+              "Daily Gain": "NPR -5,057.20",
+              "Daily Gain %": "-0.99%",
+              "Unrealized Gain": "NPR 18,589.09",
+              "Unrealized Gain %": "3.80%"
+            },
+            {
+              "Date": "4/20/2026",
+              "Portfolio Value": "NPR 513,213.50",
+              "Market Value": "NPR 513,213.50",
+              "Current Investment": "NPR 487,067.21",
+              "Daily Gain": "NPR -7,491.50",
+              "Daily Gain %": "-1.44%",
+              "Unrealized Gain": "NPR 23,646.29",
+              "Unrealized Gain %": "4.83%"
+            },
+            {
+              "Date": "4/17/2026",
+              "Portfolio Value": "NPR 520,705.00",
+              "Market Value": "NPR 520,705.00",
+              "Current Investment": "NPR 487,067.21",
+              "Daily Gain": "NPR -393.40",
+              "Daily Gain %": "-0.08%",
+              "Unrealized Gain": "NPR 31,137.79",
+              "Unrealized Gain %": "6.36%"
+            },
+            {
+              "Date": "4/16/2026",
+              "Portfolio Value": "NPR 521,098.40",
+              "Market Value": "NPR 521,098.40",
+              "Current Investment": "NPR 487,067.21",
+              "Daily Gain": "NPR -6,683.40",
+              "Daily Gain %": "-1.27%",
+              "Unrealized Gain": "NPR 31,531.19",
+              "Unrealized Gain %": "6.44%"
+            },
+            {
+              "Date": "4/15/2026",
+              "Portfolio Value": "NPR 527,781.80",
+              "Market Value": "NPR 527,781.80",
+              "Current Investment": "NPR 487,067.21",
+              "Daily Gain": "NPR 9,267.40",
+              "Daily Gain %": "1.79%",
+              "Unrealized Gain": "NPR 38,214.59",
+              "Unrealized Gain %": "7.81%"
+            },
+            {
+              "Date": "4/13/2026",
+              "Portfolio Value": "NPR 518,514.40",
+              "Market Value": "NPR 518,514.40",
+              "Current Investment": "NPR 487,067.21",
+              "Daily Gain": "NPR -1,870.60",
+              "Daily Gain %": "-0.36%",
+              "Unrealized Gain": "NPR 28,947.19",
+              "Unrealized Gain %": "5.91%"
+            },
+            {
+              "Date": "4/10/2026",
+              "Portfolio Value": "NPR 520,385.00",
+              "Market Value": "NPR 520,385.00",
+              "Current Investment": "NPR 487,067.21",
+              "Daily Gain": "NPR -5,089.70",
+              "Daily Gain %": "-0.97%",
+              "Unrealized Gain": "NPR 30,817.79",
+              "Unrealized Gain %": "6.29%"
+            },
+            {
+              "Date": "4/9/2026",
+              "Portfolio Value": "NPR 525,474.70",
+              "Market Value": "NPR 525,474.70",
+              "Current Investment": "NPR 487,067.21",
+              "Daily Gain": "NPR 5,535.50",
+              "Daily Gain %": "1.06%",
+              "Unrealized Gain": "NPR 35,907.49",
+              "Unrealized Gain %": "7.33%"
+            },
+            {
+              "Date": "4/8/2026",
+              "Portfolio Value": "NPR 519,939.20",
+              "Market Value": "NPR 519,939.20",
+              "Current Investment": "NPR 487,067.21",
+              "Daily Gain": "NPR 12,419.10",
+              "Daily Gain %": "2.45%",
+              "Unrealized Gain": "NPR 30,371.99",
+              "Unrealized Gain %": "6.20%"
+            },
+            {
+              "Date": "4/7/2026",
+              "Portfolio Value": "NPR 507,520.10",
+              "Market Value": "NPR 507,520.10",
+              "Current Investment": "NPR 487,067.21",
+              "Daily Gain": "NPR -3,455.90",
+              "Daily Gain %": "-0.68%",
+              "Unrealized Gain": "NPR 17,952.89",
+              "Unrealized Gain %": "3.67%"
+            },
+            {
+              "Date": "4/6/2026",
+              "Portfolio Value": "NPR 510,976.00",
+              "Market Value": "NPR 510,976.00",
+              "Current Investment": "NPR 487,067.21",
+              "Daily Gain": "NPR 23,809.00",
+              "Daily Gain %": "4.89%",
+              "Unrealized Gain": "NPR 21,408.79",
+              "Unrealized Gain %": "4.37%"
+            },
+            {
+              "Date": "4/5/2026",
+              "Portfolio Value": "NPR 487,167.00",
+              "Market Value": "NPR 487,167.00",
+              "Current Investment": "NPR 487,067.21",
+              "Daily Gain": "NPR -22,653.00",
+              "Daily Gain %": "-4.44%",
+              "Unrealized Gain": "NPR -2,400.21",
+              "Unrealized Gain %": "-0.49%"
+            },
+            {
+              "Date": "4/2/2026",
+              "Portfolio Value": "NPR 509,820.00",
+              "Market Value": "NPR 509,820.00",
+              "Current Investment": "NPR 487,067.21",
+              "Daily Gain": "NPR -89.70",
+              "Daily Gain %": "-0.02%",
+              "Unrealized Gain": "NPR 20,252.79",
+              "Unrealized Gain %": "4.14%"
+            },
+            {
+              "Date": "4/1/2026",
+              "Portfolio Value": "NPR 509,909.70",
+              "Market Value": "NPR 509,909.70",
+              "Current Investment": "NPR 487,067.21",
+              "Daily Gain": "NPR -16,555.30",
+              "Daily Gain %": "-3.14%",
+              "Unrealized Gain": "NPR 20,342.49",
+              "Unrealized Gain %": "4.16%"
+            },
+            {
+              "Date": "3/31/2026",
+              "Portfolio Value": "NPR 526,465.00",
+              "Market Value": "NPR 526,465.00",
+              "Current Investment": "NPR 487,067.21",
+              "Daily Gain": "NPR 5,598.50",
+              "Daily Gain %": "1.07%",
+              "Unrealized Gain": "NPR 36,897.79",
+              "Unrealized Gain %": "7.54%"
+            },
+            {
+              "Date": "3/30/2026",
+              "Portfolio Value": "NPR 520,866.50",
+              "Market Value": "NPR 520,866.50",
+              "Current Investment": "NPR 487,067.21",
+              "Daily Gain": "NPR -10,687.00",
+              "Daily Gain %": "-2.01%",
+              "Unrealized Gain": "NPR 31,299.29",
+              "Unrealized Gain %": "6.39%"
+            },
+            {
+              "Date": "3/29/2026",
+              "Portfolio Value": "NPR 531,553.50",
+              "Market Value": "NPR 531,553.50",
+              "Current Investment": "NPR 487,067.21",
+              "Daily Gain": "NPR -17,265.50",
+              "Daily Gain %": "-3.15%",
+              "Unrealized Gain": "NPR 41,986.29",
+              "Unrealized Gain %": "8.58%"
+            },
+            {
+              "Date": "3/26/2026",
+              "Portfolio Value": "NPR 524,429.00",
+              "Market Value": "NPR 524,429.00",
+              "Current Investment": "NPR 463,444.05",
+              "Daily Gain": "NPR 4,761.00",
+              "Daily Gain %": "0.92%",
+              "Unrealized Gain": "NPR 58,484.95",
+              "Unrealized Gain %": "12.55%"
+            },
+            {
+              "Date": "3/25/2026",
+              "Portfolio Value": "NPR 519,488.00",
+              "Market Value": "NPR 519,488.00",
+              "Current Investment": "NPR 462,676.41",
+              "Daily Gain": "NPR -11,891.00",
+              "Daily Gain %": "-2.24%",
+              "Unrealized Gain": "NPR 54,311.59",
+              "Unrealized Gain %": "11.68%"
+            },
+            {
+              "Date": "3/24/2026",
+              "Portfolio Value": "NPR 505,979.00",
+              "Market Value": "NPR 505,979.00",
+              "Current Investment": "NPR 437,552.64",
+              "Daily Gain": "NPR 5,355.00",
+              "Daily Gain %": "1.07%",
+              "Unrealized Gain": "NPR 65,926.36",
+              "Unrealized Gain %": "14.98%"
+            },
+            {
+              "Date": "3/23/2026",
+              "Portfolio Value": "NPR 475,180.60",
+              "Market Value": "NPR 475,180.60",
+              "Current Investment": "NPR 404,601.14",
+              "Daily Gain": "NPR 405.30",
+              "Daily Gain %": "0.09%",
+              "Unrealized Gain": "NPR 67,579.46",
+              "Unrealized Gain %": "16.58%"
+            },
+            {
+              "Date": "3/22/2026",
+              "Portfolio Value": "NPR 474,775.30",
+              "Market Value": "NPR 474,775.30",
+              "Current Investment": "NPR 404,601.14",
+              "Daily Gain": "NPR 6,061.40",
+              "Daily Gain %": "1.29%",
+              "Unrealized Gain": "NPR 67,174.16",
+              "Unrealized Gain %": "16.48%"
+            },
+            {
+              "Date": "3/19/2026",
+              "Portfolio Value": "NPR 471,117.90",
+              "Market Value": "NPR 471,117.90",
+              "Current Investment": "NPR 409,007.22",
+              "Daily Gain": "NPR 13,868.10",
+              "Daily Gain %": "3.03%",
+              "Unrealized Gain": "NPR 61,410.68",
+              "Unrealized Gain %": "14.99%"
+            },
+            {
+              "Date": "3/17/2026",
+              "Portfolio Value": "NPR 457,249.80",
+              "Market Value": "NPR 457,249.80",
+              "Current Investment": "NPR 409,007.22",
+              "Daily Gain": "NPR 1,249.40",
+              "Daily Gain %": "0.27%",
+              "Unrealized Gain": "NPR 47,542.58",
+              "Unrealized Gain %": "11.60%"
+            },
+            {
+              "Date": "3/16/2026",
+              "Portfolio Value": "NPR 456,000.40",
+              "Market Value": "NPR 456,000.40",
+              "Current Investment": "NPR 409,007.22",
+              "Daily Gain": "NPR -4,631.60",
+              "Daily Gain %": "-1.01%",
+              "Unrealized Gain": "NPR 46,293.18",
+              "Unrealized Gain %": "11.30%"
+            },
+            {
+              "Date": "3/15/2026",
+              "Portfolio Value": "NPR 370,472.00",
+              "Market Value": "NPR 370,472.00",
+              "Current Investment": "NPR 320,834.58",
+              "Daily Gain": "NPR 91.30",
+              "Daily Gain %": "0.02%",
+              "Unrealized Gain": "NPR 48,937.42",
+              "Unrealized Gain %": "15.22%"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Agricultural Development Bank Limited",
+      "url": "https://nepsealpha.com/sastoshare/tearsheet/ADBL",
+      "tables": [
+        {
+          "tableIndex": 1,
+          "headers": [
+            "Symbol",
+            "Fiscal Year",
+            "QoQ Growth",
+            "YoY Growth",
+            "Margin TTM",
+            "Book Value",
+            "EPSTTM",
+            "ROETTM",
+            "PETTM",
+            "PB",
+            "PSTTM",
+            "LTP"
+          ],
+          "rows": [
+            {
+              "Symbol": "ADBL",
+              "Fiscal Year": "082-083",
+              "QoQ Growth": "6,063.45 %",
+              "YoY Growth": "-26.12 %",
+              "Margin TTM": "11.13 %",
+              "Book Value": "224.37",
+              "EPSTTM": "25.58",
+              "ROETTM": "11.00",
+              "PETTM": "12.20",
+              "PB": "1.40",
+              "PSTTM": "1.36",
+              "LTP": "313"
+            }
+          ]
+        },
+        {
+          "tableIndex": 3,
+          "headers": [],
+          "rows": [
+            {
+              "Col_0": "Momentum",
+              "Col_1": "B"
+            },
+            {
+              "Col_0": "Value",
+              "Col_1": "A"
+            },
+            {
+              "Col_0": "Growth",
+              "Col_1": "B"
+            },
+            {
+              "Col_0": "Size",
+              "Col_1": "High Cap"
+            }
+          ]
+        },
+        {
+          "tableIndex": 4,
+          "headers": [],
+          "rows": [
+            {
+              "Col_0": "Share Registrar",
+              "Col_1": "NIBL Ace Capital Limited"
+            },
+            {
+              "Col_0": "Website",
+              "Col_1": "https://www.adbl.gov.np/"
+            },
+            {
+              "Col_0": "Email",
+              "Col_1": "info@adbl.gov.np"
+            },
+            {
+              "Col_0": "Contact No.",
+              "Col_1": "1-4263387, 4212975"
+            },
+            {
+              "Col_0": "Head Office",
+              "Col_1": "Ramshahapath, Kathmandu, Nepal"
+            },
+            {
+              "Col_0": "Management Head",
+              "Col_1": "-"
+            },
+            {
+              "Col_0": "Promoter Holding",
+              "Col_1": "51.00 % / 72,958,148.01 Nos"
+            },
+            {
+              "Col_0": "Public Holding",
+              "Col_1": "49.00 % / 70,097,044.16 Nos"
+            },
+            {
+              "Col_0": "Locked Holding",
+              "Col_1": "0.00% / 0.00 Nos"
+            }
+          ]
+        },
+        {
+          "tableIndex": 5,
+          "headers": [
+            "Name",
+            "Designation",
+            "Ownership (Kitta)"
+          ],
+          "rows": [
+            {
+              "Name": "Mr. Ramesh Kumar KC",
+              "Designation": "Chairman",
+              "Ownership (Kitta)": "-"
+            },
+            {
+              "Name": "Mr. Prakash Kumar Sanjel",
+              "Designation": "Director",
+              "Ownership (Kitta)": "-"
+            },
+            {
+              "Name": "Mr. Ramesh Duwadi",
+              "Designation": "Director",
+              "Ownership (Kitta)": "-"
+            },
+            {
+              "Name": "Dr. Indira Shrestha (Maskey)",
+              "Designation": "Director",
+              "Ownership (Kitta)": "-"
+            },
+            {
+              "Name": "Mr. Sanjeeb Paudel",
+              "Designation": "Director",
+              "Ownership (Kitta)": "2,461"
+            },
+            {
+              "Name": "Mr. Hari Prasad Parajuli",
+              "Designation": "Director",
+              "Ownership (Kitta)": "10,701"
+            },
+            {
+              "Name": "Mr. Binod Kumar Guragain",
+              "Designation": "Director",
+              "Ownership (Kitta)": "1,355"
+            }
+          ]
+        },
+        {
+          "tableIndex": 6,
+          "headers": [
+            "Name",
+            "Designation",
+            "Ownership (Kitta)"
+          ],
+          "rows": [
+            {
+              "Name": "Nepal Government",
+              "Designation": "Promoter",
+              "Ownership (Kitta)": "56,048,642.00"
+            },
+            {
+              "Name": "Mr. Krishna Gopal Shrestha",
+              "Designation": "Promoter",
+              "Ownership (Kitta)": "1,643,230.00"
+            },
+            {
+              "Name": "Ms. Laxmi Shrestha",
+              "Designation": "Promoter",
+              "Ownership (Kitta)": "741,890.00"
+            },
+            {
+              "Name": "-",
+              "Designation": "Promoter",
+              "Ownership (Kitta)": "-"
+            },
+            {
+              "Name": "-",
+              "Designation": "Promoter",
+              "Ownership (Kitta)": "-"
+            }
+          ]
+        },
+        {
+          "tableIndex": 7,
+          "headers": [
+            "Type",
+            "1M",
+            "3M",
+            "6M",
+            "1Y",
+            "2Y",
+            "5Y"
+          ],
+          "rows": [
+            {
+              "Type": "ADBL Returns",
+              "1M": "-5.15 %",
+              "3M": "1.79 %",
+              "6M": "4.59 %",
+              "1Y": "14.01 %",
+              "2Y": "45.04 %",
+              "5Y": "-2.76 %"
+            },
+            {
+              "Type": "BANKING Returns",
+              "1M": "-6.36 %",
+              "3M": "2.14 %",
+              "6M": "7.61 %",
+              "1Y": "8.38 %",
+              "2Y": "40.49 %",
+              "5Y": "-18.55 %"
+            },
+            {
+              "Type": "NEPSE Returns",
+              "1M": "-5.02 %",
+              "3M": "0.60 %",
+              "6M": "11.15 %",
+              "1Y": "4.92 %",
+              "2Y": "41.62 %",
+              "5Y": "8.42 %"
+            }
+          ]
+        },
+        {
+          "tableIndex": 8,
+          "headers": [
+            "Alpha Anualized",
+            "Beta 3 Month",
+            "Sharpe Ratio Anualized",
+            "Daily VAR@95%CI",
+            "50D σ",
+            "1 Year Yield",
+            "52 Weeks High/Low",
+            "LTP",
+            "All Time High",
+            "All Time Low"
+          ],
+          "rows": [
+            {
+              "Alpha Anualized": "-4.16 %",
+              "Beta 3 Month": "1.00",
+              "Sharpe Ratio Anualized": "-0.06",
+              "Daily VAR@95%CI": "-2.31 %",
+              "50D σ": "Rs. 12.06",
+              "1 Year Yield": "10.43 %",
+              "52 Weeks High/Low": "NPR.334.90/NPR.269.08",
+              "LTP": "NPR. 313",
+              "All Time High": "NPR. 1082",
+              "All Time Low": "NPR. 101"
+            }
+          ]
+        },
+        {
+          "tableIndex": 9,
+          "headers": [
+            "Indicators",
+            "ADBL",
+            "Sector High",
+            "Sector Low"
+          ],
+          "rows": [
+            {
+              "Indicators": "PE TTM",
+              "ADBL": "12.23",
+              "Sector High": "382.05 NICA",
+              "Sector Low": "8.72 NBL"
+            },
+            {
+              "Indicators": "PBV",
+              "ADBL": "1.40",
+              "Sector High": "3.08 SCB",
+              "Sector Low": "1.04 NBL"
+            },
+            {
+              "Indicators": "ROE TTM",
+              "ADBL": "11.39 %",
+              "Sector High": "15.79 % EBL",
+              "Sector Low": "0.48 % NICA"
+            },
+            {
+              "Indicators": "PS TTM",
+              "ADBL": "1.36",
+              "Sector High": "8.24 SCB",
+              "Sector Low": "1.36 ADBL"
+            },
+            {
+              "Indicators": "PEG (3-5) yrs",
+              "ADBL": "0.70",
+              "Sector High": "4.35 SBL",
+              "Sector Low": "0.31 PRVU"
+            },
+            {
+              "Indicators": "ROA TTM",
+              "ADBL": "1.14 %",
+              "Sector High": "1.75 % SCB",
+              "Sector Low": "0.04 % NICA"
+            },
+            {
+              "Indicators": "Dividend Yield",
+              "ADBL": "4.15 %",
+              "Sector High": "4.65 % LSL",
+              "Sector Low": "2.11 % SANIMA"
+            },
+            {
+              "Indicators": "Payout Ratio",
+              "ADBL": "50.81 %",
+              "Sector High": "99.88 % LSL",
+              "Sector Low": "35.13 % SANIMA"
+            },
+            {
+              "Indicators": "QOQ Earnings Growth",
+              "ADBL": "6,063.45 %",
+              "Sector High": "6,063.45 % ADBL",
+              "Sector Low": "2.81 % SBI"
+            },
+            {
+              "Indicators": "YOY Earnings Growth",
+              "ADBL": "-26.12 %",
+              "Sector High": "886.50 % KBL",
+              "Sector Low": "2.04 % EBL"
+            },
+            {
+              "Indicators": "Distance From Graham Number",
+              "ADBL": "-12.91 %",
+              "Sector High": "456.09 % NICA",
+              "Sector Low": "-36.39 % NBL"
+            },
+            {
+              "Indicators": "Debt to Equity",
+              "ADBL": "11.22",
+              "Sector High": "12.08 NICA",
+              "Sector Low": "6.95 SCB"
+            }
+          ]
+        },
+        {
+          "tableIndex": 10,
+          "headers": [
+            "Indicators",
+            "ADBL",
+            "Sector High",
+            "Sector Low"
+          ],
+          "rows": [
+            {
+              "Indicators": "RSI 14",
+              "ADBL": "48.10",
+              "Sector High": "51.68 NBL",
+              "Sector Low": "42.38 GBIME"
+            },
+            {
+              "Indicators": "MFI 14",
+              "ADBL": "77.86",
+              "Sector High": "80.49 NBL",
+              "Sector Low": "40.59 GBIME"
+            },
+            {
+              "Indicators": "Price Relative Strength",
+              "ADBL": "72.51 %",
+              "Sector High": "97.21 % KBL",
+              "Sector Low": "60.16 % LSL"
+            },
+            {
+              "Indicators": "%B",
+              "ADBL": "44 %",
+              "Sector High": "61 % SBI",
+              "Sector Low": "13 % MBL"
+            },
+            {
+              "Indicators": "Stochastic 14",
+              "ADBL": "44.19",
+              "Sector High": "70.93 SANIMA",
+              "Sector Low": "21.32 NIMB"
+            },
+            {
+              "Indicators": "MACD",
+              "ADBL": "Bearish"
+            },
+            {
+              "Indicators": "SMA 10",
+              "ADBL": ""
+            },
+            {
+              "Indicators": "SMA 20",
+              "ADBL": ""
+            },
+            {
+              "Indicators": "SMA 50",
+              "ADBL": ""
+            },
+            {
+              "Indicators": "SMA 200",
+              "ADBL": ""
+            },
+            {
+              "Indicators": "Volume Trend",
+              "ADBL": ""
+            },
+            {
+              "Indicators": "3M Price Tend",
+              "ADBL": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Sector Rotation",
+      "url": "https://nepsealpha.com/sastoshare/sector-rotation/index",
+      "tables": [
+        {
+          "tableIndex": 0,
+          "headers": [
+            "Sectors",
+            "Monthly Rank",
+            "Index Value",
+            "Daily Gain",
+            "Monthly Gain"
+          ],
+          "rows": [
+            {
+              "Sectors": "BANKING",
+              "Monthly Rank": "6",
+              "Index Value": "1446.82",
+              "Daily Gain": "0.22 %",
+              "Monthly Gain": "-6.36%"
+            },
+            {
+              "Sectors": "DEVBANK",
+              "Monthly Rank": "5",
+              "Index Value": "5980.07",
+              "Daily Gain": "0.22 %",
+              "Monthly Gain": "-6.17%"
+            },
+            {
+              "Sectors": "FINANCE",
+              "Monthly Rank": "11",
+              "Index Value": "2380.8",
+              "Daily Gain": "-0.62 %",
+              "Monthly Gain": "-10.10%"
+            },
+            {
+              "Sectors": "HOTELS",
+              "Monthly Rank": "2",
+              "Index Value": "8167.38",
+              "Daily Gain": "0.32 %",
+              "Monthly Gain": "6.09%"
+            },
+            {
+              "Sectors": "HYDROPOWER",
+              "Monthly Rank": "3",
+              "Index Value": "3999.67",
+              "Daily Gain": "0.25 %",
+              "Monthly Gain": "-0.08%"
+            },
+            {
+              "Sectors": "INVESTMENT",
+              "Monthly Rank": "8",
+              "Index Value": "104.24",
+              "Daily Gain": "-0.02 %",
+              "Monthly Gain": "-7.45%"
+            },
+            {
+              "Sectors": "LIFEINSU",
+              "Monthly Rank": "9",
+              "Index Value": "12543.62",
+              "Daily Gain": "-0.26 %",
+              "Monthly Gain": "-7.81%"
+            },
+            {
+              "Sectors": "MANUFACTURE",
+              "Monthly Rank": "1",
+              "Index Value": "11702.19",
+              "Daily Gain": "0.66 %",
+              "Monthly Gain": "12.83%"
+            },
+            {
+              "Sectors": "MICROFINANCE",
+              "Monthly Rank": "7",
+              "Index Value": "4825.55",
+              "Daily Gain": "-0.35 %",
+              "Monthly Gain": "-7.23%"
+            },
+            {
+              "Sectors": "MUTUAL",
+              "Monthly Rank": "4",
+              "Index Value": "21.81",
+              "Daily Gain": "2.04 %",
+              "Monthly Gain": "-2.02%"
+            },
+            {
+              "Sectors": "NONLIFEINSU",
+              "Monthly Rank": "10",
+              "Index Value": "10881.84",
+              "Daily Gain": "-0.06 %",
+              "Monthly Gain": "-7.84%"
+            },
+            {
+              "Sectors": "OTHERS",
+              "Monthly Rank": "13",
+              "Index Value": "2012.43",
+              "Daily Gain": "-1.02 %",
+              "Monthly Gain": "-16.17%"
+            },
+            {
+              "Sectors": "TRADING",
+              "Monthly Rank": "12",
+              "Index Value": "3821.95",
+              "Daily Gain": "0.58 %",
+              "Monthly Gain": "-10.63%"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Monthly Analysis | BFIs Analysis",
+      "url": "https://nepsealpha.com/sastoshare/bifs-financials",
+      "tables": [
+        {
+          "tableIndex": 0,
+          "headers": [
+            "Symbol",
+            "Paid Up Capital",
+            "General Reserves",
+            "Retained Earning",
+            "Total Equity",
+            "Deposits",
+            "YoY Growth (Deposits)",
+            "CASA Ratio",
+            "Loans & Advances",
+            "YoY Growth (Loan & Advances)",
+            "Total Assets",
+            "Interest Income",
+            "YoY Growth (Interest Income)",
+            "Net Profit",
+            "YoY Growth (Net Profit)",
+            "EPS (Rs. Annualized)",
+            "Book Value (Rs.)"
+          ],
+          "rows": [
+            {
+              "Symbol": "ADBL",
+              "Paid Up Capital": "19,738.23",
+              "General Reserves": "10,524.85",
+              "Retained Earning": "12.45",
+              "Total Equity": "36,810.97",
+              "Deposits": "330,790.56",
+              "YoY Growth (Deposits)": "30.64%",
+              "CASA Ratio": "48.77%",
+              "Loans & Advances": "225,212.16",
+              "YoY Growth (Loan & Advances)": "7.79%",
+              "Total Assets": "51,824.34",
+              "Interest Income": "13,271.30",
+              "YoY Growth (Interest Income)": "0.70%",
+              "Net Profit": "1,221.85",
+              "YoY Growth (Net Profit)": "65.56%",
+              "EPS (Rs. Annualized)": "9.29",
+              "Book Value (Rs.)": "186.50"
+            },
+            {
+              "Symbol": "BFC",
+              "Paid Up Capital": "890.42",
+              "General Reserves": "243.57",
+              "Retained Earning": "-545.00",
+              "Total Equity": "940.03",
+              "Deposits": "6,070.93",
+              "YoY Growth (Deposits)": "12.19%",
+              "CASA Ratio": "36.12%",
+              "Loans & Advances": "4,239.22",
+              "YoY Growth (Loan & Advances)": "-0.67%",
+              "Total Assets": "556.82",
+              "Interest Income": "324.31",
+              "YoY Growth (Interest Income)": "-7.28%",
+              "Net Profit": "12.66",
+              "YoY Growth (Net Profit)": "-133.54%",
+              "EPS (Rs. Annualized)": "2.13",
+              "Book Value (Rs.)": "105.57"
+            },
+            {
+              "Symbol": "CFCL",
+              "Paid Up Capital": "948.88",
+              "General Reserves": "199.66",
+              "Retained Earning": "-349.26",
+              "Total Equity": "1,057.79",
+              "Deposits": "8,450.11",
+              "YoY Growth (Deposits)": "14.30%",
+              "CASA Ratio": "29.25%",
+              "Loans & Advances": "4,520.70",
+              "YoY Growth (Loan & Advances)": "-7.09%",
+              "Total Assets": "858.84",
+              "Interest Income": "425.71",
+              "YoY Growth (Interest Income)": "-13.19%",
+              "Net Profit": "50.48",
+              "YoY Growth (Net Profit)": "282.28%",
+              "EPS (Rs. Annualized)": "7.98",
+              "Book Value (Rs.)": "111.48"
+            },
+            {
+              "Symbol": "CMB",
+              "Paid Up Capital": "935.07",
+              "General Reserves": "454.36",
+              "Retained Earning": "-1,231.75",
+              "Total Equity": "160.30",
+              "Deposits": "27.13",
+              "YoY Growth (Deposits)": "0.78%",
+              "CASA Ratio": "82.56%",
+              "Loans & Advances": "663.53",
+              "YoY Growth (Loan & Advances)": "-7.67%",
+              "Total Assets": "3,509.94",
+              "Interest Income": "0.15",
+              "YoY Growth (Interest Income)": "0.00%",
+              "Net Profit": "-0.78",
+              "YoY Growth (Net Profit)": "-98.98%",
+              "EPS (Rs. Annualized)": "-0.12",
+              "Book Value (Rs.)": "17.14"
+            },
+            {
+              "Symbol": "CORBL",
+              "Paid Up Capital": "525.00",
+              "General Reserves": "75.00",
+              "Retained Earning": "-39.07",
+              "Total Equity": "709.16",
+              "Deposits": "2,217.05",
+              "YoY Growth (Deposits)": "23.14%",
+              "CASA Ratio": "17.82%",
+              "Loans & Advances": "1,418.62",
+              "YoY Growth (Loan & Advances)": "4.23%",
+              "Total Assets": "347.62",
+              "Interest Income": "115.71",
+              "YoY Growth (Interest Income)": "6.20%",
+              "Net Profit": "-3.17",
+              "YoY Growth (Net Profit)": "-53.57%",
+              "EPS (Rs. Annualized)": "-0.90",
+              "Book Value (Rs.)": "135.08"
+            },
+            {
+              "Symbol": "CZBIL",
+              "Paid Up Capital": "15,507.46",
+              "General Reserves": "4,084.38",
+              "Retained Earning": "-1,664.97",
+              "Total Equity": "22,887.14",
+              "Deposits": "212,223.48",
+              "YoY Growth (Deposits)": "5.15%",
+              "CASA Ratio": "51.29%",
+              "Loans & Advances": "175,864.49",
+              "YoY Growth (Loan & Advances)": "3.52%",
+              "Total Assets": "21,219.56",
+              "Interest Income": "10,101.95",
+              "YoY Growth (Interest Income)": "-13.84%",
+              "Net Profit": "800.70",
+              "YoY Growth (Net Profit)": "-31.07%",
+              "EPS (Rs. Annualized)": "7.74",
+              "Book Value (Rs.)": "147.59"
+            },
+            {
+              "Symbol": "EBL",
+              "Paid Up Capital": "13,721.38",
+              "General Reserves": "7,716.97",
+              "Retained Earning": "2,304.16",
+              "Total Equity": "30,127.10",
+              "Deposits": "304,128.97",
+              "YoY Growth (Deposits)": "13.58%",
+              "CASA Ratio": "42.57%",
+              "Loans & Advances": "250,180.37",
+              "YoY Growth (Loan & Advances)": "11.64%",
+              "Total Assets": "20,307.44",
+              "Interest Income": "13,348.46",
+              "YoY Growth (Interest Income)": "-2.61%",
+              "Net Profit": "2,907.93",
+              "YoY Growth (Net Profit)": "-3.35%",
+              "EPS (Rs. Annualized)": "31.79",
+              "Book Value (Rs.)": "219.56"
+            },
+            {
+              "Symbol": "EDBL",
+              "Paid Up Capital": "1,249.69",
+              "General Reserves": "267.64",
+              "Retained Earning": "26.07",
+              "Total Equity": "1,753.12",
+              "Deposits": "17,338.25",
+              "YoY Growth (Deposits)": "17.66%",
+              "CASA Ratio": "56.43%",
+              "Loans & Advances": "13,221.53",
+              "YoY Growth (Loan & Advances)": "9.02%",
+              "Total Assets": "910.06",
+              "Interest Income": "754.29",
+              "YoY Growth (Interest Income)": "4.39%",
+              "Net Profit": "64.05",
+              "YoY Growth (Net Profit)": "-133.94%",
+              "EPS (Rs. Annualized)": "7.69",
+              "Book Value (Rs.)": "140.28"
+            },
+            {
+              "Symbol": "GBBL",
+              "Paid Up Capital": "6,021.35",
+              "General Reserves": "1,743.14",
+              "Retained Earning": "1.06",
+              "Total Equity": "9,032.17",
+              "Deposits": "92,364.19",
+              "YoY Growth (Deposits)": "6.73%",
+              "CASA Ratio": "61.82%",
+              "Loans & Advances": "80,731.16",
+              "YoY Growth (Loan & Advances)": "7.50%",
+              "Total Assets": "4,750.55",
+              "Interest Income": "5,046.14",
+              "YoY Growth (Interest Income)": "-12.15%",
+              "Net Profit": "928.21",
+              "YoY Growth (Net Profit)": "11.19%",
+              "EPS (Rs. Annualized)": "23.12",
+              "Book Value (Rs.)": "150.00"
+            },
+            {
+              "Symbol": "GBIME",
+              "Paid Up Capital": "38,115.85",
+              "General Reserves": "13,574.91",
+              "Retained Earning": "1,007.57",
+              "Total Equity": "63,626.59",
+              "Deposits": "647,561.07",
+              "YoY Growth (Deposits)": "21.44%",
+              "CASA Ratio": "48.29%",
+              "Loans & Advances": "467,128.02",
+              "YoY Growth (Loan & Advances)": "8.68%",
+              "Total Assets": "54,647.25",
+              "Interest Income": "26,656.24",
+              "YoY Growth (Interest Income)": "-10.47%",
+              "Net Profit": "4,622.62",
+              "YoY Growth (Net Profit)": "-2.26%",
+              "EPS (Rs. Annualized)": "18.19",
+              "Book Value (Rs.)": "166.93"
+            },
+            {
+              "Symbol": "GFCL",
+              "Paid Up Capital": "946.12",
+              "General Reserves": "243.21",
+              "Retained Earning": "-608.87",
+              "Total Equity": "2,283.96",
+              "Deposits": "12,701.28",
+              "YoY Growth (Deposits)": "0.23%",
+              "CASA Ratio": "27.79%",
+              "Loans & Advances": "9,009.51",
+              "YoY Growth (Loan & Advances)": "3.15%",
+              "Total Assets": "1,580.67",
+              "Interest Income": "614.61",
+              "YoY Growth (Interest Income)": "-22.57%",
+              "Net Profit": "-32.57",
+              "YoY Growth (Net Profit)": "-251.14%",
+              "EPS (Rs. Annualized)": "-5.16",
+              "Book Value (Rs.)": "241.40"
+            },
+            {
+              "Symbol": "GMFIL",
+              "Paid Up Capital": "1,012.18",
+              "General Reserves": "216.26",
+              "Retained Earning": "-58.46",
+              "Total Equity": "1,655.07",
+              "Deposits": "8,145.69",
+              "YoY Growth (Deposits)": "3.27%",
+              "CASA Ratio": "23.69%",
+              "Loans & Advances": "5,301.70",
+              "YoY Growth (Loan & Advances)": "-7.55%",
+              "Total Assets": "521.89",
+              "Interest Income": "410.85",
+              "YoY Growth (Interest Income)": "-20.53%",
+              "Net Profit": "21.48",
+              "YoY Growth (Net Profit)": "-1,001.18%",
+              "EPS (Rs. Annualized)": "3.18",
+              "Book Value (Rs.)": "163.52"
+            },
+            {
+              "Symbol": "GRDBL",
+              "Paid Up Capital": "615.50",
+              "General Reserves": "40.55",
+              "Retained Earning": "-3.16",
+              "Total Equity": "683.66",
+              "Deposits": "6,052.46",
+              "YoY Growth (Deposits)": "2.25%",
+              "CASA Ratio": "38.16%",
+              "Loans & Advances": "5,127.00",
+              "YoY Growth (Loan & Advances)": "19.06%",
+              "Total Assets": "427.12",
+              "Interest Income": "326.11",
+              "YoY Growth (Interest Income)": "-2.87%",
+              "Net Profit": "17.97",
+              "YoY Growth (Net Profit)": "-0.37%",
+              "EPS (Rs. Annualized)": "4.38",
+              "Book Value (Rs.)": "111.07"
+            },
+            {
+              "Symbol": "GUFL",
+              "Paid Up Capital": "867.99",
+              "General Reserves": "434.93",
+              "Retained Earning": "-702.19",
+              "Total Equity": "1,234.84",
+              "Deposits": "9,058.44",
+              "YoY Growth (Deposits)": "-2.33%",
+              "CASA Ratio": "34.03%",
+              "Loans & Advances": "6,580.10",
+              "YoY Growth (Loan & Advances)": "-7.82%",
+              "Total Assets": "1,291.65",
+              "Interest Income": "436.38",
+              "YoY Growth (Interest Income)": "-27.04%",
+              "Net Profit": "-20.89",
+              "YoY Growth (Net Profit)": "-57.63%",
+              "EPS (Rs. Annualized)": "-3.61",
+              "Book Value (Rs.)": "142.26"
+            },
+            {
+              "Symbol": "HBL",
+              "Paid Up Capital": "22,581.66",
+              "General Reserves": "7,215.40",
+              "Retained Earning": "-8,854.30",
+              "Total Equity": "38,066.19",
+              "Deposits": "338,153.01",
+              "YoY Growth (Deposits)": "11.58%",
+              "CASA Ratio": "40.44%",
+              "Loans & Advances": "256,465.56",
+              "YoY Growth (Loan & Advances)": "2.09%",
+              "Total Assets": "33,335.01",
+              "Interest Income": "15,342.88",
+              "YoY Growth (Interest Income)": "-17.76%",
+              "Net Profit": "1,322.57",
+              "YoY Growth (Net Profit)": "-20.79%",
+              "EPS (Rs. Annualized)": "8.79",
+              "Book Value (Rs.)": "168.57"
+            },
+            {
+              "Symbol": "ICFC",
+              "Paid Up Capital": "1,183.47",
+              "General Reserves": "445.58",
+              "Retained Earning": "31.92",
+              "Total Equity": "1,959.29",
+              "Deposits": "21,648.72",
+              "YoY Growth (Deposits)": "14.50%",
+              "CASA Ratio": "35.00%",
+              "Loans & Advances": "17,380.33",
+              "YoY Growth (Loan & Advances)": "11.71%",
+              "Total Assets": "1,293.96",
+              "Interest Income": "1,196.78",
+              "YoY Growth (Interest Income)": "-3.72%",
+              "Net Profit": "78.45",
+              "YoY Growth (Net Profit)": "-44.92%",
+              "EPS (Rs. Annualized)": "9.94",
+              "Book Value (Rs.)": "165.55"
+            },
+            {
+              "Symbol": "JBBL",
+              "Paid Up Capital": "4,395.79",
+              "General Reserves": "857.03",
+              "Retained Earning": "-999.50",
+              "Total Equity": "6,626.59",
+              "Deposits": "65,089.09",
+              "YoY Growth (Deposits)": "9.86%",
+              "CASA Ratio": "54.96%",
+              "Loans & Advances": "52,907.40",
+              "YoY Growth (Loan & Advances)": "6.48%",
+              "Total Assets": "6,087.55",
+              "Interest Income": "3,261.74",
+              "YoY Growth (Interest Income)": "-17.55%",
+              "Net Profit": "463.38",
+              "YoY Growth (Net Profit)": "28.67%",
+              "EPS (Rs. Annualized)": "15.81",
+              "Book Value (Rs.)": "150.75"
+            },
+            {
+              "Symbol": "JFL",
+              "Paid Up Capital": "690.47",
+              "General Reserves": "184.35",
+              "Retained Earning": "-1,136.89",
+              "Total Equity": "-15.50",
+              "Deposits": "2,501.82",
+              "YoY Growth (Deposits)": "-33.56%",
+              "CASA Ratio": "46.13%",
+              "Loans & Advances": "2,391.51",
+              "YoY Growth (Loan & Advances)": "-16.61%",
+              "Total Assets": "1,236.49",
+              "Interest Income": "192.18",
+              "YoY Growth (Interest Income)": "-45.89%",
+              "Net Profit": "-20.73",
+              "YoY Growth (Net Profit)": "-84.86%",
+              "EPS (Rs. Annualized)": "-4.50",
+              "Book Value (Rs.)": "-2.25"
+            },
+            {
+              "Symbol": "KBL",
+              "Paid Up Capital": "26,225.86",
+              "General Reserves": "6,717.83",
+              "Retained Earning": "-5,707.27",
+              "Total Equity": "36,923.90",
+              "Deposits": "384,658.30",
+              "YoY Growth (Deposits)": "7.87%",
+              "CASA Ratio": "47.37%",
+              "Loans & Advances": "299,509.57",
+              "YoY Growth (Loan & Advances)": "-0.52%",
+              "Total Assets": "41,162.95",
+              "Interest Income": "19,393.88",
+              "YoY Growth (Interest Income)": "-10.38%",
+              "Net Profit": "3,630.80",
+              "YoY Growth (Net Profit)": "274.65%",
+              "EPS (Rs. Annualized)": "20.77",
+              "Book Value (Rs.)": "140.79"
+            },
+            {
+              "Symbol": "KRBL",
+              "Paid Up Capital": "502.83",
+              "General Reserves": "17.25",
+              "Retained Earning": "-4,041.94",
+              "Total Equity": "-3,488.27",
+              "Deposits": "4,290.55",
+              "YoY Growth (Deposits)": "-4.05%",
+              "CASA Ratio": "81.73%",
+              "Loans & Advances": "2,464.20",
+              "YoY Growth (Loan & Advances)": "-11.22%",
+              "Total Assets": "2,771.28",
+              "Interest Income": "25.22",
+              "YoY Growth (Interest Income)": "-76.60%",
+              "Net Profit": "12.25",
+              "YoY Growth (Net Profit)": "-101.67%",
+              "EPS (Rs. Annualized)": "3.65",
+              "Book Value (Rs.)": "-693.73"
+            },
+            {
+              "Symbol": "KSBBL",
+              "Paid Up Capital": "4,211.93",
+              "General Reserves": "1,098.66",
+              "Retained Earning": "33.23",
+              "Total Equity": "6,368.17",
+              "Deposits": "64,036.44",
+              "YoY Growth (Deposits)": "3.49%",
+              "CASA Ratio": "50.37%",
+              "Loans & Advances": "56,021.49",
+              "YoY Growth (Loan & Advances)": "5.43%",
+              "Total Assets": "2,851.93",
+              "Interest Income": "3,499.32",
+              "YoY Growth (Interest Income)": "-11.19%",
+              "Net Profit": "562.73",
+              "YoY Growth (Net Profit)": "12.30%",
+              "EPS (Rs. Annualized)": "20.04",
+              "Book Value (Rs.)": "151.19"
+            },
+            {
+              "Symbol": "LBBL",
+              "Paid Up Capital": "3,623.68",
+              "General Reserves": "1,191.82",
+              "Retained Earning": "184.37",
+              "Total Equity": "6,878.13",
+              "Deposits": "54,964.18",
+              "YoY Growth (Deposits)": "-2.30%",
+              "CASA Ratio": "48.20%",
+              "Loans & Advances": "48,381.23",
+              "YoY Growth (Loan & Advances)": "-1.70%",
+              "Total Assets": "4,820.62",
+              "Interest Income": "2,761.35",
+              "YoY Growth (Interest Income)": "-28.69%",
+              "Net Profit": "251.25",
+              "YoY Growth (Net Profit)": "-19.00%",
+              "EPS (Rs. Annualized)": "10.40",
+              "Book Value (Rs.)": "189.81"
+            },
+            {
+              "Symbol": "LSL",
+              "Paid Up Capital": "26,781.16",
+              "General Reserves": "7,305.28",
+              "Retained Earning": "-569.10",
+              "Total Equity": "45,148.31",
+              "Deposits": "398,336.83",
+              "YoY Growth (Deposits)": "13.62%",
+              "CASA Ratio": "50.98%",
+              "Loans & Advances": "310,339.74",
+              "YoY Growth (Loan & Advances)": "9.68%",
+              "Total Assets": "31,349.36",
+              "Interest Income": "16,909.77",
+              "YoY Growth (Interest Income)": "-12.23%",
+              "Net Profit": "650.49",
+              "YoY Growth (Net Profit)": "-67.36%",
+              "EPS (Rs. Annualized)": "3.64",
+              "Book Value (Rs.)": "168.58"
+            },
+            {
+              "Symbol": "MBL",
+              "Paid Up Capital": "12,086.21",
+              "General Reserves": "3,276.27",
+              "Retained Earning": "-4.80",
+              "Total Equity": "18,431.06",
+              "Deposits": "212,966.31",
+              "YoY Growth (Deposits)": "26.00%",
+              "CASA Ratio": "54.56%",
+              "Loans & Advances": "163,936.67",
+              "YoY Growth (Loan & Advances)": "12.97%",
+              "Total Assets": "15,632.93",
+              "Interest Income": "9,036.22",
+              "YoY Growth (Interest Income)": "-6.16%",
+              "Net Profit": "1,484.47",
+              "YoY Growth (Net Profit)": "27.72%",
+              "EPS (Rs. Annualized)": "18.42",
+              "Book Value (Rs.)": "152.50"
+            },
+            {
+              "Symbol": "MDB",
+              "Paid Up Capital": "1,217.10",
+              "General Reserves": "330.59",
+              "Retained Earning": "-1.44",
+              "Total Equity": "1,598.02",
+              "Deposits": "8,501.54",
+              "YoY Growth (Deposits)": "38.64%",
+              "CASA Ratio": "36.71%",
+              "Loans & Advances": "7,308.80",
+              "YoY Growth (Loan & Advances)": "72.57%",
+              "Total Assets": "197.48",
+              "Interest Income": "434.02",
+              "YoY Growth (Interest Income)": "17.91%",
+              "Net Profit": "80.13",
+              "YoY Growth (Net Profit)": "2.84%",
+              "EPS (Rs. Annualized)": "9.88",
+              "Book Value (Rs.)": "131.30"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Dividend Book | History",
+      "url": "https://nepsealpha.com/sastoshare/dividend-book/book-trend",
+      "tables": [
+        {
+          "tableIndex": 0,
+          "headers": [
+            "Symbol",
+            "2069/2070",
+            "2070/2071",
+            "2071/2072",
+            "2072/2073",
+            "2073/2074",
+            "2074/2075",
+            "2075/2076",
+            "2076/2077",
+            "2077/2078",
+            "2078/2079",
+            "2079/2080",
+            "2080/2081",
+            "2081/2082",
+            "ADBL",
+            "BOKL",
+            "CBL",
+            "CCBL",
+            "CZBIL",
+            "EBL",
+            "GBIME",
+            "HBL",
+            "JBNL",
+            "KBL"
+          ],
+          "rows": [
+            {
+              "Symbol": "31.58 %",
+              "2069/2070": "15.00 %",
+              "2070/2071": "15.79 %",
+              "2071/2072": "21.05 %",
+              "2072/2073": "21.05 %",
+              "2073/2074": "21.05 %",
+              "2074/2075": "30.00 %",
+              "2075/2076": "15.79 %",
+              "2076/2077": "21.05 %",
+              "2077/2078": "13.00 %",
+              "2078/2079": "-",
+              "2079/2080": "10.53 %",
+              "2080/2081": "13.00 %"
+            },
+            {
+              "Symbol": "-",
+              "2069/2070": "-",
+              "2070/2071": "-",
+              "2071/2072": "23.00 %",
+              "2072/2073": "13.25 %",
+              "2073/2074": "25.00 %",
+              "2074/2075": "17.00 %",
+              "2075/2076": "16.00 %",
+              "2076/2077": "14.00 %",
+              "2077/2078": "20.95 %",
+              "2078/2079": "-",
+              "2079/2080": "-",
+              "2080/2081": "-"
+            },
+            {
+              "Symbol": "5.75 %",
+              "2069/2070": "8.50 %",
+              "2070/2071": "7.10 %",
+              "2071/2072": "3.03 %",
+              "2072/2073": "10.79 %",
+              "2073/2074": "4.05 %",
+              "2074/2075": "6.57 %",
+              "2075/2076": "8.42 %",
+              "2076/2077": "5.26 %",
+              "2077/2078": "5.26 %",
+              "2078/2079": "-",
+              "2079/2080": "-",
+              "2080/2081": "-"
+            },
+            {
+              "Symbol": "-",
+              "2069/2070": "9.47 %",
+              "2070/2071": "9.47 %",
+              "2071/2072": "10.00 %",
+              "2072/2073": "10.00 %",
+              "2073/2074": "6.50 %",
+              "2074/2075": "6.75 %",
+              "2075/2076": "7.50 %",
+              "2076/2077": "6.05 %",
+              "2077/2078": "5.00 %",
+              "2078/2079": "-",
+              "2079/2080": "-",
+              "2080/2081": "-"
+            },
+            {
+              "Symbol": "15.00 %",
+              "2069/2070": "18.95 %",
+              "2070/2071": "21.05 %",
+              "2071/2072": "16.63 %",
+              "2072/2073": "17.00 %",
+              "2073/2074": "5.26 %",
+              "2074/2075": "15.00 %",
+              "2075/2076": "11.00 %",
+              "2076/2077": "16.00 %",
+              "2077/2078": "9.00 %",
+              "2078/2079": "5.79 %",
+              "2079/2080": "4.21 %",
+              "2080/2081": "5.26 %"
+            },
+            {
+              "Symbol": "60.53 %",
+              "2069/2070": "62.00 %",
+              "2070/2071": "36.57 %",
+              "2071/2072": "73.67 %",
+              "2072/2073": "34.74 %",
+              "2073/2074": "20.00 %",
+              "2074/2075": "25.00 %",
+              "2075/2076": "10.53 %",
+              "2076/2077": "10.32 %",
+              "2077/2078": "20.68 %",
+              "2078/2079": "20.53 %",
+              "2079/2080": "15.53 %",
+              "2080/2081": "20.00 %"
+            },
+            {
+              "Symbol": "15.00 %",
+              "2069/2070": "25.00 %",
+              "2070/2071": "23.00 %",
+              "2071/2072": "16.00 %",
+              "2072/2073": "20.00 %",
+              "2073/2074": "16.00 %",
+              "2074/2075": "25.50 %",
+              "2075/2076": "16.00 %",
+              "2076/2077": "13.50 %",
+              "2077/2078": "13.60 %",
+              "2078/2079": "9.00 %",
+              "2079/2080": "5.50 %",
+              "2080/2081": "8.00 %"
+            },
+            {
+              "Symbol": "15.00 %",
+              "2069/2070": "21.05 %",
+              "2070/2071": "42.10 %",
+              "2071/2072": "31.57 %",
+              "2072/2073": "26.32 %",
+              "2073/2074": "15.78 %",
+              "2074/2075": "22.00 %",
+              "2075/2076": "20.00 %",
+              "2076/2077": "26.00 %",
+              "2077/2078": "19.11 %",
+              "2078/2079": "-",
+              "2079/2080": "-",
+              "2080/2081": "-"
+            },
+            {
+              "Symbol": "8.52 %",
+              "2069/2070": "-",
+              "2070/2071": "-",
+              "2071/2072": "12.63 %",
+              "2072/2073": "14.40 %",
+              "2073/2074": "8.50 %",
+              "2074/2075": "12.00 %",
+              "2075/2076": "-",
+              "2076/2077": "-",
+              "2077/2078": "-",
+              "2078/2079": "-",
+              "2079/2080": "-",
+              "2080/2081": "-"
+            },
+            {
+              "Symbol": "14.00 %",
+              "2069/2070": "34.74 %",
+              "2070/2071": "11.58 %",
+              "2071/2072": "22.10 %",
+              "2072/2073": "12.75 %",
+              "2073/2074": "8.50 %",
+              "2074/2075": "10.52 %",
+              "2075/2076": "14.00 %",
+              "2076/2077": "8.67 %",
+              "2077/2078": "12.50 %",
+              "2078/2079": "-",
+              "2079/2080": "-",
+              "2080/2081": "-"
+            }
+          ]
+        },
+        {
+          "tableIndex": 1,
+          "headers": [
+            "Symbol",
+            "10 Years",
+            "5 Years",
+            "3 Years"
+          ],
+          "rows": [
+            {
+              "Symbol": "ADBL",
+              "10 Years": "18.23%",
+              "5 Years": "14.67%",
+              "3 Years": "12.18%"
+            },
+            {
+              "Symbol": "BOKL",
+              "10 Years": "-",
+              "5 Years": "18.59%",
+              "3 Years": "16.98%"
+            },
+            {
+              "Symbol": "CBL",
+              "10 Years": "6.47%",
+              "5 Years": "5.91%",
+              "3 Years": "6.31%"
+            },
+            {
+              "Symbol": "CCBL",
+              "10 Years": "-",
+              "5 Years": "6.36%",
+              "3 Years": "6.18%"
+            },
+            {
+              "Symbol": "CZBIL",
+              "10 Years": "10.52%",
+              "5 Years": "8.05%",
+              "3 Years": "5.09%"
+            },
+            {
+              "Symbol": "EBL",
+              "10 Years": "25.10%",
+              "5 Years": "17.41%",
+              "3 Years": "18.69%"
+            },
+            {
+              "Symbol": "GBIME",
+              "10 Years": "14.31%",
+              "5 Years": "9.92%",
+              "3 Years": "7.50%"
+            },
+            {
+              "Symbol": "HBL",
+              "10 Years": "23.89%",
+              "5 Years": "20.58%",
+              "3 Years": "21.70%"
+            },
+            {
+              "Symbol": "JBNL",
+              "10 Years": "-",
+              "5 Years": "11.21%",
+              "3 Years": "11.63%"
+            },
+            {
+              "Symbol": "KBL",
+              "10 Years": "14.94%",
+              "5 Years": "10.84%",
+              "3 Years": "11.72%"
+            }
+          ]
+        },
+        {
+          "tableIndex": 2,
+          "headers": [
+            "Symbol",
+            "10 Years",
+            "5 Years",
+            "3 Years"
+          ],
+          "rows": [
+            {
+              "Symbol": "ADBL",
+              "10 Years": "5.23%",
+              "5 Years": "-5.77%",
+              "3 Years": "-4.93%"
+            },
+            {
+              "Symbol": "BOKL",
+              "10 Years": "-",
+              "5 Years": "17.59%",
+              "3 Years": "10.42%"
+            },
+            {
+              "Symbol": "CBL",
+              "10 Years": "22.05%",
+              "5 Years": "-1.92%",
+              "3 Years": "-3.12%"
+            },
+            {
+              "Symbol": "CCBL",
+              "10 Years": "-",
+              "5 Years": "-11.35%",
+              "3 Years": "-8.53%"
+            },
+            {
+              "Symbol": "CZBIL",
+              "10 Years": "3.43%",
+              "5 Years": "-7.25%",
+              "3 Years": "-12.65%"
+            },
+            {
+              "Symbol": "EBL",
+              "10 Years": "7.54%",
+              "5 Years": "20.42%",
+              "3 Years": "1.23%"
+            },
+            {
+              "Symbol": "GBIME",
+              "10 Years": "-4.54%",
+              "5 Years": "-8.43%",
+              "3 Years": "-9.09%"
+            },
+            {
+              "Symbol": "HBL",
+              "10 Years": "9.25%",
+              "5 Years": "-1.24%",
+              "3 Years": "-1.86%"
+            },
+            {
+              "Symbol": "JBNL",
+              "10 Years": "-",
+              "5 Years": "2.84%",
+              "3 Years": "4.74%"
+            },
+            {
+              "Symbol": "KBL",
+              "10 Years": "15.96%",
+              "5 Years": "5.92%",
+              "3 Years": "13.06%"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Dividend Book | Scenario Chart",
+      "url": "https://nepsealpha.com/sastoshare/dividend-book/what-if-chart",
+      "tables": [
+        {
+          "tableIndex": 0,
+          "headers": [
+            "S.N",
+            "Bonus %",
+            "Cash %",
+            "Total %",
+            "Book Close",
+            "Fiscal Year",
+            "Status"
+          ],
+          "rows": [
+            {
+              "S.N": "1.",
+              "Bonus %": "0.00 %",
+              "Cash %": "12.5 %",
+              "Total %": "12.50 %",
+              "Book Close": "2025-12-31",
+              "Fiscal Year": "2081/2082",
+              "Status": "Closed"
+            },
+            {
+              "S.N": "2.",
+              "Bonus %": "0.00 %",
+              "Cash %": "10 %",
+              "Total %": "10.00 %",
+              "Book Close": "2024-11-25",
+              "Fiscal Year": "2080/2081",
+              "Status": "Closed"
+            },
+            {
+              "S.N": "3.",
+              "Bonus %": "0.00 %",
+              "Cash %": "11 %",
+              "Total %": "11.00 %",
+              "Book Close": "2023-12-15",
+              "Fiscal Year": "2079/2080",
+              "Status": "Closed"
+            },
+            {
+              "S.N": "4.",
+              "Bonus %": "18.50 %",
+              "Cash %": "11.50 %",
+              "Total %": "30.00 %",
+              "Book Close": "2023-01-02",
+              "Fiscal Year": "2078/2079",
+              "Status": "Closed"
+            },
+            {
+              "S.N": "5.",
+              "Bonus %": "33.60 %",
+              "Cash %": "4.4 %",
+              "Total %": "38.00 %",
+              "Book Close": "2021-12-31",
+              "Fiscal Year": "2077/2078",
+              "Status": "Closed"
+            },
+            {
+              "S.N": "6.",
+              "Bonus %": "33.50 %",
+              "Cash %": "1.76 %",
+              "Total %": "35.26 %",
+              "Book Close": "2020-12-30",
+              "Fiscal Year": "2076/2077",
+              "Status": "Closed"
+            },
+            {
+              "S.N": "7.",
+              "Bonus %": "12.00 %",
+              "Cash %": "22 %",
+              "Total %": "34.00 %",
+              "Book Close": "2019-12-24",
+              "Fiscal Year": "2075/2076",
+              "Status": "Closed"
+            },
+            {
+              "S.N": "8.",
+              "Bonus %": "12.00 %",
+              "Cash %": "22 %",
+              "Total %": "34.00 %",
+              "Book Close": "2019-02-26",
+              "Fiscal Year": "2074/2075",
+              "Status": "Closed"
+            },
+            {
+              "S.N": "9.",
+              "Bonus %": "30.00 %",
+              "Cash %": "18 %",
+              "Total %": "48.00 %",
+              "Book Close": "2017-09-12",
+              "Fiscal Year": "2073/2074",
+              "Status": "Closed"
+            },
+            {
+              "S.N": "10.",
+              "Bonus %": "30.00 %",
+              "Cash %": "15 %",
+              "Total %": "45.00 %",
+              "Book Close": "2016-09-21",
+              "Fiscal Year": "2072/2073",
+              "Status": "Closed"
+            },
+            {
+              "S.N": "11.",
+              "Bonus %": "30.00 %",
+              "Cash %": "6.842 %",
+              "Total %": "36.84 %",
+              "Book Close": "2015-12-06",
+              "Fiscal Year": "2071/2072",
+              "Status": "Closed"
+            },
+            {
+              "S.N": "12.",
+              "Bonus %": "20.00 %",
+              "Cash %": "45 %",
+              "Total %": "65.00 %",
+              "Book Close": "2014-11-13",
+              "Fiscal Year": "2070/2071",
+              "Status": "Closed"
+            },
+            {
+              "S.N": "13.",
+              "Bonus %": "25.00 %",
+              "Cash %": "40 %",
+              "Total %": "65.00 %",
+              "Book Close": "2013-12-09",
+              "Fiscal Year": "2069/2070",
+              "Status": "Closed"
+            },
+            {
+              "S.N": "14.",
+              "Bonus %": "20.00 %",
+              "Cash %": "40 %",
+              "Total %": "60.00 %",
+              "Book Close": "2012-10-03",
+              "Fiscal Year": "2068/2069",
+              "Status": "Closed"
+            },
+            {
+              "S.N": "15.",
+              "Bonus %": "0.00 %",
+              "Cash %": "30 %",
+              "Total %": "30.00 %",
+              "Book Close": "2011-12-04",
+              "Fiscal Year": "2067/2068",
+              "Status": "Closed"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
