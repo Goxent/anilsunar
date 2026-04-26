@@ -1,18 +1,18 @@
-import React, { useState } from 'react';
-import { Plus, Trash2, Copy, Check, Youtube, ExternalLink, AlertTriangle } from 'lucide-react';
+import React, { useState, useEffect } from 'react';
+import { Plus, Trash2, Copy, Check, Youtube, ExternalLink, AlertTriangle, Settings, UploadCloud, Github, Loader2 } from 'lucide-react';
 
-// Static imports of all content JSON files
 import videosJson from '../src/content/videos.json';
 import postsJson from '../src/content/posts.json';
 import projectsJson from '../src/content/projects.json';
 import experienceJson from '../src/content/experience.json';
 import coursesJson from '../src/content/courses.json';
+import settingsJson from '../src/content/settings.json';
 
 interface AdminDashboardProps {
   onClose?: () => void;
 }
 
-type TabId = 'videos' | 'posts' | 'projects' | 'experience' | 'courses';
+type TabId = 'videos' | 'posts' | 'projects' | 'experience' | 'courses' | 'settings';
 
 const TABS: { id: TabId; label: string; file: string }[] = [
   { id: 'videos',     label: 'Videos',     file: 'src/content/videos.json' },
@@ -20,14 +20,16 @@ const TABS: { id: TabId; label: string; file: string }[] = [
   { id: 'projects',   label: 'Projects',    file: 'src/content/projects.json' },
   { id: 'experience', label: 'Experience',  file: 'src/content/experience.json' },
   { id: 'courses',    label: 'Courses',     file: 'src/content/courses.json' },
+  { id: 'settings',   label: 'Site Settings',file: 'src/content/settings.json' },
 ];
 
-const INITIAL_DATA: Record<TabId, any[]> = {
-  videos:     videosJson as any[],
-  posts:      postsJson as any[],
-  projects:   projectsJson as any[],
-  experience: experienceJson as any[],
-  courses:    coursesJson as any[],
+const INITIAL_DATA: Record<TabId, any> = {
+  videos:     videosJson,
+  posts:      postsJson,
+  projects:   projectsJson,
+  experience: experienceJson,
+  courses:    coursesJson,
+  settings:   settingsJson,
 };
 
 const BLANK_ITEMS: Record<TabId, any> = {
@@ -36,49 +38,10 @@ const BLANK_ITEMS: Record<TabId, any> = {
   projects:   { id: `pr${Date.now()}`, title: '', description: '', tags: [], status: 'Building', link: '' },
   experience: { id: `e${Date.now()}`, role: '', company: '', period: '', description: '', skills: [] },
   courses:    { id: `c${Date.now()}`, title: '', provider: '', date: '', description: '', url: '' },
+  settings:   {},
 };
 
 const PLATFORMS = ['LinkedIn', 'Medium', 'Blog', 'Other'];
-
-function CopyModal({ json, file, onClose }: { json: string; file: string; onClose: () => void }) {
-  const [copied, setCopied] = useState(false);
-
-  const handleCopy = () => {
-    navigator.clipboard.writeText(json);
-    setCopied(true);
-    setTimeout(() => setCopied(false), 2000);
-  };
-
-  return (
-    <div style={{
-      position: 'fixed', inset: 0, zIndex: 1000,
-      background: 'rgba(0,0,0,0.8)', backdropFilter: 'blur(4px)',
-      display: 'flex', alignItems: 'center', justifyContent: 'center', padding: 24
-    }}>
-      <div style={{ background: 'var(--bg-secondary)', border: '1px solid var(--border)', borderRadius: 16, padding: 32, width: '100%', maxWidth: 680 }}>
-        <h3 style={{ fontSize: 18, fontWeight: 700, marginBottom: 8 }}>Save Your Changes</h3>
-        <p style={{ fontSize: 13, color: 'var(--text-secondary)', marginBottom: 16, lineHeight: 1.6 }}>
-          Copy this JSON and paste it into <code style={{ background: 'rgba(245,158,11,0.1)', color: 'var(--gold)', padding: '2px 6px', borderRadius: 4 }}>{file}</code>, then push to GitHub.
-        </p>
-        <textarea
-          readOnly
-          value={json}
-          style={{
-            width: '100%', height: 320, fontFamily: 'monospace', fontSize: 12,
-            background: '#050508', border: '1px solid var(--border)', borderRadius: 8,
-            padding: 12, color: 'var(--text-primary)', resize: 'vertical', marginBottom: 16,
-          }}
-        />
-        <div style={{ display: 'flex', gap: 12, justifyContent: 'flex-end' }}>
-          <button onClick={onClose} className="btn" style={{ border: 'none' }}>Close</button>
-          <button onClick={handleCopy} className="btn btn-primary">
-            {copied ? <><Check size={14} /> Copied!</> : <><Copy size={14} /> Copy to Clipboard</>}
-          </button>
-        </div>
-      </div>
-    </div>
-  );
-}
 
 function FieldInput({ label, value, onChange, type = 'text', options }: {
   label: string; value: any; onChange: (v: any) => void; type?: string; options?: string[]
@@ -161,7 +124,7 @@ function GenericCard({ item, fields, onChange, onDelete }: {
   );
 }
 
-const TAB_FIELDS: Record<TabId, { key: string; label: string; type?: string; options?: string[] }[]> = {
+const TAB_FIELDS: Record<Exclude<TabId, 'settings'>, { key: string; label: string; type?: string; options?: string[] }[]> = {
   videos: [],
   posts: [
     { key: 'title', label: 'Title' },
@@ -194,18 +157,72 @@ const TAB_FIELDS: Record<TabId, { key: string; label: string; type?: string; opt
 };
 
 const AdminDashboard: React.FC<AdminDashboardProps> = ({ onClose }) => {
-  const [activeTab, setActiveTab] = useState<TabId>('videos');
-  const [data, setData] = useState<Record<TabId, any[]>>(INITIAL_DATA);
-  const [modal, setModal] = useState<{ json: string; file: string } | null>(null);
+  const [activeTab, setActiveTab] = useState<TabId>('settings');
+  const [data, setData] = useState<Record<TabId, any>>(INITIAL_DATA);
+  const [githubToken, setGithubToken] = useState(localStorage.getItem('goxent_github_token') || '');
+  const [isSaving, setIsSaving] = useState(false);
+  const [saveStatus, setSaveStatus] = useState<{ type: 'success' | 'error', msg: string } | null>(null);
 
   const currentTab = TABS.find(t => t.id === activeTab)!;
 
-  const handleSave = () => {
-    const json = JSON.stringify(data[activeTab], null, 2);
-    setModal({ json, file: currentTab.file });
+  useEffect(() => {
+    localStorage.setItem('goxent_github_token', githubToken);
+  }, [githubToken]);
+
+  const handleSaveToGithub = async () => {
+    if (!githubToken) {
+      setSaveStatus({ type: 'error', msg: 'GitHub Token is required to save live to website.' });
+      return;
+    }
+
+    setIsSaving(true);
+    setSaveStatus(null);
+    try {
+      const content = JSON.stringify(data[activeTab], null, 2);
+      const encodedContent = btoa(unescape(encodeURIComponent(content)));
+      
+      const repoPath = `Goxent/anilsunar`;
+      const filePath = currentTab.file;
+
+      // 1. Get current file SHA
+      let sha = '';
+      const getRes = await fetch(`https://api.github.com/repos/${repoPath}/contents/${filePath}`, {
+        headers: { Authorization: `token ${githubToken}` }
+      });
+      if (getRes.ok) {
+        const getJson = await getRes.json();
+        sha = getJson.sha;
+      }
+
+      // 2. Put new file
+      const putRes = await fetch(`https://api.github.com/repos/${repoPath}/contents/${filePath}`, {
+        method: 'PUT',
+        headers: {
+          Authorization: `token ${githubToken}`,
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({
+          message: `Update ${filePath} via CMS`,
+          content: encodedContent,
+          sha: sha || undefined
+        })
+      });
+
+      if (!putRes.ok) {
+        const err = await putRes.json();
+        throw new Error(err.message || 'Failed to push to GitHub');
+      }
+
+      setSaveStatus({ type: 'success', msg: 'Successfully saved to GitHub! Website will update in ~30 seconds.' });
+    } catch (err: any) {
+      setSaveStatus({ type: 'error', msg: err.message });
+    } finally {
+      setIsSaving(false);
+    }
   };
 
   const handleAdd = () => {
+    if (activeTab === 'settings') return;
     const blank = { ...BLANK_ITEMS[activeTab], id: `${activeTab[0]}${Date.now()}` };
     setData(prev => ({ ...prev, [activeTab]: [blank, ...prev[activeTab]] }));
   };
@@ -226,89 +243,141 @@ const AdminDashboard: React.FC<AdminDashboardProps> = ({ onClose }) => {
     });
   };
 
+  const handleSettingsChange = (section: string, key: string, val: string) => {
+    setData(prev => ({
+      ...prev,
+      settings: {
+        ...prev.settings,
+        [section]: {
+          ...prev.settings[section],
+          [key]: val
+        }
+      }
+    }));
+  };
+
   return (
-    <div style={{ minHeight: '100vh', background: 'var(--bg-primary)', color: 'var(--text-primary)' }}>
-      {modal && <CopyModal json={modal.json} file={modal.file} onClose={() => setModal(null)} />}
-
-      {/* Banner */}
-      <div style={{
-        background: 'rgba(245,158,11,0.08)', borderBottom: '1px solid rgba(245,158,11,0.2)',
-        padding: '12px 32px', display: 'flex', alignItems: 'center', gap: 10
-      }}>
-        <AlertTriangle size={16} style={{ color: 'var(--gold)', flexShrink: 0 }} />
-        <p style={{ fontSize: 13, color: 'var(--gold)' }}>
-          <strong>Admin Panel</strong> — changes must be pasted into the JSON files and pushed to GitHub
-        </p>
-      </div>
-
+    <div style={{ minHeight: '100vh', background: 'var(--bg-primary)', color: 'var(--text-primary)', paddingBottom: 64 }}>
       {/* Header */}
-      <div style={{ padding: '24px 32px', borderBottom: '1px solid var(--border)', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+      <div style={{ padding: '24px 32px', borderBottom: '1px solid var(--border)', display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', flexWrap: 'wrap', gap: 16 }}>
         <div>
-          <h2 style={{ fontSize: 24, fontWeight: 800 }}>Content Editor</h2>
-          <p style={{ fontSize: 13, color: 'var(--text-secondary)', marginTop: 4 }}>Edit your website content directly in the browser</p>
+          <h2 style={{ fontSize: 28, fontWeight: 800 }}>Live CMS</h2>
+          <p style={{ fontSize: 13, color: 'var(--text-secondary)', marginTop: 4 }}>
+            Directly update your main website content via the GitHub API. No coding required.
+          </p>
         </div>
-        <div style={{ display: 'flex', gap: 12 }}>
-          <button onClick={handleAdd} className="btn">
-            <Plus size={14} /> Add New Item
-          </button>
-          <button onClick={handleSave} className="btn btn-primary">
-            <Copy size={14} /> Save Changes
+        <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-end', gap: 8, minWidth: 300 }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 8, width: '100%' }}>
+            <Github size={16} />
+            <input 
+              type="password" 
+              placeholder="GitHub Personal Access Token" 
+              value={githubToken} 
+              onChange={e => setGithubToken(e.target.value)}
+              style={{ flex: 1, padding: '8px 12px', borderRadius: 6, background: '#111', border: '1px solid var(--border)', color: '#fff', fontSize: 12 }}
+            />
+          </div>
+          <button onClick={handleSaveToGithub} disabled={isSaving || !githubToken} className="btn btn-primary" style={{ width: '100%', justifyContent: 'center' }}>
+            {isSaving ? <Loader2 size={16} className="animate-spin" /> : <UploadCloud size={16} />}
+            {isSaving ? 'Pushing to GitHub...' : 'Publish Changes Live'}
           </button>
         </div>
       </div>
+
+      {saveStatus && (
+        <div style={{ padding: '12px 32px', background: saveStatus.type === 'success' ? 'rgba(16,185,129,0.1)' : 'rgba(239,68,68,0.1)', borderBottom: `1px solid ${saveStatus.type === 'success' ? 'rgba(16,185,129,0.2)' : 'rgba(239,68,68,0.2)'}`, color: saveStatus.type === 'success' ? 'var(--green)' : 'var(--red)', display: 'flex', alignItems: 'center', gap: 8 }}>
+          {saveStatus.type === 'success' ? <Check size={16} /> : <AlertTriangle size={16} />}
+          <span style={{ fontSize: 13, fontWeight: 500 }}>{saveStatus.msg}</span>
+        </div>
+      )}
 
       {/* Tabs */}
-      <div style={{ display: 'flex', gap: 4, padding: '16px 32px', borderBottom: '1px solid var(--border)' }}>
+      <div style={{ display: 'flex', gap: 4, padding: '16px 32px', borderBottom: '1px solid var(--border)', overflowX: 'auto' }}>
         {TABS.map(tab => (
           <button
             key={tab.id}
-            onClick={() => setActiveTab(tab.id)}
+            onClick={() => { setActiveTab(tab.id); setSaveStatus(null); }}
             className="btn"
             style={{
               background: activeTab === tab.id ? 'var(--gold-dim)' : 'transparent',
               color: activeTab === tab.id ? 'var(--gold)' : 'var(--text-secondary)',
               borderColor: activeTab === tab.id ? 'rgba(245,158,11,0.3)' : 'transparent',
               fontSize: 13,
+              whiteSpace: 'nowrap'
             }}
           >
-            {tab.id === 'videos' && <Youtube size={13} />}
+            {tab.id === 'videos' ? <Youtube size={13} /> : tab.id === 'settings' ? <Settings size={13} /> : null}
             {tab.label}
-            <span style={{ marginLeft: 4, fontSize: 11, opacity: 0.7 }}>({data[tab.id].length})</span>
+            {tab.id !== 'settings' && <span style={{ marginLeft: 4, fontSize: 11, opacity: 0.7 }}>({data[tab.id].length})</span>}
           </button>
         ))}
       </div>
 
       {/* Content */}
       <div style={{ padding: '24px 32px', maxWidth: 800 }}>
-        <p style={{ fontSize: 12, color: 'var(--text-secondary)', marginBottom: 20 }}>
-          File: <code style={{ color: 'var(--gold)', background: 'rgba(245,158,11,0.08)', padding: '2px 8px', borderRadius: 4 }}>{currentTab.file}</code>
-          {' '}— {data[activeTab].length} items
-        </p>
+        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 20 }}>
+          <p style={{ fontSize: 12, color: 'var(--text-secondary)' }}>
+            Editing File: <code style={{ color: 'var(--gold)', background: 'rgba(245,158,11,0.08)', padding: '2px 8px', borderRadius: 4 }}>{currentTab.file}</code>
+          </p>
+          {activeTab !== 'settings' && (
+            <button onClick={handleAdd} className="btn" style={{ padding: '4px 10px', fontSize: 12 }}>
+              <Plus size={14} /> Add New
+            </button>
+          )}
+        </div>
 
-        {data[activeTab].map((item, index) =>
-          activeTab === 'videos' ? (
-            <VideoCard
-              key={item.id || index}
-              item={item}
-              onChange={updated => handleChange(index, updated)}
-              onDelete={() => handleDelete(index)}
-            />
-          ) : (
-            <GenericCard
-              key={item.id || index}
-              item={item}
-              fields={TAB_FIELDS[activeTab]}
-              onChange={updated => handleChange(index, updated)}
-              onDelete={() => handleDelete(index)}
-            />
-          )
-        )}
+        {activeTab === 'settings' ? (
+          <div className="space-y-6">
+            <div className="card">
+              <h3 style={{ fontSize: 16, fontWeight: 700, marginBottom: 16, color: 'var(--gold)' }}>Hero Section</h3>
+              <FieldInput label="Title" value={data.settings.hero?.title} onChange={v => handleSettingsChange('hero', 'title', v)} />
+              <FieldInput label="Subtitle" value={data.settings.hero?.subtitle} type="textarea" onChange={v => handleSettingsChange('hero', 'subtitle', v)} />
+              <FieldInput label="Availability Status" value={data.settings.hero?.availability} onChange={v => handleSettingsChange('hero', 'availability', v)} />
+            </div>
+            
+            <div className="card">
+              <h3 style={{ fontSize: 16, fontWeight: 700, marginBottom: 16, color: 'var(--gold)' }}>Contact Information</h3>
+              <FieldInput label="Email" value={data.settings.contact?.email} onChange={v => handleSettingsChange('contact', 'email', v)} />
+              <FieldInput label="Phone" value={data.settings.contact?.phone} onChange={v => handleSettingsChange('contact', 'phone', v)} />
+              <FieldInput label="Address" value={data.settings.contact?.address} onChange={v => handleSettingsChange('contact', 'address', v)} />
+            </div>
 
-        {data[activeTab].length === 0 && (
-          <div style={{ textAlign: 'center', padding: 64, opacity: 0.4 }}>
-            <p style={{ marginBottom: 16 }}>No items yet.</p>
-            <button onClick={handleAdd} className="btn btn-primary"><Plus size={14} /> Add First Item</button>
+            <div className="card">
+              <h3 style={{ fontSize: 16, fontWeight: 700, marginBottom: 16, color: 'var(--gold)' }}>Social Links</h3>
+              <FieldInput label="LinkedIn" value={data.settings.social?.linkedin} onChange={v => handleSettingsChange('social', 'linkedin', v)} />
+              <FieldInput label="YouTube" value={data.settings.social?.youtube} onChange={v => handleSettingsChange('social', 'youtube', v)} />
+              <FieldInput label="Twitter" value={data.settings.social?.twitter} onChange={v => handleSettingsChange('social', 'twitter', v)} />
+              <FieldInput label="GitHub" value={data.settings.social?.github} onChange={v => handleSettingsChange('social', 'github', v)} />
+            </div>
           </div>
+        ) : (
+          <>
+            {data[activeTab].map((item: any, index: number) =>
+              activeTab === 'videos' ? (
+                <VideoCard
+                  key={item.id || index}
+                  item={item}
+                  onChange={updated => handleChange(index, updated)}
+                  onDelete={() => handleDelete(index)}
+                />
+              ) : (
+                <GenericCard
+                  key={item.id || index}
+                  item={item}
+                  fields={TAB_FIELDS[activeTab as Exclude<TabId, 'settings'>]}
+                  onChange={updated => handleChange(index, updated)}
+                  onDelete={() => handleDelete(index)}
+                />
+              )
+            )}
+
+            {data[activeTab].length === 0 && (
+              <div style={{ textAlign: 'center', padding: 64, opacity: 0.4 }}>
+                <p style={{ marginBottom: 16 }}>No items yet.</p>
+                <button onClick={handleAdd} className="btn btn-primary"><Plus size={14} /> Add First Item</button>
+              </div>
+            )}
+          </>
         )}
       </div>
     </div>

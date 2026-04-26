@@ -1,11 +1,12 @@
 import React from 'react';
-import { Mail, Linkedin, Youtube, Instagram } from 'lucide-react';
+import { Mail, Linkedin, Youtube, Instagram, Github, Twitter } from 'lucide-react';
+import settings from '../src/content/settings.json';
 
 const CONTACT_METHODS = [
-  { label: 'Email', value: 'Anil99senchury@gmail.com', href: 'mailto:Anil99senchury@gmail.com', icon: Mail },
-  { label: 'LinkedIn', value: 'Anil Sunar', href: 'https://www.linkedin.com/in/anil-sunar-842626229/', icon: Linkedin },
-  { label: 'YouTube', value: '@goxent', href: 'https://www.youtube.com/@goxent', icon: Youtube },
-  { label: 'Instagram', value: '@goxent', href: 'https://www.instagram.com/goxent', icon: Instagram },
+  { label: 'Email', value: settings.contact?.email || 'Anil99senchury@gmail.com', href: `mailto:${settings.contact?.email || 'Anil99senchury@gmail.com'}`, icon: Mail },
+  { label: 'LinkedIn', value: 'Anil Sunar', href: settings.social?.linkedin || 'https://www.linkedin.com/in/anil-sunar-842626229/', icon: Linkedin },
+  { label: 'YouTube', value: '@goxent', href: settings.social?.youtube || 'https://www.youtube.com/@goxent', icon: Youtube },
+  { label: 'GitHub', value: 'Goxent', href: settings.social?.github || 'https://github.com/Goxent', icon: Github },
 ];
 
 const AVAILABLE_FOR = [
