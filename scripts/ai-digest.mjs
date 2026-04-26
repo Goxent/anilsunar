@@ -49,22 +49,19 @@ async function sendDigestEmail(digest) {
 
   console.log(`📧 Sending digest to ${recipients.length} recipient(s)...`);
 
-  const linkedinHtml = (digest.linkedinIdeas || []).map(idea => `
-    <div style="background:#1a1a2e;border:1px solid #2d2d5e;border-radius:12px;padding:20px;margin:12px 0;">
-      <span style="background:#4f46e5;color:white;padding:3px 10px;border-radius:20px;font-size:12px;">
-        ${idea.topic || 'Finance'}
-      </span>
-      <h3 style="color:#e2e8f0;margin:12px 0 8px;">${idea.title || ''}</h3>
-      <p style="color:#94a3b8;font-style:italic;margin:0 0 8px;">"${idea.hook || ''}"</p>
-      <p style="color:#cbd5e1;font-size:14px;margin:0 0 8px;">${idea.angle || idea.postText || ''}</p>
-      <div style="background:#0f172a;border-left:3px solid #4f46e5;padding:10px;border-radius:4px;">
-        <p style="color:#a5b4fc;font-size:13px;margin:0;">
-          💡 ${idea.keyTakeaway || ''}
-        </p>
+  const topPicksHtml = (digest.topPicks || []).map(pick => `
+    <div style="background:#1a1a2e;border:1px solid #2d2d5e;border-radius:8px;padding:16px;margin:8px 0;display:flex;justify-content:space-between;align-items:center;">
+      <div style="flex:1;">
+        <h3 style="color:#e2e8f0;margin:0 0 4px;font-size:16px;">
+          <span style="color:#f59e0b;font-weight:bold;">${pick.symbol}</span>
+        </h3>
+        <p style="color:#94a3b8;font-size:13px;margin:0;">${pick.reason}</p>
       </div>
-      <p style="color:#64748b;font-size:12px;margin:8px 0 0;">
-        Best time: ${idea.bestTimeToPost || 'Morning'}
-      </p>
+      <div style="margin-left:16px;">
+        <span style="background:${pick.target.includes('BUY') ? '#166534' : '#b45309'};color:white;padding:4px 12px;border-radius:4px;font-size:12px;font-weight:bold;white-space:nowrap;">
+          ${pick.target}
+        </span>
+      </div>
     </div>
   `).join('');
 
@@ -87,11 +84,11 @@ async function sendDigestEmail(digest) {
       </div>
 
       <div style="margin:0 0 24px;">
-        <h2 style="color:#818cf8;font-size:18px;margin:0 0 4px;">💼 LinkedIn Content Ideas</h2>
+        <h2 style="color:#818cf8;font-size:18px;margin:0 0 4px;">🎯 Top 10 High-Probability Picks</h2>
         <p style="color:#64748b;font-size:13px;margin:0 0 12px;">
-          6 post ideas for your personal brand — auditing, tax, NEPSE, corporate law
+          Based on anomalies in broker accumulation, F-Scores, and technicals
         </p>
-        ${linkedinHtml}
+        ${topPicksHtml}
       </div>
 
       <div style="text-align:center;padding:20px;border-top:1px solid #1e293b;">
@@ -161,6 +158,12 @@ Analyze this entire data lake to find hidden correlations (e.g., heavily accumul
 
 Write a 5-sentence "Alpha Market Summary" that exposes the most interesting anomaly or trend you found across the entire data lake.
 
+CRITICAL: You must extract EXACTLY the Top 10 most high-probability stock picks from this data. These are stocks showing massive broker accumulation, incredible fundamentals, or strong AI/Swing signals.
+For each pick, provide:
+- symbol: The stock ticker
+- target: "STRONG BUY", "ACCUMULATE", or "BREAKOUT"
+- reason: A precise 1-sentence reason (e.g., "Broker 58 accumulated 150k units while F-Score is 8.")
+
 Then, generate exactly 6 LinkedIn post ideas for their personal brand. Mix the topics:
 - 2 ideas about NEPSE/Finance exposing the specific anomalies you found in the data lake.
 - 1 idea about Auditing or Accounting
@@ -176,7 +179,7 @@ Each idea must have:
 - keyTakeaway: what the reader will learn or feel after reading (1 sentence)
 - bestTimeToPost: "Morning" or "Evening"
 
-Respond ONLY in valid JSON with keys: marketSummary (string), linkedinIdeas (array of 6 objects)`;
+Respond ONLY in valid JSON with keys: marketSummary (string), topPicks (array of 10 objects), linkedinIdeas (array of 6 objects)`;
 
   try {
     console.log('🧠 Sending Omni-Data Lake to Claude 3.5 Sonnet for Deep Analysis...');
@@ -204,6 +207,7 @@ Respond ONLY in valid JSON with keys: marketSummary (string), linkedinIdeas (arr
     const output = {
       timestamp: new Date().toISOString(),
       marketSummary: parsed.marketSummary,
+      topPicks: parsed.topPicks,
       linkedinIdeas: parsed.linkedinIdeas
     };
 

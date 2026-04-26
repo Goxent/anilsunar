@@ -1,8 +1,20 @@
 import { useState, useEffect } from 'react'
-import { Lightbulb, Search, TrendingUp, Save, Copy, Trash2, Plus, MessageSquare, Send, Users } from 'lucide-react'
+import { Lightbulb, Search, TrendingUp, Save, Copy, Trash2, Plus, MessageSquare, Send, Users, Sparkles, Brain } from 'lucide-react'
 import { collection, addDoc, deleteDoc, doc, onSnapshot, query, orderBy, Timestamp } from 'firebase/firestore'
 import { db, auth } from '../lib/firebase'
 import { callAI } from '../lib/ai'
+import aiDigestRaw from '../data/ai_digest.json'
+
+const aiDigest = aiDigestRaw as {
+  linkedinIdeas: Array<{
+    topic: string;
+    title: string;
+    angle: string;
+    hook: string;
+    keyTakeaway: string;
+    bestTimeToPost: string;
+  }>
+};
 
 type Idea = {
   id: string;
@@ -14,7 +26,7 @@ type Idea = {
 }
 
 export default function ContentStudio() {
-  const [activeTab, setActiveTab] = useState<'ai' | 'ideas'>('ai')
+  const [activeTab, setActiveTab] = useState<'ai' | 'ideas' | 'digest'>('digest')
   const [topic, setTopic] = useState('')
   const [aiOutput, setAiOutput] = useState('')
   const [loading, setLoading] = useState(false)
@@ -41,6 +53,63 @@ export default function ContentStudio() {
     return () => unsubscribe();
   }, []);
 
+  const handleSaveAI = async () => {
+    if (!aiOutput || !auth.currentUser) return;
+    try {
+      await addDoc(collection(db, `users/${auth.currentUser.uid}/ideas`), {
+        title: topic || 'AI Research',
+        content: aiOutput,
+        type: 'AI',
+        date: new Date().toLocaleDateString(),
+        createdAt: Timestamp.now()
+      });
+      alert("Saved to Idea Vault!");
+    } catch (err) {
+      console.error(err);
+    }
+  }
+
+  const handleSaveDigestIdea = async (idea: any) => {
+    if (!auth.currentUser) return;
+    try {
+      await addDoc(collection(db, `users/${auth.currentUser.uid}/ideas`), {
+        title: idea.title,
+        content: `Topic: ${idea.topic}\n\nHook: ${idea.hook}\n\nAngle: ${idea.angle}\n\nKey Takeaway: ${idea.keyTakeaway}\n\nBest Time: ${idea.bestTimeToPost}`,
+        type: 'LinkedIn',
+        date: new Date().toLocaleDateString(),
+        createdAt: Timestamp.now()
+      });
+      alert("Added to Idea Vault!");
+    } catch (err) {
+      console.error(err);
+    }
+  }
+
+  const handleAddIdea = async () => {
+    if (!newIdea.title || !auth.currentUser) return;
+    try {
+      await addDoc(collection(db, `users/${auth.currentUser.uid}/ideas`), {
+        ...newIdea,
+        type: 'Manual',
+        date: new Date().toLocaleDateString(),
+        createdAt: Timestamp.now()
+      });
+      setNewIdea({ title: '', content: '' });
+      setIsAdding(false);
+    } catch (err) {
+      console.error(err);
+    }
+  }
+
+  const deleteIdea = async (id: string) => {
+    if (!auth.currentUser) return;
+    try {
+      await deleteDoc(doc(db, `users/${auth.currentUser.uid}/ideas`, id));
+    } catch (err) {
+      console.error(err);
+    }
+  }
+
   const callClaude = async (promptType: string) => {
     if (!topic && promptType !== 'trending') {
       alert("Please enter a topic or symbol first.")
@@ -48,101 +117,83 @@ export default function ContentStudio() {
     }
 
     setLoading(true)
-    setAiOutput('')
-    
-    let prompt = ''
-    if (promptType === 'youtube') {
-      prompt = `Act as an expert YouTube strategist for a Nepal Finance channel called "Goxent". The target audience is Nepali retail investors. Generate 5 highly engaging YouTube video title ideas about: "${topic}". For each idea, provide:\n1. The Hook (first 5 seconds)\n2. Thumbnail Concept\n3. 3 Key Talking points.\nFormat clearly with bold headings.`
-    } else if (promptType === 'linkedin') {
-      prompt = `Act as a LinkedIn thought leader in the NEPSE and Nepal Finance space. Generate 3 high-value LinkedIn post ideas about: "${topic}". For each post, provide:\n1. An attention-grabbing "Scroll-Stopping" hook.\n2. The main value-driven body text (educational/opinionated).\n3. Relevant hashtags (#NEPSE #NepalFinance #Goxent).\nFocus on professional networking and authority building.`
-    } else if (promptType === 'deepdive') {
-      prompt = `Act as a senior NEPSE financial analyst. Provide a content research brief for the topic/stock: "${topic}". Include:\n1. What to cover (The core narrative)\n2. Key data points to look up\n3. The narrative angle (Bullish/Bearish/Neutral)\n4. Why Nepali investors should care.`
-    } else {
-      prompt = `Act as a NEPSE market pulse expert. What are the 3 hottest trending topics in Nepal finance right now? For each, explain WHY it's trending and suggest a content angle for a finance creator.`
-    }
-
     try {
-      const text = await callAI(prompt, 'claude')
-      setAiOutput(text)
-    } catch (err: any) {
-      setAiOutput(`Error generating content: ${err.message}`)
+      const prompts: any = {
+        youtube: `Generate 3 high-retention YouTube video ideas for the topic: ${topic}. Include catchy titles and a brief script outline.`,
+        linkedin: `Write a viral LinkedIn post about ${topic}. Include a strong hook, value-driven body, and a CTA.`,
+        deepdive: `Perform a deep dive analysis on ${topic}. Cover current trends, risks, and opportunities in the Nepal market context.`,
+        trending: `What are the top 5 trending topics in the Nepal stock market and finance world today?`
+      }
+
+      const result = await callAI(prompts[promptType] || topic)
+      setAiOutput(result)
+    } catch (err) {
+      console.error(err)
+      setAiOutput("Error generating content. Check console.")
     } finally {
       setLoading(false)
     }
   }
 
-  const handleSaveAI = async () => {
-    if (!aiOutput || !auth.currentUser) return
-    const idea = {
-      title: topic ? `Research: ${topic}` : 'Trending Topics',
-      content: aiOutput,
-      type: 'AI Research',
-      date: new Date().toLocaleDateString(),
-      createdAt: Timestamp.now()
-    }
-    await addDoc(collection(db, `users/${auth.currentUser.uid}/ideas`), idea)
-    setActiveTab('ideas')
-  }
-
-  const handleAddIdea = async () => {
-    if (!newIdea.title || !auth.currentUser) return
-    const idea = {
-      title: newIdea.title,
-      content: newIdea.content,
-      type: 'Manual',
-      date: new Date().toLocaleDateString(),
-      createdAt: Timestamp.now()
-    }
-    await addDoc(collection(db, `users/${auth.currentUser.uid}/ideas`), idea)
-    setNewIdea({ title: '', content: '' })
-    setIsAdding(false)
-  }
-
-  const deleteIdea = async (id: string) => {
-    if (!auth.currentUser) return
-    await deleteDoc(doc(db, `users/${auth.currentUser.uid}/ideas`, id))
-  }
-
   return (
-    <div style={{ display: 'grid', gridTemplateColumns: '250px 1fr', gap: 24, height: 'calc(100vh - 120px)' }}>
-      {/* Sidebar */}
-      <div className="card" style={{ display: 'flex', flexDirection: 'column', padding: 16 }}>
-        <h3 style={{ fontSize: 14, fontWeight: 700, marginBottom: 16, color: 'var(--gold)' }}>Saved Ideas</h3>
-        <div style={{ flex: 1, overflowY: 'auto', display: 'flex', flexDirection: 'column', gap: 8 }}>
-          {ideas.map(idea => (
-            <div key={idea.id} style={{ padding: 12, background: 'var(--bg-secondary)', borderRadius: 8, cursor: 'pointer', border: '1px solid transparent' }} onClick={() => setActiveTab('ideas')}>
-              <p style={{ fontSize: 13, fontWeight: 600, marginBottom: 4, whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>{idea.title}</p>
-              <div style={{ display: 'flex', justifyContent: 'space-between', fontSize: 10, color: 'var(--text-secondary)' }}>
-                <span>{idea.type}</span>
-                <span>{idea.date}</span>
-              </div>
-            </div>
-          ))}
-          {ideas.length === 0 && <p style={{ fontSize: 12, color: 'var(--text-secondary)', textAlign: 'center', marginTop: 24 }}>No saved ideas.</p>}
+    <div style={{ height: 'calc(100vh - 120px)', display: 'flex', flexDirection: 'column' }}>
+      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 24 }}>
+        <h2 style={{ fontSize: 28, fontWeight: 800 }}>Content Studio</h2>
+        <div className="tab-group" style={{ display: 'flex', background: 'rgba(255,255,255,0.05)', padding: 4, borderRadius: 8 }}>
+          <button className={`tab ${activeTab === 'digest' ? 'active' : ''}`} onClick={() => setActiveTab('digest')} style={{ display: 'flex', alignItems: 'center', gap: 6 }}>
+            <Sparkles size={14} /> AI Suggestions
+          </button>
+          <button className={`tab ${activeTab === 'ai' ? 'active' : ''}`} onClick={() => setActiveTab('ai')} style={{ display: 'flex', alignItems: 'center', gap: 6 }}>
+            <Brain size={14} /> Custom AI
+          </button>
+          <button className={`tab ${activeTab === 'ideas' ? 'active' : ''}`} onClick={() => setActiveTab('ideas')} style={{ display: 'flex', alignItems: 'center', gap: 6 }}>
+            <Lightbulb size={14} /> Idea Vault
+          </button>
         </div>
       </div>
 
-      {/* Main Area */}
-      <div className="card" style={{ display: 'flex', flexDirection: 'column' }}>
-        {/* Tabs */}
-        <div style={{ display: 'flex', gap: 16, borderBottom: '1px solid var(--border)', marginBottom: 24, paddingBottom: 16 }}>
-          <button 
-            style={{ background: 'none', border: 'none', color: activeTab === 'ai' ? 'var(--gold)' : 'var(--text-secondary)', fontWeight: activeTab === 'ai' ? 700 : 500, fontSize: 16, cursor: 'pointer', display: 'flex', alignItems: 'center', gap: 8 }}
-            onClick={() => setActiveTab('ai')}
-          ><Search size={18} /> AI Research</button>
-          <button 
-            style={{ background: 'none', border: 'none', color: activeTab === 'ideas' ? 'var(--gold)' : 'var(--text-secondary)', fontWeight: activeTab === 'ideas' ? 700 : 500, fontSize: 16, cursor: 'pointer', display: 'flex', alignItems: 'center', gap: 8 }}
-            onClick={() => setActiveTab('ideas')}
-          ><Lightbulb size={18} /> My Ideas</button>
-        </div>
+      <div style={{ flex: 1, display: 'flex', gap: 24, overflow: 'hidden' }}>
+        {activeTab === 'digest' && (
+          <div style={{ flex: 1, overflowY: 'auto' }}>
+            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 20 }}>
+              <p style={{ color: 'var(--text-secondary)', fontSize: 14 }}>Daily AI-generated LinkedIn content based on today's market anomalies.</p>
+              <div style={{ fontSize: 11, color: 'var(--gold)', background: 'rgba(245,158,11,0.1)', padding: '4px 10px', borderRadius: 20, border: '1px solid rgba(245,158,11,0.2)' }}>
+                CLAUDE 3.5 SONNET
+              </div>
+            </div>
+            <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 20 }}>
+              {aiDigest.linkedinIdeas && aiDigest.linkedinIdeas.length > 0 ? aiDigest.linkedinIdeas.map((idea, i) => (
+                <div key={i} className="card" style={{ display: 'flex', flexDirection: 'column', gap: 12 }}>
+                  <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start' }}>
+                    <span style={{ fontSize: 10, fontWeight: 800, background: 'var(--gold)', color: 'black', padding: '2px 8px', borderRadius: 4 }}>{idea.topic}</span>
+                    <button className="btn btn-primary" style={{ padding: '6px 12px', fontSize: 12 }} onClick={() => handleSaveDigestIdea(idea)}>
+                      <Plus size={14} /> Add to Vault
+                    </button>
+                  </div>
+                  <h4 style={{ fontSize: 18, fontWeight: 700, lineHeight: 1.3 }}>{idea.title}</h4>
+                  <p style={{ fontSize: 14, color: 'var(--text-secondary)', fontStyle: 'italic', borderLeft: '2px solid var(--gold)', paddingLeft: 12 }}>"{idea.hook}"</p>
+                  <p style={{ fontSize: 13, lineHeight: 1.5 }}>{idea.angle}</p>
+                  <div style={{ marginTop: 'auto', paddingTop: 12, borderTop: '1px solid var(--border)', display: 'flex', justifyContent: 'space-between', alignItems: 'center', fontSize: 11, color: 'var(--text-secondary)' }}>
+                    <span>Takeaway: {idea.keyTakeaway}</span>
+                    <span style={{ fontWeight: 700 }}>{idea.bestTimeToPost}</span>
+                  </div>
+                </div>
+              )) : (
+                <div style={{ gridColumn: '1 / -1', textAlign: 'center', padding: 40, opacity: 0.5 }}>
+                   No AI suggestions yet. Run the daily sync.
+                </div>
+              )}
+            </div>
+          </div>
+        )}
 
         {activeTab === 'ai' && (
-          <div style={{ flex: 1, display: 'flex', flexDirection: 'column' }}>
+          <div style={{ flex: 1, display: 'flex', flexDirection: 'column', overflow: 'hidden' }}>
             <div style={{ display: 'flex', gap: 12, marginBottom: 16 }}>
               <input 
                 type="text" 
-                placeholder="Enter stock symbol (e.g. NICA) or topic (e.g. Hydropower bubble)..." 
-                value={topic}
+                placeholder="Topic, stock symbol, or industry (e.g. 'Hydropower' or 'TDS')..." 
+                value={topic} 
                 onChange={e => setTopic(e.target.value)}
                 style={{ flex: 1 }}
               />
@@ -162,37 +213,6 @@ export default function ContentStudio() {
                   {aiOutput}
                   <div style={{ position: 'absolute', top: 16, right: 16, display: 'flex', gap: 8 }}>
                     <button className="btn btn-primary" onClick={handleSaveAI}><Save size={14} /> Save</button>
-                    <button 
-                      className="btn" 
-                      onClick={async () => {
-                        const email = prompt("Enter email to send research:");
-                        if (!email) return;
-                        try {
-                          const res = await fetch('/api/send-email', {
-                            method: 'POST',
-                            headers: { 'Content-Type': 'application/json' },
-                            body: JSON.stringify({
-                              to: email,
-                              subject: `Goxent Research: ${topic || 'Market Pulse'}`,
-                              html: `<div style="font-family: sans-serif; line-height: 1.6; color: #333;">
-                                <h1 style="color: #f59e0b;">NEPSE Research Report</h1>
-                                <p><strong>Topic:</strong> ${topic || 'Trending'}</p>
-                                <hr />
-                                <div style="white-space: pre-wrap;">${aiOutput}</div>
-                                <hr />
-                                <p style="font-size: 12px; color: #666;">Generated by Goxent Premium Terminal</p>
-                              </div>`
-                            })
-                          });
-                          if (res.ok) alert("Research sent successfully!");
-                          else throw new Error("Failed to send");
-                        } catch (err: any) {
-                          alert("Error sending email: " + err.message);
-                        }
-                      }}
-                    >
-                      <Send size={14} /> Email Report
-                    </button>
                   </div>
                 </div>
               ) : (
