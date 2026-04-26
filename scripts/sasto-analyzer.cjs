@@ -175,7 +175,14 @@ export const ACCUMULATION_SIGNALS = [];
     // SAVE ALL DATA
     const fs = require('fs');
     const path = require('path');
-    const dataDir = path.join(__dirname, '../nepse-dashboard/src/data');
+    const dataDir = path.join(__dirname, '../src/app/data');
+    
+    if (!fs.existsSync(dataDir)) fs.mkdirSync(dataDir, { recursive: true });
+
+    fs.writeFileSync(path.join(dataDir, 'sasto_premium_report.json'), JSON.stringify(finalData, null, 2));
+    fs.writeFileSync(path.join(dataDir, 'super_intelligence.json'), JSON.stringify(finalData, null, 2));
+    fs.writeFileSync(path.join(dataDir, 'sampleData.ts'), sampleDataTS);
+    console.log(`✅ Data saved to ${dataDir}`);
     
     // 8. AUTO-EMAIL BROADCAST (Daily Alpha Brief)
     if (process.env.RESEND_API_KEY) {
@@ -195,7 +202,7 @@ export const ACCUMULATION_SIGNALS = [];
       `;
 
       try {
-        await fetch('https://nepse.anilsunar.com.np/api/send-email', { // Using the production API
+        await fetch('https://app.anilsunar.com.np/api/send-email', { // Using the production API
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({

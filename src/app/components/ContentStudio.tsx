@@ -1,5 +1,8 @@
 import { useState, useEffect } from 'react'
 import { Lightbulb, Search, TrendingUp, Save, Copy, Trash2, Plus, MessageSquare, Send } from 'lucide-react'
+import { collection, addDoc, deleteDoc, doc, onSnapshot, query, orderBy, Timestamp } from 'firebase/firestore'
+import { db, auth } from '../lib/firebase'
+import { callAI } from '../lib/ai'
 
 type Idea = {
   id: string;
@@ -7,6 +10,7 @@ type Idea = {
   content: string;
   type: string;
   date: string;
+  createdAt: any;
 }
 
 export default function ContentStudio() {
@@ -19,14 +23,23 @@ export default function ContentStudio() {
   const [isAdding, setIsAdding] = useState(false)
 
   useEffect(() => {
-    const saved = localStorage.getItem('goxent_ideas')
-    if (saved) setIdeas(JSON.parse(saved))
-  }, [])
+    if (!auth.currentUser) return;
 
-  const saveIdeas = (newIdeas: Idea[]) => {
-    setIdeas(newIdeas)
-    localStorage.setItem('goxent_ideas', JSON.stringify(newIdeas))
-  }
+    const q = query(
+      collection(db, `users/${auth.currentUser.uid}/ideas`),
+      orderBy('createdAt', 'desc')
+    );
+
+    const unsubscribe = onSnapshot(q, (snapshot) => {
+      const fetchedIdeas = snapshot.docs.map(doc => ({
+        id: doc.id,
+        ...doc.data()
+      })) as Idea[];
+      setIdeas(fetchedIdeas);
+    });
+
+    return () => unsubscribe();
+  }, []);
 
   const callClaude = async (promptType: string) => {
     if (!topic && promptType !== 'trending') {
@@ -40,6 +53,8 @@ export default function ContentStudio() {
     let prompt = ''
     if (promptType === 'youtube') {
       prompt = `Act as an expert YouTube strategist for a Nepal Finance channel called "Goxent". The target audience is Nepali retail investors. Generate 5 highly engaging YouTube video title ideas about: "${topic}". For each idea, provide:\n1. The Hook (first 5 seconds)\n2. Thumbnail Concept\n3. 3 Key Talking points.\nFormat clearly with bold headings.`
+    } else if (promptType === 'linkedin') {
+      prompt = `Act as a LinkedIn thought leader in the NEPSE and Nepal Finance space. Generate 3 high-value LinkedIn post ideas about: "${topic}". For each post, provide:\n1. An attention-grabbing "Scroll-Stopping" hook.\n2. The main value-driven body text (educational/opinionated).\n3. Relevant hashtags (#NEPSE #NepalFinance #Goxent).\nFocus on professional networking and authority building.`
     } else if (promptType === 'deepdive') {
       prompt = `Act as a senior NEPSE financial analyst. Provide a content research brief for the topic/stock: "${topic}". Include:\n1. What to cover (The core narrative)\n2. Key data points to look up\n3. The narrative angle (Bullish/Bearish/Neutral)\n4. Why Nepali investors should care.`
     } else {
@@ -47,35 +62,8 @@ export default function ContentStudio() {
     }
 
     try {
-      const apiKey = import.meta.env.VITE_CLAUDE_API_KEY
-      if (!apiKey) {
-        setAiOutput("Error: VITE_CLAUDE_API_KEY is not set in your .env file. Please add it to use AI features.")
-        setLoading(false)
-        return
-      }
-
-      const res = await fetch('https://api.anthropic.com/v1/messages', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-          'x-api-key': apiKey,
-          'anthropic-version': '2023-06-01',
-          'anthropic-dangerously-allow-browser': 'true'
-        },
-        body: JSON.stringify({
-          model: 'claude-3-5-sonnet-20240620', // Updated to valid sonnet model
-          max_tokens: 1024,
-          messages: [{ role: 'user', content: prompt }]
-        })
-      })
-
-      if (!res.ok) {
-        const err = await res.json()
-        throw new Error(err.error?.message || 'API Error')
-      }
-
-      const data = await res.json()
-      setAiOutput(data.content[0].text)
+      const text = await callAI(prompt, 'claude')
+      setAiOutput(text)
     } catch (err: any) {
       setAiOutput(`Error generating content: ${err.message}`)
     } finally {
@@ -83,35 +71,36 @@ export default function ContentStudio() {
     }
   }
 
-  const handleSaveAI = () => {
-    if (!aiOutput) return
-    const idea: Idea = {
-      id: Date.now().toString(),
+  const handleSaveAI = async () => {
+    if (!aiOutput || !auth.currentUser) return
+    const idea = {
       title: topic ? `Research: ${topic}` : 'Trending Topics',
       content: aiOutput,
       type: 'AI Research',
-      date: new Date().toLocaleDateString()
+      date: new Date().toLocaleDateString(),
+      createdAt: Timestamp.now()
     }
-    saveIdeas([idea, ...ideas])
+    await addDoc(collection(db, `users/${auth.currentUser.uid}/ideas`), idea)
     setActiveTab('ideas')
   }
 
-  const handleAddIdea = () => {
-    if (!newIdea.title) return
-    const idea: Idea = {
-      id: Date.now().toString(),
+  const handleAddIdea = async () => {
+    if (!newIdea.title || !auth.currentUser) return
+    const idea = {
       title: newIdea.title,
       content: newIdea.content,
       type: 'Manual',
-      date: new Date().toLocaleDateString()
+      date: new Date().toLocaleDateString(),
+      createdAt: Timestamp.now()
     }
-    saveIdeas([idea, ...ideas])
+    await addDoc(collection(db, `users/${auth.currentUser.uid}/ideas`), idea)
     setNewIdea({ title: '', content: '' })
     setIsAdding(false)
   }
 
-  const deleteIdea = (id: string) => {
-    saveIdeas(ideas.filter(i => i.id !== id))
+  const deleteIdea = async (id: string) => {
+    if (!auth.currentUser) return
+    await deleteDoc(doc(db, `users/${auth.currentUser.uid}/ideas`, id))
   }
 
   return (
@@ -160,6 +149,7 @@ export default function ContentStudio() {
             </div>
             <div style={{ display: 'flex', gap: 12, marginBottom: 24 }}>
               <button className="btn" onClick={() => callClaude('youtube')}><Search size={14}/> YouTube Ideas</button>
+              <button className="btn" onClick={() => callClaude('linkedin')}><Users size={14}/> LinkedIn Ideas</button>
               <button className="btn" onClick={() => callClaude('deepdive')}><MessageSquare size={14}/> NEPSE Deep Dive</button>
               <button className="btn" onClick={() => callClaude('trending')}><TrendingUp size={14}/> Trending Topics</button>
             </div>

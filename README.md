@@ -1,20 +1,30 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# anilsunar.com.np
 
-# Run and deploy your AI Studio app
+Personal website + private app for NEPSE analysis and content creation.
 
-This contains everything you need to run your app locally.
+## Sites
+- anilsunar.com.np — Main portfolio site
+- app.anilsunar.com.np — Private app (password protected)
 
-View your app in AI Studio: https://ai.studio/apps/drive/1BQo8I2F9tp--2ofnrx3BodSMRrIWEiki
+## Daily workflow
+Run this every morning before market opens:
+  npm run daily-sync
 
-## Run Locally
+This will:
+1. Login to Sasto Share and scrape latest NEPSE data
+2. Generate AI analysis + content ideas using Claude API
+3. Save to src/app/data/ folder
+4. Commit and push to GitHub (Vercel auto-deploys)
 
-**Prerequisites:**  Node.js
+## Environment variables needed in Vercel
+VITE_DASHBOARD_PASSWORD=
+VITE_GEMINI_API_KEY=
+VITE_ANTHROPIC_API_KEY=
+SASTO_EMAIL=
+SASTO_PASSWORD=
 
-
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+## Local setup
+npm install
+cp .env.example .env
+# Fill in your .env values
+npm run dev

@@ -1,24 +1,24 @@
 const { exec } = require('child_process');
 
-console.log('🔄 Starting auto-sync process...');
+console.log('🔄 Starting daily-sync process...');
 
-exec('npm run sasto-sync', (error, stdout, stderr) => {
+exec('npm run daily-sync', (error, stdout, stderr) => {
   if (error) {
-    console.error(`❌ Error running bot: ${error.message}`);
-    return;
+    console.error(`❌ Error running sync: ${error.message}`);
+    // Don't exit here, still try to commit what we have if any
   }
   if (stderr) console.error(stderr);
   console.log(stdout);
 
   console.log('📦 Committing updated data to git...');
-  const gitCmd = 'git config user.email "anil99senchury@gmail.com" && git config user.name "Anil Sunar" && git add nepse-dashboard/src/data/sasto_full_report.json && git commit -m "chore: auto-update sasto market data"';
+  const gitCmd = 'git add src/app/data/ && git commit -m "chore: sync market data" && git push';
   
   exec(gitCmd, (gitErr, gitStdout, gitStderr) => {
     if (gitErr) {
-      console.error(`⚠️ Git commit issue (maybe no changes?): ${gitErr.message}`);
+      console.error(`⚠️ Git issue (maybe no changes or push failed?): ${gitErr.message}`);
       return;
     }
     console.log(gitStdout);
-    console.log('✅ Auto-sync complete!');
+    console.log('✅ Daily sync and push complete!');
   });
 });
