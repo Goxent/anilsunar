@@ -2,9 +2,9 @@ name: Automated Sasto Premium Sync
 
 on:
   schedule:
-    # Runs at 10:00 AM UTC (3:45 PM Nepal Time) Monday through Friday
-    # This ensures the bot syncs right after the NEPSE market closes
-    - cron: '0 10 * * 1-5'
+    # Runs at 12:15 PM UTC (6:00 PM Nepal Time) Monday through Friday
+    # Full end-of-day analysis after NEPSE market closes + data settles
+    - cron: '15 12 * * 1-5'
   
   # Allows you to trigger the sync manually from the GitHub Actions tab
   workflow_dispatch:
