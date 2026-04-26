@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react'
-import { Lightbulb, Search, TrendingUp, Save, Copy, Trash2, Plus, MessageSquare, Send } from 'lucide-react'
+import { Lightbulb, Search, TrendingUp, Save, Copy, Trash2, Plus, MessageSquare, Send, Users } from 'lucide-react'
 import { collection, addDoc, deleteDoc, doc, onSnapshot, query, orderBy, Timestamp } from 'firebase/firestore'
 import { db, auth } from '../lib/firebase'
 import { callAI } from '../lib/ai'
