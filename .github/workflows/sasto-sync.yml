@@ -34,17 +34,19 @@ jobs:
       - name: Install Playwright Browsers
         run: npx playwright install chromium --with-deps
 
-      - name: Run Sasto Bot
+      - name: Run Daily Sync (Sasto Bot + AI Digest)
         env:
           SASTO_EMAIL: ${{ secrets.SASTO_EMAIL }}
           SASTO_PASSWORD: ${{ secrets.SASTO_PASSWORD }}
           RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
-        run: npm run sasto-sync
+          ANTHROPIC_API_KEY: ${{ secrets.VITE_ANTHROPIC_API_KEY }}
+          VITE_ANTHROPIC_API_KEY: ${{ secrets.VITE_ANTHROPIC_API_KEY }}
+        run: npm run daily-sync
 
       - name: Commit and Push Updated Data
         run: |
           git config --global user.name "Anil Sunar"
           git config --global user.email "anil99senchury@gmail.com"
-          git add nepse-dashboard/src/data/deep_intelligence.json nepse-dashboard/src/data/sampleData.ts
+          git add src/app/data/
           git commit -m "chore: auto-update sasto market data 🤖" || echo "No changes to commit"
           git push origin main

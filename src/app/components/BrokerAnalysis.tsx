@@ -100,7 +100,7 @@ export default function BrokerAnalysis() {
           <div style={{ padding: 32, textAlign: 'center', color: 'var(--text-secondary)' }}>
             <AlertTriangle size={32} style={{ margin: '0 auto 16px', opacity: 0.5 }} />
             <p>Data not yet synced</p>
-            <p style={{ fontSize: 12, marginTop: 8 }}>Run the sasto-analyzer bot to populate this data.</p>
+            <p style={{ fontSize: 12, marginTop: 8 }}>Run npm run daily-sync to fetch latest data.</p>
           </div>
         )}
       </div>

@@ -13,7 +13,9 @@
     "sasto-sync": "node scripts/sasto-analyzer.cjs",
     "ai-digest": "node scripts/ai-digest.mjs",
     "daily-sync": "npm run sasto-sync && npm run ai-digest",
-    "auto-sync": "node scripts/auto-sync.js"
+    "auto-sync": "node scripts/auto-sync.js",
+    "setup-scheduler": "scripts\\scheduler-setup.bat",
+    "remove-scheduler": "scripts\\scheduler-remove.bat"
   },
   "dependencies": {
     "@google/genai": "^1.41.0",
@@ -33,6 +35,7 @@
     "react-dom": "^19.2.4",
     "react-router-dom": "^7.14.2",
     "recharts": "^3.8.1",
+    "resend": "^6.12.2",
     "tailwind-merge": "^3.5.0"
   },
   "devDependencies": {

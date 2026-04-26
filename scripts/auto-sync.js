@@ -1,24 +1,36 @@
-const { exec } = require('child_process');
+const { exec } = require('child_process')
+const path = require('path')
 
-console.log('🔄 Starting daily-sync process...');
+const ROOT = path.join(__dirname, '..')
+const run = (cmd) => new Promise((resolve, reject) => {
+  exec(cmd, { cwd: ROOT }, (err, stdout, stderr) => {
+    if (stdout) console.log(stdout)
+    if (stderr) console.error(stderr)
+    if (err) reject(err)
+    else resolve()
+  })
+})
 
-exec('npm run daily-sync', (error, stdout, stderr) => {
-  if (error) {
-    console.error(`❌ Error running sync: ${error.message}`);
-    // Don't exit here, still try to commit what we have if any
+async function main() {
+  console.log('🔄 Starting Goxent daily sync —', new Date().toLocaleString())
+
+  try {
+    console.log('📡 Step 1: Fetching Sasto Share data...')
+    await run('node scripts/sasto-analyzer.cjs')
+
+    console.log('🤖 Step 2: Generating AI digest + sending email...')
+    await run('node scripts/ai-digest.mjs')
+
+    console.log('📦 Step 3: Committing to GitHub...')
+    await run('git add src/app/data/')
+    await run('git commit -m "chore: daily market sync ' + new Date().toISOString().split('T')[0] + '"')
+    await run('git push')
+
+    console.log('✅ Daily sync complete!', new Date().toLocaleString())
+  } catch (err) {
+    console.error('❌ Sync failed:', err.message)
+    process.exit(1)
   }
-  if (stderr) console.error(stderr);
-  console.log(stdout);
+}
 
-  console.log('📦 Committing updated data to git...');
-  const gitCmd = 'git add src/app/data/ && git commit -m "chore: sync market data" && git push';
-  
-  exec(gitCmd, (gitErr, gitStdout, gitStderr) => {
-    if (gitErr) {
-      console.error(`⚠️ Git issue (maybe no changes or push failed?): ${gitErr.message}`);
-      return;
-    }
-    console.log(gitStdout);
-    console.log('✅ Daily sync and push complete!');
-  });
-});
+main()

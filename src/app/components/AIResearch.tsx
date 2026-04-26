@@ -3,6 +3,7 @@ import { Brain, Send, Loader2, Sparkles, Lightbulb, TrendingUp, Save, History, T
 import { collection, addDoc, Timestamp, query, orderBy, onSnapshot, deleteDoc, doc } from 'firebase/firestore'
 import { db, auth } from '../lib/firebase'
 import { callAI, AIModel } from '../lib/ai'
+import aiDigest from '../data/ai_digest.json'
 
 export default function AIResearch() {
   const [symbol, setSymbol] = useState('')
@@ -12,6 +13,9 @@ export default function AIResearch() {
   const [mode, setMode] = useState<'research' | 'content' | 'history'>('research')
   const [aiModel, setAiModel] = useState<AIModel>('claude')
   const [history, setHistory] = useState<any[]>([])
+
+  const digestTimestamp = aiDigest?.timestamp ? new Date(aiDigest.timestamp) : null
+  const hoursAgo = digestTimestamp ? Math.floor((new Date().getTime() - digestTimestamp.getTime()) / (1000 * 60 * 60)) : 0
 
   useEffect(() => {
     if (!auth.currentUser || mode !== 'history') return;
@@ -87,6 +91,52 @@ Format clearly with sections.`
     <div>
       <h2 style={{ fontSize: 28, fontWeight: 700, marginBottom: 8 }}>AI Research</h2>
       <p style={{ color: 'var(--text-secondary)', marginBottom: 32 }}>Powered by Gemini 2.0 — research stocks and generate content ideas</p>
+
+      {/* Today's AI Brief */}
+      {aiDigest && aiDigest.marketSummary && (
+        <div className="card" style={{ marginBottom: 32, border: '1px solid var(--gold)', background: 'linear-gradient(135deg, rgba(20, 20, 30, 0.8) 0%, rgba(245, 158, 11, 0.05) 100%)' }}>
+          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 16 }}>
+            <h3 style={{ fontSize: 18, fontWeight: 700, display: 'flex', alignItems: 'center', gap: 8, color: 'var(--gold)' }}>
+              <Sparkles size={18} /> Today's AI Brief
+            </h3>
+            <span style={{ fontSize: 11, color: 'var(--text-secondary)' }}>Last updated: {hoursAgo} hours ago</span>
+          </div>
+          <p style={{ fontSize: 14, color: 'var(--text-primary)', lineHeight: 1.8, marginBottom: 24 }}>
+            {aiDigest.marketSummary}
+          </p>
+
+          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 24 }}>
+            {/* YouTube Ideas */}
+            <div>
+              <h4 style={{ fontSize: 14, fontWeight: 600, marginBottom: 12, display: 'flex', alignItems: 'center', gap: 6, color: '#ff0000' }}>
+                <TrendingUp size={14} /> YouTube Ideas
+              </h4>
+              <div style={{ display: 'flex', flexDirection: 'column', gap: 12 }}>
+                {aiDigest.youtubeIdeas?.map((idea: any, i: number) => (
+                  <div key={i} style={{ padding: 12, background: 'rgba(255,255,255,0.03)', borderRadius: 8, borderLeft: '2px solid #ff0000' }}>
+                    <p style={{ fontWeight: 600, fontSize: 13, marginBottom: 4 }}>{idea.title}</p>
+                    <p style={{ fontSize: 12, color: 'var(--text-secondary)' }}>{idea.concept}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            {/* LinkedIn Ideas */}
+            <div>
+              <h4 style={{ fontSize: 14, fontWeight: 600, marginBottom: 12, display: 'flex', alignItems: 'center', gap: 6, color: '#0a66c2' }}>
+                <Lightbulb size={14} /> LinkedIn Ideas
+              </h4>
+              <div style={{ display: 'flex', flexDirection: 'column', gap: 12 }}>
+                {aiDigest.linkedinIdeas?.map((idea: any, i: number) => (
+                  <div key={i} style={{ padding: 12, background: 'rgba(255,255,255,0.03)', borderRadius: 8, borderLeft: '2px solid #0a66c2' }}>
+                    <p style={{ fontSize: 12, color: 'var(--text-primary)', whiteSpace: 'pre-wrap' }}>{idea.postText || idea.title || idea.angle || JSON.stringify(idea)}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
 
       {/* Mode & Model Toggle */}
       <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 24 }}>
