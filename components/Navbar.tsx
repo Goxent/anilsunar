@@ -37,12 +37,12 @@ const Navbar: React.FC = () => {
               <span className="absolute -bottom-2 left-0 w-0 h-[2px] bg-accent-500 transition-all duration-300 group-hover:w-full"></span>
             </a>
           ))}
-          <Link
-            to="/app"
+          <a
+            href="https://app.anilsunar.com.np"
             className="text-[11px] font-bold uppercase tracking-[0.2em] text-accent-500 hover:text-accent-400 transition-colors"
           >
             Dashboard
-          </Link>
+          </a>
           <a href="#contact" className="ml-4 px-8 md:px-16 lg:px-24 py-2.5 rounded-full border border-accent-500 text-accent-500 hover:bg-accent-500 hover:text-surface-950 transition-all duration-300 text-[11px] font-bold tracking-[0.2em] uppercase">
             Hire Me
           </a>
@@ -74,13 +74,13 @@ const Navbar: React.FC = () => {
               {item.label}
             </a>
           ))}
-          <Link
-            to="/app"
+          <a
+            href="https://app.anilsunar.com.np"
             className="text-[13px] font-bold uppercase tracking-[0.2em] text-accent-500 hover:text-accent-400 transition-colors border-b border-white/5 pb-3"
             onClick={() => setIsMobileMenuOpen(false)}
           >
             Dashboard
-          </Link>
+          </a>
           <a href="#contact" className="mt-4 text-center px-8 md:px-16 lg:px-24 py-3.5 bg-accent-500 text-surface-950 rounded-full font-bold uppercase tracking-[0.2em] text-[13px]">
             Hire Me
           </a>

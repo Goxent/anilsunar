@@ -5,10 +5,14 @@ const Posts: React.FC = () => {
   return (
     <section id="writing" className="py-32 bg-surface-900/30 relative border-t border-white/5">
       <div className="max-w-7xl mx-auto px-8 md:px-16 lg:px-24 relative z-10">
-        <div className="text-center mb-20">
-          <span className="text-accent-500 font-bold uppercase tracking-[0.3em] text-xs">Writing</span>
-          <h2 className="text-5xl md:text-6xl font-serif mt-6 text-white">Articles & Thoughts</h2>
-          <div className="h-px w-24 bg-gradient-to-r from-transparent via-accent-500/50 to-transparent mx-auto mt-8"></div>
+        <div className="reveal text-center mb-16 md:mb-24">
+          <p className="text-accent-500 text-[10px] font-bold uppercase tracking-[0.4em] mb-4">
+            Writing
+          </p>
+          <h2 className="text-4xl md:text-6xl font-serif font-bold text-white">
+            Articles & Thoughts
+          </h2>
+          <div className="section-divider mt-8"></div>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">

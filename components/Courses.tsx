@@ -14,10 +14,15 @@ const Courses: React.FC = () => {
   return (
     <section id="courses" className="py-32 bg-surface-950 relative">
       <div className="max-w-7xl mx-auto px-8 md:px-16 lg:px-24 relative z-10">
-        <div className="text-center mb-16">
-          <span className="text-accent-400 font-bold uppercase tracking-[0.3em] text-xs">Content</span>
-          <h2 className="text-5xl md:text-6xl font-serif mt-6 text-white mb-4">Videos & Courses</h2>
-          <p className="text-slate-400 text-lg max-w-xl mx-auto font-light">
+        <div className="reveal text-center mb-16 md:mb-24">
+          <p className="text-accent-500 text-[10px] font-bold uppercase tracking-[0.4em] mb-4">
+            Content
+          </p>
+          <h2 className="text-4xl md:text-6xl font-serif font-bold text-white">
+            Videos & Courses
+          </h2>
+          <div className="section-divider mt-8"></div>
+          <p className="text-slate-400 text-lg max-w-xl mx-auto font-light mt-8">
             Explore my content on NEPSE trading, finance, technology, and creative arts.
           </p>
         </div>

@@ -1,4 +1,5 @@
 import React from 'react';
+import { useScrollReveal } from './utils/useScrollReveal';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import About from './components/About';
@@ -11,6 +12,7 @@ import GeminiPoet from './components/GeminiPoet';
 import Footer from './components/Footer';
 
 function App() {
+  useScrollReveal();
   return (
     <div className="bg-surface-950 text-slate-200 font-sans selection:bg-accent-500/20 selection:text-accent-500 overflow-x-hidden w-full relative">
       <Navbar />

@@ -6,15 +6,19 @@ const Projects: React.FC = () => {
   return (
     <section id="projects" className="py-32 bg-surface-900/50 relative border-y border-white/5">
       <div className="w-full max-w-7xl mx-auto px-8 md:px-16 lg:px-24 relative z-10">
-        <div className="text-center mb-20">
-          <span className="text-accent-500 font-bold uppercase tracking-[0.3em] text-xs">Projects</span>
-          <h2 className="text-5xl md:text-6xl font-serif mt-6 text-white">Things I've Built</h2>
-          <div className="h-px w-24 bg-gradient-to-r from-transparent via-accent-500/50 to-transparent mx-auto mt-8"></div>
+        <div className="reveal text-center mb-16 md:mb-24">
+          <p className="text-accent-500 text-[10px] font-bold uppercase tracking-[0.4em] mb-4">
+            Projects
+          </p>
+          <h2 className="text-4xl md:text-6xl font-serif font-bold text-white">
+            Things I've Built
+          </h2>
+          <div className="section-divider mt-8"></div>
         </div>
 
         {PROJECTS.length === 1 ? (
-          <div className="flex justify-center w-full">
-            <div className="w-full max-w-4xl group p-10 md:p-14 rounded-3xl border border-white/5 bg-surface-950/80 border-t-[3px] border-t-accent-500/60 transition-all duration-500 hover:bg-surface-950 hover:border-t-accent-500 shadow-2xl">
+          <div className="flex justify-center w-full reveal reveal-delay-1">
+            <div className="w-full max-w-4xl glass-card gradient-border p-10 md:p-14">
               <div className="flex justify-between items-start mb-8">
                 <div className="flex items-center gap-3">
                   <div className={`w-3 h-3 rounded-full ${PROJECTS[0].status === 'Live' ? 'bg-sage-400 animate-pulse shadow-[0_0_12px_rgba(74,222,128,0.6)]' : 'bg-accent-500/50'}`}></div>
@@ -43,10 +47,10 @@ const Projects: React.FC = () => {
           </div>
         ) : (
           <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
-            {PROJECTS.map((project) => (
+            {PROJECTS.map((project, index) => (
               <div
                 key={project.id}
-                className="group p-8 md:p-10 rounded-3xl border border-white/5 bg-surface-950/80 border-t-[3px] border-t-accent-500/60 transition-all duration-500 hover:bg-surface-950 hover:border-t-accent-500 shadow-2xl"
+                className={`group p-8 md:p-10 glass-card gradient-border reveal reveal-delay-${(index % 4) + 1}`}
               >
                 <div className="flex justify-between items-start mb-6">
                   <div className="flex items-center gap-2">

@@ -176,13 +176,13 @@ export const ACCUMULATION_SIGNALS = [];
     // SAVE ALL DATA
     const fs = require('fs');
     const path = require('path');
-    const dataDir = path.join(__dirname, '../src/app/data');
+    const dataDir = path.join(__dirname, '..', 'src', 'app', 'data');
     
     if (!fs.existsSync(dataDir)) fs.mkdirSync(dataDir, { recursive: true });
 
-    fs.writeFileSync(path.join(dataDir, 'sasto_premium_report.json'), JSON.stringify(finalData, null, 2));
-    fs.writeFileSync(path.join(dataDir, 'super_intelligence.json'), JSON.stringify(finalData, null, 2));
-    fs.writeFileSync(path.join(dataDir, 'sampleData.ts'), sampleDataTS);
+    fs.writeFileSync(path.join(__dirname, '..', 'src', 'app', 'data', 'sasto_premium_report.json'), JSON.stringify(finalData, null, 2));
+    fs.writeFileSync(path.join(__dirname, '..', 'src', 'app', 'data', 'super_intelligence.json'), JSON.stringify(finalData, null, 2));
+    fs.writeFileSync(path.join(__dirname, '..', 'src', 'app', 'data', 'sampleData.ts'), sampleDataTS);
     console.log(`✅ Data saved to ${dataDir}`);
     
     // 8. AUTO-EMAIL BROADCAST (Daily Alpha Brief)
