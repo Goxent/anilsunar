@@ -5,7 +5,7 @@ import QUALIFICATIONS from '../src/content/qualifications.json';
 const About: React.FC = () => {
   return (
     <section id="about" className="py-32 bg-surface-950 relative overflow-hidden">
-      <div className="max-w-7xl mx-auto px-6 relative z-10">
+      <div className="max-w-7xl mx-auto px-8 md:px-16 lg:px-24 relative z-10">
         <div className="grid md:grid-cols-2 gap-16 md:gap-24 items-start">
           {/* Bio Column */}
           <div className="fade-in">

@@ -7,7 +7,7 @@ const Hero: React.FC = () => {
       id="home"
       className="relative min-h-screen flex items-center overflow-hidden hero-bg"
     >
-      <div className="max-w-7xl mx-auto px-6 w-full relative z-10 pt-20">
+      <div className="max-w-7xl mx-auto px-8 md:px-16 lg:px-24 w-full relative z-10 pt-20">
         <div className="grid md:grid-cols-2 gap-12 md:gap-20 items-center">
           {/* Left: Text */}
           <div className="fade-in order-2 md:order-1">

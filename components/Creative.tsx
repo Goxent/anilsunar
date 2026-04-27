@@ -21,7 +21,7 @@ const Creative: React.FC = () => {
 
   return (
     <section id="creative" className="py-32 bg-surface-950 relative overflow-hidden">
-      <div className="max-w-7xl mx-auto px-6 relative z-10">
+      <div className="max-w-7xl mx-auto px-8 md:px-16 lg:px-24 relative z-10">
         <div className="text-center mb-20">
           <span className="text-accent-400 font-bold uppercase tracking-[0.3em] text-xs">Creative Works</span>
           <h2 className="text-5xl md:text-7xl font-serif mt-6 text-white mb-4">Poetry · Rap · YouTube</h2>

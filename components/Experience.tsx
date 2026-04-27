@@ -65,7 +65,7 @@ const Experience: React.FC = () => {
 
       <motion.div
         style={{ opacity }}
-        className="max-w-6xl mx-auto px-6 relative z-10"
+        className="max-w-6xl mx-auto px-8 md:px-16 lg:px-24 relative z-10"
       >
         <div className="text-center mb-24">
           <motion.div

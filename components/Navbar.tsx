@@ -20,7 +20,7 @@ const Navbar: React.FC = () => {
           : 'py-6 bg-transparent'
         }`}
     >
-      <div className="max-w-7xl mx-auto px-6 flex justify-between items-center">
+      <div className="max-w-7xl mx-auto px-8 md:px-16 lg:px-24 flex justify-between items-center">
         <a href="#home" className="text-2xl font-serif font-bold tracking-tight text-white hover:text-accent-500 transition-colors">
           Anil Sunar
         </a>
@@ -43,7 +43,7 @@ const Navbar: React.FC = () => {
           >
             Dashboard
           </Link>
-          <a href="#contact" className="ml-4 px-6 py-2.5 rounded-full border border-accent-500 text-accent-500 hover:bg-accent-500 hover:text-surface-950 transition-all duration-300 text-[11px] font-bold tracking-[0.2em] uppercase">
+          <a href="#contact" className="ml-4 px-8 md:px-16 lg:px-24 py-2.5 rounded-full border border-accent-500 text-accent-500 hover:bg-accent-500 hover:text-surface-950 transition-all duration-300 text-[11px] font-bold tracking-[0.2em] uppercase">
             Hire Me
           </a>
         </div>
@@ -63,7 +63,7 @@ const Navbar: React.FC = () => {
           isMobileMenuOpen ? 'max-h-[500px] opacity-100' : 'max-h-0 opacity-0'
         }`}
       >
-        <div className="flex flex-col py-6 px-6 gap-5">
+        <div className="flex flex-col py-6 px-8 md:px-16 lg:px-24 gap-5">
           {NAV_ITEMS.map((item) => (
             <a
               key={item.label}
@@ -81,7 +81,7 @@ const Navbar: React.FC = () => {
           >
             Dashboard
           </Link>
-          <a href="#contact" className="mt-4 text-center px-6 py-3.5 bg-accent-500 text-surface-950 rounded-full font-bold uppercase tracking-[0.2em] text-[13px]">
+          <a href="#contact" className="mt-4 text-center px-8 md:px-16 lg:px-24 py-3.5 bg-accent-500 text-surface-950 rounded-full font-bold uppercase tracking-[0.2em] text-[13px]">
             Hire Me
           </a>
         </div>

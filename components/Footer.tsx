@@ -19,7 +19,7 @@ const AVAILABLE_FOR = [
 const Footer: React.FC = () => {
   return (
     <footer id="contact" className="bg-surface-950 pt-32 pb-12 border-t border-white/5">
-      <div className="max-w-7xl mx-auto px-6">
+      <div className="max-w-7xl mx-auto px-8 md:px-16 lg:px-24">
         <div className="text-center mb-20">
           <span className="text-accent-500 font-bold uppercase tracking-[0.3em] text-xs">Contact</span>
           <h2 className="text-5xl md:text-6xl font-serif mt-6 text-white">Let's Connect</h2>
@@ -53,7 +53,7 @@ const Footer: React.FC = () => {
           <span className="text-[10px] uppercase tracking-[0.2em] text-slate-500 font-bold">Available for</span>
           <div className="flex flex-wrap justify-center gap-4">
             {AVAILABLE_FOR.map((item) => (
-              <span key={item} className="px-6 py-2.5 rounded-full border border-white/[0.06] text-slate-400 text-xs tracking-wider font-light bg-white/[0.01]">
+              <span key={item} className="px-8 md:px-16 lg:px-24 py-2.5 rounded-full border border-white/[0.06] text-slate-400 text-xs tracking-wider font-light bg-white/[0.01]">
                 {item}
               </span>
             ))}

@@ -4,7 +4,7 @@ import postsData from '../src/content/posts.json';
 const Posts: React.FC = () => {
   return (
     <section id="writing" className="py-32 bg-surface-900/30 relative border-t border-white/5">
-      <div className="max-w-7xl mx-auto px-6 relative z-10">
+      <div className="max-w-7xl mx-auto px-8 md:px-16 lg:px-24 relative z-10">
         <div className="text-center mb-20">
           <span className="text-accent-500 font-bold uppercase tracking-[0.3em] text-xs">Writing</span>
           <h2 className="text-5xl md:text-6xl font-serif mt-6 text-white">Articles & Thoughts</h2>
