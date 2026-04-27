@@ -13,12 +13,12 @@ const Projects: React.FC = () => {
           <h2 className="text-4xl md:text-6xl font-serif font-bold text-white">
             Things I've Built
           </h2>
-          <div className="section-divider mt-8"></div>
+          <div className="section-divider mx-auto mt-8"></div>
         </div>
 
         {PROJECTS.length === 1 ? (
           <div className="flex justify-center w-full reveal reveal-delay-1">
-            <div className="w-full max-w-4xl glass-card gradient-border p-10 md:p-14">
+            <div className="w-full max-w-4xl glass-card gradient-border p-10 md:p-14 group">
               <div className="flex justify-between items-start mb-8">
                 <div className="flex items-center gap-3">
                   <div className={`w-3 h-3 rounded-full ${PROJECTS[0].status === 'Live' ? 'bg-sage-400 animate-pulse shadow-[0_0_12px_rgba(74,222,128,0.6)]' : 'bg-accent-500/50'}`}></div>
@@ -26,7 +26,7 @@ const Projects: React.FC = () => {
                 </div>
               </div>
 
-              <h3 className="text-4xl font-serif font-bold text-white mb-6 group-hover:text-accent-500 transition-colors">{PROJECTS[0].title}</h3>
+              <h3 className="text-3xl md:text-4xl font-serif font-bold text-white mb-6 group-hover:text-accent-500 transition-colors leading-tight">{PROJECTS[0].title}</h3>
               <p className="text-slate-400 mb-10 text-lg leading-relaxed font-light">{PROJECTS[0].description}</p>
 
               <div className="flex flex-wrap gap-3 mb-12">
@@ -59,7 +59,7 @@ const Projects: React.FC = () => {
                   </div>
                 </div>
 
-                <h3 className="text-3xl font-serif font-bold text-white mb-4 group-hover:text-accent-500 transition-colors">{project.title}</h3>
+                <h3 className="text-2xl md:text-3xl font-serif font-bold text-white mb-4 group-hover:text-accent-500 transition-colors leading-tight">{project.title}</h3>
                 <p className="text-slate-400 mb-8 text-base leading-relaxed font-light">{project.description}</p>
 
                 <div className="flex flex-wrap gap-2 mb-10">

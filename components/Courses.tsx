@@ -21,7 +21,7 @@ const Courses: React.FC = () => {
           <h2 className="text-4xl md:text-6xl font-serif font-bold text-white">
             Videos & Courses
           </h2>
-          <div className="section-divider mt-8"></div>
+          <div className="section-divider mx-auto mt-8"></div>
           <p className="text-slate-400 text-lg max-w-xl mx-auto font-light mt-8">
             Explore my content on NEPSE trading, finance, technology, and creative arts.
           </p>
@@ -33,10 +33,10 @@ const Courses: React.FC = () => {
             <button
               key={cat}
               onClick={() => setActiveCategory(cat)}
-              className={`px-5 py-2 rounded-full text-xs uppercase tracking-widest font-bold transition-all duration-300 border ${
+              className={`px-6 py-2.5 rounded-full text-[10px] uppercase tracking-[0.2em] font-bold transition-all duration-300 border ${
                 activeCategory === cat
-                  ? 'bg-accent-400 text-surface-950 border-accent-400'
-                  : 'bg-transparent text-slate-400 border-white/10 hover:border-accent-400/30 hover:text-accent-300'
+                  ? 'bg-accent-500 text-surface-950 border-accent-500 shadow-[0_0_15px_rgba(212,175,55,0.4)]'
+                  : 'glass-card border-white/10 text-slate-400 hover:border-accent-500/40 hover:text-accent-500'
               }`}
             >
               {cat}

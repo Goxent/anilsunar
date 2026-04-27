@@ -16,10 +16,9 @@ const ExperienceCard: React.FC<{ item: typeof EXPERIENCE_DATA[0]; index: number 
       </div>
 
       {/* Timeline Dot & Line */}
-      <div className="absolute left-0 top-0 bottom-0 flex justify-center md:relative md:w-auto md:h-auto z-10">
-        <div className="absolute top-5 -left-[5px] md:static w-3 h-3 rounded-full bg-surface-950 border-2 border-accent-500/60 group-hover:scale-125 group-hover:bg-accent-500 transition-all duration-500"></div>
-        {/* The line now stretches fully to connect */}
-        <div className="hidden md:block absolute top-10 bottom-[-96px] left-[5px] w-px transition-all duration-500 -z-10" style={{ background: 'linear-gradient(to bottom, rgba(212,175,55,0.6), transparent)' }}></div>
+      <div className="hidden md:flex flex-col items-center relative w-8 shrink-0">
+        <div className="w-3 h-3 rounded-full bg-surface-950 border-2 border-accent-500/60 group-hover:scale-125 group-hover:bg-accent-500 transition-all duration-500 z-10 mt-3"></div>
+        <div className="absolute top-6 bottom-[-48px] w-px transition-all duration-500" style={{ background: 'linear-gradient(to bottom, rgba(212,175,55,0.6), transparent)' }}></div>
       </div>
 
       {/* Content Card */}
@@ -70,7 +69,7 @@ const Experience: React.FC = () => {
           <h2 className="text-4xl md:text-6xl font-serif font-bold text-white">
             Professional Journey
           </h2>
-          <div className="section-divider mt-8"></div>
+          <div className="section-divider mx-auto mt-8"></div>
         </div>
 
         {/* Replaced space-y with explicit flex gap to prevent overlapping */}

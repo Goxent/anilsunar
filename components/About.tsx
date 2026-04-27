@@ -13,7 +13,7 @@ const About: React.FC = () => {
           <h2 className="text-4xl md:text-6xl font-serif font-bold text-white">
             My Story
           </h2>
-          <div className="section-divider mt-8"></div>
+          <div className="section-divider mx-auto mt-8"></div>
         </div>
 
         <div className="grid md:grid-cols-2 gap-16 md:gap-24 items-start reveal">
@@ -32,22 +32,22 @@ const About: React.FC = () => {
               </p>
             </div>
 
-            <div className="mt-12 grid grid-cols-2 gap-6 reveal reveal-delay-3">
-              <div className="glass-card gradient-border p-6 text-center">
-                <div className="text-3xl font-bold text-accent-500 mb-2">5+</div>
-                <div className="text-xs text-slate-400 uppercase tracking-widest font-bold">Years Experience</div>
+            <div className="mt-12 flex flex-wrap gap-x-8 gap-y-8 reveal reveal-delay-3 pt-8 border-t border-white/10">
+              <div className="flex-1 min-w-[120px]">
+                <div className="text-4xl font-serif font-bold text-white mb-2">5+</div>
+                <div className="text-[10px] text-accent-500 uppercase tracking-[0.2em] font-bold">Years<br/>Experience</div>
               </div>
-              <div className="glass-card gradient-border p-6 text-center">
-                <div className="text-3xl font-bold text-accent-500 mb-2">CA</div>
-                <div className="text-xs text-slate-400 uppercase tracking-widest font-bold">Nepal Qualified</div>
+              <div className="flex-1 min-w-[120px]">
+                <div className="text-4xl font-serif font-bold text-white mb-2">CA</div>
+                <div className="text-[10px] text-accent-500 uppercase tracking-[0.2em] font-bold">Nepal<br/>Qualified</div>
               </div>
-              <div className="glass-card gradient-border p-6 text-center">
-                <div className="text-3xl font-bold text-accent-500 mb-2">NEPSE</div>
-                <div className="text-xs text-slate-400 uppercase tracking-widest font-bold">Analyst</div>
+              <div className="flex-1 min-w-[120px]">
+                <div className="text-4xl font-serif font-bold text-white mb-2">NEPSE</div>
+                <div className="text-[10px] text-accent-500 uppercase tracking-[0.2em] font-bold">Market<br/>Analyst</div>
               </div>
-              <div className="glass-card gradient-border p-6 text-center">
-                <div className="text-3xl font-bold text-accent-500 mb-2">10K+</div>
-                <div className="text-xs text-slate-400 uppercase tracking-widest font-bold">LinkedIn Network</div>
+              <div className="flex-1 min-w-[120px]">
+                <div className="text-4xl font-serif font-bold text-white mb-2">10K+</div>
+                <div className="text-[10px] text-accent-500 uppercase tracking-[0.2em] font-bold">LinkedIn<br/>Network</div>
               </div>
             </div>
           </div>
@@ -55,15 +55,17 @@ const About: React.FC = () => {
           {/* Stats & Qualifications Column */}
           <div className="flex flex-col gap-12 reveal-delay-2">
             {/* Qualifications Grid */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
+            <div className="grid grid-cols-1 gap-6">
               {QUALIFICATIONS.map((qual, idx) => (
-                <div key={idx} className="glass-card gradient-border p-8 group">
-                  <div className="mb-6 text-accent-500/40 group-hover:text-accent-500 transition-colors">
-                    {qual.credential.includes('Accountant') ? <Award size={28} /> : <GraduationCap size={28} />}
+                <div key={idx} className="glass-card gradient-border p-8 group flex items-start gap-6">
+                  <div className="shrink-0 p-4 rounded-2xl bg-white/5 text-accent-500/60 group-hover:text-accent-500 group-hover:bg-accent-500/10 transition-colors">
+                    {qual.credential.includes('Accountant') ? <Award size={32} /> : <GraduationCap size={32} />}
                   </div>
-                  <h3 className="text-white font-bold text-sm uppercase tracking-wider mb-3 group-hover:text-accent-500 transition-colors">{qual.credential}</h3>
-                  <p className="text-slate-400 text-sm leading-relaxed font-light">{qual.body}</p>
-                  <p className="text-accent-500/60 text-[10px] mt-4 font-mono font-bold">{qual.year}</p>
+                  <div>
+                    <h3 className="text-white font-bold text-base md:text-lg tracking-wide mb-2 group-hover:text-accent-500 transition-colors">{qual.credential}</h3>
+                    <p className="text-slate-400 text-sm leading-relaxed font-light mb-4">{qual.body}</p>
+                    <span className="inline-block px-3 py-1 rounded-full bg-accent-500/10 text-accent-500 text-[10px] font-mono font-bold uppercase tracking-wider">{qual.year}</span>
+                  </div>
                 </div>
               ))}
             </div>

@@ -12,7 +12,7 @@ const Posts: React.FC = () => {
           <h2 className="text-4xl md:text-6xl font-serif font-bold text-white">
             Articles & Thoughts
           </h2>
-          <div className="section-divider mt-8"></div>
+          <div className="section-divider mx-auto mt-8"></div>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">

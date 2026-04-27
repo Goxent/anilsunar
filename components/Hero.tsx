@@ -66,9 +66,9 @@ const Hero: React.FC = () => {
               </div>
 
               {/* Small floating credential badge */}
-              <div className="absolute bottom-4 left-4 bg-surface-950 border border-white/10 rounded-2xl px-5 py-4 shadow-2xl z-20 backdrop-blur-xl">
+              <div className="absolute bottom-10 -left-6 md:-left-12 glass-card border border-white/10 rounded-2xl px-6 py-5 shadow-2xl z-20">
                 <span className="text-accent-500 font-bold block tracking-widest text-[10px] uppercase mb-1">CA Nepal</span>
-                <span className="text-slate-400 text-xs">ICAN Member</span>
+                <span className="text-white text-xs font-bold uppercase tracking-wider">ICAN Member</span>
               </div>
             </div>
           </div>
