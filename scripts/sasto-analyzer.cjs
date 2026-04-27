@@ -20,8 +20,9 @@ async function retry(fn, retries = 3, delay = 2000) {
 
 async function runProdSync() {
   console.log('🚀 Initiating Production Sasto Share Bot...');
-  // Headless changed to false so you can watch it live!
-  const browser = await chromium.launch({ headless: false });
+  // Use headless mode in GitHub Actions or if HEADLESS env var is not explicitly 'false'
+  const isHeadless = process.env.GITHUB_ACTIONS === 'true' || process.env.HEADLESS !== 'false';
+  const browser = await chromium.launch({ headless: isHeadless });
   const context = await browser.newContext({ userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36' });
   const page = await context.newPage();
 
