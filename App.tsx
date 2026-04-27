@@ -11,13 +11,11 @@ import Courses from './components/Courses';
 import Posts from './components/Posts';
 import GeminiPoet from './components/GeminiPoet';
 import Footer from './components/Footer';
-import CustomCursor from './components/CustomCursor';
 import NewsletterSignup from './components/NewsletterSignup';
 
 function App() {
   return (
-    <div className="bg-luxury-950 text-slate-200 font-sans selection:bg-gold-500/30 selection:text-gold-200 cursor-none">
-      <CustomCursor />
+    <div className="bg-surface-950 text-slate-200 font-sans selection:bg-accent-400/20 selection:text-accent-300">
       <Navbar />
       <main>
         <Hero />

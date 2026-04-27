@@ -1,5 +1,5 @@
 import React from 'react';
-import { Mail, Linkedin, Youtube, Instagram, Github, Twitter } from 'lucide-react';
+import { Mail, Linkedin, Youtube, Instagram, Github } from 'lucide-react';
 import settings from '../src/content/settings.json';
 
 const CONTACT_METHODS = [
@@ -18,10 +18,10 @@ const AVAILABLE_FOR = [
 
 const Footer: React.FC = () => {
   return (
-    <footer id="contact" className="bg-luxury-950 pt-32 pb-12 border-t border-white/5">
+    <footer id="contact" className="bg-surface-950 pt-32 pb-12 border-t border-white/5">
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-20">
-          <span className="text-gold-500 font-bold uppercase tracking-[0.3em] text-xs">Contact</span>
+          <span className="text-accent-400 font-bold uppercase tracking-[0.3em] text-xs">Contact</span>
           <h2 className="text-5xl md:text-6xl font-serif mt-6 text-white mb-6">Let's Connect</h2>
           <p className="text-slate-400 text-lg max-w-xl mx-auto font-light">
             Whether it's audit consulting, tech collaboration, or just a conversation about poetry — I'm always open.
@@ -35,14 +35,14 @@ const Footer: React.FC = () => {
               href={method.href}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center gap-6 p-8 rounded-3xl bg-white/5 border border-white/5 hover:border-gold-500/30 transition-all duration-500 group"
+              className="flex items-center gap-6 p-8 rounded-2xl bg-white/[0.03] border border-white/5 hover:border-accent-400/20 transition-all duration-500 group"
             >
-              <div className="p-4 rounded-2xl bg-luxury-900 text-slate-400 group-hover:text-gold-500 transition-colors">
+              <div className="p-4 rounded-xl bg-surface-900 text-slate-500 group-hover:text-accent-400 transition-colors">
                 <method.icon size={28} />
               </div>
               <div>
                 <span className="block text-[10px] uppercase tracking-widest text-slate-500 font-bold mb-1">{method.label}</span>
-                <span className="text-xl text-white group-hover:text-gold-400 transition-colors font-serif">{method.value}</span>
+                <span className="text-xl text-white group-hover:text-accent-300 transition-colors font-serif">{method.value}</span>
               </div>
             </a>
           ))}
@@ -52,7 +52,7 @@ const Footer: React.FC = () => {
           <span className="text-[10px] uppercase tracking-[0.2em] text-slate-500 font-bold">Available for</span>
           <div className="flex flex-wrap justify-center gap-4">
             {AVAILABLE_FOR.map((item) => (
-              <span key={item} className="px-5 py-2 rounded-full border border-white/10 text-slate-400 text-xs tracking-wider">
+              <span key={item} className="px-5 py-2 rounded-full border border-white/[0.06] text-slate-400 text-xs tracking-wider">
                 {item}
               </span>
             ))}

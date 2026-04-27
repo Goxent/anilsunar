@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Play, Youtube, Instagram, Filter } from 'lucide-react';
+import { Play, Youtube, Instagram } from 'lucide-react';
 import coursesData from '../src/content/courses.json';
 
 const CATEGORIES = ['All', ...Array.from(new Set(coursesData.map(c => c.category)))];
@@ -12,10 +12,10 @@ const Courses: React.FC = () => {
     : coursesData.filter(c => c.category === activeCategory);
 
   return (
-    <section id="courses" className="py-32 bg-luxury-950 relative">
+    <section id="courses" className="py-32 bg-surface-950 relative">
       <div className="max-w-7xl mx-auto px-6 relative z-10">
         <div className="text-center mb-16">
-          <span className="text-gold-500 font-bold uppercase tracking-[0.3em] text-xs">Content</span>
+          <span className="text-accent-400 font-bold uppercase tracking-[0.3em] text-xs">Content</span>
           <h2 className="text-5xl md:text-6xl font-serif mt-6 text-white mb-4">Videos & Courses</h2>
           <p className="text-slate-400 text-lg max-w-xl mx-auto font-light">
             Explore my content on NEPSE trading, finance, technology, and creative arts.
@@ -30,8 +30,8 @@ const Courses: React.FC = () => {
               onClick={() => setActiveCategory(cat)}
               className={`px-5 py-2 rounded-full text-xs uppercase tracking-widest font-bold transition-all duration-300 border ${
                 activeCategory === cat
-                  ? 'bg-gold-500 text-luxury-950 border-gold-500'
-                  : 'bg-transparent text-slate-400 border-white/10 hover:border-gold-500/30 hover:text-gold-400'
+                  ? 'bg-accent-400 text-surface-950 border-accent-400'
+                  : 'bg-transparent text-slate-400 border-white/10 hover:border-accent-400/30 hover:text-accent-300'
               }`}
             >
               {cat}
@@ -44,10 +44,10 @@ const Courses: React.FC = () => {
           {filtered.map((course) => (
             <div
               key={course.id}
-              className="group rounded-2xl border border-white/5 bg-white/5 overflow-hidden hover:border-gold-500/20 transition-all duration-500"
+              className="group rounded-2xl border border-white/5 bg-white/[0.03] overflow-hidden hover:border-accent-400/15 transition-all duration-500"
             >
-              {/* Thumbnail area */}
-              <div className="relative aspect-video bg-luxury-900 flex items-center justify-center overflow-hidden">
+              {/* Thumbnail */}
+              <div className="relative aspect-video bg-surface-900 flex items-center justify-center overflow-hidden">
                 {course.youtubeId ? (
                   <img
                     src={`https://img.youtube.com/vi/${course.youtubeId}/hqdefault.jpg`}
@@ -61,11 +61,10 @@ const Courses: React.FC = () => {
                   </div>
                 )}
 
-                {/* Play overlay */}
                 {course.youtubeId && (
                   <div className="absolute inset-0 bg-black/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                    <div className="w-14 h-14 rounded-full bg-gold-500 flex items-center justify-center">
-                      <Play size={24} className="text-luxury-950 ml-1" fill="currentColor" />
+                    <div className="w-14 h-14 rounded-full bg-accent-400 flex items-center justify-center">
+                      <Play size={24} className="text-surface-950 ml-1" fill="currentColor" />
                     </div>
                   </div>
                 )}
@@ -87,11 +86,11 @@ const Courses: React.FC = () => {
               {/* Content */}
               <div className="p-6">
                 <div className="flex items-center gap-2 mb-3">
-                  <span className="text-[10px] uppercase tracking-widest text-gold-500 border border-gold-500/20 px-2 py-0.5 rounded-md bg-gold-500/5">
+                  <span className="text-[10px] uppercase tracking-widest text-accent-400 border border-accent-400/15 px-2 py-0.5 rounded-md bg-accent-400/5">
                     {course.category}
                   </span>
                 </div>
-                <h3 className="text-lg font-bold text-white mb-2 group-hover:text-gold-400 transition-colors line-clamp-2">
+                <h3 className="text-lg font-bold text-white mb-2 group-hover:text-accent-300 transition-colors line-clamp-2">
                   {course.title}
                 </h3>
                 <p className="text-slate-500 text-sm line-clamp-2">{course.description}</p>

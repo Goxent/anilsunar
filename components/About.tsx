@@ -4,15 +4,15 @@ import QUALIFICATIONS from '../src/content/qualifications.json';
 
 const About: React.FC = () => {
   return (
-    <section id="about" className="py-32 bg-luxury-950 relative overflow-hidden">
+    <section id="about" className="py-32 bg-surface-950 relative overflow-hidden">
       <div className="max-w-7xl mx-auto px-6 relative z-10">
         <div className="grid md:grid-cols-2 gap-16 items-start">
           {/* Bio Column */}
           <div className="fade-in">
-            <span className="text-gold-500 font-bold uppercase tracking-[0.3em] text-xs">About Me</span>
+            <span className="text-accent-400 font-bold uppercase tracking-[0.3em] text-xs">About Me</span>
             <h2 className="text-5xl md:text-6xl font-serif mt-6 text-white mb-10">My Story</h2>
             
-            <div className="space-y-6 text-slate-300 text-lg leading-relaxed font-light">
+            <div className="space-y-6 text-slate-400 text-lg leading-relaxed font-light">
               <p>
                 I'm Anil Sunar — a Chartered Accountant from ICAN, Nepal, and an Audit Manager with hands-on experience leading complex audit engagements across diverse industries. My academic foundation is a Bachelor of Business Studies (BBS), which shaped my analytical approach to finance and business.
               </p>
@@ -46,12 +46,12 @@ const About: React.FC = () => {
             {/* Qualifications Grid */}
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
               {QUALIFICATIONS.map((qual, idx) => (
-                <div key={idx} className="p-6 rounded-2xl border border-white/5 bg-white/5 hover:border-gold-500/30 transition-all duration-500 group">
-                  <div className="mb-4 text-gold-500/50 group-hover:text-gold-500 transition-colors">
+                <div key={idx} className="p-6 rounded-2xl border border-white/5 bg-white/[0.03] hover:border-accent-400/20 transition-all duration-500 group">
+                  <div className="mb-4 text-accent-400/40 group-hover:text-accent-400 transition-colors">
                     {qual.credential.includes('Accountant') ? <Award size={24} /> : <GraduationCap size={24} />}
                   </div>
-                  <h3 className="text-gold-500 font-bold text-sm uppercase tracking-wide mb-2">{qual.credential}</h3>
-                  <p className="text-slate-400 text-xs leading-relaxed">{qual.body}</p>
+                  <h3 className="text-accent-300 font-bold text-sm uppercase tracking-wide mb-2">{qual.credential}</h3>
+                  <p className="text-slate-500 text-xs leading-relaxed">{qual.body}</p>
                   <p className="text-slate-600 text-[10px] mt-3 font-mono">{qual.year}</p>
                 </div>
               ))}

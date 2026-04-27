@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Menu, X, Lock } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
 import { NAV_ITEMS } from '../constants';
 import { Link } from 'react-router-dom';
 
@@ -8,29 +8,22 @@ const Navbar: React.FC = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   useEffect(() => {
-    const handleScroll = () => {
-      setIsScrolled(window.scrollY > 50);
-    };
+    const handleScroll = () => setIsScrolled(window.scrollY > 50);
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
   return (
     <nav
-      className={`fixed w-full z-50 transition-all duration-500 rounded-b-3xl ${isScrolled
-          ? 'py-4 bg-[#0a0a0f]/80 border-b border-white/10 shadow-lg'
-          : 'py-6 bg-transparent'
+      className={`fixed w-full z-50 transition-all duration-500 ${isScrolled
+          ? 'py-3 bg-surface-950/90 backdrop-blur-xl border-b border-white/[0.06]'
+          : 'py-5 bg-transparent'
         }`}
     >
       <div className="max-w-7xl mx-auto px-6 flex justify-between items-center">
-        <div className="flex items-center gap-3">
-          <a href="#home" className="text-2xl font-serif font-bold tracking-tighter text-white hover:text-gold-500 transition-colors">
-            Anil Sunar
-          </a>
-          <span className="text-[10px] uppercase tracking-[0.2em] px-2 py-1 bg-gold-500/10 text-gold-500 border border-gold-500/20 rounded-md font-bold">
-            Goxent.
-          </span>
-        </div>
+        <a href="#home" className="text-xl font-serif font-bold tracking-tight text-white hover:text-accent-300 transition-colors">
+          Anil Sunar
+        </a>
 
         {/* Desktop Menu */}
         <div className="hidden md:flex items-center gap-8">
@@ -38,45 +31,44 @@ const Navbar: React.FC = () => {
             <a
               key={item.label}
               href={item.href}
-              className="text-sm uppercase tracking-widest text-slate-300 hover:text-gold-400 transition-colors relative group font-medium"
+              className="text-[13px] uppercase tracking-[0.15em] text-slate-400 hover:text-accent-300 transition-colors relative group font-medium"
             >
               {item.label}
-              <span className="absolute -bottom-2 left-0 w-0 h-0.5 bg-gold-500 transition-all duration-300 group-hover:w-full"></span>
+              <span className="absolute -bottom-1.5 left-0 w-0 h-px bg-accent-400 transition-all duration-300 group-hover:w-full"></span>
             </a>
           ))}
           <Link
             to="/app"
-            className="flex items-center gap-2 text-sm uppercase tracking-widest text-gold-400 hover:text-gold-500 transition-colors font-bold"
+            className="text-[13px] uppercase tracking-[0.15em] text-accent-400 hover:text-accent-300 transition-colors font-semibold"
           >
-            <Lock size={14} />
-            App
+            Dashboard
           </Link>
-          <a href="#contact" className="ml-4 px-6 py-2.5 rounded-full border border-gold-500/50 text-gold-500 hover:bg-gold-500 hover:text-luxury-950 transition-all duration-300 text-sm font-semibold tracking-wider uppercase">
+          <a href="#contact" className="ml-2 px-5 py-2 rounded-full border border-accent-400/30 text-accent-400 hover:bg-accent-400 hover:text-surface-950 transition-all duration-300 text-[13px] font-semibold tracking-wider uppercase">
             Hire Me
           </a>
         </div>
 
-        {/* Mobile Menu Button */}
+        {/* Mobile */}
         <button
-          className="md:hidden text-white hover:text-gold-500 transition-colors"
+          className="md:hidden text-white hover:text-accent-300 transition-colors"
           onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
         >
-          {isMobileMenuOpen ? <X size={28} /> : <Menu size={28} />}
+          {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
         </button>
       </div>
 
       {/* Mobile Menu */}
       <div
-        className={`md:hidden absolute top-full left-0 w-full bg-[#0a0a0f]/95 border-b border-white/10 transition-all duration-300 overflow-hidden ${
+        className={`md:hidden absolute top-full left-0 w-full bg-surface-950/95 backdrop-blur-xl border-b border-white/[0.06] transition-all duration-300 overflow-hidden ${
           isMobileMenuOpen ? 'max-h-[500px] opacity-100' : 'max-h-0 opacity-0'
         }`}
       >
-        <div className="flex flex-col py-6 px-6 gap-6">
+        <div className="flex flex-col py-6 px-6 gap-5">
           {NAV_ITEMS.map((item) => (
             <a
               key={item.label}
               href={item.href}
-              className="text-lg font-serif text-slate-200 hover:text-gold-400 transition-colors border-b border-white/5 pb-2"
+              className="text-base text-slate-300 hover:text-accent-300 transition-colors border-b border-white/5 pb-2"
               onClick={() => setIsMobileMenuOpen(false)}
             >
               {item.label}
@@ -84,13 +76,12 @@ const Navbar: React.FC = () => {
           ))}
           <Link
             to="/app"
-            className="flex items-center gap-3 text-lg font-serif text-gold-400 hover:text-gold-500 transition-colors border-b border-white/5 pb-2"
+            className="text-base text-accent-400 hover:text-accent-300 transition-colors border-b border-white/5 pb-2"
             onClick={() => setIsMobileMenuOpen(false)}
           >
-            <Lock size={18} />
-            Command Center
+            Dashboard
           </Link>
-          <a href="#contact" className="mt-4 text-center px-6 py-3 bg-gold-500 text-luxury-950 rounded-full font-bold uppercase tracking-wider">
+          <a href="#contact" className="mt-2 text-center px-6 py-3 bg-accent-400 text-surface-950 rounded-full font-bold uppercase tracking-wider">
             Hire Me
           </a>
         </div>
