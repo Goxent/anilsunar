@@ -35,7 +35,7 @@ const Hero: React.FC = () => {
               </a>
               <a
                 href="#contact"
-                className="px-8 py-4 rounded-full text-sm font-bold uppercase tracking-[0.2em] bg-accent-500 text-surface-950 hover:bg-accent-300 transition-all duration-300 flex items-center justify-center shadow-[0_0_20px_rgba(212,175,55,0.2)] hover:shadow-[0_0_30px_rgba(212,175,55,0.4)]"
+                className="px-8 py-4 rounded-full text-sm font-bold uppercase tracking-[0.2em] bg-accent-500 text-black hover:bg-accent-300 transition-all duration-300 flex items-center justify-center shadow-[0_0_20px_rgba(212,175,55,0.2)] hover:shadow-[0_0_30px_rgba(212,175,55,0.4)]"
               >
                 Let's Connect
               </a>
@@ -47,14 +47,24 @@ const Hero: React.FC = () => {
             <div className="relative">
               {/* Subtle glow behind photo */}
               <div className="absolute -inset-4 bg-gradient-to-br from-accent-500/10 via-transparent to-accent-500/5 rounded-3xl blur-2xl"></div>
-              <img
-                src="/anil-photo.png"
-                alt="Anil Sunar — Chartered Accountant & Creator"
-                className="relative w-72 md:w-96 lg:w-[420px] rounded-3xl object-cover border border-white/[0.06] shadow-2xl"
-                style={{ aspectRatio: '3/4' }}
-              />
+              
+              <div className="relative w-72 md:w-96 lg:w-[420px] rounded-3xl overflow-hidden" style={{ aspectRatio: '3/4' }}>
+                <img
+                  src="/anil-photo.png"
+                  alt="Anil Sunar — Chartered Accountant & Creator"
+                  className="w-full h-full object-cover"
+                />
+                
+                {/* Gradient overlays to smoothly merge portrait into the black background */}
+                <div className="absolute inset-0 bg-gradient-to-t from-black via-black/20 to-transparent"></div>
+                <div className="absolute inset-0 bg-gradient-to-b from-black via-transparent to-transparent opacity-40"></div>
+                <div className="absolute inset-0 bg-gradient-to-r from-black via-transparent to-transparent opacity-60"></div>
+                <div className="absolute inset-0 bg-gradient-to-l from-black via-transparent to-transparent opacity-60"></div>
+                <div className="absolute inset-0 ring-1 ring-inset ring-white/5 rounded-3xl"></div>
+              </div>
+
               {/* Small floating credential badge */}
-              <div className="absolute -bottom-4 -left-4 bg-surface-950 border border-white/10 rounded-2xl px-5 py-4 shadow-xl">
+              <div className="absolute bottom-4 left-4 bg-surface-950 border border-white/10 rounded-2xl px-5 py-4 shadow-2xl z-20 backdrop-blur-xl">
                 <span className="text-accent-500 font-bold block tracking-widest text-[10px] uppercase mb-1">CA Nepal</span>
                 <span className="text-slate-400 text-xs">ICAN Member</span>
               </div>
