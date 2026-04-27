@@ -3,9 +3,9 @@
 
 /* ── Custom Scrollbar ── */
 ::-webkit-scrollbar { width: 6px; }
-::-webkit-scrollbar-track { background: #0a0a0a; }
-::-webkit-scrollbar-thumb { background: #333; border-radius: 3px; }
-::-webkit-scrollbar-thumb:hover { background: #444; }
+::-webkit-scrollbar-track { background: #000000; }
+::-webkit-scrollbar-thumb { background: #222; border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: #333; }
 
 /* ── Base Animations ── */
 @keyframes fadeIn {
@@ -19,19 +19,12 @@
 
 /* ── Hero Background ── */
 .hero-bg {
-  background: radial-gradient(ellipse at 50% 60%, rgba(232, 220, 200, 0.04) 0%, transparent 70%),
-              #0a0a0a;
-}
-
-/* ── Glass Card (portfolio sections) ── */
-.glass-card {
-  background: rgba(255, 252, 245, 0.03);
-  border: 1px solid rgba(255, 252, 245, 0.06);
+  background: radial-gradient(ellipse at 50% 0%, rgba(212, 175, 55, 0.05) 0%, transparent 70%), #000000;
 }
 
 /* ── Text Gradient ── */
 .text-gradient-accent {
-  background: linear-gradient(135deg, #e8dcc8, #bfa882);
+  background: linear-gradient(135deg, #F2EFE9, #D4AF37);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -41,16 +34,16 @@
    Dashboard CSS Variables (for /app)
    ════════════════════════════════════════ */
 :root {
-  --bg-primary: #0a0a0a;
-  --bg-secondary: #111111;
-  --bg-card: rgba(255, 252, 245, 0.03);
-  --border: rgba(255, 252, 245, 0.08);
+  --bg-primary: #000000;
+  --bg-secondary: #0A0A0A;
+  --bg-card: rgba(255, 255, 255, 0.02);
+  --border: rgba(255, 255, 255, 0.06);
   --text-primary: #ffffff;
-  --text-secondary: #94a3b8;
-  --gold: #d4c4a8;
-  --gold-dim: rgba(212, 196, 168, 0.1);
-  --green: #7a9e7e;
-  --red: #c45c5c;
+  --text-secondary: #888888;
+  --gold: #D4AF37;
+  --gold-dim: rgba(212, 175, 55, 0.1);
+  --green: #4ADE80;
+  --red: #F87171;
 }
 
 * { box-sizing: border-box; margin: 0; padding: 0; }
@@ -71,12 +64,12 @@ a { color: inherit; text-decoration: none; }
   border: 1px solid var(--border);
   border-radius: 20px;
   padding: 24px;
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: all 0.3s ease;
 }
 
 .card:hover {
-  border-color: rgba(212, 196, 168, 0.2);
-  box-shadow: 0 0 40px rgba(212, 196, 168, 0.03);
+  border-color: rgba(212, 175, 55, 0.2);
+  box-shadow: 0 0 40px rgba(212, 175, 55, 0.03);
 }
 
 /* ── Pulse Indicator ── */
@@ -109,9 +102,9 @@ a { color: inherit; text-decoration: none; }
   font-size: 11px; text-transform: uppercase; letter-spacing: 0.1em;
   font-weight: 700; padding: 4px 12px; border-radius: 9999px;
 }
-.badge-green { background: rgba(122,158,126,0.1); color: #7a9e7e; }
-.badge-red { background: rgba(196,92,92,0.1); color: #c45c5c; }
-.badge-gold { background: rgba(212,196,168,0.1); color: #d4c4a8; }
+.badge-green { background: rgba(74,222,128,0.1); color: #4ADE80; }
+.badge-red { background: rgba(248,113,113,0.1); color: #F87171; }
+.badge-gold { background: rgba(212,175,55,0.1); color: #D4AF37; }
 
 /* ── Buttons ── */
 .btn {
@@ -121,8 +114,8 @@ a { color: inherit; text-decoration: none; }
   color: var(--text-primary); cursor: pointer; transition: all 0.2s;
 }
 .btn:hover { border-color: var(--gold); color: var(--gold); }
-.btn-primary { background: var(--gold); color: #0a0a0a; border-color: var(--gold); }
-.btn-primary:hover { background: #bfa882; }
+.btn-primary { background: var(--gold); color: #000000; border-color: var(--gold); }
+.btn-primary:hover { background: #E5C354; }
 
 /* ── Inputs ── */
 input, textarea {
@@ -148,24 +141,24 @@ tr:hover td { background: rgba(255,255,255,0.02); }
    Newsletter Signup
    ════════════════════════════════════════ */
 .newsletter-section {
-  background: radial-gradient(ellipse at 50% 0%, rgba(212, 196, 168, 0.06) 0%, transparent 70%);
-  border-top: 1px solid rgba(212, 196, 168, 0.1);
+  background: #000000;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
   padding: 80px 24px;
 }
 .newsletter-inner { max-width: 600px; margin: 0 auto; text-align: center; }
 .newsletter-badge {
   display: inline-flex; align-items: center; gap: 6px;
   font-size: 12px; font-weight: 700; text-transform: uppercase;
-  letter-spacing: 0.15em; color: #d4c4a8;
-  background: rgba(212, 196, 168, 0.08);
-  border: 1px solid rgba(212, 196, 168, 0.15);
+  letter-spacing: 0.15em; color: #D4AF37;
+  background: rgba(212, 175, 55, 0.08);
+  border: 1px solid rgba(212, 175, 55, 0.15);
   padding: 6px 14px; border-radius: 20px; margin-bottom: 24px;
 }
 .newsletter-title {
   font-size: 36px; font-weight: 800; line-height: 1.2;
   margin-bottom: 16px; color: #fff; letter-spacing: -0.02em;
 }
-.newsletter-title-gold { color: #d4c4a8; }
+.newsletter-title-gold { color: #D4AF37; }
 .newsletter-subtitle {
   font-size: 15px; color: var(--text-secondary); line-height: 1.7;
   margin-bottom: 32px; max-width: 480px; margin-left: auto; margin-right: auto;
@@ -173,16 +166,16 @@ tr:hover td { background: rgba(255,255,255,0.02); }
 .newsletter-form { display: flex; flex-direction: column; gap: 12px; }
 .newsletter-input {
   width: 100%; padding: 14px 18px; border-radius: 12px;
-  border: 1px solid rgba(255,252,245,0.08);
-  background: rgba(255,252,245,0.03); color: #fff; font-size: 15px;
+  border: 1px solid rgba(255,255,255,0.08);
+  background: rgba(255,255,255,0.03); color: #fff; font-size: 15px;
   outline: none; transition: border-color 0.2s;
 }
-.newsletter-input:focus { border-color: rgba(212, 196, 168, 0.3); }
+.newsletter-input:focus { border-color: rgba(212, 175, 55, 0.3); }
 .newsletter-input::placeholder { color: var(--text-secondary); }
 .newsletter-btn {
   display: flex; align-items: center; justify-content: center; gap: 8px;
   width: 100%; padding: 14px 24px; border-radius: 12px; border: none;
-  background: #d4c4a8; color: #0a0a0a;
+  background: #D4AF37; color: #000000;
   font-size: 15px; font-weight: 700; cursor: pointer;
   transition: opacity 0.2s, transform 0.1s;
 }
@@ -191,9 +184,9 @@ tr:hover td { background: rgba(255,255,255,0.02); }
 .newsletter-btn:disabled { opacity: 0.5; cursor: not-allowed; }
 .newsletter-success {
   display: flex; align-items: center; gap: 16px;
-  background: rgba(122, 158, 126, 0.08);
-  border: 1px solid rgba(122, 158, 126, 0.2);
-  border-radius: 12px; padding: 20px 24px; text-align: left; color: #7a9e7e;
+  background: rgba(74, 222, 128, 0.08);
+  border: 1px solid rgba(74, 222, 128, 0.2);
+  border-radius: 12px; padding: 20px 24px; text-align: left; color: #4ADE80;
 }
 .newsletter-success-title { font-weight: 700; font-size: 15px; margin-bottom: 4px; }
 .newsletter-success-sub { font-size: 13px; color: var(--text-secondary); margin: 0; }

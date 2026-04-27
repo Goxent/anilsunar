@@ -16,12 +16,12 @@ const Navbar: React.FC = () => {
   return (
     <nav
       className={`fixed w-full z-50 transition-all duration-500 ${isScrolled
-          ? 'py-3 bg-surface-950/90 backdrop-blur-xl border-b border-white/[0.06]'
-          : 'py-5 bg-transparent'
+          ? 'py-4 bg-surface-950 border-b border-white/10 shadow-2xl'
+          : 'py-6 bg-transparent'
         }`}
     >
       <div className="max-w-7xl mx-auto px-6 flex justify-between items-center">
-        <a href="#home" className="text-xl font-serif font-bold tracking-tight text-white hover:text-accent-300 transition-colors">
+        <a href="#home" className="text-2xl font-serif font-bold tracking-tight text-white hover:text-accent-500 transition-colors">
           Anil Sunar
         </a>
 
@@ -31,26 +31,26 @@ const Navbar: React.FC = () => {
             <a
               key={item.label}
               href={item.href}
-              className="text-[13px] uppercase tracking-[0.15em] text-slate-400 hover:text-accent-300 transition-colors relative group font-medium"
+              className="text-[11px] font-bold uppercase tracking-[0.2em] text-slate-400 hover:text-white transition-colors relative group"
             >
               {item.label}
-              <span className="absolute -bottom-1.5 left-0 w-0 h-px bg-accent-400 transition-all duration-300 group-hover:w-full"></span>
+              <span className="absolute -bottom-2 left-0 w-0 h-[2px] bg-accent-500 transition-all duration-300 group-hover:w-full"></span>
             </a>
           ))}
           <Link
             to="/app"
-            className="text-[13px] uppercase tracking-[0.15em] text-accent-400 hover:text-accent-300 transition-colors font-semibold"
+            className="text-[11px] font-bold uppercase tracking-[0.2em] text-accent-500 hover:text-accent-400 transition-colors"
           >
             Dashboard
           </Link>
-          <a href="#contact" className="ml-2 px-5 py-2 rounded-full border border-accent-400/30 text-accent-400 hover:bg-accent-400 hover:text-surface-950 transition-all duration-300 text-[13px] font-semibold tracking-wider uppercase">
+          <a href="#contact" className="ml-4 px-6 py-2.5 rounded-full border border-accent-500 text-accent-500 hover:bg-accent-500 hover:text-surface-950 transition-all duration-300 text-[11px] font-bold tracking-[0.2em] uppercase">
             Hire Me
           </a>
         </div>
 
         {/* Mobile */}
         <button
-          className="md:hidden text-white hover:text-accent-300 transition-colors"
+          className="md:hidden text-white hover:text-accent-500 transition-colors"
           onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
         >
           {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
@@ -59,7 +59,7 @@ const Navbar: React.FC = () => {
 
       {/* Mobile Menu */}
       <div
-        className={`md:hidden absolute top-full left-0 w-full bg-surface-950/95 backdrop-blur-xl border-b border-white/[0.06] transition-all duration-300 overflow-hidden ${
+        className={`md:hidden absolute top-full left-0 w-full bg-surface-950 border-b border-white/10 transition-all duration-300 overflow-hidden ${
           isMobileMenuOpen ? 'max-h-[500px] opacity-100' : 'max-h-0 opacity-0'
         }`}
       >
@@ -68,7 +68,7 @@ const Navbar: React.FC = () => {
             <a
               key={item.label}
               href={item.href}
-              className="text-base text-slate-300 hover:text-accent-300 transition-colors border-b border-white/5 pb-2"
+              className="text-[13px] font-bold uppercase tracking-[0.2em] text-slate-300 hover:text-accent-500 transition-colors border-b border-white/5 pb-3"
               onClick={() => setIsMobileMenuOpen(false)}
             >
               {item.label}
@@ -76,12 +76,12 @@ const Navbar: React.FC = () => {
           ))}
           <Link
             to="/app"
-            className="text-base text-accent-400 hover:text-accent-300 transition-colors border-b border-white/5 pb-2"
+            className="text-[13px] font-bold uppercase tracking-[0.2em] text-accent-500 hover:text-accent-400 transition-colors border-b border-white/5 pb-3"
             onClick={() => setIsMobileMenuOpen(false)}
           >
             Dashboard
           </Link>
-          <a href="#contact" className="mt-2 text-center px-6 py-3 bg-accent-400 text-surface-950 rounded-full font-bold uppercase tracking-wider">
+          <a href="#contact" className="mt-4 text-center px-6 py-3.5 bg-accent-500 text-surface-950 rounded-full font-bold uppercase tracking-[0.2em] text-[13px]">
             Hire Me
           </a>
         </div>

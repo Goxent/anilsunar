@@ -16,25 +16,20 @@ export default {
             },
             colors: {
                 accent: {
-                    300: '#e8dcc8',
-                    400: '#d4c4a8',
-                    500: '#bfa882',
-                    600: '#a8916b',
+                    300: '#F2EFE9', // Platinum/Off-white
+                    400: '#E5E4E2', // Platinum
+                    500: '#D4AF37', // Classic Champagne Gold
+                    600: '#AA8C2C', // Darker Gold
                 },
                 surface: {
-                    950: '#0a0a0a',
-                    900: '#111111',
-                    800: '#1a1a1a',
-                    700: '#242424',
+                    950: '#000000', // Pure Black
+                    900: '#0A0A0A', // Near Black
+                    800: '#111111', // Very Dark Grey
+                    700: '#1A1A1A',
                 },
                 sage: {
-                    400: '#7a9e7e',
-                    500: '#5e8562',
-                },
-                warm: {
-                    50: '#fffcf5',
-                    100: '#faf5eb',
-                    200: '#f0e8d8',
+                    400: '#4ADE80', // Brighter status green
+                    500: '#22C55E',
                 },
             },
             animation: {
