@@ -24,7 +24,8 @@ import {
   Layers,
   Briefcase,
   Star,
-  CloudSync
+  CloudSync,
+  Bell
 } from 'lucide-react'
 import MarketOverview from './components/MarketOverview'
 import MarketIntelligence from './components/MarketIntelligence'
