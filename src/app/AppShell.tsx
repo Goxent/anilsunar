@@ -175,9 +175,6 @@ export default function AppShell() {
             userRole = userSnap.data().role || 'user'
           } else {
             console.log("User doc does not exist. Creating...");
-            if (firebaseUser.email === 'anil99senchury@gmail.com') {
-              userRole = 'admin'
-            }
             await setDoc(userRef, {
               email: firebaseUser.email,
               displayName: firebaseUser.displayName,
@@ -187,6 +184,12 @@ export default function AppShell() {
             })
             console.log("User doc created.");
           }
+
+          // Master Admin Override: Always ensure this email has admin rights
+          if (firebaseUser.email === 'anil99senchury@gmail.com') {
+            userRole = 'admin'
+          }
+          
           setRole(userRole)
         } catch (err) {
           console.error("Error fetching/setting role:", err)
