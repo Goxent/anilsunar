@@ -1,35 +1,34 @@
-import fs from 'fs';
-import path from 'path';
-import dotenv from 'dotenv';
+import dotenv from 'dotenv'
+dotenv.config()
 
-dotenv.config();
-
-const REQUIRED_VARS = [
-  'VITE_FIREBASE_API_KEY',
-  'VITE_FIREBASE_PROJECT_ID',
-  'VITE_FIREBASE_APP_ID',
+const required = [
+  'VITE_DASHBOARD_PASSWORD',
+  'VITE_ANTHROPIC_API_KEY', 
   'SASTO_EMAIL',
   'SASTO_PASSWORD',
   'RESEND_API_KEY',
-  'VITE_ANTHROPIC_API_KEY',
-  'SYNC_SECRET_TOKEN'
-];
+  'TO_EMAIL'
+]
 
-console.log('🔍 Checking environment variables...');
+const optional = ['VITE_GEMINI_API_KEY']
 
-let missing = false;
-REQUIRED_VARS.forEach(v => {
-  if (!process.env[v]) {
-    console.error(`❌ Missing: ${v}`);
-    missing = true;
+console.log('\n🔍 Checking environment variables...\n')
+let allGood = true
+
+required.forEach(key => {
+  const val = process.env[key]
+  if (!val || val.includes('your_')) {
+    console.log(`❌ MISSING: ${key}`)
+    allGood = false
   } else {
-    console.log(`✅ Found: ${v}`);
+    console.log(`✅ OK: ${key} = ${val.slice(0,6)}...`)
   }
-});
+})
 
-if (missing) {
-  console.error('\n⚠️ Some environment variables are missing! Please check your .env file.');
-  process.exit(1);
-} else {
-  console.log('\n🚀 All environment variables are set correctly!');
-}
+optional.forEach(key => {
+  const val = process.env[key]
+  console.log(`${val ? '✅' : '⚠️ '} OPTIONAL: ${key}`)
+})
+
+console.log(allGood ? '\n✅ All required vars set!\n' : '\n❌ Fix missing vars in .env before running bots\n')
+if (!allGood) process.exit(1)
