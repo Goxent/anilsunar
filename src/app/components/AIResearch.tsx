@@ -1,298 +1,297 @@
-import { useState, useEffect } from 'react'
-import { Brain, Send, Loader2, Sparkles, Lightbulb, TrendingUp, Save, History, Trash2 } from 'lucide-react'
-import { collection, addDoc, Timestamp, query, orderBy, onSnapshot, deleteDoc, doc } from 'firebase/firestore'
-import { db, auth } from '../lib/firebase'
-import { callAI, AIModel } from '../lib/ai'
-import aiDigest from '../data/ai_digest.json'
+import React, { useState } from 'react'
+import { Brain, Search, Sparkles, TrendingUp, AlertCircle, FileText, Activity, MessageSquare, RefreshCw, ShieldCheck, Zap, Target } from 'lucide-react'
+import { useMarketData, useToast } from '../AppShell'
+import LoadingCard from './LoadingCard'
+import { callClaude } from '../lib/ai'
+
+function getQuickPicks(omniData: any) {
+  if (!omniData) return ['NABIL', 'UPPER', 'NLIC']
+  const pages = omniData?.scrapedPages || []
+  const topStocksPage = pages.find((p: any) => p.url?.includes('top-stocks') || p.title?.includes('Home'))
+  if (topStocksPage?.tables?.[0]?.rows) {
+    return topStocksPage.tables[0].rows
+      .slice(0, 10)
+      .map((r: any) => r.Symbol || r.Col_1)
+      .filter(Boolean)
+  }
+  return ['NABIL', 'UPPER', 'NLIC', 'SHIVM', 'CHCL', 'GBIME', 'KBL', 'NTC', 'HIDCL', 'EBL']
+}
 
 export default function AIResearch() {
+  const { showToast } = useToast()
+  const { omniData, aiBrief, loading } = useMarketData()
+  const [activeView, setActiveView] = useState<'analysis' | 'brief'>('analysis')
   const [symbol, setSymbol] = useState('')
-  const [output, setOutput] = useState('')
-  const [isLoading, setIsLoading] = useState(false)
-  const [isSaving, setIsSaving] = useState(false)
-  const [mode, setMode] = useState<'research' | 'content' | 'history'>('research')
-  const [aiModel, setAiModel] = useState<AIModel>('claude')
-  const [history, setHistory] = useState<any[]>([])
+  const [analyzing, setAnalyzing] = useState(false)
+  const [result, setResult] = useState<any>(null)
+  
+  if (loading) return <LoadingCard rows={10} cols={3} />
 
-  const digestTimestamp = aiDigest?.timestamp ? new Date(aiDigest.timestamp) : null
-  const hoursAgo = digestTimestamp ? Math.floor((new Date().getTime() - digestTimestamp.getTime()) / (1000 * 60 * 60)) : 0
+  const quickPicks = getQuickPicks(omniData)
 
-  useEffect(() => {
-    if (!auth.currentUser || mode !== 'history') return;
-
-    const q = query(
-      collection(db, `users/${auth.currentUser.uid}/nepse_analysis`),
-      orderBy('createdAt', 'desc')
-    );
-
-    const unsubscribe = onSnapshot(q, (snapshot) => {
-      setHistory(snapshot.docs.map(doc => ({ id: doc.id, ...doc.data() })));
-    });
-
-    return () => unsubscribe();
-  }, [mode]);
-
-  const handleResearch = async () => {
-    // ... (rest of the handleResearch function remains the same)
-    if (!symbol.trim()) return
-    setIsLoading(true)
-    setOutput('')
-
+  const analyzeStock = async (selectedSymbol: string) => {
+    const sym = selectedSymbol || symbol
+    if (!sym) return
+    
+    setAnalyzing(true)
+    setSymbol(sym.toUpperCase())
+    setResult(null)
+    
     try {
-      const prompt = mode === 'research'
-        ? `You are a NEPSE stock market analyst. Analyze the stock "${symbol}" traded on Nepal Stock Exchange (NEPSE). Provide:
-1. Company Overview (what sector, what they do)
-2. Recent Market Sentiment (based on general knowledge of Nepal's market)
-3. Key Financial Ratios to look for (P/E, P/B, ROE)
-4. Technical Analysis Summary (support/resistance levels, trend)
-5. Risk Factors
-6. Investment Thesis (Bull case vs Bear case)
-Keep it concise and actionable. Format with clear sections.`
-        : `You are a content strategist for a financial YouTube channel in Nepal called "Goxent". Based on the current NEPSE stock "${symbol}", suggest:
-1. 3 YouTube video ideas (with catchy titles)
-2. 3 Instagram post/reel ideas
-3. 1 Newsletter topic
-4. Key talking points for each
-Target audience: Nepali retail investors aged 20-35.
-Format clearly with sections.`
+      const pages = omniData?.scrapedPages || []
+      let stockInfo = null
+      let brokerData = []
 
-      const text = await callAI(prompt, aiModel)
-      setOutput(text)
+      for (const page of pages) {
+        for (const table of (page.tables || [])) {
+          const row = table.rows?.find((r: any) => (r.Symbol || r.Col_1 || '').toUpperCase() === sym.toUpperCase())
+          if (row) stockInfo = row
+          
+          if (page.url?.includes('broker') || page.url?.includes('floorsheet')) {
+             const rows = table.rows?.filter((r: any) => (r.Symbol || r.Col_1 || '').toUpperCase() === sym.toUpperCase())
+             if (rows?.length) brokerData.push(...rows)
+          }
+        }
+      }
+
+      if (!stockInfo) {
+        throw new Error(`Symbol ${sym} not found in today's data lake.`)
+      }
+
+      const prompt = `Analyze this NEPSE stock: ${sym}
+      Today's Data: ${JSON.stringify(stockInfo)}
+      Recent Broker/Floorsheet Data: ${JSON.stringify(brokerData.slice(0, 20))}
+      
+      Provide a concise 4-section analysis:
+      📊 Technical: Summary of current price movement and trend.
+      🏦 Broker Activity: Insights from the provided broker data (who is buying/selling).
+      ⚖️ Risk Level: Low, Medium, or High.
+      🎯 Suggestion: Strong Buy, Accumulate, Hold, or Avoid.
+      One-line reason for the suggestion.
+      
+      Respond in valid JSON with keys: technical, broker, risk, suggestion, reason.`
+
+      const text = await callClaude(prompt, 1000)
+      const jsonStr = text.replace(/```json|```/g, '').trim()
+      const parsed = JSON.parse(jsonStr)
+      
+      setResult({
+        ...parsed,
+        symbol: sym.toUpperCase(),
+        price: stockInfo.LTP || stockInfo['Current Price'] || stockInfo['Price(NPR)'] || 'N/A',
+        change: stockInfo['Percent Change'] || stockInfo['Change'] || stockInfo['Daily Chg'] || '0%'
+      })
+      showToast(`AI Audit complete for ${sym}`, 'success')
     } catch (err: any) {
       console.error(err)
-      setOutput(`Error: ${err.message || 'Something went wrong.'}`)
+      showToast(err.message, 'error')
     } finally {
-      setIsLoading(false)
-    }
-  }
-
-  const handleSaveToFirestore = async () => {
-    if (!output || !auth.currentUser) return
-    setIsSaving(true)
-    try {
-      await addDoc(collection(db, `users/${auth.currentUser.uid}/nepse_analysis`), {
-        symbol,
-        content: output,
-        type: mode,
-        model: aiModel,
-        createdAt: Timestamp.now(),
-        date: new Date().toLocaleDateString()
-      })
-      alert('Analysis saved to Firestore!')
-    } catch (err) {
-      console.error(err)
-      alert('Failed to save analysis.')
-    } finally {
-      setIsSaving(false)
+      setAnalyzing(false)
     }
   }
 
   return (
-    <div>
-      <h2 style={{ fontSize: 28, fontWeight: 700, marginBottom: 8 }}>AI Research</h2>
-      <p style={{ color: 'var(--text-secondary)', marginBottom: 32 }}>Powered by Gemini 2.0 — research stocks and generate content ideas</p>
-
-      {/* Today's AI Brief */}
-      {aiDigest && aiDigest.marketSummary && (
-        <div className="card" style={{ marginBottom: 32, border: '1px solid var(--gold)', background: 'linear-gradient(135deg, rgba(20, 20, 30, 0.8) 0%, rgba(245, 158, 11, 0.05) 100%)' }}>
-          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 16 }}>
-            <h3 style={{ fontSize: 18, fontWeight: 700, display: 'flex', alignItems: 'center', gap: 8, color: 'var(--gold)' }}>
-              <Sparkles size={18} /> Today's AI Brief
-            </h3>
-            <span style={{ fontSize: 11, color: 'var(--text-secondary)' }}>Last updated: {hoursAgo} hours ago</span>
-          </div>
-          <p style={{ fontSize: 14, color: 'var(--text-primary)', lineHeight: 1.8, marginBottom: 24 }}>
-            {aiDigest.marketSummary}
-          </p>
-
-          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 24 }}>
-            {/* YouTube Ideas */}
-            <div>
-              <h4 style={{ fontSize: 14, fontWeight: 600, marginBottom: 12, display: 'flex', alignItems: 'center', gap: 6, color: '#ff0000' }}>
-                <TrendingUp size={14} /> YouTube Ideas
-              </h4>
-              <div style={{ display: 'flex', flexDirection: 'column', gap: 12 }}>
-                {aiDigest.youtubeIdeas?.map((idea: any, i: number) => (
-                  <div key={i} style={{ padding: 12, background: 'rgba(255,255,255,0.03)', borderRadius: 8, borderLeft: '2px solid #ff0000' }}>
-                    <p style={{ fontWeight: 600, fontSize: 13, marginBottom: 4 }}>{idea.title}</p>
-                    <p style={{ fontSize: 12, color: 'var(--text-secondary)' }}>{idea.concept}</p>
-                  </div>
-                ))}
-              </div>
-            </div>
-
-            {/* LinkedIn Ideas */}
-            <div>
-              <h4 style={{ fontSize: 14, fontWeight: 600, marginBottom: 12, display: 'flex', alignItems: 'center', gap: 6, color: '#0a66c2' }}>
-                <Lightbulb size={14} /> LinkedIn Ideas
-              </h4>
-              <div style={{ display: 'flex', flexDirection: 'column', gap: 12 }}>
-                {aiDigest.linkedinIdeas?.map((idea: any, i: number) => (
-                  <div key={i} style={{ padding: 12, background: 'rgba(255,255,255,0.03)', borderRadius: 8, borderLeft: '2px solid #0a66c2' }}>
-                    <p style={{ fontSize: 12, color: 'var(--text-primary)', whiteSpace: 'pre-wrap' }}>{idea.postText || idea.title || idea.angle || JSON.stringify(idea)}</p>
-                  </div>
-                ))}
-              </div>
+    <div className="space-y-8 fade-in">
+      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-end' }}>
+        <div>
+          <h2 style={{ fontSize: 32, fontWeight: 900, letterSpacing: '-0.02em', margin: 0 }}>AI Research Lab</h2>
+          <div className="flex items-center gap-3 mt-4">
+            <p className="text-zinc-500 text-sm">Neural-powered intelligence and deep-core stock auditing.</p>
+            <div className="status-chip status-chip-success">
+               <ShieldCheck size={12} /> Secure Proxy
             </div>
           </div>
         </div>
-      )}
-
-      {/* Mode & Model Toggle */}
-      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 24 }}>
-        <div style={{ display: 'flex', gap: 12 }}>
-          <button className="btn" onClick={() => setMode('research')}
-            style={{ background: mode === 'research' ? 'var(--gold-dim)' : undefined, color: mode === 'research' ? 'var(--gold)' : undefined, borderColor: mode === 'research' ? 'rgba(245,158,11,0.3)' : undefined }}>
-            <TrendingUp size={16} /> Stock Research
-          </button>
-          <button className="btn" onClick={() => setMode('content')}
-            style={{ background: mode === 'content' ? 'var(--gold-dim)' : undefined, color: mode === 'content' ? 'var(--gold)' : undefined, borderColor: mode === 'content' ? 'rgba(245,158,11,0.3)' : undefined }}>
-            <Lightbulb size={16} /> Content Ideas
-          </button>
-          <button className="btn" onClick={() => setMode('history')}
-            style={{ background: mode === 'history' ? 'var(--gold-dim)' : undefined, color: mode === 'history' ? 'var(--gold)' : undefined, borderColor: mode === 'history' ? 'rgba(245,158,11,0.3)' : undefined }}>
-            <History size={16} /> Analysis Vault
-          </button>
-        </div>
-
-        <div style={{ display: 'flex', gap: 8, background: 'var(--bg-secondary)', padding: 4, borderRadius: 10 }}>
+        <div className="flex bg-zinc-900 p-1 rounded-xl border border-zinc-800">
           <button 
-            onClick={() => setAiModel('gemini')}
-            style={{ 
-              fontSize: 11, 
-              padding: '6px 12px', 
-              borderRadius: 8, 
-              border: 'none',
-              background: aiModel === 'gemini' ? 'var(--gold)' : 'transparent',
-              color: aiModel === 'gemini' ? '#000' : 'var(--text-secondary)',
-              fontWeight: 700,
-              cursor: 'pointer'
-            }}
-          >Gemini 2.0</button>
+            onClick={() => setActiveView('analysis')}
+            className={`flex items-center gap-2 px-5 py-2.5 rounded-lg text-xs font-black uppercase tracking-widest transition-all ${activeView === 'analysis' ? 'bg-gold text-black shadow-lg shadow-gold/20' : 'text-zinc-500 hover:text-white'}`}
+          >
+            <Sparkles size={14} /> Stock Auditor
+          </button>
           <button 
-            onClick={() => setAiModel('claude')}
-            style={{ 
-              fontSize: 11, 
-              padding: '6px 12px', 
-              borderRadius: 8, 
-              border: 'none',
-              background: aiModel === 'claude' ? 'var(--gold)' : 'transparent',
-              color: aiModel === 'claude' ? '#000' : 'var(--text-secondary)',
-              fontWeight: 700,
-              cursor: 'pointer'
-            }}
-          >Claude 3.5</button>
+            onClick={() => setActiveView('brief')}
+            className={`flex items-center gap-2 px-5 py-2.5 rounded-lg text-xs font-black uppercase tracking-widest transition-all ${activeView === 'brief' ? 'bg-gold text-black shadow-lg shadow-gold/20' : 'text-zinc-500 hover:text-white'}`}
+          >
+            <FileText size={14} /> Daily Brief
+          </button>
         </div>
       </div>
 
-      {/* Main UI */}
-      {mode !== 'history' ? (
-        <>
-          {/* Input */}
-          <div className="card" style={{ marginBottom: 24 }}>
-            <div style={{ display: 'flex', gap: 12, alignItems: 'center' }}>
-              <Brain size={20} style={{ color: 'var(--gold)', flexShrink: 0 }} />
-              <input
-                placeholder={mode === 'research' ? 'Enter stock symbol (e.g., NABIL, UPPER, NLIC)...' : 'Enter topic or stock symbol for content ideas...'}
+      {activeView === 'analysis' ? (
+        <div className="space-y-8 animate-fade-in">
+          {/* Search Bar */}
+          <div className="flex gap-4">
+            <div className="relative flex-1">
+              <Search size={18} className="absolute left-5 top-1/2 -translate-y-1/2 text-zinc-500" />
+              <input 
+                type="text" 
+                placeholder="Enter stock symbol for a neural audit (e.g. UPPER)..."
                 value={symbol}
-                onChange={e => setSymbol(e.target.value.toUpperCase())}
-                onKeyDown={e => e.key === 'Enter' && handleResearch()}
-                style={{ flex: 1 }}
+                onChange={(e) => setSymbol(e.target.value.toUpperCase())}
+                className="w-full pl-14 pr-6 py-4 rounded-2xl bg-zinc-900/50 border border-zinc-800 text-white outline-none focus:border-gold/50 transition-all text-lg"
               />
-              <button className="btn btn-primary" onClick={handleResearch} disabled={isLoading || !symbol.trim()}
-                style={{ flexShrink: 0 }}>
-                {isLoading ? <Loader2 size={16} className="animate-spin" /> : <Send size={16} />}
-                {mode === 'research' ? 'Analyze' : 'Generate'}
-              </button>
             </div>
+            <button 
+              onClick={() => analyzeStock('')}
+              disabled={analyzing}
+              className="btn btn-primary px-10 rounded-2xl disabled:opacity-50"
+            >
+              {analyzing ? <><RefreshCw size={18} className="animate-spin mr-2" /> Auditing</> : <><Zap size={18} /> Run Audit</>}
+            </button>
           </div>
 
-          {/* Output */}
-          {isLoading && (
-            <div className="card" style={{ textAlign: 'center', padding: 48 }}>
-              <Loader2 size={32} style={{ color: 'var(--gold)', animation: 'spin 1s linear infinite', marginBottom: 16 }} />
-              <p style={{ color: 'var(--text-secondary)' }}>
-                {mode === 'research' ? `Analyzing with ${aiModel === 'gemini' ? 'Gemini' : 'Claude'}...` : `Generating with ${aiModel === 'gemini' ? 'Gemini' : 'Claude'}...`}
-              </p>
+          {/* Quick Picks */}
+          <div className="flex flex-wrap gap-3 items-center">
+            <span className="text-[10px] font-black text-zinc-500 uppercase tracking-widest mr-2">Deep Radar:</span>
+            {quickPicks.map(p => (
+              <button 
+                key={p} 
+                onClick={() => analyzeStock(p)}
+                className="px-4 py-2 rounded-lg bg-zinc-900 border border-zinc-800 text-zinc-400 text-xs font-bold hover:border-gold/50 hover:text-gold transition-all"
+              >
+                {p}
+              </button>
+            ))}
+          </div>
+
+          {/* Analysis Result */}
+          {result && (
+            <div className="premium-card p-10 space-y-10 relative overflow-hidden group">
+               <div className="absolute top-0 right-0 p-10 opacity-[0.03] group-hover:opacity-[0.06] transition-opacity">
+                  <Brain size={160} />
+               </div>
+               <div className="relative z-10 flex flex-col md:flex-row justify-between items-start gap-8 border-b border-white/5 pb-10">
+                 <div className="space-y-2">
+                    <div className="flex items-center gap-3">
+                       <h3 className="text-5xl font-black text-gold tracking-tighter">{result.symbol}</h3>
+                       <div className="status-chip status-chip-info">NEURAL AUDIT COMPLETE</div>
+                    </div>
+                    <div className="flex gap-6 items-baseline">
+                       <span className="text-2xl font-black text-white">NPR {result.price}</span>
+                       <span className={`text-lg font-bold ${result.change.startsWith('+') ? 'text-emerald-400' : 'text-red-400'}`}>
+                          {result.change}
+                       </span>
+                    </div>
+                 </div>
+                 <div className="text-left md:text-right space-y-2">
+                    <p className="text-[10px] font-black text-zinc-500 uppercase tracking-widest">Neural Verdict</p>
+                    <div className={`text-2xl font-black px-8 py-3 rounded-2xl inline-block border-2 ${
+                       result.suggestion.includes('Buy') ? 'border-emerald-500/30 bg-emerald-500/10 text-emerald-400' : 
+                       result.suggestion.includes('Avoid') ? 'border-red-500/30 bg-red-500/10 text-red-400' : 
+                       'border-amber-500/30 bg-amber-500/10 text-amber-400'
+                    }`}>
+                       {result.suggestion.toUpperCase()}
+                    </div>
+                 </div>
+               </div>
+
+               <div className="grid grid-cols-1 md:grid-cols-2 gap-12 relative z-10">
+                 <div className="space-y-4">
+                    <h4 className="text-sm font-black text-zinc-500 uppercase tracking-widest flex items-center gap-3">
+                       <Activity size={18} color="var(--gold)" /> Market Velocity & Technicals
+                    </h4>
+                    <p className="text-zinc-300 leading-relaxed text-lg">{result.technical}</p>
+                 </div>
+                 <div className="space-y-4">
+                    <h4 className="text-sm font-black text-zinc-500 uppercase tracking-widest flex items-center gap-3">
+                       <TrendingUp size={18} color="var(--gold)" /> Institutional Footprint
+                    </h4>
+                    <p className="text-zinc-300 leading-relaxed text-lg">{result.broker}</p>
+                 </div>
+               </div>
+
+               <div className="relative z-10 pt-10 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-6">
+                 <div className="flex items-center gap-6">
+                    <div className="space-y-1">
+                       <p className="text-[10px] font-black text-zinc-500 uppercase tracking-widest">Risk Factor</p>
+                       <span className={`text-sm font-black px-3 py-1 rounded-md ${
+                          result.risk === 'Low' ? 'text-emerald-400 bg-emerald-500/10' : 
+                          result.risk === 'High' ? 'text-red-400 bg-red-500/10' : 
+                          'text-amber-400 bg-amber-500/10'
+                       }`}>
+                          {result.risk.toUpperCase()}
+                       </span>
+                    </div>
+                    <div className="h-10 w-px bg-white/5" />
+                    <div className="space-y-1">
+                       <p className="text-[10px] font-black text-zinc-500 uppercase tracking-widest">Core Rationale</p>
+                       <p className="text-sm font-bold text-white">{result.reason}</p>
+                    </div>
+                 </div>
+                 <div className="flex items-center gap-3 text-zinc-600">
+                    <Brain size={14} />
+                    <span className="text-[10px] font-black uppercase tracking-widest">Claude 3.5 Sonnet Analysis</span>
+                 </div>
+               </div>
             </div>
           )}
 
-          {output && !isLoading && (
-            <div className="card" style={{ borderLeft: '3px solid var(--gold)', position: 'relative' }}>
-              <div style={{ position: 'absolute', top: 16, right: 16 }}>
-                <button className="btn btn-primary" onClick={handleSaveToFirestore} disabled={isSaving}>
-                  {isSaving ? <Loader2 size={14} className="animate-spin" /> : <Save size={14} />}
-                  {isSaving ? 'Saving...' : 'Save to Firestore'}
-                </button>
-              </div>
-              <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 16 }}>
-                <Sparkles size={16} style={{ color: 'var(--gold)' }} />
-                <span style={{ fontSize: 12, color: 'var(--gold)', textTransform: 'uppercase', letterSpacing: '0.1em', fontWeight: 700 }}>
-                  {mode === 'research' ? 'AI Analysis' : 'Content Ideas'} — {symbol} ({aiModel.toUpperCase()})
-                </span>
-              </div>
-              <div style={{
-                fontSize: 14,
-                lineHeight: 1.8,
-                color: 'var(--text-primary)',
-                whiteSpace: 'pre-wrap',
-                fontFamily: 'inherit',
-              }}>
-                {output}
+          {!result && !analyzing && (
+            <div className="premium-card p-20 flex flex-col items-center justify-center text-center space-y-6 opacity-30">
+              <Brain size={64} className="text-zinc-500" />
+              <div className="max-w-xs">
+                <p className="text-sm font-bold text-zinc-400 uppercase tracking-widest">Enter a terminal symbol to initiate a neural equity audit.</p>
               </div>
             </div>
           )}
-
-          {/* Quick Suggestions */}
-          {!output && !isLoading && (
-            <div className="card">
-              <h3 style={{ fontSize: 14, fontWeight: 600, marginBottom: 16, display: 'flex', alignItems: 'center', gap: 8 }}>
-                <Lightbulb size={16} style={{ color: 'var(--gold)' }} /> Quick Picks
-              </h3>
-              <div style={{ display: 'flex', gap: 8, flexWrap: 'wrap' }}>
-                {['NABIL', 'UPPER', 'NLIC', 'SHIVM', 'CHCL', 'GBIME', 'KBL'].map(s => (
-                  <button key={s} className="btn" onClick={() => { setSymbol(s); }} style={{ fontSize: 12 }}>
-                    {s}
-                  </button>
-                ))}
-              </div>
-            </div>
-          )}
-        </>
+        </div>
       ) : (
-        <div style={{ display: 'flex', flexDirection: 'column', gap: 16 }}>
-          {history.length === 0 ? (
-            <div className="card" style={{ textAlign: 'center', padding: 48, opacity: 0.5 }}>
-              <History size={32} style={{ marginBottom: 16 }} />
-              <p>No saved analyses found in your vault.</p>
+        <div className="space-y-8 animate-fade-in">
+          {aiBrief && aiBrief.marketSummary ? (
+            <div className="space-y-8">
+              <div className="premium-card border-l-4 border-gold p-10 space-y-6">
+                <div className="flex items-center gap-3">
+                   <MessageSquare size={20} color="var(--gold)" />
+                   <h3 className="text-sm font-black text-gold uppercase tracking-widest">Executive Market Intelligence</h3>
+                </div>
+                <p className="text-xl font-medium text-zinc-200 leading-relaxed max-w-4xl">{aiBrief.marketSummary}</p>
+              </div>
+
+              <div className="premium-card" style={{ padding: 0, overflow: 'hidden' }}>
+                <div className="p-8 border-b border-zinc-800 bg-zinc-900/30 flex items-center gap-4">
+                  <Target size={20} color="var(--gold)" />
+                  <h3 className="text-xl font-black uppercase tracking-tight">High-Probability Alpha Radar</h3>
+                </div>
+                <div className="overflow-x-auto">
+                  <table className="premium-table">
+                    <thead>
+                      <tr>
+                        <th>Symbol</th>
+                        <th>Strategic Signal</th>
+                        <th>Neural Rationale</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      {aiBrief.topPicks.map((pick: any, i: number) => (
+                        <tr key={i} className="hover:bg-white/5 transition-colors">
+                          <td className="font-black text-gold text-xl">{pick.symbol}</td>
+                          <td>
+                            <span className={`status-chip ${pick.target.includes('BUY') ? 'status-chip-success' : 'status-chip-info'}`}>
+                              {pick.target}
+                            </span>
+                          </td>
+                          <td className="text-zinc-400 text-sm leading-relaxed">{pick.reason}</td>
+                        </tr>
+                      ))}
+                    </tbody>
+                  </table>
+                </div>
+              </div>
             </div>
           ) : (
-            history.map(item => (
-              <div key={item.id} className="card" style={{ borderLeft: '3px solid var(--gold)' }}>
-                <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', marginBottom: 16 }}>
-                  <div>
-                    <h3 style={{ fontSize: 18, fontWeight: 700, color: 'var(--gold)' }}>{item.symbol}</h3>
-                    <p style={{ fontSize: 11, color: 'var(--text-secondary)' }}>
-                      {item.type === 'research' ? 'Stock Research' : 'Content Ideas'} • {item.model?.toUpperCase()} • {item.date}
-                    </p>
-                  </div>
-                  <button 
-                    className="btn" 
-                    style={{ color: 'var(--red)', padding: '8px' }}
-                    onClick={async () => {
-                      if (confirm('Delete this analysis?')) {
-                        await deleteDoc(doc(db, `users/${auth.currentUser?.uid}/nepse_analysis`, item.id))
-                      }
-                    }}
-                  >
-                    <Trash2 size={16} />
-                  </button>
-                </div>
-                <div style={{ fontSize: 13, lineHeight: 1.6, whiteSpace: 'pre-wrap', color: 'var(--text-primary)', maxHeight: 300, overflowY: 'auto' }}>
-                  {item.content}
-                </div>
+            <div className="premium-card p-20 flex flex-col items-center justify-center text-center space-y-8">
+              <div className="p-6 rounded-full bg-red-500/5 border border-red-500/10 text-red-500/30">
+                 <AlertCircle size={64} />
               </div>
-            ))
+              <div className="max-w-md">
+                <h3 className="text-2xl font-black mb-2">Alpha Brief Unavailable</h3>
+                <p className="text-zinc-500">The daily intelligence brief has not been generated for this cycle. Run the full automation pipeline to refresh.</p>
+              </div>
+              <div className="p-4 bg-black border border-zinc-800 rounded-xl font-mono text-gold text-sm">
+                 npm run full-sync
+              </div>
+            </div>
           )}
         </div>
       )}

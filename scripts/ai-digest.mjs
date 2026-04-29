@@ -188,9 +188,11 @@ async function sendDigestEmail(digest) {
 }
 
 async function run() {
-  const apiKey = process.env.VITE_ANTHROPIC_API_KEY || process.env.ANTHROPIC_API_KEY;
-  if (!apiKey) {
-    console.error('❌ ANTHROPIC_API_KEY not found in .env');
+  const anthropicKey = process.env.VITE_ANTHROPIC_API_KEY || process.env.ANTHROPIC_API_KEY;
+  const geminiKey = process.env.GEMINI_API_KEY || process.env.VITE_GEMINI_API_KEY;
+
+  if (!anthropicKey && !geminiKey) {
+    console.error('❌ No AI API keys found (Anthropic or Gemini). Please check .env or GitHub Secrets.');
     process.exit(1);
   }
 
@@ -201,7 +203,6 @@ async function run() {
     marketData = JSON.parse(fs.readFileSync(dataPath, 'utf8'));
   }
 
-  // To prevent token limit blowouts, stringify safely (limit to first 100kb if it's ridiculously huge)
   let dataStr = JSON.stringify(marketData);
   if (dataStr.length > 80000) dataStr = dataStr.slice(0, 80000) + '... [TRUNCATED]';
 
@@ -209,11 +210,6 @@ async function run() {
 
 Here is a massive data lake scraped dynamically from NepseAlpha/SastoShare today containing raw tables of floorsheets, broker analysis, technical signals, and fundamentals:
 ${dataStr}
-
-The user is a professional CA in Nepal with expertise in:
-- Auditing, accounting, and taxation
-- NEPSE stock market anomalies and technical/fundamental crossovers
-- Corporate finance and business strategy
 
 Analyze this entire data lake to find hidden correlations (e.g., heavily accumulated stocks by specific brokers that also have bullish technical signals or high F-Scores). 
 
@@ -225,45 +221,47 @@ For each pick, provide:
 - target: "STRONG BUY", "ACCUMULATE", or "BREAKOUT"
 - reason: A precise 1-sentence reason (e.g., "Broker 58 accumulated 150k units while F-Score is 8.")
 
-Then, generate exactly 6 LinkedIn post ideas for their personal brand. Mix the topics:
-- 2 ideas about NEPSE/Finance exposing the specific anomalies you found in the data lake.
-- 1 idea about Auditing or Accounting
-- 1 idea about Nepal Taxation
-- 1 idea about Corporate Law or Companies Act Nepal
-- 1 idea about general Finance or Business insight
-
-Each idea must have:
-- topic: one of ["Auditing", "Accounting", "NEPSE", "Corporate Law", "Taxation", "Finance"]
-- title: LinkedIn post headline (max 12 words, curiosity-driven)
-- angle: the unique insight or perspective to share (2-3 sentences)
-- hook: the very first sentence of the post that stops the scroll (1 punchy sentence)
-- keyTakeaway: what the reader will learn or feel after reading (1 sentence)
-- bestTimeToPost: "Morning" or "Evening"
-
+Then, generate exactly 6 LinkedIn post ideas for their personal brand.
 Respond ONLY in valid JSON with keys: marketSummary (string), topPicks (array of 10 objects), linkedinIdeas (array of 6 objects)`;
 
   try {
-    console.log('🧠 Sending Omni-Data Lake to Claude 3.5 Sonnet for Deep Analysis...');
-    const response = await fetch('https://api.anthropic.com/v1/messages', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-        'x-api-key': apiKey,
-        'anthropic-version': '2023-06-01'
-      },
-      body: JSON.stringify({
-        model: 'claude-3-5-sonnet-20241022',
-        max_tokens: 4000,
-        messages: [{ role: 'user', content: prompt }]
-      })
-    });
+    let parsed;
 
-    const data = await response.json();
-    if (data.error) throw new Error(data.error.message);
+    if (anthropicKey) {
+      console.log('🧠 Sending Omni-Data Lake to Claude 3.5 Sonnet for Deep Analysis...');
+      const response = await fetch('https://api.anthropic.com/v1/messages', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'x-api-key': anthropicKey,
+          'anthropic-version': '2023-06-01'
+        },
+        body: JSON.stringify({
+          model: 'claude-3-5-sonnet-20241022',
+          max_tokens: 4000,
+          messages: [{ role: 'user', content: prompt }]
+        })
+      });
 
-    const text = data.content[0].text;
-    const jsonStr = text.replace(/```json|```/g, '').trim();
-    const parsed = JSON.parse(jsonStr);
+      const data = await response.json();
+      if (data.error) throw new Error(data.error.message);
+      const text = data.content[0].text;
+      parsed = JSON.parse(text.replace(/```json|```/g, '').trim());
+    } else {
+      console.log('🧠 Sending Omni-Data Lake to Gemini 2.0 Flash for Deep Analysis...');
+      const response = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${geminiKey}`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          contents: [{ parts: [{ text: prompt + "\n\nIMPORTANT: Return ONLY raw JSON." }] }]
+        })
+      });
+
+      const data = await response.json();
+      if (data.error) throw new Error(data.error.message);
+      const text = data.candidates[0].content.parts[0].text;
+      parsed = JSON.parse(text.replace(/```json|```/g, '').trim());
+    }
 
     const output = {
       timestamp: new Date().toISOString(),

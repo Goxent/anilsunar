@@ -1,46 +1,42 @@
-import { TrendingUp, TrendingDown, BarChart3, Clock, RefreshCw, Copy, ExternalLink, X, CheckCircle2, ChevronUp, ChevronDown, Activity, Info } from 'lucide-react'
-import omniData from '../data/market-omni-data.json'
-import React, { useState } from 'react'
-import { useToast } from '../AppShell'
+import React, { useState, useEffect } from 'react';
+import { 
+  TrendingUp, TrendingDown, BarChart3, Clock, RefreshCw, 
+  Copy, ExternalLink, X, CheckCircle2, ChevronUp, 
+  ChevronDown, Activity, Info, Zap, Star, Database, Terminal, AlertTriangle, AlertCircle
+} from 'lucide-react';
+import { useMarketData, useToast } from '../AppShell';
+import LoadingCard from './LoadingCard';
+import sastoData from '../data/super_intelligence.json';
 
 function parseMarketData(omniData: any) {
-  const pages = omniData?.scrapedPages || []
+  if (!omniData) return null;
+  const pages = omniData?.scrapedPages || [];
   
   // Find the EOD Summary page
   const eodPage = pages.find((p: any) => 
     p.title?.includes('EOD') || p.title?.includes('Summary') || 
     p.url?.includes('daily-summary')
-  )
+  );
   
-  const tables = eodPage?.tables || []
+  const tables = eodPage?.tables || [];
   
   // Parse key-value rows (Col_0 = label, Col_1 = value)
-  const kvData: Record<string, string> = {}
+  const kvData: Record<string, string> = {};
   tables.forEach((t: any) => {
     t.rows?.forEach((row: any) => {
       if (row.Col_0 && row.Col_1) {
-        kvData[row.Col_0] = row.Col_1
+        kvData[row.Col_0] = row.Col_1;
       }
-    })
-  })
+    });
+  });
 
-  // Also check Table 2 for Advances/Declines if not in KV
-  const sectorTable = tables.find((t: any) => t.headers?.includes('+Ve Stocks'))
-  let advances = parseInt(kvData['Advances']) || 0
-  let declines = parseInt(kvData['Declines']) || 0
-  let unchanged = parseInt(kvData['Unchanged']) || 0
+  let advances = parseInt(kvData['Advances']) || 0;
+  let declines = parseInt(kvData['Declines']) || 0;
+  let unchanged = parseInt(kvData['Unchanged']) || 0;
 
-  if (sectorTable && advances === 0) {
-    sectorTable.rows.forEach((r: any) => {
-      advances += parseInt(r['+Ve Stocks']) || 0
-      declines += parseInt(r['-Ve Stocks']) || 0
-    })
-  }
-  
-  // Find stocks page for gainers/losers
   const stocksPage = pages.find((p: any) => 
     p.url?.includes('top-stocks') || p.title?.includes('Stock') || p.title?.includes('Home')
-  )
+  );
   
   return {
     index: kvData['Current'] || 'N/A',
@@ -48,12 +44,12 @@ function parseMarketData(omniData: any) {
     dailyGain: kvData['Daily Gain'] || '0.0%',
     turnover: kvData['Turnover'] || 'N/A',
     totalTurnover: kvData['Total Turnover'] || kvData['Turnover'] || 'N/A',
-    advances: advances || '0',
-    declines: declines || '0',
-    unchanged: unchanged || '0',
+    advances,
+    declines,
+    unchanged,
     lastUpdated: omniData?.timestamp || null,
     stocksPage: stocksPage?.tables?.[0]?.rows || []
-  }
+  };
 }
 
 function getAllPageData(omniData: any) {
@@ -61,52 +57,277 @@ function getAllPageData(omniData: any) {
     title: p.title,
     url: p.url,
     rowCount: p.tables?.reduce((acc: number, t: any) => acc + (t.rows?.length || 0), 0) || 0
-  }))
+  }));
 }
 
 export default function MarketOverview() {
-  const { showToast } = useToast()
-  const [showSyncModal, setShowSyncModal] = useState(false)
-  const [copied, setCopied] = useState(false)
+  const { showToast } = useToast();
+  const { omniData, loading: omniLoading } = useMarketData();
+  const [showSyncModal, setShowSyncModal] = useState(false);
+  const [copied, setCopied] = useState(false);
   
-  const data = parseMarketData(omniData)
-  const sources = getAllPageData(omniData)
+  // Live Data State
+  const [liveData, setLiveData] = useState<any>(null);
+  const [liveLoading, setLiveLoading] = useState(true);
+
+  useEffect(() => {
+    const fetchLive = async () => {
+      try {
+        const res = await fetch('/api/nepse-live');
+        const data = await res.json();
+        setLiveData(data);
+      } catch (err) {
+        console.error("Failed to fetch live tick", err);
+      } finally {
+        setLiveLoading(false);
+      }
+    };
+    fetchLive();
+    const interval = setInterval(fetchLive, 60000); 
+    return () => clearInterval(interval);
+  }, []);
+
+  if (omniLoading || liveLoading) return <LoadingCard rows={8} cols={4} />;
+
+  const data = parseMarketData(omniData);
+  if (!data) return <LoadingCard rows={8} cols={4} />;
   
-  const isPositive = !data.dailyGain.startsWith('-')
-  const lastUpdatedDate = data.lastUpdated ? new Date(data.lastUpdated) : null
-  const isStale = lastUpdatedDate ? (Date.now() - lastUpdatedDate.getTime() > 24 * 60 * 60 * 1000) : true
+  const sources = getAllPageData(omniData);
+
+  // Freshness calculation
+  const lastSyncDate = data.lastUpdated ? new Date(data.lastUpdated) : null;
+  const dataAgeHours = lastSyncDate ? Math.round((Date.now() - lastSyncDate.getTime()) / 3600000) : null;
+  const formattedSyncDate = lastSyncDate ? lastSyncDate.toLocaleString('en-US', { month: 'short', day: 'numeric', hour: '2-digit', minute: '2-digit' }) : 'Never';
+
+  const isPositive = !data.dailyGain.startsWith('-');
+  const isLiveFresh = liveData?.timestamp && (Date.now() - new Date(liveData.timestamp).getTime() < 600000); // 10 mins
 
   const copyCommand = () => {
-    navigator.clipboard.writeText('npm run full-sync')
-    setCopied(true)
-    showToast("Command copied to clipboard!", "success")
-    setTimeout(() => setCopied(false), 2000)
-  }
+    navigator.clipboard.writeText('npm run full-sync');
+    setCopied(true);
+    showToast("Command copied to clipboard!", "success");
+    setTimeout(() => setCopied(false), 2000);
+  };
 
   return (
-    <div style={{ display: 'flex', flexDirection: 'column', gap: 24 }}>
-      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+    <div className="space-y-8">
+      {/* SECTION 1: Freshness Banner */}
+      <div className="fade-in">
+        {(!dataAgeHours || dataAgeHours > 48) ? (
+          <div className="p-4 rounded-xl bg-red-500/10 border border-red-500/20 text-red-400 flex items-center justify-between">
+            <div className="flex items-center gap-3">
+              <AlertTriangle size={20} />
+              <span className="font-bold text-sm uppercase tracking-wider">⚠️ No market data — Run bot to sync</span>
+            </div>
+            <button onClick={() => setShowSyncModal(true)} className="text-xs font-bold underline">Sync Now</button>
+          </div>
+        ) : dataAgeHours >= 24 ? (
+          <div className="p-4 rounded-xl bg-amber-500/10 border border-amber-500/20 text-amber-400 flex items-center justify-between">
+            <div className="flex items-center gap-3">
+              <Clock size={20} />
+              <span className="font-bold text-sm uppercase tracking-wider">⏰ Data is {dataAgeHours}h old · Last sync: {formattedSyncDate}</span>
+            </div>
+            <button onClick={() => setShowSyncModal(true)} className="text-xs font-bold underline">Sync Now</button>
+          </div>
+        ) : (
+          <div className="p-4 rounded-xl bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 flex items-center gap-3">
+            <CheckCircle2 size={20} />
+            <span className="font-bold text-sm uppercase tracking-wider">✅ Data from {formattedSyncDate} · NEPSE {data.date}</span>
+          </div>
+        )}
+      </div>
+
+      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-end' }}>
         <div>
-          <h2 style={{ fontSize: 28, fontWeight: 800 }}>Market Overview</h2>
-          <p style={{ color: 'var(--text-secondary)' }}>Live intelligence from NEPSE Intelligence Pipeline</p>
+          <h2 style={{ fontSize: 32, fontWeight: 900, letterSpacing: '-0.02em', margin: 0 }}>Market Intelligence</h2>
+          <p style={{ color: 'var(--text-secondary)', marginTop: 4 }}>Live trends and institutional-grade analytics.</p>
         </div>
-        <button 
-          onClick={() => setShowSyncModal(true)}
-          className="btn"
-          style={{ padding: '10px 20px', display: 'flex', alignItems: 'center', gap: 8, background: 'rgba(255,255,255,0.05)' }}
-        >
-          <RefreshCw size={16} /> Sync Dashboard
-        </button>
+        <div style={{ display: 'flex', gap: 12 }}>
+          <button 
+            onClick={() => setShowSyncModal(true)}
+            className="btn btn-primary"
+            style={{ padding: '12px 24px', borderRadius: 14 }}
+          >
+            <RefreshCw size={18} /> Trigger Sync
+          </button>
+        </div>
+      </div>
+
+      {/* SECTION 2: Hero Metric Cards */}
+      <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
+        {/* Card 1: NEPSE Index */}
+        <div className="premium-card" style={{ padding: 24 }}>
+          <div style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: 2, background: 'linear-gradient(90deg, var(--gold), transparent)' }}></div>
+          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', marginBottom: 16 }}>
+            <span style={{ fontSize: 11, fontWeight: 800, color: 'var(--text-secondary)', textTransform: 'uppercase', letterSpacing: '0.1em' }}>NEPSE Index</span>
+            <TrendingUp size={16} color="var(--gold)" />
+          </div>
+          <div style={{ display: 'flex', alignItems: 'baseline', gap: 12 }}>
+            <span style={{ fontSize: 32, fontWeight: 900 }}>{liveData?.index || data.index}</span>
+            <div style={{ display: 'flex', alignItems: 'center', gap: 4, color: isPositive ? 'var(--success-color)' : 'var(--danger-color)', fontWeight: 800, fontSize: 14 }}>
+              {isPositive ? <ChevronUp size={14} /> : <ChevronDown size={14} />}
+              {liveData?.changePct || data.dailyGain}%
+            </div>
+          </div>
+          <p style={{ fontSize: 11, color: 'var(--text-secondary)', marginTop: 8 }}>As of {data.date}</p>
+        </div>
+
+        {/* Card 2: Daily Turnover */}
+        <div className="premium-card">
+          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', marginBottom: 16 }}>
+            <span style={{ fontSize: 11, fontWeight: 800, color: 'var(--text-secondary)', textTransform: 'uppercase', letterSpacing: '0.1em' }}>Daily Turnover</span>
+            <BarChart3 size={16} color="var(--info-color)" />
+          </div>
+          <div style={{ fontSize: 28, fontWeight: 900 }}>
+             {liveData?.turnover ? `Rs. ${liveData.turnover}` : data.turnover}
+          </div>
+          <p style={{ fontSize: 11, color: 'var(--text-secondary)', marginTop: 8 }}>Market Activity</p>
+        </div>
+
+        {/* Card 3: Market Breadth */}
+        <div className="premium-card">
+          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', marginBottom: 16 }}>
+            <span style={{ fontSize: 11, fontWeight: 800, color: 'var(--text-secondary)', textTransform: 'uppercase', letterSpacing: '0.1em' }}>Market Breadth</span>
+            <Activity size={16} color="var(--success-color)" />
+          </div>
+          <div style={{ display: 'flex', gap: 4, height: 10, borderRadius: 10, overflow: 'hidden', marginBottom: 16 }}>
+            <div style={{ flex: liveData?.breadth?.advances || data.advances || 1, background: 'var(--success-color)' }}></div>
+            <div style={{ flex: liveData?.breadth?.unchanged || data.unchanged || 1, background: 'var(--text-secondary)' }}></div>
+            <div style={{ flex: liveData?.breadth?.declines || data.declines || 1, background: 'var(--danger-color)' }}></div>
+          </div>
+          <div style={{ display: 'flex', justifyContent: 'space-between', fontSize: 11, fontWeight: 700 }}>
+            <span className="text-emerald-400">{liveData?.breadth?.advances || data.advances}▲</span>
+            <span className="text-zinc-500">{liveData?.breadth?.unchanged || data.unchanged}</span>
+            <span className="text-red-400">{liveData?.breadth?.declines || data.declines}▼</span>
+          </div>
+        </div>
+
+        {/* Card 4: Daily Sentiment */}
+        <div className="premium-card">
+          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', marginBottom: 16 }}>
+            <span style={{ fontSize: 11, fontWeight: 800, color: 'var(--text-secondary)', textTransform: 'uppercase', letterSpacing: '0.1em' }}>Daily Sentiment</span>
+            <Zap size={16} color="var(--gold)" />
+          </div>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 12 }}>
+            <span style={{ 
+              fontSize: 24, fontWeight: 900, 
+              color: (liveData?.breadth?.advances || data.advances) > (liveData?.breadth?.declines || data.declines) ? 'var(--success-color)' : 'var(--danger-color)' 
+            }}>
+              {(liveData?.breadth?.advances || data.advances) > (liveData?.breadth?.declines || data.declines) ? 'BULLISH' : 'BEARISH'}
+            </span>
+          </div>
+          <p style={{ fontSize: 11, color: 'var(--text-secondary)', marginTop: 8 }}>Based on Advance/Decline ratio</p>
+        </div>
+      </div>
+
+      {/* SECTION 3: Main Data Table */}
+      <div style={{ display: 'grid', gridTemplateColumns: '2fr 1fr', gap: 32 }}>
+        <div className="premium-card" style={{ padding: 0, overflow: 'hidden' }}>
+          <div style={{ padding: '20px 24px', borderBottom: '1px solid var(--border)', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+            <h3 style={{ fontSize: 16, fontWeight: 800, display: 'flex', alignItems: 'center', gap: 8 }}>
+              <TrendingUp size={18} color="var(--gold)" /> Top Moving Stocks
+            </h3>
+            <span className="status-chip status-chip-info">Last Scraped</span>
+          </div>
+          <div className="overflow-x-auto">
+            <table className="premium-table">
+              <thead>
+                <tr>
+                  <th>Symbol</th>
+                  <th>Price</th>
+                  <th>Change%</th>
+                  <th>Volume</th>
+                  <th style={{ textAlign: 'right' }}>Actions</th>
+                </tr>
+              </thead>
+              <tbody>
+                {data.stocksPage.slice(0, 15).map((stock: any, i: number) => {
+                  const symbol = stock.Symbol || stock.Col_1 || 'N/A';
+                  const price = stock['Current Price'] || stock['Price(NPR)'] || '0';
+                  const change = stock['Percent Change'] || stock['Change'] || '0%';
+                  const volume = stock['Volume'] || '0';
+                  const isUp = !change.startsWith('-');
+
+                  const addToWatchlist = (e: React.MouseEvent) => {
+                    e.stopPropagation();
+                    const saved = localStorage.getItem('goxent_watchlist');
+                    const list = saved ? JSON.parse(saved) : [];
+                    if (list.find((item: any) => item.symbol === symbol)) {
+                      showToast(`${symbol} is already in your watchlist`, 'info');
+                      return;
+                    }
+                    const newItem = {
+                      id: Date.now().toString(),
+                      symbol,
+                      addedAt: new Date().toISOString(),
+                      alertAbove: null,
+                      alertBelow: null,
+                      notes: 'Added from Market Overview'
+                    };
+                    localStorage.setItem('goxent_watchlist', JSON.stringify([...list, newItem]));
+                    showToast(`Added ${symbol} to watchlist`, 'success');
+                  };
+                  
+                  return (
+                    <tr key={i}>
+                      <td style={{ fontWeight: 800, color: 'var(--gold)' }}>{symbol}</td>
+                      <td>{price}</td>
+                      <td style={{ color: isUp ? 'var(--success-color)' : 'var(--danger-color)', fontWeight: 800 }}>
+                        {isUp ? '+' : ''}{change}
+                      </td>
+                      <td style={{ color: 'var(--text-secondary)', fontSize: 12 }}>{volume}</td>
+                      <td style={{ textAlign: 'right' }}>
+                        <button onClick={addToWatchlist} className="btn" style={{ padding: 6 }}>
+                          <Star size={14} />
+                        </button>
+                      </td>
+                    </tr>
+                  );
+                })}
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        {/* Sidebar Info */}
+        <div className="space-y-6">
+          <div className="premium-card">
+            <h4 style={{ fontSize: 14, fontWeight: 800, marginBottom: 20, display: 'flex', alignItems: 'center', gap: 8 }}>
+              <Terminal size={16} color="var(--gold)" /> Intelligence Feed
+            </h4>
+            <div className="space-y-4">
+              {sources.map((source: any, i: number) => (
+                <div key={i} className="flex justify-between items-center p-3 rounded-lg bg-white/5 border border-white/5">
+                  <div className="flex flex-col">
+                    <span className="text-sm font-bold">{source.title}</span>
+                    <span className="text-[10px] text-zinc-500 truncate w-32">{source.url}</span>
+                  </div>
+                  <span className="status-chip status-chip-info" style={{ fontSize: 9 }}>{source.rowCount} rows</span>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          <div className="premium-card bg-gold/5" style={{ borderStyle: 'dashed' }}>
+            <div style={{ display: 'flex', alignItems: 'center', gap: 12, marginBottom: 12 }}>
+              <Zap size={20} color="var(--gold)" />
+              <h4 style={{ fontSize: 14, fontWeight: 800 }}>Quick Insight</h4>
+            </div>
+            <p style={{ fontSize: 13, color: 'var(--text-secondary)', lineHeight: 1.6 }}>
+              Market breadth is currently { (liveData?.breadth?.advances / (liveData?.breadth?.declines || 1)).toFixed(2) }x in favor of { (liveData?.breadth?.advances > liveData?.breadth?.declines) ? 'bulls' : 'bears' }. Turnover remains { (liveData?.turnover > 5) ? 'strong' : 'moderate' } for the current session.
+            </p>
+          </div>
+        </div>
       </div>
 
       {/* Sync Modal */}
       {showSyncModal && (
         <div style={{
-          position: 'fixed', inset: 0, background: 'rgba(0,0,0,0.85)', 
+          position: 'fixed', inset: 0, background: 'rgba(0,0,0,0.9)', 
           display: 'flex', alignItems: 'center', justifyContent: 'center', zIndex: 1000,
           backdropFilter: 'blur(12px)'
         }}>
-          <div className="card animate-fade-in" style={{ maxWidth: 450, position: 'relative', border: '1px solid var(--gold)', padding: 32 }}>
+          <div className="premium-card animate-fade-in" style={{ maxWidth: 450, position: 'relative', border: '1px solid var(--gold)', padding: 40 }}>
             <button 
               onClick={() => setShowSyncModal(false)}
               style={{ position: 'absolute', top: 20, right: 20, background: 'none', border: 'none', color: 'var(--text-secondary)', cursor: 'pointer' }}
@@ -115,25 +336,25 @@ export default function MarketOverview() {
             </button>
             <div style={{ textAlign: 'center', marginBottom: 32 }}>
               <div style={{ 
-                width: 80, height: 80, borderRadius: '50%', background: 'rgba(212, 175, 55, 0.1)', 
-                display: 'flex', alignItems: 'center', justifyContent: 'center', margin: '0 auto 20px'
+                width: 70, height: 70, borderRadius: '50%', background: 'rgba(212, 175, 55, 0.1)', 
+                display: 'flex', alignItems: 'center', justifyContent: 'center', margin: '0 auto 24px'
               }}>
-                <RefreshCw size={40} className="text-gold" />
+                <RefreshCw size={32} className="text-gold animate-spin-slow" />
               </div>
-              <h3 style={{ fontSize: 24, fontWeight: 800, marginBottom: 12 }}>Sync Now</h3>
-              <p style={{ color: 'var(--text-secondary)', fontSize: 15, lineHeight: 1.6 }}>
-                Trigger the Omni-Crawler to scrape Sasto Share and update all dashboard analytics.
+              <h3 style={{ fontSize: 24, fontWeight: 900, marginBottom: 12 }}>Manual Intelligence Sync</h3>
+              <p style={{ color: 'var(--text-secondary)', fontSize: 14, lineHeight: 1.6 }}>
+                Remotely trigger the Alpha Bot on GitHub Actions. This will scrape Sasto Share and update the full intelligence database.
               </p>
             </div>
 
             <div style={{ background: '#0a0a0a', padding: 20, borderRadius: 12, marginBottom: 32, border: '1px solid var(--border)', position: 'relative' }}>
-              <code style={{ color: 'var(--gold)', fontSize: 15, fontFamily: 'monospace', fontWeight: 600 }}>npm run full-sync</code>
+              <code style={{ color: 'var(--gold)', fontSize: 14, fontFamily: 'monospace' }}>npm run full-sync</code>
               <button 
                 onClick={copyCommand}
                 style={{ 
                   position: 'absolute', right: 12, top: '50%', transform: 'translateY(-50%)',
-                  background: 'var(--gold)', border: 'none', padding: '8px 16px',
-                  borderRadius: 6, color: 'black', fontSize: 12, fontWeight: 700, cursor: 'pointer',
+                  background: 'var(--gold)', border: 'none', padding: '6px 12px',
+                  borderRadius: 6, color: 'black', fontSize: 11, fontWeight: 800, cursor: 'pointer',
                   display: 'flex', alignItems: 'center', gap: 6
                 }}
               >
@@ -144,149 +365,13 @@ export default function MarketOverview() {
 
             <button 
               onClick={() => setShowSyncModal(false)}
-              className="btn btn-primary" style={{ width: '100%', padding: '16px', fontSize: 16, fontWeight: 700 }}
+              className="btn btn-primary" style={{ width: '100%', padding: '16px', fontSize: 15, borderRadius: 12 }}
             >
-              Close instructions
+              Acknowledge & Close
             </button>
           </div>
         </div>
       )}
-
-      {/* Section 1 — Hero stats bar */}
-      <div className="grid" style={{ gridTemplateColumns: 'repeat(4, 1fr)', gap: 20 }}>
-        <div className="card" style={{ display: 'flex', flexDirection: 'column', gap: 8 }}>
-          <p style={{ fontSize: 12, color: 'var(--text-secondary)', fontWeight: 600, textTransform: 'uppercase' }}>NEPSE Index</p>
-          <div style={{ display: 'flex', alignItems: 'baseline', gap: 12 }}>
-            <span style={{ fontSize: 32, fontWeight: 800, color: 'var(--gold)' }}>{data.index}</span>
-            <span style={{ 
-              fontSize: 16, fontWeight: 700, color: isPositive ? 'var(--green)' : 'var(--red)',
-              display: 'flex', alignItems: 'center', gap: 4
-            }}>
-              {isPositive ? <ChevronUp size={16} /> : <ChevronDown size={16} />}
-              {data.dailyGain}
-            </span>
-          </div>
-        </div>
-        <div className="card" style={{ display: 'flex', flexDirection: 'column', gap: 8 }}>
-          <p style={{ fontSize: 12, color: 'var(--text-secondary)', fontWeight: 600, textTransform: 'uppercase' }}>Total Turnover</p>
-          <span style={{ fontSize: 24, fontWeight: 700 }}>{data.totalTurnover.replace('NPR.', 'NPR ')}</span>
-        </div>
-        <div className="card" style={{ display: 'flex', flexDirection: 'column', gap: 8 }}>
-          <p style={{ fontSize: 12, color: 'var(--text-secondary)', fontWeight: 600, textTransform: 'uppercase' }}>Market Date</p>
-          <span style={{ fontSize: 24, fontWeight: 700 }}>{data.date}</span>
-        </div>
-        <div className="card" style={{ display: 'flex', flexDirection: 'column', gap: 8 }}>
-          <p style={{ fontSize: 12, color: 'var(--text-secondary)', fontWeight: 600, textTransform: 'uppercase' }}>Market Breadth</p>
-          <div style={{ display: 'flex', gap: 4, height: 24, borderRadius: 4, overflow: 'hidden' }}>
-            <div style={{ flex: data.advances, background: 'var(--green)', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: 10, fontWeight: 800 }}>{data.advances}</div>
-            <div style={{ flex: data.unchanged, background: 'var(--text-secondary)', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: 10, fontWeight: 800 }}>{data.unchanged}</div>
-            <div style={{ flex: data.declines, background: 'var(--red)', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: 10, fontWeight: 800 }}>{data.declines}</div>
-          </div>
-        </div>
-      </div>
-
-      {/* Section 2 — Last synced banner */}
-      <div style={{ 
-        padding: '12px 20px', borderRadius: 12, 
-        background: isStale ? 'rgba(245, 158, 11, 0.1)' : 'rgba(16, 185, 129, 0.1)',
-        border: `1px solid ${isStale ? 'rgba(245, 158, 11, 0.2)' : 'rgba(16, 185, 129, 0.2)'}`,
-        display: 'flex', alignItems: 'center', justifyContent: 'space-between'
-      }}>
-        <div style={{ display: 'flex', alignItems: 'center', gap: 12, fontSize: 14 }}>
-          <Info size={16} color={isStale ? 'var(--gold)' : 'var(--green)'} />
-          <span>
-            Data from: <strong style={{ color: isStale ? 'var(--gold)' : 'var(--green)' }}>{data.date}</strong>
-            {isStale && <span style={{ marginLeft: 8 }}>(Stale - Market has moved)</span>}
-          </span>
-        </div>
-        <span style={{ fontSize: 12, color: 'var(--text-secondary)' }}>
-          Run <code>npm run full-sync</code> to refresh
-        </span>
-      </div>
-
-      <div style={{ display: 'grid', gridTemplateColumns: '2fr 1fr', gap: 24 }}>
-        {/* Section 3 — Top Stocks table */}
-        <div className="card" style={{ padding: 0, overflow: 'hidden' }}>
-          <div style={{ padding: '16px 24px', borderBottom: '1px solid var(--border)', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-            <h3 style={{ fontSize: 16, fontWeight: 700 }}>Top Moving Stocks</h3>
-            <span style={{ fontSize: 12, color: 'var(--text-secondary)' }}>Last 100 sessions</span>
-          </div>
-          <div style={{ overflowX: 'auto' }}>
-            <table style={{ width: '100%', borderCollapse: 'collapse' }}>
-              <thead>
-                <tr style={{ textAlign: 'left', background: 'rgba(255,255,255,0.02)', borderBottom: '1px solid var(--border)' }}>
-                  <th style={{ padding: '12px 24px', fontSize: 12, color: 'var(--text-secondary)' }}>SYMBOL</th>
-                  <th style={{ padding: '12px 24px', fontSize: 12, color: 'var(--text-secondary)' }}>PRICE</th>
-                  <th style={{ padding: '12px 24px', fontSize: 12, color: 'var(--text-secondary)' }}>CHANGE%</th>
-                  <th style={{ padding: '12px 24px', fontSize: 12, color: 'var(--text-secondary)' }}>VOLUME</th>
-                </tr>
-              </thead>
-              <tbody>
-                {data.stocksPage.slice(0, 20).map((stock: any, i: number) => {
-                  const symbol = stock.Symbol || stock.Col_1 || 'N/A'
-                  const price = stock['Current Price'] || stock['Price(NPR)'] || '0'
-                  const change = stock['Percent Change'] || stock['Change'] || '0%'
-                  const volume = stock['Volume'] || '0'
-                  const isUp = !change.startsWith('-')
-                  
-                  return (
-                    <tr key={i} style={{ borderBottom: '1px solid var(--border)' }}>
-                      <td style={{ padding: '12px 24px', fontWeight: 700 }}>{symbol}</td>
-                      <td style={{ padding: '12px 24px' }}>{price}</td>
-                      <td style={{ padding: '12px 24px', color: isUp ? 'var(--green)' : 'var(--red)', fontWeight: 700 }}>
-                        {change}
-                      </td>
-                      <td style={{ padding: '12px 24px', color: 'var(--text-secondary)', fontSize: 13 }}>{volume}</td>
-                    </tr>
-                  )
-                })}
-              </tbody>
-            </table>
-          </div>
-        </div>
-
-        <div style={{ display: 'flex', flexDirection: 'column', gap: 24 }}>
-          {/* Section 4 — Quick Stats cards */}
-          <div className="grid" style={{ gridTemplateColumns: '1fr 1fr', gap: 16 }}>
-            <div className="card" style={{ textAlign: 'center' }}>
-              <Activity size={20} style={{ margin: '0 auto 8px', color: 'var(--gold)' }} />
-              <p style={{ fontSize: 11, color: 'var(--text-secondary)', marginBottom: 4 }}>Sentiment</p>
-              <p style={{ fontWeight: 800, color: parseInt(data.advances as string) > parseInt(data.declines as string) ? 'var(--green)' : 'var(--red)' }}>
-                {parseInt(data.advances as string) > parseInt(data.declines as string) ? 'BULLISH' : 'BEARISH'}
-              </p>
-            </div>
-            <div className="card" style={{ textAlign: 'center' }}>
-              <p style={{ fontSize: 11, color: 'var(--text-secondary)', marginBottom: 4 }}>Active Stocks</p>
-              <p style={{ fontSize: 20, fontWeight: 800 }}>{data.stocksPage.length}</p>
-            </div>
-            <div className="card" style={{ textAlign: 'center' }}>
-              <p style={{ fontSize: 11, color: 'var(--text-secondary)', marginBottom: 4 }}>Breadth Ratio</p>
-              <p style={{ fontSize: 20, fontWeight: 800 }}>{(parseInt(data.advances as string) / (parseInt(data.declines as string) || 1)).toFixed(2)}</p>
-            </div>
-            <div className="card" style={{ textAlign: 'center' }}>
-              <p style={{ fontSize: 11, color: 'var(--text-secondary)', marginBottom: 4 }}>Top Turnover</p>
-              <p style={{ fontSize: 14, fontWeight: 800 }}>{data.stocksPage[0]?.Symbol || 'N/A'}</p>
-            </div>
-          </div>
-
-          {/* Section 5 — Data Sources */}
-          <div className="card">
-            <h4 style={{ fontSize: 14, fontWeight: 700, marginBottom: 16, display: 'flex', alignItems: 'center', gap: 8 }}>
-              <Terminal size={14} /> Intelligence Sources
-            </h4>
-            <div style={{ display: 'flex', flexDirection: 'column', gap: 12 }}>
-              {sources.map((source: any, i: number) => (
-                <div key={i} style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', fontSize: 12 }}>
-                  <span style={{ color: 'var(--text-primary)', fontWeight: 500 }}>{source.title}</span>
-                  <span className="badge" style={{ background: 'rgba(255,255,255,0.05)', fontSize: 10 }}>{source.rowCount} rows</span>
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
-      </div>
     </div>
-  )
+  );
 }
-
-import { Terminal } from 'lucide-react'

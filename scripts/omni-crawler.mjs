@@ -27,8 +27,20 @@ async function retry(fn, retries = 3, delay = 2000) {
 
 async function runOmniSpider() {
   console.log('🕷️ Initiating Omni-Crawler Spider for Sasto Share...');
-  const browser = await chromium.launch({ headless: true });
-  const context = await browser.newContext({ userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36' });
+  
+  // Ensure output directory exists and is clean
+  const dataPath = path.join(__dirname, '../src/app/data/market-omni-data.json');
+  const dir = path.dirname(dataPath);
+  if (!fs.existsSync(dir)) fs.mkdirSync(dir, { recursive: true });
+
+  const browser = await chromium.launch({ 
+    headless: true,
+    args: ['--no-sandbox', '--disable-setuid-sandbox', '--disable-dev-shm-usage']
+  });
+  const context = await browser.newContext({ 
+    userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36',
+    viewport: { width: 1280, height: 800 }
+  });
   const page = await context.newPage();
 
   const dataLake = {

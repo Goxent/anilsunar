@@ -34,19 +34,24 @@ jobs:
       - name: Install Playwright Browsers
         run: npx playwright install chromium --with-deps
 
-      - name: Run Daily Sync (Sasto Bot + AI Digest)
+      - name: Run Daily Sync (Sasto Bot + AI Digest + Cloud Sync)
         env:
           SASTO_EMAIL: ${{ secrets.SASTO_EMAIL }}
           SASTO_PASSWORD: ${{ secrets.SASTO_PASSWORD }}
           RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
-          ANTHROPIC_API_KEY: ${{ secrets.VITE_ANTHROPIC_API_KEY }}
-          VITE_ANTHROPIC_API_KEY: ${{ secrets.VITE_ANTHROPIC_API_KEY }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY || secrets.VITE_ANTHROPIC_API_KEY }}
+          VITE_ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY || secrets.VITE_ANTHROPIC_API_KEY }}
+          FIREBASE_SERVICE_ACCOUNT_JSON: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_JSON }}
+          NODE_ENV: production
         run: npm run daily-sync
 
-      - name: Commit and Push Updated Data
+      - name: Commit and Push Scraped Data
         run: |
-          git config --global user.name "Anil Sunar"
-          git config --global user.email "anil99senchury@gmail.com"
-          git add src/app/data/
-          git commit -m "chore: auto-update sasto market data 🤖" || echo "No changes to commit"
-          git push origin main
+          git config --global user.name "Goxent Bot"
+          git config --global user.email "bot@anilsunar.com.np"
+          git add src/app/data/*.json
+          git status
+          git diff --quiet && git diff --staged --quiet || (git commit -m "🤖 [BOT] Daily Market Intelligence Update [$(date +'%Y-%m-%d')]" && git push)
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

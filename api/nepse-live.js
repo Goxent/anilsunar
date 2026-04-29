@@ -1,72 +1,74 @@
 export default async function handler(req, res) {
-  // CORS Headers
-  res.setHeader('Access-Control-Allow-Credentials', true)
-  res.setHeader('Access-Control-Allow-Origin', '*')
-  res.setHeader('Access-Control-Allow-Methods', 'GET,OPTIONS')
-  res.setHeader('Access-Control-Allow-Headers', 'X-CSRF-Token, X-Requested-With, Accept, Accept-Version, Content-Length, Content-MD5, Content-Type, Date, X-Api-Version')
-
-  // Cache Header: 5 minutes
-  res.setHeader('Cache-Control', 's-maxage=300, stale-while-revalidate')
+  // 1. CORS Headers
+  res.setHeader('Access-Control-Allow-Credentials', true);
+  res.setHeader('Access-Control-Allow-Origin', '*');
+  res.setHeader('Access-Control-Allow-Methods', 'GET,OPTIONS,PATCH,DELETE,POST,PUT');
+  res.setHeader(
+    'Access-Control-Allow-Headers',
+    'X-CSRF-Token, X-Requested-With, Accept, Accept-Version, Content-Length, Content-MD5, Content-Type, Date, X-Api-Version'
+  );
 
   if (req.method === 'OPTIONS') {
-    res.status(200).end()
-    return
+    res.status(200).end();
+    return;
   }
 
+  const headers = {
+    'Accept': 'application/json',
+    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36'
+  };
+
   try {
-    const headers = {
-      'Accept': 'application/json',
-      'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64)'
-    };
+    // 2. Fetch Live Market Summary
+    const summaryRes = await fetch('https://www.nepalstock.com.np/api/nots/nepse-data', { headers });
+    const summaryData = summaryRes.ok ? await summaryRes.json() : [];
 
-    // Parallel fetch
-    const [summaryRes, topRes] = await Promise.all([
-      fetch('https://www.nepalstock.com.np/api/nots/nepse-data/today-price?size=20', { headers }).catch(() => null),
-      fetch('https://www.nepalstock.com.np/api/nots/top-ten/turnover', { headers }).catch(() => null)
-    ]);
+    // 3. Fetch Top Turnover (as proxy for gainers/losers or specific performance)
+    const topRes = await fetch('https://www.nepalstock.com.np/api/nots/top-ten/turnover', { headers });
+    const topData = topRes.ok ? await topRes.json() : [];
 
-    // Note: Official NEPSE API endpoints change frequently. We are providing fallback structures here.
-    let index = 0;
-    let change = 0;
-    let changePct = 0;
-    let turnover = 0;
-    let volume = 0;
-    let advances = 0;
-    let declines = 0;
-    let unchanged = 0;
-    let topGainers = [];
-    let topLosers = [];
-
-    // Simulate standard NEPSE summary payload extraction (since their API is strictly gated, this provides a resilient format)
-    try {
-      if (summaryRes && summaryRes.ok) {
-        const sumData = await summaryRes.json();
-        // Fallback extraction depending on Nepse payload
-        index = sumData?.[0]?.lastUpdatedPrice || 2787.15;
-      }
-    } catch (e) { console.error('Summary parsing error', e); }
-
-    const response = {
+    // 4. Combine and Format
+    // Note: Official API structure often varies, we map safely
+    const latest = summaryData[0] || {};
+    
+    const combined = {
       timestamp: new Date().toISOString(),
-      index,
-      change,
-      changePct,
-      turnover,
-      volume,
-      breadth: { advances, declines, unchanged },
-      topGainers,
-      topLosers
+      index: latest.index || 'N/A',
+      change: latest.change || '0.0',
+      changePct: latest.perChange || '0.0',
+      turnover: latest.turnover || '0.0',
+      volume: latest.volume || '0',
+      breadth: {
+        advances: latest.advances || 0,
+        declines: latest.declines || 0,
+        unchanged: latest.unchanged || 0
+      },
+      topGainers: topData.slice(0, 10).map(s => ({
+        symbol: s.symbol,
+        ltp: s.ltp,
+        change: s.pointChange,
+        changePct: s.percentageChange
+      })),
+      topLosers: [] // Usually requires a different endpoint, but we fallback gracefully
     };
 
-    res.status(200).json(response);
+    // 5. Cache Control
+    res.setHeader('Cache-Control', 's-maxage=300, stale-while-revalidate');
+    return res.status(200).json(combined);
+
   } catch (error) {
     console.error('NEPSE Live API Error:', error);
-    res.status(200).json({
+    return res.status(200).json({
       timestamp: new Date().toISOString(),
-      index: 0, change: 0, changePct: 0, turnover: 0, volume: 0,
+      index: 'N/A',
+      change: '0.0',
+      changePct: '0.0',
+      turnover: '0.0',
+      volume: '0',
       breadth: { advances: 0, declines: 0, unchanged: 0 },
-      topGainers: [], topLosers: [],
-      error: 'Failed to fetch live data'
+      topGainers: [],
+      topLosers: [],
+      status: 'offline'
     });
   }
 }

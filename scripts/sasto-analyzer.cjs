@@ -23,7 +23,10 @@ async function runProdSync() {
   console.log('🚀 Initiating Production Sasto Share Bot...');
   // Use headless mode in GitHub Actions or if HEADLESS env var is not explicitly 'false'
   const isHeadless = process.env.GITHUB_ACTIONS === 'true' || process.env.HEADLESS !== 'false';
-  const browser = await chromium.launch({ headless: isHeadless });
+  const browser = await chromium.launch({ 
+    headless: isHeadless,
+    args: ['--no-sandbox', '--disable-setuid-sandbox', '--disable-dev-shm-usage']
+  });
   const context = await browser.newContext({ userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36' });
   const page = await context.newPage();
 
@@ -188,6 +191,7 @@ async function runProdSync() {
 
     // 6. AUTO-ANALYSIS & DASHBOARD SYNC
     const finalData = {
+      timestamp: new Date().toISOString(),
       updatedAt: new Date().toLocaleTimeString(),
       picks: report.quantAnalysis
         .filter(s => parseInt(s.fScore) >= 7)
@@ -201,6 +205,13 @@ async function runProdSync() {
         symbol: s.symbol,
         signal: s.signal,
         type: s.type
+      })),
+      brokerData: report.brokerAccumulation.map(b => ({
+        broker: b.broker,
+        symbol: b.topBuy,
+        buyQty: parseFloat(b.netHolding.replace(/,/g, '')) > 0 ? parseFloat(b.netHolding.replace(/,/g, '')) : 0,
+        sellQty: parseFloat(b.netHolding.replace(/,/g, '')) < 0 ? Math.abs(parseFloat(b.netHolding.replace(/,/g, ''))) : 0,
+        netPosition: parseFloat(b.netHolding.replace(/,/g, '')) || 0
       })),
       sentiment: [
         `Market Sentiment: ${report.smcSignals.length > 5 ? 'Bullish' : 'Neutral'}`,

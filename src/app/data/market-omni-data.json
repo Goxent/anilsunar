@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-04-29T05:32:29.591Z",
+  "timestamp": "2026-04-29T07:41:07.096Z",
   "scrapedPages": [
     {
       "title": "Sasto Share | Home",
@@ -18,94 +18,94 @@
           ],
           "rows": [
             {
-              "Symbol": "ULHC",
-              "Price(NPR)": "510.00",
-              "Change": "5.15%",
-              "Volume": "530.00",
-              "R-Volume": "1.33 %",
-              "Float Cap": "114.83 Cr.",
-              "Market Cap": "260.00 Cr."
+              "Symbol": "PCBLP",
+              "Price(NPR)": "108.10",
+              "Change": "8.10%",
+              "Volume": "500,000.00",
+              "R-Volume": "-",
+              "Float Cap": "- Cr.",
+              "Market Cap": "0.00 Cr."
             },
             {
-              "Symbol": "GMFBS",
-              "Price(NPR)": "1,397.00",
-              "Change": "2.87%",
-              "Volume": "10.00",
-              "R-Volume": "0.79 %",
-              "Float Cap": "68.53 Cr.",
-              "Market Cap": "211.72 Cr."
+              "Symbol": "SKHEL",
+              "Price(NPR)": "1,467.10",
+              "Change": "3.76%",
+              "Volume": "18,506.00",
+              "R-Volume": "-",
+              "Float Cap": "202.36 Cr.",
+              "Market Cap": "1,011.82 Cr."
+            },
+            {
+              "Symbol": "BJHL",
+              "Price(NPR)": "1,048.90",
+              "Change": "3.64%",
+              "Volume": "22,566.00",
+              "R-Volume": "-",
+              "Float Cap": "209.78 Cr.",
+              "Market Cap": "1,048.90 Cr."
+            },
+            {
+              "Symbol": "RLEL",
+              "Price(NPR)": "1,185.00",
+              "Change": "3.49%",
+              "Volume": "29,094.00",
+              "R-Volume": "-",
+              "Float Cap": "308.93 Cr.",
+              "Market Cap": "1,404.22 Cr."
+            },
+            {
+              "Symbol": "DLBS",
+              "Price(NPR)": "1,323.00",
+              "Change": "2.56%",
+              "Volume": "915.00",
+              "R-Volume": "92.11 %",
+              "Float Cap": "56.53 Cr.",
+              "Market Cap": "176.09 Cr."
+            },
+            {
+              "Symbol": "ULHC",
+              "Price(NPR)": "495.00",
+              "Change": "2.06%",
+              "Volume": "5,403.00",
+              "R-Volume": "13.60 %",
+              "Float Cap": "111.45 Cr.",
+              "Market Cap": "252.35 Cr."
+            },
+            {
+              "Symbol": "OHL",
+              "Price(NPR)": "703.40",
+              "Change": "1.65%",
+              "Volume": "250.00",
+              "R-Volume": "4.09 %",
+              "Float Cap": "249.95 Cr.",
+              "Market Cap": "833.17 Cr."
             },
             {
               "Symbol": "CORBL",
-              "Price(NPR)": "2,400.20",
-              "Change": "2.01%",
-              "Volume": "2,743.00",
-              "R-Volume": "14.97 %",
-              "Float Cap": "378.03 Cr.",
-              "Market Cap": "1,260.10 Cr."
+              "Price(NPR)": "2,390.10",
+              "Change": "1.58%",
+              "Volume": "17,338.00",
+              "R-Volume": "94.61 %",
+              "Float Cap": "376.44 Cr.",
+              "Market Cap": "1,254.80 Cr."
             },
             {
-              "Symbol": "PROFL",
-              "Price(NPR)": "449.20",
-              "Change": "1.86%",
-              "Volume": "90.00",
-              "R-Volume": "0.58 %",
-              "Float Cap": "186.67 Cr.",
-              "Market Cap": "380.97 Cr."
-            },
-            {
-              "Symbol": "PPCL",
-              "Price(NPR)": "386.00",
-              "Change": "1.82%",
-              "Volume": "5,020.00",
-              "R-Volume": "7.20 %",
-              "Float Cap": "371.52 Cr.",
-              "Market Cap": "371.52 Cr."
-            },
-            {
-              "Symbol": "NIFRA",
-              "Price(NPR)": "269.00",
-              "Change": "1.78%",
-              "Volume": "24,745.00",
-              "R-Volume": "10.92 %",
-              "Float Cap": "2,324.16 Cr.",
-              "Market Cap": "5,810.40 Cr."
-            },
-            {
-              "Symbol": "MERO",
-              "Price(NPR)": "737.00",
-              "Change": "1.67%",
-              "Volume": "40.00",
-              "R-Volume": "0.31 %",
-              "Float Cap": "444.76 Cr.",
-              "Market Cap": "1,095.48 Cr."
+              "Symbol": "BBC",
+              "Price(NPR)": "4,846.00",
+              "Change": "1.38%",
+              "Volume": "142.00",
+              "R-Volume": "15.35 %",
+              "Float Cap": "202.10 Cr.",
+              "Market Cap": "19,432.46 Cr."
             },
             {
               "Symbol": "EDBL",
-              "Price(NPR)": "584.00",
-              "Change": "1.39%",
-              "Volume": "1,162.00",
-              "R-Volume": "6.13 %",
-              "Float Cap": "357.61 Cr.",
-              "Market Cap": "729.82 Cr."
-            },
-            {
-              "Symbol": "EHPL",
-              "Price(NPR)": "398.00",
-              "Change": "0.99%",
-              "Volume": "977.00",
-              "R-Volume": "1.91 %",
-              "Float Cap": "246.76 Cr.",
-              "Market Cap": "246.76 Cr."
-            },
-            {
-              "Symbol": "BHDC",
-              "Price(NPR)": "467.00",
-              "Change": "0.86%",
-              "Volume": "200.00",
-              "R-Volume": "0.49 %",
-              "Float Cap": "554.00 Cr.",
-              "Market Cap": "554.00 Cr."
+              "Price(NPR)": "582.00",
+              "Change": "1.04%",
+              "Volume": "17,654.00",
+              "R-Volume": "93.09 %",
+              "Float Cap": "356.39 Cr.",
+              "Market Cap": "727.32 Cr."
             }
           ]
         },
@@ -488,94 +488,94 @@
           ],
           "rows": [
             {
-              "Symbol": "MSLB",
-              "Price(NPR)": "1,176.60",
-              "Change": "-8.72%",
-              "Volume": "30.00",
-              "R-Volume": "1.13 %",
-              "Float Cap": "136.78 Cr.",
-              "Market Cap": "455.93 Cr."
-            },
-            {
               "Symbol": "SIPD",
-              "Price(NPR)": "919.10",
-              "Change": "-8.27%",
-              "Volume": "25,090.00",
+              "Price(NPR)": "904.00",
+              "Change": "-9.78%",
+              "Volume": "95,730.00",
               "R-Volume": "-",
-              "Float Cap": "294.08 Cr.",
-              "Market Cap": "900.72 Cr."
+              "Float Cap": "289.25 Cr.",
+              "Market Cap": "885.92 Cr."
             },
             {
               "Symbol": "PCIL",
-              "Price(NPR)": "982.00",
-              "Change": "-5.49%",
-              "Volume": "39,026.00",
+              "Price(NPR)": "969.90",
+              "Change": "-6.65%",
+              "Volume": "143,023.00",
               "R-Volume": "-",
-              "Float Cap": "736.50 Cr.",
-              "Market Cap": "3,682.50 Cr."
-            },
-            {
-              "Symbol": "CKHL",
-              "Price(NPR)": "663.20",
-              "Change": "-4.85%",
-              "Volume": "11.00",
-              "R-Volume": "0.11 %",
-              "Float Cap": "64.95 Cr.",
-              "Market Cap": "265.28 Cr."
-            },
-            {
-              "Symbol": "JHAPA",
-              "Price(NPR)": "1,651.00",
-              "Change": "-4.62%",
-              "Volume": "3,030.00",
-              "R-Volume": "21.40 %",
-              "Float Cap": "156.92 Cr.",
-              "Market Cap": "627.69 Cr."
-            },
-            {
-              "Symbol": "NIMBPO",
-              "Price(NPR)": "145.00",
-              "Change": "-4.61%",
-              "Volume": "10.00",
-              "R-Volume": "-",
-              "Float Cap": "0.00 Cr.",
-              "Market Cap": "2,654.59 Cr."
+              "Float Cap": "727.42 Cr.",
+              "Market Cap": "3,637.13 Cr."
             },
             {
               "Symbol": "HFIN",
-              "Price(NPR)": "1,011.30",
-              "Change": "-4.59%",
-              "Volume": "17,633.00",
+              "Price(NPR)": "1,006.10",
+              "Change": "-5.08%",
+              "Volume": "81,449.00",
               "R-Volume": "-",
-              "Float Cap": "404.52 Cr.",
-              "Market Cap": "2,022.60 Cr."
+              "Float Cap": "402.44 Cr.",
+              "Market Cap": "2,012.20 Cr."
             },
             {
-              "Symbol": "SKHL",
-              "Price(NPR)": "950.00",
-              "Change": "-4.52%",
-              "Volume": "10,594.00",
-              "R-Volume": "-",
-              "Float Cap": "294.50 Cr.",
-              "Market Cap": "1,472.50 Cr."
+              "Symbol": "NMIC",
+              "Price(NPR)": "1,030.20",
+              "Change": "-4.96%",
+              "Volume": "11,469.00",
+              "R-Volume": "78.78 %",
+              "Float Cap": "231.79 Cr.",
+              "Market Cap": "772.65 Cr."
             },
             {
-              "Symbol": "MKHL",
-              "Price(NPR)": "607.00",
-              "Change": "-4.11%",
-              "Volume": "40.00",
-              "R-Volume": "0.35 %",
-              "Float Cap": "90.98 Cr.",
-              "Market Cap": "238.04 Cr."
+              "Symbol": "JHAPA",
+              "Price(NPR)": "1,652.20",
+              "Change": "-4.55%",
+              "Volume": "7,625.00",
+              "R-Volume": "53.84 %",
+              "Float Cap": "157.04 Cr.",
+              "Market Cap": "628.15 Cr."
             },
             {
-              "Symbol": "BJHL",
-              "Price(NPR)": "975.00",
+              "Symbol": "CREST",
+              "Price(NPR)": "1,146.10",
+              "Change": "-4.07%",
+              "Volume": "7,651.00",
+              "R-Volume": "38.36 %",
+              "Float Cap": "257.87 Cr.",
+              "Market Cap": "859.58 Cr."
+            },
+            {
+              "Symbol": "HIMSTAR",
+              "Price(NPR)": "837.20",
+              "Change": "-3.99%",
+              "Volume": "7,306.00",
+              "R-Volume": "40.61 %",
+              "Float Cap": "93.68 Cr.",
+              "Market Cap": "312.28 Cr."
+            },
+            {
+              "Symbol": "DOLTI",
+              "Price(NPR)": "365.00",
+              "Change": "-3.87%",
+              "Volume": "59,445.00",
+              "R-Volume": "284.63 %",
+              "Float Cap": "195.82 Cr.",
+              "Market Cap": "195.82 Cr."
+            },
+            {
+              "Symbol": "BUNGAL",
+              "Price(NPR)": "571.70",
+              "Change": "-3.75%",
+              "Volume": "14,207.00",
+              "R-Volume": "65.30 %",
+              "Float Cap": "166.08 Cr.",
+              "Market Cap": "474.51 Cr."
+            },
+            {
+              "Symbol": "RLFL",
+              "Price(NPR)": "417.10",
               "Change": "-3.67%",
-              "Volume": "5,617.00",
-              "R-Volume": "-",
-              "Float Cap": "195.00 Cr.",
-              "Market Cap": "975.00 Cr."
+              "Volume": "23,950.00",
+              "R-Volume": "92.15 %",
+              "Float Cap": "229.20 Cr.",
+              "Market Cap": "467.76 Cr."
             }
           ]
         },
@@ -1313,6 +1313,427 @@
               "Col_3": "50 %",
               "Col_4": "50 %",
               "Col_5": "50 %"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Stock Comparison | Swing Gain",
+      "url": "https://nepsealpha.com/sastoshare/swing-gain",
+      "tables": [
+        {
+          "tableIndex": 0,
+          "headers": [
+            "Symbol",
+            "LTP",
+            "1 Month High",
+            "3 Month High",
+            "6 Month High",
+            "1 Year High",
+            "2 Year High",
+            "3 Year High",
+            "5 Year High",
+            "Down from 1 Months High",
+            "Down from 3 Months High",
+            "Down from 6 Months High",
+            "Down from 1 Year High",
+            "Down from 2 Year High",
+            "Down from 3 Year High",
+            "Down from 5 Year High"
+          ],
+          "rows": [
+            {
+              "Symbol": "ACLBSL",
+              "LTP": "960.1",
+              "1 Month High": "1,067.40 2026-04-01",
+              "3 Month High": "979.90 2026-04-27",
+              "6 Month High": "1,095.00 2026-03-22",
+              "1 Year High": "1,240.00 2025-07-30",
+              "2 Year High": "1,491.00 2024-07-18",
+              "3 Year High": "1,491.00 2024-07-18",
+              "5 Year High": "1,870.002021-08-04",
+              "Down from 1 Months High": "-10.05 %",
+              "Down from 3 Months High": "-2.02 %",
+              "Down from 6 Months High": "-2.02 %",
+              "Down from 1 Year High": "-22.57 %",
+              "Down from 2 Year High": "-35.61 %",
+              "Down from 3 Year High": "-35.61 %",
+              "Down from 5 Year High": "-48.66 %"
+            },
+            {
+              "Symbol": "ADBL",
+              "LTP": "311.8",
+              "1 Month High": "335.00 2026-03-29",
+              "3 Month High": "295.50 2026-02-25",
+              "6 Month High": "340.00 2026-03-25",
+              "1 Year High": "344.90 2025-08-11",
+              "2 Year High": "428.40 2024-08-18",
+              "3 Year High": "428.40 2024-08-18",
+              "5 Year High": "620.002021-08-11",
+              "Down from 1 Months High": "-6.93 %",
+              "Down from 3 Months High": "5.52 %",
+              "Down from 6 Months High": "7.52 %",
+              "Down from 1 Year High": "-9.60 %",
+              "Down from 2 Year High": "-27.22 %",
+              "Down from 3 Year High": "-27.22 %",
+              "Down from 5 Year High": "-49.71 %"
+            },
+            {
+              "Symbol": "AHL",
+              "LTP": "505",
+              "1 Month High": "593.00 2026-04-15",
+              "3 Month High": "488.00 2026-04-06",
+              "6 Month High": "652.00 2025-12-08",
+              "1 Year High": "721.00 2025-05-04",
+              "2 Year High": "904.00 2024-07-30",
+              "3 Year High": "904.00 2024-07-30",
+              "5 Year High": "904.002024-07-30",
+              "Down from 1 Months High": "-14.84 %",
+              "Down from 3 Months High": "3.48 %",
+              "Down from 6 Months High": "3.48 %",
+              "Down from 1 Year High": "-29.96 %",
+              "Down from 2 Year High": "-44.14 %",
+              "Down from 3 Year High": "-44.14 %",
+              "Down from 5 Year High": "-44.14 %"
+            },
+            {
+              "Symbol": "AHPC",
+              "LTP": "281",
+              "1 Month High": "315.00 2026-03-29",
+              "3 Month High": "267.90 2026-02-04",
+              "6 Month High": "323.30 2026-03-19",
+              "1 Year High": "334.00 2025-07-27",
+              "2 Year High": "349.00 2024-08-25",
+              "3 Year High": "349.00 2024-08-25",
+              "5 Year High": "785.002021-08-29",
+              "Down from 1 Months High": "-10.79 %",
+              "Down from 3 Months High": "4.89 %",
+              "Down from 6 Months High": "9.34 %",
+              "Down from 1 Year High": "-15.87 %",
+              "Down from 2 Year High": "-19.48 %",
+              "Down from 3 Year High": "-19.48 %",
+              "Down from 5 Year High": "-64.20 %"
+            },
+            {
+              "Symbol": "AKJCL",
+              "LTP": "384.9",
+              "1 Month High": "420.10 2026-03-29",
+              "3 Month High": "321.00 2026-01-29",
+              "6 Month High": "431.80 2026-03-19",
+              "1 Year High": "431.80 2026-03-19",
+              "2 Year High": "431.80 2026-03-19",
+              "3 Year High": "431.80 2026-03-19",
+              "5 Year High": "502.002021-08-19",
+              "Down from 1 Months High": "-8.38 %",
+              "Down from 3 Months High": "19.91 %",
+              "Down from 6 Months High": "104.84 %",
+              "Down from 1 Year High": "-10.86 %",
+              "Down from 2 Year High": "-10.86 %",
+              "Down from 3 Year High": "-10.86 %",
+              "Down from 5 Year High": "-23.33 %"
+            },
+            {
+              "Symbol": "AKPL",
+              "LTP": "272",
+              "1 Month High": "305.00 2026-03-29",
+              "3 Month High": "277.00 2026-04-06",
+              "6 Month High": "317.00 2026-03-19",
+              "1 Year High": "317.00 2026-03-19",
+              "2 Year High": "384.90 2023-04-30",
+              "3 Year High": "384.90 2023-04-30",
+              "5 Year High": "882.402021-08-19",
+              "Down from 1 Months High": "-10.82 %",
+              "Down from 3 Months High": "-1.81 %",
+              "Down from 6 Months High": "11.57 %",
+              "Down from 1 Year High": "-14.20 %",
+              "Down from 2 Year High": "-29.33 %",
+              "Down from 3 Year High": "-29.33 %",
+              "Down from 5 Year High": "-69.17 %"
+            },
+            {
+              "Symbol": "ALBSL",
+              "LTP": "1124",
+              "1 Month High": "1,326.00 2026-03-29",
+              "3 Month High": "1,080.00 2026-02-24",
+              "6 Month High": "1,334.00 2026-03-24",
+              "1 Year High": "1,334.00 2026-03-24",
+              "2 Year High": "1,334.00 2026-03-24",
+              "3 Year High": "1,334.00 2026-03-24",
+              "5 Year High": "2,101.202021-08-03",
+              "Down from 1 Months High": "-15.23 %",
+              "Down from 3 Months High": "4.07 %",
+              "Down from 6 Months High": "14.69 %",
+              "Down from 1 Year High": "-15.74 %",
+              "Down from 2 Year High": "-15.74 %",
+              "Down from 3 Year High": "-15.74 %",
+              "Down from 5 Year High": "-46.51 %"
+            },
+            {
+              "Symbol": "ALICL",
+              "LTP": "454.5",
+              "1 Month High": "495.00 2026-03-29",
+              "3 Month High": "441.00 2026-02-24",
+              "6 Month High": "505.00 2026-03-22",
+              "1 Year High": "759.00 2025-05-21",
+              "2 Year High": "831.00 2025-03-03",
+              "3 Year High": "831.00 2025-03-03",
+              "5 Year High": "1,565.002021-05-31",
+              "Down from 1 Months High": "-8.18 %",
+              "Down from 3 Months High": "3.06 %",
+              "Down from 6 Months High": "3.06 %",
+              "Down from 1 Year High": "-40.12 %",
+              "Down from 2 Year High": "-45.31 %",
+              "Down from 3 Year High": "-45.31 %",
+              "Down from 5 Year High": "-70.96 %"
+            },
+            {
+              "Symbol": "ANLB",
+              "LTP": "6251",
+              "1 Month High": "6,989.00 2026-04-16",
+              "3 Month High": "6,128.60 2026-04-09",
+              "6 Month High": "6,989.00 2026-04-16",
+              "1 Year High": "6,989.00 2026-04-16",
+              "2 Year High": "6,989.00 2026-04-16",
+              "3 Year High": "6,989.00 2026-04-16",
+              "5 Year High": "6,989.002026-04-16",
+              "Down from 1 Months High": "-10.56 %",
+              "Down from 3 Months High": "2.00 %",
+              "Down from 6 Months High": "2.00 %",
+              "Down from 1 Year High": "-10.56 %",
+              "Down from 2 Year High": "-10.56 %",
+              "Down from 3 Year High": "-10.56 %",
+              "Down from 5 Year High": "-10.56 %"
+            },
+            {
+              "Symbol": "API",
+              "LTP": "339.1",
+              "1 Month High": "366.00 2026-03-29",
+              "3 Month High": "299.00 2026-02-22",
+              "6 Month High": "368.90 2026-03-25",
+              "1 Year High": "368.90 2026-03-25",
+              "2 Year High": "390.00 2024-08-18",
+              "3 Year High": "390.00 2024-08-18",
+              "5 Year High": "670.002021-08-17",
+              "Down from 1 Months High": "-7.35 %",
+              "Down from 3 Months High": "13.41 %",
+              "Down from 6 Months High": "20.29 %",
+              "Down from 1 Year High": "-8.08 %",
+              "Down from 2 Year High": "-13.05 %",
+              "Down from 3 Year High": "-13.05 %",
+              "Down from 5 Year High": "-49.39 %"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Floorsheet Analytics | Today Live Floorsheet",
+      "url": "https://nepsealpha.com/sastoshare/floorsheet/today",
+      "tables": [
+        {
+          "tableIndex": 1,
+          "headers": [],
+          "rows": [
+            {
+              "Col_0": "1",
+              "Col_1": "2026042904006108",
+              "Col_2": "CHL",
+              "Col_3": "-",
+              "Col_4": "-",
+              "Col_5": "26",
+              "Col_6": "287.10",
+              "Col_7": "7,464.60"
+            },
+            {
+              "Col_0": "2",
+              "Col_1": "2026042904006109",
+              "Col_2": "CHL",
+              "Col_3": "-",
+              "Col_4": "-",
+              "Col_5": "100",
+              "Col_6": "287.10",
+              "Col_7": "28,710.00"
+            },
+            {
+              "Col_0": "3",
+              "Col_1": "2026042904006110",
+              "Col_2": "CHL",
+              "Col_3": "-",
+              "Col_4": "-",
+              "Col_5": "124",
+              "Col_6": "287.00",
+              "Col_7": "35,588.00"
+            },
+            {
+              "Col_0": "4",
+              "Col_1": "2026042901046216",
+              "Col_2": "SIPD",
+              "Col_3": "-",
+              "Col_4": "-",
+              "Col_5": "10",
+              "Col_6": "905.00",
+              "Col_7": "9,050.00"
+            },
+            {
+              "Col_0": "5",
+              "Col_1": "2026042905007371",
+              "Col_2": "DOLTI",
+              "Col_3": "-",
+              "Col_4": "-",
+              "Col_5": "300",
+              "Col_6": "365.20",
+              "Col_7": "109,560.00"
+            },
+            {
+              "Col_0": "6",
+              "Col_1": "2026042905007372",
+              "Col_2": "DOLTI",
+              "Col_3": "-",
+              "Col_4": "-",
+              "Col_5": "219",
+              "Col_6": "365.10",
+              "Col_7": "79,956.90"
+            },
+            {
+              "Col_0": "7",
+              "Col_1": "2026042905007373",
+              "Col_2": "DOLTI",
+              "Col_3": "-",
+              "Col_4": "-",
+              "Col_5": "700",
+              "Col_6": "365.10",
+              "Col_7": "255,570.00"
+            },
+            {
+              "Col_0": "8",
+              "Col_1": "2026042905007374",
+              "Col_2": "DOLTI",
+              "Col_3": "-",
+              "Col_4": "-",
+              "Col_5": "10",
+              "Col_6": "365.10",
+              "Col_7": "3,651.00"
+            },
+            {
+              "Col_0": "9",
+              "Col_1": "2026042905007375",
+              "Col_2": "DOLTI",
+              "Col_3": "-",
+              "Col_4": "-",
+              "Col_5": "500",
+              "Col_6": "365.10",
+              "Col_7": "182,550.00"
+            },
+            {
+              "Col_0": "10",
+              "Col_1": "2026042905007376",
+              "Col_2": "DOLTI",
+              "Col_3": "-",
+              "Col_4": "-",
+              "Col_5": "20",
+              "Col_6": "365.00",
+              "Col_7": "7,300.00"
+            },
+            {
+              "Col_0": "11",
+              "Col_1": "2026042905007377",
+              "Col_2": "DOLTI",
+              "Col_3": "-",
+              "Col_4": "-",
+              "Col_5": "500",
+              "Col_6": "365.00",
+              "Col_7": "182,500.00"
+            },
+            {
+              "Col_0": "12",
+              "Col_1": "2026042905007378",
+              "Col_2": "DOLTI",
+              "Col_3": "-",
+              "Col_4": "-",
+              "Col_5": "50",
+              "Col_6": "365.00",
+              "Col_7": "18,250.00"
+            },
+            {
+              "Col_0": "13",
+              "Col_1": "2026042905007379",
+              "Col_2": "DOLTI",
+              "Col_3": "-",
+              "Col_4": "-",
+              "Col_5": "185",
+              "Col_6": "365.00",
+              "Col_7": "67,525.00"
+            },
+            {
+              "Col_0": "14",
+              "Col_1": "2026042904006111",
+              "Col_2": "RIDI",
+              "Col_3": "-",
+              "Col_4": "-",
+              "Col_5": "20",
+              "Col_6": "345.00",
+              "Col_7": "6,900.00"
+            },
+            {
+              "Col_0": "15",
+              "Col_1": "2026042901046217",
+              "Col_2": "SKHL",
+              "Col_3": "-",
+              "Col_4": "-",
+              "Col_5": "10",
+              "Col_6": "979.90",
+              "Col_7": "9,799.00"
+            },
+            {
+              "Col_0": "16",
+              "Col_1": "2026042901046218",
+              "Col_2": "SKHL",
+              "Col_3": "-",
+              "Col_4": "-",
+              "Col_5": "10",
+              "Col_6": "980.00",
+              "Col_7": "9,800.00"
+            },
+            {
+              "Col_0": "17",
+              "Col_1": "2026042901046219",
+              "Col_2": "SKHL",
+              "Col_3": "-",
+              "Col_4": "-",
+              "Col_5": "10",
+              "Col_6": "980.00",
+              "Col_7": "9,800.00"
+            },
+            {
+              "Col_0": "18",
+              "Col_1": "2026042901046220",
+              "Col_2": "SKHL",
+              "Col_3": "-",
+              "Col_4": "-",
+              "Col_5": "10",
+              "Col_6": "980.00",
+              "Col_7": "9,800.00"
+            },
+            {
+              "Col_0": "19",
+              "Col_1": "2026042901046221",
+              "Col_2": "SKHL",
+              "Col_3": "-",
+              "Col_4": "-",
+              "Col_5": "10",
+              "Col_6": "980.00",
+              "Col_7": "9,800.00"
+            },
+            {
+              "Col_0": "20",
+              "Col_1": "2026042901046222",
+              "Col_2": "SKHL",
+              "Col_3": "-",
+              "Col_4": "-",
+              "Col_5": "10",
+              "Col_6": "980.00",
+              "Col_7": "9,800.00"
             }
           ]
         }
@@ -3402,6 +3823,1193 @@
               "Sales Amount": "143,718,545.00",
               "Turnover": "276,429,585.00",
               "Turnover Vs Market": "4.23 %"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Alpha Folio",
+      "url": "https://nepsealpha.com/sastoshare/portfolio/me",
+      "tables": [
+        {
+          "tableIndex": 1,
+          "headers": [
+            "Unrealized\nGain",
+            "Realized\nGain"
+          ],
+          "rows": [
+            {},
+            {
+              "Unrealized\nGain": "1.97%\nNPR 9,650.79",
+              "Realized\nGain": "NPR 16,614.37"
+            }
+          ]
+        },
+        {
+          "tableIndex": 2,
+          "headers": [
+            "Commission",
+            "SEBON Fees",
+            "DP Charges",
+            "CGT",
+            "Total"
+          ],
+          "rows": [
+            {
+              "Commission": "NPR. 3,258.58",
+              "SEBON Fees": "NPR. 139.94",
+              "DP Charges": "NPR. 750.00",
+              "CGT": "NPR. 1,212.84",
+              "Total": "NPR. 5,361.36"
+            }
+          ]
+        },
+        {
+          "tableIndex": 3,
+          "headers": [],
+          "rows": [
+            {
+              "Col_0": "Top Holding LBBL NPR 120,525.00",
+              "Col_1": "Least Holding IHL NPR 20,760.00"
+            },
+            {
+              "Col_0": "Top Investment KSBBL 21.7% Gain",
+              "Col_1": "Top Underperformer IHL -21% Gain"
+            },
+            {
+              "Col_0": "Top Net Profit LBBL NPR 20,295.00",
+              "Col_1": "Top Net Loser PHCL NPR -8,380.00"
+            },
+            {
+              "Col_0": "Low Volatile Stock NTC",
+              "Col_1": "High Volatile Stock All Low Volatile"
+            },
+            {
+              "Col_0": "Most Liquid Stock SSHL",
+              "Col_1": "Least Liquid Stock IHL"
+            },
+            {
+              "Col_0": "Top Trending in Price SSHL",
+              "Col_1": "Portfolio Laggard in Price Trend IHL"
+            }
+          ]
+        },
+        {
+          "tableIndex": 4,
+          "headers": [
+            "S.N",
+            "Holding",
+            "1 Month",
+            "Daily Gain",
+            "Qty",
+            "Purch Price",
+            "LTP",
+            "Purch Value",
+            "Market Value",
+            "Total Profit",
+            "Unrealized",
+            "Breakeven(%)"
+          ],
+          "rows": [
+            {
+              "S.N": "1",
+              "Holding": "SSHL",
+              "1 Month": "Chart\nChart with 21 data points.\nThe chart has 1 X axis displaying values. Data ranges from 1 to 21.\nThe chart has 1 Y axis displaying values. Data ranges from 199 to 235.2.\nEnd of interactive chart.",
+              "Daily Gain": "-0.47%",
+              "Qty": "100",
+              "Purch Price": "236.23",
+              "LTP": "214.00",
+              "Purch Value": "23,623.00",
+              "Market Value": "21,400.00",
+              "Total Profit": "NPR -2,223.00",
+              "Unrealized": "-9.41%",
+              "Breakeven(%)": "10.39%"
+            },
+            {
+              "S.N": "2",
+              "Holding": "PHCL",
+              "1 Month": "Chart\nChart with 21 data points.\nThe chart has 1 X axis displaying values. Data ranges from 1 to 21.\nThe chart has 1 Y axis displaying values. Data ranges from 292 to 326.3.\nEnd of interactive chart.",
+              "Daily Gain": "-0.33%",
+              "Qty": "265",
+              "Purch Price": "335.62",
+              "LTP": "304.00",
+              "Purch Value": "88,939.30",
+              "Market Value": "80,560.00",
+              "Total Profit": "NPR -8,380.00",
+              "Unrealized": "-9.42%",
+              "Breakeven(%)": "10.40%"
+            },
+            {
+              "S.N": "3",
+              "Holding": "RLFL",
+              "1 Month": "Chart\nChart with 21 data points.\nThe chart has 1 X axis displaying values. Data ranges from 1 to 21.\nThe chart has 1 Y axis displaying values. Data ranges from 425 to 472.9.\nEnd of interactive chart.",
+              "Daily Gain": "-3.67%",
+              "Qty": "50",
+              "Purch Price": "502.48",
+              "LTP": "417.10",
+              "Purch Value": "25,124.00",
+              "Market Value": "20,855.00",
+              "Total Profit": "NPR -4,269.00",
+              "Unrealized": "-16.99%",
+              "Breakeven(%)": "20.47%"
+            },
+            {
+              "S.N": "4",
+              "Holding": "LBBL",
+              "1 Month": "Chart\nChart with 21 data points.\nThe chart has 1 X axis displaying values. Data ranges from 1 to 21.\nThe chart has 1 Y axis displaying values. Data ranges from 467 to 504.9.\nEnd of interactive chart.",
+              "Daily Gain": "-1.01%",
+              "Qty": "250",
+              "Purch Price": "400.92",
+              "LTP": "482.10",
+              "Purch Value": "100,230.00",
+              "Market Value": "120,525.00",
+              "Total Profit": "NPR 20,295.00",
+              "Unrealized": "20.25%",
+              "Breakeven(%)": "In Profit"
+            },
+            {
+              "S.N": "5",
+              "Holding": "JFL",
+              "1 Month": "Chart\nChart with 21 data points.\nThe chart has 1 X axis displaying values. Data ranges from 1 to 21.\nThe chart has 1 Y axis displaying values. Data ranges from 406.2 to 444.\nEnd of interactive chart.",
+              "Daily Gain": "-0.96%",
+              "Qty": "100",
+              "Purch Price": "462.98",
+              "LTP": "413.00",
+              "Purch Value": "46,298.00",
+              "Market Value": "41,300.00",
+              "Total Profit": "NPR -4,998.00",
+              "Unrealized": "-10.8%",
+              "Breakeven(%)": "12.10%"
+            },
+            {
+              "S.N": "6",
+              "Holding": "NTC",
+              "1 Month": "Chart\nChart with 21 data points.\nThe chart has 1 X axis displaying values. Data ranges from 1 to 21.\nThe chart has 1 Y axis displaying values. Data ranges from 858.5 to 883.\nEnd of interactive chart.",
+              "Daily Gain": "0.00%",
+              "Qty": "50",
+              "Purch Price": "909.90",
+              "LTP": "876.00",
+              "Purch Value": "45,495.00",
+              "Market Value": "43,800.00",
+              "Total Profit": "NPR -1,695.00",
+              "Unrealized": "-3.73%",
+              "Breakeven(%)": "3.87%"
+            },
+            {
+              "S.N": "7",
+              "Holding": "KSBBL",
+              "1 Month": "Chart\nChart with 21 data points.\nThe chart has 1 X axis displaying values. Data ranges from 1 to 21.\nThe chart has 1 Y axis displaying values. Data ranges from 460 to 494.6.\nEnd of interactive chart.",
+              "Daily Gain": "-1.04%",
+              "Qty": "117",
+              "Purch Price": "390.29",
+              "LTP": "475.00",
+              "Purch Value": "45,663.93",
+              "Market Value": "55,575.00",
+              "Total Profit": "NPR 9,911.00",
+              "Unrealized": "21.7%",
+              "Breakeven(%)": "In Profit"
+            },
+            {
+              "S.N": "8",
+              "Holding": "SHIVM",
+              "1 Month": "Chart\nChart with 21 data points.\nThe chart has 1 X axis displaying values. Data ranges from 1 to 21.\nThe chart has 1 Y axis displaying values. Data ranges from 646 to 708.\nEnd of interactive chart.",
+              "Daily Gain": "-0.68%",
+              "Qty": "82",
+              "Purch Price": "603.84",
+              "LTP": "661.50",
+              "Purch Value": "49,514.88",
+              "Market Value": "54,243.00",
+              "Total Profit": "NPR 4,728.00",
+              "Unrealized": "9.55%",
+              "Breakeven(%)": "In Profit"
+            },
+            {
+              "S.N": "9",
+              "Holding": "IHL",
+              "1 Month": "Chart\nChart with 21 data points.\nThe chart has 1 X axis displaying values. Data ranges from 1 to 21.\nThe chart has 1 Y axis displaying values. Data ranges from 426.1 to 507.9.\nEnd of interactive chart.",
+              "Daily Gain": "-2.56%",
+              "Qty": "50",
+              "Purch Price": "525.56",
+              "LTP": "415.20",
+              "Purch Value": "26,278.00",
+              "Market Value": "20,760.00",
+              "Total Profit": "NPR -5,518.00",
+              "Unrealized": "-21%",
+              "Breakeven(%)": "26.58%"
+            },
+            {
+              "S.N": "10",
+              "Holding": "NBL",
+              "1 Month": "Chart\nChart with 21 data points.\nThe chart has 1 X axis displaying values. Data ranges from 1 to 21.\nThe chart has 1 Y axis displaying values. Data ranges from 257 to 285.\nEnd of interactive chart.",
+              "Daily Gain": "-1.47%",
+              "Qty": "150",
+              "Purch Price": "256.00",
+              "LTP": "268.00",
+              "Purch Value": "38,400.00",
+              "Market Value": "40,200.00",
+              "Total Profit": "NPR 1,799.00",
+              "Unrealized": "4.69%",
+              "Breakeven(%)": "In Profit"
+            }
+          ]
+        },
+        {
+          "tableIndex": 5,
+          "headers": [
+            "Action",
+            "Symbol",
+            "Date",
+            "Type",
+            "Quantity",
+            "Purchase Price",
+            "SEBON Fees",
+            "Commission",
+            "DP Charge",
+            "Amount Paid",
+            "Effective Rate"
+          ],
+          "rows": [
+            {
+              "Action": "",
+              "Symbol": "SSHL",
+              "Date": "2026-03-29  १५ चैत्र २०८२",
+              "Type": "Secondary",
+              "Quantity": "100",
+              "Purchase Price": "235.10",
+              "SEBON Fees": "3.53",
+              "Commission": "84.64",
+              "DP Charge": "25.00",
+              "Amount Paid": "23,623.16",
+              "Effective Rate": "236.23"
+            },
+            {
+              "Action": "",
+              "Symbol": "PHCL",
+              "Date": "2026-03-26  १२ चैत्र २०८२",
+              "Type": "Secondary",
+              "Quantity": "165",
+              "Purchase Price": "341.00",
+              "SEBON Fees": "8.44",
+              "Commission": "185.67",
+              "DP Charge": "25.00",
+              "Amount Paid": "56,484.11",
+              "Effective Rate": "342.33"
+            },
+            {
+              "Action": "",
+              "Symbol": "RLFL",
+              "Date": "2026-03-25  ११ चैत्र २०८२",
+              "Type": "Secondary",
+              "Quantity": "50",
+              "Purchase Price": "500.10",
+              "SEBON Fees": "3.75",
+              "Commission": "90.02",
+              "DP Charge": "25.00",
+              "Amount Paid": "25,123.77",
+              "Effective Rate": "502.48"
+            },
+            {
+              "Action": "",
+              "Symbol": "JFL",
+              "Date": "2026-03-23  ९ चैत्र २०८२",
+              "Type": "Secondary",
+              "Quantity": "100",
+              "Purchase Price": "461.00",
+              "SEBON Fees": "6.92",
+              "Commission": "165.96",
+              "DP Charge": "25.00",
+              "Amount Paid": "46,297.88",
+              "Effective Rate": "462.98"
+            },
+            {
+              "Action": "",
+              "Symbol": "NTC",
+              "Date": "2026-03-23  ९ चैत्र २०८२",
+              "Type": "Secondary",
+              "Quantity": "50",
+              "Purchase Price": "906.00",
+              "SEBON Fees": "6.79",
+              "Commission": "163.08",
+              "DP Charge": "25.00",
+              "Amount Paid": "45,494.88",
+              "Effective Rate": "909.90"
+            },
+            {
+              "Action": "",
+              "Symbol": "CITY",
+              "Date": "2026-03-19  ५ चैत्र २०८२",
+              "Type": "Right",
+              "Quantity": "3",
+              "Purchase Price": "100.00",
+              "SEBON Fees": "0.00",
+              "Commission": "0.00",
+              "DP Charge": "0.00",
+              "Amount Paid": "300.00",
+              "Effective Rate": "100.00"
+            },
+            {
+              "Action": "",
+              "Symbol": "SICL",
+              "Date": "2026-03-19  ५ चैत्र २०८२",
+              "Type": "Bonus",
+              "Quantity": "5",
+              "Purchase Price": "100.00",
+              "SEBON Fees": "0.00",
+              "Commission": "0.00",
+              "DP Charge": "0.00",
+              "Amount Paid": "0.00",
+              "Effective Rate": "100.00"
+            },
+            {
+              "Action": "",
+              "Symbol": "KSBBL",
+              "Date": "2026-03-19  ५ चैत्र २०८२",
+              "Type": "Bonus",
+              "Quantity": "17",
+              "Purchase Price": "100.00",
+              "SEBON Fees": "0.00",
+              "Commission": "0.00",
+              "DP Charge": "0.00",
+              "Amount Paid": "0.00",
+              "Effective Rate": "100.00"
+            },
+            {
+              "Action": "",
+              "Symbol": "LBBL",
+              "Date": "2026-03-19  ५ चैत्र २०८२",
+              "Type": "Bonus",
+              "Quantity": "8",
+              "Purchase Price": "100.00",
+              "SEBON Fees": "0.00",
+              "Commission": "0.00",
+              "DP Charge": "0.00",
+              "Amount Paid": "0.00",
+              "Effective Rate": "100.00"
+            },
+            {
+              "Action": "",
+              "Symbol": "IHL",
+              "Date": "2026-03-19  ५ चैत्र २०८२",
+              "Type": "Secondary",
+              "Quantity": "50",
+              "Purchase Price": "523.10",
+              "SEBON Fees": "3.92",
+              "Commission": "94.16",
+              "DP Charge": "25.00",
+              "Amount Paid": "26,278.08",
+              "Effective Rate": "525.56"
+            }
+          ]
+        },
+        {
+          "tableIndex": 6,
+          "headers": [
+            "Action",
+            "Symbol",
+            "Date",
+            "Type",
+            "Quantity",
+            "Sell Amount",
+            "Sell Price",
+            "Commission",
+            "SEBON Fees",
+            "DP Charge",
+            "CGT",
+            "Net Received",
+            "Profit Amount"
+          ],
+          "rows": [
+            {
+              "Action": "",
+              "Symbol": "HHL",
+              "Date": "2026-03-26  १२ चैत्र २०८२",
+              "Type": "Secondary",
+              "Quantity": "150",
+              "Sell Amount": "57,000.00",
+              "Sell Price": "380.00",
+              "Commission": "188.02",
+              "SEBON Fees": "8.55",
+              "DP Charge": "25.00",
+              "CGT": "79.65",
+              "Net Received": "56,698.79",
+              "Profit Amount": "982.31"
+            },
+            {
+              "Action": "",
+              "Symbol": "CITY",
+              "Date": "2026-03-23  ९ चैत्र २०८२",
+              "Type": "Secondary",
+              "Quantity": "6",
+              "Sell Amount": "3,060.00",
+              "Sell Price": "510.00",
+              "Commission": "10.93",
+              "SEBON Fees": "0.46",
+              "DP Charge": "25.00",
+              "CGT": "24.46",
+              "Net Received": "2,999.15",
+              "Profit Amount": "464.82"
+            },
+            {
+              "Action": "",
+              "Symbol": "SICL",
+              "Date": "2026-03-23  ९ चैत्र २०८२",
+              "Type": "Secondary",
+              "Quantity": "55",
+              "Sell Amount": "37,290.00",
+              "Sell Price": "678.00",
+              "Commission": "134.15",
+              "SEBON Fees": "5.59",
+              "DP Charge": "25.00",
+              "CGT": "0.00",
+              "Net Received": "37,125.26",
+              "Profit Amount": "-36.62"
+            },
+            {
+              "Action": "",
+              "Symbol": "LBBL",
+              "Date": "2026-03-23  ९ चैत्र २०८२",
+              "Type": "Secondary",
+              "Quantity": "49",
+              "Sell Amount": "25,431.00",
+              "Sell Price": "519.00",
+              "Commission": "91.46",
+              "SEBON Fees": "3.81",
+              "DP Charge": "25.00",
+              "CGT": "283.28",
+              "Net Received": "25,027.44",
+              "Profit Amount": "5,382.40"
+            },
+            {
+              "Action": "",
+              "Symbol": "EBL",
+              "Date": "2026-03-19  ५ चैत्र २०८२",
+              "Type": "Secondary",
+              "Quantity": "5",
+              "Sell Amount": "3,566.00",
+              "Sell Price": "713.20",
+              "Commission": "12.75",
+              "SEBON Fees": "0.53",
+              "DP Charge": "25.00",
+              "CGT": "151.39",
+              "Net Received": "3,376.34",
+              "Profit Amount": "2,876.34"
+            },
+            {
+              "Action": "",
+              "Symbol": "SHIVM",
+              "Date": "2026-03-19  ५ चैत्र २०८२",
+              "Type": "Secondary",
+              "Quantity": "48",
+              "Sell Amount": "29,663.52",
+              "Sell Price": "617.99",
+              "Commission": "106.70",
+              "SEBON Fees": "4.45",
+              "DP Charge": "25.00",
+              "CGT": "40.74",
+              "Net Received": "29,486.63",
+              "Profit Amount": "502.47"
+            },
+            {
+              "Action": "",
+              "Symbol": "LBBL",
+              "Date": "2024-09-05  २० भाद्र २०८१",
+              "Type": "Secondary",
+              "Quantity": "19",
+              "Sell Amount": "9,652.00",
+              "Sell Price": "508.00",
+              "Commission": "34.66",
+              "SEBON Fees": "1.44",
+              "DP Charge": "25.00",
+              "CGT": "136.22",
+              "Net Received": "9,454.68",
+              "Profit Amount": "1,680.03"
+            },
+            {
+              "Action": "",
+              "Symbol": "SHIVM",
+              "Date": "2024-09-05  २० भाद्र २०८१",
+              "Type": "Secondary",
+              "Quantity": "50",
+              "Sell Amount": "30,770.00",
+              "Sell Price": "615.40",
+              "Commission": "110.68",
+              "SEBON Fees": "4.61",
+              "DP Charge": "25.00",
+              "CGT": "32.84",
+              "Net Received": "30,596.87",
+              "Profit Amount": "405.03"
+            },
+            {
+              "Action": "",
+              "Symbol": "LBBL",
+              "Date": "2024-08-15  ३१ श्रावण २०८१",
+              "Type": "Secondary",
+              "Quantity": "50",
+              "Sell Amount": "26,775.00",
+              "Sell Price": "535.50",
+              "Commission": "96.30",
+              "SEBON Fees": "4.01",
+              "DP Charge": "25.00",
+              "CGT": "464.26",
+              "Net Received": "26,185.43",
+              "Profit Amount": "5,725.84"
+            },
+            {
+              "Action": "",
+              "Symbol": "NBL",
+              "Date": "2024-07-30  १५ श्रावण २०८१",
+              "Type": "Secondary",
+              "Quantity": "50",
+              "Sell Amount": "11,500.00",
+              "Sell Price": "230.00",
+              "Commission": "41.31",
+              "SEBON Fees": "1.72",
+              "DP Charge": "25.00",
+              "CGT": "0.00",
+              "Net Received": "11,431.97",
+              "Profit Amount": "-1,368.27"
+            }
+          ]
+        },
+        {
+          "tableIndex": 8,
+          "headers": [
+            "Symbol",
+            "Alpha 30",
+            "Sector Rotation",
+            "Momentum",
+            "Value Rank",
+            "Growth Rank",
+            "Size"
+          ],
+          "rows": [
+            {
+              "Symbol": "NBL",
+              "Alpha 30": "",
+              "Sector Rotation": "",
+              "Momentum": "A",
+              "Value Rank": "A",
+              "Growth Rank": "C",
+              "Size": "High Cap"
+            },
+            {
+              "Symbol": "KSBBL",
+              "Alpha 30": "",
+              "Sector Rotation": "",
+              "Momentum": "A",
+              "Value Rank": "A",
+              "Growth Rank": "A",
+              "Size": "High Cap"
+            },
+            {
+              "Symbol": "LBBL",
+              "Alpha 30": "",
+              "Sector Rotation": "",
+              "Momentum": "B",
+              "Value Rank": "B",
+              "Growth Rank": "C",
+              "Size": "Mid Cap"
+            },
+            {
+              "Symbol": "JFL",
+              "Alpha 30": "",
+              "Sector Rotation": "",
+              "Momentum": "C",
+              "Value Rank": "B",
+              "Growth Rank": "C",
+              "Size": "Low Cap"
+            },
+            {
+              "Symbol": "RLFL",
+              "Alpha 30": "",
+              "Sector Rotation": "",
+              "Momentum": "C",
+              "Value Rank": "A",
+              "Growth Rank": "C",
+              "Size": "Mid Cap"
+            },
+            {
+              "Symbol": "SSHL",
+              "Alpha 30": "",
+              "Sector Rotation": "",
+              "Momentum": "A",
+              "Value Rank": "B",
+              "Growth Rank": "C",
+              "Size": "Mid Cap"
+            },
+            {
+              "Symbol": "SHIVM",
+              "Alpha 30": "",
+              "Sector Rotation": "",
+              "Momentum": "A",
+              "Value Rank": "A",
+              "Growth Rank": "A",
+              "Size": "High Cap"
+            },
+            {
+              "Symbol": "NTC",
+              "Alpha 30": "",
+              "Sector Rotation": "",
+              "Momentum": "A",
+              "Value Rank": "A",
+              "Growth Rank": "C",
+              "Size": "High Cap"
+            },
+            {
+              "Symbol": "PHCL",
+              "Alpha 30": "",
+              "Sector Rotation": "",
+              "Momentum": "A",
+              "Value Rank": "C",
+              "Growth Rank": "C",
+              "Size": "Mid Cap"
+            },
+            {
+              "Symbol": "IHL",
+              "Alpha 30": "",
+              "Sector Rotation": "",
+              "Momentum": "C",
+              "Value Rank": "B",
+              "Growth Rank": "C",
+              "Size": "Low Cap"
+            }
+          ]
+        },
+        {
+          "tableIndex": 9,
+          "headers": [
+            "Date",
+            "Symbol",
+            "Buy Amount",
+            "Sell Amount",
+            "Balance"
+          ],
+          "rows": [
+            {
+              "Date": "2024-07-24 23:04:22",
+              "Symbol": "SICL",
+              "Buy Amount": "NPR -36,661.88",
+              "Sell Amount": "NPR 0.00",
+              "Balance": "NPR -36,661.88"
+            },
+            {
+              "Date": "2024-07-24 23:07:14",
+              "Symbol": "SHIVM",
+              "Buy Amount": "NPR -40,897.70",
+              "Sell Amount": "NPR 0.00",
+              "Balance": "NPR -77,559.57"
+            },
+            {
+              "Date": "2024-07-24 23:08:11",
+              "Symbol": "LBBL",
+              "Buy Amount": "NPR -121,186.57",
+              "Sell Amount": "NPR 0.00",
+              "Balance": "NPR -198,746.15"
+            },
+            {
+              "Date": "2024-07-24 23:09:34",
+              "Symbol": "NBL",
+              "Buy Amount": "NPR -51,200.95",
+              "Sell Amount": "NPR 0.00",
+              "Balance": "NPR -249,947.10"
+            },
+            {
+              "Date": "2024-07-24 23:10:42",
+              "Symbol": "KSBBL",
+              "Buy Amount": "NPR -17,590.63",
+              "Sell Amount": "NPR 0.00",
+              "Balance": "NPR -267,537.72"
+            },
+            {
+              "Date": "2024-07-24 23:11:29",
+              "Symbol": "EBL",
+              "Buy Amount": "NPR 0.00",
+              "Sell Amount": "NPR 0.00",
+              "Balance": "NPR -267,537.72"
+            },
+            {
+              "Date": "2024-07-24 23:12:10",
+              "Symbol": "CITY",
+              "Buy Amount": "NPR -2,234.33",
+              "Sell Amount": "NPR 0.00",
+              "Balance": "NPR -269,772.05"
+            },
+            {
+              "Date": "2024-07-30 17:37:38",
+              "Symbol": "NBL",
+              "Buy Amount": "NPR 0.00",
+              "Sell Amount": "NPR 11,431.97",
+              "Balance": "NPR -258,340.08"
+            },
+            {
+              "Date": "2024-08-06 13:49:08",
+              "Symbol": "SHIVM",
+              "Buy Amount": "NPR -12,431.35",
+              "Sell Amount": "NPR 0.00",
+              "Balance": "NPR -270,771.43"
+            },
+            {
+              "Date": "2024-08-06 14:44:27",
+              "Symbol": "SHIVM",
+              "Buy Amount": "NPR -7,101.44",
+              "Sell Amount": "NPR 0.00",
+              "Balance": "NPR -277,872.87"
+            },
+            {
+              "Date": "2024-08-06 14:54:33",
+              "Symbol": "SHIVM",
+              "Buy Amount": "NPR -12,391.20",
+              "Sell Amount": "NPR 0.00",
+              "Balance": "NPR -290,264.07"
+            },
+            {
+              "Date": "2024-08-13 18:12:34",
+              "Symbol": "SHIVM",
+              "Buy Amount": "NPR -35,868.91",
+              "Sell Amount": "NPR 0.00",
+              "Balance": "NPR -326,132.98"
+            },
+            {
+              "Date": "2024-08-13 18:14:10",
+              "Symbol": "LBBL",
+              "Buy Amount": "NPR -26,122.50",
+              "Sell Amount": "NPR 0.00",
+              "Balance": "NPR -352,255.48"
+            },
+            {
+              "Date": "2024-08-15 15:50:18",
+              "Symbol": "LBBL",
+              "Buy Amount": "NPR 0.00",
+              "Sell Amount": "NPR 26,185.43",
+              "Balance": "NPR -326,070.05"
+            },
+            {
+              "Date": "2024-08-21 13:11:35",
+              "Symbol": "KSBBL",
+              "Buy Amount": "NPR -26,373.44",
+              "Sell Amount": "NPR 0.00",
+              "Balance": "NPR -352,443.49"
+            },
+            {
+              "Date": "2024-09-05 08:00:00",
+              "Symbol": "LBBL",
+              "Buy Amount": "NPR 0.00",
+              "Sell Amount": "NPR 9,454.68",
+              "Balance": "NPR -342,988.81"
+            },
+            {
+              "Date": "2024-09-05 08:00:00",
+              "Symbol": "SHIVM",
+              "Buy Amount": "NPR 0.00",
+              "Sell Amount": "NPR 30,596.87",
+              "Balance": "NPR -312,391.94"
+            },
+            {
+              "Date": "2026-03-16 08:34:09",
+              "Symbol": "HHL",
+              "Buy Amount": "NPR -55,716.47",
+              "Sell Amount": "NPR 0.00",
+              "Balance": "NPR -368,108.42"
+            },
+            {
+              "Date": "2026-03-16 08:34:09",
+              "Symbol": "PHCL",
+              "Buy Amount": "NPR -32,456.16",
+              "Sell Amount": "NPR 0.00",
+              "Balance": "NPR -400,564.58"
+            },
+            {
+              "Date": "2026-03-19 20:44:14",
+              "Symbol": "IHL",
+              "Buy Amount": "NPR -26,278.08",
+              "Sell Amount": "NPR 0.00",
+              "Balance": "NPR -426,842.66"
+            },
+            {
+              "Date": "2026-03-19 20:49:20",
+              "Symbol": "LBBL",
+              "Buy Amount": "NPR 0.00",
+              "Sell Amount": "NPR 0.00",
+              "Balance": "NPR -426,842.66"
+            },
+            {
+              "Date": "2026-03-19 20:51:47",
+              "Symbol": "SHIVM",
+              "Buy Amount": "NPR 0.00",
+              "Sell Amount": "NPR 29,486.63",
+              "Balance": "NPR -397,356.03"
+            },
+            {
+              "Date": "2026-03-19 20:57:18",
+              "Symbol": "KSBBL",
+              "Buy Amount": "NPR 0.00",
+              "Sell Amount": "NPR 0.00",
+              "Balance": "NPR -397,356.03"
+            },
+            {
+              "Date": "2026-03-19 20:58:36",
+              "Symbol": "EBL",
+              "Buy Amount": "NPR 0.00",
+              "Sell Amount": "NPR 3,376.34",
+              "Balance": "NPR -393,979.69"
+            },
+            {
+              "Date": "2026-03-19 20:59:15",
+              "Symbol": "SICL",
+              "Buy Amount": "NPR 0.00",
+              "Sell Amount": "NPR 0.00",
+              "Balance": "NPR -393,979.69"
+            },
+            {
+              "Date": "2026-03-19 21:00:26",
+              "Symbol": "CITY",
+              "Buy Amount": "NPR -300.00",
+              "Sell Amount": "NPR 0.00",
+              "Balance": "NPR -394,279.69"
+            },
+            {
+              "Date": "2026-03-23 21:59:19",
+              "Symbol": "JFL",
+              "Buy Amount": "NPR -46,297.88",
+              "Sell Amount": "NPR 0.00",
+              "Balance": "NPR -440,577.57"
+            },
+            {
+              "Date": "2026-03-23 21:59:19",
+              "Symbol": "NTC",
+              "Buy Amount": "NPR -45,494.88",
+              "Sell Amount": "NPR 0.00",
+              "Balance": "NPR -486,072.44"
+            },
+            {
+              "Date": "2026-03-23 22:06:03",
+              "Symbol": "LBBL",
+              "Buy Amount": "NPR 0.00",
+              "Sell Amount": "NPR 25,027.44",
+              "Balance": "NPR -461,045.00"
+            },
+            {
+              "Date": "2026-03-23 22:06:34",
+              "Symbol": "SICL",
+              "Buy Amount": "NPR 0.00",
+              "Sell Amount": "NPR 37,125.26",
+              "Balance": "NPR -423,919.74"
+            }
+          ]
+        },
+        {
+          "tableIndex": 10,
+          "headers": [
+            "Date",
+            "Portfolio Value",
+            "Market Value",
+            "Current Investment",
+            "Daily Gain",
+            "Daily Gain %",
+            "Unrealized Gain",
+            "Unrealized Gain %"
+          ],
+          "rows": [
+            {
+              "Date": "4/28/2026",
+              "Portfolio Value": "NPR 504,102.00",
+              "Market Value": "NPR 504,102.00",
+              "Current Investment": "NPR 487,067.21",
+              "Daily Gain": "NPR -2,313.50",
+              "Daily Gain %": "-0.46%",
+              "Unrealized Gain": "NPR 14,534.79",
+              "Unrealized Gain %": "2.97%"
+            },
+            {
+              "Date": "4/27/2026",
+              "Portfolio Value": "NPR 506,415.50",
+              "Market Value": "NPR 506,415.50",
+              "Current Investment": "NPR 487,067.21",
+              "Daily Gain": "NPR 2,149.10",
+              "Daily Gain %": "0.43%",
+              "Unrealized Gain": "NPR 16,848.29",
+              "Unrealized Gain %": "3.44%"
+            },
+            {
+              "Date": "4/24/2026",
+              "Portfolio Value": "NPR 504,266.40",
+              "Market Value": "NPR 504,266.40",
+              "Current Investment": "NPR 487,067.21",
+              "Daily Gain": "NPR -2,193.10",
+              "Daily Gain %": "-0.43%",
+              "Unrealized Gain": "NPR 14,699.19",
+              "Unrealized Gain %": "3.00%"
+            },
+            {
+              "Date": "4/23/2026",
+              "Portfolio Value": "NPR 506,459.50",
+              "Market Value": "NPR 506,459.50",
+              "Current Investment": "NPR 487,067.21",
+              "Daily Gain": "NPR -4,873.50",
+              "Daily Gain %": "-0.95%",
+              "Unrealized Gain": "NPR 16,892.29",
+              "Unrealized Gain %": "3.45%"
+            },
+            {
+              "Date": "4/22/2026",
+              "Portfolio Value": "NPR 511,333.00",
+              "Market Value": "NPR 511,333.00",
+              "Current Investment": "NPR 487,067.21",
+              "Daily Gain": "NPR 3,176.70",
+              "Daily Gain %": "0.63%",
+              "Unrealized Gain": "NPR 21,765.79",
+              "Unrealized Gain %": "4.45%"
+            },
+            {
+              "Date": "4/21/2026",
+              "Portfolio Value": "NPR 508,156.30",
+              "Market Value": "NPR 508,156.30",
+              "Current Investment": "NPR 487,067.21",
+              "Daily Gain": "NPR -5,057.20",
+              "Daily Gain %": "-0.99%",
+              "Unrealized Gain": "NPR 18,589.09",
+              "Unrealized Gain %": "3.80%"
+            },
+            {
+              "Date": "4/20/2026",
+              "Portfolio Value": "NPR 513,213.50",
+              "Market Value": "NPR 513,213.50",
+              "Current Investment": "NPR 487,067.21",
+              "Daily Gain": "NPR -7,491.50",
+              "Daily Gain %": "-1.44%",
+              "Unrealized Gain": "NPR 23,646.29",
+              "Unrealized Gain %": "4.83%"
+            },
+            {
+              "Date": "4/17/2026",
+              "Portfolio Value": "NPR 520,705.00",
+              "Market Value": "NPR 520,705.00",
+              "Current Investment": "NPR 487,067.21",
+              "Daily Gain": "NPR -393.40",
+              "Daily Gain %": "-0.08%",
+              "Unrealized Gain": "NPR 31,137.79",
+              "Unrealized Gain %": "6.36%"
+            },
+            {
+              "Date": "4/16/2026",
+              "Portfolio Value": "NPR 521,098.40",
+              "Market Value": "NPR 521,098.40",
+              "Current Investment": "NPR 487,067.21",
+              "Daily Gain": "NPR -6,683.40",
+              "Daily Gain %": "-1.27%",
+              "Unrealized Gain": "NPR 31,531.19",
+              "Unrealized Gain %": "6.44%"
+            },
+            {
+              "Date": "4/15/2026",
+              "Portfolio Value": "NPR 527,781.80",
+              "Market Value": "NPR 527,781.80",
+              "Current Investment": "NPR 487,067.21",
+              "Daily Gain": "NPR 9,267.40",
+              "Daily Gain %": "1.79%",
+              "Unrealized Gain": "NPR 38,214.59",
+              "Unrealized Gain %": "7.81%"
+            },
+            {
+              "Date": "4/13/2026",
+              "Portfolio Value": "NPR 518,514.40",
+              "Market Value": "NPR 518,514.40",
+              "Current Investment": "NPR 487,067.21",
+              "Daily Gain": "NPR -1,870.60",
+              "Daily Gain %": "-0.36%",
+              "Unrealized Gain": "NPR 28,947.19",
+              "Unrealized Gain %": "5.91%"
+            },
+            {
+              "Date": "4/10/2026",
+              "Portfolio Value": "NPR 520,385.00",
+              "Market Value": "NPR 520,385.00",
+              "Current Investment": "NPR 487,067.21",
+              "Daily Gain": "NPR -5,089.70",
+              "Daily Gain %": "-0.97%",
+              "Unrealized Gain": "NPR 30,817.79",
+              "Unrealized Gain %": "6.29%"
+            },
+            {
+              "Date": "4/9/2026",
+              "Portfolio Value": "NPR 525,474.70",
+              "Market Value": "NPR 525,474.70",
+              "Current Investment": "NPR 487,067.21",
+              "Daily Gain": "NPR 5,535.50",
+              "Daily Gain %": "1.06%",
+              "Unrealized Gain": "NPR 35,907.49",
+              "Unrealized Gain %": "7.33%"
+            },
+            {
+              "Date": "4/8/2026",
+              "Portfolio Value": "NPR 519,939.20",
+              "Market Value": "NPR 519,939.20",
+              "Current Investment": "NPR 487,067.21",
+              "Daily Gain": "NPR 12,419.10",
+              "Daily Gain %": "2.45%",
+              "Unrealized Gain": "NPR 30,371.99",
+              "Unrealized Gain %": "6.20%"
+            },
+            {
+              "Date": "4/7/2026",
+              "Portfolio Value": "NPR 507,520.10",
+              "Market Value": "NPR 507,520.10",
+              "Current Investment": "NPR 487,067.21",
+              "Daily Gain": "NPR -3,455.90",
+              "Daily Gain %": "-0.68%",
+              "Unrealized Gain": "NPR 17,952.89",
+              "Unrealized Gain %": "3.67%"
+            },
+            {
+              "Date": "4/6/2026",
+              "Portfolio Value": "NPR 510,976.00",
+              "Market Value": "NPR 510,976.00",
+              "Current Investment": "NPR 487,067.21",
+              "Daily Gain": "NPR 23,809.00",
+              "Daily Gain %": "4.89%",
+              "Unrealized Gain": "NPR 21,408.79",
+              "Unrealized Gain %": "4.37%"
+            },
+            {
+              "Date": "4/5/2026",
+              "Portfolio Value": "NPR 487,167.00",
+              "Market Value": "NPR 487,167.00",
+              "Current Investment": "NPR 487,067.21",
+              "Daily Gain": "NPR -22,653.00",
+              "Daily Gain %": "-4.44%",
+              "Unrealized Gain": "NPR -2,400.21",
+              "Unrealized Gain %": "-0.49%"
+            },
+            {
+              "Date": "4/2/2026",
+              "Portfolio Value": "NPR 509,820.00",
+              "Market Value": "NPR 509,820.00",
+              "Current Investment": "NPR 487,067.21",
+              "Daily Gain": "NPR -89.70",
+              "Daily Gain %": "-0.02%",
+              "Unrealized Gain": "NPR 20,252.79",
+              "Unrealized Gain %": "4.14%"
+            },
+            {
+              "Date": "4/1/2026",
+              "Portfolio Value": "NPR 509,909.70",
+              "Market Value": "NPR 509,909.70",
+              "Current Investment": "NPR 487,067.21",
+              "Daily Gain": "NPR -16,555.30",
+              "Daily Gain %": "-3.14%",
+              "Unrealized Gain": "NPR 20,342.49",
+              "Unrealized Gain %": "4.16%"
+            },
+            {
+              "Date": "3/31/2026",
+              "Portfolio Value": "NPR 526,465.00",
+              "Market Value": "NPR 526,465.00",
+              "Current Investment": "NPR 487,067.21",
+              "Daily Gain": "NPR 5,598.50",
+              "Daily Gain %": "1.07%",
+              "Unrealized Gain": "NPR 36,897.79",
+              "Unrealized Gain %": "7.54%"
+            },
+            {
+              "Date": "3/30/2026",
+              "Portfolio Value": "NPR 520,866.50",
+              "Market Value": "NPR 520,866.50",
+              "Current Investment": "NPR 487,067.21",
+              "Daily Gain": "NPR -10,687.00",
+              "Daily Gain %": "-2.01%",
+              "Unrealized Gain": "NPR 31,299.29",
+              "Unrealized Gain %": "6.39%"
+            },
+            {
+              "Date": "3/29/2026",
+              "Portfolio Value": "NPR 531,553.50",
+              "Market Value": "NPR 531,553.50",
+              "Current Investment": "NPR 487,067.21",
+              "Daily Gain": "NPR -17,265.50",
+              "Daily Gain %": "-3.15%",
+              "Unrealized Gain": "NPR 41,986.29",
+              "Unrealized Gain %": "8.58%"
+            },
+            {
+              "Date": "3/26/2026",
+              "Portfolio Value": "NPR 524,429.00",
+              "Market Value": "NPR 524,429.00",
+              "Current Investment": "NPR 463,444.05",
+              "Daily Gain": "NPR 4,761.00",
+              "Daily Gain %": "0.92%",
+              "Unrealized Gain": "NPR 58,484.95",
+              "Unrealized Gain %": "12.55%"
+            },
+            {
+              "Date": "3/25/2026",
+              "Portfolio Value": "NPR 519,488.00",
+              "Market Value": "NPR 519,488.00",
+              "Current Investment": "NPR 462,676.41",
+              "Daily Gain": "NPR -11,891.00",
+              "Daily Gain %": "-2.24%",
+              "Unrealized Gain": "NPR 54,311.59",
+              "Unrealized Gain %": "11.68%"
+            },
+            {
+              "Date": "3/24/2026",
+              "Portfolio Value": "NPR 505,979.00",
+              "Market Value": "NPR 505,979.00",
+              "Current Investment": "NPR 437,552.64",
+              "Daily Gain": "NPR 5,355.00",
+              "Daily Gain %": "1.07%",
+              "Unrealized Gain": "NPR 65,926.36",
+              "Unrealized Gain %": "14.98%"
+            },
+            {
+              "Date": "3/23/2026",
+              "Portfolio Value": "NPR 475,180.60",
+              "Market Value": "NPR 475,180.60",
+              "Current Investment": "NPR 404,601.14",
+              "Daily Gain": "NPR 405.30",
+              "Daily Gain %": "0.09%",
+              "Unrealized Gain": "NPR 67,579.46",
+              "Unrealized Gain %": "16.58%"
+            },
+            {
+              "Date": "3/22/2026",
+              "Portfolio Value": "NPR 474,775.30",
+              "Market Value": "NPR 474,775.30",
+              "Current Investment": "NPR 404,601.14",
+              "Daily Gain": "NPR 6,061.40",
+              "Daily Gain %": "1.29%",
+              "Unrealized Gain": "NPR 67,174.16",
+              "Unrealized Gain %": "16.48%"
+            },
+            {
+              "Date": "3/19/2026",
+              "Portfolio Value": "NPR 471,117.90",
+              "Market Value": "NPR 471,117.90",
+              "Current Investment": "NPR 409,007.22",
+              "Daily Gain": "NPR 13,868.10",
+              "Daily Gain %": "3.03%",
+              "Unrealized Gain": "NPR 61,410.68",
+              "Unrealized Gain %": "14.99%"
+            },
+            {
+              "Date": "3/17/2026",
+              "Portfolio Value": "NPR 457,249.80",
+              "Market Value": "NPR 457,249.80",
+              "Current Investment": "NPR 409,007.22",
+              "Daily Gain": "NPR 1,249.40",
+              "Daily Gain %": "0.27%",
+              "Unrealized Gain": "NPR 47,542.58",
+              "Unrealized Gain %": "11.60%"
+            },
+            {
+              "Date": "3/16/2026",
+              "Portfolio Value": "NPR 456,000.40",
+              "Market Value": "NPR 456,000.40",
+              "Current Investment": "NPR 409,007.22",
+              "Daily Gain": "NPR -4,631.60",
+              "Daily Gain %": "-1.01%",
+              "Unrealized Gain": "NPR 46,293.18",
+              "Unrealized Gain %": "11.30%"
             }
           ]
         }

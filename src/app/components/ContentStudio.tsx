@@ -1,280 +1,342 @@
-import { useState, useEffect } from 'react'
-import { Lightbulb, Search, TrendingUp, Save, Copy, Trash2, Plus, MessageSquare, Send, Users, Sparkles, Brain } from 'lucide-react'
-import { collection, addDoc, deleteDoc, doc, onSnapshot, query, orderBy, Timestamp } from 'firebase/firestore'
-import { db, auth } from '../lib/firebase'
-import { callAI } from '../lib/ai'
-import aiDigestRaw from '../data/ai_digest.json'
-import { useToast } from '../AppShell'
+import React, { useState, useEffect } from 'react';
+import { 
+  Plus, Search, Youtube, TrendingUp, BookOpen, 
+  Save, Trash2, Calendar, FileText, Sparkles, 
+  ChevronRight, Layout, History, MessageSquare, 
+  PenTool, Clock, Trash, Copy
+} from 'lucide-react';
+import { useToast } from '../AppShell';
+import { callClaude } from '../lib/ai';
 
-const aiDigest = aiDigestRaw as {
-  linkedinIdeas: Array<{
-    topic: string;
-    title: string;
-    angle: string;
-    hook: string;
-    keyTakeaway: string;
-    bestTimeToPost: string;
-  }>
-};
-
-type Idea = {
+interface ContentIdea {
   id: string;
   title: string;
-  content: string;
-  type: string;
   date: string;
-  createdAt: any;
+  type: 'YouTube Ideas' | 'NEPSE Deep Dive' | 'Trending Topics';
+  topic: string;
+  content: string;
+  notes?: string;
 }
 
 export default function ContentStudio() {
-  const { showToast } = useToast()
-  const [activeTab, setActiveTab] = useState<'ai' | 'ideas' | 'digest'>('digest')
-  const [topic, setTopic] = useState('')
-  const [aiOutput, setAiOutput] = useState('')
-  const [loading, setLoading] = useState(false)
-  const [ideas, setIdeas] = useState<Idea[]>([])
-  const [newIdea, setNewIdea] = useState({ title: '', content: '' })
-  const [isAdding, setIsAdding] = useState(false)
+  const { showToast } = useToast();
+  const [ideas, setIdeas] = useState<ContentIdea[]>([]);
+  const [selectedId, setSelectedId] = useState<string | null>(null);
+  const [activeMode, setActiveMode] = useState<'research' | 'editor'>('research');
+  
+  // Research state
+  const [researchTopic, setResearchTopic] = useState('');
+  const [isResearching, setIsResearching] = useState(false);
+  const [researchResult, setResearchResult] = useState('');
+  
+  // Editor state
+  const [editingIdea, setEditingIdea] = useState<Partial<ContentIdea>>({
+    title: '',
+    content: '',
+    notes: ''
+  });
 
   useEffect(() => {
-    if (!auth.currentUser) return;
-
-    const q = query(
-      collection(db, `users/${auth.currentUser.uid}/ideas`),
-      orderBy('createdAt', 'desc')
-    );
-
-    const unsubscribe = onSnapshot(q, (snapshot) => {
-      const fetchedIdeas = snapshot.docs.map(doc => ({
-        id: doc.id,
-        ...doc.data()
-      })) as Idea[];
-      setIdeas(fetchedIdeas);
-    });
-
-    return () => unsubscribe();
+    const saved = localStorage.getItem('goxent_content_ideas');
+    if (saved) setIdeas(JSON.parse(saved));
   }, []);
 
-  const handleSaveAI = async () => {
-    if (!aiOutput || !auth.currentUser) return;
-    try {
-      await addDoc(collection(db, `users/${auth.currentUser.uid}/ideas`), {
-        title: topic || 'AI Research',
-        content: aiOutput,
-        type: 'AI',
-        date: new Date().toLocaleDateString(),
-        createdAt: Timestamp.now()
-      });
-      showToast("Saved to Idea Vault!", "success");
-    } catch (err) {
-      console.error(err);
-      showToast("Failed to save idea.", "error");
-    }
-  }
+  const saveToLocal = (updatedIdeas: ContentIdea[]) => {
+    localStorage.setItem('goxent_content_ideas', JSON.stringify(updatedIdeas));
+    setIdeas(updatedIdeas);
+  };
 
-  const handleSaveDigestIdea = async (idea: any) => {
-    if (!auth.currentUser) return;
-    try {
-      await addDoc(collection(db, `users/${auth.currentUser.uid}/ideas`), {
-        title: idea.title,
-        content: `Topic: ${idea.topic}\n\nHook: ${idea.hook}\n\nAngle: ${idea.angle}\n\nKey Takeaway: ${idea.keyTakeaway}\n\nBest Time: ${idea.bestTimeToPost}`,
-        type: 'LinkedIn',
-        date: new Date().toLocaleDateString(),
-        createdAt: Timestamp.now()
-      });
-      showToast("Added to Idea Vault!", "success");
-    } catch (err) {
-      console.error(err);
-      showToast("Failed to add idea.", "error");
-    }
-  }
-
-  const handleAddIdea = async () => {
-    if (!newIdea.title || !auth.currentUser) return;
-    try {
-      await addDoc(collection(db, `users/${auth.currentUser.uid}/ideas`), {
-        ...newIdea,
-        type: 'Manual',
-        date: new Date().toLocaleDateString(),
-        createdAt: Timestamp.now()
-      });
-      setNewIdea({ title: '', content: '' });
-      setIsAdding(false);
-    } catch (err) {
-      console.error(err);
-    }
-  }
-
-  const deleteIdea = async (id: string) => {
-    if (!auth.currentUser) return;
-    try {
-      await deleteDoc(doc(db, `users/${auth.currentUser.uid}/ideas`, id));
-    } catch (err) {
-      console.error(err);
-    }
-  }
-
-  const callClaude = async (promptType: string) => {
-    if (!topic && promptType !== 'trending') {
-      showToast("Please enter a topic or symbol first.", "warning")
-      return
+  const handleResearch = async (type: ContentIdea['type']) => {
+    if (!researchTopic) {
+      showToast("Please enter a research topic or stock symbol", "error");
+      return;
     }
 
-    setLoading(true)
+    setIsResearching(true);
+    setResearchResult('');
+    
     try {
-      const prompts: any = {
-        youtube: `Generate 3 high-retention YouTube video ideas for the topic: ${topic}. Include catchy titles and a brief script outline.`,
-        linkedin: `Write a viral LinkedIn post about ${topic}. Include a strong hook, value-driven body, and a CTA.`,
-        deepdive: `Perform a deep dive analysis on ${topic}. Cover current trends, risks, and opportunities in the Nepal market context.`,
-        trending: `What are the top 5 trending topics in the Nepal stock market and finance world today?`
+      let prompt = '';
+      if (type === 'YouTube Ideas') {
+        prompt = `Generate 5 YouTube video title ideas for my channel "Goxent" about Nepal finance targeting retail investors. 
+        Topic: ${researchTopic}.
+        For each idea, provide:
+        1. Title (Click-worthy)
+        2. Hook (First 30 seconds)
+        3. Thumbnail Concept
+        4. 5 Key Talking Points
+        Respond in a clean Markdown format.`;
+      } else if (type === 'NEPSE Deep Dive') {
+        prompt = `Research the stock/topic "${researchTopic}" in the context of NEPSE (Nepal Stock Exchange). 
+        Provide a detailed content brief including:
+        1. Current Market Context
+        2. Technical/Fundamental Data Points to cover
+        3. Key Risks & Opportunities
+        4. "What to tell the viewers" summary.
+        Respond in a clean Markdown format.`;
+      } else {
+        prompt = `What are the trending topics or common questions Nepali investors have about "${researchTopic}" right now? 
+        Provide 5 trending themes with data-backed reasoning and a suggested "Hot Take" for each to trigger engagement.
+        Respond in a clean Markdown format.`;
       }
 
-      const result = await callAI(prompts[promptType] || topic)
-      setAiOutput(result)
-    } catch (err) {
-      console.error(err)
-      setAiOutput("Error generating content. Check console.")
+      const result = await callClaude(prompt, 1500);
+      setResearchResult(result);
+      showToast("Research complete!", "success");
+    } catch (err: any) {
+      showToast("Research failed: " + err.message, "error");
     } finally {
-      setLoading(false)
+      setIsResearching(false);
     }
-  }
+  };
+
+  const saveResearchAsIdea = () => {
+    if (!researchResult) return;
+    
+    const newIdea: ContentIdea = {
+      id: Date.now().toString(),
+      title: `${researchTopic} - ${new Date().toLocaleDateString()}`,
+      date: new Date().toISOString(),
+      type: 'YouTube Ideas', // Default
+      topic: researchTopic,
+      content: researchResult,
+      notes: ''
+    };
+
+    const updated = [newIdea, ...ideas];
+    saveToLocal(updated);
+    setSelectedId(newIdea.id);
+    setActiveMode('editor');
+    setEditingIdea(newIdea);
+    showToast("Research saved to My Ideas", "success");
+  };
+
+  const selectIdea = (id: string) => {
+    const idea = ideas.find(i => i.id === id);
+    if (idea) {
+      setSelectedId(id);
+      setEditingIdea(idea);
+      setActiveMode('editor');
+    }
+  };
+
+  const updateIdea = (updates: Partial<ContentIdea>) => {
+    setEditingIdea(prev => ({ ...prev, ...updates }));
+    if (selectedId) {
+      const updated = ideas.map(i => i.id === selectedId ? { ...i, ...updates } : i);
+      saveToLocal(updated);
+    }
+  };
+
+  const deleteIdea = (id: string) => {
+    if (!confirm("Are you sure you want to delete this idea?")) return;
+    const updated = ideas.filter(i => i.id !== id);
+    saveToLocal(updated);
+    if (selectedId === id) {
+      setSelectedId(null);
+      setActiveMode('research');
+    }
+    showToast("Idea deleted", "info");
+  };
+
+  const copyToClipboard = (text: string) => {
+    navigator.clipboard.writeText(text);
+    showToast("Copied to clipboard", "success");
+  };
 
   return (
-    <div style={{ height: 'calc(100vh - 120px)', display: 'flex', flexDirection: 'column' }}>
-      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 24 }}>
-        <h2 style={{ fontSize: 28, fontWeight: 800 }}>Content Studio</h2>
-        <div className="tab-group" style={{ display: 'flex', background: 'rgba(255,255,255,0.05)', padding: 4, borderRadius: 8 }}>
-          <button className={`tab ${activeTab === 'digest' ? 'active' : ''}`} onClick={() => setActiveTab('digest')} style={{ display: 'flex', alignItems: 'center', gap: 6 }}>
-            <Sparkles size={14} /> AI Suggestions
-          </button>
-          <button className={`tab ${activeTab === 'ai' ? 'active' : ''}`} onClick={() => setActiveTab('ai')} style={{ display: 'flex', alignItems: 'center', gap: 6 }}>
-            <Brain size={14} /> Custom AI
-          </button>
-          <button className={`tab ${activeTab === 'ideas' ? 'active' : ''}`} onClick={() => setActiveTab('ideas')} style={{ display: 'flex', alignItems: 'center', gap: 6 }}>
-            <Lightbulb size={14} /> Idea Vault
+    <div style={{ display: 'flex', height: 'calc(100vh - 120px)', margin: '-24px', background: 'var(--bg-primary)' }}>
+      {/* Sidebar */}
+      <aside style={{ 
+        width: 300, 
+        borderRight: '1px solid var(--border)', 
+        background: 'var(--bg-secondary)', 
+        display: 'flex', 
+        flexDirection: 'column' 
+      }}>
+        <div style={{ padding: '24px 20px', borderBottom: '1px solid var(--border)' }}>
+          <h3 style={{ fontSize: 14, fontWeight: 800, textTransform: 'uppercase', letterSpacing: '0.1em', display: 'flex', alignItems: 'center', gap: 8 }}>
+            <FileText size={18} color="var(--gold)" /> Idea Vault
+          </h3>
+          <button 
+            onClick={() => { setActiveMode('research'); setSelectedId(null); setResearchResult(''); }}
+            style={{ 
+              width: '100%', marginTop: 16, padding: '10px', 
+              background: 'rgba(212,175,55,0.1)', color: 'var(--gold)', 
+              border: '1px solid rgba(212,175,55,0.2)', borderRadius: 8, 
+              display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 8, 
+              fontSize: 13, fontWeight: 700, cursor: 'pointer' 
+            }}
+          >
+            <Plus size={16} /> New Research
           </button>
         </div>
-      </div>
 
-      <div style={{ flex: 1, display: 'flex', gap: 24, overflow: 'hidden' }}>
-        {activeTab === 'digest' && (
-          <div style={{ flex: 1, overflowY: 'auto' }}>
-            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 20 }}>
-              <p style={{ color: 'var(--text-secondary)', fontSize: 14 }}>Daily AI-generated LinkedIn content based on today's market anomalies.</p>
-              <div style={{ fontSize: 11, color: 'var(--gold)', background: 'rgba(245,158,11,0.1)', padding: '4px 10px', borderRadius: 20, border: '1px solid rgba(245,158,11,0.2)' }}>
-                CLAUDE 3.5 SONNET
+        <div style={{ flex: 1, overflowY: 'auto', padding: '12px 8px' }}>
+          {ideas.length === 0 ? (
+            <p style={{ textAlign: 'center', color: 'var(--text-secondary)', fontSize: 12, marginTop: 40 }}>No ideas saved yet.</p>
+          ) : (
+            ideas.map(idea => (
+              <div 
+                key={idea.id}
+                onClick={() => selectIdea(idea.id)}
+                style={{ 
+                  padding: '12px 16px', borderRadius: 10, cursor: 'pointer', marginBottom: 4,
+                  background: selectedId === idea.id ? 'rgba(255,255,255,0.05)' : 'transparent',
+                  transition: 'all 0.2s'
+                }}
+              >
+                <div style={{ fontSize: 13, fontWeight: 600, color: selectedId === idea.id ? 'var(--gold)' : 'white', whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>
+                  {idea.title}
+                </div>
+                <div style={{ display: 'flex', alignItems: 'center', gap: 6, marginTop: 4, fontSize: 10, color: 'var(--text-secondary)' }}>
+                  <Calendar size={10} /> {new Date(idea.date).toLocaleDateString()}
+                </div>
               </div>
-            </div>
-            <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 20 }}>
-              {aiDigest.linkedinIdeas && aiDigest.linkedinIdeas.length > 0 ? aiDigest.linkedinIdeas.map((idea, i) => (
-                <div key={i} className="card" style={{ display: 'flex', flexDirection: 'column', gap: 12 }}>
-                  <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start' }}>
-                    <span style={{ fontSize: 10, fontWeight: 800, background: 'var(--gold)', color: 'black', padding: '2px 8px', borderRadius: 4 }}>{idea.topic}</span>
-                    <button className="btn btn-primary" style={{ padding: '6px 12px', fontSize: 12 }} onClick={() => handleSaveDigestIdea(idea)}>
-                      <Plus size={14} /> Add to Vault
+            ))
+          )}
+        </div>
+      </aside>
+
+      {/* Main Area */}
+      <main style={{ flex: 1, display: 'flex', flexDirection: 'column', overflow: 'hidden' }}>
+        {/* Tabs */}
+        <div style={{ 
+          display: 'flex', padding: '0 24px', background: 'var(--bg-secondary)', 
+          borderBottom: '1px solid var(--border)', height: 50, alignItems: 'center', gap: 32 
+        }}>
+          <button 
+            onClick={() => setActiveMode('research')}
+            style={{ 
+              height: '100%', background: 'none', border: 'none', cursor: 'pointer',
+              color: activeMode === 'research' ? 'var(--gold)' : 'var(--text-secondary)',
+              fontSize: 14, fontWeight: 700, borderBottom: activeMode === 'research' ? '2px solid var(--gold)' : '2px solid transparent',
+              display: 'flex', alignItems: 'center', gap: 8
+            }}
+          >
+            <Sparkles size={16} /> AI Research
+          </button>
+          <button 
+            onClick={() => setActiveMode('editor')}
+            style={{ 
+              height: '100%', background: 'none', border: 'none', cursor: 'pointer',
+              color: activeMode === 'editor' ? 'var(--gold)' : 'var(--text-secondary)',
+              fontSize: 14, fontWeight: 700, borderBottom: activeMode === 'editor' ? '2px solid var(--gold)' : '2px solid transparent',
+              display: 'flex', alignItems: 'center', gap: 8
+            }}
+          >
+            <PenTool size={16} /> My Ideas
+          </button>
+        </div>
+
+        {/* Content */}
+        <div style={{ flex: 1, overflowY: 'auto', padding: 40 }}>
+          {activeMode === 'research' ? (
+            <div style={{ maxWidth: 800, margin: '0 auto' }}>
+              <div style={{ textAlign: 'center', marginBottom: 48 }}>
+                <h1 style={{ fontSize: 32, fontWeight: 900, marginBottom: 12 }}>Content Intelligence</h1>
+                <p style={{ color: 'var(--text-secondary)' }}>Research trends and generate high-impact video ideas for Goxent.</p>
+              </div>
+
+              <div className="card" style={{ padding: 32, background: 'rgba(255,255,255,0.02)' }}>
+                <div style={{ marginBottom: 24 }}>
+                  <label style={{ display: 'block', fontSize: 12, fontWeight: 700, textTransform: 'uppercase', color: 'var(--text-secondary)', marginBottom: 8 }}>Topic or Stock Symbol</label>
+                  <input 
+                    type="text" 
+                    value={researchTopic}
+                    onChange={(e) => setResearchTopic(e.target.value)}
+                    placeholder="e.g. NABIL, Real Estate Bubble, Monetary Policy..."
+                    style={{ width: '100%', padding: '16px', fontSize: 16, background: 'rgba(0,0,0,0.3)', border: '1px solid var(--border)', borderRadius: 12 }}
+                  />
+                </div>
+
+                <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 16 }}>
+                  <button onClick={() => handleResearch('YouTube Ideas')} disabled={isResearching} style={{ padding: 16, borderRadius: 12, background: 'rgba(255,255,255,0.03)', border: '1px solid var(--border)', color: 'white', display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 12, cursor: 'pointer' }}>
+                    <Youtube size={24} color="#ef4444" />
+                    <span style={{ fontSize: 13, fontWeight: 700 }}>YouTube Ideas</span>
+                  </button>
+                  <button onClick={() => handleResearch('NEPSE Deep Dive')} disabled={isResearching} style={{ padding: 16, borderRadius: 12, background: 'rgba(255,255,255,0.03)', border: '1px solid var(--border)', color: 'white', display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 12, cursor: 'pointer' }}>
+                    <TrendingUp size={24} color="var(--gold)" />
+                    <span style={{ fontSize: 13, fontWeight: 700 }}>NEPSE Deep Dive</span>
+                  </button>
+                  <button onClick={() => handleResearch('Trending Topics')} disabled={isResearching} style={{ padding: 16, borderRadius: 12, background: 'rgba(255,255,255,0.03)', border: '1px solid var(--border)', color: 'white', display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 12, cursor: 'pointer' }}>
+                    <Layout size={24} color="var(--info-color)" />
+                    <span style={{ fontSize: 13, fontWeight: 700 }}>Trending Topics</span>
+                  </button>
+                </div>
+              </div>
+
+              {isResearching && (
+                <div style={{ textAlign: 'center', padding: 48 }}>
+                  <div className="animate-spin" style={{ width: 32, height: 32, border: '3px solid var(--gold)', borderTopColor: 'transparent', borderRadius: '50%', margin: '0 auto 16px' }}></div>
+                  <p style={{ color: 'var(--text-secondary)', fontSize: 14 }}>Claude is analyzing Nepal finance data...</p>
+                </div>
+              )}
+
+              {researchResult && (
+                <div className="animate-fade-in" style={{ marginTop: 40 }}>
+                  <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 16 }}>
+                    <h3 style={{ fontSize: 18, fontWeight: 800 }}>Research Result</h3>
+                    <button onClick={saveResearchAsIdea} style={{ padding: '8px 16px', background: 'var(--gold)', color: 'black', fontWeight: 700, borderRadius: 8, border: 'none', display: 'flex', alignItems: 'center', gap: 8, cursor: 'pointer' }}>
+                      <Save size={16} /> Save to Ideas
                     </button>
                   </div>
-                  <h4 style={{ fontSize: 18, fontWeight: 700, lineHeight: 1.3 }}>{idea.title}</h4>
-                  <p style={{ fontSize: 14, color: 'var(--text-secondary)', fontStyle: 'italic', borderLeft: '2px solid var(--gold)', paddingLeft: 12 }}>"{idea.hook}"</p>
-                  <p style={{ fontSize: 13, lineHeight: 1.5 }}>{idea.angle}</p>
-                  <div style={{ marginTop: 'auto', paddingTop: 12, borderTop: '1px solid var(--border)', display: 'flex', justifyContent: 'space-between', alignItems: 'center', fontSize: 11, color: 'var(--text-secondary)' }}>
-                    <span>Takeaway: {idea.keyTakeaway}</span>
-                    <span style={{ fontWeight: 700 }}>{idea.bestTimeToPost}</span>
+                  <div className="card" style={{ padding: 32, background: 'white', color: '#1a1a1a', lineHeight: 1.7, fontSize: 15, whiteSpace: 'pre-wrap' }}>
+                    {researchResult}
                   </div>
-                </div>
-              )) : (
-                <div style={{ gridColumn: '1 / -1', textAlign: 'center', padding: 40, opacity: 0.5 }}>
-                   No AI suggestions yet. Run the daily sync.
                 </div>
               )}
             </div>
-          </div>
-        )}
+          ) : (
+            <div style={{ maxWidth: 900, margin: '0 auto' }}>
+              <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', marginBottom: 32 }}>
+                <input 
+                  type="text" 
+                  value={editingIdea.title || ''} 
+                  onChange={(e) => updateIdea({ title: e.target.value })}
+                  placeholder="Idea Title..."
+                  style={{ fontSize: 32, fontWeight: 900, background: 'none', border: 'none', color: 'white', width: '100%', outline: 'none' }}
+                />
+                <button onClick={() => deleteIdea(selectedId!)} style={{ padding: 8, color: 'var(--danger-color)', background: 'none', border: 'none', cursor: 'pointer' }}>
+                  <Trash size={20} />
+                </button>
+              </div>
 
-        {activeTab === 'ai' && (
-          <div style={{ flex: 1, display: 'flex', flexDirection: 'column', overflow: 'hidden' }}>
-            <div style={{ display: 'flex', gap: 12, marginBottom: 16 }}>
-              <input 
-                type="text" 
-                placeholder="Topic, stock symbol, or industry (e.g. 'Hydropower' or 'TDS')..." 
-                value={topic} 
-                onChange={e => setTopic(e.target.value)}
-                style={{ flex: 1 }}
-              />
-            </div>
-            <div style={{ display: 'flex', gap: 12, marginBottom: 24 }}>
-              <button className="btn" onClick={() => callClaude('youtube')}><Search size={14}/> YouTube Ideas</button>
-              <button className="btn" onClick={() => callClaude('linkedin')}><Users size={14}/> LinkedIn Ideas</button>
-              <button className="btn" onClick={() => callClaude('deepdive')}><MessageSquare size={14}/> NEPSE Deep Dive</button>
-              <button className="btn" onClick={() => callClaude('trending')}><TrendingUp size={14}/> Trending Topics</button>
-            </div>
-
-            <div style={{ flex: 1, background: 'var(--bg-secondary)', borderRadius: 12, padding: 24, overflowY: 'auto', border: '1px solid var(--border)', position: 'relative' }}>
-              {loading ? (
-                <div style={{ color: 'var(--gold)', display: 'flex', alignItems: 'center', justifyContent: 'center', height: '100%' }}>Claude is thinking...</div>
-              ) : aiOutput ? (
-                <div style={{ whiteSpace: 'pre-wrap', fontSize: 14, lineHeight: 1.6 }}>
-                  {aiOutput}
-                  <div style={{ position: 'absolute', top: 16, right: 16, display: 'flex', gap: 8 }}>
-                    <button className="btn btn-primary" onClick={handleSaveAI}><Save size={14} /> Save</button>
+              <div style={{ display: 'grid', gridTemplateColumns: '1fr 300px', gap: 32 }}>
+                <div style={{ display: 'flex', flexDirection: 'column', gap: 24 }}>
+                  <div>
+                    <label style={{ display: 'block', fontSize: 12, fontWeight: 700, textTransform: 'uppercase', color: 'var(--text-secondary)', marginBottom: 8 }}>Script / Brief</label>
+                    <textarea 
+                      value={editingIdea.content || ''} 
+                      onChange={(e) => updateIdea({ content: e.target.value })}
+                      placeholder="Write your script or research notes here..."
+                      style={{ width: '100%', height: 600, padding: 24, fontSize: 15, background: 'rgba(255,255,255,0.02)', border: '1px solid var(--border)', borderRadius: 12, color: 'white', lineHeight: 1.6, resize: 'none' }}
+                    />
                   </div>
                 </div>
-              ) : (
-                <div style={{ color: 'var(--text-secondary)', display: 'flex', alignItems: 'center', justifyContent: 'center', height: '100%', flexDirection: 'column', gap: 12 }}>
-                  <Search size={32} style={{ opacity: 0.2 }} />
-                  <p>Select a research type to generate content ideas.</p>
-                </div>
-              )}
-            </div>
-          </div>
-        )}
 
-        {activeTab === 'ideas' && (
-          <div style={{ flex: 1, display: 'flex', flexDirection: 'column', overflowY: 'auto' }}>
-            <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: 24 }}>
-              <h3 style={{ fontSize: 18, fontWeight: 700 }}>Idea Vault</h3>
-              <button className="btn btn-primary" onClick={() => setIsAdding(!isAdding)}><Plus size={16}/> Add Idea</button>
-            </div>
+                <div style={{ display: 'flex', flexDirection: 'column', gap: 24 }}>
+                  <div className="card" style={{ padding: 24 }}>
+                    <h4 style={{ fontSize: 13, fontWeight: 800, marginBottom: 16, display: 'flex', alignItems: 'center', gap: 8 }}>
+                      <MessageSquare size={16} color="var(--gold)" /> Side Notes
+                    </h4>
+                    <textarea 
+                      value={editingIdea.notes || ''} 
+                      onChange={(e) => updateIdea({ notes: e.target.value })}
+                      placeholder="Internal team notes..."
+                      style={{ width: '100%', height: 200, padding: 12, fontSize: 13, background: 'rgba(0,0,0,0.3)', border: '1px solid var(--border)', borderRadius: 8, color: 'white', resize: 'none' }}
+                    />
+                  </div>
 
-            {isAdding && (
-              <div style={{ background: 'var(--bg-secondary)', padding: 16, borderRadius: 12, marginBottom: 24, border: '1px solid var(--gold)' }}>
-                <input type="text" placeholder="Idea Title" value={newIdea.title} onChange={e => setNewIdea({...newIdea, title: e.target.value})} style={{ marginBottom: 12 }} />
-                <textarea placeholder="Write your ideas, scripts, or hooks here..." value={newIdea.content} onChange={e => setNewIdea({...newIdea, content: e.target.value})} rows={5} style={{ marginBottom: 12 }} />
-                <div style={{ display: 'flex', gap: 12 }}>
-                  <button className="btn btn-primary" onClick={handleAddIdea}>Save Idea</button>
-                  <button className="btn" onClick={() => setIsAdding(false)}>Cancel</button>
+                  <button onClick={() => copyToClipboard(editingIdea.content || '')} style={{ width: '100%', padding: '12px', background: 'rgba(255,255,255,0.05)', border: '1px solid var(--border)', color: 'white', borderRadius: 8, display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 8, fontWeight: 600 }}>
+                    <Copy size={16} /> Copy Brief
+                  </button>
                 </div>
               </div>
-            )}
-
-            <div style={{ display: 'flex', flexDirection: 'column', gap: 16 }}>
-              {ideas.map(idea => (
-                <div key={idea.id} style={{ background: 'var(--bg-secondary)', padding: 20, borderRadius: 12, border: '1px solid var(--border)' }}>
-                  <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', marginBottom: 12 }}>
-                    <div>
-                      <h4 style={{ fontSize: 16, fontWeight: 700, color: 'var(--gold)' }}>{idea.title}</h4>
-                      <p style={{ fontSize: 11, color: 'var(--text-secondary)' }}>{idea.type} • {idea.date}</p>
-                    </div>
-                    <div style={{ display: 'flex', gap: 8 }}>
-                      <button className="btn" style={{ padding: '6px 10px' }} onClick={() => {
-                        navigator.clipboard.writeText(idea.content);
-                        showToast("Copied to clipboard!", "info");
-                      }}><Copy size={14}/></button>
-                      <button className="btn" style={{ padding: '6px 10px', color: 'var(--red)' }} onClick={() => {
-                        deleteIdea(idea.id);
-                        showToast("Idea deleted.", "info");
-                      }}><Trash2 size={14}/></button>
-                    </div>
-                  </div>
-                  <div style={{ fontSize: 13, lineHeight: 1.6, whiteSpace: 'pre-wrap', color: 'var(--text-primary)' }}>
-                    {idea.content}
-                  </div>
-                </div>
-              ))}
             </div>
-          </div>
-        )}
-      </div>
+          )}
+        </div>
+      </main>
     </div>
-  )
+  );
 }

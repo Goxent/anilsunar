@@ -1,57 +1,58 @@
 {
-  "updatedAt": "11:39:08 AM",
+  "timestamp": "2026-04-29T07:43:00.770Z",
+  "updatedAt": "1:28:00 PM",
   "picks": [
     {
-      "symbol": "LLBS",
-      "entry": "F-Score: 128.13 Cr.",
+      "symbol": "SKHEL",
+      "entry": "F-Score: 202.49 Cr.",
       "target": "ACCUMULATE",
       "strength": 80
     },
     {
-      "symbol": "BBC",
-      "entry": "F-Score: 203.68 Cr.",
+      "symbol": "RLEL",
+      "entry": "F-Score: 308.93 Cr.",
       "target": "ACCUMULATE",
       "strength": 80
     },
     {
-      "symbol": "ILBS",
-      "entry": "F-Score: 155.18 Cr.",
+      "symbol": "BJHL",
+      "entry": "F-Score: 209.00 Cr.",
       "target": "ACCUMULATE",
       "strength": 80
     },
     {
-      "symbol": "PROFL",
-      "entry": "F-Score: 186.59 Cr.",
-      "target": "ACCUMULATE",
-      "strength": 80
-    },
-    {
-      "symbol": "CORBL",
-      "entry": "F-Score: 376.43 Cr.",
+      "symbol": "DLBS",
+      "entry": "F-Score: 56.53 Cr.",
       "target": "ACCUMULATE",
       "strength": 80
     },
     {
       "symbol": "ULHC",
-      "entry": "F-Score: 110.77 Cr.",
+      "entry": "F-Score: 111.45 Cr.",
       "target": "ACCUMULATE",
       "strength": 80
     },
     {
-      "symbol": "GCIL",
-      "entry": "F-Score: 416.81 Cr.",
+      "symbol": "OHL",
+      "entry": "F-Score: 249.95 Cr.",
       "target": "ACCUMULATE",
       "strength": 80
     },
     {
-      "symbol": "BFC",
-      "entry": "F-Score: 165.23 Cr.",
+      "symbol": "CORBL",
+      "entry": "F-Score: 376.44 Cr.",
       "target": "ACCUMULATE",
       "strength": 80
     },
     {
-      "symbol": "MERO",
-      "entry": "F-Score: 442.35 Cr.",
+      "symbol": "BBC",
+      "entry": "F-Score: 202.10 Cr.",
+      "target": "ACCUMULATE",
+      "strength": 80
+    },
+    {
+      "symbol": "EDBL",
+      "entry": "F-Score: 356.39 Cr.",
       "target": "ACCUMULATE",
       "strength": 80
     },
@@ -228,6 +229,113 @@
       "type": "Swing"
     }
   ],
+  "brokerData": [
+    {
+      "broker": "1",
+      "symbol": "2026042904006108",
+      "buyQty": 0,
+      "sellQty": 0,
+      "netPosition": 0
+    },
+    {
+      "broker": "2",
+      "symbol": "2026042904006109",
+      "buyQty": 0,
+      "sellQty": 0,
+      "netPosition": 0
+    },
+    {
+      "broker": "3",
+      "symbol": "2026042904006110",
+      "buyQty": 0,
+      "sellQty": 0,
+      "netPosition": 0
+    },
+    {
+      "broker": "4",
+      "symbol": "2026042901046216",
+      "buyQty": 0,
+      "sellQty": 0,
+      "netPosition": 0
+    },
+    {
+      "broker": "5",
+      "symbol": "2026042905007371",
+      "buyQty": 0,
+      "sellQty": 0,
+      "netPosition": 0
+    },
+    {
+      "broker": "6",
+      "symbol": "2026042905007372",
+      "buyQty": 0,
+      "sellQty": 0,
+      "netPosition": 0
+    },
+    {
+      "broker": "7",
+      "symbol": "2026042905007373",
+      "buyQty": 0,
+      "sellQty": 0,
+      "netPosition": 0
+    },
+    {
+      "broker": "8",
+      "symbol": "2026042905007374",
+      "buyQty": 0,
+      "sellQty": 0,
+      "netPosition": 0
+    },
+    {
+      "broker": "9",
+      "symbol": "2026042905007375",
+      "buyQty": 0,
+      "sellQty": 0,
+      "netPosition": 0
+    },
+    {
+      "broker": "10",
+      "symbol": "2026042905007376",
+      "buyQty": 0,
+      "sellQty": 0,
+      "netPosition": 0
+    },
+    {
+      "broker": "11",
+      "symbol": "2026042905007377",
+      "buyQty": 0,
+      "sellQty": 0,
+      "netPosition": 0
+    },
+    {
+      "broker": "12",
+      "symbol": "2026042905007378",
+      "buyQty": 0,
+      "sellQty": 0,
+      "netPosition": 0
+    },
+    {
+      "broker": "13",
+      "symbol": "2026042905007379",
+      "buyQty": 0,
+      "sellQty": 0,
+      "netPosition": 0
+    },
+    {
+      "broker": "14",
+      "symbol": "2026042904006111",
+      "buyQty": 0,
+      "sellQty": 0,
+      "netPosition": 0
+    },
+    {
+      "broker": "15",
+      "symbol": "2026042901046217",
+      "buyQty": 0,
+      "sellQty": 0,
+      "netPosition": 0
+    }
+  ],
   "sentiment": [
     "Market Sentiment: Bullish",
     "Strategy: Focus on 0 Value A stocks."
@@ -238,10 +346,10 @@
     "turnover": "N/A"
   },
   "rotation": [
-    "LLBS (M: 2.87%)",
-    "BBC (M: 2.18%)",
-    "ILBS (M: 1.90%)",
-    "PROFL (M: 1.81%)",
-    "CORBL (M: 1.57%)"
+    "PCBLP (M: 8.10%)",
+    "SKHEL (M: 3.82%)",
+    "RLEL (M: 3.49%)",
+    "BJHL (M: 3.25%)",
+    "DLBS (M: 2.56%)"
   ]
 }

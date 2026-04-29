@@ -3,15 +3,16 @@ import { getAuth, GoogleAuthProvider } from "firebase/auth";
 import { getAnalytics } from "firebase/analytics";
 import { getFirestore } from "firebase/firestore";
 
-// Your web app's Firebase configuration
+// Firebase web config — these are safe to be public (security enforced by Firestore rules)
+// Values pulled from environment variables for best practice
 const firebaseConfig = {
-  apiKey: "AIzaSyDktrGzsvcJKuch0XJxGt6_ZmukN8V3ar8",
-  authDomain: "app-anil-sunar.firebaseapp.com",
-  projectId: "app-anil-sunar",
-  storageBucket: "app-anil-sunar.firebasestorage.app",
-  messagingSenderId: "295312785744",
-  appId: "1:295312785744:web:a4c93aacf30172d11d2c55",
-  measurementId: "G-CYS1NQEWP6"
+  apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
+  authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN,
+  projectId: import.meta.env.VITE_FIREBASE_PROJECT_ID,
+  storageBucket: import.meta.env.VITE_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: import.meta.env.VITE_FIREBASE_MESSAGING_SENDER_ID,
+  appId: import.meta.env.VITE_FIREBASE_APP_ID,
+  measurementId: import.meta.env.VITE_FIREBASE_MEASUREMENT_ID,
 };
 
 // Initialize Firebase
