@@ -5,6 +5,7 @@ require('dotenv').config();
 
 const EMAIL = process.env.SASTO_EMAIL;
 const PASSWORD = process.env.SASTO_PASSWORD;
+const DEBUG = process.env.DEBUG_BOT === 'true';
 
 async function retry(fn, retries = 3, delay = 2000) {
   for (let i = 0; i < retries; i++) {
@@ -60,16 +61,20 @@ async function runProdSync() {
     // 2. QUANT RANKINGS & SCORES (Scraping the overview of top stocks)
     await retry(async () => {
       console.log('📊 Scraping Quant Rankings & Health Scores...');
-      await page.goto('https://nepsealpha.com/sastoshare/stock-analysis', { waitUntil: 'domcontentloaded' });
-      await page.waitForSelector('.quant-ranking, table', { timeout: 15000 }).catch(() => null);
+      await page.goto('https://nepsealpha.com/sastoshare/home', { waitUntil: 'domcontentloaded' });
+      if (DEBUG) await page.screenshot({ path: `logs/debug-${Date.now()}.png`, fullPage: true });
+      await page.waitForSelector('table tbody tr', { timeout: 15000 }).catch(() => null);
+      await page.waitForTimeout(3000);
       
       report.quantAnalysis = await page.evaluate(() => {
-        const rows = Array.from(document.querySelectorAll('table tbody tr')).slice(0, 30);
+        const rows = Array.from(document.querySelectorAll('table tbody tr'))
+          .filter(r => r.innerText.trim() !== '')
+          .slice(0, 30);
         return rows.map(r => {
           const cells = r.querySelectorAll('td');
           return {
             symbol: cells[0]?.innerText.trim(),
-            fScore: cells[5]?.innerText.trim(), // Assuming F-Score is in col 5
+            fScore: cells[5]?.innerText.trim(),
             momentum: cells[2]?.innerText.trim(),
             value: cells[3]?.innerText.trim(),
           };
@@ -81,11 +86,15 @@ async function runProdSync() {
     // 3. AI SIGNALS (Swing & Breakout)
     await retry(async () => {
       console.log('📈 Scraping AI Swing Signals...');
-      await page.goto('https://nepsealpha.com/sastoshare/signal-explorer', { waitUntil: 'domcontentloaded' }); 
-      await page.waitForSelector('.signal-card, tr', { timeout: 10000 }).catch(() => null);
+      await page.goto('https://nepsealpha.com/sastoshare/swing-gain', { waitUntil: 'domcontentloaded' }); 
+      if (DEBUG) await page.screenshot({ path: `logs/debug-${Date.now()}.png`, fullPage: true });
+      await page.waitForSelector('table tbody tr', { timeout: 10000 }).catch(() => null);
+      await page.waitForTimeout(3000);
       
       report.smcSignals = await page.evaluate(() => {
-        const rows = Array.from(document.querySelectorAll('table tbody tr')).slice(0, 20);
+        const rows = Array.from(document.querySelectorAll('table tbody tr'))
+          .filter(r => r.innerText.trim() !== '')
+          .slice(0, 20);
         return rows.map(r => {
           const cells = r.querySelectorAll('td');
           return {
@@ -101,11 +110,18 @@ async function runProdSync() {
     // 4. BROKER HOLDING (Accumulation)
     await retry(async () => {
       console.log('📑 Scraping Broker Accumulation...');
-      await page.goto('https://nepsealpha.com/sastoshare/floorsheet/broker-holding', { waitUntil: 'domcontentloaded' });
-      await page.waitForSelector('table', { timeout: 10000 }).catch(() => null);
+      await page.goto('https://nepsealpha.com/sastoshare/floorsheet/today', { waitUntil: 'domcontentloaded' });
+      if (DEBUG) await page.screenshot({ path: `logs/debug-${Date.now()}.png`, fullPage: true });
+      await page.waitForSelector('table tbody tr', { timeout: 10000 }).catch(() => null);
+      await page.waitForTimeout(3000);
+
+      // Try clicking Broker Analysis if visible
+      await page.click('text="Broker Analysis"').catch(() => null);
       
       report.brokerAccumulation = await page.evaluate(() => {
-        const rows = Array.from(document.querySelectorAll('table tbody tr')).slice(0, 15);
+        const rows = Array.from(document.querySelectorAll('table tbody tr'))
+          .filter(r => r.innerText.trim() !== '')
+          .slice(0, 15);
         return rows.map(r => ({
           broker: r.querySelectorAll('td')[0]?.innerText.trim(),
           topBuy: r.querySelectorAll('td')[1]?.innerText.trim(),
@@ -119,10 +135,32 @@ async function runProdSync() {
     await retry(async () => {
       console.log('📉 Scraping Today\'s Prices for the Screener...');
       await page.goto('https://nepsealpha.com/trading-menu/top-stocks', { waitUntil: 'domcontentloaded' });
+      if (DEBUG) await page.screenshot({ path: `logs/debug-${Date.now()}.png`, fullPage: true });
+      
+      const content = await page.textContent('body');
+      try {
+        const jsonData = JSON.parse(content);
+        if (jsonData.topStocks) {
+          report.liveStocks = jsonData.topStocks.map(s => ({
+            symbol: s.gainer?.[0] || s.looser?.[0] || s.turnover?.[0] || 'N/A',
+            ltp: parseFloat(s.gainer?.[2] || s.looser?.[2] || s.turnover?.[2]) || 0,
+            changePct: parseFloat(s.gainer?.[2] || s.looser?.[2]) || 0,
+            volume: 0 // JSON doesn't seem to have volume directly in this summary
+          }));
+          console.log(`✅ Parsed JSON data for ${report.liveStocks.length} stocks.`);
+          return;
+        }
+      } catch (e) {
+        // Not JSON, fallback to table
+      }
+
       await page.waitForSelector('table tbody tr', { timeout: 15000 }).catch(() => null);
+      await page.waitForTimeout(3000);
       
       report.liveStocks = await page.evaluate(() => {
-        const rows = Array.from(document.querySelectorAll('table tbody tr')).slice(0, 100);
+        const rows = Array.from(document.querySelectorAll('table tbody tr'))
+          .filter(r => r.innerText.trim() !== '')
+          .slice(0, 100);
         return rows.map(r => {
           const cells = r.querySelectorAll('td');
           return {
@@ -133,7 +171,7 @@ async function runProdSync() {
           };
         });
       });
-      
+
       // Attempt to extract NEPSE index from the page text
       const pageText = await page.evaluate(() => document.body.innerText);
       const indexMatch = pageText.match(/NEPSE[\s:]*([\d,]+\.\d+)/i);

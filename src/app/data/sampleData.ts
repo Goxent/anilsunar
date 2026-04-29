@@ -6,5 +6,5 @@ export interface StockData {
 export const SAMPLE_STOCKS: StockData[] = [
 
 ];
-export const MARKET_SUMMARY = { nepseIndex: 2000, change: 0, changePct: 0 };
+export const MARKET_SUMMARY = { nepseIndex: 2, change: 0, changePct: 0 };
 export const ACCUMULATION_SIGNALS = [];

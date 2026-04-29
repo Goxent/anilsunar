@@ -1,10 +1,247 @@
 {
-  "updatedAt": "7:01:11 AM",
-  "picks": [],
-  "signals": [],
+  "updatedAt": "11:39:08 AM",
+  "picks": [
+    {
+      "symbol": "LLBS",
+      "entry": "F-Score: 128.13 Cr.",
+      "target": "ACCUMULATE",
+      "strength": 80
+    },
+    {
+      "symbol": "BBC",
+      "entry": "F-Score: 203.68 Cr.",
+      "target": "ACCUMULATE",
+      "strength": 80
+    },
+    {
+      "symbol": "ILBS",
+      "entry": "F-Score: 155.18 Cr.",
+      "target": "ACCUMULATE",
+      "strength": 80
+    },
+    {
+      "symbol": "PROFL",
+      "entry": "F-Score: 186.59 Cr.",
+      "target": "ACCUMULATE",
+      "strength": 80
+    },
+    {
+      "symbol": "CORBL",
+      "entry": "F-Score: 376.43 Cr.",
+      "target": "ACCUMULATE",
+      "strength": 80
+    },
+    {
+      "symbol": "ULHC",
+      "entry": "F-Score: 110.77 Cr.",
+      "target": "ACCUMULATE",
+      "strength": 80
+    },
+    {
+      "symbol": "GCIL",
+      "entry": "F-Score: 416.81 Cr.",
+      "target": "ACCUMULATE",
+      "strength": 80
+    },
+    {
+      "symbol": "BFC",
+      "entry": "F-Score: 165.23 Cr.",
+      "target": "ACCUMULATE",
+      "strength": 80
+    },
+    {
+      "symbol": "MERO",
+      "entry": "F-Score: 442.35 Cr.",
+      "target": "ACCUMULATE",
+      "strength": 80
+    },
+    {
+      "symbol": "GRDBL",
+      "entry": "F-Score: 146964214",
+      "target": "ACCUMULATE",
+      "strength": 80
+    },
+    {
+      "symbol": "SIPD",
+      "entry": "F-Score: 147960679",
+      "target": "ACCUMULATE",
+      "strength": 80
+    },
+    {
+      "symbol": "JHAPA",
+      "entry": "F-Score: 171805181",
+      "target": "ACCUMULATE",
+      "strength": 80
+    },
+    {
+      "symbol": "PCIL",
+      "entry": "F-Score: 672544937",
+      "target": "ACCUMULATE",
+      "strength": 80
+    },
+    {
+      "symbol": "SAPDBL",
+      "entry": "F-Score: 99173367",
+      "target": "ACCUMULATE",
+      "strength": 80
+    },
+    {
+      "symbol": "CITY",
+      "entry": "F-Score: 30743324",
+      "target": "ACCUMULATE",
+      "strength": 80
+    },
+    {
+      "symbol": "SINDU",
+      "entry": "F-Score: 54410758",
+      "target": "ACCUMULATE",
+      "strength": 80
+    },
+    {
+      "symbol": "STC",
+      "entry": "F-Score: 58435027",
+      "target": "ACCUMULATE",
+      "strength": 80
+    },
+    {
+      "symbol": "AVYAN",
+      "entry": "F-Score: 11776348",
+      "target": "ACCUMULATE",
+      "strength": 80
+    },
+    {
+      "symbol": "PURE",
+      "entry": "F-Score: 42167822",
+      "target": "ACCUMULATE",
+      "strength": 80
+    },
+    {
+      "symbol": "SKHEL",
+      "entry": "F-Score: 379611114",
+      "target": "ACCUMULATE",
+      "strength": 80
+    },
+    {
+      "symbol": "HFIN",
+      "entry": "F-Score: 1579834250",
+      "target": "ACCUMULATE",
+      "strength": 80
+    },
+    {
+      "symbol": "RLEL",
+      "entry": "F-Score: 697528717",
+      "target": "ACCUMULATE",
+      "strength": 80
+    },
+    {
+      "symbol": "SKHL",
+      "entry": "F-Score: 902566516",
+      "target": "ACCUMULATE",
+      "strength": 80
+    },
+    {
+      "symbol": "BJHL",
+      "entry": "F-Score: 720928898",
+      "target": "ACCUMULATE",
+      "strength": 80
+    },
+    {
+      "symbol": "RSML",
+      "entry": "F-Score: 6577292829",
+      "target": "ACCUMULATE",
+      "strength": 80
+    },
+    {
+      "symbol": "JHAPA",
+      "entry": "F-Score: 602113324",
+      "target": "ACCUMULATE",
+      "strength": 80
+    },
+    {
+      "symbol": "CORBL",
+      "entry": "F-Score: 986120218",
+      "target": "ACCUMULATE",
+      "strength": 80
+    },
+    {
+      "symbol": "SOHL",
+      "entry": "F-Score: 4629671556",
+      "target": "ACCUMULATE",
+      "strength": 80
+    },
+    {
+      "symbol": "HHL",
+      "entry": "F-Score: 1231416015",
+      "target": "ACCUMULATE",
+      "strength": 80
+    }
+  ],
+  "signals": [
+    {
+      "symbol": "ACLBSL",
+      "signal": "960.1",
+      "type": "Swing"
+    },
+    {
+      "symbol": "ADBL",
+      "signal": "311.8",
+      "type": "Swing"
+    },
+    {
+      "symbol": "AHL",
+      "signal": "505",
+      "type": "Swing"
+    },
+    {
+      "symbol": "AHPC",
+      "signal": "281",
+      "type": "Swing"
+    },
+    {
+      "symbol": "AKJCL",
+      "signal": "384.9",
+      "type": "Swing"
+    },
+    {
+      "symbol": "AKPL",
+      "signal": "272",
+      "type": "Swing"
+    },
+    {
+      "symbol": "ALBSL",
+      "signal": "1124",
+      "type": "Swing"
+    },
+    {
+      "symbol": "ALICL",
+      "signal": "454.5",
+      "type": "Swing"
+    },
+    {
+      "symbol": "ANLB",
+      "signal": "6251",
+      "type": "Swing"
+    },
+    {
+      "symbol": "API",
+      "signal": "339.1",
+      "type": "Swing"
+    }
+  ],
   "sentiment": [
-    "Market Sentiment: Neutral",
+    "Market Sentiment: Bullish",
     "Strategy: Focus on 0 Value A stocks."
   ],
-  "rotation": []
+  "marketSummary": {
+    "index": "N/A",
+    "changePct": "0.0%",
+    "turnover": "N/A"
+  },
+  "rotation": [
+    "LLBS (M: 2.87%)",
+    "BBC (M: 2.18%)",
+    "ILBS (M: 1.90%)",
+    "PROFL (M: 1.81%)",
+    "CORBL (M: 1.57%)"
+  ]
 }

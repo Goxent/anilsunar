@@ -82,8 +82,18 @@ async function runOmniSpider() {
 
     console.log(`🎯 Discovered ${links.length} potential data sources.`);
     
-    // Limit to 15 pages max to save time/tokens if there are hundreds
-    const targetLinks = links.slice(0, 15);
+    const GUARANTEED_PAGES = [
+      'https://nepsealpha.com/sastoshare/home',
+      'https://nepsealpha.com/sastoshare/swing-gain', 
+      'https://nepsealpha.com/sastoshare/floorsheet/today',
+      'https://nepsealpha.com/sastoshare/broker-analysis',
+      'https://nepsealpha.com/sastoshare/sector-performance',
+      'https://nepsealpha.com/sastoshare/stock-health',
+      'https://nepsealpha.com/trading-menu/top-stocks',
+    ];
+
+    // Merge guaranteed pages with auto-discovered links (deduplicate)
+    const targetLinks = [...new Set([...GUARANTEED_PAGES, ...links])].slice(0, 20);
 
     // 3. OMNI-EXTRACTION
     for (const link of targetLinks) {
