@@ -1,4 +1,4 @@
-import { useState, useEffect, ReactNode } from 'react'
+import { useState, useEffect, ReactNode, createContext, useContext } from 'react'
 import { 
   LayoutDashboard, 
   TrendingUp, 
@@ -12,7 +12,15 @@ import {
   ChevronRight,
   ChevronDown,
   Globe,
-  Mail
+  Mail,
+  Terminal,
+  RefreshCw,
+  Copy,
+  X,
+  CheckCircle2,
+  AlertCircle,
+  AlertTriangle,
+  Info
 } from 'lucide-react'
 import MarketOverview from './components/MarketOverview'
 import MarketIntelligence from './components/MarketIntelligence'
@@ -65,7 +73,17 @@ const NAV_GROUPS = [
   }
 ]
 
+interface Toast {
+  id: number;
+  message: string;
+  type: 'success' | 'error' | 'warning' | 'info';
+}
 
+const ToastContext = createContext<{
+  showToast: (message: string, type: Toast['type']) => void;
+}>({ showToast: () => {} });
+
+export const useToast = () => useContext(ToastContext);
 
 function NavGroupSection({ group, activeTab, setActiveTab }: { group: any, activeTab: string, setActiveTab: (id: string) => void }) {
   const [isOpen, setIsOpen] = useState(true)
@@ -136,6 +154,15 @@ function NavGroupSection({ group, activeTab, setActiveTab }: { group: any, activ
 }
 
 export default function AppShell() {
+  const [toasts, setToasts] = useState<Toast[]>([]);
+  
+  const showToast = (message: string, type: Toast['type']) => {
+    const id = Date.now();
+    setToasts(prev => [...prev, { id, message, type }]);
+    setTimeout(() => {
+      setToasts(prev => prev.filter(t => t.id !== id));
+    }, 4000);
+  };
   const [user, setUser] = useState<FirebaseUser | null>(null)
   const [role, setRole] = useState<'admin' | 'user' | null>(null)
   const [loading, setLoading] = useState(true)
@@ -405,177 +432,207 @@ export default function AppShell() {
   const todayStr = new Date().toLocaleDateString('en-US', { weekday: 'short', month: 'short', day: 'numeric' })
 
   return (
-    <div style={{ display: 'flex', minHeight: '100vh', background: 'var(--bg-primary)' }}>
-      {/* Sidebar */}
-      <aside style={{
-          width: 280,
-          background: 'var(--bg-secondary)',
-          borderRight: '1px solid var(--border)',
-          display: 'flex',
-          flexDirection: 'column',
-          padding: '24px 16px',
-          position: 'fixed',
-          top: 0,
-          left: 0,
-          bottom: 0,
-          zIndex: 50,
-          overflowY: 'auto'
-        }}>
-          {/* Header */}
-          <div style={{ marginBottom: 32, padding: '0 8px' }}>
-            <div style={{ display: 'flex', alignItems: 'center', gap: 12, marginBottom: 16 }}>
-              <div style={{ 
-                width: 32, 
-                height: 32, 
-                background: 'var(--gold)', 
-                borderRadius: 8, 
-                display: 'flex', 
-                alignItems: 'center', 
-                justifyContent: 'center',
-                color: 'var(--bg-primary)',
-                fontWeight: 800,
-                fontSize: 18
-              }}>
-                G
+    <ToastContext.Provider value={{ showToast }}>
+      <div style={{ display: 'flex', minHeight: '100vh', background: 'var(--bg-primary)' }}>
+        {/* Sidebar */}
+        <aside style={{
+            width: 280,
+            background: 'var(--bg-secondary)',
+            borderRight: '1px solid var(--border)',
+            display: 'flex',
+            flexDirection: 'column',
+            padding: '24px 16px',
+            position: 'fixed',
+            top: 0,
+            left: 0,
+            bottom: 0,
+            zIndex: 50,
+            overflowY: 'auto'
+          }}>
+            {/* Header */}
+            <div style={{ marginBottom: 32, padding: '0 8px' }}>
+              <div style={{ display: 'flex', alignItems: 'center', gap: 12, marginBottom: 16 }}>
+                <div style={{ 
+                  width: 32, 
+                  height: 32, 
+                  background: 'var(--gold)', 
+                  borderRadius: 8, 
+                  display: 'flex', 
+                  alignItems: 'center', 
+                  justifyContent: 'center',
+                  color: 'var(--bg-primary)',
+                  fontWeight: 800,
+                  fontSize: 18
+                }}>
+                  G
+                </div>
+                <div style={{ display: 'flex', flexDirection: 'column' }}>
+                  <span style={{ fontSize: 16, fontWeight: 800, letterSpacing: '0.1em', color: 'white' }}>OXENT</span>
+                  <span style={{ fontSize: 10, color: 'var(--text-secondary)' }}>Command Center</span>
+                </div>
               </div>
-              <div style={{ display: 'flex', flexDirection: 'column' }}>
-                <span style={{ fontSize: 16, fontWeight: 800, letterSpacing: '0.1em', color: 'white' }}>OXENT</span>
-                <span style={{ fontSize: 10, color: 'var(--text-secondary)' }}>Command Center</span>
+              
+              <div style={{ 
+                background: 'rgba(255, 255, 255, 0.03)', 
+                borderRadius: 8, 
+                padding: '12px',
+                border: '1px solid var(--border)',
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'space-between'
+              }}>
+                <div style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
+                  <div style={{ width: 6, height: 6, borderRadius: '50%', background: '#4ADE80', boxShadow: '0 0 8px #4ADE80' }}></div>
+                  <span style={{ fontSize: 12, color: '#4ADE80', fontWeight: 600 }}>Live</span>
+                </div>
+                <span style={{ fontSize: 12, color: 'var(--text-secondary)' }}>{todayStr}</span>
               </div>
             </div>
-            
-            <div style={{ 
-              background: 'rgba(255, 255, 255, 0.03)', 
-              borderRadius: 8, 
-              padding: '12px',
-              border: '1px solid var(--border)',
+
+            {/* Navigation */}
+            <nav style={{ display: 'flex', flexDirection: 'column', flex: 1 }}>
+              {allowedGroups.map((group, idx) => (
+                <div key={group.id}>
+                  <NavGroupSection group={group} activeTab={activeTab} setActiveTab={setActiveTab} />
+                  {idx < allowedGroups.length - 1 && (
+                    <div style={{ height: 1, background: 'var(--border)', margin: '16px 0' }} />
+                  )}
+                </div>
+              ))}
+            </nav>
+
+            {/* Footer User Profile & Actions */}
+            <div style={{ marginTop: 24, display: 'flex', flexDirection: 'column', gap: 16, padding: '0 8px' }}>
+              <div style={{ display: 'flex', alignItems: 'center', gap: 12, padding: '12px', background: 'rgba(255,255,255,0.02)', borderRadius: 8, border: '1px solid var(--border)' }}>
+                {user.photoURL ? (
+                  <img src={user.photoURL} alt="User" style={{ width: 32, height: 32, borderRadius: '50%' }} />
+                ) : (
+                  <div style={{ width: 32, height: 32, borderRadius: '50%', background: 'var(--gold-dim)', display: 'flex', alignItems: 'center', justifyContent: 'center', color: 'var(--gold)', fontWeight: 800 }}>
+                    {user.email?.charAt(0).toUpperCase()}
+                  </div>
+                )}
+                <div style={{ overflow: 'hidden' }}>
+                  <div style={{ fontSize: 13, fontWeight: 600, color: 'var(--text-primary)', whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>{user.displayName || 'User'}</div>
+                  <div style={{ fontSize: 10, color: 'var(--text-secondary)', textTransform: 'uppercase', letterSpacing: '0.05em', fontWeight: 800 }}>{role}</div>
+                </div>
+              </div>
+              <a 
+                href="https://anilsunar.com.np" 
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{
+                  display: 'flex',
+                  alignItems: 'center',
+                  gap: 12,
+                  padding: '12px 14px',
+                  borderRadius: 8,
+                  color: 'var(--text-secondary)',
+                  textDecoration: 'none',
+                  fontSize: 13,
+                  fontWeight: 500,
+                  transition: 'color 0.2s'
+                }}
+                onMouseEnter={(e) => e.currentTarget.style.color = 'white'}
+                onMouseLeave={(e) => e.currentTarget.style.color = 'var(--text-secondary)'}
+              >
+                <Globe size={16} /> Main Website
+              </a>
+              
+              <button 
+                onClick={handleLogout} 
+                style={{ 
+                  display: 'flex',
+                  alignItems: 'center',
+                  justifyContent: 'center',
+                  gap: 8,
+                  width: '100%', 
+                  padding: '12px',
+                  border: 'none', 
+                  borderRadius: 8,
+                  background: 'rgba(239, 68, 68, 0.1)', 
+                  color: '#ef4444',
+                  cursor: 'pointer',
+                  fontSize: 13,
+                  fontWeight: 600,
+                  transition: 'background 0.2s'
+                }}
+                onMouseEnter={(e) => e.currentTarget.style.background = 'rgba(239, 68, 68, 0.2)'}
+                onMouseLeave={(e) => e.currentTarget.style.background = 'rgba(239, 68, 68, 0.1)'}
+              >
+                <LogOut size={16} /> Logout
+              </button>
+            </div>
+          </aside>
+
+          {/* Main Content Area */}
+          <div style={{ flex: 1, marginLeft: 280, display: 'flex', flexDirection: 'column' }}>
+            {/* Header */}
+            <header style={{
+              height: 64,
+              padding: '0 32px',
               display: 'flex',
               alignItems: 'center',
-              justifyContent: 'space-between'
+              justifyContent: 'space-between',
+              borderBottom: '1px solid var(--border)',
+              background: 'rgba(5, 5, 8, 0.8)',
+              backdropFilter: 'blur(12px)',
+              position: 'sticky',
+              top: 0,
+              zIndex: 40,
             }}>
-              <div style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
-                <div style={{ width: 6, height: 6, borderRadius: '50%', background: '#4ADE80', boxShadow: '0 0 8px #4ADE80' }}></div>
-                <span style={{ fontSize: 12, color: '#4ADE80', fontWeight: 600 }}>Live</span>
+              <h2 style={{ fontSize: 16, fontWeight: 600, color: 'var(--text-primary)' }}>
+                {activeTabInfo?.label}
+              </h2>
+              <div style={{ 
+                display: 'flex', 
+                alignItems: 'center', 
+                gap: 8,
+                padding: '6px 12px',
+                borderRadius: 20,
+                background: 'var(--bg-secondary)',
+                border: '1px solid var(--border)',
+                fontSize: 12,
+                fontWeight: 600,
+                color: 'var(--text-secondary)'
+              }}>
+                <div style={{ width: 6, height: 6, borderRadius: '50%', background: '#10b981', boxShadow: '0 0 8px #10b981' }}></div>
+                app.anilsunar.com.np
               </div>
-              <span style={{ fontSize: 12, color: 'var(--text-secondary)' }}>{todayStr}</span>
-            </div>
+            </header>
+
+            <main style={{ padding: 32, flex: 1 }}>
+              <ActiveComponent />
+            </main>
           </div>
 
-          {/* Navigation */}
-          <nav style={{ display: 'flex', flexDirection: 'column', flex: 1 }}>
-            {allowedGroups.map((group, idx) => (
-              <div key={group.id}>
-                <NavGroupSection group={group} activeTab={activeTab} setActiveTab={setActiveTab} />
-                {idx < allowedGroups.length - 1 && (
-                  <div style={{ height: 1, background: 'var(--border)', margin: '16px 0' }} />
-                )}
+          {/* Toast Notifications */}
+          <div style={{ position: 'fixed', bottom: 24, right: 24, zIndex: 1000, display: 'flex', flexDirection: 'column', gap: 12, pointerEvents: 'none' }}>
+            {toasts.map(toast => (
+              <div 
+                key={toast.id} 
+                style={{
+                  pointerEvents: 'auto',
+                  background: 'var(--bg-secondary)',
+                  border: `1px solid ${toast.type === 'success' ? '#4ADE80' : toast.type === 'error' ? '#ef4444' : toast.type === 'warning' ? 'var(--gold)' : '#3b82f6'}`,
+                  padding: '12px 20px',
+                  borderRadius: 12,
+                  display: 'flex',
+                  alignItems: 'center',
+                  gap: 12,
+                  boxShadow: '0 10px 30px rgba(0,0,0,0.5)',
+                  minWidth: 300,
+                  animation: 'slideIn 0.3s ease-out'
+                }}
+              >
+                {toast.type === 'success' && <CheckCircle2 size={18} style={{ color: '#4ADE80' }} />}
+                {toast.type === 'error' && <AlertCircle size={18} style={{ color: '#ef4444' }} />}
+                {toast.type === 'warning' && <AlertTriangle size={18} style={{ color: 'var(--gold)' }} />}
+                {toast.type === 'info' && <Info size={18} style={{ color: '#3b82f6' }} />}
+                <span style={{ fontSize: 14, fontWeight: 500, color: 'white' }}>{toast.message}</span>
               </div>
             ))}
-          </nav>
-
-          {/* Footer User Profile & Actions */}
-          <div style={{ marginTop: 24, display: 'flex', flexDirection: 'column', gap: 16, padding: '0 8px' }}>
-            <div style={{ display: 'flex', alignItems: 'center', gap: 12, padding: '12px', background: 'rgba(255,255,255,0.02)', borderRadius: 8, border: '1px solid var(--border)' }}>
-              {user.photoURL ? (
-                <img src={user.photoURL} alt="User" style={{ width: 32, height: 32, borderRadius: '50%' }} />
-              ) : (
-                <div style={{ width: 32, height: 32, borderRadius: '50%', background: 'var(--gold-dim)', display: 'flex', alignItems: 'center', justifyContent: 'center', color: 'var(--gold)', fontWeight: 800 }}>
-                  {user.email?.charAt(0).toUpperCase()}
-                </div>
-              )}
-              <div style={{ overflow: 'hidden' }}>
-                <div style={{ fontSize: 13, fontWeight: 600, color: 'var(--text-primary)', whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>{user.displayName || 'User'}</div>
-                <div style={{ fontSize: 10, color: 'var(--text-secondary)', textTransform: 'uppercase', letterSpacing: '0.05em', fontWeight: 800 }}>{role}</div>
-              </div>
-            </div>
-            <a 
-              href="https://anilsunar.com.np" 
-              target="_blank"
-              rel="noopener noreferrer"
-              style={{
-                display: 'flex',
-                alignItems: 'center',
-                gap: 12,
-                padding: '12px 14px',
-                borderRadius: 8,
-                color: 'var(--text-secondary)',
-                textDecoration: 'none',
-                fontSize: 13,
-                fontWeight: 500,
-                transition: 'color 0.2s'
-              }}
-              onMouseEnter={(e) => e.currentTarget.style.color = 'white'}
-              onMouseLeave={(e) => e.currentTarget.style.color = 'var(--text-secondary)'}
-            >
-              <Globe size={16} /> Main Website
-            </a>
-            
-            <button 
-              onClick={handleLogout} 
-              style={{ 
-                display: 'flex',
-                alignItems: 'center',
-                justifyContent: 'center',
-                gap: 8,
-                width: '100%', 
-                padding: '12px',
-                border: 'none', 
-                borderRadius: 8,
-                background: 'rgba(239, 68, 68, 0.1)', 
-                color: '#ef4444',
-                cursor: 'pointer',
-                fontSize: 13,
-                fontWeight: 600,
-                transition: 'background 0.2s'
-              }}
-              onMouseEnter={(e) => e.currentTarget.style.background = 'rgba(239, 68, 68, 0.2)'}
-              onMouseLeave={(e) => e.currentTarget.style.background = 'rgba(239, 68, 68, 0.1)'}
-            >
-              <LogOut size={16} /> Logout
-            </button>
           </div>
-        </aside>
-
-        {/* Main Content Area */}
-        <div style={{ flex: 1, marginLeft: 280, display: 'flex', flexDirection: 'column' }}>
-          {/* Header */}
-          <header style={{
-            height: 64,
-            padding: '0 32px',
-            display: 'flex',
-            alignItems: 'center',
-            justifyContent: 'space-between',
-            borderBottom: '1px solid var(--border)',
-            background: 'rgba(5, 5, 8, 0.8)',
-            backdropFilter: 'blur(12px)',
-            position: 'sticky',
-            top: 0,
-            zIndex: 40,
-          }}>
-            <h2 style={{ fontSize: 16, fontWeight: 600, color: 'var(--text-primary)' }}>
-              {activeTabInfo?.label}
-            </h2>
-            <div style={{ 
-              display: 'flex', 
-              alignItems: 'center', 
-              gap: 8,
-              padding: '6px 12px',
-              borderRadius: 20,
-              background: 'var(--bg-secondary)',
-              border: '1px solid var(--border)',
-              fontSize: 12,
-              fontWeight: 600,
-              color: 'var(--text-secondary)'
-            }}>
-              <div style={{ width: 6, height: 6, borderRadius: '50%', background: '#10b981', boxShadow: '0 0 8px #10b981' }}></div>
-              app.anilsunar.com.np
-            </div>
-          </header>
-
-          <main style={{ padding: 32, flex: 1 }}>
-            <ActiveComponent />
-          </main>
         </div>
-      </div>
+    </ToastContext.Provider>
   )
 }

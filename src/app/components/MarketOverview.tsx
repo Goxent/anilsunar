@@ -1,11 +1,21 @@
-import { TrendingUp, TrendingDown, BarChart3, Clock } from 'lucide-react'
+import { TrendingUp, TrendingDown, BarChart3, Clock, RefreshCw, Copy, ExternalLink, X } from 'lucide-react'
 import sastoReport from '../data/sasto_premium_report.json'
+import React, { useState } from 'react'
 
 export default function MarketOverview() {
+  const [showSyncModal, setShowSyncModal] = useState(false)
+  const [copied, setCopied] = useState(false)
+
   const premiumData = sastoReport?.sentiment || []
   let index = sastoReport?.marketSummary?.index || 'N/A'
   let changePct = sastoReport?.marketSummary?.changePct || '0.0%'
   let turnover = sastoReport?.marketSummary?.turnover || 'N/A'
+
+  const copyCommand = () => {
+    navigator.clipboard.writeText('npm run full-sync')
+    setCopied(true)
+    setTimeout(() => setCopied(false), 2000)
+  }
 
   const isPositive = !changePct.startsWith('-')
 
@@ -16,15 +26,90 @@ export default function MarketOverview() {
           <h2 style={{ fontSize: 28, fontWeight: 700, marginBottom: 8 }}>Market Overview</h2>
           <p style={{ color: 'var(--text-secondary)' }}>Scraped NEPSE market summary from Sasto Share</p>
         </div>
-        <div style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
-          <span className="badge badge-gold" style={{ display: 'flex', alignItems: 'center', gap: 4 }}>
-            <Clock size={12} /> UPDATED
-          </span>
-          <span style={{ fontSize: 11, color: 'var(--text-secondary)' }}>
-            {sastoReport.updatedAt || 'Unknown'}
-          </span>
+        <div style={{ display: 'flex', alignItems: 'center', gap: 12 }}>
+          <button 
+            onClick={() => setShowSyncModal(true)}
+            className="btn"
+            style={{ padding: '8px 16px', display: 'flex', alignItems: 'center', gap: 8 }}
+          >
+            <RefreshCw size={14} /> Sync Now
+          </button>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
+            <span className="badge badge-gold" style={{ display: 'flex', alignItems: 'center', gap: 4 }}>
+              <Clock size={12} /> UPDATED
+            </span>
+            <span style={{ fontSize: 11, color: 'var(--text-secondary)' }}>
+              {sastoReport.updatedAt || 'Unknown'}
+            </span>
+          </div>
         </div>
       </div>
+
+      {/* Sync Modal */}
+      {showSyncModal && (
+        <div style={{
+          position: 'fixed', inset: 0, background: 'rgba(0,0,0,0.8)', 
+          display: 'flex', alignItems: 'center', justifyContent: 'center', zIndex: 1000,
+          backdropFilter: 'blur(8px)'
+        }}>
+          <div className="card animate-fade-in" style={{ maxWidth: 450, position: 'relative', border: '1px solid var(--gold)' }}>
+            <button 
+              onClick={() => setShowSyncModal(false)}
+              style={{ position: 'absolute', top: 16, right: 16, background: 'none', border: 'none', color: 'var(--text-secondary)', cursor: 'pointer' }}
+            >
+              <X size={20} />
+            </button>
+            <div style={{ textAlign: 'center', marginBottom: 24 }}>
+              <div style={{ 
+                width: 64, height: 64, borderRadius: '50%', background: 'rgba(212, 175, 55, 0.1)', 
+                display: 'flex', alignItems: 'center', justifyContent: 'center', margin: '0 auto 16px'
+              }}>
+                <RefreshCw size={32} className="text-gold" />
+              </div>
+              <h3 style={{ fontSize: 24, fontWeight: 700, marginBottom: 8 }}>Sync Latest Data</h3>
+              <p style={{ color: 'var(--text-secondary)', fontSize: 14 }}>
+                To fetch fresh data from Sasto Share and update the dashboard, please run the following command in your terminal.
+              </p>
+            </div>
+
+            <div style={{ background: 'black', padding: 16, borderRadius: 12, marginBottom: 24, position: 'relative' }}>
+              <code style={{ color: 'var(--gold)', fontSize: 14, fontFamily: 'monospace' }}>npm run full-sync</code>
+              <button 
+                onClick={copyCommand}
+                style={{ 
+                  position: 'absolute', right: 8, top: '50%', transform: 'translateY(-50%)',
+                  background: 'rgba(212, 175, 55, 0.1)', border: 'none', padding: '6px 12px',
+                  borderRadius: 6, color: 'var(--gold)', fontSize: 11, cursor: 'pointer',
+                  display: 'flex', alignItems: 'center', gap: 4
+                }}
+              >
+                {copied ? <CheckCircle2 size={12} /> : <Copy size={12} />}
+                {copied ? 'Copied' : 'Copy'}
+              </button>
+            </div>
+
+            <ul style={{ padding: 0, listStyle: 'none', space: 'y-4', marginBottom: 24 }}>
+              {[
+                'Scrapes latest Sasto Share data',
+                'Updates NEPSE index and signals',
+                'Takes about 2-3 minutes to complete'
+              ].map((text, i) => (
+                <li key={i} style={{ display: 'flex', alignItems: 'center', gap: 12, fontSize: 13, color: 'var(--text-secondary)', marginBottom: 12 }}>
+                  <div style={{ width: 6, height: 6, borderRadius: '50%', background: 'var(--gold)' }} />
+                  {text}
+                </li>
+              ))}
+            </ul>
+
+            <button 
+              onClick={() => setShowSyncModal(false)}
+              className="btn btn-primary" style={{ width: '100%', padding: '12px' }}
+            >
+              Got it, thanks!
+            </button>
+          </div>
+        </div>
+      )}
 
       {/* Index Card */}
       <div className="card" style={{ marginBottom: 24, display: 'flex', alignItems: 'center', gap: 32, flexWrap: 'wrap' }}>
