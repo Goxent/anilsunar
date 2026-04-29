@@ -24,7 +24,7 @@ import NewsletterAdmin from './components/NewsletterAdmin'
 import UserManagement from './components/UserManagement'
 import AdminDashboard from '../../components/AdminDashboard'
 import { auth, googleProvider, db } from './lib/firebase'
-import { onAuthStateChanged, signInWithPopup, signOut, User as FirebaseUser } from 'firebase/auth'
+import { onAuthStateChanged, signInWithPopup, signOut, signInWithEmailAndPassword, createUserWithEmailAndPassword, sendEmailVerification, sendPasswordResetEmail, User as FirebaseUser } from 'firebase/auth'
 import { doc, getDoc, setDoc } from 'firebase/firestore'
 
 const NAV_GROUPS = [
@@ -139,6 +139,13 @@ export default function AppShell() {
   const [loading, setLoading] = useState(true)
   const [activeTab, setActiveTab] = useState('market')
 
+  const [email, setEmail] = useState('')
+  const [password, setPassword] = useState('')
+  const [isSignUp, setIsSignUp] = useState(false)
+  const [isForgotPassword, setIsForgotPassword] = useState(false)
+  const [authError, setAuthError] = useState('')
+  const [authMessage, setAuthMessage] = useState('')
+
   useEffect(() => {
     const unsubscribe = onAuthStateChanged(auth, async (firebaseUser) => {
       if (firebaseUser) {
@@ -186,6 +193,29 @@ export default function AppShell() {
     }
   }
 
+  const handleEmailAuth = async (e: React.FormEvent) => {
+    e.preventDefault();
+    setAuthError('');
+    setAuthMessage('');
+    try {
+      if (isForgotPassword) {
+        await sendPasswordResetEmail(auth, email);
+        setAuthMessage('Password reset link sent to your email.');
+      } else if (isSignUp) {
+        const userCredential = await createUserWithEmailAndPassword(auth, email, password);
+        await sendEmailVerification(userCredential.user);
+        setAuthMessage('Account created! Verification email sent.');
+      } else {
+        await signInWithEmailAndPassword(auth, email, password);
+      }
+    } catch (error: any) {
+      console.error("Authentication failed:", error);
+      // Clean up Firebase error messages
+      const msg = error.message.replace('Firebase: ', '').replace(/\(auth\/.*\)\./, '');
+      setAuthError(msg || 'Authentication failed');
+    }
+  };
+
   const handleLogout = () => {
     signOut(auth)
   }
@@ -209,9 +239,120 @@ export default function AppShell() {
             <h1 style={{ fontSize: 28, fontWeight: 700, marginBottom: 8 }}>Goxent Command Center</h1>
             <p style={{ color: 'var(--text-secondary)', fontSize: 14 }}>Private access — anilsunar.com.np</p>
           </div>
-          <button onClick={handleLogin} className="btn btn-primary" style={{ width: '100%', justifyContent: 'center', padding: '14px 20px' }}>
+          
+          <form onSubmit={handleEmailAuth} style={{ display: 'flex', flexDirection: 'column', gap: 16, marginBottom: 24 }}>
+            <input 
+              type="email" 
+              placeholder="Email address" 
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+              required
+            />
+            {!isForgotPassword && (
+              <input 
+                type="password" 
+                placeholder="Password" 
+                value={password}
+                onChange={(e) => setPassword(e.target.value)}
+                required
+              />
+            )}
+            
+            {!isForgotPassword && !isSignUp && (
+              <div style={{ textAlign: 'right' }}>
+                <button 
+                  type="button" 
+                  onClick={() => {
+                    setIsForgotPassword(true);
+                    setAuthError('');
+                    setAuthMessage('');
+                  }}
+                  style={{ background: 'none', border: 'none', color: 'var(--gold)', fontSize: 12, cursor: 'pointer' }}
+                >
+                  Forgot Password?
+                </button>
+              </div>
+            )}
+
+            {authError && <p style={{ color: 'var(--red)', fontSize: 13, margin: 0 }}>{authError}</p>}
+            {authMessage && <p style={{ color: 'var(--green)', fontSize: 13, margin: 0 }}>{authMessage}</p>}
+            
+            <button type="submit" className="btn btn-primary" style={{ width: '100%', justifyContent: 'center', padding: '14px 20px' }}>
+              {isForgotPassword ? 'Send Reset Link' : (isSignUp ? 'Sign Up' : 'Sign In')}
+            </button>
+          </form>
+
+          <div style={{ display: 'flex', alignItems: 'center', gap: 16, marginBottom: 24 }}>
+            <div style={{ flex: 1, height: 1, background: 'var(--border)' }}></div>
+            <span style={{ fontSize: 12, color: 'var(--text-secondary)' }}>OR</span>
+            <div style={{ flex: 1, height: 1, background: 'var(--border)' }}></div>
+          </div>
+
+          <button type="button" onClick={handleLogin} className="btn" style={{ width: '100%', justifyContent: 'center', padding: '14px 20px', marginBottom: 16 }}>
             Sign in with Google
           </button>
+          
+          <button 
+            type="button" 
+            onClick={() => {
+              if (isForgotPassword) {
+                setIsForgotPassword(false);
+              } else {
+                setIsSignUp(!isSignUp);
+              }
+              setAuthError('');
+              setAuthMessage('');
+            }} 
+            style={{ 
+              background: 'none', 
+              border: 'none', 
+              color: 'var(--text-secondary)', 
+              fontSize: 13, 
+              cursor: 'pointer',
+              textDecoration: 'underline'
+            }}
+          >
+            {isForgotPassword 
+              ? 'Back to Sign In' 
+              : (isSignUp ? 'Already have an account? Sign In' : "Don't have an account? Sign Up")}
+          </button>
+        </div>
+      </div>
+    )
+  }
+
+  if (user && !user.emailVerified) {
+    return (
+      <div style={{ 
+        minHeight: '100vh', 
+        display: 'flex', 
+        alignItems: 'center', 
+        justifyContent: 'center',
+        background: 'var(--bg-primary)'
+      }}>
+        <div className="card" style={{ width: 400, textAlign: 'center' }}>
+          <Mail size={40} style={{ color: 'var(--gold)', marginBottom: 16, margin: '0 auto' }} />
+          <h1 style={{ fontSize: 24, fontWeight: 700, marginBottom: 12 }}>Verify your email</h1>
+          <p style={{ color: 'var(--text-secondary)', fontSize: 14, marginBottom: 24, lineHeight: 1.6 }}>
+            We've sent a verification link to <strong>{user.email}</strong>. 
+            Please check your inbox and click the link to continue.
+          </p>
+          <div style={{ display: 'flex', flexDirection: 'column', gap: 12 }}>
+            <button 
+              onClick={() => window.location.reload()} 
+              className="btn btn-primary" 
+              style={{ width: '100%', justifyContent: 'center', padding: '14px 20px' }}
+            >
+              I've verified my email
+            </button>
+            <button 
+              onClick={handleLogout} 
+              className="btn" 
+              style={{ width: '100%', justifyContent: 'center', padding: '14px 20px' }}
+            >
+              Sign out
+            </button>
+          </div>
         </div>
       </div>
     )
