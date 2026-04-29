@@ -4,6 +4,7 @@ import { collection, addDoc, deleteDoc, doc, onSnapshot, query, orderBy, Timesta
 import { db, auth } from '../lib/firebase'
 import { callAI } from '../lib/ai'
 import aiDigestRaw from '../data/ai_digest.json'
+import { useToast } from '../AppShell'
 
 const aiDigest = aiDigestRaw as {
   linkedinIdeas: Array<{
@@ -26,6 +27,7 @@ type Idea = {
 }
 
 export default function ContentStudio() {
+  const { showToast } = useToast()
   const [activeTab, setActiveTab] = useState<'ai' | 'ideas' | 'digest'>('digest')
   const [topic, setTopic] = useState('')
   const [aiOutput, setAiOutput] = useState('')
@@ -63,9 +65,10 @@ export default function ContentStudio() {
         date: new Date().toLocaleDateString(),
         createdAt: Timestamp.now()
       });
-      alert("Saved to Idea Vault!");
+      showToast("Saved to Idea Vault!", "success");
     } catch (err) {
       console.error(err);
+      showToast("Failed to save idea.", "error");
     }
   }
 
@@ -79,9 +82,10 @@ export default function ContentStudio() {
         date: new Date().toLocaleDateString(),
         createdAt: Timestamp.now()
       });
-      alert("Added to Idea Vault!");
+      showToast("Added to Idea Vault!", "success");
     } catch (err) {
       console.error(err);
+      showToast("Failed to add idea.", "error");
     }
   }
 
@@ -112,7 +116,7 @@ export default function ContentStudio() {
 
   const callClaude = async (promptType: string) => {
     if (!topic && promptType !== 'trending') {
-      alert("Please enter a topic or symbol first.")
+      showToast("Please enter a topic or symbol first.", "warning")
       return
     }
 
@@ -252,8 +256,14 @@ export default function ContentStudio() {
                       <p style={{ fontSize: 11, color: 'var(--text-secondary)' }}>{idea.type} • {idea.date}</p>
                     </div>
                     <div style={{ display: 'flex', gap: 8 }}>
-                      <button className="btn" style={{ padding: '6px 10px' }} onClick={() => navigator.clipboard.writeText(idea.content)}><Copy size={14}/></button>
-                      <button className="btn" style={{ padding: '6px 10px', color: 'var(--red)' }} onClick={() => deleteIdea(idea.id)}><Trash2 size={14}/></button>
+                      <button className="btn" style={{ padding: '6px 10px' }} onClick={() => {
+                        navigator.clipboard.writeText(idea.content);
+                        showToast("Copied to clipboard!", "info");
+                      }}><Copy size={14}/></button>
+                      <button className="btn" style={{ padding: '6px 10px', color: 'var(--red)' }} onClick={() => {
+                        deleteIdea(idea.id);
+                        showToast("Idea deleted.", "info");
+                      }}><Trash2 size={14}/></button>
                     </div>
                   </div>
                   <div style={{ fontSize: 13, lineHeight: 1.6, whiteSpace: 'pre-wrap', color: 'var(--text-primary)' }}>

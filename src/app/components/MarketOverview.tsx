@@ -1,8 +1,10 @@
 import { TrendingUp, TrendingDown, BarChart3, Clock, RefreshCw, Copy, ExternalLink, X } from 'lucide-react'
 import sastoReport from '../data/sasto_premium_report.json'
 import React, { useState } from 'react'
+import { useToast } from '../AppShell'
 
 export default function MarketOverview() {
+  const { showToast } = useToast()
   const [showSyncModal, setShowSyncModal] = useState(false)
   const [copied, setCopied] = useState(false)
 
@@ -14,6 +16,7 @@ export default function MarketOverview() {
   const copyCommand = () => {
     navigator.clipboard.writeText('npm run full-sync')
     setCopied(true)
+    showToast("Command copied to clipboard!", "success")
     setTimeout(() => setCopied(false), 2000)
   }
 
