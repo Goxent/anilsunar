@@ -17,5 +17,14 @@ export default defineConfig(({ mode }) => {
         '@app': path.resolve(__dirname, 'src/app'),
       },
     },
+    // firebase-admin is server-only — exclude from browser bundle
+    optimizeDeps: {
+      exclude: ['firebase-admin'],
+    },
+    build: {
+      rollupOptions: {
+        external: ['firebase-admin'],
+      },
+    },
   };
 });

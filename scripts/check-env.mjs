@@ -2,15 +2,18 @@ import dotenv from 'dotenv'
 dotenv.config()
 
 const required = [
-  'VITE_DASHBOARD_PASSWORD',
-  'VITE_ANTHROPIC_API_KEY', 
+  'VITE_GEMINI_API_KEY',  // Required — all AI features (browser + server)
   'SASTO_EMAIL',
   'SASTO_PASSWORD',
   'RESEND_API_KEY',
   'TO_EMAIL'
 ]
 
-const optional = ['VITE_GEMINI_API_KEY']
+const optional = [
+  'ANTHROPIC_API_KEY',          // Claude (future premium plan)
+  'FIREBASE_SERVICE_ACCOUNT_JSON', // Required for Firestore sync
+  'VITE_DASHBOARD_PASSWORD',    // Legacy password gate (deprecated)
+]
 
 console.log('\n🔍 Checking environment variables...\n')
 let allGood = true

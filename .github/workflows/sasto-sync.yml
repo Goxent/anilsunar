@@ -1,57 +1,111 @@
-name: Automated Sasto Premium Sync
+name: Goxent Daily Intelligence Sync
 
 on:
   schedule:
-    # Runs at 12:15 PM UTC (6:00 PM Nepal Time) Monday through Friday
-    # Full end-of-day analysis after NEPSE market closes + data settles
-    - cron: '15 12 * * 1-5'
-  
-  # Allows you to trigger the sync manually from the GitHub Actions tab
+    - cron: '15 1 * * 1-5'   # 7:00 AM Nepal time, weekdays
   workflow_dispatch:
+    inputs:
+      sync_type:
+        description: 'What to sync'
+        required: false
+        default: 'all'
+        type: choice
+        options:
+          - all
+          - nepse-only
+          - notices-only
 
 jobs:
-  sync-premium-data:
+  sync:
     runs-on: ubuntu-latest
-
-    permissions:
-      contents: write
+    timeout-minutes: 30
 
     steps:
-      - name: Checkout Repository
+      - name: Checkout repository
         uses: actions/checkout@v4
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Setup Node.js
+      - name: Setup Node.js 20
         uses: actions/setup-node@v4
         with:
           node-version: '20'
           cache: 'npm'
 
-      - name: Install Dependencies
-        run: npm install
+      - name: Install dependencies
+        run: npm ci --ignore-scripts
 
-      - name: Install Playwright Browsers
+      - name: Install Playwright (for NEPSE bot only)
+        if: ${{ github.event.inputs.sync_type != 'notices-only' }}
         run: npx playwright install chromium --with-deps
 
-      - name: Run Daily Sync (Sasto Bot + AI Digest + Cloud Sync)
+      # ---- NEPSE DATA SYNC ----
+      - name: Run NEPSE Omni Crawler
+        if: ${{ github.event.inputs.sync_type != 'notices-only' }}
         env:
           SASTO_EMAIL: ${{ secrets.SASTO_EMAIL }}
           SASTO_PASSWORD: ${{ secrets.SASTO_PASSWORD }}
-          RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
-          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
-          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY || secrets.VITE_ANTHROPIC_API_KEY }}
-          VITE_ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY || secrets.VITE_ANTHROPIC_API_KEY }}
-          FIREBASE_SERVICE_ACCOUNT_JSON: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_JSON }}
-          NODE_ENV: production
-        run: npm run daily-sync
+        run: node scripts/omni-crawler.mjs
+        continue-on-error: true
+        timeout-minutes: 12
 
-      - name: Commit and Push Scraped Data
+      # ---- NOTICE TRACKER ----
+      - name: Run Notice Scraper
+        if: ${{ github.event.inputs.sync_type != 'nepse-only' }}
+        run: node scripts/notice-scraper.mjs
+        timeout-minutes: 5
+
+      - name: Run Notice AI Writer
+        if: ${{ github.event.inputs.sync_type != 'nepse-only' }}
+        env:
+          VITE_GEMINI_API_KEY: ${{ secrets.VITE_GEMINI_API_KEY }}
+        run: node scripts/notice-ai-writer.mjs
+        continue-on-error: true
+        timeout-minutes: 5
+
+      # ---- AI DIGEST (NEPSE summary + LinkedIn ideas) ----
+      - name: Run AI Digest
+        env:
+          VITE_GEMINI_API_KEY: ${{ secrets.VITE_GEMINI_API_KEY }}
+          RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
+          TO_EMAIL: ${{ secrets.TO_EMAIL }}
+        run: node scripts/ai-digest.mjs
+        continue-on-error: true
+        timeout-minutes: 5
+
+      # ---- EMAIL ALERTS ----
+      - name: Send Notice Alert Email
+        if: ${{ github.event.inputs.sync_type != 'nepse-only' }}
+        env:
+          RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
+          TO_EMAIL: ${{ secrets.TO_EMAIL }}
+        run: node scripts/notice-notifier.mjs
+        continue-on-error: true
+        timeout-minutes: 3
+
+      # ---- COMMIT ALL DATA ----
+      - name: Commit updated data
         run: |
-          git config --global user.name "Goxent Bot"
-          git config --global user.email "bot@anilsunar.com.np"
-          git add src/app/data/*.json
-          git status
-          git diff --quiet && git diff --staged --quiet || (git commit -m "🤖 [BOT] Daily Market Intelligence Update [$(date +'%Y-%m-%d')]" && git push)
+          git config user.email "bot@anilsunar.com.np"
+          git config user.name "Goxent Intelligence Bot"
+          git add src/app/data/
+          git diff --staged --quiet || git commit -m "chore: daily sync $(date -u +%Y-%m-%d) — NEPSE + Notices"
+          git push
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Print summary
+        if: always()
+        run: |
+          echo "=== SYNC SUMMARY ==="
+          node -e "
+            const fs = require('fs')
+            try {
+              const n = JSON.parse(fs.readFileSync('src/app/data/notices.json','utf8'))
+              console.log('Notices: ' + n.totalCount + ' total, ' + n.newCount + ' new')
+            } catch(e) { console.log('Notices: data not available') }
+            try {
+              const m = JSON.parse(fs.readFileSync('src/app/data/market-omni-data.json','utf8'))
+              console.log('NEPSE pages: ' + (m.scrapedPages || []).length)
+            } catch(e) { console.log('NEPSE: data not available') }
+          "

@@ -187,13 +187,35 @@ async function sendDigestEmail(digest) {
   console.log(`📬 Digest delivered to ${sent}/${recipients.length} subscribers.`);
 }
 
+async function callGeminiAPI(prompt) {
+  const apiKey = process.env.VITE_GEMINI_API_KEY || process.env.GEMINI_API_KEY;
+  if (!apiKey) {
+    throw new Error('VITE_GEMINI_API_KEY not set — skipping AI digest');
+  }
+
+  const response = await fetch(
+    `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${apiKey}`,
+    {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        contents: [{ parts: [{ text: prompt + "\n\nIMPORTANT: Return ONLY raw JSON." }] }],
+        generationConfig: { temperature: 0.7, maxOutputTokens: 4096 }
+      })
+    }
+  );
+
+  const data = await response.json();
+  if (data.error) throw new Error(data.error.message);
+  return data?.candidates?.[0]?.content?.parts?.[0]?.text || '';
+}
+
 async function run() {
-  const anthropicKey = process.env.VITE_ANTHROPIC_API_KEY || process.env.ANTHROPIC_API_KEY;
   const geminiKey = process.env.GEMINI_API_KEY || process.env.VITE_GEMINI_API_KEY;
 
-  if (!anthropicKey && !geminiKey) {
-    console.error('❌ No AI API keys found (Anthropic or Gemini). Please check .env or GitHub Secrets.');
-    process.exit(1);
+  if (!geminiKey) {
+    console.warn('⚠️  VITE_GEMINI_API_KEY not found — skipping AI digest (pipeline continues)');
+    process.exit(0); // Graceful skip — don't fail the pipeline
   }
 
   // Load market data from the massive omni-data lake
@@ -206,12 +228,25 @@ async function run() {
   let dataStr = JSON.stringify(marketData);
   if (dataStr.length > 80000) dataStr = dataStr.slice(0, 80000) + '... [TRUNCATED]';
 
+  // Load regulatory notices (OCR, IRD, ICAN)
+  const noticesPath = path.join(__dirname, '../src/app/data/regulatory-notices.json');
+  let regulatoryNotices = [];
+  if (fs.existsSync(noticesPath)) {
+    // Only take the 10 most recent notices
+    regulatoryNotices = JSON.parse(fs.readFileSync(noticesPath, 'utf8')).slice(0, 10);
+  }
+  const noticesStr = JSON.stringify(regulatoryNotices);
+
   const prompt = `You are an elite quantitative analyst, auditor, and financial expert in Nepal.
 
 Here is a massive data lake scraped dynamically from NepseAlpha/SastoShare today containing raw tables of floorsheets, broker analysis, technical signals, and fundamentals:
 ${dataStr}
 
+Here are the latest regulatory notices from Nepal Government agencies (OCR, IRD, ICAN):
+${noticesStr}
+
 Analyze this entire data lake to find hidden correlations (e.g., heavily accumulated stocks by specific brokers that also have bullish technical signals or high F-Scores). 
+Consider any regulatory impacts from the notices.
 
 Write a 5-sentence "Alpha Market Summary" that exposes the most interesting anomaly or trend you found across the entire data lake.
 
@@ -222,46 +257,13 @@ For each pick, provide:
 - reason: A precise 1-sentence reason (e.g., "Broker 58 accumulated 150k units while F-Score is 8.")
 
 Then, generate exactly 6 LinkedIn post ideas for their personal brand.
+CRITICAL: At least 2 of these LinkedIn posts MUST be based on the provided regulatory notices (if any are present). Make them highly engaging for Nepali finance/accounting professionals.
 Respond ONLY in valid JSON with keys: marketSummary (string), topPicks (array of 10 objects), linkedinIdeas (array of 6 objects)`;
 
   try {
-    let parsed;
-
-    if (anthropicKey) {
-      console.log('🧠 Sending Omni-Data Lake to Claude 3.5 Sonnet for Deep Analysis...');
-      const response = await fetch('https://api.anthropic.com/v1/messages', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-          'x-api-key': anthropicKey,
-          'anthropic-version': '2023-06-01'
-        },
-        body: JSON.stringify({
-          model: 'claude-3-5-sonnet-20241022',
-          max_tokens: 4000,
-          messages: [{ role: 'user', content: prompt }]
-        })
-      });
-
-      const data = await response.json();
-      if (data.error) throw new Error(data.error.message);
-      const text = data.content[0].text;
-      parsed = JSON.parse(text.replace(/```json|```/g, '').trim());
-    } else {
-      console.log('🧠 Sending Omni-Data Lake to Gemini 2.0 Flash for Deep Analysis...');
-      const response = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${geminiKey}`, {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          contents: [{ parts: [{ text: prompt + "\n\nIMPORTANT: Return ONLY raw JSON." }] }]
-        })
-      });
-
-      const data = await response.json();
-      if (data.error) throw new Error(data.error.message);
-      const text = data.candidates[0].content.parts[0].text;
-      parsed = JSON.parse(text.replace(/```json|```/g, '').trim());
-    }
+    console.log('🧠 Sending Omni-Data Lake to Gemini 2.0 Flash for Deep Analysis...');
+    const text = await callGeminiAPI(prompt);
+    const parsed = JSON.parse(text.replace(/```json|```/g, '').trim());
 
     const output = {
       timestamp: new Date().toISOString(),
@@ -276,7 +278,9 @@ Respond ONLY in valid JSON with keys: marketSummary (string), topPicks (array of
 
     await sendDigestEmail(output);
   } catch (error) {
-    console.error('❌ Error generating AI Digest:', error);
+    // Quota exceeded or API error — warn but don't fail the pipeline
+    console.warn('⚠️  AI Digest skipped (quota or API error):', error.message);
+    console.warn('   Market data was still saved. Digest will generate on next run.');
   }
 }
 

@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { Brain, Search, Sparkles, TrendingUp, AlertCircle, FileText, Activity, MessageSquare, RefreshCw, ShieldCheck, Zap, Target } from 'lucide-react'
 import { useMarketData, useToast } from '../AppShell'
 import LoadingCard from './LoadingCard'
-import { callClaude } from '../lib/ai'
+import { callGemini } from '../lib/ai'
 
 function getQuickPicks(omniData: any) {
   if (!omniData) return ['NABIL', 'UPPER', 'NLIC']
@@ -71,7 +71,7 @@ export default function AIResearch() {
       
       Respond in valid JSON with keys: technical, broker, risk, suggestion, reason.`
 
-      const text = await callClaude(prompt, 1000)
+      const text = await callGemini(prompt)
       const jsonStr = text.replace(/```json|```/g, '').trim()
       const parsed = JSON.parse(jsonStr)
       
@@ -219,10 +219,10 @@ export default function AIResearch() {
                        <p className="text-sm font-bold text-white">{result.reason}</p>
                     </div>
                  </div>
-                 <div className="flex items-center gap-3 text-zinc-600">
+                  <div className="flex items-center gap-3 text-zinc-600">
                     <Brain size={14} />
-                    <span className="text-[10px] font-black uppercase tracking-widest">Claude 3.5 Sonnet Analysis</span>
-                 </div>
+                    <span className="text-[10px] font-black uppercase tracking-widest">Gemini 2.0 Flash Analysis</span>
+                  </div>
                </div>
             </div>
           )}

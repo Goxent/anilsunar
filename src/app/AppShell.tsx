@@ -32,6 +32,7 @@ import StockScreener from './components/StockScreener'
 import BrokerAnalysis from './components/BrokerAnalysis'
 import AIResearch from './components/AIResearch'
 import ContentStudio from './components/ContentStudio'
+import NoticeTracker from './components/NoticeTracker'
 import NewsletterAdmin from './components/NewsletterAdmin'
 import UserManagement from './components/UserManagement'
 import AlphaBotController from './components/AlphaBotController'
@@ -65,7 +66,6 @@ const NAV_GROUPS = [
       { id: 'sectors', label: 'Sector Heat', icon: Layers, component: SectorHeatmap },
       { id: 'portfolio', label: 'Portfolio', icon: Briefcase, component: PortfolioTracker },
       { id: 'watchlist', label: 'Watchlist', icon: Star, component: Watchlist },
-      { id: 'bot', label: 'Alpha Bot Controller', icon: Terminal, component: AlphaBotController },
       { id: 'intel', label: 'Market Intelligence', icon: TrendingUp, component: MarketIntelligence },
       { id: 'screener', label: 'Stock Screener', icon: Search, component: StockScreener },
       { id: 'broker', label: 'Broker Analysis', icon: Users, component: BrokerAnalysis },
@@ -79,6 +79,7 @@ const NAV_GROUPS = [
     tabs: [
       { id: 'ai', label: 'AI Research', icon: Brain, component: AIResearch },
       { id: 'studio', label: 'Content Studio', icon: Pencil, component: ContentStudio },
+      { id: 'notices', label: 'Notice Tracker', icon: Bell, component: NoticeTracker },
       { id: 'newsletter', label: 'Newsletter', icon: Mail, component: NewsletterAdmin },
     ]
   },
@@ -89,6 +90,7 @@ const NAV_GROUPS = [
     icon: Settings,
     tabs: [
       { id: 'admin', label: 'Admin Panel', icon: Settings, component: AdminDashboard },
+      { id: 'bot', label: 'Alpha Bot', icon: Terminal, component: AlphaBotController },
       { id: 'users', label: 'User Management', icon: Users, component: UserManagement },
     ]
   }
@@ -497,9 +499,21 @@ export default function AppShell() {
               <h2 style={{ fontSize: 16, fontWeight: 600 }}>{activeTabInfo?.label}</h2>
             </div>
             
-            <div style={{ display: 'flex', alignItems: 'center', gap: 12, padding: '6px 12px', borderRadius: 20, background: 'var(--bg-secondary)', border: '1px solid var(--border)', fontSize: 11 }}>
-              <div style={{ width: 6, height: 6, borderRadius: '50%', background: freshnessColor, boxShadow: `0 0 8px ${freshnessColor}` }}></div>
-              <span style={{ color: 'var(--text-secondary)' }}>{freshnessText}</span>
+            <div style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
+              <div style={{
+                display: 'flex', alignItems: 'center', gap: 6,
+                padding: '4px 10px', borderRadius: 20,
+                background: 'rgba(66,133,244,0.1)',
+                border: '1px solid rgba(66,133,244,0.2)',
+                fontSize: 11, fontWeight: 700,
+                color: '#4285f4'
+              }}>
+                ✦ Gemini 2.0
+              </div>
+              <div style={{ display: 'flex', alignItems: 'center', gap: 12, padding: '6px 12px', borderRadius: 20, background: 'var(--bg-secondary)', border: '1px solid var(--border)', fontSize: 11 }}>
+                <div style={{ width: 6, height: 6, borderRadius: '50%', background: freshnessColor, boxShadow: `0 0 8px ${freshnessColor}` }}></div>
+                <span style={{ color: 'var(--text-secondary)' }}>{freshnessText}</span>
+              </div>
             </div>
           </header>
 

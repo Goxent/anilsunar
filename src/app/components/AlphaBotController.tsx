@@ -12,7 +12,10 @@ interface ScrapedRecord {
   topPicks: Array<{ symbol: string; signal: string }>;
 }
 
-const GITHUB_REPO = 'Goxent/anilsunar'
+// GitHub repository config — update these if you rename/fork the repo
+const GITHUB_USERNAME = 'Goxent'
+const GITHUB_REPO_NAME = 'anilsunar'
+const GITHUB_REPO = `${GITHUB_USERNAME}/${GITHUB_REPO_NAME}`
 const WORKFLOW_FILE = 'sasto-sync.yml'
 const WORKFLOW_DISPATCH_URL = `https://api.github.com/repos/${GITHUB_REPO}/actions/workflows/${WORKFLOW_FILE}/dispatches`
 const GITHUB_ACTIONS_URL = `https://github.com/${GITHUB_REPO}/actions`
@@ -20,7 +23,8 @@ const GITHUB_ACTIONS_URL = `https://github.com/${GITHUB_REPO}/actions`
 export default function AlphaBotController() {
   const [pat, setPat] = useState(sessionStorage.getItem('github_pat') || '');
   const [isTriggering, setIsTriggering] = useState(false);
-  const [status, setStatus] = useState<any>(null);
+  const [syncType, setSyncType] = useState('all');
+  const [status, setStatus] = useState<{type: 'success' | 'error' | 'info', message: string} | null>(null);
   const [history, setHistory] = useState<ScrapedRecord[]>([]);
   const [loading, setLoading] = useState(true);
 
@@ -62,7 +66,10 @@ export default function AlphaBotController() {
           'Accept': 'application/vnd.github.v3+json',
           'Content-Type': 'application/json'
         },
-        body: JSON.stringify({ ref: 'main' })
+        body: JSON.stringify({ 
+          ref: 'main',
+          inputs: { sync_type: syncType }
+        })
       });
 
       if (response.ok) {
@@ -120,6 +127,30 @@ export default function AlphaBotController() {
                 </div>
               </div>
 
+              <div style={{ display: 'flex', gap: 8, marginBottom: 16 }}>
+                {[
+                  { value: 'all', label: '🔄 Full Sync' },
+                  { value: 'nepse-only', label: '📊 NEPSE Only' },
+                  { value: 'notices-only', label: '🔔 Notices Only' }
+                ].map(opt => (
+                  <button
+                    key={opt.value}
+                    onClick={() => setSyncType(opt.value)}
+                    style={{
+                      padding: '8px 14px',
+                      background: syncType === opt.value
+                        ? 'var(--gold)' : 'rgba(255,255,255,0.05)',
+                      color: syncType === opt.value ? 'black' : 'white',
+                      border: 'none', borderRadius: 8,
+                      fontSize: 12, cursor: 'pointer',
+                      fontWeight: syncType === opt.value ? 700 : 400
+                    }}
+                  >
+                    {opt.label}
+                  </button>
+                ))}
+              </div>
+
               <button 
                 onClick={handleTrigger}
                 disabled={isTriggering}
@@ -128,7 +159,7 @@ export default function AlphaBotController() {
                 }`}
               >
                 {isTriggering ? <RefreshCw className="animate-spin" size={18} /> : <Play size={18} />}
-                {isTriggering ? 'Engaging Link' : 'Trigger Global Sync'}
+                {isTriggering ? 'Engaging Link' : 'Trigger Sync'}
               </button>
 
               {status && (
