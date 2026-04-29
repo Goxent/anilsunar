@@ -48,7 +48,9 @@ async function runProdSync() {
         topAccumulatingBroker: 'N/A',
         topBuySymbol: 'N/A',
         topSellSymbol: 'N/A',
-        marketSentiment: 'Neutral'
+        marketSentiment: 'Neutral',
+        nepseIndex: 'N/A',
+        nepseChange: '0.0%'
       },
       brokerAccumulation: [],
       smcSignals: [],
@@ -131,7 +133,19 @@ async function runProdSync() {
           };
         });
       });
-      console.log(`✅ Extracted live data for ${report.liveStocks.length} stocks.`);
+      
+      // Attempt to extract NEPSE index from the page text
+      const pageText = await page.evaluate(() => document.body.innerText);
+      const indexMatch = pageText.match(/NEPSE[\s:]*([\d,]+\.\d+)/i);
+      const changeMatch = pageText.match(/([\+\-]?\d+\.\d+)%/);
+      if (indexMatch && indexMatch[1]) {
+        report.summary.nepseIndex = indexMatch[1];
+      }
+      if (changeMatch && changeMatch[1]) {
+        report.summary.nepseChange = changeMatch[1] + '%';
+      }
+      
+      console.log(`✅ Extracted live data for ${report.liveStocks.length} stocks. Index: ${report.summary.nepseIndex}`);
     });
 
     // 6. AUTO-ANALYSIS & DASHBOARD SYNC
@@ -154,6 +168,11 @@ async function runProdSync() {
         `Market Sentiment: ${report.smcSignals.length > 5 ? 'Bullish' : 'Neutral'}`,
         `Strategy: Focus on ${report.quantAnalysis.filter(s => s.value === 'A').length} Value A stocks.`
       ],
+      marketSummary: {
+        index: report.summary.nepseIndex,
+        changePct: report.summary.nepseChange,
+        turnover: 'N/A'
+      },
       rotation: report.quantAnalysis.slice(0, 5).map(s => s.symbol + ' (M: ' + s.momentum + ')')
     };
 

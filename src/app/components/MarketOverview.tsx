@@ -3,16 +3,9 @@ import sastoReport from '../data/sasto_premium_report.json'
 
 export default function MarketOverview() {
   const premiumData = sastoReport?.sentiment || []
-  let index = 'N/A'
-  let changePct = 'N/A'
-  let turnover = 'N/A'
-
-  if (premiumData.length > 0) {
-    // Basic extraction from sentiment strings
-    const sentiment = premiumData[0] || ''
-    index = sentiment.split(':')[1]?.trim() || 'Neutral'
-    changePct = '0.0%'
-  }
+  let index = sastoReport?.marketSummary?.index || 'N/A'
+  let changePct = sastoReport?.marketSummary?.changePct || '0.0%'
+  let turnover = sastoReport?.marketSummary?.turnover || 'N/A'
 
   const isPositive = !changePct.startsWith('-')
 
