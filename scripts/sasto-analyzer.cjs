@@ -238,6 +238,45 @@ export const ACCUMULATION_SIGNALS = [];
       }
     }
 
+    // 8. PUSH TO FIREBASE (Historical Analysis)
+    if (process.env.FIREBASE_API_KEY) {
+      console.log('📡 Syncing data to Firebase Firestore...');
+      try {
+        const dateId = new Date().toISOString().split('T')[0]; // YYYY-MM-DD
+        const url = `https://firestore.googleapis.com/v1/projects/app-anil-sunar/databases/(default)/documents/sasto_records/${dateId}?key=${process.env.FIREBASE_API_KEY}`;
+        
+        const payload = {
+          fields: {
+            timestamp: { stringValue: new Date().toISOString() },
+            index: { stringValue: report.summary.nepseIndex },
+            changePct: { stringValue: report.summary.nepseChange },
+            sentiment: { stringValue: finalData.sentiment[0] },
+            topPicks: { arrayValue: { values: finalData.picks.slice(0, 5).map(p => ({
+              mapValue: { fields: {
+                symbol: { stringValue: p.symbol },
+                signal: { stringValue: p.target }
+              }}
+            })) }}
+          }
+        };
+
+        const response = await fetch(url, {
+          method: 'PATCH', // PATCH with document ID will create or overwrite
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(payload)
+        });
+
+        if (response.ok) {
+          console.log(`✅ Data synced to Firestore as document: ${dateId}`);
+        } else {
+          const errData = await response.json();
+          console.warn('⚠️ Firestore Sync Failed:', errData.error?.message || 'Unknown error');
+        }
+      } catch (e) {
+        console.warn('⚠️ Firestore connection error:', e.message);
+      }
+    }
+
     console.log('💾 Ultimate Dashboard Sync Complete!');
 
   } catch (err) {

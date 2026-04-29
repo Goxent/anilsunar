@@ -22,7 +22,7 @@ import AIResearch from './components/AIResearch'
 import ContentStudio from './components/ContentStudio'
 import NewsletterAdmin from './components/NewsletterAdmin'
 import UserManagement from './components/UserManagement'
-import SastoEmulator from './components/SastoEmulator'
+import AlphaBotController from './components/AlphaBotController'
 import AdminDashboard from '../../components/AdminDashboard'
 import { auth, googleProvider, db } from './lib/firebase'
 import { onAuthStateChanged, signInWithPopup, signOut, signInWithEmailAndPassword, createUserWithEmailAndPassword, sendEmailVerification, sendPasswordResetEmail, User as FirebaseUser } from 'firebase/auth'
@@ -36,7 +36,7 @@ const NAV_GROUPS = [
     icon: TrendingUp,
     tabs: [
       { id: 'market', label: 'Market Overview', icon: LayoutDashboard, component: MarketOverview },
-      { id: 'emulator', label: 'Sasto Share Emulator', icon: Search, component: SastoEmulator },
+      { id: 'bot', label: 'Alpha Bot Controller', icon: Terminal, component: AlphaBotController },
       { id: 'intel', label: 'Market Intelligence', icon: TrendingUp, component: MarketIntelligence },
       { id: 'screener', label: 'Stock Screener', icon: Search, component: StockScreener },
       { id: 'broker', label: 'Broker Analysis', icon: Users, component: BrokerAnalysis },
