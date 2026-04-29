@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Play, RefreshCw, Database, Shield, History, Terminal, AlertTriangle, CheckCircle2, Cpu, Activity, Zap, ExternalLink, Key } from 'lucide-react';
+import { Play, RefreshCw, Database, Shield, History, Terminal, AlertTriangle, CheckCircle2, Cpu, Activity, Zap, ExternalLink, Key, Info } from 'lucide-react';
 import { collection, query, orderBy, limit, getDocs } from 'firebase/firestore';
 import { db } from '../lib/firebase';
 
