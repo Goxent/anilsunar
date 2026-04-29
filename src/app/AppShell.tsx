@@ -147,18 +147,32 @@ export default function AppShell() {
   const [authMessage, setAuthMessage] = useState('')
 
   useEffect(() => {
+    let isMounted = true;
+    
+    // Fallback timeout just in case Firebase hangs
+    const timeout = setTimeout(() => {
+      if (isMounted) {
+        console.warn("Firebase auth state change took too long. Forcing load to stop.");
+        setLoading(false);
+      }
+    }, 5000);
+
     const unsubscribe = onAuthStateChanged(auth, async (firebaseUser) => {
+      console.log("Auth state changed. User:", firebaseUser ? firebaseUser.uid : 'none');
       if (firebaseUser) {
         setUser(firebaseUser)
         try {
+          console.log("Fetching user role...");
           const userRef = doc(db, 'users', firebaseUser.uid)
           const userSnap = await getDoc(userRef)
+          console.log("User role fetched.");
           
           let userRole: 'admin' | 'user' = 'user'
           
           if (userSnap.exists()) {
             userRole = userSnap.data().role || 'user'
           } else {
+            console.log("User doc does not exist. Creating...");
             if (firebaseUser.email === 'anil99senchury@gmail.com') {
               userRole = 'admin'
             }
@@ -169,19 +183,34 @@ export default function AppShell() {
               role: userRole,
               createdAt: new Date().toISOString()
             })
+            console.log("User doc created.");
           }
           setRole(userRole)
         } catch (err) {
-          console.error("Error fetching role:", err)
+          console.error("Error fetching/setting role:", err)
         }
       } else {
         setUser(null)
         setRole(null)
       }
-      setLoading(false)
+      
+      if (isMounted) {
+        clearTimeout(timeout);
+        setLoading(false);
+      }
+    }, (error) => {
+      console.error("Auth state change error:", error);
+      if (isMounted) {
+        clearTimeout(timeout);
+        setLoading(false);
+      }
     })
 
-    return () => unsubscribe()
+    return () => {
+      isMounted = false;
+      clearTimeout(timeout);
+      unsubscribe();
+    }
   }, [])
 
   const handleLogin = async (e: React.MouseEvent) => {
