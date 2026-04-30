@@ -7,7 +7,7 @@ export default function MarketIntelligence() {
 
   if (loading || !aiBrief) return <LoadingCard rows={8} cols={3} />
 
-  const { marketSummary, topPicks, timestamp } = aiBrief;
+  const { marketSummary, topPicks, marketSentiment, institutionalFocus, anomalies, timestamp } = aiBrief;
 
   return (
     <div className="space-y-10 fade-in">
@@ -54,17 +54,30 @@ export default function MarketIntelligence() {
           <div className="pt-6 border-t border-white/5 flex gap-8">
              <div className="space-y-1">
                 <p className="text-[10px] font-black text-zinc-500 uppercase tracking-widest">Sentiment Core</p>
-                <p className="font-bold text-emerald-400">Bullish Accumulation</p>
+                <p className={`font-bold ${marketSentiment === 'Bullish' ? 'text-emerald-400' : marketSentiment === 'Bearish' ? 'text-red-400' : 'text-blue-400'}`}>
+                  {marketSentiment || 'Neutral'}
+                </p>
              </div>
              <div className="space-y-1">
                 <p className="text-[10px] font-black text-zinc-500 uppercase tracking-widest">Institutional Focus</p>
-                <p className="font-bold text-white">Commercial Banks & Hydro</p>
+                <p className="font-bold text-white">{institutionalFocus || 'Diversified'}</p>
              </div>
           </div>
         </div>
       </div>
 
-      {/* Top 10 High-Probability Picks */}
+      {/* Neural Anomalies Section */}
+       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+         {anomalies && anomalies.map((anomaly, i) => (
+           <div key={i} className="premium-card p-6 border-l-4 border-l-gold bg-zinc-900/40">
+             <div className="flex items-center gap-3 mb-3">
+               <Zap size={16} className="text-gold" />
+               <span className="text-[10px] font-black text-zinc-500 uppercase tracking-widest">Neural Anomaly Detected</span>
+             </div>
+             <p className="text-white font-bold text-sm leading-relaxed">{anomaly}</p>
+           </div>
+         ))}
+       </div>
       <div className="premium-card" style={{ padding: 0, overflow: 'hidden' }}>
         <div className="p-8 border-b border-zinc-800 flex justify-between items-center bg-zinc-900/30">
           <div className="flex items-center gap-4">

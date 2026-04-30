@@ -82,6 +82,14 @@ jobs:
         run: node scripts/notice-notifier.mjs
         continue-on-error: true
         timeout-minutes: 3
+ 
+      # ---- CLOUD SYNC (Update Firestore) ----
+      - name: Run Cloud Sync
+        env:
+          FIREBASE_SERVICE_ACCOUNT_JSON: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_JSON }}
+        run: node scripts/sync-to-firestore.mjs
+        continue-on-error: true
+        timeout-minutes: 5
 
       # ---- COMMIT ALL DATA ----
       - name: Commit updated data

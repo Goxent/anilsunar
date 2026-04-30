@@ -62,7 +62,7 @@ function getAllPageData(omniData: any) {
 
 export default function MarketOverview() {
   const { showToast } = useToast();
-  const { omniData, loading: omniLoading } = useMarketData();
+  const { omniData, aiBrief, loading: omniLoading } = useMarketData();
   const [showSyncModal, setShowSyncModal] = useState(false);
   const [copied, setCopied] = useState(false);
   
@@ -268,21 +268,35 @@ export default function MarketOverview() {
                     showToast(`Added ${symbol} to watchlist`, 'success');
                   };
                   
-                  return (
-                    <tr key={i}>
-                      <td style={{ fontWeight: 800, color: 'var(--gold)' }}>{symbol}</td>
-                      <td>{price}</td>
-                      <td style={{ color: isUp ? 'var(--success-color)' : 'var(--danger-color)', fontWeight: 800 }}>
-                        {isUp ? '+' : ''}{change}
-                      </td>
-                      <td style={{ color: 'var(--text-secondary)', fontSize: 12 }}>{volume}</td>
-                      <td style={{ textAlign: 'right' }}>
-                        <button onClick={addToWatchlist} className="btn" style={{ padding: 6 }}>
-                          <Star size={14} />
-                        </button>
-                      </td>
-                    </tr>
-                  );
+                    const isTopPick = aiBrief?.topPicks?.find((p: any) => p.symbol === symbol);
+ 
+                    return (
+                      <tr key={i} className={isTopPick ? 'bg-gold/5' : ''}>
+                        <td style={{ fontWeight: 800, color: 'var(--gold)' }}>
+                          <div className="flex items-center gap-2">
+                            {symbol}
+                            {isTopPick && <Zap size={12} className="text-gold animate-pulse" title="Neural Top Pick" />}
+                          </div>
+                        </td>
+                        <td>{price}</td>
+                        <td style={{ color: isUp ? 'var(--success-color)' : 'var(--danger-color)', fontWeight: 800 }}>
+                          {isUp ? '+' : ''}{change}
+                        </td>
+                        <td style={{ color: 'var(--text-secondary)', fontSize: 12 }}>{volume}</td>
+                        <td style={{ textAlign: 'right' }}>
+                          <div className="flex items-center justify-end gap-2">
+                            {isTopPick && (
+                              <div className="status-chip status-chip-success text-[8px] py-0.5 px-1.5" title={isTopPick.reason}>
+                                ALPHA
+                              </div>
+                            )}
+                            <button onClick={addToWatchlist} className="btn" style={{ padding: 6 }}>
+                              <Star size={14} />
+                            </button>
+                          </div>
+                        </td>
+                      </tr>
+                    );
                 })}
               </tbody>
             </table>
@@ -314,7 +328,7 @@ export default function MarketOverview() {
               <h4 style={{ fontSize: 14, fontWeight: 800 }}>Quick Insight</h4>
             </div>
             <p style={{ fontSize: 13, color: 'var(--text-secondary)', lineHeight: 1.6 }}>
-              Market breadth is currently { (liveData?.breadth?.advances / (liveData?.breadth?.declines || 1)).toFixed(2) }x in favor of { (liveData?.breadth?.advances > liveData?.breadth?.declines) ? 'bulls' : 'bears' }. Turnover remains { (liveData?.turnover > 5) ? 'strong' : 'moderate' } for the current session.
+              {aiBrief?.marketSummary ? aiBrief.marketSummary.split('.')[0] + '.' : `Market breadth is currently ${ (liveData?.breadth?.advances / (liveData?.breadth?.declines || 1)).toFixed(2) }x in favor of ${ (liveData?.breadth?.advances > liveData?.breadth?.declines) ? 'bulls' : 'bears' }.`}
             </p>
           </div>
         </div>

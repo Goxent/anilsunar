@@ -249,13 +249,17 @@ async function run() {
     1. Identify the "HOT TOPICS" — find the most impactful regulatory changes or market moves today.
     2. Spot HIDDEN ANOMALIES — e.g., a specific broker heavily accumulating a stock that has low volume or a high F-Score.
     3. Analyze any "Smart Money" footprints in the context of recent regulatory shifts.
+    4. Calculate "Market Sentiment" (e.g., Bullish, Neutral, Bearish) and "Institutional Focus" (which sectors are being accumulated).
     
     OUTPUT:
     - marketSummary: A 5-sentence "Alpha Intelligence Summary" exposing the SINGLE most interesting anomaly or trend found across the entire data lake.
+    - marketSentiment: A single word (Bullish/Neutral/Bearish).
+    - institutionalFocus: 2-3 words (e.g., "Commercial Banks & Hydro").
     - topPicks: Exactly 10 high-probability picks. For each, give a symbol, target (STRONG BUY/ACCUMULATE/BREAKOUT), and a precise 1-sentence "Neural Rationale" explaining WHY this is a hot pick today.
+    - anomalies: Exactly 5 specific "Smart Money" footprints or technical anomalies (e.g., "Broker 58 bought 150k units of SAIL while price was flat.")
     - linkedinIdeas: Exactly 6 LinkedIn post ideas. At least 3 must be "Hot Topic" alerts based on the regulatory notices or massive market shifts discovered.
     
-    Respond ONLY in valid JSON with keys: marketSummary, topPicks, linkedinIdeas`;
+    Respond ONLY in valid JSON with keys: marketSummary, marketSentiment, institutionalFocus, topPicks, anomalies, linkedinIdeas`;
 
   try {
     console.log('🧠 Sending Omni-Data Lake to Gemini 2.0 Flash for Deep Analysis...');
@@ -265,7 +269,10 @@ async function run() {
     const output = {
       timestamp: new Date().toISOString(),
       marketSummary: parsed.marketSummary,
+      marketSentiment: parsed.marketSentiment || 'Neutral',
+      institutionalFocus: parsed.institutionalFocus || 'General Market',
       topPicks: parsed.topPicks,
+      anomalies: parsed.anomalies || [],
       linkedinIdeas: parsed.linkedinIdeas
     };
 
