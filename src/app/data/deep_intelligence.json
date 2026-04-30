@@ -4,11 +4,12 @@
     "hotSectors": [],
     "weakSectors": [],
     "overallBias": "NEUTRAL",
-    "oneLinerSummary": "Market analysis unavailable."
+    "oneLinerSummary": "Market analysis unavailable.",
+    "keyRisk": "Data unavailable"
   },
   "stage2": [],
   "stage3": {
-    "generatedAt": "2026-04-30T18:49:33.738Z",
+    "generatedAt": "2026-04-30T19:29:29.342Z",
     "marketSummary": "Market analysis unavailable.",
     "marketPhase": "SIDEWAYS",
     "topPicks": [],
