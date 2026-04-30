@@ -111,8 +111,8 @@ async function runOmniSpider() {
     for (const link of targetLinks) {
       console.log(`\n🕸️ Crawling: ${link}`);
       try {
-        await page.goto(link, { waitUntil: 'domcontentloaded', timeout: 15000 });
-        await page.waitForTimeout(2000); // Wait for dynamic tables to render
+        await page.goto(link, { waitUntil: 'networkidle', timeout: 30000 });
+        await page.waitForTimeout(3000); // Give extra time for any late-loading JS tables
 
         // Extract tables dynamically
         const pageData = await page.evaluate(() => {
@@ -123,8 +123,8 @@ async function runOmniSpider() {
             // Get Headers
             const headers = Array.from(table.querySelectorAll('th')).map(th => th.innerText.trim());
             
-            // Get Rows (limit to top 30 rows per table to avoid massive garbage)
-            const rows = Array.from(table.querySelectorAll('tbody tr')).slice(0, 30);
+            // Get Rows (limit to top 50 rows per table now)
+            const rows = Array.from(table.querySelectorAll('tbody tr')).slice(0, 50);
             
             const rowData = rows.map(row => {
               const cells = Array.from(row.querySelectorAll('td'));

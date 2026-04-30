@@ -1,7 +1,7 @@
 {
-  "lastUpdated": "2026-04-29T16:50:18.349Z",
-  "totalCount": 51,
-  "newCount": 51,
+  "lastUpdated": "2026-04-30T17:53:55.171Z",
+  "totalCount": 52,
+  "newCount": 0,
   "sources": [
     "OCR Nepal",
     "IRD Nepal",
@@ -12,6 +12,18 @@
     "Ministry of Finance"
   ],
   "notices": [
+    {
+      "id": "irdnepal_molrjskh",
+      "title": "“सूचना प्रविधिको विस्तार: दिगो विकासको आधार” — राष्ट्रिय सञ्चार तथा सूचना प्रविधि दिवस २०२६ भव्यताका साथ मनाऔँ।",
+      "source": "IRD Nepal",
+      "category": "Taxation",
+      "badge": "IRD",
+      "badgeColor": "#e53935",
+      "link": "https://ird.gov.np/content/13510/expansion-of-information-technology--basis-for-sustainable/",
+      "summary": "New update from Inland Revenue Department affecting tax obligations: “सूचना प्रविधिको विस्तार: दिगो विकासको आधार” — राष्ट्रिय सञ्चार तथा सूचना प्रविधि दिवस २०२६ भव्यताका साथ मनाऔँ।",
+      "detectedAt": "2026-04-30T17:34:08.993Z",
+      "isNew": true
+    },
     {
       "id": "ocrnepal_mokaj6i2",
       "title": "धरौटी सदरस्याहा सम्बन्धी सूचना",

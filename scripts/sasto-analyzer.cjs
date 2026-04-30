@@ -42,7 +42,7 @@ async function runProdSync() {
         await page.fill('input[name="password"]', PASSWORD, { delay: 150 });
         await page.click('button[type="submit"]');
       }
-      await page.waitForURL(/.*dashboard|.*home|.*sastoshare/, { timeout: 15000 });
+      await page.waitForURL(/.*dashboard|.*home|.*sastoshare/, { timeout: 30000 });
       console.log('✅ Login successful!');
     });
 
@@ -64,10 +64,10 @@ async function runProdSync() {
     // 2. QUANT RANKINGS & SCORES (Scraping the overview of top stocks)
     await retry(async () => {
       console.log('📊 Scraping Quant Rankings & Health Scores...');
-      await page.goto('https://nepsealpha.com/sastoshare/home', { waitUntil: 'domcontentloaded' });
+      await page.goto('https://nepsealpha.com/sastoshare/home', { waitUntil: 'networkidle', timeout: 30000 });
       if (DEBUG) await page.screenshot({ path: `logs/debug-${Date.now()}.png`, fullPage: true });
-      await page.waitForSelector('table tbody tr', { timeout: 15000 }).catch(() => null);
-      await page.waitForTimeout(3000);
+      await page.waitForSelector('table tbody tr', { timeout: 20000 }).catch(() => null);
+      await page.waitForTimeout(4000);
       
       report.quantAnalysis = await page.evaluate(() => {
         const rows = Array.from(document.querySelectorAll('table tbody tr'))
@@ -89,10 +89,10 @@ async function runProdSync() {
     // 3. AI SIGNALS (Swing & Breakout)
     await retry(async () => {
       console.log('📈 Scraping AI Swing Signals...');
-      await page.goto('https://nepsealpha.com/sastoshare/swing-gain', { waitUntil: 'domcontentloaded' }); 
+      await page.goto('https://nepsealpha.com/sastoshare/swing-gain', { waitUntil: 'networkidle', timeout: 30000 }); 
       if (DEBUG) await page.screenshot({ path: `logs/debug-${Date.now()}.png`, fullPage: true });
-      await page.waitForSelector('table tbody tr', { timeout: 10000 }).catch(() => null);
-      await page.waitForTimeout(3000);
+      await page.waitForSelector('table tbody tr', { timeout: 15000 }).catch(() => null);
+      await page.waitForTimeout(4000);
       
       report.smcSignals = await page.evaluate(() => {
         const rows = Array.from(document.querySelectorAll('table tbody tr'))

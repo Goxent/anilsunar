@@ -52,39 +52,30 @@ function buildGeminiPrompt(notice) {
   const context = categoryContext[notice.category] || 'Nepal regulatory authority. Audience: Nepal business professionals.'
 
   return `You are writing a LinkedIn post for a Nepal-based Chartered Accountant (CA)
-who is also an auditor, NEPSE analyst, and finance content creator.
-
-The CA's expertise areas:
-- Auditing and accounting (ICAN, Nepal Standards on Auditing)
-- NEPSE stock market analysis
-- Nepal corporate law (Companies Act 2063, Securities Act)
-- Nepal taxation (Income Tax Act 2058, VAT, TDS)
-- Corporate finance and business strategy
-
-A new regulatory notice has been published:
+who is also an auditor and financial expert.
+ 
+New Regulatory Notice:
 Source: ${notice.source} (${context})
 Category: ${notice.category}
-Notice Title: "${notice.title}"
-Notice Link: ${notice.link}
-Detected on: ${new Date(notice.detectedAt).toLocaleDateString('en-NP')}
-
-Write a professional LinkedIn post that:
-1. Positions this CA as a knowledgeable thought leader
-2. Explains the notice in simple terms for the audience
-3. Adds practical "what this means for you" insight
-4. Has a professional but engaging tone (not too formal, not casual)
-5. Includes a clear call to action
-
-Respond ONLY in this exact JSON format, no extra text:
+Title: "${notice.title}"
+Link: ${notice.link}
+ 
+TASK:
+Write a high-impact LinkedIn post that positions the CA as a "Hot Topic" analyst.
+1. Start with a HOOK that highlights why this specific notice is a major development today.
+2. Explain the "expert angle" — what is the hidden implication for businesses or investors?
+3. Add a "Neural Insight" section (short bullet points) explaining practical compliance steps.
+ 
+Respond ONLY in this JSON format:
 {
-  "headline": "First line of post — hook that stops scrolling (max 15 words)",
-  "body": "Full post body — 150 to 200 words. Use line breaks for readability. Use 1-2 relevant emojis only. Do NOT use excessive emojis.",
-  "callToAction": "Final CTA sentence — what should reader do next?",
-  "hashtags": ["#Nepal", "#Compliance", "#CA", "3 more relevant tags"],
+  "headline": "Scroll-stopping hook (max 15 words)",
+  "body": "Engaging body (150-200 words) with expert analysis and 1-2 emojis.",
+  "callToAction": "Action-oriented CTA",
+  "hashtags": ["#Nepal", "#Compliance", "#CA", "#Finance"],
   "topicBadge": "${notice.category}",
   "bestTimeToPost": "Morning or Evening",
-  "estimatedReach": "High or Medium or Niche",
-  "keyInsight": "One-sentence expert insight the CA adds (not in the post body)"
+  "estimatedReach": "High",
+  "keyInsight": "The single most important takeaway from this notice."
 }`
 }
 

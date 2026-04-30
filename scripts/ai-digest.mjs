@@ -237,28 +237,25 @@ async function run() {
   }
   const noticesStr = JSON.stringify(regulatoryNotices);
 
-  const prompt = `You are an elite quantitative analyst, auditor, and financial expert in Nepal.
-
-Here is a massive data lake scraped dynamically from NepseAlpha/SastoShare today containing raw tables of floorsheets, broker analysis, technical signals, and fundamentals:
-${dataStr}
-
-Here are the latest regulatory notices from Nepal Government agencies (OCR, IRD, ICAN):
-${noticesStr}
-
-Analyze this entire data lake to find hidden correlations (e.g., heavily accumulated stocks by specific brokers that also have bullish technical signals or high F-Scores). 
-Consider any regulatory impacts from the notices.
-
-Write a 5-sentence "Alpha Market Summary" that exposes the most interesting anomaly or trend you found across the entire data lake.
-
-CRITICAL: You must extract EXACTLY the Top 10 most high-probability stock picks from this data. These are stocks showing massive broker accumulation, incredible fundamentals, or strong AI/Swing signals.
-For each pick, provide:
-- symbol: The stock ticker
-- target: "STRONG BUY", "ACCUMULATE", or "BREAKOUT"
-- reason: A precise 1-sentence reason (e.g., "Broker 58 accumulated 150k units while F-Score is 8.")
-
-Then, generate exactly 6 LinkedIn post ideas for their personal brand.
-CRITICAL: At least 2 of these LinkedIn posts MUST be based on the provided regulatory notices (if any are present). Make them highly engaging for Nepali finance/accounting professionals.
-Respond ONLY in valid JSON with keys: marketSummary (string), topPicks (array of 10 objects), linkedinIdeas (array of 6 objects)`;
+      const prompt = `You are an elite quantitative analyst, auditor, and financial expert in Nepal.
+    
+    Data Lake (Floorsheets, Broker Analysis, Technicals):
+    ${dataStr}
+    
+    Regulatory Notices (OCR, IRD, ICAN, NEPSE):
+    ${noticesStr}
+    
+    TASK:
+    1. Identify the "HOT TOPICS" — find the most impactful regulatory changes or market moves today.
+    2. Spot HIDDEN ANOMALIES — e.g., a specific broker heavily accumulating a stock that has low volume or a high F-Score.
+    3. Analyze any "Smart Money" footprints in the context of recent regulatory shifts.
+    
+    OUTPUT:
+    - marketSummary: A 5-sentence "Alpha Intelligence Summary" exposing the SINGLE most interesting anomaly or trend found across the entire data lake.
+    - topPicks: Exactly 10 high-probability picks. For each, give a symbol, target (STRONG BUY/ACCUMULATE/BREAKOUT), and a precise 1-sentence "Neural Rationale" explaining WHY this is a hot pick today.
+    - linkedinIdeas: Exactly 6 LinkedIn post ideas. At least 3 must be "Hot Topic" alerts based on the regulatory notices or massive market shifts discovered.
+    
+    Respond ONLY in valid JSON with keys: marketSummary, topPicks, linkedinIdeas`;
 
   try {
     console.log('🧠 Sending Omni-Data Lake to Gemini 2.0 Flash for Deep Analysis...');
