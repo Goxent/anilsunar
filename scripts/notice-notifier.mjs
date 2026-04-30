@@ -208,11 +208,40 @@ async function sendNoticeEmail() {
   }
 
   // Mark notices as no longer new (so we don't email again)
+  // We do this immediately after successful send
   noticesData.notices = noticesData.notices.map(n =>
-    n.isNew ? { ...n, isNew: false, emailedAt: new Date().toISOString() } : n
+    newNotices.find(nn => nn.id === n.id) 
+      ? { ...n, isNew: false, emailedAt: new Date().toISOString() } 
+      : n
   )
+  
+  // Also update a global lastSent timestamp to prevent rapid fire duplicates
+  noticesData.lastEmailSentAt = new Date().toISOString()
+  
   fs.writeFileSync(NOTICES_PATH, JSON.stringify(noticesData, null, 2))
+  console.log(`✅ Marked ${newNotices.length} notices as emailed.`)
 }
 
-sendNoticeEmail().catch(console.error)
+// Safety check: Don't run if we sent an email in the last 10 minutes (prevents race conditions)
+function shouldSkip() {
+  try {
+    if (fs.existsSync(NOTICES_PATH)) {
+      const data = JSON.parse(fs.readFileSync(NOTICES_PATH, 'utf8'))
+      if (data.lastEmailSentAt) {
+        const lastSent = new Date(data.lastEmailSentAt).getTime()
+        const now = Date.now()
+        if (now - lastSent < 10 * 60 * 1000) { // 10 mins
+          return true
+        }
+      }
+    }
+  } catch (e) {}
+  return false
+}
+
+if (shouldSkip()) {
+  console.log('⏳ Email sent recently — skipping to prevent duplicates.')
+} else {
+  sendNoticeEmail().catch(console.error)
+}
 export { sendNoticeEmail }

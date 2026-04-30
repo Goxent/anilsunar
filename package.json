@@ -24,7 +24,8 @@
     "test-email": "node scripts/test-email.mjs",
     "setup-scheduler": "scripts\\scheduler-setup.bat",
     "remove-scheduler": "scripts\\scheduler-remove.bat",
-    "auto-sync": "node scripts/auto-sync.js"
+    "auto-sync": "node scripts/auto-sync.js",
+    "deploy": "npm run build && gh-pages -d dist"
   },
   "dependencies": {
     "@google/genai": "^1.41.0",

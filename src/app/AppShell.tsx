@@ -46,6 +46,9 @@ import { auth, googleProvider, db } from './lib/firebase'
 import { onAuthStateChanged, signInWithPopup, signOut, signInWithEmailAndPassword, createUserWithEmailAndPassword, sendEmailVerification, sendPasswordResetEmail, User as FirebaseUser } from 'firebase/auth'
 import { doc, getDoc, setDoc } from 'firebase/firestore'
 
+import localOmniData from './data/market-omni-data.json'
+import localAiBrief from './data/ai_digest.json'
+
 // Context for Cloud Data
 const MarketDataContext = createContext<{
   omniData: any;
@@ -197,10 +200,19 @@ export default function AppShell() {
         fetch('/api/get-market-data?type=intel')
       ])
       
-      if (marketRes.ok) setOmniData(await marketRes.json())
-      if (intelRes.ok) setAiBrief(await intelRes.json())
+      let mData = null;
+      let iData = null;
+
+      if (marketRes.ok) mData = await marketRes.json();
+      if (intelRes.ok) iData = await intelRes.json();
+
+      // Fallback to local if remote fails or returns empty
+      setOmniData(mData || localOmniData);
+      setAiBrief(iData || localAiBrief);
     } catch (err) {
-      console.error("Failed to fetch cloud data:", err)
+      console.warn("Failed to fetch cloud data, using local fallback:", err)
+      setOmniData(localOmniData);
+      setAiBrief(localAiBrief);
     } finally {
       setDataLoading(false)
     }

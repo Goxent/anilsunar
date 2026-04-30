@@ -15,6 +15,10 @@ on:
           - nepse-only
           - notices-only
 
+concurrency:
+  group: goxent-sync
+  cancel-in-progress: false
+
 jobs:
   sync:
     runs-on: ubuntu-latest
