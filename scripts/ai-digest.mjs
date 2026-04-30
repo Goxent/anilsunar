@@ -161,6 +161,87 @@ async function sendDigestEmail(digest) {
 }
 
 // ─── Main 3-Stage Pipeline ───────────────────────────────────────────────────
+async function saveContentToNotion(digest) {
+  const NOTION_TOKEN = process.env.NOTION_TOKEN;
+  const DB_ID = process.env.NOTION_CONTENT_PIPELINE_DB_ID;
+  const MARKET_JOURNAL_DB_ID = process.env.NOTION_MARKET_JOURNAL_DB_ID;
+  
+  if (!NOTION_TOKEN || !DB_ID) {
+    console.log('⚠️  NOTION_TOKEN or NOTION_CONTENT_PIPELINE_DB_ID not set — skipping Notion push');
+    return;
+  }
+
+  const headers = {
+    'Authorization': `Bearer ${NOTION_TOKEN}`,
+    'Content-Type': 'application/json',
+    'Notion-Version': '2022-06-28'
+  };
+
+  // 1. Save each LinkedIn idea as a Draft page in Content Pipeline
+  let saved = 0;
+  for (const idea of (digest.linkedinIdeas || [])) {
+    try {
+      const res = await fetch('https://api.notion.com/v1/pages', {
+        method: 'POST',
+        headers,
+        body: JSON.stringify({
+          parent: { database_id: DB_ID },
+          properties: {
+            Title: { title: [{ text: { content: idea.hook || idea.title || 'LinkedIn Idea' } }] },
+            Status: { select: { name: 'DRAFT' } },
+            Platform: { select: { name: 'LinkedIn' } },
+            Angle: { select: { name: idea.angle || 'EDUCATIONAL' } },
+            FullDraft: { rich_text: [{ text: { content: idea.brief || idea.hook || '' } }] },
+            GeneratedAt: { date: { start: new Date().toISOString().split('T')[0] } },
+            Source: { select: { name: 'AI_DIGEST' } }
+          }
+        })
+      });
+      if (res.ok) saved++;
+      else {
+        const err = await res.json();
+        console.warn('⚠️  Notion idea save failed:', err.message);
+      }
+    } catch(e) {
+      console.warn('⚠️  Notion push error:', e.message);
+    }
+  }
+  console.log(`✅ Saved ${saved} LinkedIn ideas to Notion Content Pipeline`);
+
+  // 2. Save today's market journal entry
+  if (MARKET_JOURNAL_DB_ID && digest.marketSummary) {
+    try {
+      const topPicksText = (digest.topPicks || [])
+        .map((p, i) => `${i+1}. ${p.symbol} — ${p.target} | Entry: ${p.entryZone} | Target: ${p.target}\n   ${p.reason}`)
+        .join('\n\n');
+
+      const res = await fetch('https://api.notion.com/v1/pages', {
+        method: 'POST',
+        headers,
+        body: JSON.stringify({
+          parent: { database_id: MARKET_JOURNAL_DB_ID },
+          properties: {
+            Title: { title: [{ text: { content: `Market Journal — ${new Date().toLocaleDateString('en-CA')}` } }] },
+            Date: { date: { start: new Date().toISOString().split('T')[0] } },
+            MarketPhase: { select: { name: digest.marketPhase || 'SIDEWAYS' } },
+            Summary: { rich_text: [{ text: { content: digest.marketSummary || '' } }] },
+            TopPicks: { rich_text: [{ text: { content: topPicksText } }] },
+            KeyRisk: { rich_text: [{ text: { content: digest.keyRisk || '' } }] }
+          }
+        })
+      });
+      if (res.ok) console.log('✅ Market Journal entry saved to Notion');
+      else {
+        const err = await res.json();
+        console.warn('⚠️  Market Journal save failed:', err.message);
+      }
+    } catch(e) {
+      console.warn('⚠️  Market Journal push error:', e.message);
+    }
+  }
+}
+
+// ─── Main 3-Stage Pipeline ───────────────────────────────────────────────────
 export default async function runAIAnalyst() {
   const apiKey = process.env.VITE_GEMINI_API_KEY || process.env.GEMINI_API_KEY;
   if (!apiKey) {
@@ -173,6 +254,8 @@ export default async function runAIAnalyst() {
   const brokerFlow  = loadJson('src/app/data/broker-flow-5d.json', { stocks: [] });
   const noticesRaw  = loadJson('src/app/data/regulatory-notices.json', []);
   const notices     = Array.isArray(noticesRaw) ? noticesRaw.slice(0, 8) : [];
+  const newsData    = loadJson('src/app/data/nepal-news.json', { articles: [] });
+  const news        = (newsData?.articles || []).slice(0, 15);
 
   // Sector / macro pages for Stage 1
   const sectorPages = pagesMatching(omniData, [
@@ -191,13 +274,16 @@ export default async function runAIAnalyst() {
   try {
     console.log('🧠 Stage 1: Market structure & sector analysis...');
     stage1 = await callGemini(`
-You are an expert NEPSE analyst. Analyze today's market structure.
+You are an expert NEPSE analyst. Analyze today's market structure and macro sentiment.
 
 SECTOR & MARKET DATA:
-${cap(sectorPages, 20000)}
+${cap(sectorPages, 15000)}
 
 RECENT REGULATORY NOTICES:
 ${JSON.stringify(notices)}
+
+HOT NEPAL FINANCIAL NEWS:
+${JSON.stringify(news)}
 
 Return JSON:
 {
@@ -205,13 +291,15 @@ Return JSON:
   "hotSectors": ["sector1", "sector2", "sector3"],
   "weakSectors": ["sector1", "sector2"],
   "regulatoryHighlight": "string or null",
+  "newsSentiment": "string explaining how news affects sentiment",
   "overallBias": "BULLISH" | "BEARISH" | "NEUTRAL",
-  "oneLinerSummary": "string"
+  "oneLinerSummary": "string",
+  "keyRisk": "Identify one major risk from data/news"
 }`);
     console.log(`   ✔  Phase: ${stage1.marketPhase} | Bias: ${stage1.overallBias}`);
   } catch (err) {
     console.warn('⚠️  Stage 1 failed:', err.message);
-    stage1 = { marketPhase: 'SIDEWAYS', hotSectors: [], weakSectors: [], overallBias: 'NEUTRAL', oneLinerSummary: 'Market analysis unavailable.' };
+    stage1 = { marketPhase: 'SIDEWAYS', hotSectors: [], weakSectors: [], overallBias: 'NEUTRAL', oneLinerSummary: 'Market analysis unavailable.', keyRisk: 'Data unavailable' };
   }
 
   // ── STAGE 2 ─────────────────────────────────────────────────────────────────
@@ -299,7 +387,7 @@ Return JSON:
     }
   ],
   "linkedinIdeas": [
-    { "hook": "string", "angle": "EDUCATIONAL | HOT_TAKE | DATA_STORY | REGULATORY_ALERT" }
+    { "hook": "string", "angle": "EDUCATIONAL | HOT_TAKE | DATA_STORY | REGULATORY_ALERT", "brief": "detailed outline" }
   ]
 }`);
     console.log(`   ✔  ${stage3.topPicks?.length || 0} final picks selected`);
@@ -319,6 +407,7 @@ Return JSON:
     marketSentiment: stage1.overallBias,
     marketPhase: stage3.marketPhase || stage1.marketPhase,
     institutionalFocus: (stage1.hotSectors || []).join(', ') || 'General Market',
+    keyRisk: stage1.keyRisk || 'Market volatility',
     topPicks: (stage3.topPicks || []).map(p => ({
       symbol: p.symbol,
       target: p.signal,
@@ -343,6 +432,9 @@ Return JSON:
 
   // Send email
   await sendDigestEmail(digest);
+
+  // Sync to Notion
+  await saveContentToNotion(digest);
 }
 
 // Allow direct run — stays compatible with existing npm script name

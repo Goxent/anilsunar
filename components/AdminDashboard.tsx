@@ -162,12 +162,61 @@ const AdminDashboard: React.FC<AdminDashboardProps> = ({ onClose }) => {
   const [githubToken, setGithubToken] = useState(localStorage.getItem('goxent_github_token') || '');
   const [isSaving, setIsSaving] = useState(false);
   const [saveStatus, setSaveStatus] = useState<{ type: 'success' | 'error', msg: string } | null>(null);
+  
+  // Notion specific states
+  const [savingToNotion, setSavingToNotion] = useState<string | null>(null);
+  const [notionSuccess, setNotionSuccess] = useState<string | null>(null);
+  const [showNewForm, setShowNewForm] = useState(false);
+  const [lastBuildTime, setLastBuildTime] = useState<string | null>(null);
 
   const currentTab = TABS.find(t => t.id === activeTab)!;
 
   useEffect(() => {
     localStorage.setItem('goxent_github_token', githubToken);
   }, [githubToken]);
+
+  useEffect(() => {
+    // Fetch last build time/sync status if needed
+    setLastBuildTime(new Date().toLocaleTimeString());
+  }, []);
+
+  const saveToNotion = async (database: string, action: 'create' | 'update', itemData: any, pageId?: string) => {
+    const res = await fetch('/api/notion-write', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        'x-sync-token': (import.meta as any).env.VITE_SYNC_SECRET_TOKEN || localStorage.getItem('goxent_sync_token') || ''
+      },
+      body: JSON.stringify({ database, action, data: itemData, pageId: pageId || null })
+    });
+    if (!res.ok) {
+      const err = await res.json();
+      throw new Error(err.error || 'Failed to save to Notion');
+    }
+    return res.json();
+  };
+
+  const handleSaveToNotion = async (item: any) => {
+    const dbMap: Record<string, string> = {
+      posts: 'posts',
+      projects: 'projects',
+      experience: 'experience'
+    };
+
+    const database = dbMap[activeTab];
+    if (!database) return;
+
+    setSavingToNotion(item.id);
+    try {
+      await saveToNotion(database, 'create', item);
+      setNotionSuccess(item.id);
+      setTimeout(() => setNotionSuccess(null), 3000);
+    } catch (err: any) {
+      alert(`Notion Save Failed: ${err.message}`);
+    } finally {
+      setSavingToNotion(null);
+    }
+  };
 
   const handleSaveToGithub = async () => {
     if (!githubToken) {
@@ -256,14 +305,24 @@ const AdminDashboard: React.FC<AdminDashboardProps> = ({ onClose }) => {
     }));
   };
 
+  const NotionLogo = () => (
+    <div style={{ width: 14, height: 14, background: 'white', borderRadius: 2, display: 'flex', alignItems: 'center', justifyContent: 'center', color: 'black', fontWeight: 900, fontSize: 10, marginRight: 6 }}>N</div>
+  );
+
   return (
     <div style={{ minHeight: '100vh', background: 'var(--bg-primary)', color: 'var(--text-primary)', paddingBottom: 64 }}>
       {/* Header */}
       <div style={{ padding: '24px 32px', borderBottom: '1px solid var(--border)', display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', flexWrap: 'wrap', gap: 16 }}>
         <div>
-          <h2 style={{ fontSize: 28, fontWeight: 800 }}>Live CMS</h2>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 12 }}>
+            <h2 style={{ fontSize: 28, fontWeight: 800 }}>Live CMS</h2>
+            <div style={{ display: 'flex', alignItems: 'center', gap: 6, padding: '4px 10px', borderRadius: 20, background: 'rgba(16,185,129,0.1)', border: '1px solid rgba(16,185,129,0.2)', fontSize: 11, color: '#10b981' }}>
+              <div style={{ width: 6, height: 6, borderRadius: '50%', background: '#10b981' }} />
+              Sync: {lastBuildTime ? `Active (Last: ${lastBuildTime})` : 'Offline'}
+            </div>
+          </div>
           <p style={{ fontSize: 13, color: 'var(--text-secondary)', marginTop: 4 }}>
-            Directly update your main website content via the GitHub API. No coding required.
+            Directly update your main website content via the GitHub API or sync to Notion.
           </p>
         </div>
         <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-end', gap: 8, minWidth: 300 }}>
@@ -296,7 +355,7 @@ const AdminDashboard: React.FC<AdminDashboardProps> = ({ onClose }) => {
         {TABS.map(tab => (
           <button
             key={tab.id}
-            onClick={() => { setActiveTab(tab.id); setSaveStatus(null); }}
+            onClick={() => { setActiveTab(tab.id); setSaveStatus(null); setShowNewForm(false); }}
             className="btn"
             style={{
               background: activeTab === tab.id ? 'var(--gold-dim)' : 'transparent',
@@ -319,12 +378,38 @@ const AdminDashboard: React.FC<AdminDashboardProps> = ({ onClose }) => {
           <p style={{ fontSize: 12, color: 'var(--text-secondary)' }}>
             Editing File: <code style={{ color: 'var(--gold)', background: 'rgba(245,158,11,0.08)', padding: '2px 8px', borderRadius: 4 }}>{currentTab.file}</code>
           </p>
-          {activeTab !== 'settings' && (
-            <button onClick={handleAdd} className="btn" style={{ padding: '4px 10px', fontSize: 12 }}>
-              <Plus size={14} /> Add New
-            </button>
-          )}
+          <div style={{ display: 'flex', gap: 8 }}>
+            {['posts', 'projects', 'experience'].includes(activeTab) && (
+              <button onClick={() => setShowNewForm(!showNewForm)} className="btn" style={{ padding: '4px 10px', fontSize: 12, borderColor: 'rgba(255,255,255,0.1)' }}>
+                <Plus size={14} /> New in Notion
+              </button>
+            )}
+            {activeTab !== 'settings' && (
+              <button onClick={handleAdd} className="btn" style={{ padding: '4px 10px', fontSize: 12 }}>
+                <Plus size={14} /> Add New
+              </button>
+            )}
+          </div>
         </div>
+
+        {showNewForm && (
+          <div className="card" style={{ marginBottom: 24, border: '1px dashed var(--gold)', background: 'rgba(245,158,11,0.03)' }}>
+            <h3 style={{ fontSize: 14, fontWeight: 700, marginBottom: 16 }}>Rapid Creation in Notion</h3>
+            {TAB_FIELDS[activeTab as Exclude<TabId, 'settings' | 'videos'>].map(f => (
+              <FieldInput key={f.key} label={f.label} value="" type={f.type} options={f.options} onChange={() => {}} />
+            ))}
+            <button 
+              className="btn btn-primary" 
+              style={{ width: '100%', marginTop: 12 }}
+              onClick={() => {
+                alert("This is a demo form. In production, this would gather data and call saveToNotion('create').");
+                setShowNewForm(false);
+              }}
+            >
+              <NotionLogo /> Create in Notion
+            </button>
+          </div>
+        )}
 
         {activeTab === 'settings' ? (
           <div className="space-y-6">
@@ -352,24 +437,55 @@ const AdminDashboard: React.FC<AdminDashboardProps> = ({ onClose }) => {
           </div>
         ) : (
           <>
-            {data[activeTab].map((item: any, index: number) =>
-              activeTab === 'videos' ? (
-                <VideoCard
-                  key={item.id || index}
-                  item={item}
-                  onChange={updated => handleChange(index, updated)}
-                  onDelete={() => handleDelete(index)}
-                />
-              ) : (
-                <GenericCard
-                  key={item.id || index}
-                  item={item}
-                  fields={TAB_FIELDS[activeTab as Exclude<TabId, 'settings'>]}
-                  onChange={updated => handleChange(index, updated)}
-                  onDelete={() => handleDelete(index)}
-                />
-              )
-            )}
+            {data[activeTab].map((item: any, index: number) => (
+              <div key={item.id || index} className="card" style={{ borderLeft: '3px solid var(--gold)', marginBottom: 16 }}>
+                {activeTab === 'videos' ? (
+                  <div style={{ display: 'flex', gap: 16, marginBottom: 16 }}>
+                    <img
+                      src={`https://img.youtube.com/vi/${item.youtubeId || 'default'}/mqdefault.jpg`}
+                      alt="thumbnail"
+                      style={{ width: 120, height: 68, borderRadius: 8, objectFit: 'cover', flexShrink: 0, background: '#111' }}
+                      onError={e => (e.currentTarget.src = 'https://img.youtube.com/vi/default/mqdefault.jpg')}
+                    />
+                    <div style={{ flex: 1 }}>
+                      <FieldInput label="Title" value={item.title} onChange={v => handleChange(index, { ...item, title: v })} />
+                      <FieldInput label="YouTube ID" value={item.youtubeId} onChange={v => handleChange(index, { ...item, youtubeId: v, thumbnail: `https://img.youtube.com/vi/${v}/maxresdefault.jpg` })} />
+                    </div>
+                  </div>
+                ) : (
+                  TAB_FIELDS[activeTab as Exclude<TabId, 'settings' | 'videos'>].map(f => (
+                    <FieldInput
+                      key={f.key} label={f.label}
+                      value={Array.isArray(item[f.key]) ? item[f.key].join(', ') : item[f.key]}
+                      type={f.type} options={f.options}
+                      onChange={v => handleChange(index, { ...item, [f.key]: (f.type === 'tags' || Array.isArray(item[f.key])) ? v.split(',').map((s: string) => s.trim()) : v })}
+                    />
+                  ))
+                )}
+                
+                <div style={{ display: 'flex', justifyContent: 'flex-end', gap: 8, marginTop: 16 }}>
+                  {['posts', 'projects', 'experience'].includes(activeTab) && (
+                    <button 
+                      onClick={() => handleSaveToNotion(item)} 
+                      disabled={savingToNotion === item.id}
+                      className="btn" 
+                      style={{ fontSize: 12, borderColor: notionSuccess === item.id ? '#10b981' : 'rgba(255,255,255,0.1)' }}
+                    >
+                      {savingToNotion === item.id ? <Loader2 size={12} className="animate-spin" /> : notionSuccess === item.id ? <Check size={12} style={{ color: '#10b981' }} /> : <NotionLogo />}
+                      {savingToNotion === item.id ? 'Saving...' : notionSuccess === item.id ? 'Saved!' : 'Save to Notion'}
+                    </button>
+                  )}
+                  {activeTab === 'videos' && item.youtubeId && (
+                    <a href={`https://youtube.com/watch?v=${item.youtubeId}`} target="_blank" rel="noopener noreferrer" className="btn" style={{ fontSize: 12 }}>
+                      <ExternalLink size={12} /> View
+                    </a>
+                  )}
+                  <button onClick={() => { if (confirm('Delete this item?')) handleDelete(index); }} className="btn" style={{ color: 'var(--red)', fontSize: 12 }}>
+                    <Trash2 size={12} /> Delete
+                  </button>
+                </div>
+              </div>
+            ))}
 
             {data[activeTab].length === 0 && (
               <div style={{ textAlign: 'center', padding: 64, opacity: 0.4 }}>

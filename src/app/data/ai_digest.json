@@ -1,6 +1,10 @@
 {
-  "timestamp": "2026-04-26T00:00:00.000Z",
-  "marketSummary": "Run npm run daily-sync to generate the daily AI market summary and content ideas.",
-  "youtubeIdeas": [],
+  "timestamp": "2026-04-30T18:49:33.738Z",
+  "marketSummary": "Market analysis unavailable.",
+  "marketSentiment": "NEUTRAL",
+  "marketPhase": "SIDEWAYS",
+  "institutionalFocus": "General Market",
+  "topPicks": [],
+  "anomalies": [],
   "linkedinIdeas": []
 }

@@ -68,6 +68,11 @@ jobs:
         run: node scripts/notice-scraper.mjs
         timeout-minutes: 5
 
+      - name: Run Nepal News Scraper
+        if: ${{ github.event.inputs.sync_type != 'nepse-only' }}
+        run: node scripts/nepal-news-scraper.mjs
+        timeout-minutes: 3
+
       - name: Run Notice AI Writer
         if: ${{ github.event.inputs.sync_type != 'nepse-only' }}
         env:
@@ -113,6 +118,7 @@ jobs:
           git add src/app/data/history/
           git add src/app/data/technical-signals.json
           git add src/app/data/broker-flow-5d.json
+          git add src/app/data/nepal-news.json
           git add src/app/data/deep_intelligence.json
           git diff --staged --quiet || git commit -m "chore: daily sync $(date -u +%Y-%m-%d) — NEPSE V2 + Notices"
           git push
