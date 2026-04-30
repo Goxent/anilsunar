@@ -1,6 +1,5 @@
 import { chromium } from 'playwright-extra';
-import stealthPlugin from 'puppeteer-extra-plugin-stealth';
-chromium.use(stealthPlugin());
+import stealth from 'puppeteer-extra-plugin-stealth';
 import fs from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
@@ -10,175 +9,263 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 dotenv.config();
 
-const EMAIL = process.env.SASTO_EMAIL;
-const PASSWORD = process.env.SASTO_PASSWORD;
+chromium.use(stealth());
 
-async function retry(fn, retries = 3, delay = 2000) {
-  for (let i = 0; i < retries; i++) {
+// ─── Nepal Date Helper (UTC+5:45) ───────────────────────────────────────────
+function getNepalDateString() {
+  const nowMs = Date.now() + 5.75 * 60 * 60 * 1000;
+  const nd = new Date(nowMs);
+  const yyyy = nd.getUTCFullYear();
+  const mm = String(nd.getUTCMonth() + 1).padStart(2, '0');
+  const dd = String(nd.getUTCDate()).padStart(2, '0');
+  return `${yyyy}-${mm}-${dd}`;
+}
+
+// ─── Retry Wrapper ───────────────────────────────────────────────────────────
+async function retry(fn, maxRetries = 3, delayMs = 2000) {
+  let lastError;
+  for (let attempt = 1; attempt <= maxRetries; attempt++) {
     try {
       return await fn();
     } catch (err) {
-      if (i === retries - 1) throw err;
-      console.warn(`⚠️ Step failed, retrying in ${delay}ms... (Attempt ${i + 1}/${retries})`);
-      await new Promise(r => setTimeout(r, delay));
+      lastError = err;
+      console.error(`  ⚠️  Attempt ${attempt}/${maxRetries} failed: ${err.message}`);
+      if (attempt < maxRetries) await sleep(delayMs);
     }
   }
+  throw lastError;
 }
 
-async function runOmniSpider() {
-  console.log('🕷️ Initiating Omni-Crawler Spider for Sasto Share...');
-  
-  // Ensure output directory exists and is clean
-  const dataPath = path.join(__dirname, '../src/app/data/market-omni-data.json');
-  const dir = path.dirname(dataPath);
-  if (!fs.existsSync(dir)) fs.mkdirSync(dir, { recursive: true });
+function sleep(ms) {
+  return new Promise(r => setTimeout(r, ms));
+}
 
-  const browser = await chromium.launch({ 
-    headless: true,
-    args: ['--no-sandbox', '--disable-setuid-sandbox', '--disable-dev-shm-usage']
-  });
-  const context = await browser.newContext({ 
-    userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36',
-    viewport: { width: 1280, height: 800 }
-  });
-  const page = await context.newPage();
+// ─── Pages to Scrape ────────────────────────────────────────────────────────
+const TARGETS = [
+  'https://nepsealpha.com/sastoshare/home',
+  'https://nepsealpha.com/sastoshare/daily-summary',
+  'https://nepsealpha.com/trading-menu/top-stocks',
+  'https://nepsealpha.com/sastoshare/swing-gain',
+  'https://nepsealpha.com/sastoshare/stock-health',
+  'https://nepsealpha.com/sastoshare/broker-analysis',
+  'https://nepsealpha.com/sastoshare/floorsheet/today',
+  'https://nepsealpha.com/sastoshare/sector-performance',
+  'https://nepsealpha.com/sastoshare/sector-rotation/index',
+  'https://nepsealpha.com/sastoshare/technical-screener',
+  'https://nepsealpha.com/sastoshare/momentum-screener',
+  'https://nepsealpha.com/sastoshare/overbought-oversold',
+  'https://nepsealpha.com/sastoshare/bifs-financials',
+  'https://nepsealpha.com/sastoshare/insurance-financials',
+  'https://nepsealpha.com/sastoshare/hydro-financials',
+  'https://nepsealpha.com/sastoshare/mfin-financials',
+  'https://nepsealpha.com/sastoshare/dividend-book/book-trend',
+  'https://nepsealpha.com/sastoshare/market-breadth',
+];
 
-  const dataLake = {
-    timestamp: new Date().toISOString(),
-    scrapedPages: []
+// ─── Page Evaluator ──────────────────────────────────────────────────────────
+const PAGE_EXTRACTOR = () => {
+  // Extract all tables — no row limit
+  const tables = Array.from(document.querySelectorAll('table')).map((table, idx) => {
+    // Try thead > th first, fall back to first row
+    let headers = Array.from(table.querySelectorAll('thead th, thead td'))
+      .map(th => th.innerText.trim().replace(/\s+/g, ' '));
+    if (headers.length === 0) {
+      headers = Array.from(table.querySelectorAll('tr:first-child th, tr:first-child td'))
+        .map(td => td.innerText.trim().replace(/\s+/g, ' '));
+    }
+
+    const bodyRows = table.querySelectorAll('tbody tr');
+    const rowSource = bodyRows.length > 0
+      ? Array.from(bodyRows)
+      : Array.from(table.querySelectorAll('tr')).slice(1);
+
+    const rows = rowSource.map(tr => {
+      const cells = Array.from(tr.querySelectorAll('td'));
+      if (cells.length === 0) return null;
+      const obj = {};
+      cells.forEach((td, i) => {
+        obj[headers[i] || `Col_${i}`] = td.innerText.trim().replace(/\s+/g, ' ');
+      });
+      return obj;
+    }).filter(Boolean);
+
+    return { tableIndex: idx, headers, rows };
+  });
+
+  // Extract stat cards / metric boxes
+  const statCards = Array.from(document.querySelectorAll(
+    '.stat, .card, .metric, .badge, .indicator, [class*="stat"], [class*="score"], [class*="metric"], [class*="indicator"]'
+  )).reduce((acc, el) => {
+    const text = el.innerText.trim();
+    if (!text || text.length > 200) return acc; // skip huge containers
+    const lines = text.split('\n').map(l => l.trim()).filter(Boolean);
+    if (lines.length >= 2) {
+      acc.push({ label: lines[0], value: lines.slice(1).join(' ') });
+    } else if (lines.length === 1) {
+      acc.push({ label: lines[0], value: '' });
+    }
+    return acc;
+  }, []);
+
+  return {
+    title: document.title,
+    tables,
+    statCards,
   };
+};
+
+// ─── History Helpers ─────────────────────────────────────────────────────────
+function saveHistory(data) {
+  const historyDir = path.join(__dirname, '../src/app/data/history');
+  if (!fs.existsSync(historyDir)) fs.mkdirSync(historyDir, { recursive: true });
+
+  const todayStr = getNepalDateString();
+  const snapshotPath = path.join(historyDir, `${todayStr}.json`);
+
+  if (fs.existsSync(snapshotPath)) {
+    console.log(`ℹ️  Snapshot for ${todayStr} already exists — skipping.`);
+    return;
+  }
+
+  fs.writeFileSync(snapshotPath, JSON.stringify(data, null, 2));
+  console.log(`📅 History snapshot saved → history/${todayStr}.json`);
+}
+
+function pruneHistory(keepDays = 90) {
+  const historyDir = path.join(__dirname, '../src/app/data/history');
+  if (!fs.existsSync(historyDir)) return;
+
+  const todayMs = Date.now() + 5.75 * 60 * 60 * 1000;
+  const cutoffMs = todayMs - keepDays * 24 * 60 * 60 * 1000;
+
+  const files = fs.readdirSync(historyDir).filter(f => /^\d{4}-\d{2}-\d{2}\.json$/.test(f));
+  let deleted = 0;
+  files.forEach(file => {
+    const dateStr = file.replace('.json', '');
+    const fileMs = new Date(dateStr).getTime();
+    if (fileMs < cutoffMs) {
+      fs.unlinkSync(path.join(historyDir, file));
+      deleted++;
+    }
+  });
+
+  if (deleted > 0) console.log(`🗑️  Pruned ${deleted} history file(s) older than ${keepDays} days.`);
+}
+
+// ─── Main Crawler ────────────────────────────────────────────────────────────
+export default async function runCrawler() {
+  const email = process.env.SASTO_EMAIL;
+  const password = process.env.SASTO_PASSWORD;
+  if (!email || !password) {
+    throw new Error('SASTO_EMAIL and SASTO_PASSWORD must be set in environment variables.');
+  }
+
+  console.log('🕷️  Omni Crawler starting...');
+  let browser;
 
   try {
-    // 1. LOGIN
+    browser = await chromium.launch({
+      headless: true,
+      args: ['--no-sandbox', '--disable-setuid-sandbox'],
+    });
+    const context = await browser.newContext({ viewport: { width: 1920, height: 1080 } });
+    const page = await context.newPage();
+
+    // ── LOGIN ────────────────────────────────────────────────────────────────
     await retry(async () => {
-      console.log('🔑 Attempting stealth login...');
-      await page.goto('https://nepsealpha.com/login', { waitUntil: 'domcontentloaded' });
-      await page.waitForTimeout(1500);
-      
-      if (await page.isVisible('input[name="email"]')) {
-        await page.fill('input[name="email"]', EMAIL, { delay: 100 });
-        await page.fill('input[name="password"]', PASSWORD, { delay: 150 });
-        await page.click('button[type="submit"]');
+      console.log('🔐 Logging in...');
+      await page.goto('https://nepsealpha.com/login', {
+        waitUntil: 'networkidle',
+        timeout: 30000,
+      });
+
+      // Skip login if already authenticated
+      if (/dashboard|sastoshare|home/i.test(page.url())) {
+        console.log('✅ Already authenticated.');
+        return;
       }
-      await page.waitForURL(/.*dashboard|.*home|.*sastoshare/, { timeout: 15000 });
-      console.log('✅ Login successful!');
-    });
 
-    // 2. AUTO-DISCOVER LINKS
-    console.log('🗺️ Mapping platform links...');
-    await page.goto('https://nepsealpha.com/sastoshare', { waitUntil: 'domcontentloaded' });
-    await page.waitForTimeout(3000);
+      await page.fill('input[type="email"]', email);
+      await page.fill('input[type="password"]', password);
+      await page.click('button[type="submit"]');
 
-    const links = await page.evaluate(() => {
-      const allLinks = Array.from(document.querySelectorAll('a'));
-      const sastoLinks = new Set();
-      
-      allLinks.forEach(a => {
-        const href = a.href;
-        // Collect internal sastoshare tool links
-        if (href && href.includes('/sastoshare/') && !href.includes('logout') && !href.includes('#')) {
-          sastoLinks.add(href);
-        }
-      });
-      
-      // Also grab general nepsealpha top-stocks or floorsheet if visible
-      allLinks.forEach(a => {
-         const href = a.href;
-         if (href && (href.includes('trading-menu/top-stocks') || href.includes('floorsheet'))) {
-             sastoLinks.add(href);
-         }
-      });
+      await page.waitForURL(/dashboard|sastoshare|home/i, { timeout: 20000 });
+      console.log(`✅ Login successful → ${page.url()}`);
+    }, 3, 2000);
 
-      return Array.from(sastoLinks);
-    });
+    // ── SCRAPE LOOP ──────────────────────────────────────────────────────────
+    const scrapedPages = [];
 
-    console.log(`🎯 Discovered ${links.length} potential data sources.`);
-    
-    const GUARANTEED_PAGES = [
-      'https://nepsealpha.com/sastoshare/home',
-      'https://nepsealpha.com/sastoshare/swing-gain', 
-      'https://nepsealpha.com/sastoshare/floorsheet/today',
-      'https://nepsealpha.com/sastoshare/broker-analysis',
-      'https://nepsealpha.com/sastoshare/sector-performance',
-      'https://nepsealpha.com/sastoshare/stock-health',
-      'https://nepsealpha.com/trading-menu/top-stocks',
-    ];
-
-    // Merge guaranteed pages with auto-discovered links (deduplicate)
-    const targetLinks = [...new Set([...GUARANTEED_PAGES, ...links])].slice(0, 20);
-
-    // 3. OMNI-EXTRACTION
-    for (const link of targetLinks) {
-      console.log(`\n🕸️ Crawling: ${link}`);
+    for (const url of TARGETS) {
       try {
-        await page.goto(link, { waitUntil: 'networkidle', timeout: 30000 });
-        await page.waitForTimeout(3000); // Give extra time for any late-loading JS tables
+        console.log(`\n📄 Scraping: ${url}`);
+        await page.goto(url, { waitUntil: 'networkidle', timeout: 25000 });
+        await sleep(2500);
 
-        // Extract tables dynamically
-        const pageData = await page.evaluate(() => {
-          const tables = document.querySelectorAll('table');
-          const extractedTables = [];
+        const extracted = await page.evaluate(PAGE_EXTRACTOR);
 
-          tables.forEach((table, tableIndex) => {
-            // Get Headers
-            const headers = Array.from(table.querySelectorAll('th')).map(th => th.innerText.trim());
-            
-            // Get Rows (limit to top 50 rows per table now)
-            const rows = Array.from(table.querySelectorAll('tbody tr')).slice(0, 50);
-            
-            const rowData = rows.map(row => {
-              const cells = Array.from(row.querySelectorAll('td'));
-              const obj = {};
-              cells.forEach((cell, i) => {
-                const headerName = headers[i] || `Col_${i}`;
-                obj[headerName] = cell.innerText.trim();
-              });
-              return obj;
-            });
-
-            if (rowData.length > 0) {
-              extractedTables.push({
-                tableIndex,
-                headers,
-                rows: rowData
-              });
-            }
-          });
-
-          return {
-            title: document.title,
-            url: window.location.href,
-            tables: extractedTables
-          };
+        scrapedPages.push({
+          url,
+          title: extracted.title,
+          scrapedAt: new Date().toISOString(),
+          tables: extracted.tables,
+          statCards: extracted.statCards,
         });
 
-        if (pageData.tables.length > 0) {
-          console.log(`   ✅ Extracted ${pageData.tables.length} tables from ${pageData.title}`);
-          dataLake.scrapedPages.push(pageData);
-        } else {
-          console.log(`   ⚠️ No tables found on this page.`);
-        }
-
-      } catch (e) {
-        console.error(`   ❌ Failed to crawl ${link}: ${e.message}`);
+        console.log(
+          `   ✔  ${extracted.tables.length} tables` +
+          ` | ${extracted.tables.reduce((a, t) => a + t.rows.length, 0)} rows` +
+          ` | ${extracted.statCards.length} stat cards`
+        );
+      } catch (err) {
+        console.error(`   ❌ Failed to scrape ${url}: ${err.message}`);
       }
     }
 
-    // 4. SAVE THE DATA LAKE
-    const dataPath = path.join(__dirname, '../src/app/data/market-omni-data.json');
-    
-    // Ensure dir exists
-    const dir = path.dirname(dataPath);
-    if (!fs.existsSync(dir)) fs.mkdirSync(dir, { recursive: true });
+    // ── SAVE ─────────────────────────────────────────────────────────────────
+    const output = {
+      timestamp: new Date().toISOString(),
+      totalTargets: TARGETS.length,
+      successCount: scrapedPages.length,
+      scrapedPages,
+    };
 
-    fs.writeFileSync(dataPath, JSON.stringify(dataLake, null, 2));
-    console.log(`\n💾 Omni-Data Lake saved successfully! Total pages extracted: ${dataLake.scrapedPages.length}`);
+    // 1. Today's live snapshot
+    const dataDir = path.join(__dirname, '../src/app/data');
+    if (!fs.existsSync(dataDir)) fs.mkdirSync(dataDir, { recursive: true });
+    const mainPath = path.join(dataDir, 'market-omni-data.json');
+    fs.writeFileSync(mainPath, JSON.stringify(output, null, 2));
+    console.log(`\n💾 Saved → src/app/data/market-omni-data.json`);
 
-  } catch (error) {
-    console.error('🚨 Omni-Crawler crashed:', error);
+    // 2. Daily history snapshot
+    saveHistory(output);
+
+    // 3. Prune history older than 90 days
+    pruneHistory(90);
+
+    // ── SUMMARY TABLE ─────────────────────────────────────────────────────────
+    console.log('\n' + '─'.repeat(80));
+    console.log('📊  CRAWL SUMMARY');
+    console.log('─'.repeat(80));
+    scrapedPages.forEach(p => {
+      const tableCount = p.tables.length.toString().padStart(2);
+      const rowCount = p.tables.reduce((a, t) => a + t.rows.length, 0).toString().padStart(4);
+      const cardCount = p.statCards.length.toString().padStart(2);
+      const shortUrl = p.url.replace('https://nepsealpha.com', '').substring(0, 45).padEnd(45);
+      console.log(`  ${shortUrl}  tables:${tableCount}  rows:${rowCount}  cards:${cardCount}`);
+    });
+    console.log('─'.repeat(80));
+    console.log(`  ✅ ${scrapedPages.length}/${TARGETS.length} pages successful\n`);
+
+  } catch (err) {
+    console.error('\n🚨 Crawler aborted:', err.message);
+    process.exit(1);
   } finally {
-    await browser.close();
+    if (browser) await browser.close();
   }
 }
 
-runOmniSpider();
+// Allow direct execution
+if (process.argv[1] === fileURLToPath(import.meta.url)) {
+  runCrawler();
+}

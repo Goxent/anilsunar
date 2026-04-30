@@ -40,14 +40,25 @@ jobs:
         run: npx playwright install chromium --with-deps
 
       # ---- NEPSE DATA SYNC ----
-      - name: Run NEPSE Omni Crawler
+      - name: Run NEPSE Crawler
         if: ${{ github.event.inputs.sync_type != 'notices-only' }}
         env:
           SASTO_EMAIL: ${{ secrets.SASTO_EMAIL }}
           SASTO_PASSWORD: ${{ secrets.SASTO_PASSWORD }}
         run: node scripts/omni-crawler.mjs
+        timeout-minutes: 20
+
+      - name: Run Technical Engine
+        if: ${{ github.event.inputs.sync_type != 'notices-only' }}
+        run: node scripts/technical-engine.mjs
         continue-on-error: true
-        timeout-minutes: 12
+        timeout-minutes: 3
+
+      - name: Run Broker Tracker
+        if: ${{ github.event.inputs.sync_type != 'notices-only' }}
+        run: node scripts/broker-tracker.mjs
+        continue-on-error: true
+        timeout-minutes: 2
 
       # ---- NOTICE TRACKER ----
       - name: Run Notice Scraper
@@ -63,15 +74,15 @@ jobs:
         continue-on-error: true
         timeout-minutes: 5
 
-      # ---- AI DIGEST (NEPSE summary + LinkedIn ideas) ----
-      - name: Run AI Digest
+      # ---- AI ANALYST (3-stage Gemini pipeline) ----
+      - name: Run AI Analyst
         env:
           VITE_GEMINI_API_KEY: ${{ secrets.VITE_GEMINI_API_KEY }}
           RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
           TO_EMAIL: ${{ secrets.TO_EMAIL }}
         run: node scripts/ai-digest.mjs
         continue-on-error: true
-        timeout-minutes: 5
+        timeout-minutes: 8
 
       # ---- EMAIL ALERTS ----
       - name: Send Notice Alert Email
@@ -97,7 +108,11 @@ jobs:
           git config user.email "bot@anilsunar.com.np"
           git config user.name "Goxent Intelligence Bot"
           git add src/app/data/
-          git diff --staged --quiet || git commit -m "chore: daily sync $(date -u +%Y-%m-%d) — NEPSE + Notices"
+          git add src/app/data/history/
+          git add src/app/data/technical-signals.json
+          git add src/app/data/broker-flow-5d.json
+          git add src/app/data/deep_intelligence.json
+          git diff --staged --quiet || git commit -m "chore: daily sync $(date -u +%Y-%m-%d) — NEPSE V2 + Notices"
           git push
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
