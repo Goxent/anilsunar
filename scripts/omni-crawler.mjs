@@ -41,10 +41,15 @@ function sleep(ms) {
 }
 
 // ─── Pages to Scrape ────────────────────────────────────────────────────────
+const PUBLIC_TARGETS = [
+  'https://nepsealpha.com',
+  'https://www.sharesansar.com',
+  'https://nepsealpha.com/trading-menu/top-stocks', // often public
+];
+
 const TARGETS = [
   'https://nepsealpha.com/sastoshare/home',
   'https://nepsealpha.com/sastoshare/daily-summary',
-  'https://nepsealpha.com/trading-menu/top-stocks',
   'https://nepsealpha.com/sastoshare/swing-gain',
   'https://nepsealpha.com/sastoshare/stock-health',
   'https://nepsealpha.com/sastoshare/broker-analysis',
@@ -196,9 +201,32 @@ export default async function runCrawler() {
     // ── SCRAPE LOOP ──────────────────────────────────────────────────────────
     const scrapedPages = [];
 
+    // Phase 1: Public Data (Fallback)
+    console.log('\n🌐 PHASE 1: Public Data Scrape...');
+    for (const url of PUBLIC_TARGETS) {
+      try {
+        console.log(`📄 Scraping (Public): ${url}`);
+        await page.goto(url, { waitUntil: 'domcontentloaded', timeout: 20000 });
+        await sleep(1500);
+        const extracted = await page.evaluate(PAGE_EXTRACTOR);
+        scrapedPages.push({
+          url,
+          title: extracted.title,
+          scrapedAt: new Date().toISOString(),
+          tables: extracted.tables,
+          statCards: extracted.statCards,
+          isPublic: true
+        });
+      } catch (e) {
+        console.warn(`   ⚠️  Public skip ${url}: ${e.message}`);
+      }
+    }
+
+    // Phase 2: Premium Data
+    console.log('\n💎 PHASE 2: Premium Sasto Share Scrape...');
     for (const url of TARGETS) {
       try {
-        console.log(`\n📄 Scraping: ${url}`);
+        console.log(`📄 Scraping (Premium): ${url}`);
         await page.goto(url, { waitUntil: 'networkidle', timeout: 25000 });
         await sleep(2500);
 
@@ -210,6 +238,7 @@ export default async function runCrawler() {
           scrapedAt: new Date().toISOString(),
           tables: extracted.tables,
           statCards: extracted.statCards,
+          isPublic: false
         });
 
         console.log(

@@ -15,11 +15,22 @@ export default async function handler(req, res) {
   }
 
   try {
-    const { type = 'market' } = req.query; // 'market' or 'intel'
+    const { type = 'market', symbol } = req.query; // 'market', 'intel', 'broker', 'tearsheet'
     
     let docId = 'latest';
-    let collection = type === 'intel' ? 'intelligence' : 'market';
+    let collection = 'market';
+
+    if (type === 'intel') collection = 'intelligence';
+    else if (type === 'broker') collection = 'broker_analytics';
+    else if (type === 'tearsheet') {
+      collection = 'tearsheets';
+      docId = symbol?.toUpperCase();
+    }
     
+    if (!docId) {
+      return res.status(400).json({ error: 'Missing document ID or symbol' });
+    }
+
     const snap = await db.collection(collection).doc(docId).get();
     
     if (!snap.exists()) {
@@ -27,7 +38,7 @@ export default async function handler(req, res) {
     }
 
     // Add cache control to avoid over-fetching
-    res.setHeader('Cache-Control', 's-maxage=300, stale-while-revalidate');
+    res.setHeader('Cache-Control', 's-maxage=60, stale-while-revalidate');
     return res.status(200).json(snap.data());
   } catch (error) {
     console.error('API Error:', error);

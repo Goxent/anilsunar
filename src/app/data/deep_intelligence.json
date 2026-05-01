@@ -4,13 +4,13 @@
     "hotSectors": [],
     "weakSectors": [],
     "overallBias": "NEUTRAL",
-    "oneLinerSummary": "Market analysis unavailable.",
+    "oneLinerSummary": "Market analysis currently unavailable. The market may be closed or data synchronization is pending.",
     "keyRisk": "Data unavailable"
   },
   "stage2": [],
   "stage3": {
-    "generatedAt": "2026-04-30T19:29:29.342Z",
-    "marketSummary": "Market analysis unavailable.",
+    "generatedAt": "2026-05-01T07:20:43.364Z",
+    "marketSummary": "Market analysis currently unavailable. The market may be closed or data synchronization is pending.",
     "marketPhase": "SIDEWAYS",
     "topPicks": [],
     "linkedinIdeas": []

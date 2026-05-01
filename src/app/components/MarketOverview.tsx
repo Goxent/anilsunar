@@ -20,12 +20,17 @@ function parseMarketData(omniData: any) {
   
   const tables = eodPage?.tables || [];
   
-  // Parse key-value rows (Col_0 = label, Col_1 = value)
+  // Parse key-value rows (dynamic keys to handle 'NEPSE' vs 'Col_0')
   const kvData: Record<string, string> = {};
   tables.forEach((t: any) => {
     t.rows?.forEach((row: any) => {
-      if (row.Col_0 && row.Col_1) {
-        kvData[row.Col_0] = row.Col_1;
+      const keys = Object.keys(row);
+      if (keys.length >= 2) {
+        const label = row[keys[0]];
+        const value = row[keys[1]];
+        if (label && value) {
+          kvData[label] = value;
+        }
       }
     });
   });

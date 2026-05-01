@@ -1,0 +1,2428 @@
+{
+  "timestamp": "2026-05-01T07:19:59.153Z",
+  "count": 346,
+  "stocks": [
+    {
+      "symbol": "ACLBSL",
+      "ltp": "941.10",
+      "eps": "41",
+      "pe": "-0.20",
+      "bookValue": "18.90"
+    },
+    {
+      "symbol": "ADBL",
+      "ltp": "309.50",
+      "eps": "164",
+      "pe": "0.80",
+      "bookValue": "12.70"
+    },
+    {
+      "symbol": "ADBLD83",
+      "ltp": "1,070.00",
+      "eps": "3",
+      "pe": "9.10",
+      "bookValue": "0.00"
+    },
+    {
+      "symbol": "AHL",
+      "ltp": "534.00",
+      "eps": "110",
+      "pe": "39.00",
+      "bookValue": "53.90"
+    },
+    {
+      "symbol": "AHPC",
+      "ltp": "277.00",
+      "eps": "520",
+      "pe": "-0.70",
+      "bookValue": "9.00"
+    },
+    {
+      "symbol": "AKJCL",
+      "ltp": "375.00",
+      "eps": "993",
+      "pe": "1.00",
+      "bookValue": "22.10"
+    },
+    {
+      "symbol": "AKPL",
+      "ltp": "267.80",
+      "eps": "405",
+      "pe": "0.60",
+      "bookValue": "19.90"
+    },
+    {
+      "symbol": "ALBSL",
+      "ltp": "1,115.00",
+      "eps": "153",
+      "pe": "5.00",
+      "bookValue": "33.00"
+    },
+    {
+      "symbol": "ALICL",
+      "ltp": "450.50",
+      "eps": "79",
+      "pe": "-3.40",
+      "bookValue": "8.00"
+    },
+    {
+      "symbol": "ANLB",
+      "ltp": "6,285.00",
+      "eps": "3",
+      "pe": "10.00",
+      "bookValue": "85.00"
+    },
+    {
+      "symbol": "API",
+      "ltp": "334.90",
+      "eps": "535",
+      "pe": "-1.00",
+      "bookValue": "26.60"
+    },
+    {
+      "symbol": "AVYAN",
+      "ltp": "1,100.00",
+      "eps": "98",
+      "pe": "-0.40",
+      "bookValue": "100.00"
+    },
+    {
+      "symbol": "BANDIPUR",
+      "ltp": "824.70",
+      "eps": "849",
+      "pe": "10.70",
+      "bookValue": "44.90"
+    },
+    {
+      "symbol": "BARUN",
+      "ltp": "340.00",
+      "eps": "301",
+      "pe": "-1.50",
+      "bookValue": "10.00"
+    },
+    {
+      "symbol": "BBC",
+      "ltp": "4,814.90",
+      "eps": "8",
+      "pe": "-26.10",
+      "bookValue": "130.00"
+    },
+    {
+      "symbol": "BEDC",
+      "ltp": "365.90",
+      "eps": "444",
+      "pe": "0.90",
+      "bookValue": "19.20"
+    },
+    {
+      "symbol": "BFC",
+      "ltp": "449.00",
+      "eps": "119",
+      "pe": "-4.00",
+      "bookValue": "8.40"
+    },
+    {
+      "symbol": "BGWT",
+      "ltp": "705.00",
+      "eps": "77",
+      "pe": "-25.00",
+      "bookValue": "47.00"
+    },
+    {
+      "symbol": "BHCL",
+      "ltp": "519.00",
+      "eps": "395",
+      "pe": "-6.00",
+      "bookValue": "11.40"
+    },
+    {
+      "symbol": "BHDC",
+      "ltp": "455.10",
+      "eps": "139",
+      "pe": "-2.40",
+      "bookValue": "10.70"
+    },
+    {
+      "symbol": "BHL",
+      "ltp": "217.60",
+      "eps": "734",
+      "pe": "1.60",
+      "bookValue": "10.00"
+    },
+    {
+      "symbol": "BHPL",
+      "ltp": "520.20",
+      "eps": "79",
+      "pe": "-6.60",
+      "bookValue": "12.00"
+    },
+    {
+      "symbol": "BJHL",
+      "ltp": "1,035.00",
+      "eps": "512",
+      "pe": "0.00",
+      "bookValue": "59.00"
+    },
+    {
+      "symbol": "BNHC",
+      "ltp": "327.50",
+      "eps": "82",
+      "pe": "2.50",
+      "bookValue": "10.60"
+    },
+    {
+      "symbol": "BNT",
+      "ltp": "11,610.00",
+      "eps": "6",
+      "pe": "0.00",
+      "bookValue": "0.10"
+    },
+    {
+      "symbol": "BOKD86",
+      "ltp": "1,081.00",
+      "eps": "2",
+      "pe": "-8.00",
+      "bookValue": "0.00"
+    },
+    {
+      "symbol": "BPCL",
+      "ltp": "668.00",
+      "eps": "150",
+      "pe": "1.00",
+      "bookValue": "20.00"
+    },
+    {
+      "symbol": "BUNGAL",
+      "ltp": "571.00",
+      "eps": "227",
+      "pe": "1.00",
+      "bookValue": "24.80"
+    },
+    {
+      "symbol": "C30MF",
+      "ltp": "10.07",
+      "eps": "11",
+      "pe": "0.17",
+      "bookValue": "0.27"
+    },
+    {
+      "symbol": "CBBL",
+      "ltp": "903.00",
+      "eps": "199",
+      "pe": "1.00",
+      "bookValue": "7.70"
+    },
+    {
+      "symbol": "CFCL",
+      "ltp": "493.00",
+      "eps": "98",
+      "pe": "-3.90",
+      "bookValue": "13.90"
+    },
+    {
+      "symbol": "CGH",
+      "ltp": "807.50",
+      "eps": "104",
+      "pe": "-1.50",
+      "bookValue": "9.90"
+    },
+    {
+      "symbol": "CHCL",
+      "ltp": "478.50",
+      "eps": "200",
+      "pe": "-0.60",
+      "bookValue": "11.90"
+    },
+    {
+      "symbol": "CHDC",
+      "ltp": "2,260.90",
+      "eps": "219",
+      "pe": "-29.10",
+      "bookValue": "58.00"
+    },
+    {
+      "symbol": "CHL",
+      "ltp": "283.00",
+      "eps": "135",
+      "pe": "-3.00",
+      "bookValue": "7.00"
+    },
+    {
+      "symbol": "CIT",
+      "ltp": "1,766.00",
+      "eps": "141",
+      "pe": "-2.00",
+      "bookValue": "34.00"
+    },
+    {
+      "symbol": "CITY",
+      "ltp": "448.00",
+      "eps": "176",
+      "pe": "-14.00",
+      "bookValue": "12.90"
+    },
+    {
+      "symbol": "CIZBD90",
+      "ltp": "1,277.90",
+      "eps": "2",
+      "pe": "-1.10",
+      "bookValue": "0.00"
+    },
+    {
+      "symbol": "CKHL",
+      "ltp": "699.00",
+      "eps": "30",
+      "pe": "1.10",
+      "bookValue": "18.80"
+    },
+    {
+      "symbol": "CLI",
+      "ltp": "452.60",
+      "eps": "222",
+      "pe": "-1.40",
+      "bookValue": "6.80"
+    },
+    {
+      "symbol": "CORBL",
+      "ltp": "2,400.00",
+      "eps": "510",
+      "pe": "-278.00",
+      "bookValue": "267.80"
+    },
+    {
+      "symbol": "CREST",
+      "ltp": "1,112.10",
+      "eps": "201",
+      "pe": "-27.90",
+      "bookValue": "48.00"
+    },
+    {
+      "symbol": "CSY",
+      "ltp": "9.32",
+      "eps": "47",
+      "pe": "-0.08",
+      "bookValue": "0.20"
+    },
+    {
+      "symbol": "CYCL",
+      "ltp": "1,490.00",
+      "eps": "30",
+      "pe": "10.00",
+      "bookValue": "41.70"
+    },
+    {
+      "symbol": "CZBIL",
+      "ltp": "204.50",
+      "eps": "172",
+      "pe": "0.50",
+      "bookValue": "5.00"
+    },
+    {
+      "symbol": "DDBL",
+      "ltp": "829.00",
+      "eps": "75",
+      "pe": "2.60",
+      "bookValue": "10.00"
+    },
+    {
+      "symbol": "DHEL",
+      "ltp": "599.30",
+      "eps": "352",
+      "pe": "-4.70",
+      "bookValue": "40.20"
+    },
+    {
+      "symbol": "DHPL",
+      "ltp": "300.00",
+      "eps": "36",
+      "pe": "1.00",
+      "bookValue": "7.00"
+    },
+    {
+      "symbol": "DLBS",
+      "ltp": "1,290.00",
+      "eps": "16",
+      "pe": "-30.00",
+      "bookValue": "78.00"
+    },
+    {
+      "symbol": "DOLTI",
+      "ltp": "364.00",
+      "eps": "235",
+      "pe": "-9.00",
+      "bookValue": "8.00"
+    },
+    {
+      "symbol": "DORDI",
+      "ltp": "277.00",
+      "eps": "331",
+      "pe": "3.00",
+      "bookValue": "8.00"
+    },
+    {
+      "symbol": "EBL",
+      "ltp": "697.00",
+      "eps": "206",
+      "pe": "-0.60",
+      "bookValue": "7.30"
+    },
+    {
+      "symbol": "EBLD85",
+      "ltp": "1,162.00",
+      "eps": "4",
+      "pe": "22.00",
+      "bookValue": "32.00"
+    },
+    {
+      "symbol": "EBLD86",
+      "ltp": "1,072.10",
+      "eps": "1",
+      "pe": "2.10",
+      "bookValue": "0.00"
+    },
+    {
+      "symbol": "EBLD91",
+      "ltp": "1,056.10",
+      "eps": "11",
+      "pe": "-13.90",
+      "bookValue": "10.00"
+    },
+    {
+      "symbol": "EDBL",
+      "ltp": "577.70",
+      "eps": "62",
+      "pe": "-4.30",
+      "bookValue": "11.20"
+    },
+    {
+      "symbol": "EHPL",
+      "ltp": "391.40",
+      "eps": "177",
+      "pe": "-1.50",
+      "bookValue": "27.50"
+    },
+    {
+      "symbol": "ENL",
+      "ltp": "899.80",
+      "eps": "9",
+      "pe": "9.80",
+      "bookValue": "27.90"
+    },
+    {
+      "symbol": "FMDBL",
+      "ltp": "795.00",
+      "eps": "111",
+      "pe": "-15.00",
+      "bookValue": "47.50"
+    },
+    {
+      "symbol": "FOWAD",
+      "ltp": "1,096.00",
+      "eps": "38",
+      "pe": "-27.00",
+      "bookValue": "19.60"
+    },
+    {
+      "symbol": "GBBD85",
+      "ltp": "1,100.00",
+      "eps": "3",
+      "pe": "0.00",
+      "bookValue": "0.00"
+    },
+    {
+      "symbol": "GBBL",
+      "ltp": "414.00",
+      "eps": "187",
+      "pe": "4.00",
+      "bookValue": "11.00"
+    },
+    {
+      "symbol": "GBILD84/85",
+      "ltp": "1,121.00",
+      "eps": "1",
+      "pe": "-10.00",
+      "bookValue": "0.00"
+    },
+    {
+      "symbol": "GBIME",
+      "ltp": "231.00",
+      "eps": "422",
+      "pe": "1.00",
+      "bookValue": "5.20"
+    },
+    {
+      "symbol": "GBIMESY2",
+      "ltp": "9.20",
+      "eps": "12",
+      "pe": "-0.11",
+      "bookValue": "0.41"
+    },
+    {
+      "symbol": "GBLBS",
+      "ltp": "750.00",
+      "eps": "42",
+      "pe": "-2.00",
+      "bookValue": "13.00"
+    },
+    {
+      "symbol": "GCIL",
+      "ltp": "415.00",
+      "eps": "176",
+      "pe": "-5.00",
+      "bookValue": "8.60"
+    },
+    {
+      "symbol": "GFCL",
+      "ltp": "620.20",
+      "eps": "37",
+      "pe": "-3.80",
+      "bookValue": "11.80"
+    },
+    {
+      "symbol": "GHL",
+      "ltp": "234.00",
+      "eps": "307",
+      "pe": "0.00",
+      "bookValue": "10.00"
+    },
+    {
+      "symbol": "GIBF1",
+      "ltp": "11.00",
+      "eps": "18",
+      "pe": "0.15",
+      "bookValue": "0.15"
+    },
+    {
+      "symbol": "GILB",
+      "ltp": "1,100.20",
+      "eps": "67",
+      "pe": "-19.80",
+      "bookValue": "33.80"
+    },
+    {
+      "symbol": "GLBSL",
+      "ltp": "1,763.90",
+      "eps": "17",
+      "pe": "-21.10",
+      "bookValue": "76.90"
+    },
+    {
+      "symbol": "GLH",
+      "ltp": "264.50",
+      "eps": "228",
+      "pe": "-1.30",
+      "bookValue": "5.40"
+    },
+    {
+      "symbol": "GMFBS",
+      "ltp": "1,310.10",
+      "eps": "9",
+      "pe": "-18.90",
+      "bookValue": "47.00"
+    },
+    {
+      "symbol": "GMFIL",
+      "ltp": "464.40",
+      "eps": "43",
+      "pe": "3.40",
+      "bookValue": "13.40"
+    },
+    {
+      "symbol": "GMLI",
+      "ltp": "1,280.00",
+      "eps": "150",
+      "pe": "-10.00",
+      "bookValue": "62.90"
+    },
+    {
+      "symbol": "GRDBL",
+      "ltp": "1,100.00",
+      "eps": "333",
+      "pe": "0.00",
+      "bookValue": "50.00"
+    },
+    {
+      "symbol": "GSY",
+      "ltp": "9.78",
+      "eps": "32",
+      "pe": "-0.05",
+      "bookValue": "0.28"
+    },
+    {
+      "symbol": "GUFL",
+      "ltp": "518.20",
+      "eps": "69",
+      "pe": "4.50",
+      "bookValue": "5.20"
+    },
+    {
+      "symbol": "GVL",
+      "ltp": "487.50",
+      "eps": "145",
+      "pe": "-0.50",
+      "bookValue": "9.00"
+    },
+    {
+      "symbol": "H8020",
+      "ltp": "11.51",
+      "eps": "21",
+      "pe": "-0.14",
+      "bookValue": "0.34"
+    },
+    {
+      "symbol": "HATHY",
+      "ltp": "814.00",
+      "eps": "173",
+      "pe": "-12.00",
+      "bookValue": "29.00"
+    },
+    {
+      "symbol": "HBL",
+      "ltp": "202.00",
+      "eps": "872",
+      "pe": "-0.90",
+      "bookValue": "4.90"
+    },
+    {
+      "symbol": "HBLD83",
+      "ltp": "1,043.00",
+      "eps": "1",
+      "pe": "-32.00",
+      "bookValue": "0.00"
+    },
+    {
+      "symbol": "HBLD86",
+      "ltp": "1,148.40",
+      "eps": "2",
+      "pe": "33.40",
+      "bookValue": "0.00"
+    },
+    {
+      "symbol": "HBLPO",
+      "ltp": "128.00",
+      "eps": "1",
+      "pe": "-3.00",
+      "bookValue": "0.00"
+    },
+    {
+      "symbol": "HDHPC",
+      "ltp": "222.80",
+      "eps": "1,023",
+      "pe": "1.90",
+      "bookValue": "11.00"
+    },
+    {
+      "symbol": "HDL",
+      "ltp": "1,146.00",
+      "eps": "439",
+      "pe": "3.00",
+      "bookValue": "12.80"
+    },
+    {
+      "symbol": "HEI",
+      "ltp": "516.00",
+      "eps": "28",
+      "pe": "9.00",
+      "bookValue": "12.80"
+    },
+    {
+      "symbol": "HEIP",
+      "ltp": "317.10",
+      "eps": "2",
+      "pe": "-9.70",
+      "bookValue": "0.00"
+    },
+    {
+      "symbol": "HFIN",
+      "ltp": "1,024.00",
+      "eps": "3,649",
+      "pe": "19.00",
+      "bookValue": "88.40"
+    },
+    {
+      "symbol": "HHL",
+      "ltp": "384.00",
+      "eps": "298",
+      "pe": "0.30",
+      "bookValue": "10.50"
+    },
+    {
+      "symbol": "HIDCL",
+      "ltp": "265.70",
+      "eps": "455",
+      "pe": "-1.30",
+      "bookValue": "6.70"
+    },
+    {
+      "symbol": "HIDCLP",
+      "ltp": "205.00",
+      "eps": "466",
+      "pe": "4.00",
+      "bookValue": "11.80"
+    },
+    {
+      "symbol": "HIMSTAR",
+      "ltp": "840.00",
+      "eps": "234",
+      "pe": "11.00",
+      "bookValue": "60.00"
+    },
+    {
+      "symbol": "HLBSL",
+      "ltp": "889.00",
+      "eps": "24",
+      "pe": "12.90",
+      "bookValue": "27.00"
+    },
+    {
+      "symbol": "HLI",
+      "ltp": "340.00",
+      "eps": "462",
+      "pe": "-1.80",
+      "bookValue": "5.00"
+    },
+    {
+      "symbol": "HLICF",
+      "ltp": "8.93",
+      "eps": "23",
+      "pe": "-0.03",
+      "bookValue": "0.40"
+    },
+    {
+      "symbol": "HPPL",
+      "ltp": "366.60",
+      "eps": "245",
+      "pe": "-6.40",
+      "bookValue": "13.00"
+    },
+    {
+      "symbol": "HRL",
+      "ltp": "671.10",
+      "eps": "1,044",
+      "pe": "-8.10",
+      "bookValue": "13.00"
+    },
+    {
+      "symbol": "HURJA",
+      "ltp": "255.00",
+      "eps": "320",
+      "pe": "0.10",
+      "bookValue": "15.60"
+    },
+    {
+      "symbol": "ICFC",
+      "ltp": "622.10",
+      "eps": "58",
+      "pe": "-1.40",
+      "bookValue": "13.50"
+    },
+    {
+      "symbol": "ICFCD88",
+      "ltp": "1,201.00",
+      "eps": "4",
+      "pe": "34.00",
+      "bookValue": "1.00"
+    },
+    {
+      "symbol": "ICFCD89",
+      "ltp": "1,087.10",
+      "eps": "28",
+      "pe": "-8.90",
+      "bookValue": "13.00"
+    },
+    {
+      "symbol": "IGI",
+      "ltp": "428.90",
+      "eps": "97",
+      "pe": "4.90",
+      "bookValue": "11.00"
+    },
+    {
+      "symbol": "IHL",
+      "ltp": "395.00",
+      "eps": "115",
+      "pe": "-15.00",
+      "bookValue": "11.00"
+    },
+    {
+      "symbol": "ILBS",
+      "ltp": "944.00",
+      "eps": "35",
+      "pe": "2.00",
+      "bookValue": "71.10"
+    },
+    {
+      "symbol": "ILI",
+      "ltp": "433.50",
+      "eps": "225",
+      "pe": "-0.50",
+      "bookValue": "10.00"
+    },
+    {
+      "symbol": "JBBL",
+      "ltp": "360.10",
+      "eps": "203",
+      "pe": "-1.90",
+      "bookValue": "23.10"
+    },
+    {
+      "symbol": "JBLB",
+      "ltp": "1,268.00",
+      "eps": "152",
+      "pe": "-2.10",
+      "bookValue": "15.90"
+    },
+    {
+      "symbol": "JFL",
+      "ltp": "409.00",
+      "eps": "56",
+      "pe": "-2.50",
+      "bookValue": "5.50"
+    },
+    {
+      "symbol": "JHAPA",
+      "ltp": "1,564.00",
+      "eps": "494",
+      "pe": "-66.00",
+      "bookValue": "217.00"
+    },
+    {
+      "symbol": "JOSHI",
+      "ltp": "277.00",
+      "eps": "149",
+      "pe": "-4.00",
+      "bookValue": "7.00"
+    },
+    {
+      "symbol": "JSLBB",
+      "ltp": "1,093.00",
+      "eps": "14",
+      "pe": "-1.00",
+      "bookValue": "30.60"
+    },
+    {
+      "symbol": "KBL",
+      "ltp": "217.30",
+      "eps": "919",
+      "pe": "-0.60",
+      "bookValue": "6.80"
+    },
+    {
+      "symbol": "KBLD86",
+      "ltp": "1,128.30",
+      "eps": "1",
+      "pe": "-2.80",
+      "bookValue": "0.00"
+    },
+    {
+      "symbol": "KBLD89",
+      "ltp": "1,235.00",
+      "eps": "1",
+      "pe": "19.60",
+      "bookValue": "0.00"
+    },
+    {
+      "symbol": "KBSH",
+      "ltp": "1,580.00",
+      "eps": "8",
+      "pe": "-10.00",
+      "bookValue": "59.90"
+    },
+    {
+      "symbol": "KDBY",
+      "ltp": "11.70",
+      "eps": "77",
+      "pe": "0.32",
+      "bookValue": "0.49"
+    },
+    {
+      "symbol": "KDL",
+      "ltp": "820.00",
+      "eps": "82",
+      "pe": "4.00",
+      "bookValue": "25.00"
+    },
+    {
+      "symbol": "KEF",
+      "ltp": "10.57",
+      "eps": "29",
+      "pe": "-0.07",
+      "bookValue": "0.13"
+    },
+    {
+      "symbol": "KKHC",
+      "ltp": "262.00",
+      "eps": "255",
+      "pe": "-3.50",
+      "bookValue": "7.50"
+    },
+    {
+      "symbol": "KMCDB",
+      "ltp": "879.00",
+      "eps": "56",
+      "pe": "10.00",
+      "bookValue": "24.90"
+    },
+    {
+      "symbol": "KPCL",
+      "ltp": "485.90",
+      "eps": "79",
+      "pe": "-3.20",
+      "bookValue": "8.00"
+    },
+    {
+      "symbol": "KSBBL",
+      "ltp": "477.90",
+      "eps": "106",
+      "pe": "2.90",
+      "bookValue": "23.90"
+    },
+    {
+      "symbol": "KSBBLD87",
+      "ltp": "1,078.40",
+      "eps": "1",
+      "pe": "31.40",
+      "bookValue": "0.00"
+    },
+    {
+      "symbol": "KSY",
+      "ltp": "9.51",
+      "eps": "10",
+      "pe": "-0.08",
+      "bookValue": "0.16"
+    },
+    {
+      "symbol": "LBBL",
+      "ltp": "492.00",
+      "eps": "159",
+      "pe": "1.00",
+      "bookValue": "13.90"
+    },
+    {
+      "symbol": "LEC",
+      "ltp": "222.00",
+      "eps": "450",
+      "pe": "-1.80",
+      "bookValue": "6.00"
+    },
+    {
+      "symbol": "LICN",
+      "ltp": "808.10",
+      "eps": "48",
+      "pe": "-7.90",
+      "bookValue": "12.70"
+    },
+    {
+      "symbol": "LLBS",
+      "ltp": "975.00",
+      "eps": "26",
+      "pe": "10.00",
+      "bookValue": "59.80"
+    },
+    {
+      "symbol": "LSL",
+      "ltp": "216.50",
+      "eps": "228",
+      "pe": "-0.50",
+      "bookValue": "6.50"
+    },
+    {
+      "symbol": "LUK",
+      "ltp": "9.94",
+      "eps": "9",
+      "pe": "0.10",
+      "bookValue": "0.29"
+    },
+    {
+      "symbol": "LVF2",
+      "ltp": "10.20",
+      "eps": "13",
+      "pe": "0.00",
+      "bookValue": "0.24"
+    },
+    {
+      "symbol": "MABEL",
+      "ltp": "664.00",
+      "eps": "143",
+      "pe": "-5.80",
+      "bookValue": "28.90"
+    },
+    {
+      "symbol": "MAKAR",
+      "ltp": "492.00",
+      "eps": "61",
+      "pe": "-3.00",
+      "bookValue": "10.00"
+    },
+    {
+      "symbol": "MANDU",
+      "ltp": "803.50",
+      "eps": "20",
+      "pe": "-2.50",
+      "bookValue": "24.00"
+    },
+    {
+      "symbol": "MATRI",
+      "ltp": "919.50",
+      "eps": "25",
+      "pe": "5.50",
+      "bookValue": "28.00"
+    },
+    {
+      "symbol": "MBJC",
+      "ltp": "281.00",
+      "eps": "310",
+      "pe": "-2.90",
+      "bookValue": "9.50"
+    },
+    {
+      "symbol": "MBL",
+      "ltp": "242.10",
+      "eps": "268",
+      "pe": "-1.90",
+      "bookValue": "7.00"
+    },
+    {
+      "symbol": "MBLEF",
+      "ltp": "10.00",
+      "eps": "15",
+      "pe": "0.05",
+      "bookValue": "0.29"
+    },
+    {
+      "symbol": "MCHL",
+      "ltp": "322.00",
+      "eps": "132",
+      "pe": "-6.80",
+      "bookValue": "17.00"
+    },
+    {
+      "symbol": "MDB",
+      "ltp": "585.00",
+      "eps": "68",
+      "pe": "-6.50",
+      "bookValue": "8.70"
+    },
+    {
+      "symbol": "MEHL",
+      "ltp": "395.90",
+      "eps": "131",
+      "pe": "-7.10",
+      "bookValue": "14.00"
+    },
+    {
+      "symbol": "MEL",
+      "ltp": "250.00",
+      "eps": "169",
+      "pe": "-2.00",
+      "bookValue": "13.60"
+    },
+    {
+      "symbol": "MEN",
+      "ltp": "583.50",
+      "eps": "200",
+      "pe": "0.50",
+      "bookValue": "8.90"
+    },
+    {
+      "symbol": "MERO",
+      "ltp": "718.80",
+      "eps": "66",
+      "pe": "3.80",
+      "bookValue": "18.00"
+    },
+    {
+      "symbol": "MFIL",
+      "ltp": "768.10",
+      "eps": "152",
+      "pe": "2.80",
+      "bookValue": "49.90"
+    },
+    {
+      "symbol": "MHCL",
+      "ltp": "350.60",
+      "eps": "72",
+      "pe": "0.60",
+      "bookValue": "15.60"
+    },
+    {
+      "symbol": "MHL",
+      "ltp": "497.00",
+      "eps": "91",
+      "pe": "-7.00",
+      "bookValue": "14.00"
+    },
+    {
+      "symbol": "MHNL",
+      "ltp": "261.00",
+      "eps": "105",
+      "pe": "-3.30",
+      "bookValue": "12.90"
+    },
+    {
+      "symbol": "MKCL",
+      "ltp": "1,315.00",
+      "eps": "62",
+      "pe": "2.10",
+      "bookValue": "15.00"
+    },
+    {
+      "symbol": "MKHC",
+      "ltp": "319.00",
+      "eps": "93",
+      "pe": "0.60",
+      "bookValue": "6.70"
+    },
+    {
+      "symbol": "MKHL",
+      "ltp": "559.00",
+      "eps": "157",
+      "pe": "-56.00",
+      "bookValue": "86.10"
+    },
+    {
+      "symbol": "MKJC",
+      "ltp": "498.00",
+      "eps": "45",
+      "pe": "-1.80",
+      "bookValue": "6.90"
+    },
+    {
+      "symbol": "MLBBL",
+      "ltp": "1,205.00",
+      "eps": "42",
+      "pe": "-18.00",
+      "bookValue": "31.10"
+    },
+    {
+      "symbol": "MLBL",
+      "ltp": "366.00",
+      "eps": "104",
+      "pe": "0.00",
+      "bookValue": "7.90"
+    },
+    {
+      "symbol": "MLBS",
+      "ltp": "1,245.00",
+      "eps": "29",
+      "pe": "-34.40",
+      "bookValue": "31.00"
+    },
+    {
+      "symbol": "MLBSL",
+      "ltp": "1,789.00",
+      "eps": "41",
+      "pe": "-11.00",
+      "bookValue": "49.00"
+    },
+    {
+      "symbol": "MMF1",
+      "ltp": "9.56",
+      "eps": "33",
+      "pe": "-0.04",
+      "bookValue": "0.41"
+    },
+    {
+      "symbol": "MMKJL",
+      "ltp": "498.00",
+      "eps": "62",
+      "pe": "-10.20",
+      "bookValue": "18.80"
+    },
+    {
+      "symbol": "MNBBL",
+      "ltp": "372.00",
+      "eps": "213",
+      "pe": "3.40",
+      "bookValue": "6.00"
+    },
+    {
+      "symbol": "MNMF1",
+      "ltp": "9.85",
+      "eps": "22",
+      "pe": "-0.17",
+      "bookValue": "0.28"
+    },
+    {
+      "symbol": "MPFL",
+      "ltp": "609.90",
+      "eps": "115",
+      "pe": "0.90",
+      "bookValue": "20.00"
+    },
+    {
+      "symbol": "MSHL",
+      "ltp": "727.10",
+      "eps": "10",
+      "pe": "3.10",
+      "bookValue": "21.10"
+    },
+    {
+      "symbol": "MSLB",
+      "ltp": "1,241.10",
+      "eps": "23",
+      "pe": "-18.90",
+      "bookValue": "59.90"
+    },
+    {
+      "symbol": "NABBC",
+      "ltp": "1,192.00",
+      "eps": "153",
+      "pe": "22.10",
+      "bookValue": "90.00"
+    },
+    {
+      "symbol": "NABIL",
+      "ltp": "528.00",
+      "eps": "491",
+      "pe": "3.10",
+      "bookValue": "8.10"
+    },
+    {
+      "symbol": "NABILD2089",
+      "ltp": "1,065.00",
+      "eps": "5",
+      "pe": "0.00",
+      "bookValue": "15.00"
+    },
+    {
+      "symbol": "NABILD87",
+      "ltp": "1,135.00",
+      "eps": "5",
+      "pe": "-65.00",
+      "bookValue": "70.10"
+    },
+    {
+      "symbol": "NADEP",
+      "ltp": "740.10",
+      "eps": "21",
+      "pe": "-9.90",
+      "bookValue": "18.90"
+    },
+    {
+      "symbol": "NBF2",
+      "ltp": "10.00",
+      "eps": "6",
+      "pe": "-0.15",
+      "bookValue": "0.13"
+    },
+    {
+      "symbol": "NBF3",
+      "ltp": "9.78",
+      "eps": "18",
+      "pe": "-0.07",
+      "bookValue": "0.24"
+    },
+    {
+      "symbol": "NBL",
+      "ltp": "268.00",
+      "eps": "222",
+      "pe": "0.30",
+      "bookValue": "3.90"
+    },
+    {
+      "symbol": "NBLD87",
+      "ltp": "1,075.30",
+      "eps": "1",
+      "pe": "-7.70",
+      "bookValue": "0.00"
+    },
+    {
+      "symbol": "NESDO",
+      "ltp": "1,538.00",
+      "eps": "18",
+      "pe": "-1.80",
+      "bookValue": "30.00"
+    },
+    {
+      "symbol": "NFS",
+      "ltp": "582.00",
+      "eps": "157",
+      "pe": "-6.30",
+      "bookValue": "14.00"
+    },
+    {
+      "symbol": "NGPL",
+      "ltp": "437.00",
+      "eps": "647",
+      "pe": "0.20",
+      "bookValue": "9.90"
+    },
+    {
+      "symbol": "NHDL",
+      "ltp": "627.00",
+      "eps": "21",
+      "pe": "-2.80",
+      "bookValue": "16.00"
+    },
+    {
+      "symbol": "NHPC",
+      "ltp": "296.00",
+      "eps": "1,948",
+      "pe": "6.00",
+      "bookValue": "20.80"
+    },
+    {
+      "symbol": "NIBD84",
+      "ltp": "1,055.00",
+      "eps": "5",
+      "pe": "-1.00",
+      "bookValue": "32.50"
+    },
+    {
+      "symbol": "NIBLGF",
+      "ltp": "9.65",
+      "eps": "6",
+      "pe": "0.34",
+      "bookValue": "0.55"
+    },
+    {
+      "symbol": "NIBLSTF",
+      "ltp": "9.00",
+      "eps": "25",
+      "pe": "-0.05",
+      "bookValue": "0.04"
+    },
+    {
+      "symbol": "NIBSF2",
+      "ltp": "9.27",
+      "eps": "14",
+      "pe": "-0.23",
+      "bookValue": "0.27"
+    },
+    {
+      "symbol": "NICA",
+      "ltp": "358.00",
+      "eps": "280",
+      "pe": "-1.00",
+      "bookValue": "8.90"
+    },
+    {
+      "symbol": "NICAD2091",
+      "ltp": "1,068.00",
+      "eps": "5",
+      "pe": "18.00",
+      "bookValue": "17.00"
+    },
+    {
+      "symbol": "NICBF",
+      "ltp": "9.50",
+      "eps": "5",
+      "pe": "0.03",
+      "bookValue": "0.03"
+    },
+    {
+      "symbol": "NICFC",
+      "ltp": "9.18",
+      "eps": "20",
+      "pe": "-0.09",
+      "bookValue": "0.25"
+    },
+    {
+      "symbol": "NICGF2",
+      "ltp": "9.31",
+      "eps": "3",
+      "pe": "-0.47",
+      "bookValue": "0.19"
+    },
+    {
+      "symbol": "NICL",
+      "ltp": "482.20",
+      "eps": "71",
+      "pe": "1.20",
+      "bookValue": "7.00"
+    },
+    {
+      "symbol": "NICLBSL",
+      "ltp": "576.50",
+      "eps": "96",
+      "pe": "-1.50",
+      "bookValue": "11.90"
+    },
+    {
+      "symbol": "NICSF",
+      "ltp": "9.38",
+      "eps": "20",
+      "pe": "-0.02",
+      "bookValue": "0.31"
+    },
+    {
+      "symbol": "NIFRA",
+      "ltp": "261.20",
+      "eps": "773",
+      "pe": "-0.80",
+      "bookValue": "5.80"
+    },
+    {
+      "symbol": "NIFRAGED",
+      "ltp": "1,032.00",
+      "eps": "8",
+      "pe": "4.50",
+      "bookValue": "18.90"
+    },
+    {
+      "symbol": "NIL",
+      "ltp": "611.90",
+      "eps": "40",
+      "pe": "2.00",
+      "bookValue": "16.90"
+    },
+    {
+      "symbol": "NIMB",
+      "ltp": "198.00",
+      "eps": "447",
+      "pe": "-1.10",
+      "bookValue": "3.00"
+    },
+    {
+      "symbol": "NIMBD90",
+      "ltp": "1,270.00",
+      "eps": "1",
+      "pe": "-39.00",
+      "bookValue": "0.00"
+    },
+    {
+      "symbol": "NIMBPO",
+      "ltp": "149.30",
+      "eps": "21",
+      "pe": "-1.80",
+      "bookValue": "8.70"
+    },
+    {
+      "symbol": "NLG",
+      "ltp": "600.00",
+      "eps": "64",
+      "pe": "-3.00",
+      "bookValue": "10.50"
+    },
+    {
+      "symbol": "NLIC",
+      "ltp": "762.90",
+      "eps": "200",
+      "pe": "0.90",
+      "bookValue": "13.70"
+    },
+    {
+      "symbol": "NLICL",
+      "ltp": "587.00",
+      "eps": "50",
+      "pe": "-1.00",
+      "bookValue": "21.90"
+    },
+    {
+      "symbol": "NMB",
+      "ltp": "240.40",
+      "eps": "129",
+      "pe": "-0.60",
+      "bookValue": "7.00"
+    },
+    {
+      "symbol": "NMB50",
+      "ltp": "10.50",
+      "eps": "1",
+      "pe": "-0.29",
+      "bookValue": "0.00"
+    },
+    {
+      "symbol": "NMBHF2",
+      "ltp": "9.47",
+      "eps": "24",
+      "pe": "-0.12",
+      "bookValue": "0.13"
+    },
+    {
+      "symbol": "NMBMF",
+      "ltp": "636.20",
+      "eps": "31",
+      "pe": "-9.80",
+      "bookValue": "24.30"
+    },
+    {
+      "symbol": "NMFBS",
+      "ltp": "1,097.10",
+      "eps": "59",
+      "pe": "-12.90",
+      "bookValue": "21.00"
+    },
+    {
+      "symbol": "NMIC",
+      "ltp": "1,010.00",
+      "eps": "293",
+      "pe": "-16.00",
+      "bookValue": "27.80"
+    },
+    {
+      "symbol": "NMLBBL",
+      "ltp": "610.00",
+      "eps": "95",
+      "pe": "2.50",
+      "bookValue": "7.80"
+    },
+    {
+      "symbol": "NRIC",
+      "ltp": "880.60",
+      "eps": "480",
+      "pe": "-17.40",
+      "bookValue": "20.00"
+    },
+    {
+      "symbol": "NRM",
+      "ltp": "400.00",
+      "eps": "106",
+      "pe": "1.00",
+      "bookValue": "10.00"
+    },
+    {
+      "symbol": "NRN",
+      "ltp": "1,443.00",
+      "eps": "653",
+      "pe": "-7.00",
+      "bookValue": "112.50"
+    },
+    {
+      "symbol": "NSIF2",
+      "ltp": "10.81",
+      "eps": "12",
+      "pe": "-0.18",
+      "bookValue": "0.34"
+    },
+    {
+      "symbol": "NSY",
+      "ltp": "9.44",
+      "eps": "39",
+      "pe": "-0.23",
+      "bookValue": "0.35"
+    },
+    {
+      "symbol": "NTC",
+      "ltp": "872.00",
+      "eps": "221",
+      "pe": "-2.00",
+      "bookValue": "22.00"
+    },
+    {
+      "symbol": "NUBL",
+      "ltp": "678.00",
+      "eps": "42",
+      "pe": "-0.70",
+      "bookValue": "8.00"
+    },
+    {
+      "symbol": "NWCL",
+      "ltp": "793.90",
+      "eps": "38",
+      "pe": "5.90",
+      "bookValue": "33.00"
+    },
+    {
+      "symbol": "NYADI",
+      "ltp": "391.00",
+      "eps": "66",
+      "pe": "0.00",
+      "bookValue": "8.70"
+    },
+    {
+      "symbol": "OHL",
+      "ltp": "697.00",
+      "eps": "21",
+      "pe": "3.00",
+      "bookValue": "23.80"
+    },
+    {
+      "symbol": "OMPL",
+      "ltp": "1,154.90",
+      "eps": "137",
+      "pe": "-5.00",
+      "bookValue": "63.00"
+    },
+    {
+      "symbol": "PBD88",
+      "ltp": "1,180.20",
+      "eps": "1",
+      "pe": "-2.80",
+      "bookValue": "0.00"
+    },
+    {
+      "symbol": "PCBL",
+      "ltp": "238.00",
+      "eps": "162",
+      "pe": "-0.90",
+      "bookValue": "3.70"
+    },
+    {
+      "symbol": "PCIL",
+      "ltp": "948.00",
+      "eps": "9,191",
+      "pe": "-10.10",
+      "bookValue": "144.90"
+    },
+    {
+      "symbol": "PFL",
+      "ltp": "379.90",
+      "eps": "62",
+      "pe": "1.90",
+      "bookValue": "7.90"
+    },
+    {
+      "symbol": "PHCL",
+      "ltp": "303.90",
+      "eps": "346",
+      "pe": "2.90",
+      "bookValue": "17.90"
+    },
+    {
+      "symbol": "PMHPL",
+      "ltp": "334.00",
+      "eps": "72",
+      "pe": "-1.00",
+      "bookValue": "7.20"
+    },
+    {
+      "symbol": "PMLI",
+      "ltp": "464.00",
+      "eps": "145",
+      "pe": "2.00",
+      "bookValue": "7.00"
+    },
+    {
+      "symbol": "PPCL",
+      "ltp": "375.50",
+      "eps": "114",
+      "pe": "-2.70",
+      "bookValue": "10.00"
+    },
+    {
+      "symbol": "PPL",
+      "ltp": "348.00",
+      "eps": "229",
+      "pe": "-2.00",
+      "bookValue": "19.00"
+    },
+    {
+      "symbol": "PRIN",
+      "ltp": "646.70",
+      "eps": "78",
+      "pe": "0.70",
+      "bookValue": "13.00"
+    },
+    {
+      "symbol": "PROFL",
+      "ltp": "444.70",
+      "eps": "47",
+      "pe": "1.70",
+      "bookValue": "12.70"
+    },
+    {
+      "symbol": "PRSF",
+      "ltp": "12.98",
+      "eps": "19",
+      "pe": "-0.07",
+      "bookValue": "0.25"
+    },
+    {
+      "symbol": "PRVU",
+      "ltp": "196.00",
+      "eps": "691",
+      "pe": "-0.30",
+      "bookValue": "5.80"
+    },
+    {
+      "symbol": "PSF",
+      "ltp": "12.30",
+      "eps": "31",
+      "pe": "0.10",
+      "bookValue": "0.29"
+    },
+    {
+      "symbol": "PURE",
+      "ltp": "903.20",
+      "eps": "169",
+      "pe": "-3.80",
+      "bookValue": "29.00"
+    },
+    {
+      "symbol": "RADHI",
+      "ltp": "754.00",
+      "eps": "268",
+      "pe": "-10.80",
+      "bookValue": "36.10"
+    },
+    {
+      "symbol": "RAWA",
+      "ltp": "605.00",
+      "eps": "48",
+      "pe": "-5.00",
+      "bookValue": "40.00"
+    },
+    {
+      "symbol": "RBBD2088",
+      "ltp": "1,070.00",
+      "eps": "1",
+      "pe": "14.00",
+      "bookValue": "0.00"
+    },
+    {
+      "symbol": "RBBF40",
+      "ltp": "9.21",
+      "eps": "20",
+      "pe": "-0.10",
+      "bookValue": "0.83"
+    },
+    {
+      "symbol": "RBCL",
+      "ltp": "15,000.00",
+      "eps": "5",
+      "pe": "-10.00",
+      "bookValue": "298.00"
+    },
+    {
+      "symbol": "RFPL",
+      "ltp": "388.30",
+      "eps": "277",
+      "pe": "18.30",
+      "bookValue": "34.80"
+    },
+    {
+      "symbol": "RHGCL",
+      "ltp": "294.90",
+      "eps": "189",
+      "pe": "2.30",
+      "bookValue": "22.20"
+    },
+    {
+      "symbol": "RHPL",
+      "ltp": "275.00",
+      "eps": "147",
+      "pe": "-0.50",
+      "bookValue": "5.90"
+    },
+    {
+      "symbol": "RIDI",
+      "ltp": "349.00",
+      "eps": "912",
+      "pe": "8.10",
+      "bookValue": "30.10"
+    },
+    {
+      "symbol": "RLEL",
+      "ltp": "1,150.00",
+      "eps": "1,401",
+      "pe": "19.00",
+      "bookValue": "94.90"
+    },
+    {
+      "symbol": "RLFL",
+      "ltp": "430.00",
+      "eps": "43",
+      "pe": "2.00",
+      "bookValue": "12.00"
+    },
+    {
+      "symbol": "RMF1",
+      "ltp": "9.76",
+      "eps": "16",
+      "pe": "0.14",
+      "bookValue": "0.20"
+    },
+    {
+      "symbol": "RMF2",
+      "ltp": "10.10",
+      "eps": "7",
+      "pe": "0.10",
+      "bookValue": "0.18"
+    },
+    {
+      "symbol": "RNLI",
+      "ltp": "460.10",
+      "eps": "212",
+      "pe": "1.10",
+      "bookValue": "7.00"
+    },
+    {
+      "symbol": "RSDC",
+      "ltp": "665.00",
+      "eps": "50",
+      "pe": "2.00",
+      "bookValue": "19.00"
+    },
+    {
+      "symbol": "RSML",
+      "ltp": "3,850.20",
+      "eps": "1,522",
+      "pe": "40.10",
+      "bookValue": "289.00"
+    },
+    {
+      "symbol": "RSY",
+      "ltp": "10.30",
+      "eps": "18",
+      "pe": "0.24",
+      "bookValue": "0.77"
+    },
+    {
+      "symbol": "RURU",
+      "ltp": "650.10",
+      "eps": "45",
+      "pe": "-4.90",
+      "bookValue": "24.10"
+    },
+    {
+      "symbol": "SABBL",
+      "ltp": "1,349.00",
+      "eps": "653",
+      "pe": "-17.00",
+      "bookValue": "43.70"
+    },
+    {
+      "symbol": "SADBL",
+      "ltp": "413.80",
+      "eps": "80",
+      "pe": "-1.20",
+      "bookValue": "10.00"
+    },
+    {
+      "symbol": "SAGAR",
+      "ltp": "1,770.90",
+      "eps": "264",
+      "pe": "35.90",
+      "bookValue": "91.00"
+    },
+    {
+      "symbol": "SAGF",
+      "ltp": "10.10",
+      "eps": "15",
+      "pe": "0.04",
+      "bookValue": "0.40"
+    },
+    {
+      "symbol": "SAHAS",
+      "ltp": "616.00",
+      "eps": "451",
+      "pe": "-1.90",
+      "bookValue": "7.90"
+    },
+    {
+      "symbol": "SAIL",
+      "ltp": "1,263.00",
+      "eps": "832",
+      "pe": "141.00",
+      "bookValue": "210.30"
+    },
+    {
+      "symbol": "SALICO",
+      "ltp": "592.10",
+      "eps": "23",
+      "pe": "-1.90",
+      "bookValue": "10.00"
+    },
+    {
+      "symbol": "SAND2085",
+      "ltp": "1,125.00",
+      "eps": "1",
+      "pe": "0.00",
+      "bookValue": "0.00"
+    },
+    {
+      "symbol": "SANIMA",
+      "ltp": "349.00",
+      "eps": "230",
+      "pe": "2.10",
+      "bookValue": "20.20"
+    },
+    {
+      "symbol": "SANVI",
+      "ltp": "693.00",
+      "eps": "250",
+      "pe": "-4.00",
+      "bookValue": "29.00"
+    },
+    {
+      "symbol": "SAPDBL",
+      "ltp": "815.00",
+      "eps": "472",
+      "pe": "-16.80",
+      "bookValue": "44.00"
+    },
+    {
+      "symbol": "SARBTM",
+      "ltp": "827.00",
+      "eps": "102",
+      "pe": "-6.00",
+      "bookValue": "15.00"
+    },
+    {
+      "symbol": "SBCF",
+      "ltp": "9.52",
+      "eps": "4",
+      "pe": "-0.02",
+      "bookValue": "0.08"
+    },
+    {
+      "symbol": "SBD87",
+      "ltp": "1,086.00",
+      "eps": "2",
+      "pe": "1.00",
+      "bookValue": "0.00"
+    },
+    {
+      "symbol": "SBI",
+      "ltp": "397.90",
+      "eps": "37",
+      "pe": "-1.70",
+      "bookValue": "4.00"
+    },
+    {
+      "symbol": "SBID2090",
+      "ltp": "1,042.10",
+      "eps": "2",
+      "pe": "-22.90",
+      "bookValue": "1.50"
+    },
+    {
+      "symbol": "SBID83",
+      "ltp": "1,075.00",
+      "eps": "1",
+      "pe": "0.00",
+      "bookValue": "0.00"
+    },
+    {
+      "symbol": "SBL",
+      "ltp": "389.90",
+      "eps": "140",
+      "pe": "3.00",
+      "bookValue": "23.00"
+    },
+    {
+      "symbol": "SCB",
+      "ltp": "639.00",
+      "eps": "102",
+      "pe": "-0.40",
+      "bookValue": "5.40"
+    },
+    {
+      "symbol": "SDBD87",
+      "ltp": "1,127.80",
+      "eps": "1",
+      "pe": "32.80",
+      "bookValue": "0.00"
+    },
+    {
+      "symbol": "SEF",
+      "ltp": "9.82",
+      "eps": "8",
+      "pe": "-0.17",
+      "bookValue": "0.18"
+    },
+    {
+      "symbol": "SFCL",
+      "ltp": "380.00",
+      "eps": "62",
+      "pe": "-0.50",
+      "bookValue": "10.00"
+    },
+    {
+      "symbol": "SFEF",
+      "ltp": "9.99",
+      "eps": "6",
+      "pe": "0.00",
+      "bookValue": "0.09"
+    },
+    {
+      "symbol": "SFMF",
+      "ltp": "10.38",
+      "eps": "2",
+      "pe": "-0.31",
+      "bookValue": "0.01"
+    },
+    {
+      "symbol": "SGHC",
+      "ltp": "375.90",
+      "eps": "130",
+      "pe": "2.90",
+      "bookValue": "11.00"
+    },
+    {
+      "symbol": "SGIC",
+      "ltp": "476.40",
+      "eps": "84",
+      "pe": "1.50",
+      "bookValue": "8.90"
+    },
+    {
+      "symbol": "SHEL",
+      "ltp": "307.00",
+      "eps": "428",
+      "pe": "0.00",
+      "bookValue": "7.00"
+    },
+    {
+      "symbol": "SHINE",
+      "ltp": "405.00",
+      "eps": "141",
+      "pe": "3.60",
+      "bookValue": "7.00"
+    },
+    {
+      "symbol": "SHINED",
+      "ltp": "1,110.10",
+      "eps": "1",
+      "pe": "-30.90",
+      "bookValue": "0.00"
+    },
+    {
+      "symbol": "SHIVM",
+      "ltp": "664.20",
+      "eps": "900",
+      "pe": "6.20",
+      "bookValue": "17.90"
+    },
+    {
+      "symbol": "SHL",
+      "ltp": "496.10",
+      "eps": "127",
+      "pe": "-1.90",
+      "bookValue": "40.00"
+    },
+    {
+      "symbol": "SHLB",
+      "ltp": "1,460.00",
+      "eps": "15",
+      "pe": "-29.90",
+      "bookValue": "15.00"
+    },
+    {
+      "symbol": "SHPC",
+      "ltp": "512.30",
+      "eps": "187",
+      "pe": "-2.70",
+      "bookValue": "8.80"
+    },
+    {
+      "symbol": "SICL",
+      "ltp": "614.90",
+      "eps": "94",
+      "pe": "-1.10",
+      "bookValue": "10.80"
+    },
+    {
+      "symbol": "SIFC",
+      "ltp": "530.00",
+      "eps": "99",
+      "pe": "-13.00",
+      "bookValue": "12.00"
+    },
+    {
+      "symbol": "SIGS2",
+      "ltp": "9.99",
+      "eps": "6",
+      "pe": "-0.21",
+      "bookValue": "0.29"
+    },
+    {
+      "symbol": "SIGS3",
+      "ltp": "10.71",
+      "eps": "8",
+      "pe": "0.21",
+      "bookValue": "0.46"
+    },
+    {
+      "symbol": "SIKLES",
+      "ltp": "581.00",
+      "eps": "158",
+      "pe": "-6.00",
+      "bookValue": "9.50"
+    },
+    {
+      "symbol": "SINDU",
+      "ltp": "732.10",
+      "eps": "229",
+      "pe": "-14.90",
+      "bookValue": "19.90"
+    },
+    {
+      "symbol": "SIPD",
+      "ltp": "974.00",
+      "eps": "5,217",
+      "pe": "71.40",
+      "bookValue": "174.00"
+    },
+    {
+      "symbol": "SJCL",
+      "ltp": "298.70",
+      "eps": "145",
+      "pe": "-1.30",
+      "bookValue": "13.90"
+    },
+    {
+      "symbol": "SJLIC",
+      "ltp": "429.60",
+      "eps": "170",
+      "pe": "-0.40",
+      "bookValue": "4.90"
+    },
+    {
+      "symbol": "SKBBL",
+      "ltp": "760.00",
+      "eps": "127",
+      "pe": "-1.00",
+      "bookValue": "5.90"
+    },
+    {
+      "symbol": "SKHEL",
+      "ltp": "1,419.90",
+      "eps": "703",
+      "pe": "19.90",
+      "bookValue": "76.00"
+    },
+    {
+      "symbol": "SKHL",
+      "ltp": "980.10",
+      "eps": "984",
+      "pe": "18.10",
+      "bookValue": "71.70"
+    },
+    {
+      "symbol": "SLBBL",
+      "ltp": "810.00",
+      "eps": "64",
+      "pe": "-5.00",
+      "bookValue": "13.00"
+    },
+    {
+      "symbol": "SLBSL",
+      "ltp": "1,217.00",
+      "eps": "12",
+      "pe": "-3.00",
+      "bookValue": "29.00"
+    },
+    {
+      "symbol": "SLCF",
+      "ltp": "9.70",
+      "eps": "11",
+      "pe": "-0.10",
+      "bookValue": "0.27"
+    },
+    {
+      "symbol": "SMATA",
+      "ltp": "755.00",
+      "eps": "90",
+      "pe": "-5.00",
+      "bookValue": "16.90"
+    },
+    {
+      "symbol": "SMB",
+      "ltp": "1,718.00",
+      "eps": "12",
+      "pe": "-12.00",
+      "bookValue": "20.10"
+    },
+    {
+      "symbol": "SMFBS",
+      "ltp": "1,611.50",
+      "eps": "19",
+      "pe": "-31.50",
+      "bookValue": "79.80"
+    },
+    {
+      "symbol": "SMH",
+      "ltp": "559.00",
+      "eps": "161",
+      "pe": "6.90",
+      "bookValue": "17.80"
+    },
+    {
+      "symbol": "SMHL",
+      "ltp": "486.30",
+      "eps": "264",
+      "pe": "-4.20",
+      "bookValue": "7.90"
+    },
+    {
+      "symbol": "SMJC",
+      "ltp": "454.00",
+      "eps": "190",
+      "pe": "-6.00",
+      "bookValue": "24.20"
+    },
+    {
+      "symbol": "SMPDA",
+      "ltp": "844.90",
+      "eps": "35",
+      "pe": "6.90",
+      "bookValue": "23.50"
+    },
+    {
+      "symbol": "SNLI",
+      "ltp": "452.50",
+      "eps": "214",
+      "pe": "0.50",
+      "bookValue": "7.90"
+    },
+    {
+      "symbol": "SOHL",
+      "ltp": "710.00",
+      "eps": "3,450",
+      "pe": "-31.00",
+      "bookValue": "50.00"
+    },
+    {
+      "symbol": "SONA",
+      "ltp": "433.00",
+      "eps": "369",
+      "pe": "0.00",
+      "bookValue": "12.90"
+    },
+    {
+      "symbol": "SPC",
+      "ltp": "463.30",
+      "eps": "71",
+      "pe": "-1.70",
+      "bookValue": "16.90"
+    },
+    {
+      "symbol": "SPDL",
+      "ltp": "394.00",
+      "eps": "210",
+      "pe": "1.00",
+      "bookValue": "15.20"
+    },
+    {
+      "symbol": "SPHL",
+      "ltp": "516.50",
+      "eps": "24",
+      "pe": "1.50",
+      "bookValue": "13.90"
+    },
+    {
+      "symbol": "SPIL",
+      "ltp": "701.00",
+      "eps": "34",
+      "pe": "-10.50",
+      "bookValue": "9.00"
+    },
+    {
+      "symbol": "SPL",
+      "ltp": "710.00",
+      "eps": "30",
+      "pe": "-9.00",
+      "bookValue": "18.90"
+    },
+    {
+      "symbol": "SRBLD83",
+      "ltp": "1,048.20",
+      "eps": "1",
+      "pe": "2.20",
+      "bookValue": "0.00"
+    },
+    {
+      "symbol": "SRLI",
+      "ltp": "390.00",
+      "eps": "160",
+      "pe": "-1.00",
+      "bookValue": "8.40"
+    },
+    {
+      "symbol": "SSHL",
+      "ltp": "212.00",
+      "eps": "682",
+      "pe": "-1.00",
+      "bookValue": "6.90"
+    },
+    {
+      "symbol": "STC",
+      "ltp": "5,800.00",
+      "eps": "16",
+      "pe": "-95.00",
+      "bookValue": "110.00"
+    },
+    {
+      "symbol": "SWASTIK",
+      "ltp": "2,455.00",
+      "eps": "63",
+      "pe": "-25.00",
+      "bookValue": "42.00"
+    },
+    {
+      "symbol": "SWBBL",
+      "ltp": "720.00",
+      "eps": "49",
+      "pe": "-5.00",
+      "bookValue": "11.00"
+    },
+    {
+      "symbol": "SWMF",
+      "ltp": "666.80",
+      "eps": "39",
+      "pe": "6.80",
+      "bookValue": "18.70"
+    },
+    {
+      "symbol": "SYPNL",
+      "ltp": "1,497.00",
+      "eps": "1,783",
+      "pe": "52.00",
+      "bookValue": "166.00"
+    },
+    {
+      "symbol": "TAMOR",
+      "ltp": "434.00",
+      "eps": "197",
+      "pe": "-5.00",
+      "bookValue": "9.30"
+    },
+    {
+      "symbol": "TPC",
+      "ltp": "372.00",
+      "eps": "155",
+      "pe": "2.40",
+      "bookValue": "10.00"
+    },
+    {
+      "symbol": "TRH",
+      "ltp": "735.50",
+      "eps": "10",
+      "pe": "-7.60",
+      "bookValue": "3.20"
+    },
+    {
+      "symbol": "TSHL",
+      "ltp": "637.00",
+      "eps": "20",
+      "pe": "-1.60",
+      "bookValue": "39.00"
+    },
+    {
+      "symbol": "TTL",
+      "ltp": "790.00",
+      "eps": "384",
+      "pe": "-4.00",
+      "bookValue": "26.30"
+    },
+    {
+      "symbol": "TVCL",
+      "ltp": "508.00",
+      "eps": "60",
+      "pe": "-12.00",
+      "bookValue": "61.00"
+    },
+    {
+      "symbol": "UAIL",
+      "ltp": "439.70",
+      "eps": "82",
+      "pe": "1.70",
+      "bookValue": "8.80"
+    },
+    {
+      "symbol": "UHEWA",
+      "ltp": "569.00",
+      "eps": "77",
+      "pe": "3.00",
+      "bookValue": "14.00"
+    },
+    {
+      "symbol": "ULBSL",
+      "ltp": "2,978.00",
+      "eps": "76",
+      "pe": "-15.50",
+      "bookValue": "97.00"
+    },
+    {
+      "symbol": "ULHC",
+      "ltp": "493.90",
+      "eps": "57",
+      "pe": "-1.10",
+      "bookValue": "10.80"
+    },
+    {
+      "symbol": "UMHL",
+      "ltp": "570.90",
+      "eps": "115",
+      "pe": "-3.90",
+      "bookValue": "8.90"
+    },
+    {
+      "symbol": "UMRH",
+      "ltp": "532.00",
+      "eps": "48",
+      "pe": "0.00",
+      "bookValue": "7.50"
+    },
+    {
+      "symbol": "UNHPL",
+      "ltp": "474.10",
+      "eps": "114",
+      "pe": "-1.30",
+      "bookValue": "10.80"
+    },
+    {
+      "symbol": "UNL",
+      "ltp": "47,000.00",
+      "eps": "1",
+      "pe": "0.00",
+      "bookValue": "0.00"
+    },
+    {
+      "symbol": "UNLB",
+      "ltp": "1,431.90",
+      "eps": "46",
+      "pe": "-3.10",
+      "bookValue": "41.00"
+    },
+    {
+      "symbol": "UPCL",
+      "ltp": "374.00",
+      "eps": "274",
+      "pe": "2.00",
+      "bookValue": "8.80"
+    },
+    {
+      "symbol": "UPPER",
+      "ltp": "203.80",
+      "eps": "927",
+      "pe": "0.40",
+      "bookValue": "6.00"
+    },
+    {
+      "symbol": "USHEC",
+      "ltp": "485.50",
+      "eps": "82",
+      "pe": "2.50",
+      "bookValue": "10.00"
+    },
+    {
+      "symbol": "USHL",
+      "ltp": "645.00",
+      "eps": "34",
+      "pe": "-4.00",
+      "bookValue": "44.00"
+    },
+    {
+      "symbol": "USLB",
+      "ltp": "1,294.00",
+      "eps": "42",
+      "pe": "-4.00",
+      "bookValue": "20.00"
+    },
+    {
+      "symbol": "VLBS",
+      "ltp": "696.10",
+      "eps": "175",
+      "pe": "-8.90",
+      "bookValue": "34.00"
+    },
+    {
+      "symbol": "VLUCL",
+      "ltp": "494.80",
+      "eps": "88",
+      "pe": "-0.20",
+      "bookValue": "15.00"
+    },
+    {
+      "symbol": "WNLB",
+      "ltp": "1,417.00",
+      "eps": "30",
+      "pe": "-43.00",
+      "bookValue": "43.00"
+    }
+  ]
+}

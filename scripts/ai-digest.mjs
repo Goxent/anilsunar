@@ -56,8 +56,13 @@ async function callGemini(prompt) {
   const raw = data?.candidates?.[0]?.content?.parts?.[0]?.text || '{}';
   try {
     return JSON.parse(raw.replace(/```json|```/g, '').trim());
-  } catch {
-    throw new Error(`Gemini returned non-JSON: ${raw.slice(0, 300)}`);
+  } catch (err) {
+    console.error(`❌ Gemini API Failure: ${err.message}`);
+    console.error('   Raw response:', raw);
+    if (data && !data.candidates) {
+      console.error('   Full Gemini Response:', JSON.stringify(data));
+    }
+    throw err;
   }
 }
 
@@ -250,12 +255,13 @@ export default async function runAIAnalyst() {
   }
 
   const omniData    = loadJson('src/app/data/market-omni-data.json', { scrapedPages: [] });
-  const techSignals = loadJson('src/app/data/technical-signals.json', { stocks: [] });
-  const brokerFlow  = loadJson('src/app/data/broker-flow-5d.json', { stocks: [] });
-  const noticesRaw  = loadJson('src/app/data/regulatory-notices.json', []);
-  const notices     = Array.isArray(noticesRaw) ? noticesRaw.slice(0, 8) : [];
-  const newsData    = loadJson('src/app/data/nepal-news.json', { articles: [] });
-  const news        = (newsData?.articles || []).slice(0, 15);
+  const techData    = loadJson('src/app/data/technical-signals.json', { stocks: [] });
+  const brokerData  = loadJson('src/app/data/broker-flow-5d.json', { topBuyers: [], topSellers: [] });
+  const deepBrokerData = loadJson('src/app/data/deep-broker-holdings.json', { timeframes: {} });
+  const fundamentalData = loadJson('src/app/data/fundamental-data.json', { stocks: [] });
+  const socialData      = loadJson('src/app/data/social-sentiment.json', { data: [] });
+  const notices     = loadJson('src/app/data/notices.json', { notices: [] });
+  const news        = loadJson('src/app/data/nepal-news.json', { articles: [] });
 
   // Sector / macro pages for Stage 1
   const sectorPages = pagesMatching(omniData, [
@@ -279,11 +285,23 @@ You are an expert NEPSE analyst. Analyze today's market structure and macro sent
 SECTOR & MARKET DATA:
 ${cap(sectorPages, 15000)}
 
+TOP TECHNICAL SIGNALS:
+${cap(techData.stocks.slice(0, 30), 5000)}
+
+FUNDAMENTAL DATA (PE/EPS):
+${cap(fundamentalData.stocks.slice(0, 30), 3000)}
+
+BROKER FLOW (5D):
+${cap(brokerData, 3000)}
+
 RECENT REGULATORY NOTICES:
-${JSON.stringify(notices)}
+${cap(notices, 3000)}
 
 HOT NEPAL FINANCIAL NEWS:
-${JSON.stringify(news)}
+${cap(news, 5000)}
+
+SOCIAL MEDIA SENTIMENT (Public Search Results):
+${JSON.stringify(socialData)}
 
 Return JSON:
 {
@@ -298,45 +316,82 @@ Return JSON:
 }`);
     console.log(`   ✔  Phase: ${stage1.marketPhase} | Bias: ${stage1.overallBias}`);
   } catch (err) {
-    console.warn('⚠️  Stage 1 failed:', err.message);
-    stage1 = { marketPhase: 'SIDEWAYS', hotSectors: [], weakSectors: [], overallBias: 'NEUTRAL', oneLinerSummary: 'Market analysis unavailable.', keyRisk: 'Data unavailable' };
+    console.error('⚠️  Stage 1 (Market Analysis) failed:', err.message);
+    stage1 = { 
+      marketPhase: 'SIDEWAYS', 
+      hotSectors: [], 
+      weakSectors: [], 
+      overallBias: 'NEUTRAL', 
+      oneLinerSummary: 'Market analysis currently unavailable. The market may be closed or data synchronization is pending.', 
+      keyRisk: 'Data unavailable' 
+    };
   }
 
-  // ── STAGE 2 ─────────────────────────────────────────────────────────────────
+  // ── STAGE 2: SMC & PRICE ACTION TIERED FILTERING ────────────────────────────
   try {
-    console.log('🧠 Stage 2: Stock screening & signal fusion...');
-    const s2result = await callGemini(`
-You are screening NEPSE stocks for trading opportunities.
+    console.log('🧠 Stage 2: Smart Money & Price Action deep screening...');
+    
+    // TIER 1: Script-based pre-filtering to save AI tokens
+    // We grab the top ~40 active stocks from tech signals and broker flow
+    const activeSymbols = new Set([
+      ...(techData.stocks || []).slice(0, 30).map(s => s.symbol),
+      ...(brokerData.topBuyers || []).slice(0, 10).map(s => s.symbol),
+      ...(brokerData.topSellers || []).slice(0, 10).map(s => s.symbol)
+    ].filter(Boolean));
+    
+    // Load Deep Tearsheets ONLY for these active symbols (Tier 2 payload)
+    const activeTearsheets = [];
+    const tearsheetDir = 'src/app/data/tearsheets';
+    if (fs.existsSync(tearsheetDir)) {
+      for (const sym of activeSymbols) {
+        const p = path.join(tearsheetDir, \`\${sym}.json\`);
+        if (fs.existsSync(p)) {
+          activeTearsheets.push(JSON.parse(fs.readFileSync(p, 'utf8')));
+        }
+      }
+    }
 
-MARKET CONTEXT:
-${JSON.stringify(stage1)}
+    const s2result = await callGemini(\`
+You are an elite institutional trader analyzing NEPSE ordinary shares.
+Use Smart Money Concepts (SMC) and Price Action to filter these active stocks.
 
-TECHNICAL SIGNALS (RSI, EMA, Momentum — computed from 30 days of history):
-${cap(techSignals, 12000)}
+MARKET CONTEXT (From Stage 1):
+\${JSON.stringify(stage1)}
 
-BROKER ACCUMULATION DATA (5-day smart money flow):
-${cap(brokerFlow, 8000)}
+TOP TURNOVER & SCREENER DATA:
+\${cap(screenerPages, 8000)}
 
-TODAY'S SCREENER DATA (swing-gain, stock-health, technical screener, momentum screener):
-${cap(screenerPages, 15000)}
+TECHNICAL SIGNALS & BROKER FLOW (Tier 1 Filtered):
+\${cap(techData.stocks.filter(s => activeSymbols.has(s.symbol)), 6000)}
+\${cap(brokerData, 4000)}
+
+DEEP TEARSHEETS (Fundamentals for Active Stocks):
+\${cap(activeTearsheets, 15000)}
+
+SOCIAL SENTIMENT & NEWS CATALYSTS:
+\${cap(socialData, 3000)}
+\${cap(news, 4000)}
 
 RULES:
-- Avoid stocks in weakSectors
-- Prefer stocks where technical + broker signals BOTH confirm
-- Golden Cross EMA + broker accumulation = very strong signal
-- Volume spike with positive momentum = breakout candidate
-- Spread picks across different sectors
+1. Apply Smart Money Concepts (SMC): Look for accumulation blocks, liquidity sweeps, or institutional footprint in broker data.
+2. Price Action > Indicators: Prioritize volume/price synergy and breakouts over lagging indicators.
+3. News Context: A stock must have a fundamental/news catalyst OR extreme technical setup to be selected.
+4. Top Turnover Context: Consider if the stock is leading in daily turnover.
+5. SELECT EXACTLY 10 STOCKS. Ranked 1 to 10.
 
-Return a JSON array of your top 20 screened candidates:
+Return a JSON array of your TOP 10 picks:
 [{
   "symbol": "string",
   "sector": "string",
-  "technicalSignal": "string",
-  "brokerSignal": "ACCUMULATION" | "DISTRIBUTION" | "NEUTRAL",
-  "whyThisStock": "1 sentence"
-}]`);
-    stage2 = Array.isArray(s2result) ? s2result : (s2result.candidates || s2result.stocks || []);
-    console.log(`   ✔  ${stage2.length} candidates screened`);
+  "smcSetup": "string explaining accumulation/distribution footprint",
+  "priceAction": "string explaining volume/candle context",
+  "catalyst": "string linking to news/fundamentals",
+  "action": "BUY" | "HOLD" | "WATCH",
+  "whyThisStock": "1 sentence synthesis"
+}]
+\`);
+    stage2 = Array.isArray(s2result) ? s2result : (s2result.candidates || s2result.stocks || s2result.top10 || []);
+    console.log(\`   ✔  \${stage2.length} elite candidates screened\`);
   } catch (err) {
     console.warn('⚠️  Stage 2 failed:', err.message);
     stage2 = [];
