@@ -126,7 +126,6 @@ export default async function runTechnicalEngine() {
 
     const changeKey = findCol(rows[0], ['change', 'percent', 'chg', 'pctchange', '% change', '%change']);
     const volKey = findCol(rows[0], ['volume', 'vol', 'qty', 'quantity', 'sharetrade']);
-
     for (const row of rows) {
       const symbol = (row[symKey] || '').trim().toUpperCase();
       if (!symbol || symbol.length > 12) continue;
@@ -144,6 +143,13 @@ export default async function runTechnicalEngine() {
       seriesMap[symbol].changes.push(changeKey ? parseNum(row[changeKey]) : 0);
     }
   }
+
+  // Load external data for fused scoring
+  const BROKER_FILE = path.join(__dirname, '../src/app/data/broker-flow-5d.json');
+  const FUNDAMENTAL_FILE = path.join(__dirname, '../src/app/data/fundamental-data.json');
+  
+  const brokerFlows = fs.existsSync(BROKER_FILE) ? JSON.parse(fs.readFileSync(BROKER_FILE, 'utf8')).stocks : [];
+  const fundamentals = fs.existsSync(FUNDAMENTAL_FILE) ? JSON.parse(fs.readFileSync(FUNDAMENTAL_FILE, 'utf8')).stocks : [];
 
   const stocks = [];
 
@@ -188,13 +194,39 @@ export default async function runTechnicalEngine() {
     const mom5d = changes.slice(-5).reduce((a, b) => a + b, 0);
     const mom20d = changes.slice(-20).reduce((a, b) => a + b, 0);
 
-    // e) Smart Score
+    // e) Fused Data Enrichment
+    const brokerMatch = brokerFlows.find(s => s.symbol === symbol);
+    const fundamentalMatch = fundamentals.find(s => s.symbol === symbol);
+
+    // f) Advanced Smart Score (Max 100)
     let smartScore = 0;
-    if (rsi >= 40 && rsi <= 65) smartScore += 25;
-    if (emaCross === 'GOLDEN') smartScore += 30;
-    if (volumeSignal === 'SPIKE') smartScore += 20;
-    if (mom5d > 0) smartScore += 15;
-    if (mom1d > 0) smartScore += 10;
+    
+    // 1. Technical Health (Max 35)
+    if (rsi >= 45 && rsi <= 60) smartScore += 15; // Golden RSI zone
+    else if (rsi >= 35 && rsi <= 65) smartScore += 10;
+    if (emaCross === 'GOLDEN') smartScore += 15;
+    if (mom5d > 0 && mom1d > 0) smartScore += 5;
+
+    // 2. Volume & Price Action (Max 25)
+    if (volumeSignal === 'SPIKE') smartScore += 15;
+    if (prices[prices.length - 1] > prices[prices.length - 2]) smartScore += 10; // Price uptrend
+
+    // 3. Smart Money Concept (SMC) Algorithm (Max 30)
+    if (brokerMatch) {
+      if (brokerMatch.pattern === 'ACCUMULATION') {
+        smartScore += 20;
+        if (brokerMatch.confidence > 80) smartScore += 10;
+        else if (brokerMatch.confidence > 60) smartScore += 5;
+      }
+    }
+
+    // 4. Fundamental Quality (Max 10)
+    if (fundamentalMatch) {
+      const pe = parseNum(fundamentalMatch.pe);
+      const eps = parseNum(fundamentalMatch.eps);
+      if (pe > 0 && pe < 30) smartScore += 5; // Reasonable PE
+      if (eps > 0) smartScore += 5; // Profitable
+    }
 
     // Signals strings
     const signals = [];
@@ -203,7 +235,8 @@ export default async function runTechnicalEngine() {
     if (rsiLabel === 'OVERSOLD') signals.push('RSI OVERSOLD');
     if (rsiLabel === 'OVERBOUGHT') signals.push('RSI OVERBOUGHT');
     if (volumeSignal === 'SPIKE') signals.push('VOLUME SPIKE');
-    if (mom5d > 5) signals.push('5D MOMENTUM');
+    if (mom5d > 5) signals.push('BULLISH MOMENTUM');
+    if (brokerMatch?.pattern === 'ACCUMULATION') signals.push('SMART MONEY ACCUMULATION');
 
     stocks.push({
       symbol,
@@ -218,6 +251,14 @@ export default async function runTechnicalEngine() {
       mom5d: parseFloat(mom5d.toFixed(2)),
       mom20d: parseFloat(mom20d.toFixed(2)),
       signals,
+      fundamental: {
+        pe: fundamentalMatch?.pe || 'N/A',
+        eps: fundamentalMatch?.eps || 'N/A'
+      },
+      brokerFlow: {
+        pattern: brokerMatch?.pattern || 'NEUTRAL',
+        confidence: brokerMatch?.confidence || 0
+      }
     });
   }
 

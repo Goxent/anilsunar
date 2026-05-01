@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import { Search, Database, TrendingUp, TrendingDown, LayoutGrid, List, Table as TableIcon, ChevronRight, Info, Crown, Terminal, CloudSync, Zap, Filter, BarChart3, PieChart, Activity, ShieldCheck, Target } from 'lucide-react'
+import { Search, Database, TrendingUp, TrendingDown, LayoutGrid, List, Table as TableIcon, ChevronRight, Info, Crown, Terminal, CloudSync, Zap, Filter, BarChart3, PieChart, Activity, ShieldCheck, Target, Brain, RefreshCw } from 'lucide-react'
 import { useMarketData } from '../AppShell'
 import LoadingCard from './LoadingCard'
 import localSastoData from '../data/super_intelligence.json'

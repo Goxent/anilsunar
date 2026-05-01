@@ -331,13 +331,10 @@ Return JSON:
   try {
     console.log('🧠 Stage 2: Smart Money & Price Action deep screening...');
     
-    // TIER 1: Script-based pre-filtering to save AI tokens
-    // We grab the top ~40 active stocks from tech signals and broker flow
-    const activeSymbols = new Set([
-      ...(techData.stocks || []).slice(0, 30).map(s => s.symbol),
-      ...(brokerData.topBuyers || []).slice(0, 10).map(s => s.symbol),
-      ...(brokerData.topSellers || []).slice(0, 10).map(s => s.symbol)
-    ].filter(Boolean));
+    // TIER 1: Use the bot's powerful fused Smart Score (Technical + SMC + Fundamentals)
+    // We only pass the Top 15 elite candidates to the AI for final qualitative review.
+    const activeSymbols = new Set((techData.stocks || []).slice(0, 15).map(s => s.symbol));
+    console.log(`🤖 Bot's Elite Selection: ${Array.from(activeSymbols).join(', ')}`);
     
     // Load Deep Tearsheets ONLY for these active symbols (Tier 2 payload)
     const activeTearsheets = [];
@@ -373,11 +370,10 @@ SOCIAL SENTIMENT & NEWS CATALYSTS:
 \${cap(news, 4000)}
 
 RULES:
-1. Apply Smart Money Concepts (SMC): Look for accumulation blocks, liquidity sweeps, or institutional footprint in broker data.
-2. Price Action > Indicators: Prioritize volume/price synergy and breakouts over lagging indicators.
-3. News Context: A stock must have a fundamental/news catalyst OR extreme technical setup to be selected.
-4. Top Turnover Context: Consider if the stock is leading in daily turnover.
-5. SELECT EXACTLY 10 STOCKS. Ranked 1 to 10.
+1. THE BOT HAS ALREADY DONE THE MATH: These 15 stocks passed a rigorous fused technical/broker/fundamental screen (Smart Score).
+2. YOUR ROLE: Perform a qualitative "Deep Brain Audit". Check the NEWS context, SOCIAL sentiment, and SMC pattern narrative to see which 10 have the highest probability of an immediate move.
+3. SELECT EXACTLY 10 STOCKS. Ranked 1 to 10 based on "Move Readiness".
+4. If a stock has a high Smart Score but "Bad News", you may deprioritize it.
 
 Return a JSON array of your TOP 10 picks:
 [{
