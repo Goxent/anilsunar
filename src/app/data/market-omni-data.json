@@ -1,12 +1,12 @@
 {
-  "timestamp": "2026-04-30T19:28:42.828Z",
+  "timestamp": "2026-05-01T05:00:04.201Z",
   "totalTargets": 18,
   "successCount": 17,
   "scrapedPages": [
     {
       "url": "https://nepsealpha.com/sastoshare/daily-summary",
       "title": "EOD Summary",
-      "scrapedAt": "2026-04-30T19:27:46.003Z",
+      "scrapedAt": "2026-05-01T04:59:06.599Z",
       "tables": [
         {
           "tableIndex": 0,
@@ -2163,14 +2163,14 @@
     {
       "url": "https://nepsealpha.com/trading-menu/top-stocks",
       "title": "",
-      "scrapedAt": "2026-04-30T19:27:49.363Z",
+      "scrapedAt": "2026-05-01T04:59:09.962Z",
       "tables": [],
       "statCards": []
     },
     {
       "url": "https://nepsealpha.com/sastoshare/swing-gain",
       "title": "Stock Comparison | Swing Gain",
-      "scrapedAt": "2026-04-30T19:27:53.059Z",
+      "scrapedAt": "2026-05-01T04:59:13.671Z",
       "tables": [
         {
           "tableIndex": 0,
@@ -2381,21 +2381,21 @@
     {
       "url": "https://nepsealpha.com/sastoshare/stock-health",
       "title": "Nepsealpha | Some Issue",
-      "scrapedAt": "2026-04-30T19:27:56.494Z",
+      "scrapedAt": "2026-05-01T04:59:17.096Z",
       "tables": [],
       "statCards": []
     },
     {
       "url": "https://nepsealpha.com/sastoshare/broker-analysis",
       "title": "Nepsealpha | Some Issue",
-      "scrapedAt": "2026-04-30T19:27:59.864Z",
+      "scrapedAt": "2026-05-01T04:59:20.490Z",
       "tables": [],
       "statCards": []
     },
     {
       "url": "https://nepsealpha.com/sastoshare/floorsheet/today",
       "title": "Floorsheet Analytics | Today Live Floorsheet",
-      "scrapedAt": "2026-04-30T19:28:03.561Z",
+      "scrapedAt": "2026-05-01T04:59:24.219Z",
       "tables": [
         {
           "tableIndex": 0,
@@ -2632,14 +2632,14 @@
     {
       "url": "https://nepsealpha.com/sastoshare/sector-performance",
       "title": "Nepsealpha | Some Issue",
-      "scrapedAt": "2026-04-30T19:28:06.949Z",
+      "scrapedAt": "2026-05-01T04:59:27.622Z",
       "tables": [],
       "statCards": []
     },
     {
       "url": "https://nepsealpha.com/sastoshare/sector-rotation/index",
       "title": "Sector Rotation",
-      "scrapedAt": "2026-04-30T19:28:10.646Z",
+      "scrapedAt": "2026-05-01T04:59:31.327Z",
       "tables": [
         {
           "tableIndex": 0,
@@ -3012,28 +3012,28 @@
     {
       "url": "https://nepsealpha.com/sastoshare/technical-screener",
       "title": "Nepsealpha | Some Issue",
-      "scrapedAt": "2026-04-30T19:28:14.032Z",
+      "scrapedAt": "2026-05-01T04:59:34.735Z",
       "tables": [],
       "statCards": []
     },
     {
       "url": "https://nepsealpha.com/sastoshare/momentum-screener",
       "title": "Nepsealpha | Some Issue",
-      "scrapedAt": "2026-04-30T19:28:17.403Z",
+      "scrapedAt": "2026-05-01T04:59:38.111Z",
       "tables": [],
       "statCards": []
     },
     {
       "url": "https://nepsealpha.com/sastoshare/overbought-oversold",
       "title": "Nepsealpha | Some Issue",
-      "scrapedAt": "2026-04-30T19:28:20.779Z",
+      "scrapedAt": "2026-05-01T04:59:41.504Z",
       "tables": [],
       "statCards": []
     },
     {
       "url": "https://nepsealpha.com/sastoshare/bifs-financials",
       "title": "Monthly Analysis | BFIs Analysis",
-      "scrapedAt": "2026-04-30T19:28:24.722Z",
+      "scrapedAt": "2026-05-01T04:59:45.459Z",
       "tables": [
         {
           "tableIndex": 0,
@@ -3540,7 +3540,7 @@
     {
       "url": "https://nepsealpha.com/sastoshare/insurance-financials",
       "title": "Monthly Analysis | Insurance Analysis",
-      "scrapedAt": "2026-04-30T19:28:28.438Z",
+      "scrapedAt": "2026-05-01T04:59:49.202Z",
       "tables": [
         {
           "tableIndex": 0,
@@ -3888,21 +3888,21 @@
     {
       "url": "https://nepsealpha.com/sastoshare/hydro-financials",
       "title": "Nepsealpha | Some Issue",
-      "scrapedAt": "2026-04-30T19:28:31.835Z",
+      "scrapedAt": "2026-05-01T04:59:52.597Z",
       "tables": [],
       "statCards": []
     },
     {
       "url": "https://nepsealpha.com/sastoshare/mfin-financials",
       "title": "Nepsealpha | Some Issue",
-      "scrapedAt": "2026-04-30T19:28:35.200Z",
+      "scrapedAt": "2026-05-01T04:59:55.993Z",
       "tables": [],
       "statCards": []
     },
     {
       "url": "https://nepsealpha.com/sastoshare/dividend-book/book-trend",
       "title": "Dividend Book | History",
-      "scrapedAt": "2026-04-30T19:28:39.445Z",
+      "scrapedAt": "2026-05-01T05:00:00.787Z",
       "tables": [
         {
           "tableIndex": 0,
@@ -4223,7 +4223,7 @@
     {
       "url": "https://nepsealpha.com/sastoshare/market-breadth",
       "title": "Nepsealpha | Some Issue",
-      "scrapedAt": "2026-04-30T19:28:42.828Z",
+      "scrapedAt": "2026-05-01T05:00:04.201Z",
       "tables": [],
       "statCards": []
     }
