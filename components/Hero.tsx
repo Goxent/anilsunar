@@ -1,5 +1,5 @@
 import React, { useContext } from 'react';
-import { SiteSettingsContext } from '../App';
+import { SiteSettingsContext } from '../src/context';
 import settings from '../src/content/settings.json';
 import ParticleCanvas from './ParticleCanvas';
 

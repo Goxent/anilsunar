@@ -2,7 +2,7 @@ import React, { useState, useEffect, useContext } from 'react';
 import { Menu, X } from 'lucide-react';
 import { NAV_ITEMS } from '../constants';
 import { Link } from 'react-router-dom';
-import { SiteSettingsContext } from '../App';
+import { SiteSettingsContext } from '../src/context';
 
 const Navbar: React.FC = () => {
   const [isScrolled, setIsScrolled] = useState(false);

@@ -13,6 +13,7 @@ import Creative from './components/Creative';
 import Courses from './components/Courses';
 import Posts from './components/Posts';
 import Footer from './components/Footer';
+import { SiteSettingsContext } from './src/context';
 
 // Define the component map for dynamic rendering
 const COMPONENT_MAP: Record<string, React.FC<any>> = {
@@ -35,7 +36,7 @@ const DEFAULT_SECTIONS = [
   { id: 'posts',      visible: true }
 ];
 
-export const SiteSettingsContext = React.createContext<any>(null);
+
 
 function App() {
   useScrollReveal();
@@ -60,6 +61,12 @@ function App() {
     }
     fetchConfig();
   }, []);
+
+  if (loading && !siteSettings) return (
+    <div className="bg-surface-950 min-h-screen flex items-center justify-center">
+      <div className="w-10 h-10 border-t-2 border-accent-500 rounded-full animate-spin"></div>
+    </div>
+  );
 
   return (
     <SiteSettingsContext.Provider value={siteSettings}>
