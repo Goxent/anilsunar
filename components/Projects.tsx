@@ -1,6 +1,6 @@
 import React from 'react';
 import PROJECTS from '../src/content/projects.json';
-import { ExternalLink } from 'lucide-react';
+import { ExternalLink, Github, Lock } from 'lucide-react';
 
 const Projects: React.FC = () => {
   return (
@@ -16,42 +16,13 @@ const Projects: React.FC = () => {
           <div className="section-divider mx-auto mt-8"></div>
         </div>
 
-        {PROJECTS.length === 1 ? (
-          <div className="flex justify-center w-full reveal reveal-delay-1">
-            <div className="w-full max-w-4xl glass-card gradient-border p-10 md:p-14 group">
-              <div className="flex justify-between items-start mb-8">
-                <div className="flex items-center gap-3">
-                  <div className={`w-3 h-3 rounded-full ${PROJECTS[0].status === 'Live' ? 'bg-sage-400 animate-pulse shadow-[0_0_12px_rgba(74,222,128,0.6)]' : 'bg-accent-500/50'}`}></div>
-                  <span className="text-xs uppercase tracking-widest text-slate-400 font-bold">{PROJECTS[0].status}</span>
-                </div>
-              </div>
-
-              <h3 className="text-3xl md:text-4xl font-serif font-bold text-white mb-6 group-hover:text-accent-500 transition-colors leading-tight">{PROJECTS[0].title}</h3>
-              <p className="text-slate-400 mb-10 text-lg leading-relaxed font-light">{PROJECTS[0].description}</p>
-
-              <div className="flex flex-wrap gap-3 mb-12">
-                {PROJECTS[0].tags.map((tag) => (
-                  <span key={tag} className="text-xs uppercase tracking-widest text-accent-500 border border-accent-500/20 px-4 py-2 rounded-full bg-accent-500/5">
-                    {tag}
-                  </span>
-                ))}
-              </div>
-
-              <button
-                disabled
-                className="flex items-center gap-3 text-sm uppercase tracking-widest text-slate-500 cursor-not-allowed transition-colors font-bold"
-              >
-                View Project <ExternalLink size={16} />
-              </button>
-            </div>
-          </div>
-        ) : (
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
-            {PROJECTS.map((project, index) => (
-              <div
-                key={project.id}
-                className={`group p-8 md:p-10 glass-card gradient-border reveal reveal-delay-${(index % 4) + 1}`}
-              >
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {PROJECTS.map((project, index) => (
+            <div
+              key={project.id}
+              className={`group p-8 md:p-10 glass-card gradient-border flex flex-col justify-between reveal reveal-delay-${(index % 4) + 1} hover:shadow-[0_20px_40px_rgba(0,0,0,0.3)] transition-all duration-500`}
+            >
+              <div>
                 <div className="flex justify-between items-start mb-6">
                   <div className="flex items-center gap-2">
                     <div className={`w-2.5 h-2.5 rounded-full ${project.status === 'Live' ? 'bg-sage-400 animate-pulse shadow-[0_0_10px_rgba(74,222,128,0.5)]' : 'bg-accent-500/50'}`}></div>
@@ -59,27 +30,40 @@ const Projects: React.FC = () => {
                   </div>
                 </div>
 
-                <h3 className="text-2xl md:text-3xl font-serif font-bold text-white mb-4 group-hover:text-accent-500 transition-colors leading-tight">{project.title}</h3>
-                <p className="text-slate-400 mb-8 text-base leading-relaxed font-light">{project.description}</p>
+                <h3 className="text-2xl font-serif font-bold text-white mb-4 group-hover:text-accent-500 transition-colors leading-tight">{project.title}</h3>
+                <p className="text-slate-400 mb-8 text-sm leading-relaxed font-light">{project.description}</p>
 
                 <div className="flex flex-wrap gap-2 mb-10">
                   {project.tags.map((tag) => (
-                    <span key={tag} className="text-[10px] uppercase tracking-widest text-accent-500 border border-accent-500/20 px-3 py-1.5 rounded-full bg-accent-500/5">
+                    <span key={tag} className="text-[9px] uppercase tracking-widest text-accent-500 border border-accent-500/20 px-3 py-1 rounded bg-accent-500/5 font-bold">
                       {tag}
                     </span>
                   ))}
                 </div>
-
-                <button
-                  disabled
-                  className="flex items-center gap-2 text-xs uppercase tracking-widest text-slate-500 cursor-not-allowed transition-colors font-bold"
-                >
-                  View Project <ExternalLink size={14} />
-                </button>
               </div>
-            ))}
-          </div>
-        )}
+
+              {project.link ? (
+                <a
+                  href={project.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 text-[10px] uppercase tracking-[0.2em] text-white hover:text-accent-500 transition-all duration-300 font-bold group/link"
+                >
+                  {project.link.includes('github.com') ? (
+                    <><Github size={16} /> View Source</>
+                  ) : (
+                    <><ExternalLink size={16} /> Live Demo</>
+                  )}
+                  <span className="translate-x-0 group-hover/link:translate-x-2 transition-transform duration-300">&rarr;</span>
+                </a>
+              ) : (
+                <div className="flex items-center gap-2 text-[10px] uppercase tracking-[0.2em] text-slate-600 font-bold">
+                  <Lock size={14} /> Private Project
+                </div>
+              )}
+            </div>
+          ))}
+        </div>
       </div>
     </section>
   );

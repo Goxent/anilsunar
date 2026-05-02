@@ -1,4 +1,16 @@
 [
-  { "credential": "Chartered Accountant (CA)", "body": "ICAN – Institute of Chartered Accountants of Nepal", "year": "2023" },
-  { "credential": "Bachelor of Business Studies (BBS)", "body": "Tribhuvan University, Nepal", "year": "2020" }
+  {
+    "id": "q1",
+    "title": "Chartered Accountant (CA)",
+    "issuer": "ICAN",
+    "year": "2021",
+    "description": "Professional qualification in accounting, auditing, and taxation."
+  },
+  {
+    "id": "q2",
+    "title": "Tigg Certified Professional",
+    "issuer": "Tigg",
+    "year": "2026",
+    "description": "Certified expert in Tigg cloud accounting software (TCP023)."
+  }
 ]

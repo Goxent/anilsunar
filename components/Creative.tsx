@@ -3,6 +3,7 @@ import { motion, AnimatePresence, useInView } from 'framer-motion';
 import CREATIVE_WORKS from '../src/content/creative.json';
 import { Mic2, Feather, Youtube, Instagram, Play, X } from 'lucide-react';
 import { CreativeWork } from '../types';
+import GoxentAI from './GoxentAI';
 
 const Creative: React.FC = () => {
   const ref = useRef(null);
@@ -89,6 +90,9 @@ const Creative: React.FC = () => {
         <div className="mt-20 text-center text-slate-500 text-sm font-light">
           New poems and verses posted regularly on <a href="https://www.instagram.com/goxent" target="_blank" className="text-accent-400/80 hover:text-accent-300 underline decoration-accent-400/20">Instagram @goxent</a> and <a href="https://www.youtube.com/@goxent" target="_blank" className="text-accent-400/80 hover:text-accent-300 underline decoration-accent-400/20">YouTube</a>.
         </div>
+
+        {/* AI Interaction - Integrated into Creative Section */}
+        <GoxentAI />
       </div>
 
       {/* Full Content Modal */}

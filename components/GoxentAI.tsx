@@ -20,7 +20,7 @@ const TypewriterText = ({ text }: { text: string }) => {
   return <span className="whitespace-pre-wrap">{displayedText}</span>;
 }
 
-const GeminiPoet: React.FC = () => {
+const GoxentAI: React.FC = () => {
   const [prompt, setPrompt] = useState('');
   const [output, setOutput] = useState('');
   const [isLoading, setIsLoading] = useState(false);
@@ -60,7 +60,7 @@ const GeminiPoet: React.FC = () => {
   };
 
   return (
-    <section id="ai-interact" className="py-32 bg-surface-950 border-t border-white/5 relative overflow-hidden">
+    <div id="ai-interact" className="mt-32 pt-32 border-t border-white/5 relative overflow-hidden">
       <div 
         className={`absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-accent-400/[0.03] rounded-full transition-all duration-1000 blur-[120px] pointer-events-none ${isFocused ? 'opacity-100 scale-110' : 'opacity-50 scale-100'}`}
       ></div>
@@ -71,9 +71,8 @@ const GeminiPoet: React.FC = () => {
           <span className="font-semibold">Gemini 2.0 AI Core</span>
         </div>
 
-        <h2 className="text-5xl md:text-7xl font-serif text-white mb-6 text-center leading-tight tracking-tight">
-          Converse with <br />
-          <span className="text-gradient-accent">Goxent's Digital Twin</span>
+        <h2 className="text-5xl md:text-6xl font-serif text-white mb-6 text-center leading-tight tracking-tight">
+          Goxent <span className="text-gradient-accent">AI</span>
         </h2>
 
         <p className="text-slate-400 mb-16 max-w-xl mx-auto text-center text-lg md:text-xl font-light leading-relaxed">
@@ -156,8 +155,8 @@ const GeminiPoet: React.FC = () => {
           </AnimatePresence>
         </div>
       </div>
-    </section>
+    </div>
   );
 };
 
-export default GeminiPoet;
+export default GoxentAI;

@@ -1,9 +1,26 @@
 [
   {
-    "id": "1",
-    "title": "Operational Workflow Automation System",
-    "description": "Designed and built a full-stack web application to automate repetitive operational workflows within the firm. Reduced manual processing time significantly by digitizing and automating data entry, approval chains, and reporting pipelines.",
-    "tags": ["Web Application", "Automation", "Process Optimization", "Full-Stack"],
+    "id": "p1",
+    "title": "Goxent Intelligence Bot",
+    "description": "A sophisticated full-stack automation pipeline for NEPSE market data. Features multi-source scraping, AI-powered sentiment analysis using Gemini 2.0, and automated notification workflows via Resend and Notion integration.",
+    "tags": ["Next.js", "Playwright", "Gemini AI", "Node.js", "Notion API"],
+    "link": "https://github.com/Goxent/anilsunar",
     "status": "Live"
+  },
+  {
+    "id": "p2",
+    "title": "Professional Portfolio",
+    "description": "A high-end, editorial-style portfolio showcasing the intersection of finance and technology. Built with a focus on performance, premium aesthetics, and interactive storytelling using Framer Motion and custom CSS.",
+    "tags": ["React", "Vite", "Tailwind CSS", "Framer Motion", "TypeScript"],
+    "link": "https://anilsunar.com.np",
+    "status": "Live"
+  },
+  {
+    "id": "p3",
+    "title": "Goxent Command Center",
+    "description": "A centralized dashboard for real-time market monitoring and institutional data analysis. Automates the tracking of broker movements and regulatory notices for retail investors.",
+    "tags": ["React", "Firebase", "Recharts", "Automation", "FinTech"],
+    "link": "https://app.anilsunar.com.np",
+    "status": "Private"
   }
 ]

@@ -16,7 +16,6 @@ const app = initializeApp(firebaseConfig);
 const db = getFirestore(app);
 
 const collections = [
-  { name: 'content_videos', file: 'videos.json' },
   { name: 'content_posts', file: 'posts.json' },
   { name: 'content_projects', file: 'projects.json' },
   { name: 'content_experience', file: 'experience.json' },

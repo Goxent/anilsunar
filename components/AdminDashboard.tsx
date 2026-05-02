@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Plus, Trash2, Copy, Check, Youtube, ExternalLink, AlertTriangle, Settings, UploadCloud, Github, Loader2 } from 'lucide-react';
 
-import videosJson from '../src/content/videos.json';
 import postsJson from '../src/content/posts.json';
 import projectsJson from '../src/content/projects.json';
 import experienceJson from '../src/content/experience.json';
@@ -12,10 +11,9 @@ interface AdminDashboardProps {
   onClose?: () => void;
 }
 
-type TabId = 'videos' | 'posts' | 'projects' | 'experience' | 'courses' | 'settings';
+type TabId = 'posts' | 'projects' | 'experience' | 'courses' | 'settings';
 
 const TABS: { id: TabId; label: string; file: string }[] = [
-  { id: 'videos',     label: 'Videos',     file: 'src/content/videos.json' },
   { id: 'posts',      label: 'Posts',       file: 'src/content/posts.json' },
   { id: 'projects',   label: 'Projects',    file: 'src/content/projects.json' },
   { id: 'experience', label: 'Experience',  file: 'src/content/experience.json' },
@@ -24,7 +22,6 @@ const TABS: { id: TabId; label: string; file: string }[] = [
 ];
 
 const INITIAL_DATA: Record<TabId, any> = {
-  videos:     videosJson,
   posts:      postsJson,
   projects:   projectsJson,
   experience: experienceJson,
@@ -33,7 +30,6 @@ const INITIAL_DATA: Record<TabId, any> = {
 };
 
 const BLANK_ITEMS: Record<TabId, any> = {
-  videos:     { id: `v${Date.now()}`, title: '', youtubeId: '', description: '', date: new Date().toISOString().split('T')[0], thumbnail: '' },
   posts:      { id: `p${Date.now()}`, title: '', excerpt: '', date: new Date().toISOString().split('T')[0], url: '', platform: 'LinkedIn' },
   projects:   { id: `pr${Date.now()}`, title: '', description: '', tags: [], status: 'Building', link: '' },
   experience: { id: `e${Date.now()}`, role: '', company: '', period: '', description: '', skills: [] },
@@ -70,36 +66,7 @@ function FieldInput({ label, value, onChange, type = 'text', options }: {
   );
 }
 
-function VideoCard({ item, onChange, onDelete }: { item: any; onChange: (updated: any) => void; onDelete: () => void }) {
-  return (
-    <div className="card" style={{ borderLeft: '3px solid var(--gold)', marginBottom: 16 }}>
-      <div style={{ display: 'flex', gap: 16, marginBottom: 16 }}>
-        <img
-          src={`https://img.youtube.com/vi/${item.youtubeId || 'default'}/mqdefault.jpg`}
-          alt="thumbnail"
-          style={{ width: 120, height: 68, borderRadius: 8, objectFit: 'cover', flexShrink: 0, background: '#111' }}
-          onError={e => (e.currentTarget.src = 'https://img.youtube.com/vi/default/mqdefault.jpg')}
-        />
-        <div style={{ flex: 1 }}>
-          <FieldInput label="Title" value={item.title} onChange={v => onChange({ ...item, title: v })} />
-          <FieldInput label="YouTube ID" value={item.youtubeId} onChange={v => onChange({ ...item, youtubeId: v, thumbnail: `https://img.youtube.com/vi/${v}/maxresdefault.jpg` })} />
-        </div>
-      </div>
-      <FieldInput label="Description" value={item.description} type="textarea" onChange={v => onChange({ ...item, description: v })} />
-      <FieldInput label="Date" value={item.date} type="date" onChange={v => onChange({ ...item, date: v })} />
-      <div style={{ display: 'flex', justifyContent: 'flex-end', gap: 8 }}>
-        {item.youtubeId && (
-          <a href={`https://youtube.com/watch?v=${item.youtubeId}`} target="_blank" rel="noopener noreferrer" className="btn" style={{ fontSize: 12 }}>
-            <ExternalLink size={12} /> View
-          </a>
-        )}
-        <button onClick={() => { if (confirm('Delete this video?')) onDelete(); }} className="btn" style={{ color: 'var(--red)', fontSize: 12 }}>
-          <Trash2 size={12} /> Delete
-        </button>
-      </div>
-    </div>
-  );
-}
+
 
 function GenericCard({ item, fields, onChange, onDelete }: {
   item: any; fields: { key: string; label: string; type?: string; options?: string[] }[];
@@ -125,7 +92,6 @@ function GenericCard({ item, fields, onChange, onDelete }: {
 }
 
 const TAB_FIELDS: Record<Exclude<TabId, 'settings'>, { key: string; label: string; type?: string; options?: string[] }[]> = {
-  videos: [],
   posts: [
     { key: 'title', label: 'Title' },
     { key: 'excerpt', label: 'Excerpt', type: 'textarea' },
@@ -365,7 +331,7 @@ const AdminDashboard: React.FC<AdminDashboardProps> = ({ onClose }) => {
               whiteSpace: 'nowrap'
             }}
           >
-            {tab.id === 'videos' ? <Youtube size={13} /> : tab.id === 'settings' ? <Settings size={13} /> : null}
+            {tab.id === 'settings' ? <Settings size={13} /> : null}
             {tab.label}
             {tab.id !== 'settings' && <span style={{ marginLeft: 4, fontSize: 11, opacity: 0.7 }}>({data[tab.id].length})</span>}
           </button>
@@ -423,7 +389,6 @@ const AdminDashboard: React.FC<AdminDashboardProps> = ({ onClose }) => {
             <div className="card">
               <h3 style={{ fontSize: 16, fontWeight: 700, marginBottom: 16, color: 'var(--gold)' }}>Contact Information</h3>
               <FieldInput label="Email" value={data.settings.contact?.email} onChange={v => handleSettingsChange('contact', 'email', v)} />
-              <FieldInput label="Phone" value={data.settings.contact?.phone} onChange={v => handleSettingsChange('contact', 'phone', v)} />
               <FieldInput label="Address" value={data.settings.contact?.address} onChange={v => handleSettingsChange('contact', 'address', v)} />
             </div>
 
@@ -439,29 +404,14 @@ const AdminDashboard: React.FC<AdminDashboardProps> = ({ onClose }) => {
           <>
             {data[activeTab].map((item: any, index: number) => (
               <div key={item.id || index} className="card" style={{ borderLeft: '3px solid var(--gold)', marginBottom: 16 }}>
-                {activeTab === 'videos' ? (
-                  <div style={{ display: 'flex', gap: 16, marginBottom: 16 }}>
-                    <img
-                      src={`https://img.youtube.com/vi/${item.youtubeId || 'default'}/mqdefault.jpg`}
-                      alt="thumbnail"
-                      style={{ width: 120, height: 68, borderRadius: 8, objectFit: 'cover', flexShrink: 0, background: '#111' }}
-                      onError={e => (e.currentTarget.src = 'https://img.youtube.com/vi/default/mqdefault.jpg')}
-                    />
-                    <div style={{ flex: 1 }}>
-                      <FieldInput label="Title" value={item.title} onChange={v => handleChange(index, { ...item, title: v })} />
-                      <FieldInput label="YouTube ID" value={item.youtubeId} onChange={v => handleChange(index, { ...item, youtubeId: v, thumbnail: `https://img.youtube.com/vi/${v}/maxresdefault.jpg` })} />
-                    </div>
-                  </div>
-                ) : (
-                  TAB_FIELDS[activeTab as Exclude<TabId, 'settings' | 'videos'>].map(f => (
-                    <FieldInput
-                      key={f.key} label={f.label}
-                      value={Array.isArray(item[f.key]) ? item[f.key].join(', ') : item[f.key]}
-                      type={f.type} options={f.options}
-                      onChange={v => handleChange(index, { ...item, [f.key]: (f.type === 'tags' || Array.isArray(item[f.key])) ? v.split(',').map((s: string) => s.trim()) : v })}
-                    />
-                  ))
-                )}
+                {TAB_FIELDS[activeTab as Exclude<TabId, 'settings'>].map(f => (
+                  <FieldInput
+                    key={f.key} label={f.label}
+                    value={Array.isArray(item[f.key]) ? item[f.key].join(', ') : item[f.key]}
+                    type={f.type} options={f.options}
+                    onChange={v => handleChange(index, { ...item, [f.key]: (f.type === 'tags' || Array.isArray(item[f.key])) ? v.split(',').map((s: string) => s.trim()) : v })}
+                  />
+                ))}
                 
                 <div style={{ display: 'flex', justifyContent: 'flex-end', gap: 8, marginTop: 16 }}>
                   {['posts', 'projects', 'experience'].includes(activeTab) && (
@@ -474,11 +424,6 @@ const AdminDashboard: React.FC<AdminDashboardProps> = ({ onClose }) => {
                       {savingToNotion === item.id ? <Loader2 size={12} className="animate-spin" /> : notionSuccess === item.id ? <Check size={12} style={{ color: '#10b981' }} /> : <NotionLogo />}
                       {savingToNotion === item.id ? 'Saving...' : notionSuccess === item.id ? 'Saved!' : 'Save to Notion'}
                     </button>
-                  )}
-                  {activeTab === 'videos' && item.youtubeId && (
-                    <a href={`https://youtube.com/watch?v=${item.youtubeId}`} target="_blank" rel="noopener noreferrer" className="btn" style={{ fontSize: 12 }}>
-                      <ExternalLink size={12} /> View
-                    </a>
                   )}
                   <button onClick={() => { if (confirm('Delete this item?')) handleDelete(index); }} className="btn" style={{ color: 'var(--red)', fontSize: 12 }}>
                     <Trash2 size={12} /> Delete

@@ -19,18 +19,15 @@ const About: React.FC = () => {
         <div className="grid md:grid-cols-2 gap-16 md:gap-24 items-start reveal">
           {/* Bio Column */}
           <div className="flex flex-col gap-6 text-slate-400 text-lg leading-relaxed font-light reveal-delay-1">
-            
-            <div className="flex flex-col gap-6 text-slate-400 text-lg leading-relaxed font-light">
-              <p>
-                I'm Anil Sunar — a Chartered Accountant from ICAN, Nepal, and an Audit Manager with hands-on experience leading complex audit engagements across diverse industries. My academic foundation is a Bachelor of Business Studies (BBS), which shaped my analytical approach to finance and business.
-              </p>
-              <p>
-                Beyond the audit room, I'm a builder. I designed and developed a web application that automates operational workflows — combining my deep understanding of business processes with a passion for technology and software.
-              </p>
-              <p>
-                I also go by Goxent — my creative identity. I write poetry and rap, exploring themes of life, finance, and the human experience. I share my creative work on my YouTube channel @goxent and on Instagram @goxent.
-              </p>
-            </div>
+            <p>
+              I'm Anil Sunar — a Chartered Accountant from ICAN, Nepal, and an Audit Manager with hands-on experience leading complex audit engagements across diverse industries. I am also a <strong>Tigg Certified Professional</strong>, specializing in modern cloud accounting and workflow automation.
+            </p>
+            <p>
+              Beyond the audit room, I'm a builder. I designed and developed the Goxent Intelligence Bot — a full-stack automation pipeline that combines my deep understanding of business processes with a passion for software engineering.
+            </p>
+            <p>
+              I also go by Goxent — my creative identity. I write poetry and rap, exploring themes of life, finance, and the human experience. I share my creative work on my YouTube channel @goxent and on Instagram @goxent.
+            </p>
 
             <div className="mt-12 flex flex-wrap gap-x-8 gap-y-8 reveal reveal-delay-3 pt-8 border-t border-white/10">
               <div className="flex-1 min-w-[120px]">
@@ -59,11 +56,11 @@ const About: React.FC = () => {
               {QUALIFICATIONS.map((qual, idx) => (
                 <div key={idx} className="glass-card gradient-border p-8 group flex items-start gap-6">
                   <div className="shrink-0 p-4 rounded-2xl bg-white/5 text-accent-500/60 group-hover:text-accent-500 group-hover:bg-accent-500/10 transition-colors">
-                    {qual.credential.includes('Accountant') ? <Award size={32} /> : <GraduationCap size={32} />}
+                    {qual.title.includes('Accountant') ? <Award size={32} /> : <GraduationCap size={32} />}
                   </div>
                   <div>
-                    <h3 className="text-white font-bold text-base md:text-lg tracking-wide mb-2 group-hover:text-accent-500 transition-colors">{qual.credential}</h3>
-                    <p className="text-slate-400 text-sm leading-relaxed font-light mb-4">{qual.body}</p>
+                    <h3 className="text-white font-bold text-base md:text-lg tracking-wide mb-2 group-hover:text-accent-500 transition-colors">{qual.title}</h3>
+                    <p className="text-slate-400 text-sm leading-relaxed font-light mb-4">{qual.issuer}</p>
                     <span className="inline-block px-3 py-1 rounded-full bg-accent-500/10 text-accent-500 text-[10px] font-mono font-bold uppercase tracking-wider">{qual.year}</span>
                   </div>
                 </div>

@@ -122,14 +122,27 @@ async function runProdSync() {
       await page.click('text="Broker Analysis"').catch(() => null);
       
       report.brokerAccumulation = await page.evaluate(() => {
-        const rows = Array.from(document.querySelectorAll('table tbody tr'))
+        const table = document.querySelector('table');
+        if (!table) return [];
+        const headers = Array.from(table.querySelectorAll('thead th, tr:first-child th, tr:first-child td'))
+          .map(h => h.innerText.trim().toLowerCase());
+        
+        const brokerIdx = headers.findIndex(h => h.includes('broker'));
+        const symbolIdx = headers.findIndex(h => h.includes('symbol') || h.includes('scrip') || h.includes('top buy'));
+        const netIdx    = headers.findIndex(h => h.includes('net') || h.includes('holding') || h.includes('position'));
+
+        const rows = Array.from(table.querySelectorAll('tbody tr'))
           .filter(r => r.innerText.trim() !== '')
           .slice(0, 15);
-        return rows.map(r => ({
-          broker: r.querySelectorAll('td')[0]?.innerText.trim(),
-          topBuy: r.querySelectorAll('td')[1]?.innerText.trim(),
-          netHolding: r.querySelectorAll('td')[4]?.innerText.trim()
-        }));
+
+        return rows.map(r => {
+          const cells = r.querySelectorAll('td');
+          return {
+            broker: cells[brokerIdx !== -1 ? brokerIdx : 1]?.innerText.trim() || 'N/A',
+            topBuy: cells[symbolIdx !== -1 ? symbolIdx : 2]?.innerText.trim() || 'N/A',
+            netHolding: cells[netIdx !== -1 ? netIdx : 4]?.innerText.trim() || '0'
+          };
+        });
       });
       console.log(`✅ Extracted top broker holdings.`);
     });

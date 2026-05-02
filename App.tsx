@@ -8,7 +8,6 @@ import Projects from './components/Projects';
 import Creative from './components/Creative';
 import Courses from './components/Courses';
 import Posts from './components/Posts';
-import GeminiPoet from './components/GeminiPoet';
 import Footer from './components/Footer';
 
 function App() {
@@ -24,7 +23,6 @@ function App() {
         <Creative />
         <Courses />
         <Posts />
-        <GeminiPoet />
       </main>
       <Footer />
     </div>
