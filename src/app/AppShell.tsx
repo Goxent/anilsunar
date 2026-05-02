@@ -23,6 +23,7 @@ import SmartMoney    from './components/SmartMoney'
 import NoticeLab     from './components/NoticeLab'
 import ContentStudio from './components/ContentStudio'
 import ControlPanel  from './components/ControlPanel'
+import SiteStudio    from './components/SiteStudio'
 
 import LoadingCard from './components/LoadingCard'
 import { auth, googleProvider, db } from './lib/firebase'
@@ -69,6 +70,7 @@ const NAV_GROUPS = [
     adminOnly: true,
     tabs: [
       { id: 'control', label: 'Control Panel', icon: Terminal, component: ControlPanel },
+      { id: 'studio-site', label: 'Site Studio', icon: Layout, component: SiteStudio },
     ]
   }
 ]

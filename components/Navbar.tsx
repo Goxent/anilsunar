@@ -1,11 +1,32 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useContext } from 'react';
 import { Menu, X } from 'lucide-react';
 import { NAV_ITEMS } from '../constants';
 import { Link } from 'react-router-dom';
+import { SiteSettingsContext } from '../App';
 
 const Navbar: React.FC = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const dynamicSettings = useContext(SiteSettingsContext);
+
+  const visibleSections = dynamicSettings?.sections || [];
+  
+  const activeNavItems = NAV_ITEMS.filter(item => {
+    if (item.href === '#home') return true;
+    if (item.href === '#contact') return true;
+    const sectionId = item.href.replace('#', '');
+    const mapping: Record<string, string> = {
+      'writing': 'posts',
+      'creative': 'creative',
+      'about': 'about',
+      'experience': 'experience',
+      'projects': 'projects',
+      'courses': 'courses'
+    };
+    const targetId = mapping[sectionId] || sectionId;
+    const section = visibleSections.find((s: any) => s.id === targetId);
+    return section ? section.visible : true;
+  });
 
   useEffect(() => {
     const handleScroll = () => setIsScrolled(window.scrollY > 50);
@@ -27,7 +48,7 @@ const Navbar: React.FC = () => {
 
         {/* Desktop Menu */}
         <div className="hidden md:flex items-center gap-8">
-          {NAV_ITEMS.map((item) => (
+          {activeNavItems.map((item) => (
             <a
               key={item.label}
               href={item.href}
@@ -58,7 +79,7 @@ const Navbar: React.FC = () => {
         }`}
       >
         <div className="flex flex-col py-6 px-8 md:px-16 lg:px-24 gap-5">
-          {NAV_ITEMS.map((item) => (
+          {activeNavItems.map((item) => (
             <a
               key={item.label}
               href={item.href}

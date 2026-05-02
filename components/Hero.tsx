@@ -1,8 +1,13 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import { SiteSettingsContext } from '../App';
 import settings from '../src/content/settings.json';
 import ParticleCanvas from './ParticleCanvas';
 
 const Hero: React.FC = () => {
+  const dynamicSettings = useContext(SiteSettingsContext);
+  const title = dynamicSettings?.hero?.title || settings.hero?.title || 'Chartered Accountant · Audit Manager · Creator';
+  const subtitle = dynamicSettings?.hero?.subtitle || settings.hero?.subtitle || 'Bridging the precision of finance with the creativity of technology and words.';
+
   return (
     <section
       id="home"
@@ -14,7 +19,7 @@ const Hero: React.FC = () => {
           {/* Left: Text */}
           <div className="fade-in order-2 md:order-1">
             <p className="text-accent-500 text-xs font-semibold tracking-[0.4em] uppercase mb-6 opacity-0" style={{ animation: 'fadeIn 0.6s ease-out forwards 0.2s' }}>
-              {settings.hero?.title || 'Chartered Accountant · Audit Manager · Creator'}
+              {title}
             </p>
 
             <h1 className="text-5xl md:text-7xl lg:text-8xl font-serif font-bold text-white mb-6 leading-[0.95] tracking-tight opacity-0" style={{ animation: 'fadeIn 0.6s ease-out forwards 0.4s' }}>
@@ -25,7 +30,7 @@ const Hero: React.FC = () => {
             <div className="h-px w-20 bg-gradient-to-r from-accent-500 to-transparent mb-8 opacity-0" style={{ animation: 'fadeIn 0.6s ease-out forwards 0.6s' }}></div>
 
             <p className="text-slate-400 text-lg md:text-xl max-w-md font-light leading-relaxed opacity-0" style={{ animation: 'fadeIn 0.6s ease-out forwards 0.8s' }}>
-              {settings.hero?.subtitle || 'Bridging the precision of finance with the creativity of technology and words.'}
+              {subtitle}
             </p>
 
             <div className="mt-12 flex flex-col sm:flex-row gap-5 opacity-0" style={{ animation: 'fadeIn 0.6s ease-out forwards 1s' }}>
