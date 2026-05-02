@@ -1,47 +1,30 @@
 import { useState, useEffect, ReactNode, createContext, useContext } from 'react'
 import { 
-  LayoutDashboard, 
   TrendingUp, 
   Search, 
   Users, 
   Brain, 
   Pencil, 
   Settings, 
-  Lock, 
   LogOut,
-  ChevronDown,
-  Globe,
-  Mail,
   Terminal,
   RefreshCw,
-  Copy,
   X,
-  CheckCircle2,
   AlertCircle,
-  AlertTriangle,
-  Info,
   Menu,
-  Layers,
-  Briefcase,
-  Star,
-  CloudSync,
+  Sparkles,
   Bell
 } from 'lucide-react'
-import MarketOverview from './components/MarketOverview'
-import MarketIntelligence from './components/MarketIntelligence'
-import StockScreener from './components/StockScreener'
-import BrokerAnalysis from './components/BrokerAnalysis'
-import AIResearch from './components/AIResearch'
+
+// Tab Components
+import DailyBrief    from './components/DailyBrief'
+import StockAnalyzer from './components/StockAnalyzer'
+import SmartMoney    from './components/SmartMoney'
+import NoticeLab     from './components/NoticeLab'
 import ContentStudio from './components/ContentStudio'
-import NoticeTracker from './components/NoticeTracker'
-import NewsletterAdmin from './components/NewsletterAdmin'
-import UserManagement from './components/UserManagement'
-import AlphaBotController from './components/AlphaBotController'
-import SectorHeatmap from './components/SectorHeatmap'
-import PortfolioTracker from './components/PortfolioTracker'
-import Watchlist from './components/Watchlist'
+import ControlPanel  from './components/ControlPanel'
+
 import LoadingCard from './components/LoadingCard'
-import AdminDashboard from '../../components/AdminDashboard'
 import { auth, googleProvider, db } from './lib/firebase'
 import { onAuthStateChanged, signInWithPopup, signOut, signInWithEmailAndPassword, createUserWithEmailAndPassword, sendEmailVerification, sendPasswordResetEmail, User as FirebaseUser } from 'firebase/auth'
 import { doc, getDoc, setDoc } from 'firebase/firestore'
@@ -61,41 +44,31 @@ export const useMarketData = () => useContext(MarketDataContext);
 
 const NAV_GROUPS = [
   {
-    id: 'nepse',
-    label: 'NEPSE Analysis',
-    color: '#4ADE80',
-    icon: TrendingUp,
+    id: 'intelligence',
+    label: 'Intelligence',
+    color: 'var(--gold)',
     tabs: [
-      { id: 'market', label: 'Market Overview', icon: LayoutDashboard, component: MarketOverview },
-      { id: 'sectors', label: 'Sector Heat', icon: Layers, component: SectorHeatmap },
-      { id: 'portfolio', label: 'Portfolio', icon: Briefcase, component: PortfolioTracker },
-      { id: 'watchlist', label: 'Watchlist', icon: Star, component: Watchlist },
-      { id: 'intel', label: 'Market Intelligence', icon: TrendingUp, component: MarketIntelligence },
-      { id: 'screener', label: 'Stock Screener', icon: Search, component: StockScreener },
-      { id: 'broker', label: 'Broker Analysis', icon: Users, component: BrokerAnalysis },
+      { id: 'brief',    label: 'Daily Brief',    icon: Sparkles,   component: DailyBrief },
+      { id: 'analyzer', label: 'Stock Analyzer',  icon: Search,     component: StockAnalyzer },
+      { id: 'money',    label: 'Smart Money',     icon: TrendingUp, component: SmartMoney },
     ]
   },
   {
     id: 'content',
-    label: 'Content & AI',
-    color: '#818cf8',
-    icon: Pencil,
+    label: 'Content',
+    color: 'var(--blue)',
     tabs: [
-      { id: 'ai', label: 'AI Research', icon: Brain, component: AIResearch },
-      { id: 'studio', label: 'Content Studio', icon: Pencil, component: ContentStudio },
-      { id: 'notices', label: 'Notice Tracker', icon: Bell, component: NoticeTracker },
-      { id: 'newsletter', label: 'Newsletter', icon: Mail, component: NewsletterAdmin },
+      { id: 'notices', label: 'Notice Lab',     icon: Bell,    component: NoticeLab },
+      { id: 'studio',  label: 'Content Studio', icon: Pencil,  component: ContentStudio },
     ]
   },
   {
     id: 'admin',
-    label: 'Admin & Settings',
-    color: '#f59e0b',
-    icon: Settings,
+    label: 'Admin',
+    color: 'var(--amber)',
+    adminOnly: true,
     tabs: [
-      { id: 'admin', label: 'Admin Panel', icon: Settings, component: AdminDashboard },
-      { id: 'bot', label: 'Alpha Bot', icon: Terminal, component: AlphaBotController },
-      { id: 'users', label: 'User Management', icon: Users, component: UserManagement },
+      { id: 'control', label: 'Control Panel', icon: Terminal, component: ControlPanel },
     ]
   }
 ]
@@ -112,82 +85,12 @@ const ToastContext = createContext<{
 
 export const useToast = () => useContext(ToastContext);
 
-function NavGroupSection({ group, activeTab, setActiveTab }: { group: any, activeTab: string, setActiveTab: (id: string) => void }) {
-  const [isOpen, setIsOpen] = useState(true)
-
-  return (
-    <div style={{ marginBottom: 16 }}>
-      <div 
-        onClick={() => setIsOpen(!isOpen)}
-        style={{ 
-          display: 'flex', 
-          alignItems: 'center', 
-          justifyContent: 'space-between',
-          padding: '0 8px',
-          marginBottom: 8,
-          cursor: 'pointer'
-        }}
-      >
-        <span style={{ 
-          fontSize: 9, 
-          textTransform: 'uppercase', 
-          letterSpacing: '0.2em', 
-          color: group.color,
-          fontWeight: 700 
-        }}>
-          {group.label}
-        </span>
-        <ChevronDown 
-          size={14} 
-          style={{ 
-            color: 'var(--text-secondary)',
-            transform: isOpen ? 'rotate(0deg)' : 'rotate(90deg)',
-            transition: 'transform 0.2s'
-          }} 
-        />
-      </div>
-
-      {isOpen && (
-        <div style={{ display: 'flex', flexDirection: 'column', gap: 4 }}>
-          {group.tabs.map((tab: any) => (
-            <button
-              key={tab.id}
-              onClick={() => setActiveTab(tab.id)}
-              style={{
-                display: 'flex',
-                alignItems: 'center',
-                gap: 12,
-                padding: '10px 14px',
-                borderRadius: 8,
-                border: 'none',
-                background: activeTab === tab.id ? 'var(--gold-dim)' : 'transparent',
-                color: activeTab === tab.id ? 'var(--gold)' : 'var(--text-secondary)',
-                borderLeft: activeTab === tab.id ? '2px solid var(--gold)' : '2px solid transparent',
-                cursor: 'pointer',
-                fontSize: 14,
-                fontWeight: activeTab === tab.id ? 600 : 400,
-                transition: 'all 0.2s',
-                textAlign: 'left',
-              }}
-            >
-              <tab.icon size={18} />
-              <span style={{ flex: 1 }}>{tab.label}</span>
-            </button>
-          ))}
-        </div>
-      )}
-    </div>
-  )
-}
-
 export default function AppShell() {
   const [toasts, setToasts] = useState<Toast[]>([]);
   const [sidebarOpen, setSidebarOpen] = useState(false)
   const [isMobile, setIsMobile] = useState(typeof window !== 'undefined' ? window.innerWidth < 768 : false)
-  const [activeTab, setActiveTab] = useState('market')
-  const [tabLoading, setTabLoading] = useState(false)
+  const [activeTab, setActiveTab] = useState('brief')
   
-  // Cloud Data State
   const [omniData, setOmniData] = useState<any>(null)
   const [aiBrief, setAiBrief] = useState<any>(null)
   const [dataLoading, setDataLoading] = useState(true)
@@ -206,7 +109,6 @@ export default function AppShell() {
       if (marketRes.ok) mData = await marketRes.json();
       if (intelRes.ok) iData = await intelRes.json();
 
-      // Fallback to local if remote fails or returns empty
       setOmniData(mData || localOmniData);
       setAiBrief(iData || localAiBrief);
     } catch (err) {
@@ -237,10 +139,8 @@ export default function AppShell() {
   };
 
   const handleTabChange = (id: string) => {
-    setTabLoading(true)
     setActiveTab(id)
     setSidebarOpen(false)
-    setTimeout(() => setTabLoading(false), 500)
   }
 
   const handleEmailAuth = async (e: React.FormEvent) => {
@@ -271,19 +171,16 @@ export default function AppShell() {
       if (e.target instanceof HTMLInputElement || e.target instanceof HTMLTextAreaElement) return
       
       const key = e.key
-      if (key === '1') handleTabChange('market')
-      if (key === '2') handleTabChange('sectors')
-      if (key === '3') handleTabChange('portfolio')
-      if (key === '4') handleTabChange('watchlist')
-      if (key === '5') handleTabChange('bot')
-      if (key === '6') handleTabChange('ai')
+      if (key === '1') handleTabChange('brief')
+      if (key === '2') handleTabChange('analyzer')
+      if (key === '3') handleTabChange('money')
+      if (key === '4') handleTabChange('notices')
+      if (key === '5') handleTabChange('studio')
+      if (key === '6') handleTabChange('control')
       
       if (key === '/') {
         e.preventDefault()
         document.querySelector('input')?.focus()
-      }
-      if (key === 'Escape') {
-        // Find and click close buttons if any modal is open
       }
     }
     window.addEventListener('keydown', handleKeydown)
@@ -315,7 +212,6 @@ export default function AppShell() {
           if (userSnap.exists()) {
             userRole = userSnap.data().role || 'pending'
           } else {
-            // New user — pending until admin approves
             await setDoc(userRef, {
               email: firebaseUser.email,
               displayName: firebaseUser.displayName,
@@ -324,7 +220,6 @@ export default function AppShell() {
               createdAt: new Date().toISOString()
             })
           }
-          // Owner email always gets admin
           if (firebaseUser.email === 'anil99senchury@gmail.com') userRole = 'admin'
           setRole(userRole)
         } catch (err) { console.error(err) }
@@ -337,29 +232,36 @@ export default function AppShell() {
     return () => { isMounted = false; clearTimeout(timeout); unsubscribe(); }
   }, [])
 
-  if (loading) return <div style={{ minHeight: '100vh', display: 'flex', alignItems: 'center', justifyContent: 'center', background: 'var(--bg-primary)' }}><div style={{ color: 'var(--gold)', fontSize: 14 }}>Loading Command Center...</div></div>
+  if (loading) return (
+    <div style={{ minHeight: '100vh', display: 'flex', alignItems: 'center', justifyContent: 'center', background: 'var(--bg-0)' }}>
+      <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 16 }}>
+        <div style={{ width: 40, height: 40, border: '3px solid var(--gold-dim)', borderTopColor: 'var(--gold)', borderRadius: '50%' }} className="animate-spin" />
+        <div style={{ color: 'var(--gold)', fontSize: 13, fontWeight: 700, letterSpacing: '0.1em', textTransform: 'uppercase' }}>Command Center</div>
+      </div>
+    </div>
+  )
 
   if (!user) {
     return (
-      <div style={{ minHeight: '100vh', display: 'flex', background: 'var(--bg-primary)' }}>
+      <div style={{ minHeight: '100vh', display: 'flex', background: 'var(--bg-0)' }}>
         {/* Left branding panel */}
         {!isMobile && (
-          <div style={{ flex: 1, background: 'linear-gradient(160deg, #0d0d14 0%, #12121e 100%)', display: 'flex', flexDirection: 'column', justifyContent: 'center', padding: 64, borderRight: '1px solid var(--border)' }}>
+          <div style={{ flex: 1, background: 'linear-gradient(160deg, #06060a 0%, #0d0d14 100%)', display: 'flex', flexDirection: 'column', justifyContent: 'center', padding: 64, borderRight: '1px solid var(--border)' }}>
             <div style={{ marginBottom: 48 }}>
               <div style={{ width: 64, height: 64, background: 'var(--gold)', borderRadius: 16, display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: 32, fontWeight: 900, color: 'black', marginBottom: 32 }}>G</div>
               <p style={{ fontSize: 10, letterSpacing: '0.4em', color: 'var(--gold)', fontWeight: 700, marginBottom: 12, textTransform: 'uppercase' }}>Goxent</p>
-              <h1 style={{ fontSize: 38, fontWeight: 900, lineHeight: 1.15, marginBottom: 16 }}>Command Center</h1>
-              <p style={{ color: 'var(--text-secondary)', fontSize: 15 }}>Your private NEPSE intelligence platform.</p>
+              <h1 style={{ fontSize: 38, fontWeight: 900, lineHeight: 1.15, marginBottom: 16, fontFamily: 'var(--font-display)' }}>Command Center</h1>
+              <p style={{ color: 'var(--text-2)', fontSize: 15 }}>Your private intelligence terminal for finance & content.</p>
             </div>
             <div style={{ display: 'flex', flexDirection: 'column', gap: 20 }}>
               {[
                 { icon: '📊', text: 'Real-time NEPSE analysis & live market data' },
                 { icon: '🤖', text: 'AI-powered stock screening & broker intelligence' },
-                { icon: '✍️', text: 'YouTube content studio for Goxent channel' },
+                { icon: '✍️', text: 'Content Studio for multi-channel distribution' },
               ].map((f, i) => (
                 <div key={i} style={{ display: 'flex', alignItems: 'center', gap: 16 }}>
                   <span style={{ fontSize: 22 }}>{f.icon}</span>
-                  <span style={{ color: 'var(--text-secondary)', fontSize: 14 }}>{f.text}</span>
+                  <span style={{ color: 'var(--text-2)', fontSize: 14 }}>{f.text}</span>
                 </div>
               ))}
             </div>
@@ -370,17 +272,17 @@ export default function AppShell() {
           <div style={{ width: '100%', maxWidth: 380 }}>
             {isMobile && <div style={{ textAlign: 'center', marginBottom: 40 }}>
               <div style={{ width: 56, height: 56, background: 'var(--gold)', borderRadius: 14, display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: 28, fontWeight: 900, color: 'black', margin: '0 auto 16px' }}>G</div>
-              <h1 style={{ fontSize: 22, fontWeight: 800 }}>Goxent Command Center</h1>
+              <h1 style={{ fontSize: 22, fontWeight: 800, fontFamily: 'var(--font-display)' }}>Command Center</h1>
             </div>}
-            <h2 style={{ fontSize: 22, fontWeight: 800, marginBottom: 6 }}>
+            <h2 style={{ fontSize: 24, fontWeight: 800, marginBottom: 6, fontFamily: 'var(--font-display)' }}>
               {isForgotPassword ? 'Reset Password' : isSignUp ? 'Create Account' : 'Welcome back'}
             </h2>
-            <p style={{ color: 'var(--text-secondary)', fontSize: 13, marginBottom: 28 }}>
+            <p style={{ color: 'var(--text-2)', fontSize: 13, marginBottom: 28 }}>
               {isForgotPassword ? "We'll send a reset link to your email." : isSignUp ? 'New accounts require admin approval.' : 'Sign in to your intelligence dashboard.'}
             </p>
             <form onSubmit={handleEmailAuth} style={{ display: 'flex', flexDirection: 'column', gap: 14, marginBottom: 20 }}>
-              <input type="email" placeholder="Email address" value={email} onChange={(e) => setEmail(e.target.value)} required style={{ padding: '13px 16px', fontSize: 14 }} />
-              {!isForgotPassword && <input type="password" placeholder="Password" value={password} onChange={(e) => setPassword(e.target.value)} required style={{ padding: '13px 16px', fontSize: 14 }} />}
+              <input type="email" placeholder="Email address" value={email} onChange={(e) => setEmail(e.target.value)} required />
+              {!isForgotPassword && <input type="password" placeholder="Password" value={password} onChange={(e) => setPassword(e.target.value)} required />}
               {authError && <p style={{ color: 'var(--red)', fontSize: 12, margin: 0 }}>{authError}</p>}
               {authMessage && <p style={{ color: 'var(--green)', fontSize: 12, margin: 0 }}>{authMessage}</p>}
               <button type="submit" style={{ background: 'var(--gold)', color: 'black', fontWeight: 800, padding: '13px', borderRadius: 10, border: 'none', cursor: 'pointer', fontSize: 14 }}>
@@ -389,17 +291,17 @@ export default function AppShell() {
             </form>
             <div style={{ display: 'flex', alignItems: 'center', gap: 12, marginBottom: 16 }}>
               <div style={{ flex: 1, height: 1, background: 'var(--border)' }} />
-              <span style={{ fontSize: 11, color: 'var(--text-secondary)' }}>or</span>
+              <span style={{ fontSize: 11, color: 'var(--text-2)' }}>or</span>
               <div style={{ flex: 1, height: 1, background: 'var(--border)' }} />
             </div>
-            <button onClick={async () => { setAuthError(''); try { await signInWithPopup(auth, googleProvider) } catch(e: any) { setAuthError(e.message) }}} style={{ width: '100%', padding: '12px', borderRadius: 10, border: '1px solid var(--border)', background: 'rgba(255,255,255,0.03)', color: 'white', cursor: 'pointer', fontSize: 14, fontWeight: 600 }}>
+            <button onClick={async () => { setAuthError(''); try { await signInWithPopup(auth, googleProvider) } catch(e: any) { setAuthError(e.message) }}} className="btn" style={{ width: '100%', justifyContent: 'center' }}>
               Continue with Google
             </button>
             <div style={{ marginTop: 24, display: 'flex', gap: 16, justifyContent: 'center', fontSize: 13 }}>
-              <button onClick={() => { setIsSignUp(!isSignUp); setIsForgotPassword(false); setAuthError('') }} style={{ background: 'none', border: 'none', color: 'var(--gold)', cursor: 'pointer' }}>
+              <button onClick={() => { setIsSignUp(!isSignUp); setIsForgotPassword(false); setAuthError('') }} style={{ background: 'none', border: 'none', color: 'var(--gold)', cursor: 'pointer', fontWeight: 700 }}>
                 {isSignUp ? 'Already have an account?' : 'Create account'}
               </button>
-              {!isSignUp && <button onClick={() => { setIsForgotPassword(!isForgotPassword); setAuthError('') }} style={{ background: 'none', border: 'none', color: 'var(--text-secondary)', cursor: 'pointer' }}>
+              {!isSignUp && <button onClick={() => { setIsForgotPassword(!isForgotPassword); setAuthError('') }} style={{ background: 'none', border: 'none', color: 'var(--text-2)', cursor: 'pointer' }}>
                 {isForgotPassword ? 'Back to sign in' : 'Forgot password?'}
               </button>}
             </div>
@@ -413,12 +315,12 @@ export default function AppShell() {
   const isEmailPasswordUser = user?.providerData?.[0]?.providerId === 'password'
   if (isEmailPasswordUser && !user.emailVerified) {
     return (
-      <div style={{ minHeight: '100vh', display: 'flex', alignItems: 'center', justifyContent: 'center', background: 'var(--bg-primary)' }}>
-        <div className="card" style={{ width: 400, textAlign: 'center', padding: 48 }}>
+      <div style={{ minHeight: '100vh', display: 'flex', alignItems: 'center', justifyContent: 'center', background: 'var(--bg-0)' }}>
+        <div className="card-base" style={{ width: 400, textAlign: 'center', padding: 48 }}>
           <div style={{ fontSize: 48, marginBottom: 20 }}>📬</div>
-          <h2 style={{ fontSize: 22, fontWeight: 800, marginBottom: 8 }}>Verify your email</h2>
-          <p style={{ color: 'var(--text-secondary)', fontSize: 14, marginBottom: 32 }}>We sent a verification link to <strong>{user.email}</strong>. Click the link then come back.</p>
-          <button onClick={() => user.reload().then(() => window.location.reload())} className="btn btn-primary" style={{ width: '100%', marginBottom: 12 }}>I've verified — Reload</button>
+          <h2 style={{ fontSize: 24, fontWeight: 800, marginBottom: 8, fontFamily: 'var(--font-display)' }}>Verify your email</h2>
+          <p style={{ color: 'var(--text-2)', fontSize: 14, marginBottom: 32 }}>We sent a verification link to <strong>{user.email}</strong>.</p>
+          <button onClick={() => user.reload().then(() => window.location.reload())} className="btn" style={{ width: '100%', marginBottom: 12, background: 'var(--gold)', color: 'black' }}>I've verified — Reload</button>
           <button onClick={() => signOut(auth)} className="btn" style={{ width: '100%' }}>Sign Out</button>
         </div>
       </div>
@@ -428,33 +330,33 @@ export default function AppShell() {
   // Pending approval screen
   if (role === 'pending') {
     return (
-      <div style={{ minHeight: '100vh', display: 'flex', alignItems: 'center', justifyContent: 'center', background: 'var(--bg-primary)' }}>
-        <div className="card" style={{ width: 440, textAlign: 'center', padding: 48 }}>
+      <div style={{ minHeight: '100vh', display: 'flex', alignItems: 'center', justifyContent: 'center', background: 'var(--bg-0)' }}>
+        <div className="card-base" style={{ width: 440, textAlign: 'center', padding: 48 }}>
           <div style={{ fontSize: 48, marginBottom: 20 }}>⏳</div>
-          <h2 style={{ fontSize: 22, fontWeight: 800, marginBottom: 8 }}>Access Pending</h2>
-          <p style={{ color: 'var(--text-secondary)', fontSize: 14, marginBottom: 16 }}>Your account has been created. The admin will approve your access shortly.</p>
-          <p style={{ color: 'var(--text-secondary)', fontSize: 13, marginBottom: 32 }}>Need immediate access? Contact <a href="mailto:anil@anilsunar.com.np" style={{ color: 'var(--gold)' }}>anil@anilsunar.com.np</a></p>
+          <h2 style={{ fontSize: 24, fontWeight: 800, marginBottom: 8, fontFamily: 'var(--font-display)' }}>Access Pending</h2>
+          <p style={{ color: 'var(--text-2)', fontSize: 14, marginBottom: 16 }}>The admin will approve your access shortly.</p>
+          <p style={{ color: 'var(--text-2)', fontSize: 13, marginBottom: 32 }}>Need immediate access? Contact <a href="mailto:anil@anilsunar.com.np" style={{ color: 'var(--gold)' }}>Anil Sunar</a></p>
           <button onClick={() => signOut(auth)} className="btn" style={{ width: '100%' }}>Sign Out</button>
         </div>
       </div>
     )
   }
 
-  const allowedGroups = NAV_GROUPS.filter(group => (group.id === 'admin' ? role === 'admin' : true))
+  const allowedGroups = NAV_GROUPS.filter(group => (group.adminOnly ? role === 'admin' : true))
   const allTabs = allowedGroups.flatMap(group => group.tabs)
   const activeTabInfo = allTabs.find(t => t.id === activeTab) || allTabs[0]
-  const ActiveComponent = activeTabInfo?.component || MarketOverview
+  const ActiveComponent = activeTabInfo?.component || DailyBrief
 
   const dataAgeHours = omniData?.timestamp ? (Date.now() - new Date(omniData.timestamp).getTime()) / (1000 * 60 * 60) : 100
-  const freshnessColor = dataAgeHours < 24 ? '#10b981' : dataAgeHours < 48 ? '#f59e0b' : '#ef4444'
-  const freshnessText = dataAgeHours < 24 ? "Today's data" : dataAgeHours < 48 ? "Yesterday's data" : "Stale — sync needed"
+  const freshnessColor = dataAgeHours < 24 ? 'var(--green)' : dataAgeHours < 48 ? 'var(--amber)' : 'var(--red)'
+  const freshnessText = dataAgeHours < 24 ? "Live · today" : dataAgeHours < 48 ? "24h old" : "⚠ Stale"
 
   return (
     <ToastContext.Provider value={{ showToast }}>
       <MarketDataContext.Provider value={{ omniData, aiBrief, loading: dataLoading, refresh: fetchCloudData }}>
-        <div style={{ display: 'flex', minHeight: '100vh', background: 'var(--bg-primary)' }}>
+        <div style={{ display: 'flex', minHeight: '100vh', background: 'var(--bg-0)' }}>
           
-          {/* Mobile Overlay */}
+          {/* Mobile Sidebar Overlay */}
           {sidebarOpen && (
             <div 
               onClick={() => setSidebarOpen(false)}
@@ -466,79 +368,132 @@ export default function AppShell() {
         <aside 
           className={`sidebar ${sidebarOpen ? 'open' : ''}`}
           style={{
-            width: 280, background: 'var(--bg-secondary)', borderRight: '1px solid var(--border)',
-            display: 'flex', flexDirection: 'column', padding: '24px 16px', position: 'fixed',
+            width: 240, background: 'var(--bg-1)', borderRight: '1px solid var(--border)',
+            display: 'flex', flexDirection: 'column', padding: '20px 12px', position: 'fixed',
             top: 0, left: 0, bottom: 0, zIndex: 100, overflowY: 'auto'
           }}
         >
-          <div style={{ marginBottom: 32, padding: '0 8px' }}>
-            <div style={{ display: 'flex', alignItems: 'center', gap: 12, marginBottom: 16 }}>
-              <div style={{ width: 32, height: 32, background: 'var(--gold)', borderRadius: 8, display: 'flex', alignItems: 'center', justifyContent: 'center', color: 'var(--bg-primary)', fontWeight: 800 }}>G</div>
-              <div style={{ display: 'flex', flexDirection: 'column' }}>
-                <span style={{ fontSize: 16, fontWeight: 800, letterSpacing: '0.1em', color: 'white' }}>OXENT</span>
-                <span style={{ fontSize: 10, color: 'var(--text-secondary)' }}>Command Center</span>
-              </div>
+          {/* Sidebar Logo */}
+          <div style={{ display: 'flex', alignItems: 'center', gap: 12, padding: '0 8px', marginBottom: 32 }}>
+            <div style={{ 
+              width: 32, height: 32, background: 'var(--gold)', borderRadius: 8, 
+              display: 'flex', alignItems: 'center', justifyContent: 'center', 
+              color: 'black', fontWeight: 900, fontSize: 18 
+            }}>
+              G
+            </div>
+            <div style={{ display: 'flex', flexDirection: 'column' }}>
+              <span style={{ fontSize: 13, fontWeight: 800, color: 'var(--text-1)', letterSpacing: '0.05em' }}>GOXENT</span>
+              <span style={{ fontSize: 10, color: 'var(--text-2)', fontWeight: 500 }}>Intelligence</span>
             </div>
           </div>
 
           <nav style={{ display: 'flex', flexDirection: 'column', flex: 1 }}>
-            {allowedGroups.map((group, idx) => (
-              <NavGroupSection key={group.id} group={group} activeTab={activeTab} setActiveTab={handleTabChange} />
+            {allowedGroups.map((group) => (
+              <div key={group.id} style={{ marginBottom: 24 }}>
+                <div style={{ 
+                  fontSize: 9, fontWeight: 700, letterSpacing: '0.2em', textTransform: 'uppercase', 
+                  color: group.color, padding: '0 8px', marginBottom: 6 
+                }}>
+                  {group.label}
+                </div>
+                <div style={{ display: 'flex', flexDirection: 'column', gap: 2 }}>
+                  {group.tabs.map((tab: any) => {
+                    const isActive = activeTab === tab.id;
+                    return (
+                      <button
+                        key={tab.id}
+                        onClick={() => handleTabChange(tab.id)}
+                        className={`nav-item ${isActive ? 'active' : ''}`}
+                        style={{
+                          width: '100%', display: 'flex', alignItems: 'center', gap: 10,
+                          padding: '9px 12px', borderRadius: 8, border: 'none', cursor: 'pointer',
+                          fontSize: 13, textAlign: 'left', transition: 'all 0.15s',
+                          background: isActive ? 'var(--gold-dim)' : 'transparent',
+                          color: isActive ? 'var(--gold)' : 'var(--text-2)',
+                          borderLeft: `2px solid ${isActive ? 'var(--gold)' : 'transparent'}`,
+                          fontWeight: isActive ? 600 : 400
+                        }}
+                      >
+                        <tab.icon size={16} />
+                        <span>{tab.label}</span>
+                      </button>
+                    );
+                  })}
+                </div>
+              </div>
             ))}
           </nav>
 
-          <div style={{ marginTop: 'auto', padding: '16px 8px', fontSize: 10, color: 'var(--text-secondary)', textAlign: 'center' }}>
-            Press 1-6 to navigate quickly
-          </div>
-
-          <div style={{ marginTop: 16, display: 'flex', flexDirection: 'column', gap: 12, padding: '0 8px' }}>
-            <button onClick={() => signOut(auth)} className="btn" style={{ background: 'rgba(239, 68, 68, 0.1)', color: '#ef4444' }}><LogOut size={16} /> Logout</button>
+          <div style={{ marginTop: 'auto', padding: '16px 8px' }}>
+            <div style={{ fontSize: 11, color: 'var(--text-2)', marginBottom: 12, padding: '0 8px', overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>
+              {user.email}
+            </div>
+            <button 
+              onClick={() => signOut(auth)} 
+              style={{ 
+                width: '100%', padding: '8px', borderRadius: 8, cursor: 'pointer',
+                background: 'var(--red-dim)', color: 'var(--red)', border: '1px solid var(--red-border)',
+                fontSize: 12, fontWeight: 600, display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 8
+              }}
+            >
+              <LogOut size={14} /> Sign Out
+            </button>
           </div>
         </aside>
 
         {/* Main Content Area */}
-        <div style={{ flex: 1, marginLeft: isMobile ? 0 : 280, display: 'flex', flexDirection: 'column' }}>
+        <div style={{ flex: 1, marginLeft: isMobile ? 0 : 240, display: 'flex', flexDirection: 'column' }}>
           <header style={{
-            height: 64, padding: '0 24px', display: 'flex', alignItems: 'center', justifyContent: 'space-between',
-            borderBottom: '1px solid var(--border)', background: 'rgba(5, 5, 8, 0.8)', backdropFilter: 'blur(12px)',
+            height: 56, padding: '0 24px', display: 'flex', alignItems: 'center', justifyContent: 'space-between',
+            borderBottom: '1px solid var(--border)', background: 'rgba(6, 6, 10, 0.85)', backdropFilter: 'blur(12px)',
             position: 'sticky', top: 0, zIndex: 40,
           }}>
             <div style={{ display: 'flex', alignItems: 'center', gap: 16 }}>
               {isMobile && (
-                <button onClick={() => setSidebarOpen(true)} style={{ background: 'none', border: 'none', color: 'white', cursor: 'pointer', padding: 4 }}>
-                  <Menu size={22} />
+                <button onClick={() => setSidebarOpen(true)} style={{ background: 'none', border: 'none', color: 'var(--text-1)', cursor: 'pointer', padding: 4 }}>
+                  <Menu size={20} />
                 </button>
               )}
-              <h2 style={{ fontSize: 16, fontWeight: 600 }}>{activeTabInfo?.label}</h2>
+              <h2 style={{ fontSize: 18, color: 'var(--text-1)', fontFamily: 'var(--font-display)' }}>
+                {activeTabInfo?.label}
+              </h2>
             </div>
             
             <div style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
-              <div style={{
-                display: 'flex', alignItems: 'center', gap: 6,
-                padding: '4px 10px', borderRadius: 20,
-                background: 'rgba(66,133,244,0.1)',
-                border: '1px solid rgba(66,133,244,0.2)',
-                fontSize: 11, fontWeight: 700,
-                color: '#4285f4'
+              <div style={{ 
+                display: 'flex', alignItems: 'center', gap: 8, padding: '4px 10px', 
+                borderRadius: 20, border: '1px solid var(--border)', background: 'var(--bg-1)',
+                fontSize: 11, fontFamily: 'var(--font-mono)' 
               }}>
-                ✦ Gemini 2.0
-              </div>
-              <div style={{ display: 'flex', alignItems: 'center', gap: 12, padding: '6px 12px', borderRadius: 20, background: 'var(--bg-secondary)', border: '1px solid var(--border)', fontSize: 11 }}>
-                <div style={{ width: 6, height: 6, borderRadius: '50%', background: freshnessColor, boxShadow: `0 0 8px ${freshnessColor}` }}></div>
-                <span style={{ color: 'var(--text-secondary)' }}>{freshnessText}</span>
+                <div style={{ 
+                  width: 6, height: 6, borderRadius: '50%', background: freshnessColor, 
+                  boxShadow: `0 0 8px ${freshnessColor}` 
+                }} />
+                <span style={{ color: 'var(--text-2)' }}>{freshnessText}</span>
               </div>
             </div>
           </header>
 
           <main style={{ padding: '24px', flex: 1 }}>
-            {tabLoading ? <LoadingCard /> : <ActiveComponent />}
+            <ActiveComponent />
           </main>
         </div>
 
         {/* Toast Notifications */}
         <div style={{ position: 'fixed', bottom: 24, right: 24, zIndex: 1000, display: 'flex', flexDirection: 'column', gap: 12 }}>
           {toasts.map(toast => (
-            <div key={toast.id} className="card" style={{ border: `1px solid ${toast.type === 'success' ? '#4ADE80' : '#ef4444'}`, minWidth: 280, boxShadow: '0 10px 30px rgba(0,0,0,0.5)' }}>
+            <div 
+              key={toast.id} 
+              className="card-base" 
+              style={{ 
+                border: `1px solid ${toast.type === 'success' ? 'var(--green-border)' : 'var(--red-border)'}`, 
+                minWidth: 280, padding: '16px', background: toast.type === 'success' ? 'var(--green-dim)' : 'var(--red-dim)',
+                color: toast.type === 'success' ? 'var(--green)' : 'var(--red)',
+                boxShadow: '0 10px 30px rgba(0,0,0,0.5)',
+                fontWeight: 600, fontSize: 13
+              }}
+            >
               {toast.message}
             </div>
           ))}
@@ -552,6 +507,23 @@ export default function AppShell() {
         }
         @media (min-width: 769px) {
           .sidebar { transform: translateX(0) !important; }
+        }
+        .nav-item:not(.active):hover {
+          background: var(--bg-2) !important;
+          color: var(--text-1) !important;
+        }
+        input, textarea {
+          background: var(--bg-1);
+          border: 1px solid var(--border);
+          border-radius: 10px;
+          padding: 10px 14px;
+          color: var(--text-1);
+          font-size: 14px;
+          outline: none;
+          transition: border-color 0.2s;
+        }
+        input:focus, textarea:focus {
+          border-color: var(--gold);
         }
       `}} />
       </MarketDataContext.Provider>

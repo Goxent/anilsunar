@@ -1,6 +1,89 @@
 @import "tailwindcss";
 @config "./tailwind.config.js";
 
+:root {
+  /* Backgrounds */
+  --bg-0: #06060a;
+  --bg-1: #0d0d14;
+  --bg-2: #12121c;
+  --bg-hover: #17172200;
+
+  /* Borders */
+  --border: rgba(255,255,255,0.07);
+  --border-strong: rgba(255,255,255,0.14);
+
+  /* Gold accent */
+  --gold: #d4af37;
+  --gold-dim: rgba(212,175,55,0.08);
+  --gold-border: rgba(212,175,55,0.2);
+  --gold-text: #e8c547;
+
+  /* Semantic */
+  --green: #22c55e;
+  --green-dim: rgba(34,197,94,0.08);
+  --green-border: rgba(34,197,94,0.2);
+  --red: #ef4444;
+  --red-dim: rgba(239,68,68,0.08);
+  --red-border: rgba(239,68,68,0.2);
+  --blue: #3b82f6;
+  --blue-dim: rgba(59,130,246,0.08);
+  --blue-border: rgba(59,130,246,0.2);
+  --amber: #f59e0b;
+  --amber-dim: rgba(245,158,11,0.08);
+  --amber-border: rgba(245,158,11,0.2);
+  --purple: #a855f7;
+  --purple-dim: rgba(168,85,247,0.08);
+  --purple-border: rgba(168,85,247,0.2);
+
+  /* Text */
+  --text-1: #f0f0f5;
+  --text-2: #7a7a8c;
+  --text-3: #3a3a4a;
+
+  /* Typography */
+  --font-display: 'DM Serif Display', serif;
+  --font-body: 'DM Sans', sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+}
+
+/* Global resets that use the new variables */
+body {
+  font-family: var(--font-body);
+  background: var(--bg-0);
+  color: var(--text-1);
+}
+
+/* Utility classes for the new design system */
+.font-display { font-family: var(--font-display) !important; }
+.font-mono    { font-family: var(--font-mono) !important; }
+
+.card-base {
+  background: var(--bg-1);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 3px 10px;
+  border-radius: 20px;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  font-family: var(--font-mono);
+}
+.badge-green  { background: var(--green-dim);  color: var(--green);  border: 1px solid var(--green-border); }
+.badge-red    { background: var(--red-dim);    color: var(--red);    border: 1px solid var(--red-border); }
+.badge-amber  { background: var(--amber-dim);  color: var(--amber);  border: 1px solid var(--amber-border); }
+.badge-blue   { background: var(--blue-dim);   color: var(--blue);   border: 1px solid var(--blue-border); }
+.badge-purple { background: var(--purple-dim); color: var(--purple); border: 1px solid var(--purple-border); }
+.badge-gold   { background: var(--gold-dim);   color: var(--gold);   border: 1px solid var(--gold-border); }
+.badge-gray   { background: rgba(255,255,255,0.04); color: var(--text-2); border: 1px solid var(--border); }
+
+
+
 /* ── Custom Scrollbar ── */
 ::-webkit-scrollbar { width: 6px; }
 ::-webkit-scrollbar-track { background: #000000; }
@@ -249,6 +332,7 @@ tr:hover td { background: rgba(255,255,255,0.02); }
   background: linear-gradient(135deg, rgba(212,175,55,0.4), transparent 40%, rgba(212,175,55,0.1));
   -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
   -webkit-mask-composite: xor;
+  -webkit-mask-composite: exclude;
   mask-composite: exclude;
   pointer-events: none;
 }

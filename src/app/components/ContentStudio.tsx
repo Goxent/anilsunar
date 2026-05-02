@@ -6,7 +6,7 @@ import {
   PenTool, Clock, Trash, Copy, Brain, Share2, Target, Check, Briefcase
 } from 'lucide-react';
 import { useToast } from '../AppShell';
-import { callGemini } from '../lib/ai';
+import { callAI } from '../lib/ai';
 
 interface ContentIdea {
   id: string;
@@ -101,7 +101,7 @@ Generate exactly 4 LinkedIn post ideas. For each idea:
 
 Respond ONLY in valid JSON array format. No markdown, no explanation.`;
 
-        const result = await callGemini(linkedinPrompt);
+        const result = await callAI(linkedinPrompt);
         const clean = result.replace(/```json|```/g, '').trim();
         const parsed = JSON.parse(clean);
         setLinkedInIdeas(parsed);
@@ -131,7 +131,7 @@ Respond ONLY in valid JSON array format. No markdown, no explanation.`;
           Respond in a clean Markdown format.`;
         }
 
-        const result = await callGemini(prompt);
+        const result = await callAI(prompt);
         setResearchResult(result);
         showToast("Research complete!", "success");
       }
