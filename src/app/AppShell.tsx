@@ -30,6 +30,7 @@ import NoticeTracker    from './components/NoticeTracker'
 import ContentStudio from './components/ContentStudio'
 import ControlPanel  from './components/ControlPanel'
 import SiteStudio    from './components/SiteStudio'
+import { useFirebaseData } from './hooks/useFirebaseData'
 
 import LoadingCard from './components/LoadingCard'
 import { auth, googleProvider, db } from './lib/firebase'
@@ -40,12 +41,7 @@ import localOmniData from './data/market-omni-data.json'
 import localAiBrief from './data/ai_digest.json'
 
 // Context for Cloud Data
-const MarketDataContext = createContext<{
-  omniData: any;
-  aiBrief: any;
-  loading: boolean;
-  refresh: () => void;
-}>({ omniData: null, aiBrief: null, loading: true, refresh: () => {} });
+const MarketDataContext = createContext<any>(null)
 
 export const useMarketData = () => useContext(MarketDataContext);
 
@@ -102,38 +98,8 @@ export default function AppShell() {
   const [isMobile, setIsMobile] = useState(typeof window !== 'undefined' ? window.innerWidth < 768 : false)
   const [activeTab, setActiveTab] = useState('brief')
   
-  const [omniData, setOmniData] = useState<any>(null)
-  const [aiBrief, setAiBrief] = useState<any>(null)
-  const [dataLoading, setDataLoading] = useState(true)
-
-  const fetchCloudData = async () => {
-    setDataLoading(true)
-    try {
-      const [marketRes, intelRes] = await Promise.all([
-        fetch('/api/get-market-data?type=market'),
-        fetch('/api/get-market-data?type=intel')
-      ])
-      
-      let mData = null;
-      let iData = null;
-
-      if (marketRes.ok) mData = await marketRes.json();
-      if (intelRes.ok) iData = await intelRes.json();
-
-      setOmniData(mData || localOmniData);
-      setAiBrief(iData || localAiBrief);
-    } catch (err) {
-      console.warn("Failed to fetch cloud data, using local fallback:", err)
-      setOmniData(localOmniData);
-      setAiBrief(localAiBrief);
-    } finally {
-      setDataLoading(false)
-    }
-  }
-
-  useEffect(() => {
-    fetchCloudData()
-  }, [])
+  const firebaseData = useFirebaseData();
+  const { omni: omniData, intelligence: aiBrief, loading: dataLoading } = firebaseData;
 
   useEffect(() => {
     const handleResize = () => setIsMobile(window.innerWidth < 768)
@@ -363,8 +329,8 @@ export default function AppShell() {
   const freshnessText = dataAgeHours < 24 ? "Live · today" : dataAgeHours < 48 ? "24h old" : "⚠ Stale"
 
   return (
-    <ToastContext.Provider value={{ showToast }}>
-      <MarketDataContext.Provider value={{ omniData, aiBrief, loading: dataLoading, refresh: fetchCloudData }}>
+    <MarketDataContext.Provider value={firebaseData}>
+      <ToastContext.Provider value={{ showToast }}>
         <div style={{ display: 'flex', minHeight: '100vh', background: 'var(--bg-0)' }}>
           
           {/* Mobile Sidebar Overlay */}
@@ -537,7 +503,7 @@ export default function AppShell() {
           border-color: var(--gold);
         }
       `}} />
-      </MarketDataContext.Provider>
-    </ToastContext.Provider>
+      </ToastContext.Provider>
+    </MarketDataContext.Provider>
   )
 }
