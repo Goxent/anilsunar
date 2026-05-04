@@ -1,4 +1,5 @@
-import { chromium } from 'playwright'
+import { chromium } from 'playwright-extra'
+import stealth from 'puppeteer-extra-plugin-stealth'
 import fs from 'fs'
 import path from 'path'
 import { fileURLToPath } from 'url'
@@ -122,7 +123,18 @@ function buildStructuredData(scrapedPages) {
 }
 
 async function scrape() {
-  console.log('🕷️ Omni Crawler — Starting...')
+  console.log('🕷️ Omni Crawler (Stealth) — Starting...')
+  
+  // 0. CREATE BACKUP (Graceful Degradation)
+  const backupPath = OUTPUT_PATH.replace('.json', '.backup.json')
+  if (fs.existsSync(OUTPUT_PATH)) {
+    fs.copyFileSync(OUTPUT_PATH, backupPath)
+    console.log('💾 Created backup of previous data.')
+  }
+
+  // Inject stealth plugin to bypass Cloudflare/Bot-detection
+  chromium.use(stealth())
+
   const browser = await chromium.launch({
     headless: true,
     args: [
@@ -130,10 +142,13 @@ async function scrape() {
       '--disable-setuid-sandbox',
       '--disable-dev-shm-usage',
       '--disable-gpu',
-      '--window-size=1280,800'
+      '--window-size=1280,800',
+      '--disable-blink-features=AutomationControlled'
     ]
   })
-  const context = await browser.newContext()
+  const context = await browser.newContext({
+    userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'
+  })
   const page = await context.newPage()
 
   const dataLake = {
@@ -210,7 +225,17 @@ async function scrape() {
     console.log('\n📊 Structured data summary:')
     console.log(JSON.stringify(dataLake.summary, null, 2))
 
-    // 4. SAVE
+    // 4. VALIDATE & SAVE
+    if (dataLake.summary.stockCount === 0 || dataLake.summary.dataQuality === 'empty') {
+      console.error('\n❌ CRITICAL: Scraper yielded 0 stocks. Site may be blocking us or layout changed.')
+      if (fs.existsSync(backupPath)) {
+        console.log('🔄 Restoring data from backup...')
+        fs.copyFileSync(backupPath, OUTPUT_PATH)
+        console.log('✅ Backup restored successfully.')
+      }
+      process.exit(1) // Fail the GitHub Action so the user is notified
+    }
+
     fs.mkdirSync(path.dirname(OUTPUT_PATH), { recursive: true })
     fs.writeFileSync(OUTPUT_PATH, JSON.stringify(dataLake, null, 2))
     console.log(`\n✅ Saved to: ${OUTPUT_PATH}`)
