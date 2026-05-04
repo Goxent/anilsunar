@@ -22,8 +22,8 @@ function loadJson(fileName) {
 
 // Helper to call Gemini API
 async function callGeminiAPI(promptText) {
-  const apiKey = process.env.VITE_GEMINI_API_KEY;
-  if (!apiKey) throw new Error('VITE_GEMINI_API_KEY is missing');
+  const apiKey = process.env.GEMINI_API_KEY;
+  if (!apiKey) throw new Error('GEMINI_API_KEY is missing');
   
   const fullPrompt = promptText + "\n\nReturn ONLY raw JSON, no markdown fences, no preamble.";
   

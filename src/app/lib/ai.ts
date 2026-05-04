@@ -1,56 +1,42 @@
 export type AIProvider = 'gemini' | 'claude'
 
 // ============================================================
-// CONFIG — change provider here when Claude API is ready
+// CONFIG
 // ============================================================
 const DEFAULT_PROVIDER: AIProvider = 'gemini'
-// When you have Claude API key, change to:
-// const DEFAULT_PROVIDER: AIProvider = 'claude'
 
 // ============================================================
-// GEMINI — free, works now
+// GEMINI — routed through server-side proxy (/api/gemini-proxy)
+// The GEMINI_API_KEY lives only on the server — never in the browser.
 // ============================================================
-async function callGemini(prompt: string): Promise<string> {
-  const apiKey = import.meta.env.VITE_GEMINI_API_KEY
+async function callGemini(
+  prompt: string,
+  options?: { maxTokens?: number; temperature?: number }
+): Promise<string> {
+  const res = await fetch('/api/gemini-proxy', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({
+      prompt,
+      model: 'gemini-2.0-flash',
+      maxTokens: options?.maxTokens ?? 2048,
+      temperature: options?.temperature ?? 0.7
+    })
+  })
 
-  if (!apiKey || apiKey === 'your_gemini_api_key_here') {
-    throw new Error(
-      'VITE_GEMINI_API_KEY not set. Get a free key from aistudio.google.com'
-    )
+  if (!res.ok) {
+    const err = await res.json().catch(() => ({ error: 'Unknown error' }))
+    throw new Error(`Gemini proxy error ${res.status}: ${err?.error || 'Unknown'}`)
   }
 
-  const response = await fetch(
-    `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${apiKey}`,
-    {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({
-        contents: [{ parts: [{ text: prompt }] }],
-        generationConfig: {
-          temperature: 0.7,
-          maxOutputTokens: 2048
-        }
-      })
-    }
-  )
-
-  if (!response.ok) {
-    const err = await response.json().catch(() => ({}))
-    throw new Error(
-      `Gemini error ${response.status}: ${err?.error?.message || 'Unknown'}`
-    )
-  }
-
-  const data = await response.json()
-  const text = data?.candidates?.[0]?.content?.parts?.[0]?.text
-  if (!text) throw new Error('Empty response from Gemini')
+  const data = await res.json()
+  const text = data?.text
+  if (!text) throw new Error('Empty response from Gemini proxy')
   return text
 }
 
 // ============================================================
-// CLAUDE — paid, add when ready
-// Goes through /api/claude-analyze serverless route
-// so the API key is NEVER exposed in browser
+// CLAUDE — goes through /api/claude-analyze serverless route
 // ============================================================
 async function callClaude(prompt: string): Promise<string> {
   const response = await fetch('/api/claude-analyze', {
@@ -95,7 +81,6 @@ export function parseAIJson<T>(text: string, fallback: T): T {
       .replace(/```json/gi, '')
       .replace(/```/g, '')
       .trim()
-    // Find first { or [ and last } or ]
     const start = clean.search(/[\[{]/)
     const end = Math.max(clean.lastIndexOf('}'), clean.lastIndexOf(']'))
     if (start === -1 || end === -1) return fallback

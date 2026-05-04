@@ -134,7 +134,7 @@ const GLOBAL_SOURCES = [
 // Gemini: generate article summaries
 // ────────────────────────────────────────────────
 async function generateSummaries(articles, globalArticles) {
-  const key = process.env.VITE_GEMINI_API_KEY
+  const key = process.env.GEMINI_API_KEY
   if (!key || articles.length === 0) return articles
 
   const prompt = `You are a Nepal financial news analyst.

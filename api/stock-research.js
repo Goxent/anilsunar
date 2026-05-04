@@ -4,7 +4,7 @@ export default async function handler(req, res) {
   const { symbol, ltp, sector } = req.body || {}
   if (!symbol) return res.status(400).json({ error: 'symbol required' })
 
-  const geminiKey = process.env.VITE_GEMINI_API_KEY
+  const geminiKey = process.env.GEMINI_API_KEY
   if (!geminiKey) return res.status(503).json({ error: 'Gemini key not configured' })
 
   // Gather context from multiple sources

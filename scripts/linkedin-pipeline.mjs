@@ -25,8 +25,8 @@ const sleep = ms => new Promise(r => setTimeout(r, ms))
 // GEMINI — Research phase (FREE)
 // ============================================================
 async function geminiResearch(prompt) {
-  const key = process.env.VITE_GEMINI_API_KEY
-  if (!key) throw new Error('VITE_GEMINI_API_KEY missing')
+  const key = process.env.GEMINI_API_KEY
+  if (!key) throw new Error('GEMINI_API_KEY missing')
 
   const res = await fetch(
     `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${key}`,

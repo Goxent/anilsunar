@@ -10,8 +10,8 @@ const NOTICES_PATH = path.join(__dirname, '../src/app/data/notices.json')
 const OUT_PATH = path.join(__dirname, '../src/app/data/ai_digest.json')
 
 async function callGemini(prompt) {
-  const key = process.env.VITE_GEMINI_API_KEY
-  if (!key) throw new Error('VITE_GEMINI_API_KEY not set')
+  const key = process.env.GEMINI_API_KEY
+  if (!key) throw new Error('GEMINI_API_KEY not set')
   const res = await fetch(
     `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${key}`,
     { method:'POST', headers:{'Content-Type':'application/json'},
@@ -113,7 +113,7 @@ Only include stocks with actual signal data. If fewer than 5 signals, return few
   let linkedinIdeas = []
   let topPicks = []
 
-  const hasGemini = !!process.env.VITE_GEMINI_API_KEY
+  const hasGemini = !!process.env.GEMINI_API_KEY
 
   if (hasGemini) {
     try {
@@ -142,8 +142,8 @@ Only include stocks with actual signal data. If fewer than 5 signals, return few
       } catch(e) { console.warn('⚠️ Top picks failed:', e.message) }
     }
   } else {
-    console.log('⚠️  No VITE_GEMINI_API_KEY — saving placeholder digest')
-    marketSummary = 'Add VITE_GEMINI_API_KEY to .env to enable AI market summaries.'
+    console.log('⚠️  No GEMINI_API_KEY — saving placeholder digest')
+    marketSummary = 'Add GEMINI_API_KEY to .env to enable AI market summaries.'
   }
 
   const output = {

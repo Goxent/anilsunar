@@ -9,8 +9,8 @@ const IN = path.join(__dirname, '../src/app/data/notices.json')
 const OUT = path.join(__dirname, '../src/app/data/notice_posts.json')
 
 async function callGemini(prompt) {
-  const key = process.env.VITE_GEMINI_API_KEY
-  if (!key) throw new Error('VITE_GEMINI_API_KEY not set')
+  const key = process.env.GEMINI_API_KEY
+  if (!key) throw new Error('GEMINI_API_KEY not set')
   const res = await fetch(
     `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${key}`,
     { method:'POST', headers:{'Content-Type':'application/json'},
@@ -76,7 +76,7 @@ async function run() {
   const toProcess = notices.filter(n => n.isNew && !existing[n.id]).slice(0,10)
   console.log(`📋 Processing ${toProcess.length} new notices`)
 
-  const hasGemini = !!process.env.VITE_GEMINI_API_KEY
+  const hasGemini = !!process.env.GEMINI_API_KEY
   if (!hasGemini) console.log('⚠️  No Gemini key — using templates')
 
   for (const notice of toProcess) {

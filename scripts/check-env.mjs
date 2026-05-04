@@ -1,7 +1,7 @@
 import dotenv from 'dotenv'
 dotenv.config()
 
-const required = ['VITE_GEMINI_API_KEY','SASTO_EMAIL','SASTO_PASSWORD']
+const required = ['GEMINI_API_KEY','SASTO_EMAIL','SASTO_PASSWORD']
 const optional = ['ANTHROPIC_API_KEY','RESEND_API_KEY','TO_EMAIL',
   'VITE_FIREBASE_API_KEY','VITE_DASHBOARD_PASSWORD']
 

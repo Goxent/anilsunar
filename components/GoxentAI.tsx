@@ -32,32 +32,35 @@ const GoxentAI: React.FC = () => {
     setIsLoading(true);
     setOutput('');
 
+    const systemPrefix = "You are Goxent's digital twin — a UI/UX designer, Tech Enthusiast, Auditor and Poet. Write a short, creative 4-line poem or rap verse about the user's topic that mixes tech/finance terminology with artistic flair. Keep it classy, clever, and short.\n\nTopic: ";
+
     try {
-      // @ts-ignore
-      const apiKey = import.meta.env.VITE_GEMINI_API_KEY || '';
-      if (!apiKey) {
-        setOutput("Please configure the VITE_GEMINI_API_KEY in your .env file to unleash the poet.");
-        setIsLoading(false);
+      const res = await fetch('/api/gemini-proxy', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          prompt: systemPrefix + prompt,
+          model: 'gemini-2.0-flash',
+          maxTokens: 256,
+          temperature: 0.9
+        })
+      });
+
+      if (!res.ok) {
+        setOutput("My creative ink is dry right now. The AI server isn't responding — try again later.");
         return;
       }
 
-      const ai = new GoogleGenAI({ apiKey });
-      const systemInstruction = "You are Goxent's digital twin. You are a UI/UX designer, Tech Enthusiast, Auditor and Poet. Write a short, creative 4-line poem or rap verse about the user's topic that mixes tech/finance terminology with artistic flair. Keep it classy, clever, and short.";
-
-      const response = await ai.models.generateContent({
-        model: 'gemini-2.0-flash-exp',
-        contents: prompt,
-        config: { systemInstruction }
-      });
-
-      setOutput(response.text || 'Could not generate a poem. Try again!');
+      const data = await res.json();
+      setOutput(data.text || 'Could not generate a poem. Try again!');
     } catch (error) {
       console.error(error);
-      setOutput("My creative ink is dry right now. Please check the API key or try again later.");
+      setOutput("My creative ink is dry right now. Please try again later.");
     } finally {
       setIsLoading(false);
     }
   };
+
 
   return (
     <div id="ai-interact" className="mt-32 pt-32 border-t border-white/5 relative overflow-hidden">

@@ -80,7 +80,7 @@ jobs:
       - name: Run Notice AI Writer
         if: ${{ github.event.inputs.sync_type != 'nepse-only' }}
         env:
-          VITE_GEMINI_API_KEY: ${{ secrets.VITE_GEMINI_API_KEY }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
         run: node scripts/notice-ai-writer.mjs
         continue-on-error: true
         timeout-minutes: 5
@@ -88,7 +88,7 @@ jobs:
       # ---- AI ANALYST (3-stage Gemini pipeline) ----
       - name: Run AI Analyst
         env:
-          VITE_GEMINI_API_KEY: ${{ secrets.VITE_GEMINI_API_KEY }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
           TO_EMAIL: ${{ secrets.TO_EMAIL }}
         run: node scripts/ai-digest.mjs

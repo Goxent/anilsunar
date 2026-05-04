@@ -105,16 +105,14 @@ export default function StockAnalyzer() {
       const fund = fundMap[sym] || null
       setFundamentals(fund)
 
-      // 3. AI ANALYSIS PHASE — try server API first, fall back to direct Gemini for local dev
+      // 3. AI ANALYSIS PHASE — always via server (key never in browser)
       setPhase('ai')
-
-      const isLocalDev = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1'
-      const geminiKey = (import.meta as any).env?.VITE_GEMINI_API_KEY
 
       let aiResult: any = null
 
-      if (!isLocalDev) {
-        // Production: use Vercel serverless which also calls Claude if key is set
+      // Always try the stock-research API first (production Vercel)
+      // In local dev, Vite proxies /api/* to the gemini proxy server
+      try {
         const researchRes = await fetch('/api/stock-research', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
@@ -123,16 +121,13 @@ export default function StockAnalyzer() {
         if (researchRes.ok) {
           aiResult = await researchRes.json()
         } else {
-          const err = await researchRes.json().catch(() => ({}))
-          throw new Error(err.error || 'Research API failed')
+          throw new Error(`stock-research API returned ${researchRes.status}`)
         }
-      } else {
-        // Local dev: call Gemini directly from browser (no Claude supervisor)
-        if (!geminiKey) throw new Error('VITE_GEMINI_API_KEY not set in .env')
-
+      } catch {
+        // Fallback: use the generic Gemini proxy
         const prompt = `You are a NEPSE stock analyst. Analyze ${sym} comprehensively.
 
-Stock data from today's scan:
+Stock data:
 Symbol: ${sym} | LTP: ${scrapedInfo.ltp} | Change: ${scrapedInfo.change} | Volume: ${scrapedInfo.volume} | Sector: ${scrapedInfo.sector}
 Fundamentals: ${JSON.stringify(fund || {})}
 
@@ -141,48 +136,25 @@ Return ONLY valid JSON (no markdown):
   "symbol": "${sym}",
   "currentPrice": ${parseFloat(String(scrapedInfo.ltp).replace(/,/g,'')) || 0},
   "oneLinerSummary": "One sentence about this stock right now",
-  "technicalView": {
-    "trend": "UPTREND or DOWNTREND or SIDEWAYS",
-    "keyLevel": "Important price level to watch",
-    "momentum": "STRONG or MODERATE or WEAK",
-    "comment": "2 sentences on technical position"
-  },
-  "fundamentalView": {
-    "peRatio": "value or null",
-    "eps": "value or null",
-    "bookValue": "value or null",
-    "pbRatio": "calculated or null",
-    "verdict": "UNDERVALUED or FAIRLY_VALUED or OVERVALUED",
-    "comment": "2 sentences on fundamental strength"
-  },
-  "newsAndSentiment": {
-    "recentNews": ["recent development 1", "recent development 2"],
-    "socialSentiment": "BULLISH or BEARISH or NEUTRAL",
-    "keyDevelopment": "Most important recent development"
-  },
-  "globalContext": "How global market conditions affect this stock/sector",
-  "brokerActivity": "Institutional interest assessment based on available data",
+  "technicalView": { "trend": "UPTREND or DOWNTREND or SIDEWAYS", "keyLevel": "price level", "momentum": "STRONG or MODERATE or WEAK", "comment": "2 sentences" },
+  "fundamentalView": { "peRatio": null, "eps": null, "bookValue": null, "pbRatio": null, "verdict": "UNDERVALUED or FAIRLY_VALUED or OVERVALUED", "comment": "2 sentences" },
+  "newsAndSentiment": { "recentNews": [], "socialSentiment": "NEUTRAL", "keyDevelopment": "" },
+  "globalContext": "How global conditions affect this sector",
+  "brokerActivity": "Institutional interest assessment",
   "overallVerdict": "BUY or ACCUMULATE or HOLD or AVOID",
   "riskLevel": "LOW or MEDIUM or HIGH",
-  "targetPrice": "estimated NPR value or null",
-  "stopLoss": "estimated NPR value or null",
-  "investorType": "LONG_TERM or SWING or BOTH or NEITHER"
+  "targetPrice": null,
+  "stopLoss": null,
+  "investorType": "LONG_TERM or SWING or BOTH"
 }`
-
-        const gemRes = await fetch(
-          `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${geminiKey}`,
-          {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({
-              contents: [{ parts: [{ text: prompt }] }],
-              generationConfig: { temperature: 0.5, maxOutputTokens: 1500 }
-            })
-          }
-        )
-        const gemData = await gemRes.json()
-        if (gemData.error) throw new Error(gemData.error.message)
-        const text = gemData?.candidates?.[0]?.content?.parts?.[0]?.text || '{}'
+        const proxyRes = await fetch('/api/gemini-proxy', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ prompt, maxTokens: 1500, temperature: 0.5 })
+        })
+        if (!proxyRes.ok) throw new Error('Gemini proxy also unavailable')
+        const proxyData = await proxyRes.json()
+        const text = proxyData.text || '{}'
         const clean = text.replace(/```json|```/g, '').trim()
         const s = clean.search(/[\[{]/)
         const e = Math.max(clean.lastIndexOf('}'), clean.lastIndexOf(']'))
