@@ -52,26 +52,59 @@ async function syncData() {
       console.log(`✅ Historical record created for ${dateKey}`);
     }
 
-    // 2. Sync AI Digest
-    if (fs.existsSync(digestPath)) {
-      const digestData = JSON.parse(fs.readFileSync(digestPath, 'utf8'));
+    // 2. Sync AI Intelligence
+    const deepIntelligencePath = path.join(__dirname, '../src/app/data/deep_intelligence.json');
+    if (fs.existsSync(deepIntelligencePath)) {
+      const digestData = JSON.parse(fs.readFileSync(deepIntelligencePath, 'utf8'));
       await db.collection('intelligence').doc('latest').set({
         ...digestData,
         lastUpdated: admin.firestore.FieldValue.serverTimestamp()
       });
-      console.log('✅ AI Digest synced to Firestore (intelligence/latest)');
+      console.log('✅ AI Intelligence synced to Firestore (intelligence/latest)');
     }
 
-    // 3. Sync Deep Broker Holdings
-    const deepBrokerPath = path.join(__dirname, '../src/app/data/deep-broker-holdings.json');
-    if (fs.existsSync(deepBrokerPath)) {
-      const deepBrokerData = JSON.parse(fs.readFileSync(deepBrokerPath, 'utf8'));
-      await db.collection('broker_analytics').doc('latest').set({
-        ...deepBrokerData,
+    // 3. Sync Quant Data
+    const quantPath = path.join(__dirname, '../src/app/data/quant-top10.json');
+    if (fs.existsSync(quantPath)) {
+      const quantData = JSON.parse(fs.readFileSync(quantPath, 'utf8'));
+      await db.collection('quant').doc('latest').set({
+        ...quantData,
         lastUpdated: admin.firestore.FieldValue.serverTimestamp()
       });
-      console.log('✅ Deep Broker Holdings synced to Firestore (broker_analytics/latest)');
+      console.log('✅ Quant Data synced to Firestore (quant/latest)');
+      
+      const dateKey = new Date().toISOString().split('T')[0];
+      await db.collection('quant_history').doc(dateKey).set({
+        ...quantData,
+        lastUpdated: admin.firestore.FieldValue.serverTimestamp()
+      });
     }
+
+    // 4. Sync Supplemental Data (Fundamentals, Technicals, Broker)
+    const fundPath = path.join(__dirname, '../src/app/data/fundamental-data.json');
+    if (fs.existsSync(fundPath)) {
+      await db.collection('market').doc('fundamentals').set({
+        ...JSON.parse(fs.readFileSync(fundPath, 'utf8')),
+        lastUpdated: admin.firestore.FieldValue.serverTimestamp()
+      });
+    }
+
+    const techPath = path.join(__dirname, '../src/app/data/technical-signals.json');
+    if (fs.existsSync(techPath)) {
+      await db.collection('market').doc('technicals').set({
+        ...JSON.parse(fs.readFileSync(techPath, 'utf8')),
+        lastUpdated: admin.firestore.FieldValue.serverTimestamp()
+      });
+    }
+
+    const brokPath = path.join(__dirname, '../src/app/data/broker-flow-5d.json');
+    if (fs.existsSync(brokPath)) {
+      await db.collection('market').doc('broker_flow').set({
+        ...JSON.parse(fs.readFileSync(brokPath, 'utf8')),
+        lastUpdated: admin.firestore.FieldValue.serverTimestamp()
+      });
+    }
+    console.log('✅ Supplemental Market Data synced to Firestore');
 
     // 4. Sync Individual Tearsheets (Stock-wise data)
     const tearsheetDir = path.join(__dirname, '../src/app/data/tearsheets');

@@ -13,16 +13,11 @@ import {
 } from 'lucide-react';
 import { useMarketData } from '../AppShell';
 
-// Optional datasets
-import fundamentalData from '../data/fundamental-data.json';
-import technicalData from '../data/technical-signals.json';
-import brokerData from '../data/broker-flow-5d.json';
-
 // Types
 type SortConfig = { key: string; direction: 'asc' | 'desc' } | null;
 
 export default function StockScreener() {
-  const { omniData } = useMarketData();
+  const { omniData, fundamentals, technicals, brokerFlow, quant } = useMarketData();
   
   // State
   const [search, setSearch] = useState('');
@@ -36,9 +31,9 @@ export default function StockScreener() {
     if (!omniData || !omniData.structured) return [];
 
     const stocks = omniData.structured.topStocks || [];
-    const fundMap = new Map((fundamentalData?.stocks || []).map((s: any) => [s.symbol, s]));
-    const techMap = new Map((technicalData?.stocks || []).map((s: any) => [s.symbol, s]));
-    const brokerMap = new Map((brokerData?.brokerFlow || []).map((s: any) => [s.symbol, s]));
+    const fundMap = new Map((fundamentals?.stocks || []).map((s: any) => [s.symbol, s]));
+    const techMap = new Map((technicals?.stocks || []).map((s: any) => [s.symbol, s]));
+    const brokerMap = new Map((brokerFlow?.brokerFlow || []).map((s: any) => [s.symbol, s]));
     const swingMap = new Map((omniData.structured.swingSignals || []).map((s: any) => [s.symbol, s]));
     
     // Attempt to extract sector map from scrapedPages if missing from topStocks directly
