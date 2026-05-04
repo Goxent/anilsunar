@@ -5,13 +5,7 @@ import {
   CheckCircle2, 
   Circle, 
   AlertCircle,
-  TrendingUp,
   Activity,
-  FileText,
-  BarChart3,
-  ShieldAlert,
-  Zap,
-  ArrowRight,
   Globe,
   Sparkles
 } from 'lucide-react'
@@ -39,13 +33,13 @@ export default function StockAnalyzer() {
     )
   }, [])
 
-  // Quick Picks
+  // Quick Picks — reads new activePicks top-level field, falls back to stage3
   const quickPicks = useMemo(() => {
-    const stage3 = (deepIntelligence as any)?.stage3 || {}
-    const topPicks = stage3.topPicks || []
-    if (topPicks.length > 0) {
-      return topPicks.slice(0, 8).map((p: any) => p.symbol.toUpperCase())
-    }
+    const intel = deepIntelligence as any
+    const active = intel?.activePicks || []
+    if (active.length > 0) return active.slice(0, 8).map((p: any) => p.symbol?.toUpperCase()).filter(Boolean)
+    const topPicks = intel?.stage3?.topPicks || []
+    if (topPicks.length > 0) return topPicks.slice(0, 8).map((p: any) => p.symbol?.toUpperCase()).filter(Boolean)
     return ['NABIL','UPPER','CHCL','GBIME','NTC','HIDCL','EBL','NLIC']
   }, [])
 
@@ -111,27 +105,90 @@ export default function StockAnalyzer() {
       const fund = fundMap[sym] || null
       setFundamentals(fund)
 
-      // 3. AI ANALYSIS PHASE — server-side research API (Gemini + optional Claude)
+      // 3. AI ANALYSIS PHASE — try server API first, fall back to direct Gemini for local dev
       setPhase('ai')
 
-      const researchRes = await fetch('/api/stock-research', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          symbol: sym,
-          ltp: scrapedInfo.ltp,
-          sector: scrapedInfo.sector,
-          localFundamentals: fund,
-          localScraped: scrapedInfo
-        })
-      })
+      const isLocalDev = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1'
+      const geminiKey = (import.meta as any).env?.VITE_GEMINI_API_KEY
 
-      if (!researchRes.ok) {
-        const err = await researchRes.json()
-        throw new Error(err.error || 'Research API failed')
+      let aiResult: any = null
+
+      if (!isLocalDev) {
+        // Production: use Vercel serverless which also calls Claude if key is set
+        const researchRes = await fetch('/api/stock-research', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ symbol: sym, ltp: scrapedInfo.ltp, sector: scrapedInfo.sector })
+        })
+        if (researchRes.ok) {
+          aiResult = await researchRes.json()
+        } else {
+          const err = await researchRes.json().catch(() => ({}))
+          throw new Error(err.error || 'Research API failed')
+        }
+      } else {
+        // Local dev: call Gemini directly from browser (no Claude supervisor)
+        if (!geminiKey) throw new Error('VITE_GEMINI_API_KEY not set in .env')
+
+        const prompt = `You are a NEPSE stock analyst. Analyze ${sym} comprehensively.
+
+Stock data from today's scan:
+Symbol: ${sym} | LTP: ${scrapedInfo.ltp} | Change: ${scrapedInfo.change} | Volume: ${scrapedInfo.volume} | Sector: ${scrapedInfo.sector}
+Fundamentals: ${JSON.stringify(fund || {})}
+
+Return ONLY valid JSON (no markdown):
+{
+  "symbol": "${sym}",
+  "currentPrice": ${parseFloat(String(scrapedInfo.ltp).replace(/,/g,'')) || 0},
+  "oneLinerSummary": "One sentence about this stock right now",
+  "technicalView": {
+    "trend": "UPTREND or DOWNTREND or SIDEWAYS",
+    "keyLevel": "Important price level to watch",
+    "momentum": "STRONG or MODERATE or WEAK",
+    "comment": "2 sentences on technical position"
+  },
+  "fundamentalView": {
+    "peRatio": "value or null",
+    "eps": "value or null",
+    "bookValue": "value or null",
+    "pbRatio": "calculated or null",
+    "verdict": "UNDERVALUED or FAIRLY_VALUED or OVERVALUED",
+    "comment": "2 sentences on fundamental strength"
+  },
+  "newsAndSentiment": {
+    "recentNews": ["recent development 1", "recent development 2"],
+    "socialSentiment": "BULLISH or BEARISH or NEUTRAL",
+    "keyDevelopment": "Most important recent development"
+  },
+  "globalContext": "How global market conditions affect this stock/sector",
+  "brokerActivity": "Institutional interest assessment based on available data",
+  "overallVerdict": "BUY or ACCUMULATE or HOLD or AVOID",
+  "riskLevel": "LOW or MEDIUM or HIGH",
+  "targetPrice": "estimated NPR value or null",
+  "stopLoss": "estimated NPR value or null",
+  "investorType": "LONG_TERM or SWING or BOTH or NEITHER"
+}`
+
+        const gemRes = await fetch(
+          `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${geminiKey}`,
+          {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({
+              contents: [{ parts: [{ text: prompt }] }],
+              generationConfig: { temperature: 0.5, maxOutputTokens: 1500 }
+            })
+          }
+        )
+        const gemData = await gemRes.json()
+        if (gemData.error) throw new Error(gemData.error.message)
+        const text = gemData?.candidates?.[0]?.content?.parts?.[0]?.text || '{}'
+        const clean = text.replace(/```json|```/g, '').trim()
+        const s = clean.search(/[\[{]/)
+        const e = Math.max(clean.lastIndexOf('}'), clean.lastIndexOf(']'))
+        aiResult = { ...JSON.parse(clean.slice(s, e + 1)), supervisorActive: false, sourceCount: 1, analyzedAt: new Date().toISOString() }
       }
 
-      const aiResult = await researchRes.json()
       setAiResult(aiResult)
       setPhase('done')
 

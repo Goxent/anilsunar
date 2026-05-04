@@ -33,11 +33,11 @@ jobs:
 
       # ─── NEPSE BOT (needs Playwright) ─────────────────
       - name: Install Playwright
-        if: inputs.pipeline != 'news-only' && inputs.pipeline != 'content-only' && inputs.pipeline != 'ai-only'
+        if: github.event.inputs.pipeline != 'news-only' && github.event.inputs.pipeline != 'content-only' && github.event.inputs.pipeline != 'ai-only'
         run: npx playwright install chromium --with-deps
 
       - name: NEPSE — Omni Crawler (Sasto Share)
-        if: inputs.pipeline != 'news-only' && inputs.pipeline != 'content-only' && inputs.pipeline != 'ai-only'
+        if: github.event.inputs.pipeline != 'news-only' && github.event.inputs.pipeline != 'content-only' && github.event.inputs.pipeline != 'ai-only'
         env:
           SASTO_EMAIL: ${{ secrets.SASTO_EMAIL }}
           SASTO_PASSWORD: ${{ secrets.SASTO_PASSWORD }}
@@ -47,20 +47,20 @@ jobs:
 
       # ─── DATA PROCESSING (pure code, no AI) ───────────
       - name: DATA — Technical Engine
-        if: inputs.pipeline != 'news-only' && inputs.pipeline != 'content-only'
+        if: github.event.inputs.pipeline != 'news-only' && github.event.inputs.pipeline != 'content-only'
         run: node scripts/technical-engine.mjs
         continue-on-error: true
         timeout-minutes: 3
 
       - name: DATA — Broker Tracker
-        if: inputs.pipeline != 'news-only' && inputs.pipeline != 'content-only'
+        if: github.event.inputs.pipeline != 'news-only' && github.event.inputs.pipeline != 'content-only'
         run: node scripts/broker-tracker.mjs
         continue-on-error: true
         timeout-minutes: 3
 
       # ─── NEWS SCRAPING ────────────────────────────────
       - name: NEWS — Nepal + Global Scraper
-        if: inputs.pipeline != 'nepse-only' && inputs.pipeline != 'ai-only'
+        if: github.event.inputs.pipeline != 'nepse-only' && github.event.inputs.pipeline != 'ai-only'
         env:
           VITE_GEMINI_API_KEY: ${{ secrets.VITE_GEMINI_API_KEY }}
         run: node scripts/nepal-news-scraper.mjs
@@ -68,14 +68,14 @@ jobs:
         timeout-minutes: 5
 
       - name: NEWS — Regulatory Notices
-        if: inputs.pipeline != 'nepse-only' && inputs.pipeline != 'ai-only'
+        if: github.event.inputs.pipeline != 'nepse-only' && github.event.inputs.pipeline != 'ai-only'
         run: node scripts/notice-scraper.mjs
         continue-on-error: true
         timeout-minutes: 4
 
       # ─── AI ANALYSIS (Gemini + Claude supervisor) ────
       - name: AI — Market Analysis (Gemini → Claude)
-        if: inputs.pipeline != 'news-only' && inputs.pipeline != 'content-only'
+        if: github.event.inputs.pipeline != 'news-only' && github.event.inputs.pipeline != 'content-only'
         env:
           VITE_GEMINI_API_KEY: ${{ secrets.VITE_GEMINI_API_KEY }}
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
@@ -85,7 +85,7 @@ jobs:
 
       # ─── CONTENT GENERATION (Gemini research → Claude polish) ─
       - name: CONTENT — LinkedIn Pipeline
-        if: inputs.pipeline != 'nepse-only' && inputs.pipeline != 'news-only'
+        if: github.event.inputs.pipeline != 'nepse-only' && github.event.inputs.pipeline != 'news-only'
         env:
           VITE_GEMINI_API_KEY: ${{ secrets.VITE_GEMINI_API_KEY }}
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
@@ -94,7 +94,7 @@ jobs:
         timeout-minutes: 5
 
       - name: CONTENT — Notice AI Posts
-        if: inputs.pipeline != 'nepse-only'
+        if: github.event.inputs.pipeline != 'nepse-only'
         env:
           VITE_GEMINI_API_KEY: ${{ secrets.VITE_GEMINI_API_KEY }}
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}

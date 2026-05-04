@@ -1,9 +1,8 @@
 import { useState, useMemo } from 'react'
 import { Copy, Check, Clock, Bookmark, BookmarkCheck,
-  RefreshCw, Pencil, Sparkles, AlertCircle, TrendingUp,
+  RefreshCw, Pencil, Sparkles, TrendingUp,
   FileText, Scale, Wallet, BarChart3, Globe } from 'lucide-react'
 import linkedinContent from '../data/linkedin-content.json'
-import { getAIProviderInfo } from '../lib/ai'
 
 // ── TYPES ─────────────────────────────────────────────────────
 interface Post {
