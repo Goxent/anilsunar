@@ -70,17 +70,23 @@ export default function ControlPanel() {
 
   // SYNC FUNCTION
   async function triggerSync() {
+    const password = window.prompt("Enter Admin Sync Password:");
+    if (!password) return;
+
     setSyncing(true)
     setSyncStatus(null)
     try {
       const res = await fetch('/api/run-sync', {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
+        headers: { 
+          'Content-Type': 'application/json',
+          'Authorization': `Bearer ${password}`
+        },
         body: JSON.stringify({ syncType })
       })
       const data = await res.json()
       if (res.ok) {
-        setSyncStatus({ ok: true, msg: 'Sync triggered successfully. Check back in ~15 minutes.' })
+        setSyncStatus({ ok: true, msg: 'Sync triggered successfully on GitHub. Pipeline: ' + (data.pipeline || 'full') })
         showToast("Bot pipeline initiated", "success")
       } else {
         setSyncStatus({ ok: false, msg: data.error || 'Trigger failed.' })
