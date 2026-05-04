@@ -10,11 +10,9 @@ import {
   Sparkles
 } from 'lucide-react'
 import { useMarketData } from '../AppShell'
-import fundamentalData from '../data/fundamental-data.json'
-import deepIntelligence from '../data/deep_intelligence.json'
 
 export default function StockAnalyzer() {
-  const { omniData } = useMarketData()
+  const { omniData, fundamentals: fundamentalData, intelligence: deepIntelligence } = useMarketData()
   
   // State
   const [query, setQuery] = useState('')
