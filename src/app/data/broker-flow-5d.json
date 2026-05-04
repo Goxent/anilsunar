@@ -1,6 +1,13 @@
 {
-  "generatedAt": "2026-05-01T07:16:54.024Z",
+  "generatedAt": "2026-05-04T04:51:17.729Z",
   "daysAnalyzed": 1,
   "stocksTracked": 0,
-  "stocks": []
+  "brokerRecordsProcessed": 0,
+  "topAccumulating": [],
+  "stocks": [],
+  "summary": {
+    "accumulatingCount": 0,
+    "distributingCount": 0,
+    "strongAccumulationCount": 0
+  }
 }

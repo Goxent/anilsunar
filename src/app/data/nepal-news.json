@@ -1,234 +1,241 @@
 {
-  "scrapedAt": "2026-05-01T05:00:49.691Z",
+  "scrapedAt": "2026-05-04T04:52:20.171Z",
   "totalCount": 22,
+  "nepalCount": 14,
+  "globalCount": 8,
   "sources": [
     "Onlinekhabar Finance",
     "Karobar Daily",
     "Sharesansar",
     "Nepali Paisa",
-    "Arthik Daily",
-    "MeroLagani News"
+    "MeroLagani",
+    "Arthik Abhiyan",
+    "Reuters Markets",
+    "Yahoo Finance Asia",
+    "Economic Times Markets"
   ],
   "articles": [
     {
-      "title": "भन्सारमा विवाद, ट्रक रोकिए",
-      "url": "https://www.karobardaily.com/news/370170",
-      "summary": "काठमाडौं– चालु आर्थिक वर्षको अन्तिम समयतिर आएर भन्सार विन्दुहरुमा विवाद सिर्जना भएको छ । सरकारले चालु आवमा लक्ष्य गरेअनुसार राजस्व असुली गर्न सकेको छैन । अहिलेसम्मको राजस्व वृद्धिदर ६–७ प्रतिशत हाराहारीमात्र छ । यस्तो बेलामा भन्सार नाकाहरुबाट राजस्व असुली बढाउनुपर्नेमा सरकार आफैंले विवाद सिर्जना गरा",
-      "publishedAt": "2026-05-01T04:50:00.000Z",
+      "title": "बैंकहरूले कति कमाए खुद ब्याज आम्दानी ?",
+      "url": "https://www.karobardaily.com/news/371245",
       "source": "Karobar Daily",
-      "category": "Business",
       "badge": "KD",
-      "color": "#1a73e8"
+      "category": "Nepal Business",
+      "scrapedAt": "2026-05-04T04:51:55.546Z",
+      "summary": "बैंकहरूले कति कमाए खुद ब्याज आम्दानी ?",
+      "isGlobal": false
     },
     {
-      "title": "लघुबीमाका संस्थागत लगानीकर्तामाथि सम्पत्ति शुद्धीकरण अनुसन्धान",
-      "url": "https://www.karobardaily.com/news/370146",
-      "summary": "काठमाडौं– सम्पत्ति शुद्धीकरण अनुसन्धान विभागले हिमालयन रि–इन्स्योरेन्स र सात लघुबीमा कम्पनीका संस्थापक सेयर खरिद गर्नेहरूसँग स्थापनाकालीन समयमा भएको आर्थिक कारोबारको विस्तृत विवरण माग गरेको छ । विभागले सम्पत्ति शुद्धीकरण अनुसन्धानका क्रममा प्रहरी थुनामा रहेका व्यवसायी दीपक भट्ट र सुलभ अग्रवालको हिमा",
-      "publishedAt": "2026-05-01T03:45:51.000Z",
+      "title": "सम्पत्ति शुद्धीकरणः के हो, के होइन ?",
+      "url": "https://www.karobardaily.com/news/371226",
       "source": "Karobar Daily",
-      "category": "Business",
       "badge": "KD",
-      "color": "#1a73e8"
+      "category": "Nepal Business",
+      "scrapedAt": "2026-05-04T04:51:55.546Z",
+      "summary": "सम्पत्ति शुद्धीकरणः के हो, के होइन ?",
+      "isGlobal": false
     },
     {
-      "title": "विद्युत् प्राधिकरणको ‘डिजिटल पूर्वाधार कम्पनी’ सञ्चालनमा",
-      "url": "https://www.karobardaily.com/news/370101",
-      "summary": "काठमाडौं- नेपाल विद्युत् प्राधिकरणको सहायक कम्पनी ‘नेपाल डिजिटल पूर्वाधार कम्पनी’ पूर्ण रूपमा सञ्चालनमा आएको छ । मुलुकको सूचना प्रविधि र दूरसञ्चार क्षेत्रमा आमूल परिवर्तन ल्याउने उद्देश्यका साथ उक्त कम्पनी सञ्चालनमा ल्याइएको प्राधिकरणले जनाएको छ । &#8221;पूर्वाधार साझा गर्ने अवधारणामा आधारित यो कम्प",
-      "publishedAt": "2026-04-30T11:14:11.000Z",
+      "title": "पाँच वर्ष नीतिगत स्थिरता र पूर्वानुमानयोग्य वातावरण सिर्जना हुन्छ: अर्थमन्त्री",
+      "url": "https://www.karobardaily.com/news/370729",
       "source": "Karobar Daily",
-      "category": "Business",
       "badge": "KD",
-      "color": "#1a73e8"
+      "category": "Nepal Business",
+      "scrapedAt": "2026-05-04T04:51:55.546Z",
+      "summary": "पाँच वर्ष नीतिगत स्थिरता र पूर्वानुमानयोग्य वातावरण सिर्जना हुन्छ: अर्थमन्त्री",
+      "isGlobal": false
     },
     {
-      "title": "सन नेपाल लाइफको सहकार्यमा इन्डोर कर्पोरेट क्रिकेट टुर्नामेन्ट हुने",
-      "url": "https://www.karobardaily.com/news/370087",
-      "summary": "काठमाडौं- राउन्ड टेबल नेपालले छैटौँ संस्करणको इन्डोर कर्पोरेट क्रिकेट प्रतियोगिता आयोजना गर्ने घोषणा गरेको छ, जसको मुख्य प्रायोजकका रूपमा सन नेपाल लाइफ इन्स्योरेन्स रहेको छ । प्रतियोगिता मे १, २ र ३ गते काठमाडौंको बूढानीलकण्ठस्थित भेलोसिटी ग्राउन्डमा सञ्चालन हुनेछ । यस प्रतियोगितामा डग्मा ग्रुप, जगद",
-      "publishedAt": "2026-04-30T11:04:05.000Z",
+      "title": "तीन दिनमा तीन अर्ब १५ करोड राजस्व संकलन",
+      "url": "https://www.karobardaily.com/news/370663",
       "source": "Karobar Daily",
-      "category": "Business",
       "badge": "KD",
-      "color": "#1a73e8"
-    },
-    {
-      "title": "एनआईसी एशिया बैंकद्वारा विद्यालयमा खानेपानी ट्यांकी र पम्प प्रदान",
-      "url": "https://www.karobardaily.com/news/370076",
-      "summary": "काठमाडौं- एनआईसी एशिया बैंकले गोदावरी–५, कैलालीस्थित श्री सरस्वती माध्यमिक विद्यालयमा स्वच्छ खानेपानी उपलब्ध गराउने उद्देश्यका साथ फिल्टरसहितको खानेपानी ट्यांकी र पम्प उपलब्ध गराएको छ । विद्यार्थीहरुलाई स्वच्छ खानेपानी उपलब्ध गराउने उद्देश्यका साथ पानी फिल्टरसहितको ट्यांकी र पम्प प्रदान गरिएको हो । ",
-      "publishedAt": "2026-04-30T10:57:04.000Z",
-      "source": "Karobar Daily",
-      "category": "Business",
-      "badge": "KD",
-      "color": "#1a73e8"
-    },
-    {
-      "title": "बोइङसँग बंगलादेशको ३.७ अर्ब डलर सम्झौता",
-      "url": "https://www.karobardaily.com/news/370052",
-      "summary": "ढाका- बंगलादेशले आफ्नो राष्ट्रिय ध्वजावाहक विमान कम्पनीलाई आधुनिकीकरण गर्ने लक्ष्यसहित अमेरिकी विमान निर्माता बोइङसँग तीन अर्ब ७० करोड डलरको ठूलो सम्झौता गर्ने तयारी गरेको छ । यसअन्तर्गत आगामी दशकमा १४ वटा नयाँ विमान खरिद गरिनेछ, जसले देशको हवाई सेवामा उल्लेखनीय विस्तार ल्याउने अपेक्षा गरिएको छ । रा",
-      "publishedAt": "2026-04-30T10:18:29.000Z",
-      "source": "Karobar Daily",
-      "category": "Business",
-      "badge": "KD",
-      "color": "#1a73e8"
-    },
-    {
-      "title": "नेप्से घटेर २७३८ विन्दुमा, कारोबार रकम ४ अर्ब ९१ करोड",
-      "url": "https://www.karobardaily.com/news/370038",
-      "summary": "काठमाडौं- नेपाल स्टक एक्सचेन्ज (नेप्से) परिसूचक ५.७३ अंकले घटेर २७३८.७२ विन्दुमा झरेको छ । बिहीबारको बजारमा ९८ कम्पनीको मूल्य बढ्दा १६१ कम्पनीको घट्यो भने १० कम्पनीको स्थिर रह्यो । बिहीबार नेप्से परिसूचकसँगै कारोबार रकम पनि केही घटेको छ । बुधबार ४ अर्ब ९८ करोडको कारोबार भएकोमा बिहीबार ४ अर्ब ९१ करोड",
-      "publishedAt": "2026-04-30T09:40:43.000Z",
-      "source": "Karobar Daily",
-      "category": "Business",
-      "badge": "KD",
-      "color": "#1a73e8"
-    },
-    {
-      "title": "नेपालगन्ज भन्सारको राजस्व लक्ष्यभन्दा कम",
-      "url": "https://www.karobardaily.com/news/369970",
-      "summary": "नेपालगन्ज– नेपालगन्ज भन्सार कार्यालयले चालु आर्थिक वर्षको नौ महिनामा लक्ष्यभन्दा साढे ९ अर्ब रुपैयाँ कम राजस्व संकलन गरेको छ । कार्यालयले चालू आर्थिक वर्षका लागि २४ अर्ब ५४ करोड ५७ लाख रुपैयाँ राजस्व संकलन गर्ने लक्ष्य लिएकोमा चैतसम्म १४ अर्ब ८९ करोड ६९ लाख ३८ हजार रुपैयाँ मात्र असुली गरेको कार्यालय",
-      "publishedAt": "2026-04-30T06:59:21.000Z",
-      "source": "Karobar Daily",
-      "category": "Business",
-      "badge": "KD",
-      "color": "#1a73e8"
-    },
-    {
-      "title": "बेगनासमा चार लाख माछाका भुरा छाडिँदै",
-      "url": "https://www.karobardaily.com/news/369948",
-      "summary": "पोखरा– कास्कीको दोस्रो ठुलो बेगनास तालमा जलारी समुदायको जीविकोपार्जन सुदृढ पार्ने उद्देश्यले माछाका भुरा छाड्ने कार्यलाई यस वर्ष पनि निरन्तरता दिइएको छ । यसैक्रममा चालु आर्थिक वर्षको प्रारम्भिक चरणमा विभिन्न प्रजातिका करिब तीन हजार माछाका भुरा तालमा छोडिएको छ भने वार्षिक रूपमा यहाँ करिब चार लाख माछा",
-      "publishedAt": "2026-04-30T06:47:25.000Z",
-      "source": "Karobar Daily",
-      "category": "Business",
-      "badge": "KD",
-      "color": "#1a73e8"
-    },
-    {
-      "title": "कोशी प्रदेशमा बजेट खर्च सुस्त",
-      "url": "https://www.karobardaily.com/news/369939",
-      "summary": "विराटनगर– चालु आर्थिक वर्षको नौ महिनाको अवधिमा कोशी प्रदेश सरकारको बजेट कार्यान्वयन सुस्त देखिएको छ । आर्थिक वर्ष सकिन साढे दुुई महिना मात्र बाँकी रहँदा प्रदेशले संशोधित लक्ष्यको झन्डै एक तिहाइ मात्र खर्च गरेको हो । प्रदेश लेखा नियन्त्रक कार्यालयका अनुसार चैत मसान्तसम्म कोशी प्रदेश सरकारले ११ अर्ब ४",
-      "publishedAt": "2026-04-30T06:40:53.000Z",
-      "source": "Karobar Daily",
-      "category": "Business",
-      "badge": "KD",
-      "color": "#1a73e8"
-    },
-    {
-      "title": "महँगीको मारमा उपभोक्ता, बिचौलियाले किसान घाटामा",
-      "url": "https://www.karobardaily.com/news/369932",
-      "summary": "धनगढी– बढ्दो महँगीको कारण उपभोक्ता मारमा परे पनि बिचौलियाको कारण किसान भने घाटामा रहेका छन् । किसानबाट सस्तोमा खरिद गरेर उपभोक्तालाई महँगोमा बिक्री गर्न पल्किएका बिचौलियाको कारण किसान घाटामा आफ्ना उत्पादन बिक्री गर्न बाध्य भएका हुन् । सुदूरपश्चिम प्रदेशको राजधानी धनगढीको बजारमा स्थानीय कृषककै उत्पाद",
-      "publishedAt": "2026-04-30T06:31:53.000Z",
-      "source": "Karobar Daily",
-      "category": "Business",
-      "badge": "KD",
-      "color": "#1a73e8"
-    },
-    {
-      "title": "सुदूरपश्चिम सरकारलाई साढे २२ अर्बको बजेट सिलिङ",
-      "url": "https://www.karobardaily.com/news/369923",
-      "summary": "धनगढी– प्रदेश नीति तथा योजना आयोगले सुदूरपश्चिम प्रदेश सरकारलाई आर्थिक वर्ष २०८३/८४ का लागि २२ अर्बको बजेट सिलिङ दिएको छ । आयोगले २२ अर्ब ६३ करोड ६७ लाख ६६ हजार रुपैयाँको बजेट सिलिङ तयार गरी आर्थिक मामिला मन्त्रालयलाई बजेट विनियोजन तथा योजना छनोटको मार्ग दर्शन पठाएको हो । चालुतर्फ ११ अर्ब २१ करोड १६",
-      "publishedAt": "2026-04-30T06:26:46.000Z",
-      "source": "Karobar Daily",
-      "category": "Business",
-      "badge": "KD",
-      "color": "#1a73e8"
-    },
-    {
-      "title": "तीन अर्ब लगानीमा धानखोला–लमही सडकखण्ड स्तरोन्नति सुरु",
-      "url": "https://www.karobardaily.com/news/369905",
-      "summary": "दाङ– पूर्व–पश्चिम राजमार्गको ४० किलो मिटर लामो धानखोला–लमही सडकखण्ड स्तरोन्नति सुरु भएको छ । पूर्व–पश्चिम राजमार्गअन्तर्गत दाङको धानखोला–लमही सडकखण्ड नेपाल र अमेरिकी सरकारको करिब ३ अर्ब रुपैयाँको सहलगानीमा स्तरोन्नति हुन थालेको हो । लुम्बिनी प्रदेशका मुख्यमन्त्री चेतनारायण आचार्यले बुधबार यसको शुभार",
-      "publishedAt": "2026-04-30T06:16:43.000Z",
-      "source": "Karobar Daily",
-      "category": "Business",
-      "badge": "KD",
-      "color": "#1a73e8"
-    },
-    {
-      "title": "राष्ट्रिय लेखा व्यवसायी सम्मेलन सुरु",
-      "url": "https://www.karobardaily.com/news/369863",
-      "summary": "काठमाडौं– नेपाल चार्टर्ड एकाउन्टेन्ट्स संस्था (आईक्यान)को आयोजनामा ‘पाँचौं राष्ट्रिय लेखा व्यवसायी सम्मेलन’ काठमाडौंमा बुधबारदेखि सुरु भएको छ । निजी तथा सार्वजनिक क्षेत्रमा विश्वास र आर्थिक सुशासनको सुदृढीकरण: नेपालको आर्थिक रुपान्तरणको संवाहक नारासहित दुईदिने सम्मेलन सुरु भएको हो । कार्यक्रममा प्रम",
-      "publishedAt": "2026-04-30T05:59:04.000Z",
-      "source": "Karobar Daily",
-      "category": "Business",
-      "badge": "KD",
-      "color": "#1a73e8"
-    },
-    {
-      "title": "पोखरामा एक्सटेपको नयाँ आउटलेट",
-      "url": "https://www.karobardaily.com/news/369840",
-      "summary": "पोखरा– पोखराको न्यूरोडमा अन्तर्राष्ट्रिय खेल सामग्री ब्रान्ड एक्सटेपको नयाँ आउटलेट सञ्चालनमा आएको छ । यो आउटलेट पोखराको दोस्रो र नेपालभरको १५औं शाखा हो । यसअघि बुद्धविशाल बजारमा केही समय अघिदेखि उक्त ब्रान्डका सामानहरु बिक्री वितरण हुँदै आए पनि पोखरेलीको मागअनुसार न्यूरोडमा शाखा विस्तार गरिएको कम्पन",
-      "publishedAt": "2026-04-30T05:49:58.000Z",
-      "source": "Karobar Daily",
-      "category": "Business",
-      "badge": "KD",
-      "color": "#1a73e8"
-    },
-    {
-      "title": "प्यान र ईमेल ठेगाना अद्यावधिक गर्न एनआईसी एसियाको आग्रह",
-      "url": "https://www.karobardaily.com/news/369832",
-      "summary": "काठमाडौं– एनआईसी एसिया बैंकले आफ्ना ग्राहकलाई आफ्नो खातामा स्थायी लेखा नम्बर प्यान र ईमेल ठेगाना अद्यावधिक गर्न आग्रह गरेको छ । बैंकका ग्राहकको खाताबाट गरिएको करकट्टीको विवरण आयकर ऐन २०५८ बमोजिम आन्तरिक राजस्व विभागद्वारा जारी गरिएको स्थायी लेखा नम्बर प्रणालीमा आबद्ध गर्नुपर्ने हुँदा बैंकको पोर्टल व",
-      "publishedAt": "2026-04-30T05:46:51.000Z",
-      "source": "Karobar Daily",
-      "category": "Business",
-      "badge": "KD",
-      "color": "#1a73e8"
-    },
-    {
-      "title": "सुबिसुको वाईफाई६ प्रविधियुक्त इन्टरनेट सेवा",
-      "url": "https://www.karobardaily.com/news/368886",
-      "summary": "काठमाडौं– इन्टरनेट सेवाप्रदायक सुबिसुले अत्याधुनिक वाईफाई६ प्रविधिमा आधारित नयाँ पुस्ताको इन्टरनेट सेवा सार्वजनिक गरेको छ । कम्पनीले नेपालमै पहिलो पटक इन्टरनेट सुरक्षालाई मुख्य सेवाको रूपमा समावेश गर्दै सेक्युअर इन्टरनेट सुबिसा सुरक्षाको नवीन अवधारणा ल्याएको छ । नेपालमा वाईफाई६ प्रविधि उपलब्ध भए पनि",
-      "publishedAt": "2026-04-30T05:23:24.000Z",
-      "source": "Karobar Daily",
-      "category": "Business",
-      "badge": "KD",
-      "color": "#1a73e8"
-    },
-    {
-      "title": "अर्थतन्त्रमा मौसमी प्रभाव घटाऊ",
-      "url": "https://www.karobardaily.com/news/369774",
-      "summary": "राष्ट्रिय तथ्यांक कार्यालयले गत मंगलबार चालु आर्थिक वर्षमा नेपालको आर्थिक वृद्धिदर उपभोक्ता मूल्यमा ३.८५ प्रतिशतले मात्र बढ्ने प्रारम्भिक अनुमान गरेको छ । कार्यालयले प्रारम्भिक, संशोधित अनुमान र यथार्थ उपलब्धिको तथ्यांक सार्वजनिक गर्छ । चालु आवको आर्थिक वृद्धिदर वास्तवमै कति हो भन्ने जानकारी तीन वर्",
-      "publishedAt": "2026-04-30T04:20:42.000Z",
-      "source": "Karobar Daily",
-      "category": "Business",
-      "badge": "KD",
-      "color": "#1a73e8"
+      "category": "Nepal Business",
+      "scrapedAt": "2026-05-04T04:51:55.546Z",
+      "summary": "तीन दिनमा तीन अर्ब १५ करोड राजस्व संकलन",
+      "isGlobal": false
     },
     {
       "title": "निष्क्रिय कर्जाको चाङ, देखिएन तत्काल निस्कने उपाय",
       "url": "https://www.karobardaily.com/news/369787",
-      "summary": "काठमाडौँ– पछिल्ला केही वर्षयता नेपालको बैंकिङ प्रणाली निष्क्रिय कर्जाको चपेटामा परेको छ । सुस्त अर्थतन्त्र, बढ्दो कर्जा दुरुपयोग, उच्च ब्याजदरजस्ता कारण बैंकहरूले कर्जा असुली सुधार्न नसक्दा हरेक त्रैमासमा निष्क्रिय कर्जा बढ्दै गइरहेको छ । केही वर्ष पहिले करिब ३ प्रतिशतमा रहेको बैंकहरूको औसत निष्क्रि",
-      "publishedAt": "2026-04-30T03:45:04.000Z",
       "source": "Karobar Daily",
-      "category": "Business",
       "badge": "KD",
-      "color": "#1a73e8"
+      "category": "Nepal Business",
+      "scrapedAt": "2026-05-04T04:51:55.546Z",
+      "summary": "निष्क्रिय कर्जाको चाङ, देखिएन तत्काल निस्कने उपाय",
+      "isGlobal": false
     },
     {
-      "title": "आर्थिक विकासका लागि मानव पुँजीमा लगानी",
-      "url": "https://www.karobardaily.com/news/369704",
-      "summary": "नेपालमा पछिल्लो समय ‘आर्थिक विकास’ भन्ने शब्द अत्यन्तै चर्चामा रहेको छ । चाहे त्यो जनतासँग मत माग्ने बेलामा होस् वा सरकार गठन गर्ने क्रममा प्रस्तुत गरिने नीतिगत प्रतिबद्धतामा होस्, आर्थिक विकासलाई नै मुख्य एजेन्डाका रूपमा अघि सारिन्छ । तर, यथार्थमा हेर्दा नेपालले अपेक्षित आर्थिक विकास हासिल गर्न सके",
-      "publishedAt": "2026-04-30T01:45:36.000Z",
+      "title": "४० अर्ब निक्षेप खिच्दै राष्ट्र बैंक",
+      "url": "https://www.karobardaily.com/news/369500",
       "source": "Karobar Daily",
-      "category": "Business",
       "badge": "KD",
-      "color": "#1a73e8"
+      "category": "Nepal Business",
+      "scrapedAt": "2026-05-04T04:51:55.546Z",
+      "summary": "४० अर्ब निक्षेप खिच्दै राष्ट्र बैंक",
+      "isGlobal": false
     },
     {
-      "title": "नेप्से परिसूचक घटेर २७४४ विन्दुमा, कारोबार रकम पनि घट्यो",
-      "url": "https://www.karobardaily.com/news/369636",
-      "summary": "काठमाडौं- नेपाल स्टक एक्सचेन्ज (नेप्से) परिसूचक २५.८१ अंकले घटेर २ हजार ७४४.४५ विन्दुमा झरेको छ । बुधबार नेप्से परिसूचकसँगै कारोबार रकम पनि घटेको छ । मंगलबार ६ अर्ब ५३ करोडको कारोबार भएकोमा बुधबार ४ अर्ब ९८ करोडको सेयर किनबेच भयो । बुधबारको कारोबारमा ३० कम्पनीको मूल्य बढ्दा २३५ कम्पनीको घट्यो भने ४ ",
-      "publishedAt": "2026-04-29T09:41:51.000Z",
+      "title": "झण्डै २० प्रतिशतले बढ्यो वाणिज्य बैंकहरूको नाफा",
+      "url": "https://www.karobardaily.com/news/369383",
       "source": "Karobar Daily",
-      "category": "Business",
       "badge": "KD",
-      "color": "#1a73e8"
+      "category": "Nepal Business",
+      "scrapedAt": "2026-05-04T04:51:55.546Z",
+      "summary": "झण्डै २० प्रतिशतले बढ्यो वाणिज्य बैंकहरूको नाफा",
+      "isGlobal": false
     },
     {
-      "title": "एमआरपी निर्णयमा थप छलफल गर्न संघको माग",
-      "url": "https://www.karobardaily.com/news/369621",
-      "summary": "काठमाडौं– वीरगञ्ज उद्योग वाणिज्य संघले २०८२ चैत २६ मा प्रकाशित सरकारी सूचनाअनुसार भन्सार बिन्दुमा आउने सामान तथा स्वदेशमा उत्पादन हुने सामानमा अनिवार्य एमआरपी लागू गर्नुपर्ने निर्णय अव्यावहारिक हुने बताएको छ । संघले तत्कालै एमआरपी लागू गर्न सम्भव नभएको र यसले आयात तथा आन्तरिक बजारमा नकारात्मक प्रभाव",
-      "publishedAt": "2026-04-29T07:25:15.000Z",
+      "title": "नेशनल लाइफका अभिकर्तालाई नारायणी क्रुजमा सफारी",
+      "url": "https://www.karobardaily.com/news/371131",
       "source": "Karobar Daily",
-      "category": "Business",
       "badge": "KD",
-      "color": "#1a73e8"
+      "category": "Nepal Business",
+      "scrapedAt": "2026-05-04T04:51:55.546Z",
+      "summary": "नेशनल लाइफका अभिकर्तालाई नारायणी क्रुजमा सफारी",
+      "isGlobal": false
+    },
+    {
+      "title": "Proposed Dividend",
+      "url": "https://www.sharesansar.com/",
+      "source": "Sharesansar",
+      "badge": "SS",
+      "category": "Nepal Stock",
+      "scrapedAt": "2026-05-04T04:51:57.442Z",
+      "summary": "Proposed Dividend",
+      "isGlobal": false
+    },
+    {
+      "title": "Dividend, Bonus & Rights",
+      "url": "https://www.sharesansar.com/newsdetail/dordi-khola-jal-bidyut-company-limited-receives-approval-for-10288-right-shares-issue-2026-04-30",
+      "source": "Sharesansar",
+      "badge": "SS",
+      "category": "Nepal Stock",
+      "scrapedAt": "2026-05-04T04:51:57.442Z",
+      "summary": "Dividend, Bonus & Rights",
+      "isGlobal": false
+    },
+    {
+      "title": "NEPSE Concludes The Week With 1.79% Loss and Turnover of Rs 21.18 Arba; Weekly Summary with Sector Comparison, Major Highlights, and More",
+      "url": "https://www.sharesansar.com/",
+      "source": "Sharesansar",
+      "badge": "SS",
+      "category": "Nepal Stock",
+      "scrapedAt": "2026-05-04T04:51:57.442Z",
+      "summary": "NEPSE Concludes The Week With 1.79% Loss and Turnover of Rs 21.18 Arba; Weekly Summary with Sector Comparison, Major Highlights, and More",
+      "isGlobal": false
+    },
+    {
+      "title": "Market Overview",
+      "url": "https://nepalipaisa.com/market-overview",
+      "source": "Nepali Paisa",
+      "badge": "NP",
+      "category": "Nepal Finance",
+      "scrapedAt": "2026-05-04T04:52:00.492Z",
+      "summary": "Market Overview",
+      "isGlobal": false
+    },
+    {
+      "title": "Stocks Up & Down",
+      "url": "https://nepalipaisa.com/",
+      "source": "Nepali Paisa",
+      "badge": "NP",
+      "category": "Nepal Finance",
+      "scrapedAt": "2026-05-04T04:52:00.492Z",
+      "summary": "Stocks Up & Down",
+      "isGlobal": false
+    },
+    {
+      "title": "Business & Economy",
+      "url": "https://nepalipaisa.com/news/businessEconomy",
+      "source": "Nepali Paisa",
+      "badge": "NP",
+      "category": "Nepal Finance",
+      "scrapedAt": "2026-05-04T04:52:00.492Z",
+      "summary": "Business & Economy",
+      "isGlobal": false
+    }
+  ],
+  "globalArticles": [
+    {
+      "title": "Markets just got Conversational",
+      "url": "https://economictimes.indiatimes.com/markets/stock-market-gpt",
+      "source": "Economic Times Markets",
+      "badge": "ET",
+      "category": "India Markets",
+      "scrapedAt": "2026-05-04T04:52:18.667Z",
+      "summary": "Markets just got Conversational",
+      "isGlobal": true
+    },
+    {
+      "title": "MTAR Technologies and three other stocks hit 5-year swing high breakout",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/mtar-technologies-and-three-other-stocks-hit-5-year-swing-high-breakout/slideshow/130744978.cms",
+      "source": "Economic Times Markets",
+      "badge": "ET",
+      "category": "India Markets",
+      "scrapedAt": "2026-05-04T04:52:18.668Z",
+      "summary": "MTAR Technologies and three other stocks hit 5-year swing high breakout",
+      "isGlobal": true
+    },
+    {
+      "title": "Cemindia Projects among 5 stocks that closed above VWAP",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/cemindia-projects-among-5-stocks-that-closed-above-vwap/slideshow/130744263.cms",
+      "source": "Economic Times Markets",
+      "badge": "ET",
+      "category": "India Markets",
+      "scrapedAt": "2026-05-04T04:52:18.668Z",
+      "summary": "Cemindia Projects among 5 stocks that closed above VWAP",
+      "isGlobal": true
+    },
+    {
+      "title": "IIFL Finance among 4 stocks showing bullish RSI upswing",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/iifl-finance-among-4-stocks-showing-bullish-rsi-upswing/slideshow/130744126.cms",
+      "source": "Economic Times Markets",
+      "badge": "ET",
+      "category": "India Markets",
+      "scrapedAt": "2026-05-04T04:52:18.668Z",
+      "summary": "IIFL Finance among 4 stocks showing bullish RSI upswing",
+      "isGlobal": true
+    },
+    {
+      "title": "Negative Breakout: These 8 stocks cross below their 200 DMAs",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/negative-breakout-these-8-stocks-cross-below-their-200-dmas/slideshow/130743266.cms",
+      "source": "Economic Times Markets",
+      "badge": "ET",
+      "category": "India Markets",
+      "scrapedAt": "2026-05-04T04:52:18.668Z",
+      "summary": "Negative Breakout: These 8 stocks cross below their 200 DMAs",
+      "isGlobal": true
+    },
+    {
+      "title": "Top Nifty50 stocks analysts suggest buying in this volatile week",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/top-nifty50-stocks-analysts-suggest-buying-in-this-volatile-week/articleshow/130748127.cms",
+      "source": "Economic Times Markets",
+      "badge": "ET",
+      "category": "India Markets",
+      "scrapedAt": "2026-05-04T04:52:18.668Z",
+      "summary": "Top Nifty50 stocks analysts suggest buying in this volatile week",
+      "isGlobal": true
+    },
+    {
+      "title": "From shortage story to cash-flow story: A sector ready for sustained re-rating? 5 power stocks with upside potential of up to 33%",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/from-shortage-story-to-cash-flow-story-a-sector-ready-for-sustained-re-rating-5-power-stocks-with-upside-potential-of-up-to-33/articleshow/130729937.cms",
+      "source": "Economic Times Markets",
+      "badge": "ET",
+      "category": "India Markets",
+      "scrapedAt": "2026-05-04T04:52:18.668Z",
+      "summary": "From shortage story to cash-flow story: A sector ready for sustained re-rating? 5 power stocks with upside potential of up to 33%",
+      "isGlobal": true
+    },
+    {
+      "title": "Stock Radar: Down over 20% from highs! Jio Financial Services stock showing signs of bottoming out",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/stock-radar-down-over-20-from-highs-jio-financial-services-stock-showing-signs-of-bottoming-out/articleshow/130631736.cms",
+      "source": "Economic Times Markets",
+      "badge": "ET",
+      "category": "India Markets",
+      "scrapedAt": "2026-05-04T04:52:18.668Z",
+      "summary": "Stock Radar: Down over 20% from highs! Jio Financial Services stock showing signs of bottoming out",
+      "isGlobal": true
     }
   ]
 }

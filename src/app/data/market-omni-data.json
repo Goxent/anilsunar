@@ -1,1 +1,1783 @@
-{"timestamp":null,"scrapedPages":[],"structured":{"marketIndex":null,"topStocks":[],"brokerData":[],"swingSignals":[],"sectorData":[]}}
+{
+  "timestamp": "2026-05-04T04:51:00.581Z",
+  "scrapedPages": [
+    {
+      "url": "https://nepsealpha.com/sastoshare",
+      "title": "Sasto Share | Home",
+      "tables": [
+        {
+          "headers": [],
+          "rows": [
+            {
+              "Col_0": "",
+              "Col_1": "",
+              "Col_2": ""
+            }
+          ]
+        },
+        {
+          "headers": [],
+          "rows": [
+            {
+              "Col_0": "",
+              "Col_1": "",
+              "Col_2": ""
+            }
+          ]
+        },
+        {
+          "headers": [
+            "Symbol",
+            "Price(NPR)",
+            "Change",
+            "Volume",
+            "R-Volume",
+            "Float Cap",
+            "Market Cap"
+          ],
+          "rows": [
+            {
+              "Symbol": "SAIL",
+              "Price(NPR)": "1,263.00",
+              "Change": "12.57%",
+              "Volume": "84,231.00",
+              "R-Volume": "115.87 %",
+              "Float Cap": "412.05 Cr.",
+              "Market Cap": "2,060.27 Cr."
+            },
+            {
+              "Symbol": "SIPD",
+              "Price(NPR)": "974.00",
+              "Change": "7.91%",
+              "Volume": "62,190.00",
+              "R-Volume": "-",
+              "Float Cap": "311.65 Cr.",
+              "Market Cap": "954.52 Cr."
+            },
+            {
+              "Symbol": "AHL",
+              "Price(NPR)": "534.00",
+              "Change": "7.88%",
+              "Volume": "14,073.00",
+              "R-Volume": "104.78 %",
+              "Float Cap": "181.56 Cr.",
+              "Market Cap": "181.56 Cr."
+            },
+            {
+              "Symbol": "RFPL",
+              "Price(NPR)": "388.30",
+              "Change": "4.95%",
+              "Volume": "82,093.00",
+              "R-Volume": "69.36 %",
+              "Float Cap": "543.62 Cr.",
+              "Market Cap": "543.62 Cr."
+            },
+            {
+              "Symbol": "NIBLGF",
+              "Price(NPR)": "9.65",
+              "Change": "3.65%",
+              "Volume": "7,200.00",
+              "R-Volume": "-",
+              "Float Cap": "0.00 Cr.",
+              "Market Cap": "0.00 Cr."
+            },
+            {
+              "Symbol": "SYPNL",
+              "Price(NPR)": "1,497.00",
+              "Change": "3.60%",
+              "Volume": "87,391.00",
+              "R-Volume": "56.61 %",
+              "Float Cap": "783.31 Cr.",
+              "Market Cap": "1,958.28 Cr."
+            },
+            {
+              "Symbol": "KSBBLD87",
+              "Price(NPR)": "1,078.40",
+              "Change": "3.00%",
+              "Volume": "25.00",
+              "R-Volume": "-",
+              "Float Cap": "- Cr.",
+              "Market Cap": "0.00 Cr."
+            },
+            {
+              "Symbol": "HBLD86",
+              "Price(NPR)": "1,148.40",
+              "Change": "3.00%",
+              "Volume": "25.00",
+              "R-Volume": "-",
+              "Float Cap": "- Cr.",
+              "Market Cap": "0.00 Cr."
+            },
+            {
+              "Symbol": "SDBD87",
+              "Price(NPR)": "1,127.80",
+              "Change": "3.00%",
+              "Volume": "5.00",
+              "R-Volume": "-",
+              "Float Cap": "- Cr.",
+              "Market Cap": "0.00 Cr."
+            },
+            {
+              "Symbol": "ICFCD88",
+              "Price(NPR)": "1,201.00",
+              "Change": "2.91%",
+              "Volume": "100.00",
+              "R-Volume": "-",
+              "Float Cap": "- Cr.",
+              "Market Cap": "0.00 Cr."
+            }
+          ]
+        },
+        {
+          "headers": [
+            "Symbol",
+            "Current Price",
+            "Last Price",
+            "Percent Change",
+            "Volume",
+            "Turnover"
+          ],
+          "rows": [
+            {
+              "Symbol": "SIPD",
+              "Current Price": "974",
+              "Last Price": "920.1",
+              "Percent Change": "5.86%",
+              "Volume": "321625",
+              "Turnover": "321760723"
+            },
+            {
+              "Symbol": "GRDBL",
+              "Current Price": "1100",
+              "Last Price": "1047",
+              "Percent Change": "5.06%",
+              "Volume": "192294",
+              "Turnover": "216118736"
+            },
+            {
+              "Symbol": "RFPL",
+              "Current Price": "388.3",
+              "Last Price": "373",
+              "Percent Change": "4.10%",
+              "Volume": "189030",
+              "Turnover": "70566714"
+            },
+            {
+              "Symbol": "SAIL",
+              "Current Price": "1263",
+              "Last Price": "1218",
+              "Percent Change": "3.69%",
+              "Volume": "198057",
+              "Turnover": "230197276"
+            },
+            {
+              "Symbol": "NABIL",
+              "Current Price": "528",
+              "Last Price": "518",
+              "Percent Change": "1.93%",
+              "Volume": "185580",
+              "Turnover": "97251226"
+            },
+            {
+              "Symbol": "GBBL",
+              "Current Price": "414",
+              "Last Price": "407",
+              "Percent Change": "1.72%",
+              "Volume": "92182",
+              "Turnover": "37792248"
+            },
+            {
+              "Symbol": "UNL",
+              "Current Price": "47000",
+              "Last Price": "46220",
+              "Percent Change": "1.69%",
+              "Volume": "125",
+              "Turnover": "5876212"
+            },
+            {
+              "Symbol": "CKHL",
+              "Current Price": "699",
+              "Last Price": "688",
+              "Percent Change": "1.60%",
+              "Volume": "19814",
+              "Turnover": "13966426"
+            },
+            {
+              "Symbol": "SAPDBL",
+              "Current Price": "815",
+              "Last Price": "803",
+              "Percent Change": "1.49%",
+              "Volume": "252361",
+              "Turnover": "210666114"
+            },
+            {
+              "Symbol": "NLICL",
+              "Current Price": "587",
+              "Last Price": "580",
+              "Percent Change": "1.21%",
+              "Volume": "49421",
+              "Turnover": "29490357"
+            }
+          ]
+        },
+        {
+          "headers": [
+            "Symbol",
+            "Current Price",
+            "Last Price",
+            "Percent Change",
+            "Volume",
+            "Turnover"
+          ],
+          "rows": [
+            {
+              "Symbol": "SKHEL",
+              "Current Price": "1419.9",
+              "Last Price": "378.2",
+              "Percent Change": "275.44%",
+              "Volume": "284195",
+              "Turnover": "443028409"
+            },
+            {
+              "Symbol": "HFIN",
+              "Current Price": "1024",
+              "Last Price": "349.8",
+              "Percent Change": "192.74%",
+              "Volume": "1524972",
+              "Turnover": "1794426884"
+            },
+            {
+              "Symbol": "RLEL",
+              "Current Price": "1150",
+              "Last Price": "399.3",
+              "Percent Change": "188.00%",
+              "Volume": "618862",
+              "Turnover": "796031843"
+            },
+            {
+              "Symbol": "SKHL",
+              "Current Price": "980.1",
+              "Last Price": "483.1",
+              "Percent Change": "102.88%",
+              "Volume": "841585",
+              "Turnover": "971797118"
+            },
+            {
+              "Symbol": "BJHL",
+              "Current Price": "1035",
+              "Last Price": "578.6",
+              "Percent Change": "78.88%",
+              "Volume": "690989",
+              "Turnover": "771098554"
+            },
+            {
+              "Symbol": "RSML",
+              "Current Price": "3850.2",
+              "Last Price": "2679.3",
+              "Percent Change": "43.70%",
+              "Volume": "1728458",
+              "Turnover": "7086824438"
+            },
+            {
+              "Symbol": "CORBL",
+              "Current Price": "2400",
+              "Last Price": "1900",
+              "Percent Change": "26.32%",
+              "Volume": "580127",
+              "Turnover": "1277603693"
+            },
+            {
+              "Symbol": "JHAPA",
+              "Current Price": "1564",
+              "Last Price": "1387.9",
+              "Percent Change": "12.69%",
+              "Volume": "473566",
+              "Turnover": "701604478"
+            },
+            {
+              "Symbol": "HHL",
+              "Current Price": "384",
+              "Last Price": "357",
+              "Percent Change": "7.56%",
+              "Volume": "3304657",
+              "Turnover": "1287968035"
+            },
+            {
+              "Symbol": "AHL",
+              "Current Price": "534",
+              "Last Price": "504",
+              "Percent Change": "5.95%",
+              "Volume": "377833",
+              "Turnover": "198118276"
+            }
+          ]
+        },
+        {
+          "headers": [
+            "Symbol",
+            "Current Price",
+            "Turn Over"
+          ],
+          "rows": [
+            {
+              "Symbol": "RSML",
+              "Current Price": "3850.2",
+              "Turn Over": "NPR 267,568,490.90"
+            },
+            {
+              "Symbol": "AKJCL",
+              "Current Price": "375",
+              "Turn Over": "NPR 219,151,419.70"
+            },
+            {
+              "Symbol": "NHPC",
+              "Current Price": "296",
+              "Turn Over": "NPR 193,005,378.30"
+            },
+            {
+              "Symbol": "SHIVM",
+              "Current Price": "664.2",
+              "Turn Over": "NPR 170,314,257.20"
+            },
+            {
+              "Symbol": "NRN",
+              "Current Price": "1443",
+              "Turn Over": "NPR 154,208,861.90"
+            },
+            {
+              "Symbol": "SOHL",
+              "Current Price": "710",
+              "Turn Over": "NPR 138,548,060.60"
+            },
+            {
+              "Symbol": "SYPNL",
+              "Current Price": "1497",
+              "Turn Over": "NPR 127,600,382.20"
+            },
+            {
+              "Symbol": "RIDI",
+              "Current Price": "349",
+              "Turn Over": "NPR 111,084,123.40"
+            },
+            {
+              "Symbol": "CORBL",
+              "Current Price": "2400",
+              "Turn Over": "NPR 109,029,825.60"
+            },
+            {
+              "Symbol": "PCIL",
+              "Current Price": "948",
+              "Turn Over": "NPR 100,071,698.30"
+            }
+          ]
+        },
+        {
+          "headers": [
+            "Symbol",
+            "Current Price",
+            "Turn Over"
+          ],
+          "rows": [
+            {
+              "Symbol": "RSML",
+              "Current Price": "3850.2",
+              "Turn Over": "NPR 2,538,044,663.40"
+            },
+            {
+              "Symbol": "SOHL",
+              "Current Price": "710",
+              "Turn Over": "NPR 2,321,945,492.90"
+            },
+            {
+              "Symbol": "NHPC",
+              "Current Price": "296",
+              "Turn Over": "NPR 2,093,897,442.20"
+            },
+            {
+              "Symbol": "AKJCL",
+              "Current Price": "375",
+              "Turn Over": "NPR 1,833,724,415.00"
+            },
+            {
+              "Symbol": "HFIN",
+              "Current Price": "1024",
+              "Turn Over": "NPR 1,763,253,273.70"
+            },
+            {
+              "Symbol": "RIDI",
+              "Current Price": "349",
+              "Turn Over": "NPR 1,375,341,875.10"
+            },
+            {
+              "Symbol": "SHIVM",
+              "Current Price": "664.2",
+              "Turn Over": "NPR 1,328,028,180.10"
+            },
+            {
+              "Symbol": "SYPNL",
+              "Current Price": "1497",
+              "Turn Over": "NPR 1,306,345,536.50"
+            },
+            {
+              "Symbol": "CORBL",
+              "Current Price": "2400",
+              "Turn Over": "NPR 1,126,046,690.30"
+            },
+            {
+              "Symbol": "PCIL",
+              "Current Price": "948",
+              "Turn Over": "NPR 990,245,062.00"
+            }
+          ]
+        },
+        {
+          "headers": [
+            "Symbol",
+            "Current Price",
+            "Turn Over"
+          ],
+          "rows": [
+            {
+              "Symbol": "NHPC",
+              "Current Price": "296",
+              "Turn Over": "NPR 7,486,031,164.70"
+            },
+            {
+              "Symbol": "RSML",
+              "Current Price": "3850.2",
+              "Turn Over": "NPR 7,086,824,437.80"
+            },
+            {
+              "Symbol": "RIDI",
+              "Current Price": "349",
+              "Turn Over": "NPR 5,383,927,667.00"
+            },
+            {
+              "Symbol": "AKJCL",
+              "Current Price": "375",
+              "Turn Over": "NPR 5,207,156,733.30"
+            },
+            {
+              "Symbol": "SHIVM",
+              "Current Price": "664.2",
+              "Turn Over": "NPR 5,124,004,470.40"
+            },
+            {
+              "Symbol": "SYPNL",
+              "Current Price": "1497",
+              "Turn Over": "NPR 5,074,371,043.20"
+            },
+            {
+              "Symbol": "SOHL",
+              "Current Price": "710",
+              "Turn Over": "NPR 4,946,193,127.40"
+            },
+            {
+              "Symbol": "NGPL",
+              "Current Price": "437",
+              "Turn Over": "NPR 4,451,813,150.00"
+            },
+            {
+              "Symbol": "HRL",
+              "Current Price": "671.1",
+              "Turn Over": "NPR 4,390,412,496.10"
+            },
+            {
+              "Symbol": "NRN",
+              "Current Price": "1443",
+              "Turn Over": "NPR 4,227,802,132.00"
+            }
+          ]
+        },
+        {
+          "headers": [
+            "Symbol",
+            "Price(NPR)",
+            "Change",
+            "Volume",
+            "R-Volume",
+            "Float Cap",
+            "Market Cap"
+          ],
+          "rows": [
+            {
+              "Symbol": "CORBL",
+              "Price(NPR)": "2,400.00",
+              "Change": "-10.38%",
+              "Volume": "47,404.00",
+              "R-Volume": "241.76 %",
+              "Float Cap": "378.00 Cr.",
+              "Market Cap": "1,260.00 Cr."
+            },
+            {
+              "Symbol": "MKHL",
+              "Price(NPR)": "559.00",
+              "Change": "-9.11%",
+              "Volume": "10,618.00",
+              "R-Volume": "94.20 %",
+              "Float Cap": "83.78 Cr.",
+              "Market Cap": "219.22 Cr."
+            },
+            {
+              "Symbol": "NABILD87",
+              "Price(NPR)": "1,135.00",
+              "Change": "-5.42%",
+              "Volume": "54.00",
+              "R-Volume": "-",
+              "Float Cap": "- Cr.",
+              "Market Cap": "0.00 Cr."
+            },
+            {
+              "Symbol": "NICGF2",
+              "Price(NPR)": "9.31",
+              "Change": "-4.81%",
+              "Volume": "400.00",
+              "R-Volume": "-",
+              "Float Cap": "- Cr.",
+              "Market Cap": "0.00 Cr."
+            },
+            {
+              "Symbol": "SOHL",
+              "Price(NPR)": "710.00",
+              "Change": "-4.18%",
+              "Volume": "194,162.00",
+              "R-Volume": "-",
+              "Float Cap": "1,420.00 Cr.",
+              "Market Cap": "7,100.00 Cr."
+            },
+            {
+              "Symbol": "JHAPA",
+              "Price(NPR)": "1,564.00",
+              "Change": "-4.05%",
+              "Volume": "38,447.00",
+              "R-Volume": "254.94 %",
+              "Float Cap": "148.65 Cr.",
+              "Market Cap": "594.62 Cr."
+            },
+            {
+              "Symbol": "IHL",
+              "Price(NPR)": "395.00",
+              "Change": "-3.66%",
+              "Volume": "13,138.00",
+              "R-Volume": "133.10 %",
+              "Float Cap": "57.80 Cr.",
+              "Market Cap": "237.00 Cr."
+            },
+            {
+              "Symbol": "BGWT",
+              "Price(NPR)": "705.00",
+              "Change": "-3.42%",
+              "Volume": "4,728.00",
+              "R-Volume": "130.62 %",
+              "Float Cap": "70.29 Cr.",
+              "Market Cap": "478.16 Cr."
+            },
+            {
+              "Symbol": "CITY",
+              "Price(NPR)": "448.00",
+              "Change": "-3.03%",
+              "Volume": "13,892.00",
+              "R-Volume": "94.83 %",
+              "Float Cap": "129.59 Cr.",
+              "Market Cap": "1,349.91 Cr."
+            },
+            {
+              "Symbol": "NIMBD90",
+              "Price(NPR)": "1,270.00",
+              "Change": "-2.98%",
+              "Volume": "140.00",
+              "R-Volume": "-",
+              "Float Cap": "- Cr.",
+              "Market Cap": "0.00 Cr."
+            }
+          ]
+        },
+        {
+          "headers": [
+            "Symbol",
+            "Current Price",
+            "Last Price",
+            "Percent Change",
+            "Volume",
+            "Turnover"
+          ],
+          "rows": [
+            {
+              "Symbol": "MKHL",
+              "Current Price": "559",
+              "Last Price": "724.5",
+              "Percent Change": "-22.84%",
+              "Volume": "31032",
+              "Turnover": "19412867"
+            },
+            {
+              "Symbol": "HFIN",
+              "Current Price": "1024",
+              "Last Price": "1195",
+              "Percent Change": "-14.31%",
+              "Volume": "508915",
+              "Turnover": "544611988"
+            },
+            {
+              "Symbol": "SKHEL",
+              "Current Price": "1419.9",
+              "Last Price": "1635",
+              "Percent Change": "-13.16%",
+              "Volume": "101844",
+              "Turnover": "150131105"
+            },
+            {
+              "Symbol": "RLEL",
+              "Current Price": "1150",
+              "Last Price": "1321.1",
+              "Percent Change": "-12.95%",
+              "Volume": "184278",
+              "Turnover": "222276092"
+            },
+            {
+              "Symbol": "SOHL",
+              "Current Price": "710",
+              "Last Price": "814.9",
+              "Percent Change": "-12.87%",
+              "Volume": "1094003",
+              "Turnover": "837533553"
+            },
+            {
+              "Symbol": "SKHL",
+              "Current Price": "980.1",
+              "Last Price": "1124",
+              "Percent Change": "-12.80%",
+              "Volume": "177953",
+              "Turnover": "179654918"
+            },
+            {
+              "Symbol": "TVCL",
+              "Current Price": "508",
+              "Last Price": "570",
+              "Percent Change": "-10.88%",
+              "Volume": "60560",
+              "Turnover": "32451864"
+            },
+            {
+              "Symbol": "IHL",
+              "Current Price": "395",
+              "Last Price": "440.6",
+              "Percent Change": "-10.35%",
+              "Volume": "31364",
+              "Turnover": "13028034"
+            },
+            {
+              "Symbol": "SABBL",
+              "Current Price": "1349",
+              "Last Price": "1499",
+              "Percent Change": "-10.01%",
+              "Volume": "141646",
+              "Turnover": "201253985"
+            },
+            {
+              "Symbol": "BJHL",
+              "Current Price": "1035",
+              "Last Price": "1142",
+              "Percent Change": "-9.37%",
+              "Volume": "105298",
+              "Turnover": "109966544"
+            }
+          ]
+        },
+        {
+          "headers": [
+            "Symbol",
+            "Current Price",
+            "Last Price",
+            "Percent Change",
+            "Volume",
+            "Turnover"
+          ],
+          "rows": [
+            {
+              "Symbol": "BEDC",
+              "Current Price": "365.9",
+              "Last Price": "509",
+              "Percent Change": "-28.11%",
+              "Volume": "2060494",
+              "Turnover": "860183794"
+            },
+            {
+              "Symbol": "MKHL",
+              "Current Price": "559",
+              "Last Price": "776",
+              "Percent Change": "-27.96%",
+              "Volume": "301635",
+              "Turnover": "211256827"
+            },
+            {
+              "Symbol": "DOLTI",
+              "Current Price": "364",
+              "Last Price": "498.5",
+              "Percent Change": "-26.98%",
+              "Volume": "955256",
+              "Turnover": "378510071"
+            },
+            {
+              "Symbol": "GMLI",
+              "Current Price": "1280",
+              "Last Price": "1725",
+              "Percent Change": "-25.80%",
+              "Volume": "92382",
+              "Turnover": "136682715"
+            },
+            {
+              "Symbol": "NRIC",
+              "Current Price": "880.6",
+              "Last Price": "1179",
+              "Percent Change": "-25.31%",
+              "Volume": "2139004",
+              "Turnover": "2141443534"
+            },
+            {
+              "Symbol": "IHL",
+              "Current Price": "395",
+              "Last Price": "507.9",
+              "Percent Change": "-22.23%",
+              "Volume": "144238",
+              "Turnover": "66300250"
+            },
+            {
+              "Symbol": "MCHL",
+              "Current Price": "322",
+              "Last Price": "411",
+              "Percent Change": "-21.65%",
+              "Volume": "249795",
+              "Turnover": "89452123"
+            },
+            {
+              "Symbol": "SYPNL",
+              "Current Price": "1497",
+              "Last Price": "1899.9",
+              "Percent Change": "-21.21%",
+              "Volume": "2878757",
+              "Turnover": "5074371043"
+            },
+            {
+              "Symbol": "NMIC",
+              "Current Price": "1010",
+              "Last Price": "1274",
+              "Percent Change": "-20.72%",
+              "Volume": "202184",
+              "Turnover": "230951193"
+            },
+            {
+              "Symbol": "HRL",
+              "Current Price": "671.1",
+              "Last Price": "835",
+              "Percent Change": "-19.63%",
+              "Volume": "5994039",
+              "Turnover": "4390412496"
+            }
+          ]
+        },
+        {
+          "headers": [
+            "Sector",
+            "0-15",
+            "15-30",
+            "30-50",
+            "50-75",
+            "75-100",
+            "> 100"
+          ],
+          "rows": [
+            {
+              "Sector": "Commercial Banks",
+              "0-15": "10",
+              "15-30": "8",
+              "30-50": "0",
+              "50-75": "0",
+              "75-100": "0",
+              "> 100": "1"
+            },
+            {
+              "Sector": "Development Banks",
+              "0-15": "0",
+              "15-30": "6",
+              "30-50": "4",
+              "50-75": "1",
+              "75-100": "1",
+              "> 100": "2"
+            },
+            {
+              "Sector": "Finance",
+              "0-15": "0",
+              "15-30": "4",
+              "30-50": "3",
+              "50-75": "2",
+              "75-100": "1",
+              "> 100": "2"
+            },
+            {
+              "Sector": "Hotels",
+              "0-15": "0",
+              "15-30": "0",
+              "30-50": "0",
+              "50-75": "0",
+              "75-100": "1",
+              "> 100": "3"
+            },
+            {
+              "Sector": "Hydro Power",
+              "0-15": "1",
+              "15-30": "4",
+              "30-50": "14",
+              "50-75": "16",
+              "75-100": "6",
+              "> 100": "22"
+            },
+            {
+              "Sector": "Investment",
+              "0-15": "0",
+              "15-30": "0",
+              "30-50": "2",
+              "50-75": "1",
+              "75-100": "2",
+              "> 100": "2"
+            },
+            {
+              "Sector": "Life Insurance",
+              "0-15": "0",
+              "15-30": "0",
+              "30-50": "3",
+              "50-75": "4",
+              "75-100": "3",
+              "> 100": "4"
+            },
+            {
+              "Sector": "Manufacturing And Processing",
+              "0-15": "1",
+              "15-30": "1",
+              "30-50": "3",
+              "50-75": "0",
+              "75-100": "1",
+              "> 100": "3"
+            },
+            {
+              "Sector": "Microfinance",
+              "0-15": "0",
+              "15-30": "16",
+              "30-50": "14",
+              "50-75": "9",
+              "75-100": "5",
+              "> 100": "4"
+            },
+            {
+              "Sector": "Non Life Insurance",
+              "0-15": "0",
+              "15-30": "0",
+              "30-50": "3",
+              "50-75": "3",
+              "75-100": "1",
+              "> 100": "5"
+            },
+            {
+              "Sector": "Others",
+              "0-15": "0",
+              "15-30": "0",
+              "30-50": "1",
+              "50-75": "1",
+              "75-100": "1",
+              "> 100": "4"
+            },
+            {
+              "Sector": "Tradings",
+              "0-15": "0",
+              "15-30": "0",
+              "30-50": "0",
+              "50-75": "0",
+              "75-100": "0",
+              "> 100": "1"
+            }
+          ]
+        },
+        {
+          "headers": [
+            "Sector",
+            "0-1",
+            "1-2",
+            "2-4",
+            "4-6",
+            "6-10",
+            "> 10"
+          ],
+          "rows": [
+            {
+              "Sector": "Commercial Banks",
+              "0-1": "2",
+              "1-2": "13",
+              "2-4": "3",
+              "4-6": "0",
+              "6-10": "0",
+              "> 10": "0"
+            },
+            {
+              "Sector": "Development Banks",
+              "0-1": "0",
+              "1-2": "0",
+              "2-4": "9",
+              "4-6": "1",
+              "6-10": "2",
+              "> 10": "4"
+            },
+            {
+              "Sector": "Finance",
+              "0-1": "0",
+              "1-2": "0",
+              "2-4": "7",
+              "4-6": "6",
+              "6-10": "1",
+              "> 10": "0"
+            },
+            {
+              "Sector": "Hotels",
+              "0-1": "0",
+              "1-2": "0",
+              "2-4": "1",
+              "4-6": "2",
+              "6-10": "3",
+              "> 10": "1"
+            },
+            {
+              "Sector": "Hydro Power",
+              "0-1": "0",
+              "1-2": "0",
+              "2-4": "46",
+              "4-6": "30",
+              "6-10": "16",
+              "> 10": "3"
+            },
+            {
+              "Sector": "Investment",
+              "0-1": "0",
+              "1-2": "0",
+              "2-4": "2",
+              "4-6": "0",
+              "6-10": "3",
+              "> 10": "2"
+            },
+            {
+              "Sector": "Life Insurance",
+              "0-1": "0",
+              "1-2": "0",
+              "2-4": "8",
+              "4-6": "3",
+              "6-10": "2",
+              "> 10": "1"
+            },
+            {
+              "Sector": "Manufacturing And Processing",
+              "0-1": "1",
+              "1-2": "0",
+              "2-4": "4",
+              "4-6": "2",
+              "6-10": "2",
+              "> 10": "5"
+            },
+            {
+              "Sector": "Microfinance",
+              "0-1": "0",
+              "1-2": "0",
+              "2-4": "6",
+              "4-6": "24",
+              "6-10": "14",
+              "> 10": "6"
+            },
+            {
+              "Sector": "Non Life Insurance",
+              "0-1": "0",
+              "1-2": "0",
+              "2-4": "12",
+              "4-6": "0",
+              "6-10": "1",
+              "> 10": "0"
+            },
+            {
+              "Sector": "Others",
+              "0-1": "0",
+              "1-2": "1",
+              "2-4": "0",
+              "4-6": "3",
+              "6-10": "3",
+              "> 10": "2"
+            },
+            {
+              "Sector": "Tradings",
+              "0-1": "0",
+              "1-2": "0",
+              "2-4": "0",
+              "4-6": "0",
+              "6-10": "0",
+              "> 10": "1"
+            }
+          ]
+        },
+        {
+          "headers": [
+            "Sector",
+            "1-100",
+            "100-300",
+            "300-500",
+            "500-1000",
+            "1000-2500",
+            "> 2500"
+          ],
+          "rows": [
+            {
+              "Sector": "Commercial Banks",
+              "1-100": "0",
+              "100-300": "12",
+              "300-500": "5",
+              "500-1000": "3",
+              "1000-2500": "0",
+              "> 2500": "0"
+            },
+            {
+              "Sector": "Development Banks",
+              "1-100": "0",
+              "100-300": "0",
+              "300-500": "8",
+              "500-1000": "4",
+              "1000-2500": "4",
+              "> 2500": "0"
+            },
+            {
+              "Sector": "Finance",
+              "1-100": "0",
+              "100-300": "0",
+              "300-500": "8",
+              "500-1000": "7",
+              "1000-2500": "0",
+              "> 2500": "0"
+            },
+            {
+              "Sector": "Hotels",
+              "1-100": "0",
+              "100-300": "0",
+              "300-500": "2",
+              "500-1000": "5",
+              "1000-2500": "1",
+              "> 2500": "0"
+            },
+            {
+              "Sector": "Hydro Power",
+              "1-100": "0",
+              "100-300": "22",
+              "300-500": "43",
+              "500-1000": "34",
+              "1000-2500": "4",
+              "> 2500": "0"
+            },
+            {
+              "Sector": "Investment",
+              "1-100": "0",
+              "100-300": "3",
+              "300-500": "0",
+              "500-1000": "2",
+              "1000-2500": "3",
+              "> 2500": "0"
+            },
+            {
+              "Sector": "Life Insurance",
+              "1-100": "0",
+              "100-300": "0",
+              "300-500": "9",
+              "500-1000": "3",
+              "1000-2500": "2",
+              "> 2500": "0"
+            },
+            {
+              "Sector": "Manufacturing And Processing",
+              "1-100": "0",
+              "100-300": "1",
+              "300-500": "2",
+              "500-1000": "3",
+              "1000-2500": "5",
+              "> 2500": "4"
+            },
+            {
+              "Sector": "Microfinance",
+              "1-100": "0",
+              "100-300": "0",
+              "300-500": "0",
+              "500-1000": "24",
+              "1000-2500": "24",
+              "> 2500": "2"
+            },
+            {
+              "Sector": "Non Life Insurance",
+              "1-100": "0",
+              "100-300": "0",
+              "300-500": "5",
+              "500-1000": "7",
+              "1000-2500": "1",
+              "> 2500": "1"
+            },
+            {
+              "Sector": "Others",
+              "1-100": "0",
+              "100-300": "0",
+              "300-500": "1",
+              "500-1000": "6",
+              "1000-2500": "2",
+              "> 2500": "0"
+            },
+            {
+              "Sector": "Tradings",
+              "1-100": "0",
+              "100-300": "0",
+              "300-500": "0",
+              "500-1000": "0",
+              "1000-2500": "0",
+              "> 2500": "2"
+            }
+          ]
+        },
+        {
+          "headers": [
+            "Sector",
+            "0-2.5%",
+            "2.5%-5%",
+            ">5%"
+          ],
+          "rows": [
+            {
+              "Sector": "Commercial Banks",
+              "0-2.5%": "4",
+              "2.5%-5%": "9",
+              ">5%": "0"
+            },
+            {
+              "Sector": "Development Banks",
+              "0-2.5%": "5",
+              "2.5%-5%": "4",
+              ">5%": "0"
+            },
+            {
+              "Sector": "Finance",
+              "0-2.5%": "2",
+              "2.5%-5%": "2",
+              ">5%": "0"
+            },
+            {
+              "Sector": "Hotels",
+              "0-2.5%": "4",
+              "2.5%-5%": "0",
+              ">5%": "0"
+            },
+            {
+              "Sector": "Hydro Power",
+              "0-2.5%": "21",
+              "2.5%-5%": "7",
+              ">5%": "0"
+            },
+            {
+              "Sector": "Investment",
+              "0-2.5%": "6",
+              "2.5%-5%": "1",
+              ">5%": "0"
+            },
+            {
+              "Sector": "Life Insurance",
+              "0-2.5%": "3",
+              "2.5%-5%": "8",
+              ">5%": "0"
+            },
+            {
+              "Sector": "Manufacturing And Processing",
+              "0-2.5%": "4",
+              "2.5%-5%": "1",
+              ">5%": "1"
+            },
+            {
+              "Sector": "Microfinance",
+              "0-2.5%": "22",
+              "2.5%-5%": "1",
+              ">5%": "0"
+            },
+            {
+              "Sector": "Non Life Insurance",
+              "0-2.5%": "8",
+              "2.5%-5%": "3",
+              ">5%": "0"
+            },
+            {
+              "Sector": "Others",
+              "0-2.5%": "3",
+              "2.5%-5%": "1",
+              ">5%": "0"
+            },
+            {
+              "Sector": "Tradings",
+              "0-2.5%": "1",
+              "2.5%-5%": "0",
+              ">5%": "0"
+            }
+          ]
+        },
+        {
+          "headers": [],
+          "rows": [
+            {
+              "Col_0": "Commercial Banking",
+              "Col_1": "15 %",
+              "Col_2": "20 %",
+              "Col_3": "30 %",
+              "Col_4": "65 %",
+              "Col_5": "85 %"
+            },
+            {
+              "Col_0": "Development Bank",
+              "Col_1": "25 %",
+              "Col_2": "25 %",
+              "Col_3": "25 %",
+              "Col_4": "50 %",
+              "Col_5": "75 %"
+            },
+            {
+              "Col_0": "Finance",
+              "Col_1": "0 %",
+              "Col_2": "0 %",
+              "Col_3": "0 %",
+              "Col_4": "13.33 %",
+              "Col_5": "60 %"
+            },
+            {
+              "Col_0": "Hotels and Tourism",
+              "Col_1": "0 %",
+              "Col_2": "12.5 %",
+              "Col_3": "0 %",
+              "Col_4": "12.5 %",
+              "Col_5": "12.5 %"
+            },
+            {
+              "Col_0": "Hydropower",
+              "Col_1": "3.88 %",
+              "Col_2": "5.83 %",
+              "Col_3": "5.83 %",
+              "Col_4": "30.1 %",
+              "Col_5": "47.57 %"
+            },
+            {
+              "Col_0": "INVESTMENT",
+              "Col_1": "12.5 %",
+              "Col_2": "12.5 %",
+              "Col_3": "0 %",
+              "Col_4": "0 %",
+              "Col_5": "25 %"
+            },
+            {
+              "Col_0": "Life Insurance",
+              "Col_1": "7.14 %",
+              "Col_2": "0 %",
+              "Col_3": "0 %",
+              "Col_4": "0 %",
+              "Col_5": "64.29 %"
+            },
+            {
+              "Col_0": "Manufacturing and Processing",
+              "Col_1": "26.67 %",
+              "Col_2": "13.33 %",
+              "Col_3": "13.33 %",
+              "Col_4": "13.33 %",
+              "Col_5": "33.33 %"
+            },
+            {
+              "Col_0": "Microfinance",
+              "Col_1": "2 %",
+              "Col_2": "4 %",
+              "Col_3": "4 %",
+              "Col_4": "8 %",
+              "Col_5": "26 %"
+            },
+            {
+              "Col_0": "Nonlife Insurance",
+              "Col_1": "0 %",
+              "Col_2": "0 %",
+              "Col_3": "0 %",
+              "Col_4": "0 %",
+              "Col_5": "14.29 %"
+            },
+            {
+              "Col_0": "Others",
+              "Col_1": "11.11 %",
+              "Col_2": "11.11 %",
+              "Col_3": "11.11 %",
+              "Col_4": "11.11 %",
+              "Col_5": "22.22 %"
+            },
+            {
+              "Col_0": "Trading",
+              "Col_1": "0 %",
+              "Col_2": "50 %",
+              "Col_3": "0 %",
+              "Col_4": "50 %",
+              "Col_5": "50 %"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "url": "https://nepsealpha.com/sastoshare/swing-trader",
+      "title": "Nepsealpha | Some Issue",
+      "tables": []
+    },
+    {
+      "url": "https://nepsealpha.com/sastoshare/broker-analysis",
+      "title": "Nepsealpha | Some Issue",
+      "tables": []
+    },
+    {
+      "url": "https://nepsealpha.com/sastoshare/sector-performance",
+      "title": "Nepsealpha | Some Issue",
+      "tables": []
+    },
+    {
+      "url": "https://nepsealpha.com/sastoshare/stock-health",
+      "title": "Nepsealpha | Some Issue",
+      "tables": []
+    },
+    {
+      "url": "https://nepsealpha.com/trading-menu/top-stocks",
+      "title": "",
+      "tables": []
+    },
+    {
+      "url": "https://nepsealpha.com/nepse-data/eod",
+      "title": "Nepsealpha | Some Issue",
+      "tables": []
+    },
+    {
+      "url": "https://nepsealpha.com/trading/live-market",
+      "title": "Nepsealpha | Some Issue",
+      "tables": []
+    }
+  ],
+  "structured": {
+    "marketIndex": {},
+    "topStocks": [
+      {
+        "symbol": "SAIL",
+        "ltp": 1263,
+        "change": "12.57%",
+        "volume": 84231
+      },
+      {
+        "symbol": "SIPD",
+        "ltp": 974,
+        "change": "7.91%",
+        "volume": 62190
+      },
+      {
+        "symbol": "AHL",
+        "ltp": 534,
+        "change": "7.88%",
+        "volume": 14073
+      },
+      {
+        "symbol": "RFPL",
+        "ltp": 388.3,
+        "change": "4.95%",
+        "volume": 82093
+      },
+      {
+        "symbol": "NIBLGF",
+        "ltp": 9.65,
+        "change": "3.65%",
+        "volume": 7200
+      },
+      {
+        "symbol": "SYPNL",
+        "ltp": 1497,
+        "change": "3.60%",
+        "volume": 87391
+      },
+      {
+        "symbol": "KSBBLD87",
+        "ltp": 1078.4,
+        "change": "3.00%",
+        "volume": 25
+      },
+      {
+        "symbol": "HBLD86",
+        "ltp": 1148.4,
+        "change": "3.00%",
+        "volume": 25
+      },
+      {
+        "symbol": "SDBD87",
+        "ltp": 1127.8,
+        "change": "3.00%",
+        "volume": 5
+      },
+      {
+        "symbol": "ICFCD88",
+        "ltp": 1201,
+        "change": "2.91%",
+        "volume": 100
+      },
+      {
+        "symbol": "GRDBL",
+        "ltp": 1047,
+        "change": "5.06%",
+        "volume": 192294
+      },
+      {
+        "symbol": "NABIL",
+        "ltp": 518,
+        "change": "1.93%",
+        "volume": 185580
+      },
+      {
+        "symbol": "GBBL",
+        "ltp": 407,
+        "change": "1.72%",
+        "volume": 92182
+      },
+      {
+        "symbol": "UNL",
+        "ltp": 46220,
+        "change": "1.69%",
+        "volume": 125
+      },
+      {
+        "symbol": "CKHL",
+        "ltp": 688,
+        "change": "1.60%",
+        "volume": 19814
+      },
+      {
+        "symbol": "SAPDBL",
+        "ltp": 803,
+        "change": "1.49%",
+        "volume": 252361
+      },
+      {
+        "symbol": "NLICL",
+        "ltp": 580,
+        "change": "1.21%",
+        "volume": 49421
+      },
+      {
+        "symbol": "SKHEL",
+        "ltp": 378.2,
+        "change": "275.44%",
+        "volume": 284195
+      },
+      {
+        "symbol": "HFIN",
+        "ltp": 349.8,
+        "change": "192.74%",
+        "volume": 1524972
+      },
+      {
+        "symbol": "RLEL",
+        "ltp": 399.3,
+        "change": "188.00%",
+        "volume": 618862
+      },
+      {
+        "symbol": "SKHL",
+        "ltp": 483.1,
+        "change": "102.88%",
+        "volume": 841585
+      },
+      {
+        "symbol": "BJHL",
+        "ltp": 578.6,
+        "change": "78.88%",
+        "volume": 690989
+      },
+      {
+        "symbol": "RSML",
+        "ltp": 2679.3,
+        "change": "43.70%",
+        "volume": 1728458
+      },
+      {
+        "symbol": "CORBL",
+        "ltp": 1900,
+        "change": "26.32%",
+        "volume": 580127
+      },
+      {
+        "symbol": "JHAPA",
+        "ltp": 1387.9,
+        "change": "12.69%",
+        "volume": 473566
+      },
+      {
+        "symbol": "HHL",
+        "ltp": 357,
+        "change": "7.56%",
+        "volume": 3304657
+      },
+      {
+        "symbol": "MKHL",
+        "ltp": 559,
+        "change": "-9.11%",
+        "volume": 10618
+      },
+      {
+        "symbol": "NABILD87",
+        "ltp": 1135,
+        "change": "-5.42%",
+        "volume": 54
+      },
+      {
+        "symbol": "NICGF2",
+        "ltp": 9.31,
+        "change": "-4.81%",
+        "volume": 400
+      },
+      {
+        "symbol": "SOHL",
+        "ltp": 710,
+        "change": "-4.18%",
+        "volume": 194162
+      },
+      {
+        "symbol": "IHL",
+        "ltp": 395,
+        "change": "-3.66%",
+        "volume": 13138
+      },
+      {
+        "symbol": "BGWT",
+        "ltp": 705,
+        "change": "-3.42%",
+        "volume": 4728
+      },
+      {
+        "symbol": "CITY",
+        "ltp": 448,
+        "change": "-3.03%",
+        "volume": 13892
+      },
+      {
+        "symbol": "NIMBD90",
+        "ltp": 1270,
+        "change": "-2.98%",
+        "volume": 140
+      },
+      {
+        "symbol": "TVCL",
+        "ltp": 570,
+        "change": "-10.88%",
+        "volume": 60560
+      },
+      {
+        "symbol": "SABBL",
+        "ltp": 1499,
+        "change": "-10.01%",
+        "volume": 141646
+      },
+      {
+        "symbol": "BEDC",
+        "ltp": 509,
+        "change": "-28.11%",
+        "volume": 2060494
+      },
+      {
+        "symbol": "DOLTI",
+        "ltp": 498.5,
+        "change": "-26.98%",
+        "volume": 955256
+      },
+      {
+        "symbol": "GMLI",
+        "ltp": 1725,
+        "change": "-25.80%",
+        "volume": 92382
+      },
+      {
+        "symbol": "NRIC",
+        "ltp": 1179,
+        "change": "-25.31%",
+        "volume": 2139004
+      },
+      {
+        "symbol": "MCHL",
+        "ltp": 411,
+        "change": "-21.65%",
+        "volume": 249795
+      },
+      {
+        "symbol": "NMIC",
+        "ltp": 1274,
+        "change": "-20.72%",
+        "volume": 202184
+      },
+      {
+        "symbol": "HRL",
+        "ltp": 835,
+        "change": "-19.63%",
+        "volume": 5994039
+      }
+    ],
+    "brokerData": [],
+    "swingSignals": [],
+    "sectorData": [
+      {
+        "sector": "Commercial Banks"
+      },
+      {
+        "sector": "Development Banks"
+      },
+      {
+        "sector": "Finance"
+      },
+      {
+        "sector": "Hotels"
+      },
+      {
+        "sector": "Hydro Power"
+      },
+      {
+        "sector": "Investment"
+      },
+      {
+        "sector": "Life Insurance"
+      },
+      {
+        "sector": "Manufacturing And Processing"
+      },
+      {
+        "sector": "Microfinance"
+      },
+      {
+        "sector": "Non Life Insurance"
+      },
+      {
+        "sector": "Others"
+      },
+      {
+        "sector": "Tradings"
+      },
+      {
+        "sector": "Commercial Banks"
+      },
+      {
+        "sector": "Development Banks"
+      },
+      {
+        "sector": "Finance"
+      },
+      {
+        "sector": "Hotels"
+      },
+      {
+        "sector": "Hydro Power"
+      },
+      {
+        "sector": "Investment"
+      },
+      {
+        "sector": "Life Insurance"
+      },
+      {
+        "sector": "Manufacturing And Processing"
+      },
+      {
+        "sector": "Microfinance"
+      },
+      {
+        "sector": "Non Life Insurance"
+      },
+      {
+        "sector": "Others"
+      },
+      {
+        "sector": "Tradings"
+      },
+      {
+        "sector": "Commercial Banks"
+      },
+      {
+        "sector": "Development Banks"
+      },
+      {
+        "sector": "Finance"
+      },
+      {
+        "sector": "Hotels"
+      },
+      {
+        "sector": "Hydro Power"
+      },
+      {
+        "sector": "Investment"
+      },
+      {
+        "sector": "Life Insurance"
+      },
+      {
+        "sector": "Manufacturing And Processing"
+      },
+      {
+        "sector": "Microfinance"
+      },
+      {
+        "sector": "Non Life Insurance"
+      },
+      {
+        "sector": "Others"
+      },
+      {
+        "sector": "Tradings"
+      },
+      {
+        "sector": "Commercial Banks"
+      },
+      {
+        "sector": "Development Banks"
+      },
+      {
+        "sector": "Finance"
+      },
+      {
+        "sector": "Hotels"
+      },
+      {
+        "sector": "Hydro Power"
+      },
+      {
+        "sector": "Investment"
+      },
+      {
+        "sector": "Life Insurance"
+      },
+      {
+        "sector": "Manufacturing And Processing"
+      },
+      {
+        "sector": "Microfinance"
+      },
+      {
+        "sector": "Non Life Insurance"
+      },
+      {
+        "sector": "Others"
+      },
+      {
+        "sector": "Tradings"
+      }
+    ],
+    "floorsheet": []
+  },
+  "summary": {
+    "stockCount": 43,
+    "brokerRecords": 0,
+    "swingSignals": 0,
+    "hasMarketIndex": false,
+    "pagesScraped": 8,
+    "dataQuality": "good"
+  }
+}
