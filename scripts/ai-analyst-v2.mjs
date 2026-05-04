@@ -51,6 +51,45 @@ async function callGeminiAPI(promptText) {
   }
 }
 
+// Helper to call Claude API (supervisor)
+async function callClaudeAPI(promptText, maxTokens = 1500) {
+  const apiKey = process.env.ANTHROPIC_API_KEY
+  if (!apiKey) {
+    console.log('⚠️  No ANTHROPIC_API_KEY — skipping Claude supervision')
+    return null
+  }
+
+  const response = await fetch('https://api.anthropic.com/v1/messages', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+      'x-api-key': apiKey,
+      'anthropic-version': '2023-06-01'
+    },
+    body: JSON.stringify({
+      model: 'claude-haiku-4-5-20251001',
+      max_tokens: maxTokens,
+      messages: [{ role: 'user', content: promptText }]
+    })
+  })
+
+  const data = await response.json()
+  if (data.error) {
+    console.warn('⚠️  Claude error:', data.error.message)
+    return null
+  }
+
+  const text = data.content?.[0]?.text || ''
+  try {
+    const clean = text.replace(/```json|```/g, '').trim()
+    const s = clean.search(/[\[{]/)
+    const e = Math.max(clean.lastIndexOf('}'), clean.lastIndexOf(']'))
+    return JSON.parse(clean.slice(s, e + 1))
+  } catch {
+    return { refinedText: text }
+  }
+}
+
 export default async function runAIAnalyst() {
   console.log('🤖 Starting AI Analyst V2 Pipeline...');
   
@@ -202,18 +241,90 @@ Return JSON:
   const stage3 = await callGeminiAPI(stage3Prompt);
   console.log(`✔️ Stage 3 Complete. Generated final top 10 picks.`);
 
+  // --- STAGE 4: Claude Supervisor ---
+  console.log('🎯 STAGE 4: Claude Supervisor — Refining and validating...')
+
+  let sastoPicksForSupervisor = []
+  try {
+    const sastoRaw = fs.readFileSync(path.join(__dirname, '../src/app/data/sasto_premium_report.json'), 'utf8')
+    sastoPicksForSupervisor = JSON.parse(sastoRaw).picks?.slice(0, 10) || []
+  } catch {
+    console.log('  ℹ️  sasto_premium_report.json not found — supervisor will work without F-score data')
+  }
+
+  const stage4Prompt = `You are a senior investment analyst and CA professional in Nepal
+acting as a SUPERVISOR reviewing AI-generated NEPSE market analysis.
+
+Your junior analyst (Gemini AI) has produced this analysis:
+
+MARKET PHASE: ${stage1?.marketPhase}
+MARKET PHASE REASON: ${stage1?.marketPhaseReason}
+HOT SECTORS: ${JSON.stringify(stage1?.hotSectors)}
+WEEKLY BIAS: ${stage1?.weeklyBias}
+KEY RISK: ${stage1?.keyRiskToday}
+
+TOP STOCK PICKS (from screening):
+${JSON.stringify(stage3?.topPicks || [])}
+
+SASTO PREMIUM DATA (real F-score picks):
+${JSON.stringify(sastoPicksForSupervisor)}
+
+Your job as supervisor:
+1. VALIDATE: Cross-check Gemini picks against Sasto F-score data
+   - A stock appearing in BOTH Gemini picks AND Sasto picks = HIGH CONVICTION
+   - Gemini only = MODERATE confidence
+   - Sasto only = WATCH (fundamental strength without technical confirmation)
+
+2. REFINE: Improve the market summary into a 5-sentence executive brief
+   that a CA professional would send to clients
+
+3. RANK: Produce a final ranked list of top 5 high-conviction picks with:
+   - Conviction level: HIGH / MODERATE / WATCH
+   - One specific reason (not generic)
+   - Suggested action: BUY NOW / ACCUMULATE / WAIT FOR PULLBACK
+
+4. RISK CHECK: Flag anything Gemini might have missed
+
+Return ONLY valid JSON:
+{
+  "executiveSummary": "5 sentences, professional, specific to today",
+  "marketVerdict": "BULLISH" | "BEARISH" | "NEUTRAL",
+  "finalPicks": [
+    {
+      "symbol": "XXXX",
+      "conviction": "HIGH" | "MODERATE" | "WATCH",
+      "action": "BUY NOW" | "ACCUMULATE" | "WAIT FOR PULLBACK",
+      "reason": "specific one-sentence reason",
+      "source": "BOTH" | "GEMINI" | "SASTO",
+      "fScore": "if available from Sasto data"
+    }
+  ],
+  "riskFlags": ["specific risk 1", "specific risk 2"],
+  "supervisorNote": "One sentence of overall confidence in this analysis",
+  "geminiAccuracy": "HIGH" | "MEDIUM" | "LOW"
+}`
+
+  const stage4 = await callClaudeAPI(stage4Prompt, 2000)
+
+  if (stage4) {
+    console.log(`✅ Stage 4 Complete. Market verdict: ${stage4.marketVerdict}`)
+    console.log(`   Final picks: ${stage4.finalPicks?.length || 0}`)
+    console.log(`   Gemini accuracy rated: ${stage4.geminiAccuracy}`)
+  } else {
+    console.log('⚠️  Claude supervision skipped — using Gemini output directly')
+  }
+
   // --- SAVE ---
-  // Ensure the legacy structure still exists so the UI doesn't completely break,
-  // although the UI expects marketSummary, marketSentiment, institutionalFocus, topPicks, anomalies
+  // Legacy digest for backward compatibility with existing UI components
   const legacyFormat = {
     timestamp: stage3.generatedAt || new Date().toISOString(),
-    marketSummary: stage3.marketSummary,
-    marketSentiment: stage3.weeklyBias,
+    marketSummary: stage4?.executiveSummary || stage3.marketSummary,
+    marketSentiment: stage4?.marketVerdict || stage3.weeklyBias,
     institutionalFocus: stage1.hotSectors.map(s => s.sector).join(', '),
-    topPicks: stage3.topPicks.map(p => ({
+    topPicks: (stage4?.finalPicks || stage3.topPicks || []).map(p => ({
       symbol: p.symbol,
-      target: p.signal,
-      reason: p.thesis
+      target: p.action || p.signal,
+      reason: p.reason || p.thesis
     })),
     anomalies: stage1.regulatoryAlerts.map(r => r.notice).slice(0, 5),
     linkedinIdeas: stage3.linkedinIdeas
@@ -222,15 +333,32 @@ Return JSON:
   const digestPath = path.join(__dirname, '../src/app/data/ai_digest.json');
   fs.writeFileSync(digestPath, JSON.stringify(legacyFormat, null, 2));
 
-  const deepIntelPath = path.join(__dirname, '../src/app/data/deep_intelligence.json');
-  const deepIntel = {
+  const finalOutput = {
     generatedAt: new Date().toISOString(),
+    pipeline: 'gemini-3stage + claude-supervisor',
     stage1,
     stage2,
-    stage3
-  };
-  fs.writeFileSync(deepIntelPath, JSON.stringify(deepIntel, null, 2));
+    stage3,
+    stage4,
+    // Dashboard should use stage4 if available, stage3 as fallback
+    activePicks: stage4?.finalPicks || stage3?.topPicks || [],
+    executiveSummary: stage4?.executiveSummary || stage1?.marketPhaseReason || '',
+    marketVerdict: stage4?.marketVerdict || stage1?.weeklyBias || 'NEUTRAL',
+    supervisorActive: !!stage4,
+    costInfo: {
+      geminiCalls: 3,
+      claudeCalls: stage4 ? 1 : 0,
+      estimatedCost: stage4 ? '$0.025' : '$0.00'
+    }
+  }
 
+  const deepIntelPath = path.join(__dirname, '../src/app/data/deep_intelligence.json');
+  fs.writeFileSync(deepIntelPath, JSON.stringify(finalOutput, null, 2));
+
+  console.log(`\n✅ AI Analysis Complete`)
+  console.log(`   Supervisor: ${finalOutput.supervisorActive ? '◆ Claude' : '✦ Gemini only'}`)
+  console.log(`   Active picks: ${finalOutput.activePicks.length}`)
+  console.log(`   Est. cost: ${finalOutput.costInfo.estimatedCost}`)
   console.log('💾 Intelligence safely stored to ai_digest.json and deep_intelligence.json.');
 }
 

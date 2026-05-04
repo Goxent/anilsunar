@@ -1,4 +1,4 @@
-import React, { useState, useMemo, useEffect } from 'react'
+import React, { useState, useMemo } from 'react'
 import { 
   Search, 
   RefreshCw, 
@@ -11,10 +11,11 @@ import {
   BarChart3,
   ShieldAlert,
   Zap,
-  ArrowRight
+  ArrowRight,
+  Globe,
+  Sparkles
 } from 'lucide-react'
 import { useMarketData } from '../AppShell'
-import { callAI } from '../lib/ai'
 import fundamentalData from '../data/fundamental-data.json'
 import deepIntelligence from '../data/deep_intelligence.json'
 
@@ -110,44 +111,28 @@ export default function StockAnalyzer() {
       const fund = fundMap[sym] || null
       setFundamentals(fund)
 
-      // 3. AI PHASE
+      // 3. AI ANALYSIS PHASE — server-side research API (Gemini + optional Claude)
       setPhase('ai')
-      const dataSummary = JSON.stringify({
-        symbol: sym,
-        ltp: scrapedInfo.ltp,
-        change: scrapedInfo.change,
-        volume: scrapedInfo.volume,
-        sector: scrapedInfo.sector,
-        fundamentals: fund || 'not in database',
-        pagesFoundIn: matchedPages.map(p => p.pageTitle)
+
+      const researchRes = await fetch('/api/stock-research', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          symbol: sym,
+          ltp: scrapedInfo.ltp,
+          sector: scrapedInfo.sector,
+          localFundamentals: fund,
+          localScraped: scrapedInfo
+        })
       })
 
-      const prompt = `You are a NEPSE stock analyst. Analyze ${sym} listed on the Nepal Stock Exchange.
+      if (!researchRes.ok) {
+        const err = await researchRes.json()
+        throw new Error(err.error || 'Research API failed')
+      }
 
-Available data from today's market scan:
-${dataSummary}
-
-Provide a research report with these 5 sections:
-1. BUSINESS: What does this company do? Revenue model, sector position in Nepal. (2-3 sentences)
-2. RECENT_NEWS: Any significant news about this company in the last 6 months — dividend announcements, right shares, management changes, regulatory actions, financial results. If you have limited recent information, say "No major recent news found — check MeroLagani or ShareSansar for latest updates."
-3. FUNDAMENTALS: Analyze the P/E ratio (pe), EPS, and Book Value shown. How do they compare to NEPSE sector averages? Is the stock overvalued or undervalued?
-4. RISKS: List exactly 3 specific risks for this stock. Be specific to this company, not generic.
-5. VERDICT: One of: STRONG BUY / BUY / HOLD / AVOID. Then 2 sentences explaining exactly why.
-
-Return ONLY valid JSON. No markdown, no explanation outside JSON:
-{
-  "business": "string",
-  "recentNews": "string", 
-  "fundamentals": "string",
-  "risks": ["risk1", "risk2", "risk3"],
-  "verdict": "BUY",
-  "verdictReason": "string"
-}`
-
-      const rawText = await callAI(prompt)
-      const cleaned = rawText.replace(/```json|```/g, '').trim()
-      const parsed = JSON.parse(cleaned)
-      setAiResult(parsed)
+      const aiResult = await researchRes.json()
+      setAiResult(aiResult)
       setPhase('done')
 
     } catch (err: any) {
@@ -330,31 +315,90 @@ Return ONLY valid JSON. No markdown, no explanation outside JSON:
             </div>
           </div>
 
-          {/* RIGHT COLUMN */}
-          <div className="flex flex-col gap-8">
+          {/* RIGHT COLUMN — AI Research */}
+          <div className="flex flex-col gap-6">
             <div className="text-[10px] font-bold text-2 uppercase tracking-[0.2em]">AI Research</div>
 
-            {/* Verdict Badge */}
-            <div className="flex flex-col gap-3 items-center">
-              <div className={`w-full py-4 rounded-xl text-center text-lg font-black tracking-[0.2em] uppercase border shadow-lg ${
-                aiResult?.verdict === 'STRONG BUY' ? 'badge-green border-green-border' :
-                aiResult?.verdict === 'BUY'        ? 'badge-blue border-blue-border' :
-                aiResult?.verdict === 'HOLD'       ? 'badge-amber border-amber-border' :
-                'badge-red border-red-border'
-              }`}>
-                {aiResult?.verdict}
+            {/* Section 1: Verdict Banner */}
+            <div className="card-base p-5 flex flex-col gap-3">
+              <div className="flex items-center gap-3">
+                <div className={`flex-1 py-3 rounded-lg text-center text-base font-black tracking-widest uppercase border ${
+                  aiResult?.overallVerdict === 'BUY'        ? 'badge-green border-green-border' :
+                  aiResult?.overallVerdict === 'ACCUMULATE' ? 'badge-blue border-blue-border' :
+                  aiResult?.overallVerdict === 'HOLD'       ? 'badge-amber border-amber-border' :
+                  'badge-red border-red-border'
+                }`}>
+                  {aiResult?.overallVerdict || '—'}
+                </div>
+                <div className={`px-3 py-3 rounded-lg text-xs font-black uppercase border ${
+                  aiResult?.riskLevel === 'LOW'    ? 'badge-green border-green-border' :
+                  aiResult?.riskLevel === 'MEDIUM' ? 'badge-amber border-amber-border' :
+                  'badge-red border-red-border'
+                }`}>
+                  {aiResult?.riskLevel || '—'} RISK
+                </div>
               </div>
-              <p className="font-display italic text-1 text-[15px] text-center px-4 leading-relaxed">
-                "{aiResult?.verdictReason}"
-              </p>
+              <p className="text-sm text-1 italic leading-relaxed">"{aiResult?.oneLinerSummary}"</p>
             </div>
 
-            {/* Research Sections */}
-            <div className="flex flex-col gap-4">
-              <ResearchCard label="Business" color="text-2" content={aiResult?.business} />
-              <ResearchCard label="Recent News" color="text-2" content={aiResult?.recentNews} />
-              <ResearchCard label="Fundamentals Analysis" color="text-2" content={aiResult?.fundamentals} />
-              <ResearchCard label="Key Risks" color="text-red" isList items={aiResult?.risks} />
+            {/* Section 2: Four analysis columns */}
+            <div className="grid grid-cols-2 gap-3">
+              <div className="card-base p-4">
+                <div className="text-[10px] font-bold text-gold uppercase tracking-wider mb-2">Technical</div>
+                <p className="text-[11px] font-bold text-1 mb-1">{aiResult?.technicalView?.trend} · {aiResult?.technicalView?.momentum}</p>
+                <p className="text-[11px] text-2 leading-relaxed">{aiResult?.technicalView?.comment}</p>
+                <p className="text-[10px] text-3 mt-2">Watch: {aiResult?.technicalView?.keyLevel}</p>
+              </div>
+              <div className="card-base p-4">
+                <div className="text-[10px] font-bold text-blue uppercase tracking-wider mb-2">Fundamental</div>
+                <p className="text-[11px] font-bold text-1 mb-1">{aiResult?.fundamentalView?.verdict}</p>
+                <p className="text-[11px] text-2 leading-relaxed">{aiResult?.fundamentalView?.comment}</p>
+              </div>
+              <div className="card-base p-4">
+                <div className="text-[10px] font-bold text-green uppercase tracking-wider mb-2">News & Sentiment</div>
+                <p className="text-[11px] font-bold text-1 mb-1">{aiResult?.newsAndSentiment?.socialSentiment}</p>
+                <p className="text-[11px] text-2 leading-relaxed">{aiResult?.newsAndSentiment?.keyDevelopment}</p>
+              </div>
+              <div className="card-base p-4">
+                <div className="flex items-center gap-1 mb-2"><Globe size={10} className="text-3" /><span className="text-[10px] font-bold text-3 uppercase tracking-wider">Global Context</span></div>
+                <p className="text-[11px] text-2 leading-relaxed">{aiResult?.globalContext}</p>
+              </div>
+            </div>
+
+            {/* Section 3: Claude Expert Note */}
+            {aiResult?.supervisorActive && aiResult?.claudeExpertNote && (
+              <div className="card-base p-4" style={{ border:'1px solid rgba(212,175,55,0.25)', background:'rgba(212,175,55,0.04)' }}>
+                <div className="flex items-center gap-2 mb-2">
+                  <Sparkles size={12} className="text-gold" />
+                  <span className="text-[10px] font-bold text-gold uppercase tracking-wider">◆ Claude Expert Note</span>
+                  <span className={`ml-auto text-[9px] font-black px-2 py-0.5 rounded ${
+                    aiResult.claudeExpertNote.confidenceRating === 'HIGH' ? 'badge-green' :
+                    aiResult.claudeExpertNote.confidenceRating === 'MEDIUM' ? 'badge-amber' : 'badge-red'
+                  }`}>{aiResult.claudeExpertNote.confidenceRating}</span>
+                </div>
+                <p className="text-[12px] text-1 leading-relaxed mb-2">{aiResult.claudeExpertNote.expertNote}</p>
+                <p className="text-[10px] text-gold font-bold">👁 Watch: {aiResult.claudeExpertNote.keyWatch}</p>
+              </div>
+            )}
+
+            {/* Section 4: Quick stats row */}
+            <div className="card-base p-4">
+              <div className="text-[10px] font-bold text-2 uppercase tracking-wider mb-3">Key Metrics</div>
+              <div className="grid grid-cols-3 gap-4">
+                <Metric label="P/E" value={aiResult?.fundamentalView?.peRatio || fundamentals?.pe || '—'} />
+                <Metric label="EPS" value={aiResult?.fundamentalView?.eps || fundamentals?.eps || '—'} />
+                <Metric label="Book Value" value={aiResult?.fundamentalView?.bookValue || fundamentals?.bookValue || '—'} />
+                <Metric label="P/B Ratio" value={aiResult?.fundamentalView?.pbRatio || '—'} />
+                <Metric label="Target" value={aiResult?.targetPrice || '—'} />
+                <Metric label="Stop Loss" value={aiResult?.stopLoss || '—'} />
+              </div>
+            </div>
+
+            {/* Section 5: Data source footer */}
+            <div className="text-center">
+              <span className="text-[10px] text-3 font-bold uppercase tracking-widest">
+                {aiResult?.sourceCount || 0} sources · {aiResult?.supervisorActive ? '◆ Gemini + Claude' : '✦ Gemini'}
+              </span>
             </div>
           </div>
         </div>

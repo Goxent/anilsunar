@@ -1,0 +1,14 @@
+{
+  "generatedAt": null,
+  "supervisorActive": false,
+  "pipeline": "gemini-only",
+  "totalPosts": 0,
+  "marketContext": {},
+  "posts": [],
+  "geminiIdeas": [],
+  "costEstimate": {
+    "geminiCalls": 0,
+    "claudeCalls": 0,
+    "estimatedCost": "$0.00"
+  }
+}

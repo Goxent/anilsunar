@@ -1,49 +1,43 @@
-name: Goxent Daily Intelligence Sync
+name: Goxent Master Intelligence Sync
 
 on:
   schedule:
-    - cron: '15 1 * * 1-5'  # 7:00 AM Nepal (UTC+5:45) weekdays
+    - cron: '15 1 * * 1-5'   # 7:00 AM Nepal weekdays
   workflow_dispatch:
     inputs:
-      sync_type:
-        description: 'Sync type'
+      pipeline:
+        description: 'Which pipeline to run'
         required: false
-        default: 'all'
+        default: 'full'
         type: choice
-        options: [all, nepse-only, notices-only, digest-only]
-
-env:
-  NODE_VERSION: '20'
+        options: [full, nepse-only, news-only, content-only, ai-only]
 
 jobs:
-  sync:
+  master-sync:
     runs-on: ubuntu-latest
-    timeout-minutes: 25
+    timeout-minutes: 35
     permissions:
       contents: write
 
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v4
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Setup Node ${{ env.NODE_VERSION }}
-        uses: actions/setup-node@v4
+      - uses: actions/setup-node@v4
         with:
-          node-version: ${{ env.NODE_VERSION }}
+          node-version: '20'
           cache: 'npm'
 
-      - name: Install dependencies
-        run: npm ci --ignore-scripts
+      - run: npm ci --ignore-scripts
 
-      - name: Install Playwright (NEPSE bot only)
-        if: inputs.sync_type != 'notices-only' && inputs.sync_type != 'digest-only'
+      # ─── NEPSE BOT (needs Playwright) ─────────────────
+      - name: Install Playwright
+        if: inputs.pipeline != 'news-only' && inputs.pipeline != 'content-only' && inputs.pipeline != 'ai-only'
         run: npx playwright install chromium --with-deps
 
-      # ──────────────── NEPSE DATA ────────────────
-      - name: NEPSE — Run Omni Crawler
-        if: inputs.sync_type != 'notices-only' && inputs.sync_type != 'digest-only'
+      - name: NEPSE — Omni Crawler (Sasto Share)
+        if: inputs.pipeline != 'news-only' && inputs.pipeline != 'content-only' && inputs.pipeline != 'ai-only'
         env:
           SASTO_EMAIL: ${{ secrets.SASTO_EMAIL }}
           SASTO_PASSWORD: ${{ secrets.SASTO_PASSWORD }}
@@ -51,65 +45,108 @@ jobs:
         continue-on-error: true
         timeout-minutes: 12
 
-      # ──────────────── NOTICE TRACKER ────────────────
-      - name: Notices — Scrape regulatory sites
-        if: inputs.sync_type != 'nepse-only' && inputs.sync_type != 'digest-only'
+      # ─── DATA PROCESSING (pure code, no AI) ───────────
+      - name: DATA — Technical Engine
+        if: inputs.pipeline != 'news-only' && inputs.pipeline != 'content-only'
+        run: node scripts/technical-engine.mjs
+        continue-on-error: true
+        timeout-minutes: 3
+
+      - name: DATA — Broker Tracker
+        if: inputs.pipeline != 'news-only' && inputs.pipeline != 'content-only'
+        run: node scripts/broker-tracker.mjs
+        continue-on-error: true
+        timeout-minutes: 3
+
+      # ─── NEWS SCRAPING ────────────────────────────────
+      - name: NEWS — Nepal + Global Scraper
+        if: inputs.pipeline != 'nepse-only' && inputs.pipeline != 'ai-only'
+        env:
+          VITE_GEMINI_API_KEY: ${{ secrets.VITE_GEMINI_API_KEY }}
+        run: node scripts/nepal-news-scraper.mjs
+        continue-on-error: true
+        timeout-minutes: 5
+
+      - name: NEWS — Regulatory Notices
+        if: inputs.pipeline != 'nepse-only' && inputs.pipeline != 'ai-only'
         run: node scripts/notice-scraper.mjs
-        timeout-minutes: 5
         continue-on-error: true
+        timeout-minutes: 4
 
-      - name: Notices — Generate AI posts (Gemini)
-        if: inputs.sync_type != 'nepse-only' && inputs.sync_type != 'digest-only'
+      # ─── AI ANALYSIS (Gemini + Claude supervisor) ────
+      - name: AI — Market Analysis (Gemini → Claude)
+        if: inputs.pipeline != 'news-only' && inputs.pipeline != 'content-only'
         env:
           VITE_GEMINI_API_KEY: ${{ secrets.VITE_GEMINI_API_KEY }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: node scripts/ai-analyst-v2.mjs
+        continue-on-error: true
+        timeout-minutes: 6
+
+      # ─── CONTENT GENERATION (Gemini research → Claude polish) ─
+      - name: CONTENT — LinkedIn Pipeline
+        if: inputs.pipeline != 'nepse-only' && inputs.pipeline != 'news-only'
+        env:
+          VITE_GEMINI_API_KEY: ${{ secrets.VITE_GEMINI_API_KEY }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: node scripts/linkedin-pipeline.mjs
+        continue-on-error: true
+        timeout-minutes: 5
+
+      - name: CONTENT — Notice AI Posts
+        if: inputs.pipeline != 'nepse-only'
+        env:
+          VITE_GEMINI_API_KEY: ${{ secrets.VITE_GEMINI_API_KEY }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
         run: node scripts/notice-ai-writer.mjs
-        timeout-minutes: 5
         continue-on-error: true
+        timeout-minutes: 5
 
-      # ──────────────── AI DIGEST ────────────────
-      - name: AI — Generate market digest + LinkedIn ideas
-        if: inputs.sync_type != 'nepse-only' && inputs.sync_type != 'notices-only'
+      - name: CONTENT — Daily Digest + Email
         env:
           VITE_GEMINI_API_KEY: ${{ secrets.VITE_GEMINI_API_KEY }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
           RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
           TO_EMAIL: ${{ secrets.TO_EMAIL }}
         run: node scripts/ai-digest.mjs
-        timeout-minutes: 6
         continue-on-error: true
+        timeout-minutes: 5
 
-      # ──────────────── COMMIT DATA ────────────────
-      - name: Commit updated data files
+      # ─── COMMIT DATA ──────────────────────────────────
+      - name: Commit all data
         run: |
           git config user.email "bot@anilsunar.com.np"
           git config user.name "Goxent Intelligence Bot"
           git add src/app/data/
           if git diff --staged --quiet; then
-            echo "No data changes to commit"
+            echo "No data changes"
           else
-            git commit -m "chore: daily sync $(date -u '+%Y-%m-%d %H:%M') UTC"
+            git commit -m "chore: master sync $(date -u '+%Y-%m-%d')"
             git push
-            echo "✅ Data pushed to GitHub"
           fi
 
-      # ──────────────── SUMMARY ────────────────
-      - name: Print sync summary
+      # ─── SUMMARY ─────────────────────────────────────
+      - name: Print summary
         if: always()
         run: |
-          echo "=== SYNC COMPLETE ==="
           node -e "
             const fs = require('fs')
-            const summary = {}
-            try {
-              const n = JSON.parse(fs.readFileSync('src/app/data/notices.json','utf8'))
-              summary.notices = n.totalCount + ' total, ' + n.newCount + ' new'
-            } catch { summary.notices = 'failed' }
-            try {
-              const m = JSON.parse(fs.readFileSync('src/app/data/market-omni-data.json','utf8'))
-              summary.nepse = (m.scrapedPages||[]).length + ' pages, ' + (m.summary?.stockCount||0) + ' stocks'
-            } catch { summary.nepse = 'failed' }
-            try {
-              const d = JSON.parse(fs.readFileSync('src/app/data/ai_digest.json','utf8'))
-              summary.digest = d.linkedinIdeas?.length + ' LinkedIn ideas, ' + d.topPicks?.length + ' picks'
-            } catch { summary.digest = 'failed' }
-            console.log(JSON.stringify(summary, null, 2))
+            const files = [
+              'src/app/data/market-omni-data.json',
+              'src/app/data/technical-signals.json',
+              'src/app/data/broker-flow-5d.json',
+              'src/app/data/nepal-news.json',
+              'src/app/data/deep_intelligence.json',
+              'src/app/data/linkedin-content.json',
+              'src/app/data/notices.json'
+            ]
+            console.log('=== SYNC SUMMARY ===')
+            files.forEach(f => {
+              try {
+                const d = JSON.parse(fs.readFileSync(f,'utf8'))
+                const name = f.split('/').pop()
+                const info = d.supervisorActive ? ' [◆ Claude]' : d.generatedAt ? ' [✦ Gemini]' : ''
+                console.log(name + info)
+              } catch { console.log(f.split('/').pop() + ' — missing') }
+            })
           "
