@@ -22,6 +22,7 @@ import {
 // Tab Components
 import DailyBrief    from './components/DailyBrief'
 import StockAnalyzer from './components/StockAnalyzer'
+import StockScreener from './components/StockScreener'
 import SmartMoney    from './components/SmartMoney'
 import PortfolioTracker from './components/PortfolioTracker'
 import Watchlist        from './components/Watchlist'
@@ -55,6 +56,7 @@ const NAV_GROUPS = [
     color: 'var(--gold)',
     tabs: [
       { id: 'brief',    label: 'Daily Brief',    icon: Sparkles,   component: DailyBrief },
+      { id: 'screener', label: 'Stock Screener', icon: Layout,     component: StockScreener },
       { id: 'analyzer', label: 'Stock Analyzer',  icon: Search,     component: StockAnalyzer },
       { id: 'money',    label: 'Smart Money',     icon: TrendingUp, component: SmartMoney },
       { id: 'portfolio', label: 'Portfolio',      icon: Briefcase,  component: PortfolioTracker },
