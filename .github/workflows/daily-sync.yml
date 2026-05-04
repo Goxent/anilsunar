@@ -1,0 +1,115 @@
+name: Goxent Daily Intelligence Sync
+
+on:
+  schedule:
+    - cron: '15 1 * * 1-5'  # 7:00 AM Nepal (UTC+5:45) weekdays
+  workflow_dispatch:
+    inputs:
+      sync_type:
+        description: 'Sync type'
+        required: false
+        default: 'all'
+        type: choice
+        options: [all, nepse-only, notices-only, digest-only]
+
+env:
+  NODE_VERSION: '20'
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Setup Node ${{ env.NODE_VERSION }}
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci --ignore-scripts
+
+      - name: Install Playwright (NEPSE bot only)
+        if: inputs.sync_type != 'notices-only' && inputs.sync_type != 'digest-only'
+        run: npx playwright install chromium --with-deps
+
+      # ──────────────── NEPSE DATA ────────────────
+      - name: NEPSE — Run Omni Crawler
+        if: inputs.sync_type != 'notices-only' && inputs.sync_type != 'digest-only'
+        env:
+          SASTO_EMAIL: ${{ secrets.SASTO_EMAIL }}
+          SASTO_PASSWORD: ${{ secrets.SASTO_PASSWORD }}
+        run: node scripts/omni-crawler.mjs
+        continue-on-error: true
+        timeout-minutes: 12
+
+      # ──────────────── NOTICE TRACKER ────────────────
+      - name: Notices — Scrape regulatory sites
+        if: inputs.sync_type != 'nepse-only' && inputs.sync_type != 'digest-only'
+        run: node scripts/notice-scraper.mjs
+        timeout-minutes: 5
+        continue-on-error: true
+
+      - name: Notices — Generate AI posts (Gemini)
+        if: inputs.sync_type != 'nepse-only' && inputs.sync_type != 'digest-only'
+        env:
+          VITE_GEMINI_API_KEY: ${{ secrets.VITE_GEMINI_API_KEY }}
+        run: node scripts/notice-ai-writer.mjs
+        timeout-minutes: 5
+        continue-on-error: true
+
+      # ──────────────── AI DIGEST ────────────────
+      - name: AI — Generate market digest + LinkedIn ideas
+        if: inputs.sync_type != 'nepse-only' && inputs.sync_type != 'notices-only'
+        env:
+          VITE_GEMINI_API_KEY: ${{ secrets.VITE_GEMINI_API_KEY }}
+          RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
+          TO_EMAIL: ${{ secrets.TO_EMAIL }}
+        run: node scripts/ai-digest.mjs
+        timeout-minutes: 6
+        continue-on-error: true
+
+      # ──────────────── COMMIT DATA ────────────────
+      - name: Commit updated data files
+        run: |
+          git config user.email "bot@anilsunar.com.np"
+          git config user.name "Goxent Intelligence Bot"
+          git add src/app/data/
+          if git diff --staged --quiet; then
+            echo "No data changes to commit"
+          else
+            git commit -m "chore: daily sync $(date -u '+%Y-%m-%d %H:%M') UTC"
+            git push
+            echo "✅ Data pushed to GitHub"
+          fi
+
+      # ──────────────── SUMMARY ────────────────
+      - name: Print sync summary
+        if: always()
+        run: |
+          echo "=== SYNC COMPLETE ==="
+          node -e "
+            const fs = require('fs')
+            const summary = {}
+            try {
+              const n = JSON.parse(fs.readFileSync('src/app/data/notices.json','utf8'))
+              summary.notices = n.totalCount + ' total, ' + n.newCount + ' new'
+            } catch { summary.notices = 'failed' }
+            try {
+              const m = JSON.parse(fs.readFileSync('src/app/data/market-omni-data.json','utf8'))
+              summary.nepse = (m.scrapedPages||[]).length + ' pages, ' + (m.summary?.stockCount||0) + ' stocks'
+            } catch { summary.nepse = 'failed' }
+            try {
+              const d = JSON.parse(fs.readFileSync('src/app/data/ai_digest.json','utf8'))
+              summary.digest = d.linkedinIdeas?.length + ' LinkedIn ideas, ' + d.topPicks?.length + ' picks'
+            } catch { summary.digest = 'failed' }
+            console.log(JSON.stringify(summary, null, 2))
+          "

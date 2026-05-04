@@ -1,300 +1,225 @@
-import { chromium } from 'playwright-extra';
-import stealth from 'puppeteer-extra-plugin-stealth';
-import fs from 'fs';
-import path from 'path';
-import { fileURLToPath } from 'url';
-import dotenv from 'dotenv';
+import { chromium } from 'playwright'
+import fs from 'fs'
+import path from 'path'
+import { fileURLToPath } from 'url'
+import dotenv from 'dotenv'
 
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
-dotenv.config();
+dotenv.config()
 
-chromium.use(stealth());
+const __filename = fileURLToPath(import.meta.url)
+const __dirname = path.dirname(__filename)
 
-// ─── Nepal Date Helper (UTC+5:45) ───────────────────────────────────────────
-function getNepalDateString() {
-  const nowMs = Date.now() + 5.75 * 60 * 60 * 1000;
-  const nd = new Date(nowMs);
-  const yyyy = nd.getUTCFullYear();
-  const mm = String(nd.getUTCMonth() + 1).padStart(2, '0');
-  const dd = String(nd.getUTCDate()).padStart(2, '0');
-  return `${yyyy}-${mm}-${dd}`;
-}
+const OUTPUT_PATH = path.join(__dirname, '../src/app/data/market-omni-data.json')
+const LOG_PATH = path.join(__dirname, '../logs/login-debug.png')
 
-// ─── Retry Wrapper ───────────────────────────────────────────────────────────
-async function retry(fn, maxRetries = 3, delayMs = 2000) {
-  let lastError;
-  for (let attempt = 1; attempt <= maxRetries; attempt++) {
-    try {
-      return await fn();
-    } catch (err) {
-      lastError = err;
-      console.error(`  ⚠️  Attempt ${attempt}/${maxRetries} failed: ${err.message}`);
-      if (attempt < maxRetries) await sleep(delayMs);
-    }
-  }
-  throw lastError;
-}
-
-function sleep(ms) {
-  return new Promise(r => setTimeout(r, ms));
-}
-
-// ─── Pages to Scrape ────────────────────────────────────────────────────────
-const PUBLIC_TARGETS = [
-  'https://nepsealpha.com',
-  'https://www.sharesansar.com',
-  'https://nepsealpha.com/trading-menu/top-stocks', // often public
-];
-
-const TARGETS = [
-  'https://nepsealpha.com/sastoshare/home',
-  'https://nepsealpha.com/sastoshare/daily-summary',
-  'https://nepsealpha.com/sastoshare/swing-gain',
-  'https://nepsealpha.com/sastoshare/stock-health',
+const GUARANTEED_PAGES = [
+  'https://nepsealpha.com/sastoshare',
+  'https://nepsealpha.com/sastoshare/swing-trader',
   'https://nepsealpha.com/sastoshare/broker-analysis',
-  'https://nepsealpha.com/sastoshare/floorsheet/today',
   'https://nepsealpha.com/sastoshare/sector-performance',
-  'https://nepsealpha.com/sastoshare/sector-rotation/index',
-  'https://nepsealpha.com/sastoshare/technical-screener',
-  'https://nepsealpha.com/sastoshare/momentum-screener',
-  'https://nepsealpha.com/sastoshare/overbought-oversold',
-  'https://nepsealpha.com/sastoshare/bifs-financials',
-  'https://nepsealpha.com/sastoshare/insurance-financials',
-  'https://nepsealpha.com/sastoshare/hydro-financials',
-  'https://nepsealpha.com/sastoshare/mfin-financials',
-  'https://nepsealpha.com/sastoshare/dividend-book/book-trend',
-  'https://nepsealpha.com/sastoshare/market-breadth',
-];
+  'https://nepsealpha.com/sastoshare/stock-health',
+  'https://nepsealpha.com/trading-menu/top-stocks',
+  'https://nepsealpha.com/nepse-data/eod',
+  'https://nepsealpha.com/trading/live-market',
+]
 
-// ─── Page Evaluator ──────────────────────────────────────────────────────────
-const PAGE_EXTRACTOR = () => {
-  // Extract all tables — no row limit
-  const tables = Array.from(document.querySelectorAll('table')).map((table, idx) => {
-    // Try thead > th first, fall back to first row
-    let headers = Array.from(table.querySelectorAll('thead th, thead td'))
-      .map(th => th.innerText.trim().replace(/\s+/g, ' '));
-    if (headers.length === 0) {
-      headers = Array.from(table.querySelectorAll('tr:first-child th, tr:first-child td'))
-        .map(td => td.innerText.trim().replace(/\s+/g, ' '));
-    }
-
-    const bodyRows = table.querySelectorAll('tbody tr');
-    const rowSource = bodyRows.length > 0
-      ? Array.from(bodyRows)
-      : Array.from(table.querySelectorAll('tr')).slice(1);
-
-    const rows = rowSource.map(tr => {
-      const cells = Array.from(tr.querySelectorAll('td'));
-      if (cells.length === 0) return null;
-      const obj = {};
-      cells.forEach((td, i) => {
-        obj[headers[i] || `Col_${i}`] = td.innerText.trim().replace(/\s+/g, ' ');
-      });
-      return obj;
-    }).filter(Boolean);
-
-    return { tableIndex: idx, headers, rows };
-  });
-
-  // Extract stat cards / metric boxes
-  const statCards = Array.from(document.querySelectorAll(
-    '.stat, .card, .metric, .badge, .indicator, [class*="stat"], [class*="score"], [class*="metric"], [class*="indicator"]'
-  )).reduce((acc, el) => {
-    const text = el.innerText.trim();
-    if (!text || text.length > 200) return acc; // skip huge containers
-    const lines = text.split('\n').map(l => l.trim()).filter(Boolean);
-    if (lines.length >= 2) {
-      acc.push({ label: lines[0], value: lines.slice(1).join(' ') });
-    } else if (lines.length === 1) {
-      acc.push({ label: lines[0], value: '' });
-    }
-    return acc;
-  }, []);
-
-  return {
-    title: document.title,
-    tables,
-    statCards,
-  };
-};
-
-// ─── History Helpers ─────────────────────────────────────────────────────────
-function saveHistory(data) {
-  const historyDir = path.join(__dirname, '../src/app/data/history');
-  if (!fs.existsSync(historyDir)) fs.mkdirSync(historyDir, { recursive: true });
-
-  const todayStr = getNepalDateString();
-  const snapshotPath = path.join(historyDir, `${todayStr}.json`);
-
-  if (fs.existsSync(snapshotPath)) {
-    console.log(`ℹ️  Snapshot for ${todayStr} already exists — skipping.`);
-    return;
+function buildStructuredData(scrapedPages) {
+  const structured = {
+    marketIndex: {},
+    topStocks: [],
+    brokerData: [],
+    swingSignals: [],
+    sectorData: [],
+    floorsheet: []
   }
 
-  fs.writeFileSync(snapshotPath, JSON.stringify(data, null, 2));
-  console.log(`📅 History snapshot saved → history/${todayStr}.json`);
+  scrapedPages.forEach(page => {
+    const url = page.url || ''
+    const tables = page.tables || []
+
+    tables.forEach(table => {
+      const headers = (table.headers || []).map(h => (h || '').toLowerCase())
+      const rows = table.rows || []
+
+      // Market index — key-value pairs
+      if (url.includes('eod') || url.includes('daily') ||
+        page.title?.toLowerCase().includes('summary')) {
+        rows.forEach(row => {
+          const key = row.Col_0 || row.Label || row.Metric || row.Name
+          const val = row.Col_1 || row.Value || row.Data
+          if (key && val) {
+            structured.marketIndex[key.trim()] = String(val).trim()
+          }
+        })
+      }
+
+      // Stock list — has Symbol and LTP or Price columns
+      if (headers.some(h => h.includes('symbol') || h.includes('ltp') || h.includes('price'))) {
+        rows.forEach(row => {
+          const symbol = row.Symbol || row['Stock Symbol'] || row.Col_0
+          const ltp = parseFloat(
+            String(row.LTP || row['Price(NPR)'] || row['Last Price'] || row.Col_1 || '0')
+            .replace(/,/g, '')
+          )
+          const change = row['Percent Change'] || row['Change%'] || row.Change || '0%'
+          const volume = parseInt(
+            String(row.Volume || row['Trade Volume'] || row.Col_3 || '0')
+            .replace(/,/g, '')
+          ) || 0
+
+          if (symbol && ltp > 0) {
+            const existing = structured.topStocks.find(s => s.symbol === symbol)
+            if (!existing) {
+              structured.topStocks.push({ symbol, ltp, change, volume })
+            }
+          }
+        })
+      }
+
+      // Broker data
+      if (url.includes('broker') || url.includes('floorsheet') ||
+        headers.some(h => h.includes('broker') || h.includes('buy qty'))) {
+        rows.forEach(row => {
+          const symbol = row.Symbol || row.Stock || row.Col_0
+          const broker = row.Broker || row['Broker Name'] || row.Col_1
+          const buyQty = parseInt(String(row['Buy Qty'] || row.Buy || '0').replace(/,/g, '')) || 0
+          const sellQty = parseInt(String(row['Sell Qty'] || row.Sell || '0').replace(/,/g, '')) || 0
+          if (symbol || broker) {
+            structured.brokerData.push({ symbol, broker, buyQty, sellQty, netQty: buyQty - sellQty })
+          }
+        })
+      }
+
+      // Swing signals
+      if (url.includes('swing') ||
+        headers.some(h => h.includes('signal') || h.includes('action') || h.includes('recommendation'))) {
+        rows.forEach(row => {
+          const symbol = row.Symbol || row.Stock
+          const signal = row.Signal || row.Action || row.Recommendation || row.Col_1
+          const price = row.Price || row.LTP || row.Col_2
+          if (symbol && signal) {
+            structured.swingSignals.push({ symbol, signal, price })
+          }
+        })
+      }
+
+      // Sector data
+      if (url.includes('sector') ||
+        headers.some(h => h.includes('sector'))) {
+        rows.forEach(row => {
+          const sector = row.Sector || row['Sector Name'] || row.Col_0
+          const change = row['% Change'] || row.Change || row.Col_1
+          const turnover = row.Turnover || row.Col_2
+          if (sector) {
+            structured.sectorData.push({ sector, change, turnover })
+          }
+        })
+      }
+    })
+  })
+
+  return structured
 }
 
-function pruneHistory(keepDays = 90) {
-  const historyDir = path.join(__dirname, '../src/app/data/history');
-  if (!fs.existsSync(historyDir)) return;
+async function scrape() {
+  console.log('🕷️ Omni Crawler — Starting...')
+  const browser = await chromium.launch({
+    headless: true,
+    args: [
+      '--no-sandbox',
+      '--disable-setuid-sandbox',
+      '--disable-dev-shm-usage',
+      '--disable-gpu',
+      '--window-size=1280,800'
+    ]
+  })
+  const context = await browser.newContext()
+  const page = await context.newPage()
 
-  const todayMs = Date.now() + 5.75 * 60 * 60 * 1000;
-  const cutoffMs = todayMs - keepDays * 24 * 60 * 60 * 1000;
-
-  const files = fs.readdirSync(historyDir).filter(f => /^\d{4}-\d{2}-\d{2}\.json$/.test(f));
-  let deleted = 0;
-  files.forEach(file => {
-    const dateStr = file.replace('.json', '');
-    const fileMs = new Date(dateStr).getTime();
-    if (fileMs < cutoffMs) {
-      fs.unlinkSync(path.join(historyDir, file));
-      deleted++;
-    }
-  });
-
-  if (deleted > 0) console.log(`🗑️  Pruned ${deleted} history file(s) older than ${keepDays} days.`);
-}
-
-// ─── Main Crawler ────────────────────────────────────────────────────────────
-export default async function runCrawler() {
-  const email = process.env.SASTO_EMAIL;
-  const password = process.env.SASTO_PASSWORD;
-  if (!email || !password) {
-    throw new Error('SASTO_EMAIL and SASTO_PASSWORD must be set in environment variables.');
+  const dataLake = {
+    timestamp: new Date().toISOString(),
+    scrapedPages: []
   }
-
-  console.log('🕷️  Omni Crawler starting...');
-  let browser;
 
   try {
-    browser = await chromium.launch({
-      headless: true,
-      args: ['--no-sandbox', '--disable-setuid-sandbox'],
-    });
-    const context = await browser.newContext({ viewport: { width: 1920, height: 1080 } });
-    const page = await context.newPage();
+    // 1. LOGIN
+    console.log('🔑 Logging into Sasto Share...')
+    await page.goto('https://nepsealpha.com/login')
+    await page.fill('input[type="email"], input[name="email"], #email', process.env.SASTO_EMAIL || '')
+    await page.fill('input[type="password"], input[name="password"], #password', process.env.SASTO_PASSWORD || '')
+    await page.click('button[type="submit"], .login-btn, button:has-text("Login"), button:has-text("Sign In")')
 
-    // ── LOGIN ────────────────────────────────────────────────────────────────
-    await retry(async () => {
-      console.log('🔐 Logging in...');
-      await page.goto('https://nepsealpha.com/login', {
-        waitUntil: 'networkidle',
-        timeout: 30000,
-      });
-
-      // Skip login if already authenticated
-      if (/dashboard|sastoshare|home/i.test(page.url())) {
-        console.log('✅ Already authenticated.');
-        return;
-      }
-
-      await page.fill('input[type="email"]', email);
-      await page.fill('input[type="password"]', password);
-      await page.click('button[type="submit"]');
-
-      await page.waitForURL(/dashboard|sastoshare|home/i, { timeout: 20000 });
-      console.log(`✅ Login successful → ${page.url()}`);
-    }, 3, 2000);
-
-    // ── SCRAPE LOOP ──────────────────────────────────────────────────────────
-    const scrapedPages = [];
-
-    // Phase 1: Public Data (Fallback)
-    console.log('\n🌐 PHASE 1: Public Data Scrape...');
-    for (const url of PUBLIC_TARGETS) {
-      try {
-        console.log(`📄 Scraping (Public): ${url}`);
-        await page.goto(url, { waitUntil: 'domcontentloaded', timeout: 20000 });
-        await sleep(1500);
-        const extracted = await page.evaluate(PAGE_EXTRACTOR);
-        scrapedPages.push({
-          url,
-          title: extracted.title,
-          scrapedAt: new Date().toISOString(),
-          tables: extracted.tables,
-          statCards: extracted.statCards,
-          isPublic: true
-        });
-      } catch (e) {
-        console.warn(`   ⚠️  Public skip ${url}: ${e.message}`);
-      }
+    try {
+      await Promise.race([
+        page.waitForURL(/dashboard|home|sastoshare|portfolio/, { timeout: 20000 }),
+        page.waitForSelector('.navbar-user, .user-menu, [data-user], .logout-btn, .user-avatar', { timeout: 20000 }),
+        page.waitForFunction(
+          () => !window.location.href.includes('/login') && !window.location.href.includes('/signin'),
+          { timeout: 20000 }
+        )
+      ])
+      console.log('✅ Login successful')
+    } catch {
+      console.log('⚠️ Login timeout — may already be logged in or different UI')
+      await page.screenshot({ path: LOG_PATH, fullPage: true })
     }
 
-    // Phase 2: Premium Data
-    console.log('\n💎 PHASE 2: Premium Sasto Share Scrape...');
-    for (const url of TARGETS) {
+    // 2. SCRAPE PAGES
+    for (const url of GUARANTEED_PAGES) {
+      console.log(`🔍 Scraping: ${url}...`)
       try {
-        console.log(`📄 Scraping (Premium): ${url}`);
-        await page.goto(url, { waitUntil: 'networkidle', timeout: 25000 });
-        await sleep(2500);
+        await page.goto(url, { waitUntil: 'networkidle', timeout: 30000 })
+        const title = await page.title()
+        
+        // Extract tables
+        const tables = await page.evaluate(() => {
+          const results = []
+          document.querySelectorAll('table').forEach(table => {
+            const headers = Array.from(table.querySelectorAll('th')).map(th => th.innerText.trim())
+            const rows = Array.from(table.querySelectorAll('tr')).slice(1).map(tr => {
+              const row = {}
+              Array.from(tr.querySelectorAll('td')).forEach((td, i) => {
+                const key = headers[i] || `Col_${i}`
+                row[key] = td.innerText.trim()
+              })
+              return row
+            })
+            if (rows.length > 0) results.push({ headers, rows })
+          })
+          return results
+        })
 
-        const extracted = await page.evaluate(PAGE_EXTRACTOR);
-
-        scrapedPages.push({
-          url,
-          title: extracted.title,
-          scrapedAt: new Date().toISOString(),
-          tables: extracted.tables,
-          statCards: extracted.statCards,
-          isPublic: false
-        });
-
-        console.log(
-          `   ✔  ${extracted.tables.length} tables` +
-          ` | ${extracted.tables.reduce((a, t) => a + t.rows.length, 0)} rows` +
-          ` | ${extracted.statCards.length} stat cards`
-        );
+        dataLake.scrapedPages.push({ url, title, tables })
+        console.log(`   ✅ Found ${tables.length} tables`)
       } catch (err) {
-        console.error(`   ❌ Failed to scrape ${url}: ${err.message}`);
+        console.warn(`   ⚠️ Error scraping ${url}: ${err.message}`)
       }
     }
 
-    // ── SAVE ─────────────────────────────────────────────────────────────────
-    const output = {
-      timestamp: new Date().toISOString(),
-      totalTargets: TARGETS.length,
-      successCount: scrapedPages.length,
-      scrapedPages,
-    };
+    // 3. STRUCTURE DATA
+    dataLake.structured = buildStructuredData(dataLake.scrapedPages)
+    dataLake.summary = {
+      stockCount: dataLake.structured.topStocks.length,
+      brokerRecords: dataLake.structured.brokerData.length,
+      swingSignals: dataLake.structured.swingSignals.length,
+      hasMarketIndex: Object.keys(dataLake.structured.marketIndex).length > 0,
+      pagesScraped: dataLake.scrapedPages.length,
+      dataQuality: dataLake.structured.topStocks.length > 0 ? 'good' : 'empty'
+    }
 
-    // 1. Today's live snapshot
-    const dataDir = path.join(__dirname, '../src/app/data');
-    if (!fs.existsSync(dataDir)) fs.mkdirSync(dataDir, { recursive: true });
-    const mainPath = path.join(dataDir, 'market-omni-data.json');
-    fs.writeFileSync(mainPath, JSON.stringify(output, null, 2));
-    console.log(`\n💾 Saved → src/app/data/market-omni-data.json`);
+    console.log('\n📊 Structured data summary:')
+    console.log(JSON.stringify(dataLake.summary, null, 2))
 
-    // 2. Daily history snapshot
-    saveHistory(output);
-
-    // 3. Prune history older than 90 days
-    pruneHistory(90);
-
-    // ── SUMMARY TABLE ─────────────────────────────────────────────────────────
-    console.log('\n' + '─'.repeat(80));
-    console.log('📊  CRAWL SUMMARY');
-    console.log('─'.repeat(80));
-    scrapedPages.forEach(p => {
-      const tableCount = p.tables.length.toString().padStart(2);
-      const rowCount = p.tables.reduce((a, t) => a + t.rows.length, 0).toString().padStart(4);
-      const cardCount = p.statCards.length.toString().padStart(2);
-      const shortUrl = p.url.replace('https://nepsealpha.com', '').substring(0, 45).padEnd(45);
-      console.log(`  ${shortUrl}  tables:${tableCount}  rows:${rowCount}  cards:${cardCount}`);
-    });
-    console.log('─'.repeat(80));
-    console.log(`  ✅ ${scrapedPages.length}/${TARGETS.length} pages successful\n`);
+    // 4. SAVE
+    fs.mkdirSync(path.dirname(OUTPUT_PATH), { recursive: true })
+    fs.writeFileSync(OUTPUT_PATH, JSON.stringify(dataLake, null, 2))
+    console.log(`\n✅ Saved to: ${OUTPUT_PATH}`)
 
   } catch (err) {
-    console.error('\n🚨 Crawler aborted:', err.message);
-    process.exit(1);
+    console.error('❌ Fatal error during scrape:', err)
   } finally {
-    if (browser) await browser.close();
+    await browser.close()
   }
 }
 
-// Allow direct execution
-if (process.argv[1] === fileURLToPath(import.meta.url)) {
-  runCrawler();
-}
+scrape()

@@ -1,11 +1,1 @@
-{
-  "timestamp": "2026-05-01T07:16:54.457Z",
-  "marketSummary": "Market analysis unavailable.",
-  "marketSentiment": "NEUTRAL",
-  "marketPhase": "SIDEWAYS",
-  "institutionalFocus": "General Market",
-  "keyRisk": "Data unavailable",
-  "topPicks": [],
-  "anomalies": [],
-  "linkedinIdeas": []
-}
+{"timestamp":null,"marketSummary":"Run npm run full-sync to generate today's briefing.","linkedinIdeas":[],"topPicks":[]}

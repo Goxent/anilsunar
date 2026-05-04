@@ -1,30 +1,34 @@
-import { defineConfig, loadEnv } from 'vite';
-import react from '@vitejs/plugin-react';
-import path from 'path';
+import { defineConfig } from 'vite'
+import react from '@vitejs/plugin-react'
+import path from 'path'
 
-export default defineConfig(({ mode }) => {
-  const env = loadEnv(mode, '.', '');
-  return {
-    base: '/',
-    server: {
-      port: 3000,
-      host: '0.0.0.0',
+export default defineConfig({
+  plugins: [react()],
+  base: '/',
+  resolve: {
+    alias: {
+      '@': path.resolve(__dirname, '.'),
+      '@app': path.resolve(__dirname, 'src/app'),
+    }
+  },
+  optimizeDeps: {
+    exclude: ['firebase-admin', 'playwright', '@playwright/test']
+  },
+  build: {
+    rollupOptions: {
+      external: [],
+      output: {
+        manualChunks: {
+          firebase: ['firebase/app', 'firebase/auth', 'firebase/firestore'],
+          recharts: ['recharts'],
+        }
+      }
     },
-    plugins: [react()],
-    resolve: {
-      alias: {
-        '@': path.resolve(__dirname, '.'),
-        '@app': path.resolve(__dirname, 'src/app'),
-      },
-    },
-    // firebase-admin is server-only — exclude from browser bundle
-    optimizeDeps: {
-      exclude: ['firebase-admin'],
-    },
-    build: {
-      rollupOptions: {
-        external: ['firebase-admin'],
-      },
-    },
-  };
-});
+    target: 'es2020',
+    sourcemap: false
+  },
+  server: {
+    port: 3000,
+    host: true
+  }
+})

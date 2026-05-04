@@ -1,497 +1,248 @@
-import fs from 'fs';
-import path from 'path';
-import { fileURLToPath } from 'url';
-import dotenv from 'dotenv';
+import fs from 'fs'
+import path from 'path'
+import { fileURLToPath } from 'url'
+import dotenv from 'dotenv'
+dotenv.config()
 
-dotenv.config();
+const __dirname = path.dirname(fileURLToPath(import.meta.url))
+const OMNI_PATH = path.join(__dirname, '../src/app/data/market-omni-data.json')
+const NOTICES_PATH = path.join(__dirname, '../src/app/data/notices.json')
+const OUT_PATH = path.join(__dirname, '../src/app/data/ai_digest.json')
 
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
-
-// ─── Config ──────────────────────────────────────────────────────────────────
-const FIREBASE_API_KEY   = 'AIzaSyDktrGzsvcJKuch0XJxGt6_ZmukN8V3ar8';
-const FIREBASE_PROJECT   = 'app-anil-sunar';
-const FIRESTORE_BASE     = `https://firestore.googleapis.com/v1/projects/${FIREBASE_PROJECT}/databases/(default)/documents`;
-
-// ─── Helpers ─────────────────────────────────────────────────────────────────
-function loadJson(relPath, fallback = null) {
-  const fullPath = path.join(__dirname, '..', relPath);
-  try {
-    if (fs.existsSync(fullPath)) return JSON.parse(fs.readFileSync(fullPath, 'utf8'));
-  } catch (e) {
-    console.warn(`⚠️  Could not load ${relPath}: ${e.message}`);
-  }
-  return fallback;
-}
-
-function cap(obj, maxChars = 60000) {
-  const str = typeof obj === 'string' ? obj : JSON.stringify(obj);
-  return str.length > maxChars ? str.slice(0, maxChars) + '\n...[TRUNCATED]' : str;
-}
-
-// ─── Extract subset of omniData pages ────────────────────────────────────────
-function pagesMatching(omniData, keywords) {
-  return (omniData?.scrapedPages || [])
-    .filter(p => keywords.some(kw => p.url?.includes(kw)))
-    .map(p => ({ url: p.url, title: p.title, tables: p.tables, statCards: p.statCards }));
-}
-
-// ─── Gemini API Call ─────────────────────────────────────────────────────────
 async function callGemini(prompt) {
-  const apiKey = process.env.VITE_GEMINI_API_KEY || process.env.GEMINI_API_KEY;
-  if (!apiKey) throw new Error('No Gemini API key found (VITE_GEMINI_API_KEY or GEMINI_API_KEY)');
-
-  const body = {
-    contents: [{ parts: [{ text: prompt + '\n\nReturn ONLY raw JSON. No markdown. No explanation.' }] }],
-    generationConfig: { temperature: 0.6, maxOutputTokens: 4096 }
-  };
-
+  const key = process.env.VITE_GEMINI_API_KEY
+  if (!key) throw new Error('VITE_GEMINI_API_KEY not set')
   const res = await fetch(
-    `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${apiKey}`,
-    { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(body) }
-  );
-  const data = await res.json();
-  if (data.error) throw new Error(`Gemini error: ${data.error.message}`);
+    `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${key}`,
+    { method:'POST', headers:{'Content-Type':'application/json'},
+      body: JSON.stringify({contents:[{parts:[{text:prompt}]}],
+        generationConfig:{temperature:0.7,maxOutputTokens:2048}}) }
+  )
+  const d = await res.json()
+  if (d.error) throw new Error(d.error.message)
+  return d?.candidates?.[0]?.content?.parts?.[0]?.text || ''
+}
 
-  const raw = data?.candidates?.[0]?.content?.parts?.[0]?.text || '{}';
+function parseJson(text, fallback) {
   try {
-    return JSON.parse(raw.replace(/```json|```/g, '').trim());
-  } catch (err) {
-    console.error(`❌ Gemini API Failure: ${err.message}`);
-    console.error('   Raw response:', raw);
-    if (data && !data.candidates) {
-      console.error('   Full Gemini Response:', JSON.stringify(data));
+    const clean = text.replace(/```json|```/g,'').trim()
+    const s = clean.search(/[{[]/)
+    const e = Math.max(clean.lastIndexOf('}'),clean.lastIndexOf(']'))
+    return JSON.parse(clean.slice(s,e+1))
+  } catch { return fallback }
+}
+
+async function generateDigest() {
+  console.log('🤖 AI Digest — Starting...')
+
+  // Load market data
+  let omni = {structured:{marketIndex:{},topStocks:[],brokerData:[],swingSignals:[]}}
+  try { omni = JSON.parse(fs.readFileSync(OMNI_PATH,'utf8')) } 
+  catch { console.log('⚠️  No omni data') }
+
+  // Load notices
+  let notices = []
+  try { notices = JSON.parse(fs.readFileSync(NOTICES_PATH,'utf8')).notices || [] }
+  catch {}
+
+  const newNotices = notices.filter(n => n.isNew).slice(0,5)
+  const idx = omni.structured?.marketIndex || {}
+  const stocks = (omni.structured?.topStocks || []).slice(0,20)
+  const signals = (omni.structured?.swingSignals || []).slice(0,10)
+
+  // === MARKET SUMMARY PROMPT ===
+  const marketPrompt = `You are a senior NEPSE stock market analyst in Nepal.
+
+Today's market data:
+NEPSE Index: ${idx.Current || idx['NEPSE Index'] || 'Data not available'}
+Daily Change: ${idx['Daily Gain'] || idx.Change || 'N/A'}
+Turnover: ${idx.Turnover || idx['Total Turnover'] || 'N/A'}
+Date: ${idx.Date || new Date().toLocaleDateString()}
+
+Top stocks: ${JSON.stringify(stocks.slice(0,10))}
+Swing signals: ${JSON.stringify(signals)}
+
+Write a 4-5 sentence professional NEPSE market summary for a CA professional.
+Include: market movement, key observations, sector trend if visible, and one actionable insight.
+Be specific and professional. Do not use generic filler phrases.
+
+Respond with ONLY the summary text, no JSON, no labels.`
+
+  // === LINKEDIN IDEAS PROMPT ===
+  const linkedinPrompt = `You are a LinkedIn content strategist for a Nepal CA professional.
+
+Background:
+- Chartered Accountant (ICAN member)
+- Expertise: Auditing, Nepal Tax Law, NEPSE analysis, Corporate Finance
+- Audience: Nepal finance professionals, business owners, investors
+
+Today's context:
+NEPSE: ${idx.Current || 'N/A'} (${idx['Daily Gain'] || 'N/A'})
+New regulatory notices: ${newNotices.map(n=>n.source+': '+n.title).join(' | ')||'None today'}
+
+Generate exactly 5 LinkedIn post ideas. Topic distribution:
+- 1 about today's NEPSE market movement
+- 1 about Nepal taxation (Income Tax, VAT, TDS)
+- 1 about Auditing or Accounting standards (ICAN, NSA)
+- 1 about Nepal Corporate Law (Companies Act 2063) or SEBON regulations
+- 1 about any of the new regulatory notices above (if any), or general finance insight
+
+For each idea respond ONLY in valid JSON array:
+[{
+  "topic": "NEPSE|Taxation|Auditing|Corporate Law|Finance",
+  "title": "Post headline max 12 words",
+  "hook": "First sentence that stops scrolling — punchy and specific",
+  "angle": "The insight or perspective — 2 sentences",
+  "keyTakeaway": "What reader learns — 1 sentence",
+  "hashtags": ["#Nepal","#CA","2 more specific"],
+  "bestTimeToPost": "Morning or Evening"
+}]`
+
+  // === TOP PICKS PROMPT ===
+  const picksPrompt = `As a NEPSE analyst, review this data:
+Swing signals: ${JSON.stringify(signals)}
+Top stocks: ${JSON.stringify(stocks.slice(0,15))}
+
+List exactly 5 high-probability stock picks for today.
+Respond ONLY in JSON array:
+[{"symbol":"XXXX","signal":"STRONG BUY|ACCUMULATE|WATCH|AVOID","reason":"One sentence reason max 15 words"}]
+
+Only include stocks with actual signal data. If fewer than 5 signals, return fewer.`
+
+  let marketSummary = 'Market data not available. Run npm run omni-sync to fetch NEPSE data.'
+  let linkedinIdeas = []
+  let topPicks = []
+
+  const hasGemini = !!process.env.VITE_GEMINI_API_KEY
+
+  if (hasGemini) {
+    try {
+      console.log('📊 Generating market summary...')
+      marketSummary = await callGemini(marketPrompt)
+      console.log('✅ Market summary done')
+    } catch(e) { console.warn('⚠️ Market summary failed:', e.message) }
+
+    await new Promise(r => setTimeout(r, 3000))
+
+    try {
+      console.log('💼 Generating LinkedIn ideas...')
+      const raw = await callGemini(linkedinPrompt)
+      linkedinIdeas = parseJson(raw, [])
+      console.log(`✅ ${linkedinIdeas.length} LinkedIn ideas generated`)
+    } catch(e) { console.warn('⚠️ LinkedIn ideas failed:', e.message) }
+
+    await new Promise(r => setTimeout(r, 3000))
+
+    if (signals.length > 0) {
+      try {
+        console.log('🎯 Generating top picks...')
+        const raw = await callGemini(picksPrompt)
+        topPicks = parseJson(raw, [])
+        console.log(`✅ ${topPicks.length} picks generated`)
+      } catch(e) { console.warn('⚠️ Top picks failed:', e.message) }
     }
-    throw err;
+  } else {
+    console.log('⚠️  No VITE_GEMINI_API_KEY — saving placeholder digest')
+    marketSummary = 'Add VITE_GEMINI_API_KEY to .env to enable AI market summaries.'
   }
+
+  const output = {
+    timestamp: new Date().toISOString(),
+    marketSummary,
+    linkedinIdeas,
+    topPicks,
+    marketData: {
+      index: idx.Current || idx['NEPSE Index'] || 'N/A',
+      change: idx['Daily Gain'] || idx.Change || 'N/A',
+      turnover: idx.Turnover || 'N/A',
+      date: idx.Date || new Date().toLocaleDateString()
+    },
+    generatedBy: hasGemini ? 'gemini-2.0-flash' : 'none',
+    newNoticesCount: newNotices.length
+  }
+
+  fs.writeFileSync(OUT_PATH, JSON.stringify(output, null, 2))
+  console.log('✅ Digest saved to ai_digest.json')
+
+  // Send email if Resend is configured
+  if (process.env.RESEND_API_KEY && output.marketSummary !== 'Market data not available. Run npm run omni-sync to fetch NEPSE data.') {
+    await sendEmail(output, newNotices)
+  } else {
+    console.log('📭 Email skipped (no RESEND_API_KEY or no data)')
+  }
+
+  return output
 }
 
-// ─── Email ───────────────────────────────────────────────────────────────────
-async function getActiveSubscribers() {
-  try {
-    const res = await fetch(`${FIRESTORE_BASE}/subscribers?key=${FIREBASE_API_KEY}`);
-    const data = await res.json();
-    if (!data.documents) return [];
-    return data.documents
-      .filter(d => d.fields?.active?.booleanValue === true)
-      .map(d => ({ email: d.fields?.email?.stringValue, name: d.fields?.name?.stringValue || '' }))
-      .filter(s => s.email);
-  } catch (err) {
-    console.warn('⚠️  Could not fetch subscribers:', err.message);
-    return [];
-  }
-}
+async function sendEmail(digest, newNotices) {
+  const TO = process.env.TO_EMAIL || 'anil99senchury@gmail.com'
+  const date = new Date().toLocaleDateString('en-NP',{weekday:'long',year:'numeric',month:'long',day:'numeric'})
 
-async function sendDigestEmail(digest) {
-  const RESEND_API_KEY = process.env.RESEND_API_KEY;
-  const TO_EMAIL = process.env.TO_EMAIL || 'anil99senchury@gmail.com';
-  if (!RESEND_API_KEY) { console.log('⚠️  No RESEND_API_KEY — skipping email'); return; }
-
-  const subscribers = await getActiveSubscribers();
-  const recipients  = [{ email: TO_EMAIL, name: 'Anil Sunar' }, ...subscribers.filter(s => s.email !== TO_EMAIL)];
-  console.log(`📧 Sending digest to ${recipients.length} recipient(s)...`);
-
-  const picks   = (digest.topPicks || []).slice(0, 10);
-  const ideas   = digest.linkedinIdeas || [];
-
-  const signalColor = s =>
-    s === 'STRONG BUY' ? { bg: '#14532d', fg: '#4ade80' } :
-    s === 'BREAKOUT'   ? { bg: '#1e3a5f', fg: '#60a5fa' } :
-    s === 'BUY'        ? { bg: '#1a3320', fg: '#4ade80' } :
-                         { bg: '#451a03', fg: '#fbbf24' };
-
-  const picksHtml = picks.map(p => {
-    const c = signalColor(p.signal || p.target || '');
-    return `<tr>
-      <td style="padding:12px 16px;border-bottom:1px solid #1e293b;color:#f59e0b;font-weight:bold;font-size:15px;">${p.symbol}</td>
-      <td style="padding:12px 16px;border-bottom:1px solid #1e293b;">
-        <span style="background:${c.bg};color:${c.fg};padding:3px 10px;border-radius:4px;font-size:11px;font-weight:bold;">${p.signal || p.target}</span>
-        ${p.entryZone ? `<div style="color:#64748b;font-size:11px;margin-top:4px;">Entry: ${p.entryZone} · SL: ${p.stopLoss || 'N/A'} · T: ${p.target || 'N/A'}</div>` : ''}
+  const picksHtml = (digest.topPicks||[]).slice(0,5).map(p=>`
+    <tr>
+      <td style="padding:10px 16px;border-bottom:1px solid #1e293b;color:#f59e0b;font-weight:700">${p.symbol}</td>
+      <td style="padding:10px 16px;border-bottom:1px solid #1e293b">
+        <span style="background:${p.signal==='STRONG BUY'?'#14532d':p.signal==='ACCUMULATE'?'#1e3a5f':'#451a03'};
+          color:${p.signal==='STRONG BUY'?'#4ADE80':p.signal==='ACCUMULATE'?'#60a5fa':'#fbbf24'};
+          padding:3px 10px;border-radius:4px;font-size:11px;font-weight:700">${p.signal}</span>
       </td>
-      <td style="padding:12px 16px;border-bottom:1px solid #1e293b;color:#94a3b8;font-size:13px;">${p.thesis || p.reason || ''}</td>
-    </tr>`;
-  }).join('');
+      <td style="padding:10px 16px;border-bottom:1px solid #1e293b;color:#94a3b8;font-size:13px">${p.reason}</td>
+    </tr>`).join('')
 
-  const ideasHtml = ideas.map(idea => `
-    <div style="background:#1a1a2e;border-left:3px solid #818cf8;border-radius:0 8px 8px 0;padding:16px;margin:10px 0;">
-      <p style="color:#e2e8f0;font-weight:bold;margin:0 0 4px;">${idea.hook || idea.title || ''}</p>
-      ${idea.angle ? `<span style="background:#312e81;color:#a5b4fc;padding:2px 8px;border-radius:10px;font-size:11px;">${idea.angle}</span>` : ''}
-    </div>`).join('');
+  const ideasHtml = (digest.linkedinIdeas||[]).slice(0,5).map(i=>`
+    <div style="background:#1a1a2e;border-left:3px solid #818cf8;border-radius:0 8px 8px 0;padding:14px;margin:8px 0">
+      <span style="background:#312e81;color:#a5b4fc;padding:2px 8px;border-radius:10px;font-size:11px">${i.topic}</span>
+      <p style="color:#e2e8f0;font-weight:700;margin:8px 0 4px;font-size:14px">${i.title}</p>
+      <p style="color:#94a3b8;font-style:italic;font-size:13px;margin:0">"${i.hook}"</p>
+    </div>`).join('')
 
-  const html = `<!DOCTYPE html><html><body style="background:#0d0d1a;font-family:Arial,sans-serif;color:#e2e8f0;padding:0;margin:0;">
-    <div style="background:linear-gradient(135deg,#1a1a2e,#0d0d1a);padding:40px 32px;text-align:center;border-bottom:1px solid #f59e0b33;">
-      <h1 style="color:#f59e0b;font-size:24px;margin:0;letter-spacing:0.1em;">⚡ GOXENT ALPHA BRIEF</h1>
-      <p style="color:#475569;margin:8px 0 0;font-size:13px;">${new Date().toLocaleDateString('en-NP', { weekday:'long', year:'numeric', month:'long', day:'numeric' })} · NEPSE Command Center</p>
+  const noticesHtml = newNotices.slice(0,5).map(n=>`
+    <div style="padding:10px 0;border-bottom:1px solid #1e293b">
+      <span style="background:${n.badgeColor};color:white;padding:2px 8px;border-radius:10px;font-size:10px;font-weight:700">${n.badge}</span>
+      <span style="color:#e2e8f0;font-size:13px;margin-left:8px">${n.title}</span>
+    </div>`).join('')
+
+  const html = \`<!DOCTYPE html><html><body style="background:#0d0d1a;font-family:Arial,sans-serif;color:#e2e8f0;margin:0;padding:0">
+  <div style="background:linear-gradient(135deg,#1a1a2e,#0d0d1a);padding:32px;text-align:center;border-bottom:2px solid rgba(212,175,55,0.3)">
+    <h1 style="color:#f59e0b;font-size:24px;margin:0;font-weight:800">⚡ GOXENT DAILY BRIEF</h1>
+    <p style="color:#475569;margin:6px 0 0;font-size:13px">\${date}</p>
+  </div>
+  <div style="max-width:640px;margin:0 auto;padding:24px">
+    <div style="background:#1a1a2e;border:1px solid rgba(212,175,55,0.3);border-radius:12px;padding:20px;margin-bottom:20px">
+      <h2 style="color:#f59e0b;font-size:15px;margin:0 0 10px">📊 NEPSE Market — \${digest.marketData.index} (\${digest.marketData.change})</h2>
+      <p style="color:#cbd5e1;line-height:1.7;margin:0;font-size:14px">\${digest.marketSummary}</p>
     </div>
-    <div style="max-width:640px;margin:0 auto;padding:24px;">
-      <div style="background:#1a1a2e;border:1px solid #f59e0b44;border-radius:12px;padding:24px;margin-bottom:24px;">
-        <h2 style="color:#f59e0b;margin:0 0 12px;font-size:16px;">📊 Market Summary</h2>
-        <p style="color:#cbd5e1;line-height:1.8;margin:0;">${digest.marketSummary}</p>
-        ${digest.marketPhase ? `<p style="color:#64748b;font-size:12px;margin:12px 0 0;">Phase: <strong style="color:#f59e0b;">${digest.marketPhase}</strong></p>` : ''}
-      </div>
-      <h2 style="color:#4ade80;font-size:16px;margin:0 0 12px;">🎯 Top Picks</h2>
-      <table style="width:100%;border-collapse:collapse;background:#1a1a2e;border-radius:12px;overflow:hidden;margin-bottom:24px;">
-        <thead><tr style="background:#0f172a;">
-          <th style="padding:12px 16px;text-align:left;color:#64748b;font-size:12px;">SYMBOL</th>
-          <th style="padding:12px 16px;text-align:left;color:#64748b;font-size:12px;">SIGNAL</th>
-          <th style="padding:12px 16px;text-align:left;color:#64748b;font-size:12px;">THESIS</th>
-        </tr></thead>
-        <tbody>${picksHtml}</tbody>
-      </table>
-      <h2 style="color:#818cf8;font-size:16px;margin:0 0 12px;">✍️ LinkedIn Content Ideas</h2>
-      ${ideasHtml}
-      <div style="text-align:center;padding:24px 0 8px;border-top:1px solid #1e293b;margin-top:24px;">
-        <a href="https://app.anilsunar.com.np" style="color:#f59e0b;text-decoration:none;font-size:13px;">Open Goxent Command Center →</a>
-        <p style="color:#334155;font-size:11px;margin:8px 0 0;">Goxent · anilsunar.com.np</p>
-      </div>
+    \${picksHtml ? \`<h2 style="color:#4ADE80;font-size:15px;margin:0 0 10px">🎯 Today's Top Picks</h2>
+    <table style="width:100%;border-collapse:collapse;background:#1a1a2e;border-radius:12px;overflow:hidden;margin-bottom:20px">
+      <thead><tr style="background:#0f172a">
+        <th style="padding:10px 16px;text-align:left;color:#64748b;font-size:11px">SYMBOL</th>
+        <th style="padding:10px 16px;text-align:left;color:#64748b;font-size:11px">SIGNAL</th>
+        <th style="padding:10px 16px;text-align:left;color:#64748b;font-size:11px">REASON</th>
+      </tr></thead><tbody>\${picksHtml}</tbody>
+    </table>\` : ''}
+    \${ideasHtml ? \`<h2 style="color:#818cf8;font-size:15px;margin:0 0 10px">💼 LinkedIn Ideas</h2>\${ideasHtml}\` : ''}
+    \${noticesHtml ? \`<h2 style="color:#f59e0b;font-size:15px;margin:20px 0 10px">🔔 New Regulatory Notices</h2>\${noticesHtml}\` : ''}
+    <div style="text-align:center;margin:24px 0 0">
+      <a href="https://app.anilsunar.com.np" style="background:#f59e0b;color:#000;padding:12px 28px;border-radius:8px;text-decoration:none;font-weight:800;font-size:13px">Open Dashboard →</a>
     </div>
-  </body></html>`;
+  </div>
+</body></html>\`
 
-  let sent = 0;
-  for (const recipient of recipients) {
+  try {
     const res = await fetch('https://api.resend.com/emails', {
-      method: 'POST',
-      headers: { 'Authorization': `Bearer ${RESEND_API_KEY}`, 'Content-Type': 'application/json' },
+      method:'POST',
+      headers:{'Authorization':\`Bearer \${process.env.RESEND_API_KEY}\`,'Content-Type':'application/json'},
       body: JSON.stringify({
-        from: 'Goxent Brief <brief@anilsunar.com.np>',
-        to: [recipient.email],
-        subject: `📊 NEPSE Daily Brief — ${new Date().toLocaleDateString('en-NP')}`,
+        from:'Goxent Brief <brief@anilsunar.com.np>',
+        to:[TO],
+        subject:\`⚡ Goxent Brief — NEPSE \${digest.marketData.index} | \${new Date().toLocaleDateString('en-NP')}\`,
         html
       })
-    });
-    if (res.ok) { console.log(`✅ Sent to ${recipient.email}`); sent++; }
-    else { const err = await res.json(); console.error(`❌ Failed for ${recipient.email}:`, err.message || err); }
-  }
-  console.log(`📬 Digest delivered to ${sent}/${recipients.length} subscribers.`);
+    })
+    if (res.ok) console.log(\`✅ Email sent to \${TO}\`)
+    else console.warn('⚠️ Email failed:', await res.text())
+  } catch(e) { console.warn('⚠️ Email error:', e.message) }
 }
 
-// ─── Main 3-Stage Pipeline ───────────────────────────────────────────────────
-async function saveContentToNotion(digest) {
-  const NOTION_TOKEN = process.env.NOTION_TOKEN;
-  const DB_ID = process.env.NOTION_CONTENT_PIPELINE_DB_ID;
-  const MARKET_JOURNAL_DB_ID = process.env.NOTION_MARKET_JOURNAL_DB_ID;
-  
-  if (!NOTION_TOKEN || !DB_ID) {
-    console.log('⚠️  NOTION_TOKEN or NOTION_CONTENT_PIPELINE_DB_ID not set — skipping Notion push');
-    return;
-  }
-
-  const headers = {
-    'Authorization': `Bearer ${NOTION_TOKEN}`,
-    'Content-Type': 'application/json',
-    'Notion-Version': '2022-06-28'
-  };
-
-  // 1. Save each LinkedIn idea as a Draft page in Content Pipeline
-  let saved = 0;
-  for (const idea of (digest.linkedinIdeas || [])) {
-    try {
-      const res = await fetch('https://api.notion.com/v1/pages', {
-        method: 'POST',
-        headers,
-        body: JSON.stringify({
-          parent: { database_id: DB_ID },
-          properties: {
-            Title: { title: [{ text: { content: idea.hook || idea.title || 'LinkedIn Idea' } }] },
-            Status: { select: { name: 'DRAFT' } },
-            Platform: { select: { name: 'LinkedIn' } },
-            Angle: { select: { name: idea.angle || 'EDUCATIONAL' } },
-            FullDraft: { rich_text: [{ text: { content: idea.brief || idea.hook || '' } }] },
-            GeneratedAt: { date: { start: new Date().toISOString().split('T')[0] } },
-            Source: { select: { name: 'AI_DIGEST' } }
-          }
-        })
-      });
-      if (res.ok) saved++;
-      else {
-        const err = await res.json();
-        console.warn('⚠️  Notion idea save failed:', err.message);
-      }
-    } catch(e) {
-      console.warn('⚠️  Notion push error:', e.message);
-    }
-  }
-  console.log(`✅ Saved ${saved} LinkedIn ideas to Notion Content Pipeline`);
-
-  // 2. Save today's market journal entry
-  if (MARKET_JOURNAL_DB_ID && digest.marketSummary) {
-    try {
-      const topPicksText = (digest.topPicks || [])
-        .map((p, i) => `${i+1}. ${p.symbol} — ${p.target} | Entry: ${p.entryZone} | Target: ${p.target}\n   ${p.reason}`)
-        .join('\n\n');
-
-      const res = await fetch('https://api.notion.com/v1/pages', {
-        method: 'POST',
-        headers,
-        body: JSON.stringify({
-          parent: { database_id: MARKET_JOURNAL_DB_ID },
-          properties: {
-            Title: { title: [{ text: { content: `Market Journal — ${new Date().toLocaleDateString('en-CA')}` } }] },
-            Date: { date: { start: new Date().toISOString().split('T')[0] } },
-            MarketPhase: { select: { name: digest.marketPhase || 'SIDEWAYS' } },
-            Summary: { rich_text: [{ text: { content: digest.marketSummary || '' } }] },
-            TopPicks: { rich_text: [{ text: { content: topPicksText } }] },
-            KeyRisk: { rich_text: [{ text: { content: digest.keyRisk || '' } }] }
-          }
-        })
-      });
-      if (res.ok) console.log('✅ Market Journal entry saved to Notion');
-      else {
-        const err = await res.json();
-        console.warn('⚠️  Market Journal save failed:', err.message);
-      }
-    } catch(e) {
-      console.warn('⚠️  Market Journal push error:', e.message);
-    }
-  }
-}
-
-// ─── Main 3-Stage Pipeline ───────────────────────────────────────────────────
-export default async function runAIAnalyst() {
-  const apiKey = process.env.VITE_GEMINI_API_KEY || process.env.GEMINI_API_KEY;
-  if (!apiKey) {
-    console.warn('⚠️  No Gemini API key — skipping AI digest (pipeline continues)');
-    process.exit(0);
-  }
-
-  const omniData    = loadJson('src/app/data/market-omni-data.json', { scrapedPages: [] });
-  const techData    = loadJson('src/app/data/technical-signals.json', { stocks: [] });
-  const brokerData  = loadJson('src/app/data/broker-flow-5d.json', { topBuyers: [], topSellers: [] });
-  const deepBrokerData = loadJson('src/app/data/deep-broker-holdings.json', { timeframes: {} });
-  const fundamentalData = loadJson('src/app/data/fundamental-data.json', { stocks: [] });
-  const socialData      = loadJson('src/app/data/social-sentiment.json', { data: [] });
-  const notices     = loadJson('src/app/data/notices.json', { notices: [] });
-  const news        = loadJson('src/app/data/nepal-news.json', { articles: [] });
-
-  // Sector / macro pages for Stage 1
-  const sectorPages = pagesMatching(omniData, [
-    'sector-performance', 'sector-rotation', 'market-breadth', 'daily-summary'
-  ]);
-
-  // Stock screener pages for Stage 2
-  const screenerPages = pagesMatching(omniData, [
-    'stock-health', 'swing-gain', 'technical-screener',
-    'momentum-screener', 'overbought-oversold', 'broker-analysis', 'floorsheet'
-  ]);
-
-  let stage1 = null, stage2 = null, stage3 = null;
-
-  // ── STAGE 1 ─────────────────────────────────────────────────────────────────
-  try {
-    console.log('🧠 Stage 1: Market structure & sector analysis...');
-    stage1 = await callGemini(`
-You are an expert NEPSE analyst. Analyze today's market structure and macro sentiment.
-
-SECTOR & MARKET DATA:
-${cap(sectorPages, 15000)}
-
-TOP TECHNICAL SIGNALS:
-${cap(techData.stocks.slice(0, 30), 5000)}
-
-FUNDAMENTAL DATA (PE/EPS):
-${cap(fundamentalData.stocks.slice(0, 30), 3000)}
-
-BROKER FLOW (5D):
-${cap(brokerData, 3000)}
-
-RECENT REGULATORY NOTICES:
-${cap(notices, 3000)}
-
-HOT NEPAL FINANCIAL NEWS:
-${cap(news, 5000)}
-
-SOCIAL MEDIA SENTIMENT (Public Search Results):
-${JSON.stringify(socialData)}
-
-Return JSON:
-{
-  "marketPhase": "BULL" | "BEAR" | "SIDEWAYS",
-  "hotSectors": ["sector1", "sector2", "sector3"],
-  "weakSectors": ["sector1", "sector2"],
-  "regulatoryHighlight": "string or null",
-  "newsSentiment": "string explaining how news affects sentiment",
-  "overallBias": "BULLISH" | "BEARISH" | "NEUTRAL",
-  "oneLinerSummary": "string",
-  "keyRisk": "Identify one major risk from data/news"
-}`);
-    console.log(`   ✔  Phase: ${stage1.marketPhase} | Bias: ${stage1.overallBias}`);
-  } catch (err) {
-    console.error('⚠️  Stage 1 (Market Analysis) failed:', err.message);
-    stage1 = { 
-      marketPhase: 'SIDEWAYS', 
-      hotSectors: [], 
-      weakSectors: [], 
-      overallBias: 'NEUTRAL', 
-      oneLinerSummary: 'Market analysis currently unavailable. The market may be closed or data synchronization is pending.', 
-      keyRisk: 'Data unavailable' 
-    };
-  }
-
-  // ── STAGE 2: SMC & PRICE ACTION TIERED FILTERING ────────────────────────────
-  try {
-    console.log('🧠 Stage 2: Smart Money & Price Action deep screening...');
-    
-    // TIER 1: Use the bot's powerful fused Smart Score (Technical + SMC + Fundamentals)
-    // We only pass the Top 15 elite candidates to the AI for final qualitative review.
-    const activeSymbols = new Set((techData.stocks || []).slice(0, 15).map(s => s.symbol));
-    console.log(`🤖 Bot's Elite Selection: ${Array.from(activeSymbols).join(', ')}`);
-    
-    // Load Deep Tearsheets ONLY for these active symbols (Tier 2 payload)
-    const activeTearsheets = [];
-    const tearsheetDir = 'src/app/data/tearsheets';
-    if (fs.existsSync(tearsheetDir)) {
-      for (const sym of activeSymbols) {
-        const p = path.join(tearsheetDir, \`\${sym}.json\`);
-        if (fs.existsSync(p)) {
-          activeTearsheets.push(JSON.parse(fs.readFileSync(p, 'utf8')));
-        }
-      }
-    }
-
-    const s2result = await callGemini(\`
-You are an elite institutional trader analyzing NEPSE ordinary shares.
-Use Smart Money Concepts (SMC) and Price Action to filter these active stocks.
-
-MARKET CONTEXT (From Stage 1):
-\${JSON.stringify(stage1)}
-
-TOP TURNOVER & SCREENER DATA:
-\${cap(screenerPages, 8000)}
-
-TECHNICAL SIGNALS & BROKER FLOW (Tier 1 Filtered):
-\${cap(techData.stocks.filter(s => activeSymbols.has(s.symbol)), 6000)}
-\${cap(brokerData, 4000)}
-
-DEEP TEARSHEETS (Fundamentals for Active Stocks):
-\${cap(activeTearsheets, 15000)}
-
-SOCIAL SENTIMENT & NEWS CATALYSTS:
-\${cap(socialData, 3000)}
-\${cap(news, 4000)}
-
-RULES:
-1. THE BOT HAS ALREADY DONE THE MATH: These 15 stocks passed a rigorous fused technical/broker/fundamental screen (Smart Score).
-2. YOUR ROLE: Perform a qualitative "Deep Brain Audit". Check the NEWS context, SOCIAL sentiment, and SMC pattern narrative to see which 10 have the highest probability of an immediate move.
-3. SELECT EXACTLY 10 STOCKS. Ranked 1 to 10 based on "Move Readiness".
-4. If a stock has a high Smart Score but "Bad News", you may deprioritize it.
-
-Return a JSON array of your TOP 10 picks:
-[{
-  "symbol": "string",
-  "sector": "string",
-  "smcSetup": "string explaining accumulation/distribution footprint",
-  "priceAction": "string explaining volume/candle context",
-  "catalyst": "string linking to news/fundamentals",
-  "action": "BUY" | "HOLD" | "WATCH",
-  "whyThisStock": "1 sentence synthesis"
-}]
-\`);
-    stage2 = Array.isArray(s2result) ? s2result : (s2result.candidates || s2result.stocks || s2result.top10 || []);
-    console.log(\`   ✔  \${stage2.length} elite candidates screened\`);
-  } catch (err) {
-    console.warn('⚠️  Stage 2 failed:', err.message);
-    stage2 = [];
-  }
-
-  // ── STAGE 3 ─────────────────────────────────────────────────────────────────
-  try {
-    console.log('🧠 Stage 3: Final top 10 with entry/exit parameters...');
-    stage3 = await callGemini(`
-You are making final buy recommendations for NEPSE today.
-
-MARKET PHASE: ${stage1.marketPhase} | BIAS: ${stage1.overallBias}
-HOT SECTORS: ${JSON.stringify(stage1.hotSectors)}
-WEAK SECTORS TO AVOID: ${JSON.stringify(stage1.weakSectors)}
-
-SCREENED CANDIDATES:
-${JSON.stringify(stage2)}
-
-FULL SCREENER DATA:
-${cap(screenerPages, 10000)}
-
-Pick the BEST 10 from the candidates. For each:
-- Entry zone (LTP ± 1%)
-- Stop loss (clear support or -3% from entry)
-- Target (5-8% in bull, 3-5% in sideways)
-- Time horizon: SWING (2-7 days) | SHORT (2-4 weeks) | MEDIUM (1-3 months)
-- Conviction: HIGH | MEDIUM | SPECULATIVE
-
-Return JSON:
-{
-  "generatedAt": "ISO string",
-  "marketSummary": "3 sentences for email header",
-  "marketPhase": "string",
-  "topPicks": [
-    {
-      "rank": 1,
-      "symbol": "string",
-      "sector": "string",
-      "signal": "STRONG BUY" | "BUY" | "ACCUMULATE" | "BREAKOUT",
-      "entryZone": "NPR 420-430",
-      "stopLoss": "NPR 405",
-      "target": "NPR 465",
-      "upside": "+7%",
-      "horizon": "SWING",
-      "conviction": "HIGH",
-      "thesis": "2 sharp sentences",
-      "signals": ["signal1", "signal2"]
-    }
-  ],
-  "linkedinIdeas": [
-    { "hook": "string", "angle": "EDUCATIONAL | HOT_TAKE | DATA_STORY | REGULATORY_ALERT", "brief": "detailed outline" }
-  ]
-}`);
-    console.log(`   ✔  ${stage3.topPicks?.length || 0} final picks selected`);
-  } catch (err) {
-    console.warn('⚠️  Stage 3 failed:', err.message);
-    stage3 = { generatedAt: new Date().toISOString(), marketSummary: stage1.oneLinerSummary, marketPhase: stage1.marketPhase, topPicks: [], linkedinIdeas: [] };
-  }
-
-  // ── SAVE ─────────────────────────────────────────────────────────────────────
-  const dataDir = path.join(__dirname, '../src/app/data');
-  fs.mkdirSync(dataDir, { recursive: true });
-
-  // ai_digest.json — UI-compatible format (preserving existing keys the UI reads)
-  const digest = {
-    timestamp: stage3.generatedAt || new Date().toISOString(),
-    marketSummary: stage3.marketSummary || stage1.oneLinerSummary,
-    marketSentiment: stage1.overallBias,
-    marketPhase: stage3.marketPhase || stage1.marketPhase,
-    institutionalFocus: (stage1.hotSectors || []).join(', ') || 'General Market',
-    keyRisk: stage1.keyRisk || 'Market volatility',
-    topPicks: (stage3.topPicks || []).map(p => ({
-      symbol: p.symbol,
-      target: p.signal,
-      reason: p.thesis,
-      entryZone: p.entryZone,
-      stopLoss: p.stopLoss,
-      upside: p.upside,
-      horizon: p.horizon,
-      conviction: p.conviction,
-      signals: p.signals,
-    })),
-    anomalies: (stage1.regulatoryHighlight ? [stage1.regulatoryHighlight] : []),
-    linkedinIdeas: stage3.linkedinIdeas || [],
-  };
-
-  fs.writeFileSync(path.join(dataDir, 'ai_digest.json'), JSON.stringify(digest, null, 2));
-  console.log('💾 Saved → src/app/data/ai_digest.json');
-
-  // deep_intelligence.json — full 3-stage output
-  fs.writeFileSync(path.join(dataDir, 'deep_intelligence.json'), JSON.stringify({ stage1, stage2, stage3 }, null, 2));
-  console.log('💾 Saved → src/app/data/deep_intelligence.json');
-
-  // Send email
-  await sendDigestEmail(digest);
-
-  // Sync to Notion
-  await saveContentToNotion(digest);
-}
-
-// Allow direct run — stays compatible with existing npm script name
-if (process.argv[1] === fileURLToPath(import.meta.url)) {
-  runAIAnalyst().catch(err => {
-    console.warn('⚠️  AI Analyst exiting with warning:', err.message);
-    process.exit(0); // never fail the pipeline
-  });
-}
+generateDigest().catch(e => { console.error('❌', e.message); process.exit(1) })
+export { generateDigest }

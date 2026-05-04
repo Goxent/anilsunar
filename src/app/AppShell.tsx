@@ -13,14 +13,19 @@ import {
   AlertCircle,
   Menu,
   Sparkles,
-  Bell
+  Bell,
+  Briefcase,
+  Star,
+  Layout
 } from 'lucide-react'
 
 // Tab Components
 import DailyBrief    from './components/DailyBrief'
 import StockAnalyzer from './components/StockAnalyzer'
 import SmartMoney    from './components/SmartMoney'
-import NoticeLab     from './components/NoticeLab'
+import PortfolioTracker from './components/PortfolioTracker'
+import Watchlist        from './components/Watchlist'
+import NoticeTracker    from './components/NoticeTracker'
 import ContentStudio from './components/ContentStudio'
 import ControlPanel  from './components/ControlPanel'
 import SiteStudio    from './components/SiteStudio'
@@ -52,6 +57,8 @@ const NAV_GROUPS = [
       { id: 'brief',    label: 'Daily Brief',    icon: Sparkles,   component: DailyBrief },
       { id: 'analyzer', label: 'Stock Analyzer',  icon: Search,     component: StockAnalyzer },
       { id: 'money',    label: 'Smart Money',     icon: TrendingUp, component: SmartMoney },
+      { id: 'portfolio', label: 'Portfolio',      icon: Briefcase,  component: PortfolioTracker },
+      { id: 'watchlist', label: 'Watchlist',      icon: Star,       component: Watchlist },
     ]
   },
   {
@@ -59,7 +66,7 @@ const NAV_GROUPS = [
     label: 'Content',
     color: 'var(--blue)',
     tabs: [
-      { id: 'notices', label: 'Notice Lab',     icon: Bell,    component: NoticeLab },
+      { id: 'notices', label: 'Notice Tracker', icon: Bell, component: NoticeTracker },
       { id: 'studio',  label: 'Content Studio', icon: Pencil,  component: ContentStudio },
     ]
   },

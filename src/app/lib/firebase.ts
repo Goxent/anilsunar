@@ -20,6 +20,7 @@ const app = initializeApp(firebaseConfig);
 const auth = getAuth(app);
 const db = getFirestore(app);
 const googleProvider = new GoogleAuthProvider();
-const analytics = typeof window !== 'undefined' ? getAnalytics(app) : null;
+const isLocalhost = typeof window !== 'undefined' && (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1');
+const analytics = typeof window !== 'undefined' && !isLocalhost ? getAnalytics(app) : null;
 
 export { app, auth, db, googleProvider, analytics };
