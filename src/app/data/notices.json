@@ -1,7 +1,7 @@
 {
-  "lastUpdated": "2026-05-04T04:51:40.367Z",
+  "lastUpdated": "2026-05-05T03:29:59.122Z",
   "totalCount": 42,
-  "newCount": 42,
+  "newCount": 0,
   "notices": [
     {
       "id": "ocrnepal_moqq27ad",
@@ -549,6 +549,5 @@
       "isNew": false,
       "emailedAt": "2026-05-04T04:52:28.975Z"
     }
-  ],
-  "lastEmailSentAt": "2026-05-04T04:52:28.975Z"
+  ]
 }

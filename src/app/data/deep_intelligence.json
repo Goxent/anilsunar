@@ -1,18 +1,5 @@
 {
-  "stage1": {
-    "marketPhase": "SIDEWAYS",
-    "hotSectors": [],
-    "weakSectors": [],
-    "overallBias": "NEUTRAL",
-    "oneLinerSummary": "Market analysis currently unavailable. The market may be closed or data synchronization is pending.",
-    "keyRisk": "Data unavailable"
-  },
-  "stage2": [],
-  "stage3": {
-    "generatedAt": "2026-05-01T07:16:54.457Z",
-    "marketSummary": "Market analysis unavailable.",
-    "marketPhase": "SIDEWAYS",
-    "topPicks": [],
-    "linkedinIdeas": []
-  }
+  "timestamp": "2026-05-05T03:30:11.212Z",
+  "marketVerdict": "Quant Engine provided no candidates. Market data might be missing.",
+  "activePicks": []
 }
