@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-05-05T04:29:03.770Z",
-  "totalPosts": 3,
+  "lastUpdated": "2026-05-06T04:46:05.562Z",
+  "totalPosts": 4,
   "posts": {
     "ocrnepal_moqq27ad": {
       "headline": "OCR Nepal: वार्षिक विवरण अभिलेखनका पत्रहरू स्वचालित रूपमा प्राप्त ",
@@ -61,6 +61,26 @@
       "badgeColor": "#1a73e8",
       "link": "https://ocr.gov.np/content/38/needs-from-the-corporate-action-room-of/",
       "createdAt": "2026-05-04T04:52:28.567Z"
+    },
+    "nrbnepalnoticeforletterofint_motkqt2f": {
+      "headline": "NRB Nepal: Notice for Letter of Intent (LOI) to accept the bid for",
+      "body": "🏦 Nepal Rastra Bank has a new directive!\n\n📌 Notice for Letter of Intent (LOI) to accept the bid for The Procurement of The Supply, Delivery and Installation of Layer 3 Manageable Switch\n\nThis update from NRB Nepal may affect banking compliance requirements for Nepal professionals.\n\n✅ Review the full notice and consult your advisor.\n\n🔗 https://www.nrb.org.np/gsd/notice-for-letter-of-intent-loi-to-accept-the-bid-for-the-procurement-of-the-supply-delivery-and-installation-of-layer-3-manageable-switch/",
+      "callToAction": "Share this with your team if relevant.",
+      "hashtags": [
+        "#Nepal",
+        "#Compliance",
+        "#CA",
+        "#NRBNepal"
+      ],
+      "bestTimeToPost": "Morning",
+      "topicBadge": "Banking",
+      "isTemplate": true,
+      "noticeId": "nrbnepalnoticeforletterofint_motkqt2f",
+      "noticeTitle": "Notice for Letter of Intent (LOI) to accept the bid for The Procurement of The Supply, Delivery and Installation of Layer 3 Manageable Switch",
+      "source": "NRB Nepal",
+      "badgeColor": "#e65100",
+      "link": "https://www.nrb.org.np/gsd/notice-for-letter-of-intent-loi-to-accept-the-bid-for-the-procurement-of-the-supply-delivery-and-installation-of-layer-3-manageable-switch/",
+      "createdAt": "2026-05-06T04:46:05.562Z"
     }
   }
 }

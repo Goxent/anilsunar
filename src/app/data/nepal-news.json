@@ -1,7 +1,7 @@
 {
-  "scrapedAt": "2026-05-05T04:28:21.475Z",
-  "totalCount": 22,
-  "nepalCount": 14,
+  "scrapedAt": "2026-05-06T04:45:21.564Z",
+  "totalCount": 23,
+  "nepalCount": 15,
   "globalCount": 8,
   "sources": [
     "Onlinekhabar Finance",
@@ -16,33 +16,23 @@
   ],
   "articles": [
     {
-      "title": "नेप्से ३४ अंकले घट्यो, कारोबार रकम ४ अर्ब २६ करोडमा सीमित",
-      "url": "https://www.karobardaily.com/news/371494",
+      "title": "किलोवाटको विकल्पमा मूल्य र आकारका आधारमा कर लगाउने तयारी",
+      "url": "https://www.karobardaily.com/news/371931",
       "source": "Karobar Daily",
       "badge": "KD",
       "category": "Nepal Business",
-      "scrapedAt": "2026-05-05T04:27:52.237Z",
-      "summary": "नेप्से ३४ अंकले घट्यो, कारोबार रकम ४ अर्ब २६ करोडमा सीमित",
+      "scrapedAt": "2026-05-06T04:44:53.611Z",
+      "summary": "किलोवाटको विकल्पमा मूल्य र आकारका आधारमा कर लगाउने तयारी",
       "isGlobal": false
     },
     {
-      "title": "अब निजी क्षेत्रले पनि सोच बदल्नुपर्छ: अर्थमन्त्री",
-      "url": "https://www.karobardaily.com/news/371481",
+      "title": "अर्थतन्त्रमा महिलालाई निर्णायक शक्ति बनाउनुपर्नेमा जोड",
+      "url": "https://www.karobardaily.com/news/371796",
       "source": "Karobar Daily",
       "badge": "KD",
       "category": "Nepal Business",
-      "scrapedAt": "2026-05-05T04:27:52.237Z",
-      "summary": "अब निजी क्षेत्रले पनि सोच बदल्नुपर्छ: अर्थमन्त्री",
-      "isGlobal": false
-    },
-    {
-      "title": "लुम्बिनीमा उद्योग व्यवसायमा करिब १० हजारलाई रोजगार",
-      "url": "https://www.karobardaily.com/news/371413",
-      "source": "Karobar Daily",
-      "badge": "KD",
-      "category": "Nepal Business",
-      "scrapedAt": "2026-05-05T04:27:52.237Z",
-      "summary": "लुम्बिनीमा उद्योग व्यवसायमा करिब १० हजारलाई रोजगार",
+      "scrapedAt": "2026-05-06T04:44:53.611Z",
+      "summary": "अर्थतन्त्रमा महिलालाई निर्णायक शक्ति बनाउनुपर्नेमा जोड",
       "isGlobal": false
     },
     {
@@ -51,7 +41,7 @@
       "source": "Karobar Daily",
       "badge": "KD",
       "category": "Nepal Business",
-      "scrapedAt": "2026-05-05T04:27:52.237Z",
+      "scrapedAt": "2026-05-06T04:44:53.611Z",
       "summary": "बैंकहरूले कति कमाए खुद ब्याज आम्दानी ?",
       "isGlobal": false
     },
@@ -61,7 +51,7 @@
       "source": "Karobar Daily",
       "badge": "KD",
       "category": "Nepal Business",
-      "scrapedAt": "2026-05-05T04:27:52.237Z",
+      "scrapedAt": "2026-05-06T04:44:53.611Z",
       "summary": "निष्क्रिय कर्जाको चाङ, देखिएन तत्काल निस्कने उपाय",
       "isGlobal": false
     },
@@ -71,7 +61,7 @@
       "source": "Karobar Daily",
       "badge": "KD",
       "category": "Nepal Business",
-      "scrapedAt": "2026-05-05T04:27:52.237Z",
+      "scrapedAt": "2026-05-06T04:44:53.611Z",
       "summary": "४० अर्ब निक्षेप खिच्दै राष्ट्र बैंक",
       "isGlobal": false
     },
@@ -81,7 +71,7 @@
       "source": "Karobar Daily",
       "badge": "KD",
       "category": "Nepal Business",
-      "scrapedAt": "2026-05-05T04:27:52.237Z",
+      "scrapedAt": "2026-05-06T04:44:53.611Z",
       "summary": "झण्डै २० प्रतिशतले बढ्यो वाणिज्य बैंकहरूको नाफा",
       "isGlobal": false
     },
@@ -91,8 +81,28 @@
       "source": "Karobar Daily",
       "badge": "KD",
       "category": "Nepal Business",
-      "scrapedAt": "2026-05-05T04:27:52.237Z",
+      "scrapedAt": "2026-05-06T04:44:53.611Z",
       "summary": "नेशनल लाइफका अभिकर्तालाई नारायणी क्रुजमा सफारी",
+      "isGlobal": false
+    },
+    {
+      "title": "टीभीएस एनटर्क प्रयोगकर्ता डेढ लाख पुगे",
+      "url": "https://www.karobardaily.com/news/365816",
+      "source": "Karobar Daily",
+      "badge": "KD",
+      "category": "Nepal Business",
+      "scrapedAt": "2026-05-06T04:44:53.612Z",
+      "summary": "टीभीएस एनटर्क प्रयोगकर्ता डेढ लाख पुगे",
+      "isGlobal": false
+    },
+    {
+      "title": "Sector-Wise Trends in NEPSE Listings: A Two-Decade Analysis",
+      "url": "https://www.sharesansar.com/newsdetail/sector-wise-trends-in-nepse-listings-a-two-decade-analysis-2026-05-03",
+      "source": "Sharesansar",
+      "badge": "SS",
+      "category": "Nepal Stock",
+      "scrapedAt": "2026-05-06T04:44:55.676Z",
+      "summary": "Sector-Wise Trends in NEPSE Listings: A Two-Decade Analysis",
       "isGlobal": false
     },
     {
@@ -101,17 +111,17 @@
       "source": "Sharesansar",
       "badge": "SS",
       "category": "Nepal Stock",
-      "scrapedAt": "2026-05-05T04:27:53.978Z",
+      "scrapedAt": "2026-05-06T04:44:55.676Z",
       "summary": "Proposed Dividend",
       "isGlobal": false
     },
     {
       "title": "Dividend, Bonus & Rights",
-      "url": "https://www.sharesansar.com/newsdetail/nic-asia-bank-receives-preliminary-approval-from-nrb-to-issue-right-shares-2026-05-04",
+      "url": "https://www.sharesansar.com/newsdetail/reminder-last-trading-day-to-secure-dividend-of-sanima-gic-insurance-limited-2026-05-05",
       "source": "Sharesansar",
       "badge": "SS",
       "category": "Nepal Stock",
-      "scrapedAt": "2026-05-05T04:27:53.978Z",
+      "scrapedAt": "2026-05-06T04:44:55.676Z",
       "summary": "Dividend, Bonus & Rights",
       "isGlobal": false
     },
@@ -121,7 +131,7 @@
       "source": "Sharesansar",
       "badge": "SS",
       "category": "Nepal Stock",
-      "scrapedAt": "2026-05-05T04:27:53.978Z",
+      "scrapedAt": "2026-05-06T04:44:55.676Z",
       "summary": "NEPSE Concludes The Week With 1.79% Loss and Turnover of Rs 21.18 Arba; Weekly Summary with Sector Comparison, Major Highlights, and More",
       "isGlobal": false
     },
@@ -131,7 +141,7 @@
       "source": "Nepali Paisa",
       "badge": "NP",
       "category": "Nepal Finance",
-      "scrapedAt": "2026-05-05T04:27:57.082Z",
+      "scrapedAt": "2026-05-06T04:44:58.657Z",
       "summary": "Market Overview",
       "isGlobal": false
     },
@@ -141,7 +151,7 @@
       "source": "Nepali Paisa",
       "badge": "NP",
       "category": "Nepal Finance",
-      "scrapedAt": "2026-05-05T04:27:57.082Z",
+      "scrapedAt": "2026-05-06T04:44:58.657Z",
       "summary": "Stocks Up & Down",
       "isGlobal": false
     },
@@ -151,7 +161,7 @@
       "source": "Nepali Paisa",
       "badge": "NP",
       "category": "Nepal Finance",
-      "scrapedAt": "2026-05-05T04:27:57.082Z",
+      "scrapedAt": "2026-05-06T04:44:58.657Z",
       "summary": "Business & Economy",
       "isGlobal": false
     }
@@ -163,58 +173,68 @@
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-05-05T04:28:19.973Z",
+      "scrapedAt": "2026-05-06T04:45:20.062Z",
       "summary": "Markets just got Conversational",
       "isGlobal": true
     },
     {
-      "title": "Vedanta among 5 F&O stocks with a sharp rise in futures open interest",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/news/vedanta-among-5-fo-stocks-with-a-sharp-rise-in-futures-open-interest/slideshow/130815306.cms",
+      "title": "Godrej Properties among 5 F&O stocks with a sharp rise in futures open interest",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/godrej-properties-among-5-fo-stocks-with-a-sharp-rise-in-futures-open-interest/slideshow/130843307.cms",
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-05-05T04:28:19.974Z",
-      "summary": "Vedanta among 5 F&O stocks with a sharp rise in futures open interest",
+      "scrapedAt": "2026-05-06T04:45:20.063Z",
+      "summary": "Godrej Properties among 5 F&O stocks with a sharp rise in futures open interest",
       "isGlobal": true
     },
     {
-      "title": "Bharat Heavy Electricals and 4 other stocks witness 5-year swing high breakout",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/news/bharat-heavy-electricals-and-4-other-stocks-witness-5-year-swing-high-breakout/slideshow/130814955.cms",
+      "title": "Netweb Technologies among 7 stocks flashing bullish signals, indicating possible uptrend",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/netweb-technologies-among-7-stocks-flashing-bullish-signals-indicating-possible-uptrend/slideshow/130843161.cms",
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-05-05T04:28:19.974Z",
-      "summary": "Bharat Heavy Electricals and 4 other stocks witness 5-year swing high breakout",
+      "scrapedAt": "2026-05-06T04:45:20.063Z",
+      "summary": "Netweb Technologies among 7 stocks flashing bullish signals, indicating possible uptrend",
       "isGlobal": true
     },
     {
-      "title": "Dr. Lal Pathlabs among 5 stocks showing bullish RSI upswing",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/news/dr-lal-pathlabs-among-5-stocks-showing-bullish-rsi-upswing/slideshow/130814827.cms",
+      "title": "Biocon among 5 stocks showing bullish RSI upswing",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/biocon-among-5-stocks-showing-bullish-rsi-upswing/slideshow/130842916.cms",
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-05-05T04:28:19.974Z",
-      "summary": "Dr. Lal Pathlabs among 5 stocks showing bullish RSI upswing",
+      "scrapedAt": "2026-05-06T04:45:20.063Z",
+      "summary": "Biocon among 5 stocks showing bullish RSI upswing",
       "isGlobal": true
     },
     {
-      "title": "Positive Breakout: These 14 stocks cross above their 200 DMAs",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/news/positive-breakout-these-14-stocks-cross-above-their-200-dmas/slideshow/130814266.cms",
+      "title": "Stocks to buy in 2026 for long term: HEG, ACC among 5 stocks that could give 20-30% return",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/stocks-to-buy-in-2026-for-long-term-heg-acc-among-5-stocks-that-could-give-20-30-return/slideshow/130842400.cms",
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-05-05T04:28:19.974Z",
-      "summary": "Positive Breakout: These 14 stocks cross above their 200 DMAs",
+      "scrapedAt": "2026-05-06T04:45:20.063Z",
+      "summary": "Stocks to buy in 2026 for long term: HEG, ACC among 5 stocks that could give 20-30% return",
       "isGlobal": true
     },
     {
-      "title": "Stocks to buy in 2026 for long term: Sona BLW, Atul among top 5 stocks that could give 10-20% return",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/news/stocks-to-buy-in-2026-for-long-term-sona-blw-atul-among-top-5-stocks-that-could-give-10-20-return/slideshow/130814120.cms",
+      "title": "Positive Breakout: These 8 stocks cross above their 200 DMAs",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/positive-breakout-these-8-stocks-cross-above-their-200-dmas/slideshow/130842282.cms",
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-05-05T04:28:19.974Z",
-      "summary": "Stocks to buy in 2026 for long term: Sona BLW, Atul among top 5 stocks that could give 10-20% return",
+      "scrapedAt": "2026-05-06T04:45:20.063Z",
+      "summary": "Positive Breakout: These 8 stocks cross above their 200 DMAs",
+      "isGlobal": true
+    },
+    {
+      "title": "These 6 banking stocks have an upside potential of up to 24% in 1 year, according to analysts",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/these-6-banking-stocks-have-an-upside-potential-of-up-to-24-in-1-year-according-to-analysts/articleshow/130835134.cms",
+      "source": "Economic Times Markets",
+      "badge": "ET",
+      "category": "India Markets",
+      "scrapedAt": "2026-05-06T04:45:20.063Z",
+      "summary": "These 6 banking stocks have an upside potential of up to 24% in 1 year, according to analysts",
       "isGlobal": true
     },
     {
@@ -223,18 +243,8 @@
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-05-05T04:28:19.974Z",
+      "scrapedAt": "2026-05-06T04:45:20.063Z",
       "summary": "Weekly Top Picks: These stocks scored 10 on 10 on Stock Reports Plus",
-      "isGlobal": true
-    },
-    {
-      "title": "Stock picks of the week: 5 stocks with consistent score improvement and upside potential of up to 31%",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/news/stock-picks-of-the-week-5-stocks-with-consistent-score-improvement-and-upside-potential-of-up-to-31/articleshow/130772442.cms",
-      "source": "Economic Times Markets",
-      "badge": "ET",
-      "category": "India Markets",
-      "scrapedAt": "2026-05-05T04:28:19.974Z",
-      "summary": "Stock picks of the week: 5 stocks with consistent score improvement and upside potential of up to 31%",
       "isGlobal": true
     }
   ]
