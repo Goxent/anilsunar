@@ -1,8 +1,21 @@
 {
-  "lastUpdated": "2026-05-06T04:45:53.426Z",
-  "totalCount": 43,
+  "lastUpdated": "2026-05-07T04:46:50.446Z",
+  "totalCount": 44,
   "newCount": 1,
   "notices": [
+    {
+      "id": "nrbnepalnoticeforopeningofpr_mov07vte",
+      "title": "Notice For Opening of Price Bid for The Procurement of the Supply, Delivery and Installation of Manageable Switch with Fiber Interface",
+      "source": "NRB Nepal",
+      "category": "Banking",
+      "badge": "NRB",
+      "badgeColor": "#e65100",
+      "link": "https://www.nrb.org.np/gsd/notice-for-opening-of-price-bid-for-the-procurement-of-the-supply-delivery-and-installation-of-manageable-switch-with-fiber-interface/",
+      "summary": "New Banking update from NRB Nepal: Notice For Opening of Price Bid for The Procurement of the Supply, Delivery and Installation of Manageable Switch with Fiber Interface",
+      "detectedAt": "2026-05-07T04:46:45.458Z",
+      "isNew": true,
+      "emailedAt": null
+    },
     {
       "id": "nrbnepalnoticeforletterofint_motkqt2f",
       "title": "Notice for Letter of Intent (LOI) to accept the bid for The Procurement of The Supply, Delivery and Installation of Layer 3 Manageable Switch",
