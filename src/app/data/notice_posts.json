@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-05-08T04:26:35.896Z",
-  "totalPosts": 5,
+  "lastUpdated": "2026-05-11T05:09:20.439Z",
+  "totalPosts": 6,
   "posts": {
     "ocrnepal_moqq27ad": {
       "headline": "OCR Nepal: वार्षिक विवरण अभिलेखनका पत्रहरू स्वचालित रूपमा प्राप्त ",
@@ -101,6 +101,26 @@
       "badgeColor": "#e65100",
       "link": "https://www.nrb.org.np/gsd/notice-for-opening-of-price-bid-for-the-procurement-of-the-supply-delivery-and-installation-of-manageable-switch-with-fiber-interface/",
       "createdAt": "2026-05-07T04:47:02.708Z"
+    },
+    "nrbnepalnoticeregardingcontr_mp0qryo5": {
+      "headline": "NRB Nepal: Notice Regarding Contract Signing for The Supply, Deliv",
+      "body": "🏦 Nepal Rastra Bank has a new directive!\n\n📌 Notice Regarding Contract Signing for The Supply, Delivery and Installation of Firewall System for DC and Firewall System for DR\n\nThis update from NRB Nepal may affect banking compliance requirements for Nepal professionals.\n\n✅ Review the full notice and consult your advisor.\n\n🔗 https://www.nrb.org.np/gsd/notice-regarding-contract-signing-for-the-supply-delivery-and-installation-of-firewall-system-for-dc-and-firewall-system-for-dr/",
+      "callToAction": "Share this with your team if relevant.",
+      "hashtags": [
+        "#Nepal",
+        "#Compliance",
+        "#CA",
+        "#NRBNepal"
+      ],
+      "bestTimeToPost": "Morning",
+      "topicBadge": "Banking",
+      "isTemplate": true,
+      "noticeId": "nrbnepalnoticeregardingcontr_mp0qryo5",
+      "noticeTitle": "Notice Regarding Contract Signing for The Supply, Delivery and Installation of Firewall System for DC and Firewall System for DR",
+      "source": "NRB Nepal",
+      "badgeColor": "#e65100",
+      "link": "https://www.nrb.org.np/gsd/notice-regarding-contract-signing-for-the-supply-delivery-and-installation-of-firewall-system-for-dc-and-firewall-system-for-dr/",
+      "createdAt": "2026-05-11T05:09:20.439Z"
     }
   }
 }

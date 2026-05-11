@@ -1,8 +1,21 @@
 {
-  "lastUpdated": "2026-05-08T04:26:24.134Z",
-  "totalCount": 44,
-  "newCount": 0,
+  "lastUpdated": "2026-05-11T05:09:08.532Z",
+  "totalCount": 45,
+  "newCount": 1,
   "notices": [
+    {
+      "id": "nrbnepalnoticeregardingcontr_mp0qryo5",
+      "title": "Notice Regarding Contract Signing for The Supply, Delivery and Installation of Firewall System for DC and Firewall System for DR",
+      "source": "NRB Nepal",
+      "category": "Banking",
+      "badge": "NRB",
+      "badgeColor": "#e65100",
+      "link": "https://www.nrb.org.np/gsd/notice-regarding-contract-signing-for-the-supply-delivery-and-installation-of-firewall-system-for-dc-and-firewall-system-for-dr/",
+      "summary": "New Banking update from NRB Nepal: Notice Regarding Contract Signing for The Supply, Delivery and Installation of Firewall System for DC and Firewall System for DR",
+      "detectedAt": "2026-05-11T05:09:03.173Z",
+      "isNew": true,
+      "emailedAt": null
+    },
     {
       "id": "nrbnepalnoticeforopeningofpr_mov07vte",
       "title": "Notice For Opening of Price Bid for The Procurement of the Supply, Delivery and Installation of Manageable Switch with Fiber Interface",
