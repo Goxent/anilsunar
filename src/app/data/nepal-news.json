@@ -1,5 +1,5 @@
 {
-  "scrapedAt": "2026-05-11T05:08:33.118Z",
+  "scrapedAt": "2026-05-12T04:50:20.815Z",
   "totalCount": 24,
   "nepalCount": 16,
   "globalCount": 8,
@@ -16,13 +16,33 @@
   ],
   "articles": [
     {
-      "title": "कर्णालीको पर्यटन चिनाउन ‘गन्तव्य कर्णाली एप’",
-      "url": "https://www.karobardaily.com/news/373278",
+      "title": "बजेटमा स्रोत व्यवस्थापन भए अर्थतन्त्र चलायमान",
+      "url": "https://www.karobardaily.com/news/373764",
       "source": "Karobar Daily",
       "badge": "KD",
       "category": "Nepal Business",
-      "scrapedAt": "2026-05-11T05:08:06.102Z",
-      "summary": "कर्णालीको पर्यटन चिनाउन ‘गन्तव्य कर्णाली एप’",
+      "scrapedAt": "2026-05-12T04:49:57.113Z",
+      "summary": "बजेटमा स्रोत व्यवस्थापन भए अर्थतन्त्र चलायमान",
+      "isGlobal": false
+    },
+    {
+      "title": "परम्परागत शैली, अर्थतन्त्रको रूपान्तरण हुने कार्यक्रम आएनन्",
+      "url": "https://www.karobardaily.com/news/373753",
+      "source": "Karobar Daily",
+      "badge": "KD",
+      "category": "Nepal Business",
+      "scrapedAt": "2026-05-12T04:49:57.114Z",
+      "summary": "परम्परागत शैली, अर्थतन्त्रको रूपान्तरण हुने कार्यक्रम आएनन्",
+      "isGlobal": false
+    },
+    {
+      "title": "सुकुम्बासीः सहरी अर्थतन्त्रका अदृश्य आधार",
+      "url": "https://www.karobardaily.com/news/373727",
+      "source": "Karobar Daily",
+      "badge": "KD",
+      "category": "Nepal Business",
+      "scrapedAt": "2026-05-12T04:49:57.114Z",
+      "summary": "सुकुम्बासीः सहरी अर्थतन्त्रका अदृश्य आधार",
       "isGlobal": false
     },
     {
@@ -31,7 +51,7 @@
       "source": "Karobar Daily",
       "badge": "KD",
       "category": "Nepal Business",
-      "scrapedAt": "2026-05-11T05:08:06.102Z",
+      "scrapedAt": "2026-05-12T04:49:57.114Z",
       "summary": "बैंकहरूले कति कमाए खुद ब्याज आम्दानी ?",
       "isGlobal": false
     },
@@ -41,28 +61,8 @@
       "source": "Karobar Daily",
       "badge": "KD",
       "category": "Nepal Business",
-      "scrapedAt": "2026-05-11T05:08:06.102Z",
+      "scrapedAt": "2026-05-12T04:49:57.114Z",
       "summary": "निष्क्रिय कर्जाको चाङ, देखिएन तत्काल निस्कने उपाय",
-      "isGlobal": false
-    },
-    {
-      "title": "४० अर्ब निक्षेप खिच्दै राष्ट्र बैंक",
-      "url": "https://www.karobardaily.com/news/369500",
-      "source": "Karobar Daily",
-      "badge": "KD",
-      "category": "Nepal Business",
-      "scrapedAt": "2026-05-11T05:08:06.102Z",
-      "summary": "४० अर्ब निक्षेप खिच्दै राष्ट्र बैंक",
-      "isGlobal": false
-    },
-    {
-      "title": "झण्डै २० प्रतिशतले बढ्यो वाणिज्य बैंकहरूको नाफा",
-      "url": "https://www.karobardaily.com/news/369383",
-      "source": "Karobar Daily",
-      "badge": "KD",
-      "category": "Nepal Business",
-      "scrapedAt": "2026-05-11T05:08:06.102Z",
-      "summary": "झण्डै २० प्रतिशतले बढ्यो वाणिज्य बैंकहरूको नाफा",
       "isGlobal": false
     },
     {
@@ -71,7 +71,7 @@
       "source": "Karobar Daily",
       "badge": "KD",
       "category": "Nepal Business",
-      "scrapedAt": "2026-05-11T05:08:06.102Z",
+      "scrapedAt": "2026-05-12T04:49:57.114Z",
       "summary": "कामना सेवा विकास बैंकद्वारा स्टेशनरी सामाग्री वितरण",
       "isGlobal": false
     },
@@ -81,18 +81,18 @@
       "source": "Karobar Daily",
       "badge": "KD",
       "category": "Nepal Business",
-      "scrapedAt": "2026-05-11T05:08:06.103Z",
+      "scrapedAt": "2026-05-12T04:49:57.114Z",
       "summary": "टीभीएस एनटर्क प्रयोगकर्ता डेढ लाख पुगे",
       "isGlobal": false
     },
     {
-      "title": "नेप्से परिसूचकसँगै कारोबार रकम पनि बढ्यो",
-      "url": "https://www.karobardaily.com/news/372890",
+      "title": "३८ अंकले बढेको सेयर बजारमा ४ अर्ब ६१ करोड कारोबार",
+      "url": "https://www.karobardaily.com/news/373611",
       "source": "Karobar Daily",
       "badge": "KD",
       "category": "Nepal Business",
-      "scrapedAt": "2026-05-11T05:08:06.103Z",
-      "summary": "नेप्से परिसूचकसँगै कारोबार रकम पनि बढ्यो",
+      "scrapedAt": "2026-05-12T04:49:57.114Z",
+      "summary": "३८ अंकले बढेको सेयर बजारमा ४ अर्ब ६१ करोड कारोबार",
       "isGlobal": false
     },
     {
@@ -101,7 +101,7 @@
       "source": "Sharesansar",
       "badge": "SS",
       "category": "Nepal Stock",
-      "scrapedAt": "2026-05-11T05:08:08.209Z",
+      "scrapedAt": "2026-05-12T04:49:59.270Z",
       "summary": "Sector-Wise Trends in NEPSE Listings: A Two-Decade Analysis",
       "isGlobal": false
     },
@@ -111,17 +111,17 @@
       "source": "Sharesansar",
       "badge": "SS",
       "category": "Nepal Stock",
-      "scrapedAt": "2026-05-11T05:08:08.209Z",
+      "scrapedAt": "2026-05-12T04:49:59.270Z",
       "summary": "Proposed Dividend",
       "isGlobal": false
     },
     {
       "title": "Dividend, Bonus & Rights",
-      "url": "https://www.sharesansar.com/newsdetail/bonus-shares-of-support-microfinance-bittiya-sanstha-listed-in-nepse-2026-05-06",
+      "url": "https://www.sharesansar.com/newsdetail/united-modi-hydropower-holds-12th-agm-approves-736842-dividend-2026-05-11",
       "source": "Sharesansar",
       "badge": "SS",
       "category": "Nepal Stock",
-      "scrapedAt": "2026-05-11T05:08:08.209Z",
+      "scrapedAt": "2026-05-12T04:49:59.270Z",
       "summary": "Dividend, Bonus & Rights",
       "isGlobal": false
     },
@@ -131,7 +131,7 @@
       "source": "Sharesansar",
       "badge": "SS",
       "category": "Nepal Stock",
-      "scrapedAt": "2026-05-11T05:08:08.209Z",
+      "scrapedAt": "2026-05-12T04:49:59.270Z",
       "summary": "NEPSE Concludes The Week With 0.25% Gain and Turnover of Rs 17.12 Arba; Weekly Summary with Sector Comparison, Major Highlights, and More",
       "isGlobal": false
     },
@@ -141,7 +141,7 @@
       "source": "Sharesansar",
       "badge": "SS",
       "category": "Nepal Stock",
-      "scrapedAt": "2026-05-11T05:08:08.209Z",
+      "scrapedAt": "2026-05-12T04:49:59.270Z",
       "summary": "Reliance Delivers Strong Post-IPO Performance with NPR 267 million Profit in Third Quarter",
       "isGlobal": false
     },
@@ -151,7 +151,7 @@
       "source": "Nepali Paisa",
       "badge": "NP",
       "category": "Nepal Finance",
-      "scrapedAt": "2026-05-11T05:08:11.109Z",
+      "scrapedAt": "2026-05-12T04:50:02.334Z",
       "summary": "Market Overview",
       "isGlobal": false
     },
@@ -161,7 +161,7 @@
       "source": "Nepali Paisa",
       "badge": "NP",
       "category": "Nepal Finance",
-      "scrapedAt": "2026-05-11T05:08:11.109Z",
+      "scrapedAt": "2026-05-12T04:50:02.334Z",
       "summary": "Stocks Up & Down",
       "isGlobal": false
     },
@@ -171,7 +171,7 @@
       "source": "Nepali Paisa",
       "badge": "NP",
       "category": "Nepal Finance",
-      "scrapedAt": "2026-05-11T05:08:11.109Z",
+      "scrapedAt": "2026-05-12T04:50:02.334Z",
       "summary": "Business & Economy",
       "isGlobal": false
     }
@@ -183,78 +183,78 @@
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-05-11T05:08:31.615Z",
+      "scrapedAt": "2026-05-12T04:50:19.313Z",
       "summary": "Markets just got Conversational",
       "isGlobal": true
     },
     {
-      "title": "10 smallcap stocks soaring up to 116% in FY27. Do you own them?",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/news/10-smallcap-stocks-soaring-up-to-116-in-fy27-do-you-own-them/slideshow/130988390.cms",
+      "title": "​Goldman Sachs picks Paytm, Swiggy, 10 more stocks for medium-term investors. Do you own any?",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/goldman-sachs-picks-paytm-swiggy-10-more-stocks-for-medium-term-investors-do-you-own-any/slideshow/131028332.cms",
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-05-11T05:08:31.616Z",
-      "summary": "10 smallcap stocks soaring up to 116% in FY27. Do you own them?",
+      "scrapedAt": "2026-05-12T04:50:19.313Z",
+      "summary": "​Goldman Sachs picks Paytm, Swiggy, 10 more stocks for medium-term investors. Do you own any?",
       "isGlobal": true
     },
     {
-      "title": "2,00,000% rally! 10 penny stocks that graduated into mid and smallcaps multibaggers",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/news/200000-rally-10-penny-stocks-that-graduated-into-mid-and-smallcaps-multibaggers/slideshow/130972119.cms",
+      "title": "Tata Consumer among 5 F&O stocks with a sharp rise in futures open interest",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/tata-consumer-among-5-fo-stocks-with-a-sharp-rise-in-futures-open-interest/slideshow/131027601.cms",
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-05-11T05:08:31.616Z",
-      "summary": "2,00,000% rally! 10 penny stocks that graduated into mid and smallcaps multibaggers",
+      "scrapedAt": "2026-05-12T04:50:19.313Z",
+      "summary": "Tata Consumer among 5 F&O stocks with a sharp rise in futures open interest",
       "isGlobal": true
     },
     {
-      "title": "Vijay Kedia Portfolio Check: 10 stocks surge up to 44% — plus 5 fresh picks",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/news/vijay-kedia-portfolio-check-10-stocks-surge-up-to-44-plus-5-fresh-picks/slideshow/130971563.cms",
+      "title": "PVR Inox among 5 stocks closing below VWAP",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/pvr-inox-among-5-stocks-closing-below-vwap/slideshow/131027444.cms",
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-05-11T05:08:31.616Z",
-      "summary": "Vijay Kedia Portfolio Check: 10 stocks surge up to 44% — plus 5 fresh picks",
+      "scrapedAt": "2026-05-12T04:50:19.313Z",
+      "summary": "PVR Inox among 5 stocks closing below VWAP",
       "isGlobal": true
     },
     {
-      "title": "Concurrent Gainers: 14 stocks gain for 5 straight sessions, rally up to 25%",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/news/concurrent-gainers-14-stocks-gain-for-5-straight-sessions-rally-up-to-25/slideshow/130971368.cms",
+      "title": "Hyundai Motor among 5 stocks showing bullish RSI upswing",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/hyundai-motor-among-5-stocks-showing-bullish-rsi-upswing/slideshow/131027370.cms",
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-05-11T05:08:31.616Z",
-      "summary": "Concurrent Gainers: 14 stocks gain for 5 straight sessions, rally up to 25%",
+      "scrapedAt": "2026-05-12T04:50:19.313Z",
+      "summary": "Hyundai Motor among 5 stocks showing bullish RSI upswing",
       "isGlobal": true
     },
     {
-      "title": "Top Nifty50 stocks analysts suggest buying in this volatile week",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/news/top-nifty50-stocks-analysts-suggest-buying-in-this-volatile-week/articleshow/131003206.cms",
+      "title": "Negative Breakout: These 10 stocks cross below their 200 DMAs",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/negative-breakout-these-10-stocks-cross-below-their-200-dmas/slideshow/131026739.cms",
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-05-11T05:08:31.616Z",
-      "summary": "Top Nifty50 stocks analysts suggest buying in this volatile week",
+      "scrapedAt": "2026-05-12T04:50:19.313Z",
+      "summary": "Negative Breakout: These 10 stocks cross below their 200 DMAs",
       "isGlobal": true
     },
     {
-      "title": "Wealth creation is also about ignoring noise on the street: 15 mid- and small-cap stocks from different sectors which fit the bill",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/news/wealth-creation-is-also-about-ignoring-noise-on-the-street-15-mid-and-small-cap-stocks-from-different-sectors-which-fit-the-bill/articleshow/130982367.cms",
+      "title": "Weekly Top Picks: These stocks scored 10 on 10 on Stock Reports Plus",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/weekly-top-picks-these-stocks-scored-10-on-10-on-stock-reports-plus/articleshow/131014757.cms",
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-05-11T05:08:31.616Z",
-      "summary": "Wealth creation is also about ignoring noise on the street: 15 mid- and small-cap stocks from different sectors which fit the bill",
+      "scrapedAt": "2026-05-12T04:50:19.313Z",
+      "summary": "Weekly Top Picks: These stocks scored 10 on 10 on Stock Reports Plus",
       "isGlobal": true
     },
     {
-      "title": "Secular, cyclical or war-dependent: A ratio to tell you what kind of growth you are buying. 6 stocks with upside potential of up to 29%",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/news/secular-cyclical-or-war-dependent-a-ratio-to-tell-you-what-kind-of-growth-you-are-buying-6-stocks-with-upside-potential-of-up-to-29/articleshow/130985137.cms",
+      "title": "5 stocks with consistent score improvement and upside potential of up to 27%",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/5-stocks-with-consistent-score-improvement-and-upside-potential-of-up-to-27/articleshow/131007687.cms",
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-05-11T05:08:31.616Z",
-      "summary": "Secular, cyclical or war-dependent: A ratio to tell you what kind of growth you are buying. 6 stocks with upside potential of up to 29%",
+      "scrapedAt": "2026-05-12T04:50:19.313Z",
+      "summary": "5 stocks with consistent score improvement and upside potential of up to 27%",
       "isGlobal": true
     }
   ]

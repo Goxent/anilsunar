@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-05-11T05:09:20.439Z",
-  "totalPosts": 6,
+  "lastUpdated": "2026-05-12T04:51:04.756Z",
+  "totalPosts": 7,
   "posts": {
     "ocrnepal_moqq27ad": {
       "headline": "OCR Nepal: वार्षिक विवरण अभिलेखनका पत्रहरू स्वचालित रूपमा प्राप्त ",
@@ -121,6 +121,26 @@
       "badgeColor": "#e65100",
       "link": "https://www.nrb.org.np/gsd/notice-regarding-contract-signing-for-the-supply-delivery-and-installation-of-firewall-system-for-dc-and-firewall-system-for-dr/",
       "createdAt": "2026-05-11T05:09:20.439Z"
+    },
+    "nrbnepalnoticeforopeningoffi_mp25kbxh": {
+      "headline": "NRB Nepal: Notice for Opening of Financial Proposal for Design, De",
+      "body": "🏦 Nepal Rastra Bank has a new directive!\n\n📌 Notice for Opening of Financial Proposal for Design, Develop, Install, Commissioning and Maintenance of Risk Based Internal Audit Software\n\nThis update from NRB Nepal may affect banking compliance requirements for Nepal professionals.\n\n✅ Review the full notice and consult your advisor.\n\n🔗 https://www.nrb.org.np/gsd/notice-for-opening-of-financial-proposal-for-design-develop-install-commissioning-and-maintenance-of-risk-based-internal-audit-software/",
+      "callToAction": "Share this with your team if relevant.",
+      "hashtags": [
+        "#Nepal",
+        "#Compliance",
+        "#CA",
+        "#NRBNepal"
+      ],
+      "bestTimeToPost": "Morning",
+      "topicBadge": "Banking",
+      "isTemplate": true,
+      "noticeId": "nrbnepalnoticeforopeningoffi_mp25kbxh",
+      "noticeTitle": "Notice for Opening of Financial Proposal for Design, Develop, Install, Commissioning and Maintenance of Risk Based Internal Audit Software",
+      "source": "NRB Nepal",
+      "badgeColor": "#e65100",
+      "link": "https://www.nrb.org.np/gsd/notice-for-opening-of-financial-proposal-for-design-develop-install-commissioning-and-maintenance-of-risk-based-internal-audit-software/",
+      "createdAt": "2026-05-12T04:51:04.756Z"
     }
   }
 }

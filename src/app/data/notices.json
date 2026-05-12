@@ -1,8 +1,21 @@
 {
-  "lastUpdated": "2026-05-11T05:09:08.532Z",
-  "totalCount": 45,
+  "lastUpdated": "2026-05-12T04:50:53.917Z",
+  "totalCount": 46,
   "newCount": 1,
   "notices": [
+    {
+      "id": "nrbnepalnoticeforopeningoffi_mp25kbxh",
+      "title": "Notice for Opening of Financial Proposal for Design, Develop, Install, Commissioning and Maintenance of Risk Based Internal Audit Software",
+      "source": "NRB Nepal",
+      "category": "Banking",
+      "badge": "NRB",
+      "badgeColor": "#e65100",
+      "link": "https://www.nrb.org.np/gsd/notice-for-opening-of-financial-proposal-for-design-develop-install-commissioning-and-maintenance-of-risk-based-internal-audit-software/",
+      "summary": "New Banking update from NRB Nepal: Notice for Opening of Financial Proposal for Design, Develop, Install, Commissioning and Maintenance of Risk Based Internal Audit Software",
+      "detectedAt": "2026-05-12T04:50:47.525Z",
+      "isNew": true,
+      "emailedAt": null
+    },
     {
       "id": "nrbnepalnoticeregardingcontr_mp0qryo5",
       "title": "Notice Regarding Contract Signing for The Supply, Delivery and Installation of Firewall System for DC and Firewall System for DR",
