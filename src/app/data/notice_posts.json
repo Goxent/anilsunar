@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-05-12T04:51:04.756Z",
-  "totalPosts": 7,
+  "lastUpdated": "2026-05-13T05:00:39.707Z",
+  "totalPosts": 8,
   "posts": {
     "ocrnepal_moqq27ad": {
       "headline": "OCR Nepal: वार्षिक विवरण अभिलेखनका पत्रहरू स्वचालित रूपमा प्राप्त ",
@@ -141,6 +141,26 @@
       "badgeColor": "#e65100",
       "link": "https://www.nrb.org.np/gsd/notice-for-opening-of-financial-proposal-for-design-develop-install-commissioning-and-maintenance-of-risk-based-internal-audit-software/",
       "createdAt": "2026-05-12T04:51:04.756Z"
+    },
+    "nrbnepalnoticeforinvitationo_mp3lci8p": {
+      "headline": "NRB Nepal: Notice for invitation of Bid for the procurement of Sup",
+      "body": "🏦 Nepal Rastra Bank has a new directive!\n\n📌 Notice for invitation of Bid for the procurement of Supply, Delivery, Installation, Testing and Commissioning of Offset Press Machine for Nepal Rastra Bank, Baluwatar\n\nThis update from NRB Nepal may affect banking compliance requirements for Nepal professionals.\n\n✅ Review the full notice and consult your advisor.\n\n🔗 https://www.nrb.org.np/gsd/notice-for-invitation-of-bid-for-the-procurement-of-supply-delivery-installation-testing-and-commissioning-of-offset-press-machine-for-nepal-rastra-bank-baluwatar/",
+      "callToAction": "Share this with your team if relevant.",
+      "hashtags": [
+        "#Nepal",
+        "#Compliance",
+        "#CA",
+        "#NRBNepal"
+      ],
+      "bestTimeToPost": "Morning",
+      "topicBadge": "Banking",
+      "isTemplate": true,
+      "noticeId": "nrbnepalnoticeforinvitationo_mp3lci8p",
+      "noticeTitle": "Notice for invitation of Bid for the procurement of Supply, Delivery, Installation, Testing and Commissioning of Offset Press Machine for Nepal Rastra Bank, Baluwatar",
+      "source": "NRB Nepal",
+      "badgeColor": "#e65100",
+      "link": "https://www.nrb.org.np/gsd/notice-for-invitation-of-bid-for-the-procurement-of-supply-delivery-installation-testing-and-commissioning-of-offset-press-machine-for-nepal-rastra-bank-baluwatar/",
+      "createdAt": "2026-05-13T05:00:39.707Z"
     }
   }
 }
