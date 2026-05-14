@@ -1,5 +1,5 @@
 {
-  "scrapedAt": "2026-05-13T04:59:53.360Z",
+  "scrapedAt": "2026-05-14T04:59:08.102Z",
   "totalCount": 24,
   "nepalCount": 16,
   "globalCount": 8,
@@ -16,83 +16,83 @@
   ],
   "articles": [
     {
+      "title": "बैंकर पाण्डे पक्राउ, बैंकिङ क्षेत्र तरंगित, आज रणनीति तय गर्दै",
+      "url": "https://www.karobardaily.com/news/374616",
+      "source": "Karobar Daily",
+      "badge": "KD",
+      "category": "Nepal Business",
+      "scrapedAt": "2026-05-14T04:58:42.684Z",
+      "summary": "बैंकर पाण्डे पक्राउ, बैंकिङ क्षेत्र तरंगित, आज रणनीति तय गर्दै",
+      "isGlobal": false
+    },
+    {
+      "title": "कर्णाली प्रदेशको विद्युत् आपूर्ति सहज बनाउन पहल",
+      "url": "https://www.karobardaily.com/news/374548",
+      "source": "Karobar Daily",
+      "badge": "KD",
+      "category": "Nepal Business",
+      "scrapedAt": "2026-05-14T04:58:42.684Z",
+      "summary": "कर्णाली प्रदेशको विद्युत् आपूर्ति सहज बनाउन पहल",
+      "isGlobal": false
+    },
+    {
+      "title": "ऊर्जा, पर्यटन र डिजिटल अर्थतन्त्रसम्मका सुझाव समावेश",
+      "url": "https://www.karobardaily.com/news/374485",
+      "source": "Karobar Daily",
+      "badge": "KD",
+      "category": "Nepal Business",
+      "scrapedAt": "2026-05-14T04:58:42.684Z",
+      "summary": "ऊर्जा, पर्यटन र डिजिटल अर्थतन्त्रसम्मका सुझाव समावेश",
+      "isGlobal": false
+    },
+    {
       "title": "बैंकको ब्याजदरभन्दा महँगी धेरै",
       "url": "https://www.karobardaily.com/news/374227",
       "source": "Karobar Daily",
       "badge": "KD",
       "category": "Nepal Business",
-      "scrapedAt": "2026-05-13T04:59:30.568Z",
+      "scrapedAt": "2026-05-14T04:58:42.684Z",
       "summary": "बैंकको ब्याजदरभन्दा महँगी धेरै",
       "isGlobal": false
     },
     {
-      "title": "बजेटमा स्रोत व्यवस्थापन भए अर्थतन्त्र चलायमान",
-      "url": "https://www.karobardaily.com/news/373764",
+      "title": "४० अर्ब निक्षेप खिच्दै राष्ट्र बैंक",
+      "url": "https://www.karobardaily.com/news/374348",
       "source": "Karobar Daily",
       "badge": "KD",
       "category": "Nepal Business",
-      "scrapedAt": "2026-05-13T04:59:30.569Z",
-      "summary": "बजेटमा स्रोत व्यवस्थापन भए अर्थतन्त्र चलायमान",
+      "scrapedAt": "2026-05-14T04:58:42.684Z",
+      "summary": "४० अर्ब निक्षेप खिच्दै राष्ट्र बैंक",
       "isGlobal": false
     },
     {
-      "title": "परम्परागत शैली, अर्थतन्त्रको रूपान्तरण हुने कार्यक्रम आएनन्",
-      "url": "https://www.karobardaily.com/news/373753",
+      "title": "इन्भेष्टमेन्ट मेगा बैंकका सिइओ पाण्डे पक्राउ",
+      "url": "https://www.karobardaily.com/news/374333",
       "source": "Karobar Daily",
       "badge": "KD",
       "category": "Nepal Business",
-      "scrapedAt": "2026-05-13T04:59:30.569Z",
-      "summary": "परम्परागत शैली, अर्थतन्त्रको रूपान्तरण हुने कार्यक्रम आएनन्",
+      "scrapedAt": "2026-05-14T04:58:42.684Z",
+      "summary": "इन्भेष्टमेन्ट मेगा बैंकका सिइओ पाण्डे पक्राउ",
       "isGlobal": false
     },
     {
-      "title": "बैंकहरूले कति कमाए खुद ब्याज आम्दानी ?",
-      "url": "https://www.karobardaily.com/news/371245",
+      "title": "एमएडब्लू समूहद्वारा कर छली आरोप खण्डन",
+      "url": "https://www.karobardaily.com/news/374419",
       "source": "Karobar Daily",
       "badge": "KD",
       "category": "Nepal Business",
-      "scrapedAt": "2026-05-13T04:59:30.569Z",
-      "summary": "बैंकहरूले कति कमाए खुद ब्याज आम्दानी ?",
+      "scrapedAt": "2026-05-14T04:58:42.684Z",
+      "summary": "एमएडब्लू समूहद्वारा कर छली आरोप खण्डन",
       "isGlobal": false
     },
     {
-      "title": "निष्क्रिय कर्जाको चाङ, देखिएन तत्काल निस्कने उपाय",
-      "url": "https://www.karobardaily.com/news/369787",
+      "title": "रोयल टुलिपको सेयर बिक्री प्रबन्धक नबिल इन्भेस्टमेन्ट बैंकिङ",
+      "url": "https://www.karobardaily.com/news/374403",
       "source": "Karobar Daily",
       "badge": "KD",
       "category": "Nepal Business",
-      "scrapedAt": "2026-05-13T04:59:30.569Z",
-      "summary": "निष्क्रिय कर्जाको चाङ, देखिएन तत्काल निस्कने उपाय",
-      "isGlobal": false
-    },
-    {
-      "title": "कामना सेवा विकास बैंकद्वारा स्टेशनरी सामाग्री वितरण",
-      "url": "https://www.karobardaily.com/news/372901",
-      "source": "Karobar Daily",
-      "badge": "KD",
-      "category": "Nepal Business",
-      "scrapedAt": "2026-05-13T04:59:30.569Z",
-      "summary": "कामना सेवा विकास बैंकद्वारा स्टेशनरी सामाग्री वितरण",
-      "isGlobal": false
-    },
-    {
-      "title": "टीभीएस एनटर्क प्रयोगकर्ता डेढ लाख पुगे",
-      "url": "https://www.karobardaily.com/news/365816",
-      "source": "Karobar Daily",
-      "badge": "KD",
-      "category": "Nepal Business",
-      "scrapedAt": "2026-05-13T04:59:30.569Z",
-      "summary": "टीभीएस एनटर्क प्रयोगकर्ता डेढ लाख पुगे",
-      "isGlobal": false
-    },
-    {
-      "title": "नेप्से ३९ अंकले घट्यो, नीति तथा कार्यक्रमप्रति आश्वस्त हुन सकेनन् लगानीकर्ता",
-      "url": "https://www.karobardaily.com/news/374072",
-      "source": "Karobar Daily",
-      "badge": "KD",
-      "category": "Nepal Business",
-      "scrapedAt": "2026-05-13T04:59:30.569Z",
-      "summary": "नेप्से ३९ अंकले घट्यो, नीति तथा कार्यक्रमप्रति आश्वस्त हुन सकेनन् लगानीकर्ता",
+      "scrapedAt": "2026-05-14T04:58:42.684Z",
+      "summary": "रोयल टुलिपको सेयर बिक्री प्रबन्धक नबिल इन्भेस्टमेन्ट बैंकिङ",
       "isGlobal": false
     },
     {
@@ -101,7 +101,7 @@
       "source": "Sharesansar",
       "badge": "SS",
       "category": "Nepal Stock",
-      "scrapedAt": "2026-05-13T04:59:32.611Z",
+      "scrapedAt": "2026-05-14T04:58:44.684Z",
       "summary": "Sector-Wise Trends in NEPSE Listings: A Two-Decade Analysis",
       "isGlobal": false
     },
@@ -111,7 +111,7 @@
       "source": "Sharesansar",
       "badge": "SS",
       "category": "Nepal Stock",
-      "scrapedAt": "2026-05-13T04:59:32.611Z",
+      "scrapedAt": "2026-05-14T04:58:44.684Z",
       "summary": "Proposed Dividend",
       "isGlobal": false
     },
@@ -121,7 +121,7 @@
       "source": "Sharesansar",
       "badge": "SS",
       "category": "Nepal Stock",
-      "scrapedAt": "2026-05-13T04:59:32.611Z",
+      "scrapedAt": "2026-05-14T04:58:44.684Z",
       "summary": "Dividend, Bonus & Rights",
       "isGlobal": false
     },
@@ -131,7 +131,7 @@
       "source": "Sharesansar",
       "badge": "SS",
       "category": "Nepal Stock",
-      "scrapedAt": "2026-05-13T04:59:32.611Z",
+      "scrapedAt": "2026-05-14T04:58:44.684Z",
       "summary": "NEPSE Concludes The Week With 0.25% Gain and Turnover of Rs 17.12 Arba; Weekly Summary with Sector Comparison, Major Highlights, and More",
       "isGlobal": false
     },
@@ -141,7 +141,7 @@
       "source": "Sharesansar",
       "badge": "SS",
       "category": "Nepal Stock",
-      "scrapedAt": "2026-05-13T04:59:32.611Z",
+      "scrapedAt": "2026-05-14T04:58:44.684Z",
       "summary": "Snow River IPO Opens Today; Should You Invest in This Hydro? Take a Closer Look",
       "isGlobal": false
     },
@@ -151,7 +151,7 @@
       "source": "Nepali Paisa",
       "badge": "NP",
       "category": "Nepal Finance",
-      "scrapedAt": "2026-05-13T04:59:35.800Z",
+      "scrapedAt": "2026-05-14T04:58:47.829Z",
       "summary": "Market Overview",
       "isGlobal": false
     },
@@ -161,7 +161,7 @@
       "source": "Nepali Paisa",
       "badge": "NP",
       "category": "Nepal Finance",
-      "scrapedAt": "2026-05-13T04:59:35.800Z",
+      "scrapedAt": "2026-05-14T04:58:47.829Z",
       "summary": "Stocks Up & Down",
       "isGlobal": false
     },
@@ -171,7 +171,7 @@
       "source": "Nepali Paisa",
       "badge": "NP",
       "category": "Nepal Finance",
-      "scrapedAt": "2026-05-13T04:59:35.800Z",
+      "scrapedAt": "2026-05-14T04:58:47.829Z",
       "summary": "Business & Economy",
       "isGlobal": false
     }
@@ -183,58 +183,68 @@
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-05-13T04:59:51.858Z",
+      "scrapedAt": "2026-05-14T04:59:06.600Z",
       "summary": "Markets just got Conversational",
       "isGlobal": true
     },
     {
-      "title": "​Brokerages initiate coverage on Meesho, Swiggy, 3 other stocks with up to 48% upside. Do you own any?",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/news/brokerages-initiate-coverage-on-meesho-swiggy-3-other-stocks-with-up-to-48-upside-do-you-own-any/slideshow/131054741.cms",
+      "title": "Stocks to buy in 2026 for long term: Tata Power, Berger Paints among 5 stocks that could give 10-30% return",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/stocks-to-buy-in-2026-for-long-term-tata-power-berger-paints-among-5-stocks-that-could-give-10-30-return/slideshow/131080407.cms",
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-05-13T04:59:51.859Z",
-      "summary": "​Brokerages initiate coverage on Meesho, Swiggy, 3 other stocks with up to 48% upside. Do you own any?",
+      "scrapedAt": "2026-05-14T04:59:06.600Z",
+      "summary": "Stocks to buy in 2026 for long term: Tata Power, Berger Paints among 5 stocks that could give 10-30% return",
       "isGlobal": true
     },
     {
-      "title": "​Technical stock picks! 3 shares that could give up to 15% return this May. Do you own any?",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/news/technical-stock-picks-3-shares-that-could-give-up-to-15-return-this-may-do-you-own-any/slideshow/131054341.cms",
+      "title": "Vodafone Idea and 4 other midcap stocks hit 52-week highs, rally up to 40% in a month",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/vodafone-idea-and-4-other-midcap-stocks-hit-52-week-highs-rally-up-to-40-in-a-month/slideshow/131066736.cms",
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-05-13T04:59:51.859Z",
-      "summary": "​Technical stock picks! 3 shares that could give up to 15% return this May. Do you own any?",
+      "scrapedAt": "2026-05-14T04:59:06.600Z",
+      "summary": "Vodafone Idea and 4 other midcap stocks hit 52-week highs, rally up to 40% in a month",
       "isGlobal": true
     },
     {
-      "title": "Indian Hotels among 5 F&O stocks with a sharp rise in futures open interest",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/news/indian-hotels-among-5-fo-stocks-with-a-sharp-rise-in-futures-open-interest/slideshow/131053660.cms",
+      "title": "​12 stocks held by 100+ MFs in April surged up to 75% so far in 2026​",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/12-stocks-heldby100mfsinapril-surged-upto75-so-far-in-2026/slideshow/131063710.cms",
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-05-13T04:59:51.859Z",
-      "summary": "Indian Hotels among 5 F&O stocks with a sharp rise in futures open interest",
+      "scrapedAt": "2026-05-14T04:59:06.600Z",
+      "summary": "​12 stocks held by 100+ MFs in April surged up to 75% so far in 2026​",
       "isGlobal": true
     },
     {
-      "title": "Sonata Software among 5 stocks closing below VWAP",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/news/sonata-software-among-5-stocks-closing-below-vwap/slideshow/131053571.cms",
+      "title": "MSCI rejig: These 4 stocks may see inflows worth $1,381 million after inclusion",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/msci-rejig-these-4-stocks-may-see-inflows-worth-1381-million-after-inclusion/slideshow/131061608.cms",
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-05-13T04:59:51.859Z",
-      "summary": "Sonata Software among 5 stocks closing below VWAP",
+      "scrapedAt": "2026-05-14T04:59:06.600Z",
+      "summary": "MSCI rejig: These 4 stocks may see inflows worth $1,381 million after inclusion",
       "isGlobal": true
     },
     {
-      "title": "Oil India among 3 stocks showing bullish RSI upswing",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/news/oil-india-among-3-stocks-showing-bullish-rsi-upswing/slideshow/131053431.cms",
+      "title": "These mid-cap stocks with ‘Strong Buy’ & ‘Buy’ recos can rally over 25%, according to analysts",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/these-mid-cap-stocks-with-strong-buy-buy-recos-can-rally-over-25-according-to-analysts/articleshow/131074315.cms",
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-05-13T04:59:51.859Z",
-      "summary": "Oil India among 3 stocks showing bullish RSI upswing",
+      "scrapedAt": "2026-05-14T04:59:06.600Z",
+      "summary": "These mid-cap stocks with ‘Strong Buy’ & ‘Buy’ recos can rally over 25%, according to analysts",
+      "isGlobal": true
+    },
+    {
+      "title": "ET Prime Special Series: Multibagger or Bankrupt - Part 58: The ICE veteran that quietly became an EV lightweighting story",
+      "url": "https://economictimes.indiatimes.com/intelligent-investing/sectoral-deep-dives/et-prime-special-series-multibagger-or-bankrupt-part-58-the-ice-veteran-that-quietly-became-an-ev-lightweighting-story/articleshow/131068197.cms",
+      "source": "Economic Times Markets",
+      "badge": "ET",
+      "category": "India Markets",
+      "scrapedAt": "2026-05-14T04:59:06.600Z",
+      "summary": "ET Prime Special Series: Multibagger or Bankrupt - Part 58: The ICE veteran that quietly became an EV lightweighting story",
       "isGlobal": true
     },
     {
@@ -243,18 +253,8 @@
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-05-13T04:59:51.859Z",
+      "scrapedAt": "2026-05-14T04:59:06.600Z",
       "summary": "These 8 private and public banking stocks have an upside of up to 27% in one year, according to analysts",
-      "isGlobal": true
-    },
-    {
-      "title": "Weekly Top Picks: These stocks scored 10 on 10 on Stock Reports Plus",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/news/weekly-top-picks-these-stocks-scored-10-on-10-on-stock-reports-plus/articleshow/131014757.cms",
-      "source": "Economic Times Markets",
-      "badge": "ET",
-      "category": "India Markets",
-      "scrapedAt": "2026-05-13T04:59:51.859Z",
-      "summary": "Weekly Top Picks: These stocks scored 10 on 10 on Stock Reports Plus",
       "isGlobal": true
     }
   ]
