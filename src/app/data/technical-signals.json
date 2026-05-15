@@ -1,18 +1,7 @@
 {
-  "computedAt": "2026-05-14T04:58:39.245Z",
-  "totalStocksAnalyzed": 46,
+  "computedAt": "2026-05-15T05:01:54.135Z",
+  "totalStocksAnalyzed": 41,
   "topCandidates": [
-    {
-      "symbol": "MFIL",
-      "score": 93,
-      "recommendation": "STRONG_BUY",
-      "signals": [
-        "STRONG_MOMENTUM",
-        "HIGH_VOLUME",
-        "LOW_PE",
-        "HIGH_EPS"
-      ]
-    },
     {
       "symbol": "SANIMA",
       "score": 93,
@@ -25,37 +14,29 @@
       ]
     },
     {
-      "symbol": "DOLTI",
-      "score": 83,
+      "symbol": "MEN",
+      "score": 93,
       "recommendation": "STRONG_BUY",
       "signals": [
         "STRONG_MOMENTUM",
         "HIGH_VOLUME",
+        "LOW_PE",
         "HIGH_EPS"
       ]
     },
     {
-      "symbol": "SJCL",
-      "score": 83,
+      "symbol": "HEI",
+      "score": 88,
       "recommendation": "STRONG_BUY",
       "signals": [
         "STRONG_MOMENTUM",
-        "HIGH_VOLUME",
+        "MODERATE_VOLUME",
+        "LOW_PE",
         "HIGH_EPS"
       ]
     },
     {
-      "symbol": "JHAPA",
-      "score": 83,
-      "recommendation": "STRONG_BUY",
-      "signals": [
-        "STRONG_MOMENTUM",
-        "HIGH_VOLUME",
-        "HIGH_EPS"
-      ]
-    },
-    {
-      "symbol": "PURE",
+      "symbol": "UNHPL",
       "score": 83,
       "recommendation": "STRONG_BUY",
       "signals": [
@@ -75,17 +56,7 @@
       ]
     },
     {
-      "symbol": "HIMSTAR",
-      "score": 83,
-      "recommendation": "STRONG_BUY",
-      "signals": [
-        "STRONG_MOMENTUM",
-        "LOW_PE",
-        "HIGH_EPS"
-      ]
-    },
-    {
-      "symbol": "CHL",
+      "symbol": "DOLTI",
       "score": 83,
       "recommendation": "STRONG_BUY",
       "signals": [
@@ -95,7 +66,27 @@
       ]
     },
     {
-      "symbol": "SWBBL",
+      "symbol": "PURE",
+      "score": 83,
+      "recommendation": "STRONG_BUY",
+      "signals": [
+        "STRONG_MOMENTUM",
+        "HIGH_VOLUME",
+        "HIGH_EPS"
+      ]
+    },
+    {
+      "symbol": "API",
+      "score": 83,
+      "recommendation": "STRONG_BUY",
+      "signals": [
+        "STRONG_MOMENTUM",
+        "HIGH_VOLUME",
+        "HIGH_EPS"
+      ]
+    },
+    {
+      "symbol": "MCHL",
       "score": 78,
       "recommendation": "STRONG_BUY",
       "signals": [
@@ -105,7 +96,7 @@
       ]
     },
     {
-      "symbol": "BUNGAL",
+      "symbol": "BPCL",
       "score": 76,
       "recommendation": "STRONG_BUY",
       "signals": [
@@ -115,66 +106,77 @@
       ]
     },
     {
-      "symbol": "CREST",
-      "score": 73,
-      "recommendation": "BUY",
-      "signals": [
-        "STRONG_MOMENTUM",
-        "HIGH_EPS"
-      ]
-    },
-    {
-      "symbol": "MCHL",
-      "score": 73,
-      "recommendation": "BUY",
-      "signals": [
-        "STRONG_MOMENTUM",
-        "HIGH_EPS"
-      ]
-    },
-    {
-      "symbol": "SMJC",
-      "score": 73,
-      "recommendation": "BUY",
-      "signals": [
-        "STRONG_MOMENTUM",
-        "HIGH_EPS"
-      ]
-    },
-    {
-      "symbol": "LUK",
-      "score": 68,
+      "symbol": "SMH",
+      "score": 71,
       "recommendation": "BUY",
       "signals": [
         "POSITIVE_MOMENTUM",
-        "LOW_PE"
+        "LOW_PE",
+        "HIGH_EPS"
+      ]
+    },
+    {
+      "symbol": "TAMOR",
+      "score": 71,
+      "recommendation": "BUY",
+      "signals": [
+        "POSITIVE_MOMENTUM",
+        "MODERATE_VOLUME",
+        "HIGH_EPS"
+      ]
+    },
+    {
+      "symbol": "CREST",
+      "score": 68,
+      "recommendation": "BUY",
+      "signals": [
+        "STRONG_MOMENTUM",
+        "HIGH_EPS"
+      ]
+    },
+    {
+      "symbol": "NIBLSTF",
+      "score": 68,
+      "recommendation": "BUY",
+      "signals": [
+        "STRONG_MOMENTUM",
+        "HIGH_EPS"
+      ]
+    },
+    {
+      "symbol": "BGWT",
+      "score": 68,
+      "recommendation": "BUY",
+      "signals": [
+        "STRONG_MOMENTUM",
+        "HIGH_EPS"
+      ]
+    },
+    {
+      "symbol": "NMBHF2",
+      "score": 66,
+      "recommendation": "BUY",
+      "signals": [
+        "POSITIVE_MOMENTUM",
+        "HIGH_EPS"
+      ]
+    },
+    {
+      "symbol": "SYPNL",
+      "score": 65,
+      "recommendation": "BUY",
+      "signals": [
+        "STRONG_MOMENTUM",
+        "HIGH_VOLUME"
       ]
     }
   ],
   "stocks": [
     {
-      "symbol": "MFIL",
-      "ltp": 768.1,
-      "changePct": 3.76,
-      "volume": 297462,
-      "technicalScore": 93,
-      "signals": [
-        "STRONG_MOMENTUM",
-        "HIGH_VOLUME",
-        "LOW_PE",
-        "HIGH_EPS"
-      ],
-      "flags": [],
-      "recommendation": "STRONG_BUY",
-      "eps": 152,
-      "pe": 2.8,
-      "bookValue": 49.9
-    },
-    {
       "symbol": "SANIMA",
       "ltp": 349,
-      "changePct": 3.72,
-      "volume": 394684,
+      "changePct": 4.15,
+      "volume": 527468,
       "technicalScore": 93,
       "signals": [
         "STRONG_MOMENTUM",
@@ -189,27 +191,46 @@
       "bookValue": 20.2
     },
     {
-      "symbol": "DOLTI",
-      "ltp": 332,
-      "changePct": 6.02,
-      "volume": 194738,
-      "technicalScore": 83,
+      "symbol": "MEN",
+      "ltp": 583.5,
+      "changePct": 3.86,
+      "volume": 458253,
+      "technicalScore": 93,
       "signals": [
         "STRONG_MOMENTUM",
         "HIGH_VOLUME",
+        "LOW_PE",
         "HIGH_EPS"
       ],
       "flags": [],
       "recommendation": "STRONG_BUY",
-      "eps": 235,
-      "pe": -9,
-      "bookValue": 8
+      "eps": 200,
+      "pe": 0.5,
+      "bookValue": 8.9
     },
     {
-      "symbol": "SJCL",
-      "ltp": 298.9,
-      "changePct": 3.71,
-      "volume": 132447,
+      "symbol": "HEI",
+      "ltp": 516,
+      "changePct": 3.97,
+      "volume": 54595,
+      "technicalScore": 88,
+      "signals": [
+        "STRONG_MOMENTUM",
+        "MODERATE_VOLUME",
+        "LOW_PE",
+        "HIGH_EPS"
+      ],
+      "flags": [],
+      "recommendation": "STRONG_BUY",
+      "eps": 28,
+      "pe": 9,
+      "bookValue": 12.8
+    },
+    {
+      "symbol": "UNHPL",
+      "ltp": 534,
+      "changePct": 11.25,
+      "volume": 306888,
       "technicalScore": 83,
       "signals": [
         "STRONG_MOMENTUM",
@@ -218,49 +239,15 @@
       ],
       "flags": [],
       "recommendation": "STRONG_BUY",
-      "eps": 145,
+      "eps": 114,
       "pe": -1.3,
-      "bookValue": 13.9
-    },
-    {
-      "symbol": "JHAPA",
-      "ltp": 1564,
-      "changePct": 7.1,
-      "volume": 275403,
-      "technicalScore": 83,
-      "signals": [
-        "STRONG_MOMENTUM",
-        "HIGH_VOLUME",
-        "HIGH_EPS"
-      ],
-      "flags": [],
-      "recommendation": "STRONG_BUY",
-      "eps": 494,
-      "pe": -66,
-      "bookValue": 217
-    },
-    {
-      "symbol": "PURE",
-      "ltp": 903.2,
-      "changePct": 5.18,
-      "volume": 123181,
-      "technicalScore": 83,
-      "signals": [
-        "STRONG_MOMENTUM",
-        "HIGH_VOLUME",
-        "HIGH_EPS"
-      ],
-      "flags": [],
-      "recommendation": "STRONG_BUY",
-      "eps": 169,
-      "pe": -3.8,
-      "bookValue": 29
+      "bookValue": 10.8
     },
     {
       "symbol": "SAHAS",
-      "ltp": 616,
-      "changePct": 4.06,
-      "volume": 616004,
+      "ltp": 627.8,
+      "changePct": 6.24,
+      "volume": 801536,
       "technicalScore": 83,
       "signals": [
         "STRONG_MOMENTUM",
@@ -274,27 +261,10 @@
       "bookValue": 7.9
     },
     {
-      "symbol": "HIMSTAR",
-      "ltp": 840,
-      "changePct": 3.69,
-      "volume": 49963,
-      "technicalScore": 83,
-      "signals": [
-        "STRONG_MOMENTUM",
-        "LOW_PE",
-        "HIGH_EPS"
-      ],
-      "flags": [],
-      "recommendation": "STRONG_BUY",
-      "eps": 234,
-      "pe": 11,
-      "bookValue": 60
-    },
-    {
-      "symbol": "CHL",
-      "ltp": 283,
-      "changePct": 3.53,
-      "volume": 153328,
+      "symbol": "DOLTI",
+      "ltp": 332,
+      "changePct": 4.67,
+      "volume": 245876,
       "technicalScore": 83,
       "signals": [
         "STRONG_MOMENTUM",
@@ -303,15 +273,49 @@
       ],
       "flags": [],
       "recommendation": "STRONG_BUY",
-      "eps": 135,
-      "pe": -3,
-      "bookValue": 7
+      "eps": 235,
+      "pe": -9,
+      "bookValue": 8
     },
     {
-      "symbol": "SWBBL",
-      "ltp": 720,
-      "changePct": 3.61,
-      "volume": 58387,
+      "symbol": "PURE",
+      "ltp": 903.2,
+      "changePct": 4.63,
+      "volume": 142349,
+      "technicalScore": 83,
+      "signals": [
+        "STRONG_MOMENTUM",
+        "HIGH_VOLUME",
+        "HIGH_EPS"
+      ],
+      "flags": [],
+      "recommendation": "STRONG_BUY",
+      "eps": 169,
+      "pe": -3.8,
+      "bookValue": 29
+    },
+    {
+      "symbol": "API",
+      "ltp": 334.9,
+      "changePct": 3.91,
+      "volume": 1690986,
+      "technicalScore": 83,
+      "signals": [
+        "STRONG_MOMENTUM",
+        "HIGH_VOLUME",
+        "HIGH_EPS"
+      ],
+      "flags": [],
+      "recommendation": "STRONG_BUY",
+      "eps": 535,
+      "pe": -1,
+      "bookValue": 26.6
+    },
+    {
+      "symbol": "MCHL",
+      "ltp": 301,
+      "changePct": 3.65,
+      "volume": 54193,
       "technicalScore": 78,
       "signals": [
         "STRONG_MOMENTUM",
@@ -320,15 +324,15 @@
       ],
       "flags": [],
       "recommendation": "STRONG_BUY",
-      "eps": 49,
-      "pe": -5,
-      "bookValue": 11
+      "eps": 132,
+      "pe": -6.8,
+      "bookValue": 17
     },
     {
-      "symbol": "BUNGAL",
-      "ltp": 569.1,
-      "changePct": 2.44,
-      "volume": 34959,
+      "symbol": "BPCL",
+      "ltp": 677.5,
+      "changePct": 2.17,
+      "volume": 28549,
       "technicalScore": 76,
       "signals": [
         "POSITIVE_MOMENTUM",
@@ -337,115 +341,139 @@
       ],
       "flags": [],
       "recommendation": "STRONG_BUY",
-      "eps": 227,
+      "eps": 150,
       "pe": 1,
-      "bookValue": 24.8
+      "bookValue": 20
+    },
+    {
+      "symbol": "SMH",
+      "ltp": 579,
+      "changePct": 2.48,
+      "volume": 4856,
+      "technicalScore": 71,
+      "signals": [
+        "POSITIVE_MOMENTUM",
+        "LOW_PE",
+        "HIGH_EPS"
+      ],
+      "flags": [
+        "LOW_VOLUME"
+      ],
+      "recommendation": "BUY",
+      "eps": 161,
+      "pe": 6.9,
+      "bookValue": 17.8
+    },
+    {
+      "symbol": "TAMOR",
+      "ltp": 451,
+      "changePct": 2.22,
+      "volume": 82782,
+      "technicalScore": 71,
+      "signals": [
+        "POSITIVE_MOMENTUM",
+        "MODERATE_VOLUME",
+        "HIGH_EPS"
+      ],
+      "flags": [],
+      "recommendation": "BUY",
+      "eps": 197,
+      "pe": -5,
+      "bookValue": 9.3
     },
     {
       "symbol": "CREST",
-      "ltp": 1081.5,
-      "changePct": 5.13,
-      "volume": 17169,
-      "technicalScore": 73,
+      "ltp": 1208,
+      "changePct": 9.22,
+      "volume": 9625,
+      "technicalScore": 68,
       "signals": [
         "STRONG_MOMENTUM",
         "HIGH_EPS"
       ],
-      "flags": [],
+      "flags": [
+        "LOW_VOLUME"
+      ],
       "recommendation": "BUY",
       "eps": 201,
       "pe": -27.9,
       "bookValue": 48
     },
     {
-      "symbol": "MCHL",
-      "ltp": 301,
-      "changePct": 4.65,
-      "volume": 43662,
-      "technicalScore": 73,
-      "signals": [
-        "STRONG_MOMENTUM",
-        "HIGH_EPS"
-      ],
-      "flags": [],
-      "recommendation": "BUY",
-      "eps": 132,
-      "pe": -6.8,
-      "bookValue": 17
-    },
-    {
-      "symbol": "SMJC",
-      "ltp": 440,
-      "changePct": 3.41,
-      "volume": 47541,
-      "technicalScore": 73,
-      "signals": [
-        "STRONG_MOMENTUM",
-        "HIGH_EPS"
-      ],
-      "flags": [],
-      "recommendation": "BUY",
-      "eps": 190,
-      "pe": -6,
-      "bookValue": 24.2
-    },
-    {
-      "symbol": "LUK",
-      "ltp": 10.19,
-      "changePct": 2.41,
-      "volume": 13000,
+      "symbol": "NIBLSTF",
+      "ltp": 9.43,
+      "changePct": 3.63,
+      "volume": 2820,
       "technicalScore": 68,
       "signals": [
+        "STRONG_MOMENTUM",
+        "HIGH_EPS"
+      ],
+      "flags": [
+        "LOW_VOLUME"
+      ],
+      "recommendation": "BUY",
+      "eps": 25,
+      "pe": -0.05,
+      "bookValue": 0.04
+    },
+    {
+      "symbol": "BGWT",
+      "ltp": 657,
+      "changePct": 3.35,
+      "volume": 8550,
+      "technicalScore": 68,
+      "signals": [
+        "STRONG_MOMENTUM",
+        "HIGH_EPS"
+      ],
+      "flags": [
+        "LOW_VOLUME"
+      ],
+      "recommendation": "BUY",
+      "eps": 77,
+      "pe": -25,
+      "bookValue": 47
+    },
+    {
+      "symbol": "NMBHF2",
+      "ltp": 9.78,
+      "changePct": 2.84,
+      "volume": 20100,
+      "technicalScore": 66,
+      "signals": [
         "POSITIVE_MOMENTUM",
-        "LOW_PE"
+        "HIGH_EPS"
       ],
       "flags": [],
       "recommendation": "BUY",
-      "eps": 9,
-      "pe": 0.1,
-      "bookValue": 0.29
+      "eps": 24,
+      "pe": -0.12,
+      "bookValue": 0.13
     },
     {
-      "symbol": "NICAD2091",
-      "ltp": 1078.4,
-      "changePct": 3,
-      "volume": 150,
-      "technicalScore": 63,
+      "symbol": "SYPNL",
+      "ltp": 1465,
+      "changePct": 6.62,
+      "volume": 508971,
+      "technicalScore": 65,
       "signals": [
-        "POSITIVE_MOMENTUM",
-        "LOW_PE"
+        "STRONG_MOMENTUM",
+        "HIGH_VOLUME"
       ],
       "flags": [
-        "LOW_VOLUME"
+        "OVERVALUED_PE"
       ],
-      "recommendation": "ACCUMULATE",
-      "eps": 5,
-      "pe": 18,
-      "bookValue": 17
-    },
-    {
-      "symbol": "EBLD86",
-      "ltp": 1098,
-      "changePct": 2.43,
-      "volume": 232,
-      "technicalScore": 63,
-      "signals": [
-        "POSITIVE_MOMENTUM",
-        "LOW_PE"
-      ],
-      "flags": [
-        "LOW_VOLUME"
-      ],
-      "recommendation": "ACCUMULATE",
+      "recommendation": "BUY",
       "eps": 1,
-      "pe": 2.1,
-      "bookValue": null
+      "pe": 52,
+      "bookValue": 166
     },
     {
-      "symbol": "AKJCL",
-      "ltp": 365.9,
-      "changePct": -4.35,
-      "volume": 591004,
+      "symbol": "SKHL",
+      "ltp": 958.8,
+      "changePct": -7.8,
+      "volume": 115941,
       "technicalScore": 63,
       "signals": [
         "HIGH_VOLUME",
@@ -456,15 +484,15 @@
         "STRONG_SELLOFF"
       ],
       "recommendation": "ACCUMULATE",
-      "eps": 993,
-      "pe": 1,
-      "bookValue": 22.1
+      "eps": 984,
+      "pe": 18.1,
+      "bookValue": 71.7
     },
     {
-      "symbol": "VLBS",
-      "ltp": 696.1,
-      "changePct": 2.59,
-      "volume": 8016,
+      "symbol": "H8020",
+      "ltp": 11.9,
+      "changePct": 2.76,
+      "volume": 2600,
       "technicalScore": 61,
       "signals": [
         "POSITIVE_MOMENTUM",
@@ -474,15 +502,15 @@
         "LOW_VOLUME"
       ],
       "recommendation": "ACCUMULATE",
-      "eps": 175,
-      "pe": -8.9,
-      "bookValue": 34
+      "eps": 21,
+      "pe": -0.14,
+      "bookValue": 0.34
     },
     {
-      "symbol": "DLBS",
-      "ltp": 1495,
-      "changePct": 15,
-      "volume": 2236,
+      "symbol": "BNT",
+      "ltp": 11460,
+      "changePct": 3.84,
+      "volume": 368,
       "technicalScore": 60,
       "signals": [
         "STRONG_MOMENTUM"
@@ -491,81 +519,30 @@
         "LOW_VOLUME"
       ],
       "recommendation": "ACCUMULATE",
-      "eps": 16,
-      "pe": -30,
-      "bookValue": 78
-    },
-    {
-      "symbol": "SBLD89",
-      "ltp": 1315,
-      "changePct": 7.79,
-      "volume": 166,
-      "technicalScore": 60,
-      "signals": [
-        "STRONG_MOMENTUM"
-      ],
-      "flags": [
-        "LOW_VOLUME"
-      ],
-      "recommendation": "ACCUMULATE",
-      "eps": null,
+      "eps": 6,
       "pe": null,
-      "bookValue": null
+      "bookValue": 0.1
     },
     {
-      "symbol": "NIBSF2",
-      "ltp": 9.48,
-      "changePct": 3.49,
-      "volume": 2600,
-      "technicalScore": 60,
-      "signals": [
-        "STRONG_MOMENTUM"
-      ],
-      "flags": [
-        "LOW_VOLUME"
-      ],
-      "recommendation": "ACCUMULATE",
-      "eps": 14,
-      "pe": -0.23,
-      "bookValue": 0.27
-    },
-    {
-      "symbol": "SLBSL",
-      "ltp": 1188,
-      "changePct": 3.7,
-      "volume": 6454,
-      "technicalScore": 60,
-      "signals": [
-        "STRONG_MOMENTUM"
-      ],
-      "flags": [
-        "LOW_VOLUME"
-      ],
-      "recommendation": "ACCUMULATE",
-      "eps": 12,
-      "pe": -3,
-      "bookValue": 29
-    },
-    {
-      "symbol": "SBCF",
-      "ltp": 9.99,
-      "changePct": 2.88,
-      "volume": 26400,
+      "symbol": "SFEF",
+      "ltp": 10.14,
+      "changePct": 2.32,
+      "volume": 49200,
       "technicalScore": 58,
       "signals": [
         "POSITIVE_MOMENTUM"
       ],
       "flags": [],
       "recommendation": "ACCUMULATE",
-      "eps": 4,
-      "pe": -0.02,
-      "bookValue": 0.08
+      "eps": 6,
+      "pe": null,
+      "bookValue": 0.09
     },
     {
       "symbol": "HFIN",
-      "ltp": 1000,
-      "changePct": -6.1,
-      "volume": 104518,
+      "ltp": 1073,
+      "changePct": -9.7,
+      "volume": 311927,
       "technicalScore": 55,
       "signals": [
         "HIGH_VOLUME",
@@ -580,10 +557,10 @@
       "bookValue": 88.4
     },
     {
-      "symbol": "SBID2090",
-      "ltp": 1085,
-      "changePct": 2.94,
-      "volume": 1761,
+      "symbol": "SLBSL",
+      "ltp": 1230,
+      "changePct": 2.5,
+      "volume": 270,
       "technicalScore": 53,
       "signals": [
         "POSITIVE_MOMENTUM"
@@ -592,66 +569,15 @@
         "LOW_VOLUME"
       ],
       "recommendation": "NEUTRAL",
-      "eps": 2,
-      "pe": -22.9,
-      "bookValue": 1.5
+      "eps": 12,
+      "pe": -3,
+      "bookValue": 29
     },
     {
-      "symbol": "RBBF40",
-      "ltp": 9.88,
-      "changePct": 2.92,
-      "volume": 2100,
-      "technicalScore": 53,
-      "signals": [
-        "POSITIVE_MOMENTUM"
-      ],
-      "flags": [
-        "LOW_VOLUME"
-      ],
-      "recommendation": "NEUTRAL",
-      "eps": 20,
-      "pe": -0.1,
-      "bookValue": 0.83
-    },
-    {
-      "symbol": "PBD88",
-      "ltp": 1240,
-      "changePct": 2.39,
-      "volume": 80,
-      "technicalScore": 53,
-      "signals": [
-        "POSITIVE_MOMENTUM"
-      ],
-      "flags": [
-        "LOW_VOLUME"
-      ],
-      "recommendation": "NEUTRAL",
-      "eps": 1,
-      "pe": -2.8,
-      "bookValue": null
-    },
-    {
-      "symbol": "RBCL",
-      "ltp": 15100,
-      "changePct": 2.65,
-      "volume": 1883,
-      "technicalScore": 53,
-      "signals": [
-        "POSITIVE_MOMENTUM"
-      ],
-      "flags": [
-        "LOW_VOLUME"
-      ],
-      "recommendation": "NEUTRAL",
-      "eps": 5,
-      "pe": -10,
-      "bookValue": 298
-    },
-    {
-      "symbol": "SKHL",
-      "ltp": 899,
-      "changePct": -5.96,
-      "volume": 32330,
+      "symbol": "NRM",
+      "ltp": 375.1,
+      "changePct": -3.82,
+      "volume": 34360,
       "technicalScore": 53,
       "signals": [
         "LOW_PE",
@@ -661,33 +587,33 @@
         "STRONG_SELLOFF"
       ],
       "recommendation": "NEUTRAL",
-      "eps": 984,
-      "pe": 18.1,
-      "bookValue": 71.7
+      "eps": 106,
+      "pe": 1,
+      "bookValue": 10
     },
     {
-      "symbol": "MPFL",
-      "ltp": 610,
-      "changePct": -5.13,
-      "volume": 37966,
+      "symbol": "JHAPA",
+      "ltp": 1840,
+      "changePct": -13.04,
+      "volume": 150064,
       "technicalScore": 53,
       "signals": [
-        "LOW_PE",
+        "HIGH_VOLUME",
         "HIGH_EPS"
       ],
       "flags": [
         "STRONG_SELLOFF"
       ],
       "recommendation": "NEUTRAL",
-      "eps": 115,
-      "pe": 0.9,
-      "bookValue": 20
+      "eps": 494,
+      "pe": -66,
+      "bookValue": 217
     },
     {
       "symbol": "SKHEL",
       "ltp": 1369,
-      "changePct": -5.19,
-      "volume": 28843,
+      "changePct": -8.11,
+      "volume": 46600,
       "technicalScore": 53,
       "signals": [
         "LOW_PE",
@@ -702,10 +628,10 @@
       "bookValue": 76
     },
     {
-      "symbol": "MEL",
-      "ltp": 250,
-      "changePct": -8.4,
-      "volume": 219013,
+      "symbol": "CORBL",
+      "ltp": 2400,
+      "changePct": -15.33,
+      "volume": 112063,
       "technicalScore": 53,
       "signals": [
         "HIGH_VOLUME",
@@ -715,33 +641,15 @@
         "STRONG_SELLOFF"
       ],
       "recommendation": "NEUTRAL",
-      "eps": 169,
-      "pe": -2,
-      "bookValue": 13.6
-    },
-    {
-      "symbol": "MKHL",
-      "ltp": 559,
-      "changePct": -7.64,
-      "volume": 102300,
-      "technicalScore": 53,
-      "signals": [
-        "HIGH_VOLUME",
-        "HIGH_EPS"
-      ],
-      "flags": [
-        "STRONG_SELLOFF"
-      ],
-      "recommendation": "NEUTRAL",
-      "eps": 157,
-      "pe": -56,
-      "bookValue": 86.1
+      "eps": 510,
+      "pe": -278,
+      "bookValue": 267.8
     },
     {
       "symbol": "CITY",
       "ltp": 448,
-      "changePct": -7.37,
-      "volume": 118651,
+      "changePct": -10.04,
+      "volume": 143934,
       "technicalScore": 53,
       "signals": [
         "HIGH_VOLUME",
@@ -756,65 +664,63 @@
       "bookValue": 12.9
     },
     {
-      "symbol": "FMDBL",
-      "ltp": 805,
-      "changePct": -12.4,
-      "volume": 77403,
-      "technicalScore": 48,
+      "symbol": "MEL",
+      "ltp": 250,
+      "changePct": -9.56,
+      "volume": 263986,
+      "technicalScore": 53,
       "signals": [
-        "MODERATE_VOLUME",
+        "HIGH_VOLUME",
         "HIGH_EPS"
       ],
       "flags": [
         "STRONG_SELLOFF"
       ],
       "recommendation": "NEUTRAL",
-      "eps": 111,
-      "pe": -15,
-      "bookValue": 47.5
+      "eps": 169,
+      "pe": -2,
+      "bookValue": 13.6
     },
     {
-      "symbol": "KDBY",
-      "ltp": 11.5,
-      "changePct": -8.29,
-      "volume": 9193,
-      "technicalScore": 48,
+      "symbol": "SAGF",
+      "ltp": 10.21,
+      "changePct": -2.85,
+      "volume": 3500,
+      "technicalScore": 47,
       "signals": [
-        "LOW_PE",
-        "HIGH_EPS"
+        "LOW_PE"
       ],
       "flags": [
-        "STRONG_SELLOFF",
+        "NEGATIVE_MOMENTUM",
         "LOW_VOLUME"
       ],
       "recommendation": "NEUTRAL",
-      "eps": 77,
-      "pe": 0.32,
-      "bookValue": 0.49
+      "eps": 15,
+      "pe": 0.04,
+      "bookValue": 0.4
     },
     {
-      "symbol": "CORBL",
-      "ltp": 2400,
-      "changePct": -16.58,
-      "volume": 92797,
-      "technicalScore": 48,
+      "symbol": "HRL",
+      "ltp": 626,
+      "changePct": -7.55,
+      "volume": 600022,
+      "technicalScore": 45,
       "signals": [
-        "MODERATE_VOLUME",
-        "HIGH_EPS"
+        "HIGH_VOLUME"
       ],
       "flags": [
         "STRONG_SELLOFF"
       ],
       "recommendation": "NEUTRAL",
-      "eps": 510,
-      "pe": -278,
-      "bookValue": 267.8
+      "eps": 1,
+      "pe": -8.1,
+      "bookValue": 13
     },
     {
       "symbol": "RLEL",
-      "ltp": 1108,
-      "changePct": -5.14,
-      "volume": 22120,
+      "ltp": 1004,
+      "changePct": -4.74,
+      "volume": 24421,
       "technicalScore": 45,
       "signals": [
         "LOW_PE"
@@ -830,8 +736,8 @@
     {
       "symbol": "PCIL",
       "ltp": 948,
-      "changePct": -7.7,
-      "volume": 502688,
+      "changePct": -11.08,
+      "volume": 618739,
       "technicalScore": 45,
       "signals": [
         "HIGH_VOLUME"
@@ -845,10 +751,27 @@
       "bookValue": 144.9
     },
     {
+      "symbol": "AHL",
+      "ltp": 510,
+      "changePct": -9.89,
+      "volume": 14691,
+      "technicalScore": 43,
+      "signals": [
+        "HIGH_EPS"
+      ],
+      "flags": [
+        "STRONG_SELLOFF"
+      ],
+      "recommendation": "NEUTRAL",
+      "eps": 110,
+      "pe": 39,
+      "bookValue": 53.9
+    },
+    {
       "symbol": "NABBC",
-      "ltp": 1059,
-      "changePct": -3.87,
-      "volume": 16409,
+      "ltp": 940,
+      "changePct": -5.91,
+      "volume": 17753,
       "technicalScore": 43,
       "signals": [
         "HIGH_EPS"
@@ -862,10 +785,10 @@
       "bookValue": 90
     },
     {
-      "symbol": "FOWAD",
-      "ltp": 1100,
-      "changePct": -3.64,
-      "volume": 28030,
+      "symbol": "BJHL",
+      "ltp": 918.3,
+      "changePct": -4.34,
+      "volume": 12654,
       "technicalScore": 43,
       "signals": [
         "HIGH_EPS"
@@ -874,70 +797,81 @@
         "STRONG_SELLOFF"
       ],
       "recommendation": "NEUTRAL",
-      "eps": 38,
-      "pe": -27,
-      "bookValue": 19.6
-    },
-    {
-      "symbol": "SAIL",
-      "ltp": 1263,
-      "changePct": -10.22,
-      "volume": 258138,
-      "technicalScore": 43,
-      "signals": [
-        "HIGH_VOLUME",
-        "HIGH_EPS"
-      ],
-      "flags": [
-        "STRONG_SELLOFF",
-        "OVERVALUED_PE"
-      ],
-      "recommendation": "NEUTRAL",
-      "eps": 832,
-      "pe": 141,
-      "bookValue": 210.3
-    },
-    {
-      "symbol": "ANLB",
-      "ltp": 6065,
-      "changePct": -6.11,
-      "volume": 841,
-      "technicalScore": 40,
-      "signals": [
-        "LOW_PE"
-      ],
-      "flags": [
-        "STRONG_SELLOFF",
-        "LOW_VOLUME"
-      ],
-      "recommendation": "AVOID",
-      "eps": 3,
-      "pe": 10,
-      "bookValue": 85
+      "eps": 512,
+      "pe": null,
+      "bookValue": 59
     },
     {
       "symbol": "TVCL",
-      "ltp": 518,
-      "changePct": -4.94,
-      "volume": 1867,
-      "technicalScore": 38,
+      "ltp": 561,
+      "changePct": -8.86,
+      "volume": 19020,
+      "technicalScore": 43,
       "signals": [
         "HIGH_EPS"
       ],
       "flags": [
-        "STRONG_SELLOFF",
-        "LOW_VOLUME"
+        "STRONG_SELLOFF"
       ],
-      "recommendation": "AVOID",
+      "recommendation": "NEUTRAL",
       "eps": 60,
       "pe": -12,
       "bookValue": 61
     },
     {
+      "symbol": "KSY",
+      "ltp": 9.41,
+      "changePct": -3.49,
+      "volume": 57600,
+      "technicalScore": 40,
+      "signals": [
+        "MODERATE_VOLUME"
+      ],
+      "flags": [
+        "STRONG_SELLOFF"
+      ],
+      "recommendation": "AVOID",
+      "eps": 10,
+      "pe": -0.08,
+      "bookValue": 0.16
+    },
+    {
+      "symbol": "SBD89",
+      "ltp": 1281,
+      "changePct": -2.95,
+      "volume": 11,
+      "technicalScore": 37,
+      "signals": [],
+      "flags": [
+        "NEGATIVE_MOMENTUM",
+        "LOW_VOLUME"
+      ],
+      "recommendation": "AVOID",
+      "eps": null,
+      "pe": null,
+      "bookValue": null
+    },
+    {
+      "symbol": "NICD83/84",
+      "ltp": 1105,
+      "changePct": -2.9,
+      "volume": 20,
+      "technicalScore": 37,
+      "signals": [],
+      "flags": [
+        "NEGATIVE_MOMENTUM",
+        "LOW_VOLUME"
+      ],
+      "recommendation": "AVOID",
+      "eps": null,
+      "pe": null,
+      "bookValue": null
+    },
+    {
       "symbol": "SIPD",
-      "ltp": 974,
-      "changePct": -13.86,
-      "volume": 212076,
+      "ltp": 856,
+      "changePct": -6.89,
+      "volume": 102087,
       "technicalScore": 35,
       "signals": [
         "HIGH_VOLUME"
@@ -953,8 +887,8 @@
     }
   ],
   "summary": {
-    "bullishCount": 27,
-    "bearishCount": 19,
+    "bullishCount": 21,
+    "bearishCount": 20,
     "avgScore": 61
   }
 }

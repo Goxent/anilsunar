@@ -1,5 +1,5 @@
 {
-  "scrapedAt": "2026-05-14T04:59:08.102Z",
+  "scrapedAt": "2026-05-15T05:02:23.143Z",
   "totalCount": 24,
   "nepalCount": 16,
   "globalCount": 8,
@@ -16,43 +16,23 @@
   ],
   "articles": [
     {
-      "title": "बैंकर पाण्डे पक्राउ, बैंकिङ क्षेत्र तरंगित, आज रणनीति तय गर्दै",
-      "url": "https://www.karobardaily.com/news/374616",
+      "title": "नेप्से १० अंकले घट्यो, कारोबार रकम बढ्यो",
+      "url": "https://www.karobardaily.com/news/374881",
       "source": "Karobar Daily",
       "badge": "KD",
       "category": "Nepal Business",
-      "scrapedAt": "2026-05-14T04:58:42.684Z",
-      "summary": "बैंकर पाण्डे पक्राउ, बैंकिङ क्षेत्र तरंगित, आज रणनीति तय गर्दै",
+      "scrapedAt": "2026-05-15T05:01:57.055Z",
+      "summary": "नेप्से १० अंकले घट्यो, कारोबार रकम बढ्यो",
       "isGlobal": false
     },
     {
-      "title": "कर्णाली प्रदेशको विद्युत् आपूर्ति सहज बनाउन पहल",
-      "url": "https://www.karobardaily.com/news/374548",
+      "title": "सिटिजन्स बैंकको अगुवाईमा ५० मेगावाटको मर्स्याङ्दी बेसी जलविद्युत आयोजनाको वित्तव्यवस्थापन",
+      "url": "https://www.karobardaily.com/news/374914",
       "source": "Karobar Daily",
       "badge": "KD",
       "category": "Nepal Business",
-      "scrapedAt": "2026-05-14T04:58:42.684Z",
-      "summary": "कर्णाली प्रदेशको विद्युत् आपूर्ति सहज बनाउन पहल",
-      "isGlobal": false
-    },
-    {
-      "title": "ऊर्जा, पर्यटन र डिजिटल अर्थतन्त्रसम्मका सुझाव समावेश",
-      "url": "https://www.karobardaily.com/news/374485",
-      "source": "Karobar Daily",
-      "badge": "KD",
-      "category": "Nepal Business",
-      "scrapedAt": "2026-05-14T04:58:42.684Z",
-      "summary": "ऊर्जा, पर्यटन र डिजिटल अर्थतन्त्रसम्मका सुझाव समावेश",
-      "isGlobal": false
-    },
-    {
-      "title": "बैंकको ब्याजदरभन्दा महँगी धेरै",
-      "url": "https://www.karobardaily.com/news/374227",
-      "source": "Karobar Daily",
-      "badge": "KD",
-      "category": "Nepal Business",
-      "scrapedAt": "2026-05-14T04:58:42.684Z",
-      "summary": "बैंकको ब्याजदरभन्दा महँगी धेरै",
+      "scrapedAt": "2026-05-15T05:01:57.055Z",
+      "summary": "सिटिजन्स बैंकको अगुवाईमा ५० मेगावाटको मर्स्याङ्दी बेसी जलविद्युत आयोजनाको वित्तव्यवस्थापन",
       "isGlobal": false
     },
     {
@@ -61,7 +41,7 @@
       "source": "Karobar Daily",
       "badge": "KD",
       "category": "Nepal Business",
-      "scrapedAt": "2026-05-14T04:58:42.684Z",
+      "scrapedAt": "2026-05-15T05:01:57.055Z",
       "summary": "४० अर्ब निक्षेप खिच्दै राष्ट्र बैंक",
       "isGlobal": false
     },
@@ -71,28 +51,48 @@
       "source": "Karobar Daily",
       "badge": "KD",
       "category": "Nepal Business",
-      "scrapedAt": "2026-05-14T04:58:42.684Z",
+      "scrapedAt": "2026-05-15T05:01:57.055Z",
       "summary": "इन्भेष्टमेन्ट मेगा बैंकका सिइओ पाण्डे पक्राउ",
       "isGlobal": false
     },
     {
-      "title": "एमएडब्लू समूहद्वारा कर छली आरोप खण्डन",
-      "url": "https://www.karobardaily.com/news/374419",
+      "title": "नेपाल एसबिआई बैंकद्वारा विद्यालयमा शैक्षिक सामाग्री प्रदान",
+      "url": "https://www.karobardaily.com/news/374904",
       "source": "Karobar Daily",
       "badge": "KD",
       "category": "Nepal Business",
-      "scrapedAt": "2026-05-14T04:58:42.684Z",
-      "summary": "एमएडब्लू समूहद्वारा कर छली आरोप खण्डन",
+      "scrapedAt": "2026-05-15T05:01:57.055Z",
+      "summary": "नेपाल एसबिआई बैंकद्वारा विद्यालयमा शैक्षिक सामाग्री प्रदान",
       "isGlobal": false
     },
     {
-      "title": "रोयल टुलिपको सेयर बिक्री प्रबन्धक नबिल इन्भेस्टमेन्ट बैंकिङ",
-      "url": "https://www.karobardaily.com/news/374403",
+      "title": "टेलिकमको आम्दानी ६ अर्ब २७ करोड",
+      "url": "https://www.karobardaily.com/news/374773",
       "source": "Karobar Daily",
       "badge": "KD",
       "category": "Nepal Business",
-      "scrapedAt": "2026-05-14T04:58:42.684Z",
-      "summary": "रोयल टुलिपको सेयर बिक्री प्रबन्धक नबिल इन्भेस्टमेन्ट बैंकिङ",
+      "scrapedAt": "2026-05-15T05:01:57.055Z",
+      "summary": "टेलिकमको आम्दानी ६ अर्ब २७ करोड",
+      "isGlobal": false
+    },
+    {
+      "title": "टीभीएस एनटर्क प्रयोगकर्ता डेढ लाख पुगे",
+      "url": "https://www.karobardaily.com/news/365816",
+      "source": "Karobar Daily",
+      "badge": "KD",
+      "category": "Nepal Business",
+      "scrapedAt": "2026-05-15T05:01:57.055Z",
+      "summary": "टीभीएस एनटर्क प्रयोगकर्ता डेढ लाख पुगे",
+      "isGlobal": false
+    },
+    {
+      "title": "नेप्से २७४० विन्दुमा, २ अर्ब ८० करोडको सेयर किनबेच",
+      "url": "https://www.karobardaily.com/news/374502",
+      "source": "Karobar Daily",
+      "badge": "KD",
+      "category": "Nepal Business",
+      "scrapedAt": "2026-05-15T05:01:57.055Z",
+      "summary": "नेप्से २७४० विन्दुमा, २ अर्ब ८० करोडको सेयर किनबेच",
       "isGlobal": false
     },
     {
@@ -101,7 +101,7 @@
       "source": "Sharesansar",
       "badge": "SS",
       "category": "Nepal Stock",
-      "scrapedAt": "2026-05-14T04:58:44.684Z",
+      "scrapedAt": "2026-05-15T05:01:58.903Z",
       "summary": "Sector-Wise Trends in NEPSE Listings: A Two-Decade Analysis",
       "isGlobal": false
     },
@@ -111,17 +111,17 @@
       "source": "Sharesansar",
       "badge": "SS",
       "category": "Nepal Stock",
-      "scrapedAt": "2026-05-14T04:58:44.684Z",
+      "scrapedAt": "2026-05-15T05:01:58.903Z",
       "summary": "Proposed Dividend",
       "isGlobal": false
     },
     {
       "title": "Dividend, Bonus & Rights",
-      "url": "https://www.sharesansar.com/newsdetail/united-modi-hydropower-holds-12th-agm-approves-736842-dividend-2026-05-11",
+      "url": "https://www.sharesansar.com/newsdetail/salt-trading-corporation-limited-unveils-book-closure-date-for-its-10-dividend-calls-agm-on-jestha-29-2026-05-14",
       "source": "Sharesansar",
       "badge": "SS",
       "category": "Nepal Stock",
-      "scrapedAt": "2026-05-14T04:58:44.684Z",
+      "scrapedAt": "2026-05-15T05:01:58.903Z",
       "summary": "Dividend, Bonus & Rights",
       "isGlobal": false
     },
@@ -131,7 +131,7 @@
       "source": "Sharesansar",
       "badge": "SS",
       "category": "Nepal Stock",
-      "scrapedAt": "2026-05-14T04:58:44.684Z",
+      "scrapedAt": "2026-05-15T05:01:58.903Z",
       "summary": "NEPSE Concludes The Week With 0.25% Gain and Turnover of Rs 17.12 Arba; Weekly Summary with Sector Comparison, Major Highlights, and More",
       "isGlobal": false
     },
@@ -141,7 +141,7 @@
       "source": "Sharesansar",
       "badge": "SS",
       "category": "Nepal Stock",
-      "scrapedAt": "2026-05-14T04:58:44.684Z",
+      "scrapedAt": "2026-05-15T05:01:58.903Z",
       "summary": "Snow River IPO Opens Today; Should You Invest in This Hydro? Take a Closer Look",
       "isGlobal": false
     },
@@ -151,7 +151,7 @@
       "source": "Nepali Paisa",
       "badge": "NP",
       "category": "Nepal Finance",
-      "scrapedAt": "2026-05-14T04:58:47.829Z",
+      "scrapedAt": "2026-05-15T05:02:00.948Z",
       "summary": "Market Overview",
       "isGlobal": false
     },
@@ -161,7 +161,7 @@
       "source": "Nepali Paisa",
       "badge": "NP",
       "category": "Nepal Finance",
-      "scrapedAt": "2026-05-14T04:58:47.829Z",
+      "scrapedAt": "2026-05-15T05:02:00.948Z",
       "summary": "Stocks Up & Down",
       "isGlobal": false
     },
@@ -171,7 +171,7 @@
       "source": "Nepali Paisa",
       "badge": "NP",
       "category": "Nepal Finance",
-      "scrapedAt": "2026-05-14T04:58:47.829Z",
+      "scrapedAt": "2026-05-15T05:02:00.948Z",
       "summary": "Business & Economy",
       "isGlobal": false
     }
@@ -183,78 +183,78 @@
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-05-14T04:59:06.600Z",
+      "scrapedAt": "2026-05-15T05:02:21.640Z",
       "summary": "Markets just got Conversational",
       "isGlobal": true
     },
     {
-      "title": "Stocks to buy in 2026 for long term: Tata Power, Berger Paints among 5 stocks that could give 10-30% return",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/news/stocks-to-buy-in-2026-for-long-term-tata-power-berger-paints-among-5-stocks-that-could-give-10-30-return/slideshow/131080407.cms",
+      "title": "​Paytm, Urban Company among 10 companies with highest FII shareholding in Q4. Check full list",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/paytm-urban-company-among-10-companies-with-highest-fii-shareholding-in-q4-check-full-list/slideshow/131107439.cms",
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-05-14T04:59:06.600Z",
-      "summary": "Stocks to buy in 2026 for long term: Tata Power, Berger Paints among 5 stocks that could give 10-30% return",
+      "scrapedAt": "2026-05-15T05:02:21.641Z",
+      "summary": "​Paytm, Urban Company among 10 companies with highest FII shareholding in Q4. Check full list",
       "isGlobal": true
     },
     {
-      "title": "Vodafone Idea and 4 other midcap stocks hit 52-week highs, rally up to 40% in a month",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/news/vodafone-idea-and-4-other-midcap-stocks-hit-52-week-highs-rally-up-to-40-in-a-month/slideshow/131066736.cms",
+      "title": "Stocks to buy in 2026 for long term: Crompton Greaves, Blue Dart among 5 stocks that could give 10-20% return",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/stocks-to-buy-in-2026-for-long-term-crompton-greaves-blue-dart-among-5-stocks-that-could-give-10-20-return/slideshow/131106286.cms",
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-05-14T04:59:06.600Z",
-      "summary": "Vodafone Idea and 4 other midcap stocks hit 52-week highs, rally up to 40% in a month",
+      "scrapedAt": "2026-05-15T05:02:21.641Z",
+      "summary": "Stocks to buy in 2026 for long term: Crompton Greaves, Blue Dart among 5 stocks that could give 10-20% return",
       "isGlobal": true
     },
     {
-      "title": "​12 stocks held by 100+ MFs in April surged up to 75% so far in 2026​",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/news/12-stocks-heldby100mfsinapril-surged-upto75-so-far-in-2026/slideshow/131063710.cms",
+      "title": "​Gainers & Losers: NLC India, MCX and Kaynes Technology among 6 big movers on Thursday ​",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/gainers-amp-losers-nlc-india-mcx-and-kaynes-technology-among-6-big-movers-on-thursday-/slideshow/131093792.cms",
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-05-14T04:59:06.600Z",
-      "summary": "​12 stocks held by 100+ MFs in April surged up to 75% so far in 2026​",
+      "scrapedAt": "2026-05-15T05:02:21.641Z",
+      "summary": "​Gainers & Losers: NLC India, MCX and Kaynes Technology among 6 big movers on Thursday ​",
       "isGlobal": true
     },
     {
-      "title": "MSCI rejig: These 4 stocks may see inflows worth $1,381 million after inclusion",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/news/msci-rejig-these-4-stocks-may-see-inflows-worth-1381-million-after-inclusion/slideshow/131061608.cms",
+      "title": "Silicon Surge: Cisco’s AI strategy sparks market optimism",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/silicon-surge-ciscos-ai-strategy-sparks-market-optimism/slideshow/131084077.cms",
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-05-14T04:59:06.600Z",
-      "summary": "MSCI rejig: These 4 stocks may see inflows worth $1,381 million after inclusion",
+      "scrapedAt": "2026-05-15T05:02:21.641Z",
+      "summary": "Silicon Surge: Cisco’s AI strategy sparks market optimism",
       "isGlobal": true
     },
     {
-      "title": "These mid-cap stocks with ‘Strong Buy’ & ‘Buy’ recos can rally over 25%, according to analysts",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/news/these-mid-cap-stocks-with-strong-buy-buy-recos-can-rally-over-25-according-to-analysts/articleshow/131074315.cms",
+      "title": "​10 stocks to buy: Inside Morgan Stanley&#x27;s India model portfolio and the themes it is betting on",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/10-stocks-to-buy-inside-morgan-stanleys-india-model-portfolio-and-the-themes-it-is-betting-on/slideshow/131083742.cms",
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-05-14T04:59:06.600Z",
-      "summary": "These mid-cap stocks with ‘Strong Buy’ & ‘Buy’ recos can rally over 25%, according to analysts",
+      "scrapedAt": "2026-05-15T05:02:21.641Z",
+      "summary": "​10 stocks to buy: Inside Morgan Stanley&#x27;s India model portfolio and the themes it is betting on",
       "isGlobal": true
     },
     {
-      "title": "ET Prime Special Series: Multibagger or Bankrupt - Part 58: The ICE veteran that quietly became an EV lightweighting story",
-      "url": "https://economictimes.indiatimes.com/intelligent-investing/sectoral-deep-dives/et-prime-special-series-multibagger-or-bankrupt-part-58-the-ice-veteran-that-quietly-became-an-ev-lightweighting-story/articleshow/131068197.cms",
+      "title": "These large- mid- and small-cap stocks have an upside potential of up to 31% in 1 year, according to analysts",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/these-large-mid-and-small-cap-stocks-have-an-upside-potential-of-up-to-31-in-1-year-according-to-analysts/articleshow/131101101.cms",
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-05-14T04:59:06.600Z",
-      "summary": "ET Prime Special Series: Multibagger or Bankrupt - Part 58: The ICE veteran that quietly became an EV lightweighting story",
+      "scrapedAt": "2026-05-15T05:02:21.641Z",
+      "summary": "These large- mid- and small-cap stocks have an upside potential of up to 31% in 1 year, according to analysts",
       "isGlobal": true
     },
     {
-      "title": "These 8 private and public banking stocks have an upside of up to 27% in one year, according to analysts",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/news/these-8-private-and-public-banking-stocks-have-an-upside-of-up-to-27-in-one-year-according-to-analysts/articleshow/131048219.cms",
+      "title": "Weekly Top Picks: These stocks scored 10 on 10 on Stock Reports Plus",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/weekly-top-picks-these-stocks-scored-10-on-10-on-stock-reports-plus/articleshow/131094417.cms",
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-05-14T04:59:06.600Z",
-      "summary": "These 8 private and public banking stocks have an upside of up to 27% in one year, according to analysts",
+      "scrapedAt": "2026-05-15T05:02:21.641Z",
+      "summary": "Weekly Top Picks: These stocks scored 10 on 10 on Stock Reports Plus",
       "isGlobal": true
     }
   ]
