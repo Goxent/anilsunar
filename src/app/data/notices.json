@@ -1,8 +1,21 @@
 {
-  "lastUpdated": "2026-05-15T05:02:56.126Z",
-  "totalCount": 47,
-  "newCount": 0,
+  "lastUpdated": "2026-05-18T05:18:58.788Z",
+  "totalCount": 48,
+  "newCount": 1,
   "notices": [
+    {
+      "id": "nrbnepalmonetarypolicy208283_mpar7ko6",
+      "title": "Monetary Policy 2082-83 3rd Quarter Review",
+      "source": "NRB Nepal",
+      "category": "Banking",
+      "badge": "NRB",
+      "badgeColor": "#e65100",
+      "link": "https://www.nrb.org.np/ofg/monetary-policy-2082-83-3rd-quarter-review/",
+      "summary": "New Banking update from NRB Nepal: Monetary Policy 2082-83 3rd Quarter Review",
+      "detectedAt": "2026-05-18T05:18:53.286Z",
+      "isNew": true,
+      "emailedAt": null
+    },
     {
       "id": "nrbnepalnoticeforinvitationo_mp3lci8p",
       "title": "Notice for invitation of Bid for the procurement of Supply, Delivery, Installation, Testing and Commissioning of Offset Press Machine for Nepal Rastra Bank, Baluwatar",
