@@ -1,5 +1,5 @@
 {
-  "scrapedAt": "2026-05-19T05:15:12.727Z",
+  "scrapedAt": "2026-05-20T05:17:07.299Z",
   "totalCount": 24,
   "nepalCount": 16,
   "globalCount": 8,
@@ -16,13 +16,33 @@
   ],
   "articles": [
     {
-      "title": "घरजग्गा कारोबारबाट गत वैशाखमा छ अर्ब २६ करोड राजस्व संकलन",
-      "url": "https://www.karobardaily.com/news/375886",
+      "title": "सिद्धान्त र यथार्थको कसीमा बैंकिङ क्षेत्रको अधिक तरलता",
+      "url": "https://www.karobardaily.com/news/376497",
       "source": "Karobar Daily",
       "badge": "KD",
       "category": "Nepal Business",
-      "scrapedAt": "2026-05-19T05:14:46.539Z",
-      "summary": "घरजग्गा कारोबारबाट गत वैशाखमा छ अर्ब २६ करोड राजस्व संकलन",
+      "scrapedAt": "2026-05-20T05:16:37.572Z",
+      "summary": "सिद्धान्त र यथार्थको कसीमा बैंकिङ क्षेत्रको अधिक तरलता",
+      "isGlobal": false
+    },
+    {
+      "title": "वहिष्करणमा परेको क्षेत्रलाई बजेट विनियोजनमा विशेष प्राथमिकता दिइन्छ: अर्थमन्त्री",
+      "url": "https://www.karobardaily.com/news/376470",
+      "source": "Karobar Daily",
+      "badge": "KD",
+      "category": "Nepal Business",
+      "scrapedAt": "2026-05-20T05:16:37.572Z",
+      "summary": "वहिष्करणमा परेको क्षेत्रलाई बजेट विनियोजनमा विशेष प्राथमिकता दिइन्छ: अर्थमन्त्री",
+      "isGlobal": false
+    },
+    {
+      "title": "एक करोडको कोषसहित विपद् प्रतिकार्य योजना स्वीकृत",
+      "url": "https://www.karobardaily.com/news/376455",
+      "source": "Karobar Daily",
+      "badge": "KD",
+      "category": "Nepal Business",
+      "scrapedAt": "2026-05-20T05:16:37.572Z",
+      "summary": "एक करोडको कोषसहित विपद् प्रतिकार्य योजना स्वीकृत",
       "isGlobal": false
     },
     {
@@ -31,7 +51,7 @@
       "source": "Karobar Daily",
       "badge": "KD",
       "category": "Nepal Business",
-      "scrapedAt": "2026-05-19T05:14:46.539Z",
+      "scrapedAt": "2026-05-20T05:16:37.572Z",
       "summary": "सेयर बजारमा लगानी बढाउँदै बैंक",
       "isGlobal": false
     },
@@ -41,7 +61,7 @@
       "source": "Karobar Daily",
       "badge": "KD",
       "category": "Nepal Business",
-      "scrapedAt": "2026-05-19T05:14:46.539Z",
+      "scrapedAt": "2026-05-20T05:16:37.572Z",
       "summary": "जेठमा पनि घट्यो बैंक ब्याजदर",
       "isGlobal": false
     },
@@ -51,7 +71,7 @@
       "source": "Karobar Daily",
       "badge": "KD",
       "category": "Nepal Business",
-      "scrapedAt": "2026-05-19T05:14:46.539Z",
+      "scrapedAt": "2026-05-20T05:16:37.572Z",
       "summary": "४५ अर्ब निक्षेप खिच्दै राष्ट्र बैंक",
       "isGlobal": false
     },
@@ -61,38 +81,18 @@
       "source": "Karobar Daily",
       "badge": "KD",
       "category": "Nepal Business",
-      "scrapedAt": "2026-05-19T05:14:46.539Z",
+      "scrapedAt": "2026-05-20T05:16:37.572Z",
       "summary": "४० अर्ब निक्षेप खिच्दै राष्ट्र बैंक",
       "isGlobal": false
     },
     {
-      "title": "नेप्से २७३० विन्दुमा कायम, २ अर्ब ४५ करोडको कारोबार",
-      "url": "https://www.karobardaily.com/news/376007",
+      "title": "नेप्से घटेर २७२४ विन्दुमा, ३ अर्ब ८ करोडको कारोबार",
+      "url": "https://www.karobardaily.com/news/376222",
       "source": "Karobar Daily",
       "badge": "KD",
       "category": "Nepal Business",
-      "scrapedAt": "2026-05-19T05:14:46.539Z",
-      "summary": "नेप्से २७३० विन्दुमा कायम, २ अर्ब ४५ करोडको कारोबार",
-      "isGlobal": false
-    },
-    {
-      "title": "सामान्य बढेको सेयर बजारमा ३ अर्ब ९ करोड कारोबार",
-      "url": "https://www.karobardaily.com/news/375247",
-      "source": "Karobar Daily",
-      "badge": "KD",
-      "category": "Nepal Business",
-      "scrapedAt": "2026-05-19T05:14:46.539Z",
-      "summary": "सामान्य बढेको सेयर बजारमा ३ अर्ब ९ करोड कारोबार",
-      "isGlobal": false
-    },
-    {
-      "title": "नेप्से १० अंकले घट्यो, कारोबार रकम बढ्यो",
-      "url": "https://www.karobardaily.com/news/374881",
-      "source": "Karobar Daily",
-      "badge": "KD",
-      "category": "Nepal Business",
-      "scrapedAt": "2026-05-19T05:14:46.539Z",
-      "summary": "नेप्से १० अंकले घट्यो, कारोबार रकम बढ्यो",
+      "scrapedAt": "2026-05-20T05:16:37.573Z",
+      "summary": "नेप्से घटेर २७२४ विन्दुमा, ३ अर्ब ८ करोडको कारोबार",
       "isGlobal": false
     },
     {
@@ -101,7 +101,7 @@
       "source": "Sharesansar",
       "badge": "SS",
       "category": "Nepal Stock",
-      "scrapedAt": "2026-05-19T05:14:48.692Z",
+      "scrapedAt": "2026-05-20T05:16:39.567Z",
       "summary": "Sector-Wise Trends in NEPSE Listings: A Two-Decade Analysis",
       "isGlobal": false
     },
@@ -111,7 +111,7 @@
       "source": "Sharesansar",
       "badge": "SS",
       "category": "Nepal Stock",
-      "scrapedAt": "2026-05-19T05:14:48.692Z",
+      "scrapedAt": "2026-05-20T05:16:39.567Z",
       "summary": "Proposed Dividend",
       "isGlobal": false
     },
@@ -121,7 +121,7 @@
       "source": "Sharesansar",
       "badge": "SS",
       "category": "Nepal Stock",
-      "scrapedAt": "2026-05-19T05:14:48.692Z",
+      "scrapedAt": "2026-05-20T05:16:39.567Z",
       "summary": "Dividend, Bonus & Rights",
       "isGlobal": false
     },
@@ -131,7 +131,7 @@
       "source": "Sharesansar",
       "badge": "SS",
       "category": "Nepal Stock",
-      "scrapedAt": "2026-05-19T05:14:48.692Z",
+      "scrapedAt": "2026-05-20T05:16:39.567Z",
       "summary": "NEPSE Concludes The Week With 0.50% Loss and Turnover of Rs 18.47 Arba; Weekly Summary with Sector Comparison, Major Highlights, and More",
       "isGlobal": false
     },
@@ -141,7 +141,7 @@
       "source": "Sharesansar",
       "badge": "SS",
       "category": "Nepal Stock",
-      "scrapedAt": "2026-05-19T05:14:48.692Z",
+      "scrapedAt": "2026-05-20T05:16:39.567Z",
       "summary": "Snow River IPO Opens Today; Should You Invest in This Hydro? Take a Closer Look",
       "isGlobal": false
     },
@@ -151,7 +151,7 @@
       "source": "Nepali Paisa",
       "badge": "NP",
       "category": "Nepal Finance",
-      "scrapedAt": "2026-05-19T05:14:51.632Z",
+      "scrapedAt": "2026-05-20T05:16:42.761Z",
       "summary": "Market Overview",
       "isGlobal": false
     },
@@ -161,7 +161,7 @@
       "source": "Nepali Paisa",
       "badge": "NP",
       "category": "Nepal Finance",
-      "scrapedAt": "2026-05-19T05:14:51.632Z",
+      "scrapedAt": "2026-05-20T05:16:42.761Z",
       "summary": "Stocks Up & Down",
       "isGlobal": false
     },
@@ -171,7 +171,7 @@
       "source": "Nepali Paisa",
       "badge": "NP",
       "category": "Nepal Finance",
-      "scrapedAt": "2026-05-19T05:14:51.632Z",
+      "scrapedAt": "2026-05-20T05:16:42.761Z",
       "summary": "Business & Economy",
       "isGlobal": false
     }
@@ -183,78 +183,78 @@
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-05-19T05:15:11.225Z",
+      "scrapedAt": "2026-05-20T05:17:05.797Z",
       "summary": "Markets just got Conversational",
       "isGlobal": true
     },
     {
-      "title": "​IndusInd Bank, Max Health among 10 stocks that saw highest increase in DII holdings in Q4. Do you own any?",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/news/indusind-bank-max-health-among-10-stocks-that-saw-highest-increase-in-dii-holdings-in-q4-do-you-own-any/slideshow/131190013.cms",
+      "title": "Infosys among 5 F&O stocks with a sharp rise in futures open interest",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/infosys-among-5-fo-stocks-with-a-sharp-rise-in-futures-open-interest/slideshow/131217122.cms",
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-05-19T05:15:11.226Z",
-      "summary": "​IndusInd Bank, Max Health among 10 stocks that saw highest increase in DII holdings in Q4. Do you own any?",
+      "scrapedAt": "2026-05-20T05:17:05.797Z",
+      "summary": "Infosys among 5 F&O stocks with a sharp rise in futures open interest",
       "isGlobal": true
     },
     {
-      "title": "Amber Enterprises among 5 F&O stocks with a sharp rise in futures open interest",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/news/amber-enterprises-among-5-fo-stocks-with-a-sharp-rise-in-futures-open-interest/slideshow/131189846.cms",
+      "title": "​​BSE, Wipro among 10 stocks to be added in Nifty Next 50, Nifty in September rejig. Check list",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/bse-wipro-among-10-stocks-to-be-added-in-nifty-next-50-nifty-in-september-rejig-/slideshow/131216828.cms",
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-05-19T05:15:11.226Z",
-      "summary": "Amber Enterprises among 5 F&O stocks with a sharp rise in futures open interest",
+      "scrapedAt": "2026-05-20T05:17:05.797Z",
+      "summary": "​​BSE, Wipro among 10 stocks to be added in Nifty Next 50, Nifty in September rejig. Check list",
       "isGlobal": true
     },
     {
-      "title": "Vishal Mega Mart among 4 stocks showing bullish RSI upswing",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/news/vishal-mega-mart-among-4-stocks-showing-bullish-rsi-upswing/slideshow/131189525.cms",
+      "title": "Tejas Networks among 5 stocks showing bullish RSI upswing",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/tejas-networks-among-5-stocks-showing-bullish-rsi-upswing/slideshow/131215593.cms",
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-05-19T05:15:11.226Z",
-      "summary": "Vishal Mega Mart among 4 stocks showing bullish RSI upswing",
+      "scrapedAt": "2026-05-20T05:17:05.797Z",
+      "summary": "Tejas Networks among 5 stocks showing bullish RSI upswing",
       "isGlobal": true
     },
     {
-      "title": "Stocks to buy in 2026 for long term: Solar Industries, Tata Motors among 5 stocks that could give 10-20% return",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/news/stocks-to-buy-in-2026-for-long-term-solar-industries-tata-motors-among-5-stocks-that-could-give-10-20-return/slideshow/131188686.cms",
+      "title": "Angel One among 5 stocks flashing bullish signals, hinting at a possible uptrend",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/angel-one-among-5-stocks-flashing-bullish-signals-hinting-at-a-possible-uptrend/slideshow/131215239.cms",
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-05-19T05:15:11.226Z",
-      "summary": "Stocks to buy in 2026 for long term: Solar Industries, Tata Motors among 5 stocks that could give 10-20% return",
+      "scrapedAt": "2026-05-20T05:17:05.797Z",
+      "summary": "Angel One among 5 stocks flashing bullish signals, hinting at a possible uptrend",
       "isGlobal": true
     },
     {
-      "title": "Weekly Top Picks: These stocks scored 10 on 10 on Stock Reports Plus",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/news/weekly-top-picks-these-stocks-scored-10-on-10-on-stock-reports-plus/articleshow/131176744.cms",
+      "title": "Stocks to buy in 2026 for long term: NHPC, Bajaj Finance among 5 stocks that could give 20-30% return",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/stocks-to-buy-in-2026-for-long-term-nhpc-bajaj-finance-among-5-stocks-that-could-give-20-30-return/slideshow/131214627.cms",
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-05-19T05:15:11.226Z",
-      "summary": "Weekly Top Picks: These stocks scored 10 on 10 on Stock Reports Plus",
+      "scrapedAt": "2026-05-20T05:17:05.797Z",
+      "summary": "Stocks to buy in 2026 for long term: NHPC, Bajaj Finance among 5 stocks that could give 20-30% return",
       "isGlobal": true
     },
     {
-      "title": "In volatile times: 5 stocks with score improvement and upside potential of up to 24%",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/news/in-volatile-times-5-stocks-with-score-improvement-and-upside-potential-of-up-to-24/articleshow/131169481.cms",
+      "title": "These 6 banking stocks have an upside potential of up to 30% in 1 year, according to analysts",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/these-6-banking-stocks-have-an-upside-potential-of-up-to-30-in-1-year-according-to-analysts/articleshow/131209209.cms",
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-05-19T05:15:11.226Z",
-      "summary": "In volatile times: 5 stocks with score improvement and upside potential of up to 24%",
+      "scrapedAt": "2026-05-20T05:17:05.797Z",
+      "summary": "These 6 banking stocks have an upside potential of up to 30% in 1 year, according to analysts",
       "isGlobal": true
     },
     {
-      "title": "Stock Radar: CARE Ratings breaks out from Symmetrical Triangle formation; time to buy?",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/news/stock-radar-care-ratings-breaks-out-from-symmetrical-triangle-formation-time-to-buy/articleshow/131173479.cms",
+      "title": "Time to take the first step to become a contrarian? 4 mid-cap stocks from different sectors with upside potential up to 21%",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/time-to-take-the-first-step-to-become-a-contrarian-4-mid-cap-stocks-from-different-sectors-with-upside-potential-up-to-21/articleshow/131195318.cms",
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-05-19T05:15:11.226Z",
-      "summary": "Stock Radar: CARE Ratings breaks out from Symmetrical Triangle formation; time to buy?",
+      "scrapedAt": "2026-05-20T05:17:05.797Z",
+      "summary": "Time to take the first step to become a contrarian? 4 mid-cap stocks from different sectors with upside potential up to 21%",
       "isGlobal": true
     }
   ]
