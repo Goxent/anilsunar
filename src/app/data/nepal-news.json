@@ -1,5 +1,5 @@
 {
-  "scrapedAt": "2026-05-20T05:17:07.299Z",
+  "scrapedAt": "2026-05-21T05:20:48.145Z",
   "totalCount": 24,
   "nepalCount": 16,
   "globalCount": 8,
@@ -16,33 +16,23 @@
   ],
   "articles": [
     {
-      "title": "सिद्धान्त र यथार्थको कसीमा बैंकिङ क्षेत्रको अधिक तरलता",
-      "url": "https://www.karobardaily.com/news/376497",
+      "title": "स्याङ्जाका स्थानीय तहको बेरुजु १३ करोड",
+      "url": "https://www.karobardaily.com/news/376860",
       "source": "Karobar Daily",
       "badge": "KD",
       "category": "Nepal Business",
-      "scrapedAt": "2026-05-20T05:16:37.572Z",
-      "summary": "सिद्धान्त र यथार्थको कसीमा बैंकिङ क्षेत्रको अधिक तरलता",
+      "scrapedAt": "2026-05-21T05:20:25.682Z",
+      "summary": "स्याङ्जाका स्थानीय तहको बेरुजु १३ करोड",
       "isGlobal": false
     },
     {
-      "title": "वहिष्करणमा परेको क्षेत्रलाई बजेट विनियोजनमा विशेष प्राथमिकता दिइन्छ: अर्थमन्त्री",
-      "url": "https://www.karobardaily.com/news/376470",
+      "title": "६६ कम्पनीले एक अर्ब २९ करोड दूरसञ्चार राजस्व तिरेनन्",
+      "url": "https://www.karobardaily.com/news/376842",
       "source": "Karobar Daily",
       "badge": "KD",
       "category": "Nepal Business",
-      "scrapedAt": "2026-05-20T05:16:37.572Z",
-      "summary": "वहिष्करणमा परेको क्षेत्रलाई बजेट विनियोजनमा विशेष प्राथमिकता दिइन्छ: अर्थमन्त्री",
-      "isGlobal": false
-    },
-    {
-      "title": "एक करोडको कोषसहित विपद् प्रतिकार्य योजना स्वीकृत",
-      "url": "https://www.karobardaily.com/news/376455",
-      "source": "Karobar Daily",
-      "badge": "KD",
-      "category": "Nepal Business",
-      "scrapedAt": "2026-05-20T05:16:37.572Z",
-      "summary": "एक करोडको कोषसहित विपद् प्रतिकार्य योजना स्वीकृत",
+      "scrapedAt": "2026-05-21T05:20:25.682Z",
+      "summary": "६६ कम्पनीले एक अर्ब २९ करोड दूरसञ्चार राजस्व तिरेनन्",
       "isGlobal": false
     },
     {
@@ -51,7 +41,7 @@
       "source": "Karobar Daily",
       "badge": "KD",
       "category": "Nepal Business",
-      "scrapedAt": "2026-05-20T05:16:37.572Z",
+      "scrapedAt": "2026-05-21T05:20:25.682Z",
       "summary": "सेयर बजारमा लगानी बढाउँदै बैंक",
       "isGlobal": false
     },
@@ -61,7 +51,7 @@
       "source": "Karobar Daily",
       "badge": "KD",
       "category": "Nepal Business",
-      "scrapedAt": "2026-05-20T05:16:37.572Z",
+      "scrapedAt": "2026-05-21T05:20:25.682Z",
       "summary": "जेठमा पनि घट्यो बैंक ब्याजदर",
       "isGlobal": false
     },
@@ -71,7 +61,7 @@
       "source": "Karobar Daily",
       "badge": "KD",
       "category": "Nepal Business",
-      "scrapedAt": "2026-05-20T05:16:37.572Z",
+      "scrapedAt": "2026-05-21T05:20:25.682Z",
       "summary": "४५ अर्ब निक्षेप खिच्दै राष्ट्र बैंक",
       "isGlobal": false
     },
@@ -81,18 +71,28 @@
       "source": "Karobar Daily",
       "badge": "KD",
       "category": "Nepal Business",
-      "scrapedAt": "2026-05-20T05:16:37.572Z",
+      "scrapedAt": "2026-05-21T05:20:25.682Z",
       "summary": "४० अर्ब निक्षेप खिच्दै राष्ट्र बैंक",
       "isGlobal": false
     },
     {
-      "title": "नेप्से घटेर २७२४ विन्दुमा, ३ अर्ब ८ करोडको कारोबार",
-      "url": "https://www.karobardaily.com/news/376222",
+      "title": "मुक्तिनाथ विकास बैंकद्वारा व्हीलचेयर हस्तान्तरण",
+      "url": "https://www.karobardaily.com/news/376950",
       "source": "Karobar Daily",
       "badge": "KD",
       "category": "Nepal Business",
-      "scrapedAt": "2026-05-20T05:16:37.573Z",
-      "summary": "नेप्से घटेर २७२४ विन्दुमा, ३ अर्ब ८ करोडको कारोबार",
+      "scrapedAt": "2026-05-21T05:20:25.683Z",
+      "summary": "मुक्तिनाथ विकास बैंकद्वारा व्हीलचेयर हस्तान्तरण",
+      "isGlobal": false
+    },
+    {
+      "title": "सानिमा जिआईसी इन्स्योरेन्सको आठौं वार्षिक साधारणसभाबाट लाभांश प्रस्ताव पारित",
+      "url": "https://www.karobardaily.com/news/376940",
+      "source": "Karobar Daily",
+      "badge": "KD",
+      "category": "Nepal Business",
+      "scrapedAt": "2026-05-21T05:20:25.683Z",
+      "summary": "सानिमा जिआईसी इन्स्योरेन्सको आठौं वार्षिक साधारणसभाबाट लाभांश प्रस्ताव पारित",
       "isGlobal": false
     },
     {
@@ -101,7 +101,7 @@
       "source": "Sharesansar",
       "badge": "SS",
       "category": "Nepal Stock",
-      "scrapedAt": "2026-05-20T05:16:39.567Z",
+      "scrapedAt": "2026-05-21T05:20:27.920Z",
       "summary": "Sector-Wise Trends in NEPSE Listings: A Two-Decade Analysis",
       "isGlobal": false
     },
@@ -111,17 +111,17 @@
       "source": "Sharesansar",
       "badge": "SS",
       "category": "Nepal Stock",
-      "scrapedAt": "2026-05-20T05:16:39.567Z",
+      "scrapedAt": "2026-05-21T05:20:27.920Z",
       "summary": "Proposed Dividend",
       "isGlobal": false
     },
     {
       "title": "Dividend, Bonus & Rights",
-      "url": "https://www.sharesansar.com/newsdetail/nadep-laghubitta-decides-not-to-distribute-dividends-of-fy-208182-2026-05-18",
+      "url": "https://www.sharesansar.com/newsdetail/himalayan-power-partner-limited-closing-issue-of-1-050-right-shares-from-today-2026-05-20",
       "source": "Sharesansar",
       "badge": "SS",
       "category": "Nepal Stock",
-      "scrapedAt": "2026-05-20T05:16:39.567Z",
+      "scrapedAt": "2026-05-21T05:20:27.920Z",
       "summary": "Dividend, Bonus & Rights",
       "isGlobal": false
     },
@@ -131,7 +131,7 @@
       "source": "Sharesansar",
       "badge": "SS",
       "category": "Nepal Stock",
-      "scrapedAt": "2026-05-20T05:16:39.567Z",
+      "scrapedAt": "2026-05-21T05:20:27.920Z",
       "summary": "NEPSE Concludes The Week With 0.50% Loss and Turnover of Rs 18.47 Arba; Weekly Summary with Sector Comparison, Major Highlights, and More",
       "isGlobal": false
     },
@@ -141,7 +141,7 @@
       "source": "Sharesansar",
       "badge": "SS",
       "category": "Nepal Stock",
-      "scrapedAt": "2026-05-20T05:16:39.567Z",
+      "scrapedAt": "2026-05-21T05:20:27.920Z",
       "summary": "Snow River IPO Opens Today; Should You Invest in This Hydro? Take a Closer Look",
       "isGlobal": false
     },
@@ -151,7 +151,7 @@
       "source": "Nepali Paisa",
       "badge": "NP",
       "category": "Nepal Finance",
-      "scrapedAt": "2026-05-20T05:16:42.761Z",
+      "scrapedAt": "2026-05-21T05:20:31.274Z",
       "summary": "Market Overview",
       "isGlobal": false
     },
@@ -161,7 +161,7 @@
       "source": "Nepali Paisa",
       "badge": "NP",
       "category": "Nepal Finance",
-      "scrapedAt": "2026-05-20T05:16:42.761Z",
+      "scrapedAt": "2026-05-21T05:20:31.274Z",
       "summary": "Stocks Up & Down",
       "isGlobal": false
     },
@@ -171,7 +171,7 @@
       "source": "Nepali Paisa",
       "badge": "NP",
       "category": "Nepal Finance",
-      "scrapedAt": "2026-05-20T05:16:42.761Z",
+      "scrapedAt": "2026-05-21T05:20:31.274Z",
       "summary": "Business & Economy",
       "isGlobal": false
     }
@@ -183,78 +183,78 @@
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-05-20T05:17:05.797Z",
+      "scrapedAt": "2026-05-21T05:20:46.643Z",
       "summary": "Markets just got Conversational",
       "isGlobal": true
     },
     {
-      "title": "Infosys among 5 F&O stocks with a sharp rise in futures open interest",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/news/infosys-among-5-fo-stocks-with-a-sharp-rise-in-futures-open-interest/slideshow/131217122.cms",
+      "title": "Godfrey Phillips India among 5 F&O stocks with a sharp rise in futures open interest",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/godfrey-phillips-india-among-5-fo-stocks-with-a-sharp-rise-in-futures-open-interest/slideshow/131239084.cms",
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-05-20T05:17:05.797Z",
-      "summary": "Infosys among 5 F&O stocks with a sharp rise in futures open interest",
+      "scrapedAt": "2026-05-21T05:20:46.643Z",
+      "summary": "Godfrey Phillips India among 5 F&O stocks with a sharp rise in futures open interest",
       "isGlobal": true
     },
     {
-      "title": "​​BSE, Wipro among 10 stocks to be added in Nifty Next 50, Nifty in September rejig. Check list",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/news/bse-wipro-among-10-stocks-to-be-added-in-nifty-next-50-nifty-in-september-rejig-/slideshow/131216828.cms",
+      "title": "Hindalco among 7 stocks flashing bullish signals, hinting at a possible uptrend",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/hindalco-among-7-stocks-flashing-bullish-signals-hinting-at-a-possible-uptrend/slideshow/131238966.cms",
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-05-20T05:17:05.797Z",
-      "summary": "​​BSE, Wipro among 10 stocks to be added in Nifty Next 50, Nifty in September rejig. Check list",
+      "scrapedAt": "2026-05-21T05:20:46.643Z",
+      "summary": "Hindalco among 7 stocks flashing bullish signals, hinting at a possible uptrend",
       "isGlobal": true
     },
     {
-      "title": "Tejas Networks among 5 stocks showing bullish RSI upswing",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/news/tejas-networks-among-5-stocks-showing-bullish-rsi-upswing/slideshow/131215593.cms",
+      "title": "Eris Lifesciences among 5 stocks showing bullish RSI upswing",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/eris-lifesciences-among-5-stocks-showing-bullish-rsi-upswing/slideshow/131238793.cms",
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-05-20T05:17:05.797Z",
-      "summary": "Tejas Networks among 5 stocks showing bullish RSI upswing",
+      "scrapedAt": "2026-05-21T05:20:46.643Z",
+      "summary": "Eris Lifesciences among 5 stocks showing bullish RSI upswing",
       "isGlobal": true
     },
     {
-      "title": "Angel One among 5 stocks flashing bullish signals, hinting at a possible uptrend",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/news/angel-one-among-5-stocks-flashing-bullish-signals-hinting-at-a-possible-uptrend/slideshow/131215239.cms",
+      "title": "Positive Breakout: These 7 stocks cross above their 200 DMAs",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/positive-breakout-these-7-stocks-cross-above-their-200-dmas/slideshow/131238395.cms",
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-05-20T05:17:05.797Z",
-      "summary": "Angel One among 5 stocks flashing bullish signals, hinting at a possible uptrend",
+      "scrapedAt": "2026-05-21T05:20:46.643Z",
+      "summary": "Positive Breakout: These 7 stocks cross above their 200 DMAs",
       "isGlobal": true
     },
     {
-      "title": "Stocks to buy in 2026 for long term: NHPC, Bajaj Finance among 5 stocks that could give 20-30% return",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/news/stocks-to-buy-in-2026-for-long-term-nhpc-bajaj-finance-among-5-stocks-that-could-give-20-30-return/slideshow/131214627.cms",
+      "title": "Stocks to buy in 2026 for long term: IOC, Titan Company among 5 stocks that could give 10-40% return",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/stocks-to-buy-in-2026-for-long-term-ioc-titan-company-among-5-stocks-that-could-give-10-40-return/slideshow/131238331.cms",
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-05-20T05:17:05.797Z",
-      "summary": "Stocks to buy in 2026 for long term: NHPC, Bajaj Finance among 5 stocks that could give 20-30% return",
+      "scrapedAt": "2026-05-21T05:20:46.643Z",
+      "summary": "Stocks to buy in 2026 for long term: IOC, Titan Company among 5 stocks that could give 10-40% return",
       "isGlobal": true
     },
     {
-      "title": "These 6 banking stocks have an upside potential of up to 30% in 1 year, according to analysts",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/news/these-6-banking-stocks-have-an-upside-potential-of-up-to-30-in-1-year-according-to-analysts/articleshow/131209209.cms",
+      "title": "These mid-cap stocks with ‘Strong Buy’ & ‘Buy’ recos can rally over 25%, according to analysts",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/these-mid-cap-stocks-with-strong-buy-buy-recos-can-rally-over-25-according-to-analysts/articleshow/131231563.cms",
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-05-20T05:17:05.797Z",
-      "summary": "These 6 banking stocks have an upside potential of up to 30% in 1 year, according to analysts",
+      "scrapedAt": "2026-05-21T05:20:46.643Z",
+      "summary": "These mid-cap stocks with ‘Strong Buy’ & ‘Buy’ recos can rally over 25%, according to analysts",
       "isGlobal": true
     },
     {
-      "title": "Time to take the first step to become a contrarian? 4 mid-cap stocks from different sectors with upside potential up to 21%",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/news/time-to-take-the-first-step-to-become-a-contrarian-4-mid-cap-stocks-from-different-sectors-with-upside-potential-up-to-21/articleshow/131195318.cms",
+      "title": "For risk-takers with long-term perspective: 10 small-cap stocks from different sectors with upside potential of up to 31%",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/for-risk-takers-with-long-term-perspective-10-small-cap-stocks-from-different-sectors-with-upside-potential-of-up-to-31/articleshow/131221667.cms",
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-05-20T05:17:05.797Z",
-      "summary": "Time to take the first step to become a contrarian? 4 mid-cap stocks from different sectors with upside potential up to 21%",
+      "scrapedAt": "2026-05-21T05:20:46.644Z",
+      "summary": "For risk-takers with long-term perspective: 10 small-cap stocks from different sectors with upside potential of up to 31%",
       "isGlobal": true
     }
   ]
