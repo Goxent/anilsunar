@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-05-22T05:14:59.470Z",
-  "totalPosts": 9,
+  "lastUpdated": "2026-05-25T05:51:13.841Z",
+  "totalPosts": 10,
   "posts": {
     "ocrnepal_moqq27ad": {
       "headline": "OCR Nepal: वार्षिक विवरण अभिलेखनका पत्रहरू स्वचालित रूपमा प्राप्त ",
@@ -181,6 +181,26 @@
       "badgeColor": "#e65100",
       "link": "https://www.nrb.org.np/ofg/monetary-policy-2082-83-3rd-quarter-review/",
       "createdAt": "2026-05-18T05:19:10.525Z"
+    },
+    "nrbnepalpublicnoticeregardin_mpksfrd6": {
+      "headline": "NRB Nepal: Public Notice Regarding Contract: Layer 3 Manageable Sw",
+      "body": "🏦 Nepal Rastra Bank has a new directive!\n\n📌 Public Notice Regarding Contract: Layer 3 Manageable Switch\n\nThis update from NRB Nepal may affect banking compliance requirements for Nepal professionals.\n\n✅ Review the full notice and consult your advisor.\n\n🔗 https://www.nrb.org.np/gsd/public-notice-regarding-contract-layer-3-manageable-switch/",
+      "callToAction": "Share this with your team if relevant.",
+      "hashtags": [
+        "#Nepal",
+        "#Compliance",
+        "#CA",
+        "#NRBNepal"
+      ],
+      "bestTimeToPost": "Morning",
+      "topicBadge": "Banking",
+      "isTemplate": true,
+      "noticeId": "nrbnepalpublicnoticeregardin_mpksfrd6",
+      "noticeTitle": "Public Notice Regarding Contract: Layer 3 Manageable Switch",
+      "source": "NRB Nepal",
+      "badgeColor": "#e65100",
+      "link": "https://www.nrb.org.np/gsd/public-notice-regarding-contract-layer-3-manageable-switch/",
+      "createdAt": "2026-05-25T05:51:13.841Z"
     }
   }
 }

@@ -1,5 +1,5 @@
 {
-  "scrapedAt": "2026-05-22T05:14:17.937Z",
+  "scrapedAt": "2026-05-25T05:50:31.920Z",
   "totalCount": 24,
   "nepalCount": 16,
   "globalCount": 8,
@@ -16,13 +16,53 @@
   ],
   "articles": [
     {
-      "title": "निजी लगानी आकर्षित गर्ने खालको बजेट आउँछ: अर्थसचिव",
-      "url": "https://www.karobardaily.com/news/377221",
+      "title": "सेयर बजार झण्डै दुई सय अंकले घट्यो",
+      "url": "https://www.karobardaily.com/news/378111",
       "source": "Karobar Daily",
       "badge": "KD",
       "category": "Nepal Business",
-      "scrapedAt": "2026-05-22T05:13:55.700Z",
-      "summary": "निजी लगानी आकर्षित गर्ने खालको बजेट आउँछ: अर्थसचिव",
+      "scrapedAt": "2026-05-25T05:50:08.271Z",
+      "summary": "सेयर बजार झण्डै दुई सय अंकले घट्यो",
+      "isGlobal": false
+    },
+    {
+      "title": "खानेपानी लाइनमा छ करोड ५९ लाख बराबरको क्षति",
+      "url": "https://www.karobardaily.com/news/378039",
+      "source": "Karobar Daily",
+      "badge": "KD",
+      "category": "Nepal Business",
+      "scrapedAt": "2026-05-25T05:50:08.271Z",
+      "summary": "खानेपानी लाइनमा छ करोड ५९ लाख बराबरको क्षति",
+      "isGlobal": false
+    },
+    {
+      "title": "कामना सेवा विकास बैंकद्वारा नेपाल रेडक्रस सोसाइटीलाई डोनर बेड हस्तान्तरण",
+      "url": "https://www.karobardaily.com/news/378030",
+      "source": "Karobar Daily",
+      "badge": "KD",
+      "category": "Nepal Business",
+      "scrapedAt": "2026-05-25T05:50:08.272Z",
+      "summary": "कामना सेवा विकास बैंकद्वारा नेपाल रेडक्रस सोसाइटीलाई डोनर बेड हस्तान्तरण",
+      "isGlobal": false
+    },
+    {
+      "title": "२३ करोड ७७ लाख खानीको ‘रोयल्टी’ तत्काल उठाउन निर्देशन",
+      "url": "https://www.karobardaily.com/news/377982",
+      "source": "Karobar Daily",
+      "badge": "KD",
+      "category": "Nepal Business",
+      "scrapedAt": "2026-05-25T05:50:08.272Z",
+      "summary": "२३ करोड ७७ लाख खानीको ‘रोयल्टी’ तत्काल उठाउन निर्देशन",
+      "isGlobal": false
+    },
+    {
+      "title": "औद्योगिक करिडोरमा विशेष प्याकेज माग",
+      "url": "https://www.karobardaily.com/news/377973",
+      "source": "Karobar Daily",
+      "badge": "KD",
+      "category": "Nepal Business",
+      "scrapedAt": "2026-05-25T05:50:08.272Z",
+      "summary": "औद्योगिक करिडोरमा विशेष प्याकेज माग",
       "isGlobal": false
     },
     {
@@ -31,7 +71,7 @@
       "source": "Karobar Daily",
       "badge": "KD",
       "category": "Nepal Business",
-      "scrapedAt": "2026-05-22T05:13:55.700Z",
+      "scrapedAt": "2026-05-25T05:50:08.272Z",
       "summary": "रावा बैंकद्वारा ‘कोशी प्रदेश साना तथा मझौला उद्यम कर्जा’ लगानी",
       "isGlobal": false
     },
@@ -41,7 +81,7 @@
       "source": "Karobar Daily",
       "badge": "KD",
       "category": "Nepal Business",
-      "scrapedAt": "2026-05-22T05:13:55.700Z",
+      "scrapedAt": "2026-05-25T05:50:08.272Z",
       "summary": "सेयर बजारमा लगानी बढाउँदै बैंक",
       "isGlobal": false
     },
@@ -51,58 +91,18 @@
       "source": "Karobar Daily",
       "badge": "KD",
       "category": "Nepal Business",
-      "scrapedAt": "2026-05-22T05:13:55.700Z",
+      "scrapedAt": "2026-05-25T05:50:08.272Z",
       "summary": "जेठमा पनि घट्यो बैंक ब्याजदर",
       "isGlobal": false
     },
     {
-      "title": "४५ अर्ब निक्षेप खिच्दै राष्ट्र बैंक",
-      "url": "https://www.karobardaily.com/news/375110",
-      "source": "Karobar Daily",
-      "badge": "KD",
-      "category": "Nepal Business",
-      "scrapedAt": "2026-05-22T05:13:55.700Z",
-      "summary": "४५ अर्ब निक्षेप खिच्दै राष्ट्र बैंक",
-      "isGlobal": false
-    },
-    {
-      "title": "‘एलएस होराइजन १२’ योजनामा लगानीकर्ताको उत्साहजनक आवेदन",
-      "url": "https://www.karobardaily.com/news/377300",
-      "source": "Karobar Daily",
-      "badge": "KD",
-      "category": "Nepal Business",
-      "scrapedAt": "2026-05-22T05:13:55.700Z",
-      "summary": "‘एलएस होराइजन १२’ योजनामा लगानीकर्ताको उत्साहजनक आवेदन",
-      "isGlobal": false
-    },
-    {
-      "title": "मुक्तिनाथ विकास बैंकद्वारा व्हीलचेयर हस्तान्तरण",
-      "url": "https://www.karobardaily.com/news/376950",
-      "source": "Karobar Daily",
-      "badge": "KD",
-      "category": "Nepal Business",
-      "scrapedAt": "2026-05-22T05:13:55.701Z",
-      "summary": "मुक्तिनाथ विकास बैंकद्वारा व्हीलचेयर हस्तान्तरण",
-      "isGlobal": false
-    },
-    {
-      "title": "सानिमा जिआईसी इन्स्योरेन्सको आठौं वार्षिक साधारणसभाबाट लाभांश प्रस्ताव पारित",
-      "url": "https://www.karobardaily.com/news/376940",
-      "source": "Karobar Daily",
-      "badge": "KD",
-      "category": "Nepal Business",
-      "scrapedAt": "2026-05-22T05:13:55.701Z",
-      "summary": "सानिमा जिआईसी इन्स्योरेन्सको आठौं वार्षिक साधारणसभाबाट लाभांश प्रस्ताव पारित",
-      "isGlobal": false
-    },
-    {
-      "title": "Sector-Wise Trends in NEPSE Listings: A Two-Decade Analysis",
-      "url": "https://www.sharesansar.com/newsdetail/sector-wise-trends-in-nepse-listings-a-two-decade-analysis-2026-05-03",
+      "title": "How Matured Mutual Funds Performed in Nepal: A Dividend Trend Study",
+      "url": "https://www.sharesansar.com/newsdetail/how-matured-mutual-funds-performed-in-nepal-a-dividend-trend-study-2026-05-20",
       "source": "Sharesansar",
       "badge": "SS",
       "category": "Nepal Stock",
-      "scrapedAt": "2026-05-22T05:13:57.423Z",
-      "summary": "Sector-Wise Trends in NEPSE Listings: A Two-Decade Analysis",
+      "scrapedAt": "2026-05-25T05:50:09.993Z",
+      "summary": "How Matured Mutual Funds Performed in Nepal: A Dividend Trend Study",
       "isGlobal": false
     },
     {
@@ -111,7 +111,7 @@
       "source": "Sharesansar",
       "badge": "SS",
       "category": "Nepal Stock",
-      "scrapedAt": "2026-05-22T05:13:57.423Z",
+      "scrapedAt": "2026-05-25T05:50:09.993Z",
       "summary": "Proposed Dividend",
       "isGlobal": false
     },
@@ -121,18 +121,18 @@
       "source": "Sharesansar",
       "badge": "SS",
       "category": "Nepal Stock",
-      "scrapedAt": "2026-05-22T05:13:57.423Z",
+      "scrapedAt": "2026-05-25T05:50:09.993Z",
       "summary": "Dividend, Bonus & Rights",
       "isGlobal": false
     },
     {
-      "title": "NEPSE Concludes The Week With 0.50% Loss and Turnover of Rs 18.47 Arba; Weekly Summary with Sector Comparison, Major Highlights, and More",
+      "title": "NEPSE Concludes The Week With 0.97% Gain and Turnover of Rs 17.75 Arba; Weekly Summary with Sector Comparison, Major Highlights, and More",
       "url": "https://www.sharesansar.com/",
       "source": "Sharesansar",
       "badge": "SS",
       "category": "Nepal Stock",
-      "scrapedAt": "2026-05-22T05:13:57.424Z",
-      "summary": "NEPSE Concludes The Week With 0.50% Loss and Turnover of Rs 18.47 Arba; Weekly Summary with Sector Comparison, Major Highlights, and More",
+      "scrapedAt": "2026-05-25T05:50:09.993Z",
+      "summary": "NEPSE Concludes The Week With 0.97% Gain and Turnover of Rs 17.75 Arba; Weekly Summary with Sector Comparison, Major Highlights, and More",
       "isGlobal": false
     },
     {
@@ -141,7 +141,7 @@
       "source": "Sharesansar",
       "badge": "SS",
       "category": "Nepal Stock",
-      "scrapedAt": "2026-05-22T05:13:57.424Z",
+      "scrapedAt": "2026-05-25T05:50:09.993Z",
       "summary": "Snow River IPO Opens Today; Should You Invest in This Hydro? Take a Closer Look",
       "isGlobal": false
     },
@@ -151,7 +151,7 @@
       "source": "Nepali Paisa",
       "badge": "NP",
       "category": "Nepal Finance",
-      "scrapedAt": "2026-05-22T05:13:59.424Z",
+      "scrapedAt": "2026-05-25T05:50:12.270Z",
       "summary": "Market Overview",
       "isGlobal": false
     },
@@ -161,7 +161,7 @@
       "source": "Nepali Paisa",
       "badge": "NP",
       "category": "Nepal Finance",
-      "scrapedAt": "2026-05-22T05:13:59.424Z",
+      "scrapedAt": "2026-05-25T05:50:12.270Z",
       "summary": "Stocks Up & Down",
       "isGlobal": false
     },
@@ -171,7 +171,7 @@
       "source": "Nepali Paisa",
       "badge": "NP",
       "category": "Nepal Finance",
-      "scrapedAt": "2026-05-22T05:13:59.424Z",
+      "scrapedAt": "2026-05-25T05:50:12.270Z",
       "summary": "Business & Economy",
       "isGlobal": false
     }
@@ -183,78 +183,78 @@
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-05-22T05:14:16.433Z",
+      "scrapedAt": "2026-05-25T05:50:30.418Z",
       "summary": "Markets just got Conversational",
       "isGlobal": true
     },
     {
-      "title": "​Aditya Birla Fashion among 5 stocks flashing bullish signals, hinting at a possible uptrend",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/news/aditya-birla-fashion-among-5-stocks-flashing-bullish-signals-hinting-at-a-possible-uptrend/slideshow/131255559.cms",
+      "title": "​A Tougher Fed? Markets brace for policy shift under Kevin Warsh",
+      "url": "https://economictimes.indiatimes.com/markets/us-stocks/news/a-tougher-fed-markets-brace-for-policy-shift-under-kevin-warsh/slideshow/131302472.cms",
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-05-22T05:14:16.434Z",
-      "summary": "​Aditya Birla Fashion among 5 stocks flashing bullish signals, hinting at a possible uptrend",
+      "scrapedAt": "2026-05-25T05:50:30.419Z",
+      "summary": "​A Tougher Fed? Markets brace for policy shift under Kevin Warsh",
       "isGlobal": true
     },
     {
-      "title": "Bosch among 5 F&O stocks with a sharp rise in futures open interest",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/news/bosch-among-5-fo-stocks-with-a-sharp-rise-in-futures-open-interest/slideshow/131255516.cms",
+      "title": "Global Market Outlook: Inflation, War and AI keep investors on edge",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/global-market-outlook-inflation-war-and-ai-keep-investors-on-edge/slideshow/131302488.cms",
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-05-22T05:14:16.434Z",
-      "summary": "Bosch among 5 F&O stocks with a sharp rise in futures open interest",
+      "scrapedAt": "2026-05-25T05:50:30.419Z",
+      "summary": "Global Market Outlook: Inflation, War and AI keep investors on edge",
       "isGlobal": true
     },
     {
-      "title": "JSW Cement among 6 stocks showing bullish RSI upswing",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/news/jsw-cement-among-6-stocks-showing-bullish-rsi-upswing/slideshow/131255455.cms",
+      "title": "Kaynes Technology among 4 stocks flashing bullish signals, hinting at a possible uptrend",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/kaynes-technology-among-4-stocks-flashing-bullish-signals-hinting-at-a-possible-uptrend/slideshow/131299879.cms",
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-05-22T05:14:16.434Z",
-      "summary": "JSW Cement among 6 stocks showing bullish RSI upswing",
+      "scrapedAt": "2026-05-25T05:50:30.419Z",
+      "summary": "Kaynes Technology among 4 stocks flashing bullish signals, hinting at a possible uptrend",
       "isGlobal": true
     },
     {
-      "title": "Stocks to buy in 2026 for long term: Jubilant FoodWorks, Grasim among 5 stocks that could give 10-30% return",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/news/stocks-to-buy-in-2026-for-long-term-jubilant-foodworks-grasim-among-5-stocks-that-could-give-10-30-return/slideshow/131255337.cms",
+      "title": "LIC of India among 5 largecap stocks showing bullish RSI upswing",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/lic-of-india-among-5-largecap-stocks-showing-bullish-rsi-upswing/slideshow/131299847.cms",
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-05-22T05:14:16.434Z",
-      "summary": "Stocks to buy in 2026 for long term: Jubilant FoodWorks, Grasim among 5 stocks that could give 10-30% return",
+      "scrapedAt": "2026-05-25T05:50:30.419Z",
+      "summary": "LIC of India among 5 largecap stocks showing bullish RSI upswing",
       "isGlobal": true
     },
     {
-      "title": "Buyback alert! 5 stocks turning ex-record dates for share buybacks in May. Check details",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/news/buyback-alert-5-stocks-turning-ex-record-dates-for-share-buybacks-in-may-check-details/slideshow/131255240.cms",
+      "title": "Stocks to buy in 2026 for long term: ITC, NYKAA among 5 stocks that could give 10-20% return",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/stocks-to-buy-in-2026-for-long-term-itc-nykaa-among-5-stocks-that-could-give-10-20-return/slideshow/131299488.cms",
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-05-22T05:14:16.434Z",
-      "summary": "Buyback alert! 5 stocks turning ex-record dates for share buybacks in May. Check details",
+      "scrapedAt": "2026-05-25T05:50:30.419Z",
+      "summary": "Stocks to buy in 2026 for long term: ITC, NYKAA among 5 stocks that could give 10-20% return",
       "isGlobal": true
     },
     {
-      "title": "These large- and mid-cap stocks can give more than 25% return in 1 year, according to analysts",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/news/these-large-and-mid-cap-stocks-can-give-more-than-25-return-in-1-year-according-to-analysts/articleshow/131250857.cms",
+      "title": "Top Nifty50 stocks analysts suggest buying in this volatile week",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/top-nifty50-stocks-analysts-suggest-buying-in-this-volatile-week/articleshow/131302090.cms",
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-05-22T05:14:16.434Z",
-      "summary": "These large- and mid-cap stocks can give more than 25% return in 1 year, according to analysts",
+      "scrapedAt": "2026-05-25T05:50:30.419Z",
+      "summary": "Top Nifty50 stocks analysts suggest buying in this volatile week",
       "isGlobal": true
     },
     {
-      "title": "Weekly Top Picks: These stocks scored 10 on 10 on Stock Reports Plus",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/news/weekly-top-picks-these-stocks-scored-10-on-10-on-stock-reports-plus/articleshow/131244573.cms",
+      "title": "For both the compulsive trader and careful investor: 25 stocks to watch if risk appetite returns; some with upside potential, some not",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/for-both-the-compulsive-trader-and-careful-investor-25-stocks-to-watch-if-risk-appetite-returns-some-with-upside-potential-some-not/articleshow/131291505.cms",
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-05-22T05:14:16.434Z",
-      "summary": "Weekly Top Picks: These stocks scored 10 on 10 on Stock Reports Plus",
+      "scrapedAt": "2026-05-25T05:50:30.419Z",
+      "summary": "For both the compulsive trader and careful investor: 25 stocks to watch if risk appetite returns; some with upside potential, some not",
       "isGlobal": true
     }
   ]
