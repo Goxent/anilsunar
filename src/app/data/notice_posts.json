@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-05-27T05:43:37.331Z",
-  "totalPosts": 10,
+  "lastUpdated": "2026-05-28T05:21:33.193Z",
+  "totalPosts": 11,
   "posts": {
     "ocrnepal_moqq27ad": {
       "headline": "OCR Nepal: वार्षिक विवरण अभिलेखनका पत्रहरू स्वचालित रूपमा प्राप्त ",
@@ -201,6 +201,26 @@
       "badgeColor": "#e65100",
       "link": "https://www.nrb.org.np/gsd/public-notice-regarding-contract-layer-3-manageable-switch/",
       "createdAt": "2026-05-25T05:51:13.841Z"
+    },
+    "nrbnepalnoticeforletterofint_mpp1p5f3": {
+      "headline": "NRB Nepal: Notice for Letter of Intent regarding Design, Develop, ",
+      "body": "🏦 Nepal Rastra Bank has a new directive!\n\n📌 Notice for Letter of Intent regarding Design, Develop, Install, Commissioning and Maintenance of “Risk Based Internal Audit (RBIA)” Software\n\nThis update from NRB Nepal may affect banking compliance requirements for Nepal professionals.\n\n✅ Review the full notice and consult your advisor.\n\n🔗 https://www.nrb.org.np/gsd/notice-for-letter-of-intent-regarding-design-develop-install-commissioning-and-maintenance-of-risk-based-internal-audit-rbia-software/",
+      "callToAction": "Share this with your team if relevant.",
+      "hashtags": [
+        "#Nepal",
+        "#Compliance",
+        "#CA",
+        "#NRBNepal"
+      ],
+      "bestTimeToPost": "Morning",
+      "topicBadge": "Banking",
+      "isTemplate": true,
+      "noticeId": "nrbnepalnoticeforletterofint_mpp1p5f3",
+      "noticeTitle": "Notice for Letter of Intent regarding Design, Develop, Install, Commissioning and Maintenance of “Risk Based Internal Audit (RBIA)” Software",
+      "source": "NRB Nepal",
+      "badgeColor": "#e65100",
+      "link": "https://www.nrb.org.np/gsd/notice-for-letter-of-intent-regarding-design-develop-install-commissioning-and-maintenance-of-risk-based-internal-audit-rbia-software/",
+      "createdAt": "2026-05-28T05:21:33.192Z"
     }
   }
 }

@@ -1,5 +1,5 @@
 {
-  "scrapedAt": "2026-05-27T05:42:53.574Z",
+  "scrapedAt": "2026-05-28T05:20:51.105Z",
   "totalCount": 24,
   "nepalCount": 16,
   "globalCount": 8,
@@ -16,33 +16,43 @@
   ],
   "articles": [
     {
+      "title": "नाफा बढ्यो, लाभांश घट्यो",
+      "url": "https://www.karobardaily.com/news/379007",
+      "source": "Karobar Daily",
+      "badge": "KD",
+      "category": "Nepal Business",
+      "scrapedAt": "2026-05-28T05:20:32.782Z",
+      "summary": "नाफा बढ्यो, लाभांश घट्यो",
+      "isGlobal": false
+    },
+    {
+      "title": "अर्थतन्त्रभित्रका समस्या र आगामी बजेटको दिशा",
+      "url": "https://www.karobardaily.com/news/378982",
+      "source": "Karobar Daily",
+      "badge": "KD",
+      "category": "Nepal Business",
+      "scrapedAt": "2026-05-28T05:20:32.783Z",
+      "summary": "अर्थतन्त्रभित्रका समस्या र आगामी बजेटको दिशा",
+      "isGlobal": false
+    },
+    {
+      "title": "अर्थतन्त्रको आकार ६६ खर्ब, कृषि क्षेत्र सुस्त, पेट्रोलियम पदार्थको खपत क्रमश: घट्दो",
+      "url": "https://www.karobardaily.com/news/378878",
+      "source": "Karobar Daily",
+      "badge": "KD",
+      "category": "Nepal Business",
+      "scrapedAt": "2026-05-28T05:20:32.783Z",
+      "summary": "अर्थतन्त्रको आकार ६६ खर्ब, कृषि क्षेत्र सुस्त, पेट्रोलियम पदार्थको खपत क्रमश: घट्दो",
+      "isGlobal": false
+    },
+    {
       "title": "वैकल्पिक ऊर्जा प्रवर्द्धन केन्द्रलाई नवीकरणीय ऊर्जा दक्षता केन्द्र बनाइँदै",
       "url": "https://www.karobardaily.com/news/378800",
       "source": "Karobar Daily",
       "badge": "KD",
       "category": "Nepal Business",
-      "scrapedAt": "2026-05-27T05:42:34.886Z",
+      "scrapedAt": "2026-05-28T05:20:32.783Z",
       "summary": "वैकल्पिक ऊर्जा प्रवर्द्धन केन्द्रलाई नवीकरणीय ऊर्जा दक्षता केन्द्र बनाइँदै",
-      "isGlobal": false
-    },
-    {
-      "title": "‘उच्च कर घटाउ, व्यवसायीलाई अपराधीझैँ व्यवहार नगर’",
-      "url": "https://www.karobardaily.com/news/378666",
-      "source": "Karobar Daily",
-      "badge": "KD",
-      "category": "Nepal Business",
-      "scrapedAt": "2026-05-27T05:42:34.886Z",
-      "summary": "‘उच्च कर घटाउ, व्यवसायीलाई अपराधीझैँ व्यवहार नगर’",
-      "isGlobal": false
-    },
-    {
-      "title": "मुक्तिनाथ विकास बैंकको फाइदा एपबाट ‘सेल्फ रिन्यु’ सुविधा सुरु",
-      "url": "https://www.karobardaily.com/news/378734",
-      "source": "Karobar Daily",
-      "badge": "KD",
-      "category": "Nepal Business",
-      "scrapedAt": "2026-05-27T05:42:34.887Z",
-      "summary": "मुक्तिनाथ विकास बैंकको फाइदा एपबाट ‘सेल्फ रिन्यु’ सुविधा सुरु",
       "isGlobal": false
     },
     {
@@ -51,7 +61,7 @@
       "source": "Karobar Daily",
       "badge": "KD",
       "category": "Nepal Business",
-      "scrapedAt": "2026-05-27T05:42:34.887Z",
+      "scrapedAt": "2026-05-28T05:20:32.783Z",
       "summary": "निक्षेप फिर्ता लम्बिँदा बचतकर्ता तनावमा",
       "isGlobal": false
     },
@@ -61,7 +71,7 @@
       "source": "Karobar Daily",
       "badge": "KD",
       "category": "Nepal Business",
-      "scrapedAt": "2026-05-27T05:42:34.887Z",
+      "scrapedAt": "2026-05-28T05:20:32.783Z",
       "summary": "रावा बैंकद्वारा ‘कोशी प्रदेश साना तथा मझौला उद्यम कर्जा’ लगानी",
       "isGlobal": false
     },
@@ -71,7 +81,7 @@
       "source": "Karobar Daily",
       "badge": "KD",
       "category": "Nepal Business",
-      "scrapedAt": "2026-05-27T05:42:34.887Z",
+      "scrapedAt": "2026-05-28T05:20:32.783Z",
       "summary": "सेयर बजारमा लगानी बढाउँदै बैंक",
       "isGlobal": false
     },
@@ -81,18 +91,8 @@
       "source": "Karobar Daily",
       "badge": "KD",
       "category": "Nepal Business",
-      "scrapedAt": "2026-05-27T05:42:34.887Z",
+      "scrapedAt": "2026-05-28T05:20:32.783Z",
       "summary": "जेठमा पनि घट्यो बैंक ब्याजदर",
-      "isGlobal": false
-    },
-    {
-      "title": "एनआईसी एशिया बैंकद्वारा श्री दुधमती राष्ट्रिय प्राथमिक विद्यालयमा सहयोग",
-      "url": "https://www.karobardaily.com/news/378684",
-      "source": "Karobar Daily",
-      "badge": "KD",
-      "category": "Nepal Business",
-      "scrapedAt": "2026-05-27T05:42:34.887Z",
-      "summary": "एनआईसी एशिया बैंकद्वारा श्री दुधमती राष्ट्रिय प्राथमिक विद्यालयमा सहयोग",
       "isGlobal": false
     },
     {
@@ -101,7 +101,7 @@
       "source": "Sharesansar",
       "badge": "SS",
       "category": "Nepal Stock",
-      "scrapedAt": "2026-05-27T05:42:37.074Z",
+      "scrapedAt": "2026-05-28T05:20:34.539Z",
       "summary": "How Matured Mutual Funds Performed in Nepal: A Dividend Trend Study",
       "isGlobal": false
     },
@@ -111,7 +111,7 @@
       "source": "Sharesansar",
       "badge": "SS",
       "category": "Nepal Stock",
-      "scrapedAt": "2026-05-27T05:42:37.074Z",
+      "scrapedAt": "2026-05-28T05:20:34.539Z",
       "summary": "Proposed Dividend",
       "isGlobal": false
     },
@@ -121,7 +121,7 @@
       "source": "Sharesansar",
       "badge": "SS",
       "category": "Nepal Stock",
-      "scrapedAt": "2026-05-27T05:42:37.074Z",
+      "scrapedAt": "2026-05-28T05:20:34.539Z",
       "summary": "Dividend, Bonus & Rights",
       "isGlobal": false
     },
@@ -131,7 +131,7 @@
       "source": "Sharesansar",
       "badge": "SS",
       "category": "Nepal Stock",
-      "scrapedAt": "2026-05-27T05:42:37.074Z",
+      "scrapedAt": "2026-05-28T05:20:34.539Z",
       "summary": "NEPSE Concludes The Week With 0.97% Gain and Turnover of Rs 17.75 Arba; Weekly Summary with Sector Comparison, Major Highlights, and More",
       "isGlobal": false
     },
@@ -141,7 +141,7 @@
       "source": "Sharesansar",
       "badge": "SS",
       "category": "Nepal Stock",
-      "scrapedAt": "2026-05-27T05:42:37.074Z",
+      "scrapedAt": "2026-05-28T05:20:34.539Z",
       "summary": "Snow River IPO Opens Today; Should You Invest in This Hydro? Take a Closer Look",
       "isGlobal": false
     },
@@ -151,7 +151,7 @@
       "source": "Nepali Paisa",
       "badge": "NP",
       "category": "Nepal Finance",
-      "scrapedAt": "2026-05-27T05:42:40.279Z",
+      "scrapedAt": "2026-05-28T05:20:36.555Z",
       "summary": "Market Overview",
       "isGlobal": false
     },
@@ -161,7 +161,7 @@
       "source": "Nepali Paisa",
       "badge": "NP",
       "category": "Nepal Finance",
-      "scrapedAt": "2026-05-27T05:42:40.279Z",
+      "scrapedAt": "2026-05-28T05:20:36.555Z",
       "summary": "Stocks Up & Down",
       "isGlobal": false
     },
@@ -171,7 +171,7 @@
       "source": "Nepali Paisa",
       "badge": "NP",
       "category": "Nepal Finance",
-      "scrapedAt": "2026-05-27T05:42:40.279Z",
+      "scrapedAt": "2026-05-28T05:20:36.555Z",
       "summary": "Business & Economy",
       "isGlobal": false
     }
@@ -183,78 +183,78 @@
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-05-27T05:42:52.072Z",
+      "scrapedAt": "2026-05-28T05:20:49.604Z",
       "summary": "Markets just got Conversational",
       "isGlobal": true
     },
     {
-      "title": "Adani Power among 4 stocks flashing bullish signals, hinting at a possible uptrend",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/news/adani-power-among-4-stocks-flashing-bullish-signals-hinting-at-a-possible-uptrend/slideshow/131340686.cms",
+      "title": "Bharti Airtel, HAL, among 7 stocks that have upside potential of up 28%. Do you own any?",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/bharti-airtel-hal-among-7-stocks-that-have-upside-potential-of-up-28-do-you-own-any/slideshow/131362376.cms",
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-05-27T05:42:52.072Z",
-      "summary": "Adani Power among 4 stocks flashing bullish signals, hinting at a possible uptrend",
+      "scrapedAt": "2026-05-28T05:20:49.604Z",
+      "summary": "Bharti Airtel, HAL, among 7 stocks that have upside potential of up 28%. Do you own any?",
       "isGlobal": true
     },
     {
-      "title": "​Info Edge among 5 stocks showing bullish RSI upswing",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/news/info-edge-among-5-stocks-showing-bullish-rsi-upswing/slideshow/131340493.cms",
+      "title": "DIIs consistently increase stake in 10 large-cap stocks for 4 consecutive quarters",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/diis-consistently-increase-stake-in-10-large-cap-stocks-for-4-consecutive-quarters/slideshow/131351864.cms",
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-05-27T05:42:52.072Z",
-      "summary": "​Info Edge among 5 stocks showing bullish RSI upswing",
+      "scrapedAt": "2026-05-28T05:20:49.604Z",
+      "summary": "DIIs consistently increase stake in 10 large-cap stocks for 4 consecutive quarters",
       "isGlobal": true
     },
     {
-      "title": "Negative Breakout: These 6 stocks cross below their 200 DMAs",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/news/negative-breakout-these-6-stocks-cross-below-their-200-dmas/slideshow/131340128.cms",
+      "title": "Adani Enterprises among 8 stocksthathit 52-week highs&ralliedup to 30% in a month​",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/adani-enterprises-among-8-stocksthathit-52-week-highsampralliedup-to-30-in-a-month/slideshow/131351478.cms",
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-05-27T05:42:52.072Z",
-      "summary": "Negative Breakout: These 6 stocks cross below their 200 DMAs",
+      "scrapedAt": "2026-05-28T05:20:49.604Z",
+      "summary": "Adani Enterprises among 8 stocksthathit 52-week highs&ralliedup to 30% in a month​",
       "isGlobal": true
     },
     {
-      "title": "Stocks to buy in 2026 for long term: Suzlon, Fortis Healthcare among 5 stocks that could give 10-60% returns",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/news/stocks-to-buy-in-2026-for-long-term-suzlon-fortis-healthcare-among-5-stocks-that-could-give-10-60-returns/slideshow/131340054.cms",
+      "title": "Gainers & Losers: LIC, HDFC Bank among 7 top movers on Wednesday",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/gainers-amp-losers-lic-hdfc-bank-among-7-top-movers-on-wednesday/slideshow/131351282.cms",
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-05-27T05:42:52.072Z",
-      "summary": "Stocks to buy in 2026 for long term: Suzlon, Fortis Healthcare among 5 stocks that could give 10-60% returns",
+      "scrapedAt": "2026-05-28T05:20:49.604Z",
+      "summary": "Gainers & Losers: LIC, HDFC Bank among 7 top movers on Wednesday",
       "isGlobal": true
     },
     {
-      "title": "Market Trading Guide: Buy Adani Power, Netweb and 2 more stocks on Wednesday for gains up to 25%",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/news/market-trading-guide-buy-adani-power-netweb-and-2-more-stocks-on-wednesday-for-gains-up-to-25/slideshow/131332198.cms",
+      "title": "Multibaggers: 12 stocks with profit margins above 10% for 4 straight quarters. Do you own any?",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/multibaggers-12-stocks-with-profit-margins-above-10-for-4-straight-quarters-do-you-own-any/slideshow/131346240.cms",
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-05-27T05:42:52.072Z",
-      "summary": "Market Trading Guide: Buy Adani Power, Netweb and 2 more stocks on Wednesday for gains up to 25%",
+      "scrapedAt": "2026-05-28T05:20:49.604Z",
+      "summary": "Multibaggers: 12 stocks with profit margins above 10% for 4 straight quarters. Do you own any?",
       "isGlobal": true
     },
     {
-      "title": "These 9 banking stocks have an upside potential of up to 32% in 1 year, according to analysts",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/news/these-9-banking-stocks-have-an-upside-potential-of-up-to-32-in-1-year-according-to-analysts/articleshow/131335500.cms",
+      "title": "These mid-cap stocks with ‘Strong Buy’ & ‘Buy’ recos can rally over 25%, according to analysts",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/these-mid-cap-stocks-with-strong-buy-buy-recos-can-rally-over-25-according-to-analysts/articleshow/131357274.cms",
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-05-27T05:42:52.072Z",
-      "summary": "These 9 banking stocks have an upside potential of up to 32% in 1 year, according to analysts",
+      "scrapedAt": "2026-05-28T05:20:49.604Z",
+      "summary": "These mid-cap stocks with ‘Strong Buy’ & ‘Buy’ recos can rally over 25%, according to analysts",
       "isGlobal": true
     },
     {
-      "title": "Stock Radar: Narayana Hrudayalaya stock breaks out from inverse head & shoulder pattern; time to buy?",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/news/stock-radar-narayana-hrudayalaya-stock-breaks-out-from-inverse-head-shoulder-pattern-time-to-buy/articleshow/131326253.cms",
+      "title": "Time to think of the repair cycle? 8 engineering stocks from India’s capital goods ecosystem with upside potential of up to 26%",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/time-to-think-of-the-repair-cycle-8-engineering-stocks-from-indias-capital-goods-ecosystem-with-upside-potential-of-up-to-26/articleshow/131344979.cms",
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-05-27T05:42:52.072Z",
-      "summary": "Stock Radar: Narayana Hrudayalaya stock breaks out from inverse head & shoulder pattern; time to buy?",
+      "scrapedAt": "2026-05-28T05:20:49.604Z",
+      "summary": "Time to think of the repair cycle? 8 engineering stocks from India’s capital goods ecosystem with upside potential of up to 26%",
       "isGlobal": true
     }
   ]

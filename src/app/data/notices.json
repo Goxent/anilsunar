@@ -1,8 +1,21 @@
 {
-  "lastUpdated": "2026-05-27T05:43:25.155Z",
-  "totalCount": 50,
-  "newCount": 0,
+  "lastUpdated": "2026-05-28T05:21:21.062Z",
+  "totalCount": 51,
+  "newCount": 1,
   "notices": [
+    {
+      "id": "nrbnepalnoticeforletterofint_mpp1p5f3",
+      "title": "Notice for Letter of Intent regarding Design, Develop, Install, Commissioning and Maintenance of “Risk Based Internal Audit (RBIA)” Software",
+      "source": "NRB Nepal",
+      "category": "Banking",
+      "badge": "NRB",
+      "badgeColor": "#e65100",
+      "link": "https://www.nrb.org.np/gsd/notice-for-letter-of-intent-regarding-design-develop-install-commissioning-and-maintenance-of-risk-based-internal-audit-rbia-software/",
+      "summary": "New Banking update from NRB Nepal: Notice for Letter of Intent regarding Design, Develop, Install, Commissioning and Maintenance of “Risk Based Internal Audit (RBIA)” Software",
+      "detectedAt": "2026-05-28T05:21:15.951Z",
+      "isNew": true,
+      "emailedAt": null
+    },
     {
       "id": "nrbnepalpublicnoticeregardin_mpksfrd6",
       "title": "Public Notice Regarding Contract for The Supply, Delivery and Installation of Layer 2 Manageable Switch",
