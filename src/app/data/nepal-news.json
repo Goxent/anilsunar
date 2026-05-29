@@ -1,5 +1,5 @@
 {
-  "scrapedAt": "2026-05-28T05:20:51.105Z",
+  "scrapedAt": "2026-05-29T05:40:38.254Z",
   "totalCount": 24,
   "nepalCount": 16,
   "globalCount": 8,
@@ -16,43 +16,23 @@
   ],
   "articles": [
     {
-      "title": "नाफा बढ्यो, लाभांश घट्यो",
-      "url": "https://www.karobardaily.com/news/379007",
+      "title": "कर्णालीसहित पर्यटन र पूर्वाधार निर्माण विशेष प्राथमिकतामा",
+      "url": "https://www.karobardaily.com/news/379347",
       "source": "Karobar Daily",
       "badge": "KD",
       "category": "Nepal Business",
-      "scrapedAt": "2026-05-28T05:20:32.782Z",
-      "summary": "नाफा बढ्यो, लाभांश घट्यो",
+      "scrapedAt": "2026-05-29T05:40:11.224Z",
+      "summary": "कर्णालीसहित पर्यटन र पूर्वाधार निर्माण विशेष प्राथमिकतामा",
       "isGlobal": false
     },
     {
-      "title": "अर्थतन्त्रभित्रका समस्या र आगामी बजेटको दिशा",
-      "url": "https://www.karobardaily.com/news/378982",
+      "title": "जनताको मुहारमा मुलुकको अर्थतन्त्र",
+      "url": "https://www.karobardaily.com/news/379303",
       "source": "Karobar Daily",
       "badge": "KD",
       "category": "Nepal Business",
-      "scrapedAt": "2026-05-28T05:20:32.783Z",
-      "summary": "अर्थतन्त्रभित्रका समस्या र आगामी बजेटको दिशा",
-      "isGlobal": false
-    },
-    {
-      "title": "अर्थतन्त्रको आकार ६६ खर्ब, कृषि क्षेत्र सुस्त, पेट्रोलियम पदार्थको खपत क्रमश: घट्दो",
-      "url": "https://www.karobardaily.com/news/378878",
-      "source": "Karobar Daily",
-      "badge": "KD",
-      "category": "Nepal Business",
-      "scrapedAt": "2026-05-28T05:20:32.783Z",
-      "summary": "अर्थतन्त्रको आकार ६६ खर्ब, कृषि क्षेत्र सुस्त, पेट्रोलियम पदार्थको खपत क्रमश: घट्दो",
-      "isGlobal": false
-    },
-    {
-      "title": "वैकल्पिक ऊर्जा प्रवर्द्धन केन्द्रलाई नवीकरणीय ऊर्जा दक्षता केन्द्र बनाइँदै",
-      "url": "https://www.karobardaily.com/news/378800",
-      "source": "Karobar Daily",
-      "badge": "KD",
-      "category": "Nepal Business",
-      "scrapedAt": "2026-05-28T05:20:32.783Z",
-      "summary": "वैकल्पिक ऊर्जा प्रवर्द्धन केन्द्रलाई नवीकरणीय ऊर्जा दक्षता केन्द्र बनाइँदै",
+      "scrapedAt": "2026-05-29T05:40:11.225Z",
+      "summary": "जनताको मुहारमा मुलुकको अर्थतन्त्र",
       "isGlobal": false
     },
     {
@@ -61,7 +41,7 @@
       "source": "Karobar Daily",
       "badge": "KD",
       "category": "Nepal Business",
-      "scrapedAt": "2026-05-28T05:20:32.783Z",
+      "scrapedAt": "2026-05-29T05:40:11.225Z",
       "summary": "निक्षेप फिर्ता लम्बिँदा बचतकर्ता तनावमा",
       "isGlobal": false
     },
@@ -71,7 +51,7 @@
       "source": "Karobar Daily",
       "badge": "KD",
       "category": "Nepal Business",
-      "scrapedAt": "2026-05-28T05:20:32.783Z",
+      "scrapedAt": "2026-05-29T05:40:11.225Z",
       "summary": "रावा बैंकद्वारा ‘कोशी प्रदेश साना तथा मझौला उद्यम कर्जा’ लगानी",
       "isGlobal": false
     },
@@ -81,7 +61,7 @@
       "source": "Karobar Daily",
       "badge": "KD",
       "category": "Nepal Business",
-      "scrapedAt": "2026-05-28T05:20:32.783Z",
+      "scrapedAt": "2026-05-29T05:40:11.225Z",
       "summary": "सेयर बजारमा लगानी बढाउँदै बैंक",
       "isGlobal": false
     },
@@ -91,8 +71,28 @@
       "source": "Karobar Daily",
       "badge": "KD",
       "category": "Nepal Business",
-      "scrapedAt": "2026-05-28T05:20:32.783Z",
+      "scrapedAt": "2026-05-29T05:40:11.225Z",
       "summary": "जेठमा पनि घट्यो बैंक ब्याजदर",
+      "isGlobal": false
+    },
+    {
+      "title": "नबिल बैंक र सीआईटीबीच सम्झौता",
+      "url": "https://www.karobardaily.com/news/379244",
+      "source": "Karobar Daily",
+      "badge": "KD",
+      "category": "Nepal Business",
+      "scrapedAt": "2026-05-29T05:40:11.225Z",
+      "summary": "नबिल बैंक र सीआईटीबीच सम्झौता",
+      "isGlobal": false
+    },
+    {
+      "title": "चार अंकले बढेको सेयर बजारमा कारोबार ६ अर्ब नाघ्यो",
+      "url": "https://www.karobardaily.com/news/378892",
+      "source": "Karobar Daily",
+      "badge": "KD",
+      "category": "Nepal Business",
+      "scrapedAt": "2026-05-29T05:40:11.225Z",
+      "summary": "चार अंकले बढेको सेयर बजारमा कारोबार ६ अर्ब नाघ्यो",
       "isGlobal": false
     },
     {
@@ -101,7 +101,7 @@
       "source": "Sharesansar",
       "badge": "SS",
       "category": "Nepal Stock",
-      "scrapedAt": "2026-05-28T05:20:34.539Z",
+      "scrapedAt": "2026-05-29T05:40:13.289Z",
       "summary": "How Matured Mutual Funds Performed in Nepal: A Dividend Trend Study",
       "isGlobal": false
     },
@@ -111,7 +111,7 @@
       "source": "Sharesansar",
       "badge": "SS",
       "category": "Nepal Stock",
-      "scrapedAt": "2026-05-28T05:20:34.539Z",
+      "scrapedAt": "2026-05-29T05:40:13.289Z",
       "summary": "Proposed Dividend",
       "isGlobal": false
     },
@@ -121,7 +121,7 @@
       "source": "Sharesansar",
       "badge": "SS",
       "category": "Nepal Stock",
-      "scrapedAt": "2026-05-28T05:20:34.539Z",
+      "scrapedAt": "2026-05-29T05:40:13.289Z",
       "summary": "Dividend, Bonus & Rights",
       "isGlobal": false
     },
@@ -131,7 +131,7 @@
       "source": "Sharesansar",
       "badge": "SS",
       "category": "Nepal Stock",
-      "scrapedAt": "2026-05-28T05:20:34.539Z",
+      "scrapedAt": "2026-05-29T05:40:13.289Z",
       "summary": "NEPSE Concludes The Week With 0.97% Gain and Turnover of Rs 17.75 Arba; Weekly Summary with Sector Comparison, Major Highlights, and More",
       "isGlobal": false
     },
@@ -141,7 +141,7 @@
       "source": "Sharesansar",
       "badge": "SS",
       "category": "Nepal Stock",
-      "scrapedAt": "2026-05-28T05:20:34.539Z",
+      "scrapedAt": "2026-05-29T05:40:13.289Z",
       "summary": "Snow River IPO Opens Today; Should You Invest in This Hydro? Take a Closer Look",
       "isGlobal": false
     },
@@ -151,7 +151,7 @@
       "source": "Nepali Paisa",
       "badge": "NP",
       "category": "Nepal Finance",
-      "scrapedAt": "2026-05-28T05:20:36.555Z",
+      "scrapedAt": "2026-05-29T05:40:15.503Z",
       "summary": "Market Overview",
       "isGlobal": false
     },
@@ -161,7 +161,7 @@
       "source": "Nepali Paisa",
       "badge": "NP",
       "category": "Nepal Finance",
-      "scrapedAt": "2026-05-28T05:20:36.555Z",
+      "scrapedAt": "2026-05-29T05:40:15.503Z",
       "summary": "Stocks Up & Down",
       "isGlobal": false
     },
@@ -171,7 +171,7 @@
       "source": "Nepali Paisa",
       "badge": "NP",
       "category": "Nepal Finance",
-      "scrapedAt": "2026-05-28T05:20:36.555Z",
+      "scrapedAt": "2026-05-29T05:40:15.503Z",
       "summary": "Business & Economy",
       "isGlobal": false
     }
@@ -183,78 +183,78 @@
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-05-28T05:20:49.604Z",
+      "scrapedAt": "2026-05-29T05:40:36.751Z",
       "summary": "Markets just got Conversational",
       "isGlobal": true
     },
     {
-      "title": "Bharti Airtel, HAL, among 7 stocks that have upside potential of up 28%. Do you own any?",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/news/bharti-airtel-hal-among-7-stocks-that-have-upside-potential-of-up-28-do-you-own-any/slideshow/131362376.cms",
+      "title": "Jaiprakash Power among 5 stocks that closed crossing above VWAP",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/jaiprakash-power-among-5-stocks-that-closed-crossing-above-vwap/slideshow/131382069.cms",
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-05-28T05:20:49.604Z",
-      "summary": "Bharti Airtel, HAL, among 7 stocks that have upside potential of up 28%. Do you own any?",
+      "scrapedAt": "2026-05-29T05:40:36.751Z",
+      "summary": "Jaiprakash Power among 5 stocks that closed crossing above VWAP",
       "isGlobal": true
     },
     {
-      "title": "DIIs consistently increase stake in 10 large-cap stocks for 4 consecutive quarters",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/news/diis-consistently-increase-stake-in-10-large-cap-stocks-for-4-consecutive-quarters/slideshow/131351864.cms",
+      "title": "Tata Motors PV among 4 stocks flashing bullish signals, hinting at a possible uptrend",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/tata-motors-pv-among-4-stocks-flashing-bullish-signals-hinting-at-a-possible-uptrend/slideshow/131381039.cms",
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-05-28T05:20:49.604Z",
-      "summary": "DIIs consistently increase stake in 10 large-cap stocks for 4 consecutive quarters",
+      "scrapedAt": "2026-05-29T05:40:36.751Z",
+      "summary": "Tata Motors PV among 4 stocks flashing bullish signals, hinting at a possible uptrend",
       "isGlobal": true
     },
     {
-      "title": "Adani Enterprises among 8 stocksthathit 52-week highs&ralliedup to 30% in a month​",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/news/adani-enterprises-among-8-stocksthathit-52-week-highsampralliedup-to-30-in-a-month/slideshow/131351478.cms",
+      "title": "Zee Entertainment among 5 stocks showing bullish RSI upswing",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/zee-entertainment-among-5-stocks-showing-bullish-rsi-upswing/slideshow/131380954.cms",
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-05-28T05:20:49.604Z",
-      "summary": "Adani Enterprises among 8 stocksthathit 52-week highs&ralliedup to 30% in a month​",
+      "scrapedAt": "2026-05-29T05:40:36.751Z",
+      "summary": "Zee Entertainment among 5 stocks showing bullish RSI upswing",
       "isGlobal": true
     },
     {
-      "title": "Gainers & Losers: LIC, HDFC Bank among 7 top movers on Wednesday",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/news/gainers-amp-losers-lic-hdfc-bank-among-7-top-movers-on-wednesday/slideshow/131351282.cms",
+      "title": "Stocks to buy in 2026 for long term: Venus Pipes, Star Cement among 5 stocks that could give 10-30% return",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/stocks-to-buy-in-2026-for-long-term-venus-pipes-star-cement-among-5-stocks-that-could-give-10-30-return/slideshow/131380655.cms",
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-05-28T05:20:49.604Z",
-      "summary": "Gainers & Losers: LIC, HDFC Bank among 7 top movers on Wednesday",
+      "scrapedAt": "2026-05-29T05:40:36.752Z",
+      "summary": "Stocks to buy in 2026 for long term: Venus Pipes, Star Cement among 5 stocks that could give 10-30% return",
       "isGlobal": true
     },
     {
-      "title": "Multibaggers: 12 stocks with profit margins above 10% for 4 straight quarters. Do you own any?",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/news/multibaggers-12-stocks-with-profit-margins-above-10-for-4-straight-quarters-do-you-own-any/slideshow/131346240.cms",
+      "title": "Positive Breakout: These 11 stocks cross above their 200 DMAs",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/positive-breakout-these-11-stocks-cross-above-their-200-dmas/slideshow/131380110.cms",
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-05-28T05:20:49.604Z",
-      "summary": "Multibaggers: 12 stocks with profit margins above 10% for 4 straight quarters. Do you own any?",
+      "scrapedAt": "2026-05-29T05:40:36.752Z",
+      "summary": "Positive Breakout: These 11 stocks cross above their 200 DMAs",
       "isGlobal": true
     },
     {
-      "title": "These mid-cap stocks with ‘Strong Buy’ & ‘Buy’ recos can rally over 25%, according to analysts",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/news/these-mid-cap-stocks-with-strong-buy-buy-recos-can-rally-over-25-according-to-analysts/articleshow/131357274.cms",
+      "title": "These large- and mid-cap stocks can give more than 20% return in 1 year, according to analysts",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/these-large-and-mid-cap-stocks-can-give-more-than-20-return-in-1-year-according-to-analysts/articleshow/131375462.cms",
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-05-28T05:20:49.604Z",
-      "summary": "These mid-cap stocks with ‘Strong Buy’ & ‘Buy’ recos can rally over 25%, according to analysts",
+      "scrapedAt": "2026-05-29T05:40:36.752Z",
+      "summary": "These large- and mid-cap stocks can give more than 20% return in 1 year, according to analysts",
       "isGlobal": true
     },
     {
-      "title": "Time to think of the repair cycle? 8 engineering stocks from India’s capital goods ecosystem with upside potential of up to 26%",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/news/time-to-think-of-the-repair-cycle-8-engineering-stocks-from-indias-capital-goods-ecosystem-with-upside-potential-of-up-to-26/articleshow/131344979.cms",
+      "title": "Weekly Top Picks: These stocks scored 10 on 10 on Stock Reports Plus",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/weekly-top-picks-these-stocks-scored-10-on-10-on-stock-reports-plus/articleshow/131374956.cms",
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-05-28T05:20:49.604Z",
-      "summary": "Time to think of the repair cycle? 8 engineering stocks from India’s capital goods ecosystem with upside potential of up to 26%",
+      "scrapedAt": "2026-05-29T05:40:36.752Z",
+      "summary": "Weekly Top Picks: These stocks scored 10 on 10 on Stock Reports Plus",
       "isGlobal": true
     }
   ]
