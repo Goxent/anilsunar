@@ -1,5 +1,5 @@
 {
-  "scrapedAt": "2026-06-02T06:03:12.683Z",
+  "scrapedAt": "2026-06-03T06:17:42.097Z",
   "totalCount": 23,
   "nepalCount": 15,
   "globalCount": 8,
@@ -16,52 +16,12 @@
   ],
   "articles": [
     {
-      "title": "साढे दुई प्रतिशत बिन्दुले लाभकर बढ्दा सेयर लगानीकर्ता सशंकित",
-      "url": "https://www.karobardaily.com/news/380883",
-      "source": "Karobar Daily",
-      "badge": "KD",
-      "category": "Nepal Business",
-      "scrapedAt": "2026-06-02T06:02:53.472Z",
-      "summary": "साढे दुई प्रतिशत बिन्दुले लाभकर बढ्दा सेयर लगानीकर्ता सशंकित",
-      "isGlobal": false
-    },
-    {
-      "title": "विद्युतीय सवारीसाधनमा मूल्यअनुसार फरक कर",
-      "url": "https://www.karobardaily.com/news/380878",
-      "source": "Karobar Daily",
-      "badge": "KD",
-      "category": "Nepal Business",
-      "scrapedAt": "2026-06-02T06:02:53.472Z",
-      "summary": "विद्युतीय सवारीसाधनमा मूल्यअनुसार फरक कर",
-      "isGlobal": false
-    },
-    {
-      "title": "दश महिनामा ४ अर्ब २ करोडका विद्युतीय सवारीसाधन आयात",
-      "url": "https://www.karobardaily.com/news/380535",
-      "source": "Karobar Daily",
-      "badge": "KD",
-      "category": "Nepal Business",
-      "scrapedAt": "2026-06-02T06:02:53.472Z",
-      "summary": "दश महिनामा ४ अर्ब २ करोडका विद्युतीय सवारीसाधन आयात",
-      "isGlobal": false
-    },
-    {
-      "title": "मध्यम वर्गलाई उठाउन खोज्दा न्यून वर्गलाई उपेक्षित गरिएको छैनः अर्थमन्त्री वाग्ले",
-      "url": "https://www.karobardaily.com/news/380453",
-      "source": "Karobar Daily",
-      "badge": "KD",
-      "category": "Nepal Business",
-      "scrapedAt": "2026-06-02T06:02:53.472Z",
-      "summary": "मध्यम वर्गलाई उठाउन खोज्दा न्यून वर्गलाई उपेक्षित गरिएको छैनः अर्थमन्त्री वाग्ले",
-      "isGlobal": false
-    },
-    {
       "title": "फिनटेक मार्केटप्लेस राष्ट्र बैंकको नेतृत्वमा सञ्चालन हुनेछ: गभर्नर",
       "url": "https://www.karobardaily.com/news/380412",
       "source": "Karobar Daily",
       "badge": "KD",
       "category": "Nepal Business",
-      "scrapedAt": "2026-06-02T06:02:53.472Z",
+      "scrapedAt": "2026-06-03T06:17:17.812Z",
       "summary": "फिनटेक मार्केटप्लेस राष्ट्र बैंकको नेतृत्वमा सञ्चालन हुनेछ: गभर्नर",
       "isGlobal": false
     },
@@ -71,7 +31,7 @@
       "source": "Karobar Daily",
       "badge": "KD",
       "category": "Nepal Business",
-      "scrapedAt": "2026-06-02T06:02:53.472Z",
+      "scrapedAt": "2026-06-03T06:17:17.812Z",
       "summary": "बैंकिङ, पुँजीबजार तथा बीमा क्षेत्र ‘भाइब्रेन्ट’ बनाउने विश्वास",
       "isGlobal": false
     },
@@ -81,7 +41,7 @@
       "source": "Karobar Daily",
       "badge": "KD",
       "category": "Nepal Business",
-      "scrapedAt": "2026-06-02T06:02:53.472Z",
+      "scrapedAt": "2026-06-03T06:17:17.812Z",
       "summary": "निक्षेप फिर्ता लम्बिँदा बचतकर्ता तनावमा",
       "isGlobal": false
     },
@@ -91,8 +51,48 @@
       "source": "Karobar Daily",
       "badge": "KD",
       "category": "Nepal Business",
-      "scrapedAt": "2026-06-02T06:02:53.472Z",
+      "scrapedAt": "2026-06-03T06:17:17.812Z",
       "summary": "रावा बैंकद्वारा ‘कोशी प्रदेश साना तथा मझौला उद्यम कर्जा’ लगानी",
+      "isGlobal": false
+    },
+    {
+      "title": "सरकारी पुनर्बिमा कम्पनीलाई बलियो बनाउने योजना",
+      "url": "https://www.karobardaily.com/news/380365",
+      "source": "Karobar Daily",
+      "badge": "KD",
+      "category": "Nepal Business",
+      "scrapedAt": "2026-06-03T06:17:17.812Z",
+      "summary": "सरकारी पुनर्बिमा कम्पनीलाई बलियो बनाउने योजना",
+      "isGlobal": false
+    },
+    {
+      "title": "एनआईसी एशिया बैंकको संचालक समितिको अध्यक्षमा अग्रवाल",
+      "url": "https://www.karobardaily.com/news/381204",
+      "source": "Karobar Daily",
+      "badge": "KD",
+      "category": "Nepal Business",
+      "scrapedAt": "2026-06-03T06:17:17.813Z",
+      "summary": "एनआईसी एशिया बैंकको संचालक समितिको अध्यक्षमा अग्रवाल",
+      "isGlobal": false
+    },
+    {
+      "title": "ज्योति विकास बैंकद्वारा सिलाई मेसिन प्रदान",
+      "url": "https://www.karobardaily.com/news/381199",
+      "source": "Karobar Daily",
+      "badge": "KD",
+      "category": "Nepal Business",
+      "scrapedAt": "2026-06-03T06:17:17.813Z",
+      "summary": "ज्योति विकास बैंकद्वारा सिलाई मेसिन प्रदान",
+      "isGlobal": false
+    },
+    {
+      "title": "सिटिजन्स बैंक र एपीआई बैंकिङ सहकार्य",
+      "url": "https://www.karobardaily.com/news/381090",
+      "source": "Karobar Daily",
+      "badge": "KD",
+      "category": "Nepal Business",
+      "scrapedAt": "2026-06-03T06:17:17.813Z",
+      "summary": "सिटिजन्स बैंक र एपीआई बैंकिङ सहकार्य",
       "isGlobal": false
     },
     {
@@ -101,17 +101,17 @@
       "source": "Sharesansar",
       "badge": "SS",
       "category": "Nepal Stock",
-      "scrapedAt": "2026-06-02T06:02:55.724Z",
+      "scrapedAt": "2026-06-03T06:17:19.818Z",
       "summary": "Proposed Dividend",
       "isGlobal": false
     },
     {
       "title": "Dividend, Bonus & Rights",
-      "url": "https://www.sharesansar.com/newsdetail/reminder-last-trading-day-to-secure-dividend-of-salt-trading-corporation-limited-2026-05-26",
+      "url": "https://www.sharesansar.com/newsdetail/nic-asia-bank-agm-approves-financial-reports-21-rights-share-issue-and-elects-new-board-members-2026-06-02",
       "source": "Sharesansar",
       "badge": "SS",
       "category": "Nepal Stock",
-      "scrapedAt": "2026-06-02T06:02:55.724Z",
+      "scrapedAt": "2026-06-03T06:17:19.818Z",
       "summary": "Dividend, Bonus & Rights",
       "isGlobal": false
     },
@@ -121,7 +121,7 @@
       "source": "Sharesansar",
       "badge": "SS",
       "category": "Nepal Stock",
-      "scrapedAt": "2026-06-02T06:02:55.724Z",
+      "scrapedAt": "2026-06-03T06:17:19.819Z",
       "summary": "NEPSE Concludes The Week With 0.86% Gain and Turnover of Rs 16.87 Arba; Weekly Summary with Sector Comparison, Major Highlights, and More",
       "isGlobal": false
     },
@@ -131,7 +131,7 @@
       "source": "Sharesansar",
       "badge": "SS",
       "category": "Nepal Stock",
-      "scrapedAt": "2026-06-02T06:02:55.724Z",
+      "scrapedAt": "2026-06-03T06:17:19.819Z",
       "summary": "Snow River IPO Opens Today; Should You Invest in This Hydro? Take a Closer Look",
       "isGlobal": false
     },
@@ -141,7 +141,7 @@
       "source": "Nepali Paisa",
       "badge": "NP",
       "category": "Nepal Finance",
-      "scrapedAt": "2026-06-02T06:02:58.790Z",
+      "scrapedAt": "2026-06-03T06:17:22.198Z",
       "summary": "Market Overview",
       "isGlobal": false
     },
@@ -151,7 +151,7 @@
       "source": "Nepali Paisa",
       "badge": "NP",
       "category": "Nepal Finance",
-      "scrapedAt": "2026-06-02T06:02:58.790Z",
+      "scrapedAt": "2026-06-03T06:17:22.198Z",
       "summary": "Stocks Up & Down",
       "isGlobal": false
     },
@@ -161,7 +161,7 @@
       "source": "Nepali Paisa",
       "badge": "NP",
       "category": "Nepal Finance",
-      "scrapedAt": "2026-06-02T06:02:58.790Z",
+      "scrapedAt": "2026-06-03T06:17:22.198Z",
       "summary": "Business & Economy",
       "isGlobal": false
     }
@@ -173,48 +173,68 @@
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-06-02T06:03:11.180Z",
+      "scrapedAt": "2026-06-03T06:17:40.594Z",
       "summary": "Markets just got Conversational",
       "isGlobal": true
     },
     {
-      "title": "Groww, Lenskart, 9 other stocks among Motilal’s non-Nifty ideas. Check full list",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/news/groww-lenskart-9-other-stocks-among-motilals-non-nifty-ideas-check-full-list/slideshow/131455999.cms",
+      "title": "Eternal to ICICI Bank: 15 stocks on Axis Securities buy list for June",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/eternal-to-icici-bank-15-stocks-on-axis-securities-buy-list-for-june/slideshow/131475628.cms",
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-06-02T06:03:11.180Z",
-      "summary": "Groww, Lenskart, 9 other stocks among Motilal’s non-Nifty ideas. Check full list",
+      "scrapedAt": "2026-06-03T06:17:40.595Z",
+      "summary": "Eternal to ICICI Bank: 15 stocks on Axis Securities buy list for June",
       "isGlobal": true
     },
     {
-      "title": "Inside SpaceX&#x27;s IPO: Special share access, flexible lockups and soaring demand",
-      "url": "https://economictimes.indiatimes.com/markets/us-stocks/news/inside-spacexs-ipo-special-share-access-flexible-lockups-and-soaring-demand/slideshow/131456067.cms",
+      "title": "NHPC among 5 F&O stocks with a sharp rise in futures open interest",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/nhpc-among-5-fampo-stocks-with-a-sharp-rise-in-futures-open-interest/slideshow/131475048.cms",
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-06-02T06:03:11.180Z",
-      "summary": "Inside SpaceX&#x27;s IPO: Special share access, flexible lockups and soaring demand",
+      "scrapedAt": "2026-06-03T06:17:40.595Z",
+      "summary": "NHPC among 5 F&O stocks with a sharp rise in futures open interest",
       "isGlobal": true
     },
     {
-      "title": "Bharti Airtel, Infosys, among Motilal Oswal’s top Nifty ideas. How many do you own?",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/news/bharti-airtel-infosys-among-motilal-oswals-top-nifty-ideas-how-many-do-you-own/slideshow/131454823.cms",
+      "title": "TCS among 4 stocks flashing bullish signals, indicating possible uptrend",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/tcs-among-4-stocks-flashing-bullish-signals-indicating-possible-uptrend/slideshow/131474886.cms",
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-06-02T06:03:11.180Z",
-      "summary": "Bharti Airtel, Infosys, among Motilal Oswal’s top Nifty ideas. How many do you own?",
+      "scrapedAt": "2026-06-03T06:17:40.595Z",
+      "summary": "TCS among 4 stocks flashing bullish signals, indicating possible uptrend",
       "isGlobal": true
     },
     {
-      "title": "IREDA among 5 F&O stocks with a sharp rise in futures open interest",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/news/ireda-among-5-fampo-stocks-with-a-sharp-rise-in-futures-open-interest/slideshow/131453970.cms",
+      "title": "TCS among 6 stocks showing bullish RSI upswing",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/tcs-among-6-stocks-showing-bullish-rsi-upswing/slideshow/131474795.cms",
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-06-02T06:03:11.181Z",
-      "summary": "IREDA among 5 F&O stocks with a sharp rise in futures open interest",
+      "scrapedAt": "2026-06-03T06:17:40.595Z",
+      "summary": "TCS among 6 stocks showing bullish RSI upswing",
+      "isGlobal": true
+    },
+    {
+      "title": "Positive Breakout: These 8 stocks cross above their 200 DMAs",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/positive-breakout-these-8-stocks-cross-above-their-200-dmas/slideshow/131474072.cms",
+      "source": "Economic Times Markets",
+      "badge": "ET",
+      "category": "India Markets",
+      "scrapedAt": "2026-06-03T06:17:40.595Z",
+      "summary": "Positive Breakout: These 8 stocks cross above their 200 DMAs",
+      "isGlobal": true
+    },
+    {
+      "title": "These 7 private and public banking stocks have an upside of up to 23% in one year, according to analysts",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/these-7-private-and-public-banking-stocks-have-an-upside-of-up-to-23-in-one-year-according-to-analysts/articleshow/131473592.cms",
+      "source": "Economic Times Markets",
+      "badge": "ET",
+      "category": "India Markets",
+      "scrapedAt": "2026-06-03T06:17:40.595Z",
+      "summary": "These 7 private and public banking stocks have an upside of up to 23% in one year, according to analysts",
       "isGlobal": true
     },
     {
@@ -223,28 +243,8 @@
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-06-02T06:03:11.181Z",
+      "scrapedAt": "2026-06-03T06:17:40.595Z",
       "summary": "Weekly Top Picks: These stocks scored 10 on 10 on Stock Reports Plus",
-      "isGlobal": true
-    },
-    {
-      "title": "Stock picks of the week: 5 stocks with consistent score improvement and upside potential of up to 27% in 1 year",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/news/stock-picks-of-the-week-5-stocks-with-consistent-score-improvement-and-upside-potential-of-up-to-27-in-1-year/articleshow/131437581.cms",
-      "source": "Economic Times Markets",
-      "badge": "ET",
-      "category": "India Markets",
-      "scrapedAt": "2026-06-02T06:03:11.181Z",
-      "summary": "Stock picks of the week: 5 stocks with consistent score improvement and upside potential of up to 27% in 1 year",
-      "isGlobal": true
-    },
-    {
-      "title": "Stock Radar: After a 24% correction, Max Healthcare breaks key resistance level; analysts see long-term potential",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/news/stock-radar-after-a-24-correction-max-healthcare-breaks-key-resistance-level-analysts-see-long-term-potential/articleshow/131388273.cms",
-      "source": "Economic Times Markets",
-      "badge": "ET",
-      "category": "India Markets",
-      "scrapedAt": "2026-06-02T06:03:11.181Z",
-      "summary": "Stock Radar: After a 24% correction, Max Healthcare breaks key resistance level; analysts see long-term potential",
       "isGlobal": true
     }
   ]
