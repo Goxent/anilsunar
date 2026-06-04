@@ -1,8 +1,21 @@
 {
-  "lastUpdated": "2026-06-03T06:18:18.144Z",
-  "totalCount": 52,
-  "newCount": 0,
+  "lastUpdated": "2026-06-04T06:09:18.524Z",
+  "totalCount": 53,
+  "newCount": 1,
   "notices": [
+    {
+      "id": "nrbnepalnrbwp63economicstabi_mpz3hsac",
+      "title": "NRB-WP-63 – Economic Stability and Central Banking in Nepal: Achievements and Future Directions –Rajan Krishna Panta, PhD",
+      "source": "NRB Nepal",
+      "category": "Banking",
+      "badge": "NRB",
+      "badgeColor": "#e65100",
+      "link": "https://www.nrb.org.np/red/nrb-wp-63-economic-stability-and-central-banking-in-nepal-achievements-and-future-directions-rajan-krishna-panta-phd/",
+      "summary": "New Banking update from NRB Nepal: NRB-WP-63 – Economic Stability and Central Banking in Nepal: Achievements and Future Directions –Rajan Krishna Panta, PhD",
+      "detectedAt": "2026-06-04T06:09:13.332Z",
+      "isNew": true,
+      "emailedAt": null
+    },
     {
       "id": "nrbnepalnrbwp62evaluatingthe_mpw8ewbu",
       "title": "NRB-WP-62 – Evaluating the effectiveness of Standing Deposit Facility in preserving the interest rate corridor floor in Nepal – Victor Kumar Sapkota",
