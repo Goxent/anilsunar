@@ -1,7 +1,7 @@
 {
-  "scrapedAt": "2026-06-04T06:08:48.403Z",
-  "totalCount": 23,
-  "nepalCount": 15,
+  "scrapedAt": "2026-06-05T05:49:41.121Z",
+  "totalCount": 24,
+  "nepalCount": 16,
   "globalCount": 8,
   "sources": [
     "Onlinekhabar Finance",
@@ -16,73 +16,43 @@
   ],
   "articles": [
     {
-      "title": "अनुमतिबेगर उत्खनन गरे एक करोडसम्म जरिवाना",
-      "url": "https://www.karobardaily.com/news/381603",
+      "title": "नेपाली चियालाई भारतीय बजारमा फेरि झमेला",
+      "url": "https://www.karobardaily.com/news/381935",
       "source": "Karobar Daily",
       "badge": "KD",
       "category": "Nepal Business",
-      "scrapedAt": "2026-06-04T06:08:29.231Z",
-      "summary": "अनुमतिबेगर उत्खनन गरे एक करोडसम्म जरिवाना",
+      "scrapedAt": "2026-06-05T05:49:13.643Z",
+      "summary": "नेपाली चियालाई भारतीय बजारमा फेरि झमेला",
       "isGlobal": false
     },
     {
-      "title": "डिसिब्स अवधारणाः बैंकिङ क्षेत्रको स्थायित्व र जोखिम व्यवस्थापन संरचना",
-      "url": "https://www.karobardaily.com/news/381579",
+      "title": "अधिक तरलताले बढायो चिन्ता, बढेन कर्जा",
+      "url": "https://www.karobardaily.com/news/381919",
       "source": "Karobar Daily",
       "badge": "KD",
       "category": "Nepal Business",
-      "scrapedAt": "2026-06-04T06:08:29.231Z",
-      "summary": "डिसिब्स अवधारणाः बैंकिङ क्षेत्रको स्थायित्व र जोखिम व्यवस्थापन संरचना",
+      "scrapedAt": "2026-06-05T05:49:13.643Z",
+      "summary": "अधिक तरलताले बढायो चिन्ता, बढेन कर्जा",
       "isGlobal": false
     },
     {
-      "title": "बजेटले निजी क्षेत्रको आत्मविश्वास अभिवृद्धि गरेको महासंघको निष्कर्ष",
-      "url": "https://www.karobardaily.com/news/381537",
+      "title": "विद्युत् प्राधिकरणको पुन:संरचनामा स्थानीय तह र समुदायको भूमिका सुनिश्चित गर्न माग",
+      "url": "https://www.karobardaily.com/news/381885",
       "source": "Karobar Daily",
       "badge": "KD",
       "category": "Nepal Business",
-      "scrapedAt": "2026-06-04T06:08:29.231Z",
-      "summary": "बजेटले निजी क्षेत्रको आत्मविश्वास अभिवृद्धि गरेको महासंघको निष्कर्ष",
+      "scrapedAt": "2026-06-05T05:49:13.643Z",
+      "summary": "विद्युत् प्राधिकरणको पुन:संरचनामा स्थानीय तह र समुदायको भूमिका सुनिश्चित गर्न माग",
       "isGlobal": false
     },
     {
-      "title": "डीपीआरका नाममा करोडौं खर्च, अधिकांश योजना अलपत्र",
-      "url": "https://www.karobardaily.com/news/381741",
+      "title": "लुम्बिनीमा बेरुजु पाँच अर्ब ४० करोड बढी",
+      "url": "https://www.karobardaily.com/news/381796",
       "source": "Karobar Daily",
       "badge": "KD",
       "category": "Nepal Business",
-      "scrapedAt": "2026-06-04T06:08:29.231Z",
-      "summary": "डीपीआरका नाममा करोडौं खर्च, अधिकांश योजना अलपत्र",
-      "isGlobal": false
-    },
-    {
-      "title": "नयाँ सरकार बनेपछि पनि फाइल अड्किएको जलविद्युत् लगानीकर्ताको गुनासो",
-      "url": "https://www.karobardaily.com/news/381716",
-      "source": "Karobar Daily",
-      "badge": "KD",
-      "category": "Nepal Business",
-      "scrapedAt": "2026-06-04T06:08:29.231Z",
-      "summary": "नयाँ सरकार बनेपछि पनि फाइल अड्किएको जलविद्युत् लगानीकर्ताको गुनासो",
-      "isGlobal": false
-    },
-    {
-      "title": "दश महिनामा २० अर्ब ७९ करोडको खाद्यान्न आयात",
-      "url": "https://www.karobardaily.com/news/381556",
-      "source": "Karobar Daily",
-      "badge": "KD",
-      "category": "Nepal Business",
-      "scrapedAt": "2026-06-04T06:08:29.231Z",
-      "summary": "दश महिनामा २० अर्ब ७९ करोडको खाद्यान्न आयात",
-      "isGlobal": false
-    },
-    {
-      "title": "१० महिनामा पाँच अर्ब ७७ करोड संकलन",
-      "url": "https://www.karobardaily.com/news/381424",
-      "source": "Karobar Daily",
-      "badge": "KD",
-      "category": "Nepal Business",
-      "scrapedAt": "2026-06-04T06:08:29.231Z",
-      "summary": "१० महिनामा पाँच अर्ब ७७ करोड संकलन",
+      "scrapedAt": "2026-06-05T05:49:13.643Z",
+      "summary": "लुम्बिनीमा बेरुजु पाँच अर्ब ४० करोड बढी",
       "isGlobal": false
     },
     {
@@ -91,8 +61,48 @@
       "source": "Karobar Daily",
       "badge": "KD",
       "category": "Nepal Business",
-      "scrapedAt": "2026-06-04T06:08:29.231Z",
+      "scrapedAt": "2026-06-05T05:49:13.643Z",
       "summary": "फिनटेक मार्केटप्लेस राष्ट्र बैंकको नेतृत्वमा सञ्चालन हुनेछ: गभर्नर",
+      "isGlobal": false
+    },
+    {
+      "title": "बैंकिङ, पुँजीबजार तथा बीमा क्षेत्र ‘भाइब्रेन्ट’ बनाउने विश्वास",
+      "url": "https://www.karobardaily.com/news/380077",
+      "source": "Karobar Daily",
+      "badge": "KD",
+      "category": "Nepal Business",
+      "scrapedAt": "2026-06-05T05:49:13.643Z",
+      "summary": "बैंकिङ, पुँजीबजार तथा बीमा क्षेत्र ‘भाइब्रेन्ट’ बनाउने विश्वास",
+      "isGlobal": false
+    },
+    {
+      "title": "निक्षेप फिर्ता लम्बिँदा बचतकर्ता तनावमा",
+      "url": "https://www.karobardaily.com/news/378463",
+      "source": "Karobar Daily",
+      "badge": "KD",
+      "category": "Nepal Business",
+      "scrapedAt": "2026-06-05T05:49:13.643Z",
+      "summary": "निक्षेप फिर्ता लम्बिँदा बचतकर्ता तनावमा",
+      "isGlobal": false
+    },
+    {
+      "title": "सरकारी पुनर्बिमा कम्पनीलाई बलियो बनाउने योजना",
+      "url": "https://www.karobardaily.com/news/380365",
+      "source": "Karobar Daily",
+      "badge": "KD",
+      "category": "Nepal Business",
+      "scrapedAt": "2026-06-05T05:49:13.643Z",
+      "summary": "सरकारी पुनर्बिमा कम्पनीलाई बलियो बनाउने योजना",
+      "isGlobal": false
+    },
+    {
+      "title": "From Offer Letter to Balance Sheet: How Nepals IPO Companies Actually Performed?",
+      "url": "https://www.sharesansar.com/newsdetail/from-offer-letter-to-balance-sheet-how-nepals-ipo-companies-actually-performed-2026-06-02",
+      "source": "Sharesansar",
+      "badge": "SS",
+      "category": "Nepal Stock",
+      "scrapedAt": "2026-06-05T05:49:15.627Z",
+      "summary": "From Offer Letter to Balance Sheet: How Nepals IPO Companies Actually Performed?",
       "isGlobal": false
     },
     {
@@ -101,7 +111,7 @@
       "source": "Sharesansar",
       "badge": "SS",
       "category": "Nepal Stock",
-      "scrapedAt": "2026-06-04T06:08:31.399Z",
+      "scrapedAt": "2026-06-05T05:49:15.627Z",
       "summary": "Proposed Dividend",
       "isGlobal": false
     },
@@ -111,7 +121,7 @@
       "source": "Sharesansar",
       "badge": "SS",
       "category": "Nepal Stock",
-      "scrapedAt": "2026-06-04T06:08:31.399Z",
+      "scrapedAt": "2026-06-05T05:49:15.627Z",
       "summary": "Dividend, Bonus & Rights",
       "isGlobal": false
     },
@@ -121,7 +131,7 @@
       "source": "Sharesansar",
       "badge": "SS",
       "category": "Nepal Stock",
-      "scrapedAt": "2026-06-04T06:08:31.399Z",
+      "scrapedAt": "2026-06-05T05:49:15.627Z",
       "summary": "NEPSE Concludes The Week With 0.86% Gain and Turnover of Rs 16.87 Arba; Weekly Summary with Sector Comparison, Major Highlights, and More",
       "isGlobal": false
     },
@@ -131,7 +141,7 @@
       "source": "Sharesansar",
       "badge": "SS",
       "category": "Nepal Stock",
-      "scrapedAt": "2026-06-04T06:08:31.399Z",
+      "scrapedAt": "2026-06-05T05:49:15.627Z",
       "summary": "Snow River IPO Opens Today; Should You Invest in This Hydro? Take a Closer Look",
       "isGlobal": false
     },
@@ -141,7 +151,7 @@
       "source": "Nepali Paisa",
       "badge": "NP",
       "category": "Nepal Finance",
-      "scrapedAt": "2026-06-04T06:08:34.441Z",
+      "scrapedAt": "2026-06-05T05:49:18.805Z",
       "summary": "Market Overview",
       "isGlobal": false
     },
@@ -151,7 +161,7 @@
       "source": "Nepali Paisa",
       "badge": "NP",
       "category": "Nepal Finance",
-      "scrapedAt": "2026-06-04T06:08:34.441Z",
+      "scrapedAt": "2026-06-05T05:49:18.805Z",
       "summary": "Stocks Up & Down",
       "isGlobal": false
     },
@@ -161,7 +171,7 @@
       "source": "Nepali Paisa",
       "badge": "NP",
       "category": "Nepal Finance",
-      "scrapedAt": "2026-06-04T06:08:34.441Z",
+      "scrapedAt": "2026-06-05T05:49:18.805Z",
       "summary": "Business & Economy",
       "isGlobal": false
     }
@@ -173,78 +183,78 @@
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-06-04T06:08:46.900Z",
+      "scrapedAt": "2026-06-05T05:49:39.618Z",
       "summary": "Markets just got Conversational",
       "isGlobal": true
     },
     {
-      "title": "Wipro among 6 F&O stocks with a sharp rise in futures open interest",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/news/wipro-among-6-fampo-stocks-with-a-sharp-rise-in-futures-open-interest/slideshow/131495908.cms",
+      "title": "BPCL, Wipro, ITC among list of 15 high dividend yield stocks. Do you own any?",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/bpcl-wipro-itc-among-list-of-15-high-dividend-yield-stocks-do-you-own-any/slideshow/131522435.cms",
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-06-04T06:08:46.900Z",
-      "summary": "Wipro among 6 F&O stocks with a sharp rise in futures open interest",
+      "scrapedAt": "2026-06-05T05:49:39.619Z",
+      "summary": "BPCL, Wipro, ITC among list of 15 high dividend yield stocks. Do you own any?",
       "isGlobal": true
     },
     {
-      "title": "HFCL among 6 stocks flashing bullish signals, hinting at a possible uptrend",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/news/hfcl-among-6-stocks-flashing-bullish-signals-hinting-at-a-possible-uptrend/slideshow/131495827.cms",
+      "title": "Nippon Life among 5 F&O stocks with sharp rise in futures open interest",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/nippon-life-among-5-fampo-stocks-with-sharp-rise-in-futures-open-interest/slideshow/131520973.cms",
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-06-04T06:08:46.900Z",
-      "summary": "HFCL among 6 stocks flashing bullish signals, hinting at a possible uptrend",
+      "scrapedAt": "2026-06-05T05:49:39.619Z",
+      "summary": "Nippon Life among 5 F&O stocks with sharp rise in futures open interest",
       "isGlobal": true
     },
     {
-      "title": "​Ipca Laboratories among 5 stocks showing bullish RSI upswing",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/news/ipca-laboratories-among-5-stocks-showing-bullish-rsi-upswing/slideshow/131495775.cms",
+      "title": "Page Industries among 3 stocks flashing bullish signals, hinting at a possible uptrend",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/page-industries-among-3-stocks-flashing-bullish-signals-hinting-at-a-possible-uptrend/slideshow/131520461.cms",
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-06-04T06:08:46.900Z",
-      "summary": "​Ipca Laboratories among 5 stocks showing bullish RSI upswing",
+      "scrapedAt": "2026-06-05T05:49:39.619Z",
+      "summary": "Page Industries among 3 stocks flashing bullish signals, hinting at a possible uptrend",
       "isGlobal": true
     },
     {
-      "title": "Negative Breakout: These 12 stocks cross below their 200 DMAs",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/news/negative-breakout-these-12-stocks-cross-below-their-200-dmas/slideshow/131494793.cms",
+      "title": "Eternal among 6 stocks showing bullish RSI upswing",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/eternal-among-6-stocks-showing-bullish-rsi-upswing/slideshow/131520516.cms",
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-06-04T06:08:46.900Z",
-      "summary": "Negative Breakout: These 12 stocks cross below their 200 DMAs",
+      "scrapedAt": "2026-06-05T05:49:39.619Z",
+      "summary": "Eternal among 6 stocks showing bullish RSI upswing",
       "isGlobal": true
     },
     {
-      "title": "NMDC, Fineotex Chemical among 6 commodities stocks that hit a 52-week highs & rallied up to 89% in a month",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/news/nmdc-fineotex-chemical-among-6-commodities-stocks-that-hit-a-52-week-highs-amp-rallied-up-to-89-in-a-month/slideshow/131482992.cms",
+      "title": "Positive Breakout: These 11 stocks cross above their 200 DMAs",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/positive-breakout-these-11-stocks-cross-above-their-200-dmas/slideshow/131519546.cms",
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-06-04T06:08:46.900Z",
-      "summary": "NMDC, Fineotex Chemical among 6 commodities stocks that hit a 52-week highs & rallied up to 89% in a month",
+      "scrapedAt": "2026-06-05T05:49:39.619Z",
+      "summary": "Positive Breakout: These 11 stocks cross above their 200 DMAs",
       "isGlobal": true
     },
     {
-      "title": "These mid-cap stocks with ‘Strong Buy’ & ‘Buy’ recos can rally over 25%, according to analysts",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/news/these-mid-cap-stocks-with-strong-buy-buy-recos-can-rally-over-25-according-to-analysts/articleshow/131488335.cms",
+      "title": "These large- and mid-cap stocks may give more than 25% return in 1 year, according to analysts",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/these-large-and-mid-cap-stocks-may-give-more-than-25-return-in-1-year-according-to-analysts/articleshow/131511474.cms",
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-06-04T06:08:46.900Z",
-      "summary": "These mid-cap stocks with ‘Strong Buy’ & ‘Buy’ recos can rally over 25%, according to analysts",
+      "scrapedAt": "2026-06-05T05:49:39.619Z",
+      "summary": "These large- and mid-cap stocks may give more than 25% return in 1 year, according to analysts",
       "isGlobal": true
     },
     {
-      "title": "These 7 private and public banking stocks have an upside of up to 23% in one year, according to analysts",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/news/these-7-private-and-public-banking-stocks-have-an-upside-of-up-to-23-in-one-year-according-to-analysts/articleshow/131473592.cms",
+      "title": "Weekly Top Picks: These stocks scored 10 on 10 on Stock Reports Plus",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/weekly-top-picks-these-stocks-scored-10-on-10-on-stock-reports-plus/articleshow/131506297.cms",
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-06-04T06:08:46.900Z",
-      "summary": "These 7 private and public banking stocks have an upside of up to 23% in one year, according to analysts",
+      "scrapedAt": "2026-06-05T05:49:39.619Z",
+      "summary": "Weekly Top Picks: These stocks scored 10 on 10 on Stock Reports Plus",
       "isGlobal": true
     }
   ]

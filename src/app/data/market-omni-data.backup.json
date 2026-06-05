@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-06-03T06:16:56.643Z",
+  "timestamp": "2026-06-04T06:07:49.726Z",
   "scrapedPages": [
     {
       "url": "https://nepsealpha.com/sastoshare",
@@ -38,454 +38,454 @@
           "rows": [
             {
               "Symbol": "KHPL",
-              "Price(NPR)": "572.90",
+              "Price(NPR)": "658.80",
               "Change": "14.99%",
-              "Volume": "80.00",
+              "Volume": "90.00",
               "R-Volume": "-",
-              "Float Cap": "78.77 Cr.",
-              "Market Cap": "315.10 Cr."
+              "Float Cap": "90.58 Cr.",
+              "Market Cap": "362.34 Cr."
             },
             {
-              "Symbol": "CREST",
-              "Price(NPR)": "1,269.00",
-              "Change": "3.49%",
-              "Volume": "5,617.00",
-              "R-Volume": "45.45 %",
-              "Float Cap": "285.52 Cr.",
-              "Market Cap": "951.75 Cr."
+              "Symbol": "CFCL",
+              "Price(NPR)": "610.00",
+              "Change": "4.11%",
+              "Volume": "98,029.00",
+              "R-Volume": "414.20 %",
+              "Float Cap": "282.23 Cr.",
+              "Market Cap": "578.81 Cr."
             },
             {
-              "Symbol": "AKJCL",
-              "Price(NPR)": "453.00",
-              "Change": "2.98%",
-              "Volume": "411,502.00",
-              "R-Volume": "62.57 %",
-              "Float Cap": "906.00 Cr.",
-              "Market Cap": "906.00 Cr."
-            },
-            {
-              "Symbol": "BJHL",
-              "Price(NPR)": "926.90",
-              "Change": "2.98%",
-              "Volume": "2,495.00",
-              "R-Volume": "-",
-              "Float Cap": "185.38 Cr.",
-              "Market Cap": "926.90 Cr."
-            },
-            {
-              "Symbol": "KKHC",
-              "Price(NPR)": "282.00",
-              "Change": "2.92%",
-              "Volume": "89,716.00",
-              "R-Volume": "92.47 %",
-              "Float Cap": "262.66 Cr.",
-              "Market Cap": "262.66 Cr."
-            },
-            {
-              "Symbol": "CKHL",
-              "Price(NPR)": "694.00",
-              "Change": "2.81%",
-              "Volume": "20.00",
-              "R-Volume": "0.37 %",
-              "Float Cap": "67.96 Cr.",
-              "Market Cap": "277.60 Cr."
+              "Symbol": "RLFL",
+              "Price(NPR)": "484.00",
+              "Change": "3.42%",
+              "Volume": "30,407.00",
+              "R-Volume": "148.59 %",
+              "Float Cap": "265.96 Cr.",
+              "Market Cap": "542.78 Cr."
             },
             {
               "Symbol": "KBSH",
-              "Price(NPR)": "1,600.00",
-              "Change": "2.56%",
+              "Price(NPR)": "1,598.50",
+              "Change": "3.00%",
+              "Volume": "11.00",
+              "R-Volume": "3.47 %",
+              "Float Cap": "23.10 Cr.",
+              "Market Cap": "235.71 Cr."
+            },
+            {
+              "Symbol": "MATRI",
+              "Price(NPR)": "911.00",
+              "Change": "3.00%",
+              "Volume": "550.00",
+              "R-Volume": "45.26 %",
+              "Float Cap": "171.73 Cr.",
+              "Market Cap": "572.43 Cr."
+            },
+            {
+              "Symbol": "SHLB",
+              "Price(NPR)": "1,520.00",
+              "Change": "2.91%",
+              "Volume": "130.00",
+              "R-Volume": "21.77 %",
+              "Float Cap": "59.85 Cr.",
+              "Market Cap": "166.25 Cr."
+            },
+            {
+              "Symbol": "HEIP",
+              "Price(NPR)": "357.00",
+              "Change": "2.88%",
+              "Volume": "4,300.00",
+              "R-Volume": "-",
+              "Float Cap": "0.00 Cr.",
+              "Market Cap": "95.50 Cr."
+            },
+            {
+              "Symbol": "BNT",
+              "Price(NPR)": "11,980.00",
+              "Change": "2.83%",
               "Volume": "10.00",
-              "R-Volume": "3.13 %",
-              "Float Cap": "23.12 Cr.",
-              "Market Cap": "235.94 Cr."
+              "R-Volume": "9.32 %",
+              "Float Cap": "133.65 Cr.",
+              "Market Cap": "1,449.58 Cr."
             },
             {
-              "Symbol": "SPL",
-              "Price(NPR)": "718.70",
-              "Change": "2.54%",
-              "Volume": "145.00",
-              "R-Volume": "2.05 %",
-              "Float Cap": "143.74 Cr.",
-              "Market Cap": "143.74 Cr."
-            },
-            {
-              "Symbol": "UAIL",
-              "Price(NPR)": "480.00",
-              "Change": "2.45%",
-              "Volume": "20,595.00",
-              "R-Volume": "112.65 %",
-              "Float Cap": "543.31 Cr.",
-              "Market Cap": "1,108.80 Cr."
-            },
-            {
-              "Symbol": "DHEL",
-              "Price(NPR)": "645.00",
-              "Change": "2.40%",
-              "Volume": "3,428.00",
-              "R-Volume": "11.60 %",
-              "Float Cap": "178.86 Cr.",
-              "Market Cap": "664.67 Cr."
-            }
-          ]
-        },
-        {
-          "headers": [
-            "Symbol",
-            "Current Price",
-            "Last Price",
-            "Percent Change",
-            "Volume",
-            "Turnover"
-          ],
-          "rows": [
-            {
-              "Symbol": "KHPL",
-              "Current Price": "498.2",
-              "Last Price": "376.8",
-              "Percent Change": "32.22%",
-              "Volume": "280",
-              "Turnover": "126168"
-            },
-            {
-              "Symbol": "NRIC",
-              "Current Price": "1146.5",
-              "Last Price": "911",
-              "Percent Change": "25.85%",
-              "Volume": "601114",
-              "Turnover": "639175856"
-            },
-            {
-              "Symbol": "CFCL",
-              "Current Price": "607",
-              "Last Price": "504.9",
-              "Percent Change": "20.22%",
-              "Volume": "431702",
-              "Turnover": "248073428"
-            },
-            {
-              "Symbol": "NFS",
-              "Current Price": "616",
-              "Last Price": "570",
-              "Percent Change": "8.07%",
-              "Volume": "92514",
-              "Turnover": "55417125"
-            },
-            {
-              "Symbol": "GFCL",
-              "Current Price": "672.9",
-              "Last Price": "623",
-              "Percent Change": "8.01%",
-              "Volume": "108200",
-              "Turnover": "70972878"
-            },
-            {
-              "Symbol": "RLFL",
-              "Current Price": "469",
-              "Last Price": "436.2",
-              "Percent Change": "7.52%",
-              "Volume": "103940",
-              "Turnover": "47607275"
-            },
-            {
-              "Symbol": "GUFL",
-              "Current Price": "576.8",
-              "Last Price": "538",
-              "Percent Change": "7.21%",
-              "Volume": "88310",
-              "Turnover": "49582155"
-            },
-            {
-              "Symbol": "NLG",
-              "Current Price": "614",
-              "Last Price": "574",
-              "Percent Change": "6.97%",
-              "Volume": "65445",
-              "Turnover": "39432839"
-            },
-            {
-              "Symbol": "GMLI",
-              "Current Price": "1370",
-              "Last Price": "1282",
-              "Percent Change": "6.86%",
-              "Volume": "11363",
-              "Turnover": "15236573"
-            },
-            {
-              "Symbol": "HRL",
-              "Current Price": "693",
-              "Last Price": "650",
-              "Percent Change": "6.62%",
-              "Volume": "602903",
-              "Turnover": "411290211"
-            }
-          ]
-        },
-        {
-          "headers": [
-            "Symbol",
-            "Current Price",
-            "Last Price",
-            "Percent Change",
-            "Volume",
-            "Turnover"
-          ],
-          "rows": [
-            {
-              "Symbol": "KHPL",
-              "Current Price": "498.2",
-              "Last Price": "376.8",
-              "Percent Change": "32.22%",
-              "Volume": "280",
-              "Turnover": "126168"
-            },
-            {
-              "Symbol": "NRIC",
-              "Current Price": "1146.5",
-              "Last Price": "911",
-              "Percent Change": "25.85%",
-              "Volume": "601114",
-              "Turnover": "639175856"
-            },
-            {
-              "Symbol": "CFCL",
-              "Current Price": "607",
-              "Last Price": "504.9",
-              "Percent Change": "20.22%",
-              "Volume": "431702",
-              "Turnover": "248073428"
-            },
-            {
-              "Symbol": "NFS",
-              "Current Price": "616",
-              "Last Price": "570",
-              "Percent Change": "8.07%",
-              "Volume": "92514",
-              "Turnover": "55417125"
-            },
-            {
-              "Symbol": "GFCL",
-              "Current Price": "672.9",
-              "Last Price": "623",
-              "Percent Change": "8.01%",
-              "Volume": "108200",
-              "Turnover": "70972878"
-            },
-            {
-              "Symbol": "RLFL",
-              "Current Price": "469",
-              "Last Price": "436.2",
-              "Percent Change": "7.52%",
-              "Volume": "103940",
-              "Turnover": "47607275"
-            },
-            {
-              "Symbol": "GUFL",
-              "Current Price": "576.8",
-              "Last Price": "538",
-              "Percent Change": "7.21%",
-              "Volume": "88310",
-              "Turnover": "49582155"
-            },
-            {
-              "Symbol": "NLG",
-              "Current Price": "614",
-              "Last Price": "574",
-              "Percent Change": "6.97%",
-              "Volume": "65445",
-              "Turnover": "39432839"
-            },
-            {
-              "Symbol": "GMLI",
-              "Current Price": "1370",
-              "Last Price": "1282",
-              "Percent Change": "6.86%",
-              "Volume": "11363",
-              "Turnover": "15236573"
-            },
-            {
-              "Symbol": "HRL",
-              "Current Price": "693",
-              "Last Price": "650",
-              "Percent Change": "6.62%",
-              "Volume": "602903",
-              "Turnover": "411290211"
-            }
-          ]
-        },
-        {
-          "headers": [
-            "Symbol",
-            "Current Price",
-            "Turn Over"
-          ],
-          "rows": [
-            {
-              "Symbol": "AKJCL",
-              "Current Price": "439.9",
-              "Turn Over": "NPR 467,658,798.30"
-            },
-            {
-              "Symbol": "NRIC",
-              "Current Price": "1146.5",
-              "Turn Over": "NPR 267,870,253.80"
-            },
-            {
-              "Symbol": "RIDI",
-              "Current Price": "369",
-              "Turn Over": "NPR 260,509,293.80"
-            },
-            {
-              "Symbol": "CFCL",
-              "Current Price": "607",
-              "Turn Over": "NPR 222,906,752.50"
-            },
-            {
-              "Symbol": "HRL",
-              "Current Price": "693",
-              "Turn Over": "NPR 153,551,872.80"
-            },
-            {
-              "Symbol": "SHIVM",
-              "Current Price": "670",
-              "Turn Over": "NPR 120,267,792.20"
-            },
-            {
-              "Symbol": "API",
-              "Current Price": "357",
-              "Turn Over": "NPR 113,589,488.40"
-            },
-            {
-              "Symbol": "RSML",
-              "Current Price": "3640",
-              "Turn Over": "NPR 110,912,150.40"
-            },
-            {
-              "Symbol": "NRN",
-              "Current Price": "1396",
-              "Turn Over": "NPR 91,362,124.90"
-            },
-            {
-              "Symbol": "SOHL",
-              "Current Price": "669",
-              "Turn Over": "NPR 90,108,820.00"
-            }
-          ]
-        },
-        {
-          "headers": [
-            "Symbol",
-            "Current Price",
-            "Turn Over"
-          ],
-          "rows": [
-            {
-              "Symbol": "AKJCL",
-              "Current Price": "439.9",
-              "Turn Over": "NPR 2,679,622,513.20"
-            },
-            {
-              "Symbol": "RIDI",
-              "Current Price": "369",
-              "Turn Over": "NPR 1,339,220,806.70"
-            },
-            {
-              "Symbol": "NHPC",
-              "Current Price": "294.9",
-              "Turn Over": "NPR 806,313,750.00"
-            },
-            {
-              "Symbol": "API",
-              "Current Price": "357",
-              "Turn Over": "NPR 783,290,485.40"
-            },
-            {
-              "Symbol": "NRIC",
-              "Current Price": "1146.5",
-              "Turn Over": "NPR 677,117,365.70"
-            },
-            {
-              "Symbol": "SAHAS",
-              "Current Price": "670",
-              "Turn Over": "NPR 649,789,915.70"
-            },
-            {
-              "Symbol": "NGPL",
-              "Current Price": "445.8",
-              "Turn Over": "NPR 595,206,703.90"
-            },
-            {
-              "Symbol": "HRL",
-              "Current Price": "693",
-              "Turn Over": "NPR 556,255,435.90"
-            },
-            {
-              "Symbol": "SHIVM",
-              "Current Price": "670",
-              "Turn Over": "NPR 521,537,981.30"
-            },
-            {
-              "Symbol": "SOHL",
-              "Current Price": "669",
-              "Turn Over": "NPR 516,443,749.70"
-            }
-          ]
-        },
-        {
-          "headers": [
-            "Symbol",
-            "Current Price",
-            "Turn Over"
-          ],
-          "rows": [
-            {
-              "Symbol": "AKJCL",
-              "Current Price": "439.9",
-              "Turn Over": "NPR 898,110,549.80"
-            },
-            {
-              "Symbol": "NRIC",
-              "Current Price": "1146.5",
-              "Turn Over": "NPR 639,175,855.80"
-            },
-            {
-              "Symbol": "RIDI",
-              "Current Price": "369",
-              "Turn Over": "NPR 438,773,596.00"
-            },
-            {
-              "Symbol": "HRL",
-              "Current Price": "693",
-              "Turn Over": "NPR 411,290,210.70"
-            },
-            {
-              "Symbol": "API",
-              "Current Price": "357",
-              "Turn Over": "NPR 259,332,441.00"
-            },
-            {
-              "Symbol": "NHPC",
-              "Current Price": "294.9",
-              "Turn Over": "NPR 253,683,521.90"
-            },
-            {
-              "Symbol": "CFCL",
-              "Current Price": "607",
-              "Turn Over": "NPR 248,073,427.80"
-            },
-            {
-              "Symbol": "SHIVM",
-              "Current Price": "670",
-              "Turn Over": "NPR 244,479,611.30"
-            },
-            {
-              "Symbol": "SAHAS",
-              "Current Price": "670",
-              "Turn Over": "NPR 226,277,951.60"
+              "Symbol": "USHL",
+              "Price(NPR)": "622.00",
+              "Change": "2.47%",
+              "Volume": "21.00",
+              "R-Volume": "0.60 %",
+              "Float Cap": "39.63 Cr.",
+              "Market Cap": "136.84 Cr."
             },
             {
               "Symbol": "BHCL",
-              "Current Price": "609",
-              "Turn Over": "NPR 216,949,639.60"
+              "Price(NPR)": "615.10",
+              "Change": "2.38%",
+              "Volume": "71,225.00",
+              "R-Volume": "135.76 %",
+              "Float Cap": "274.00 Cr.",
+              "Market Cap": "559.19 Cr."
+            }
+          ]
+        },
+        {
+          "headers": [
+            "Symbol",
+            "Current Price",
+            "Last Price",
+            "Percent Change",
+            "Volume",
+            "Turnover"
+          ],
+          "rows": [
+            {
+              "Symbol": "KHPL",
+              "Current Price": "572.9",
+              "Last Price": "376.8",
+              "Percent Change": "52.04%",
+              "Volume": "480",
+              "Turnover": "238491"
+            },
+            {
+              "Symbol": "NRIC",
+              "Current Price": "1087.1",
+              "Last Price": "911",
+              "Percent Change": "19.33%",
+              "Volume": "796218",
+              "Turnover": "857769979"
+            },
+            {
+              "Symbol": "CFCL",
+              "Current Price": "585.9",
+              "Last Price": "504.9",
+              "Percent Change": "16.04%",
+              "Volume": "541647",
+              "Turnover": "313320386"
+            },
+            {
+              "Symbol": "SPHL",
+              "Current Price": "619.7",
+              "Last Price": "547",
+              "Percent Change": "13.29%",
+              "Volume": "138753",
+              "Turnover": "81371557"
+            },
+            {
+              "Symbol": "NLG",
+              "Current Price": "650",
+              "Last Price": "574",
+              "Percent Change": "13.24%",
+              "Volume": "152703",
+              "Turnover": "96347828"
+            },
+            {
+              "Symbol": "SGIC",
+              "Current Price": "516",
+              "Last Price": "465.4",
+              "Percent Change": "10.87%",
+              "Volume": "262284",
+              "Turnover": "130537629"
+            },
+            {
+              "Symbol": "NICL",
+              "Current Price": "559.1",
+              "Last Price": "510",
+              "Percent Change": "9.63%",
+              "Volume": "378608",
+              "Turnover": "206008767"
+            },
+            {
+              "Symbol": "HEI",
+              "Current Price": "586",
+              "Last Price": "536",
+              "Percent Change": "9.33%",
+              "Volume": "159659",
+              "Turnover": "91338093"
+            },
+            {
+              "Symbol": "UAIL",
+              "Current Price": "483.5",
+              "Last Price": "445",
+              "Percent Change": "8.65%",
+              "Volume": "190720",
+              "Turnover": "90595929"
+            },
+            {
+              "Symbol": "VLBS",
+              "Current Price": "747",
+              "Last Price": "690",
+              "Percent Change": "8.26%",
+              "Volume": "15383",
+              "Turnover": "10865603"
+            }
+          ]
+        },
+        {
+          "headers": [
+            "Symbol",
+            "Current Price",
+            "Last Price",
+            "Percent Change",
+            "Volume",
+            "Turnover"
+          ],
+          "rows": [
+            {
+              "Symbol": "KHPL",
+              "Current Price": "572.9",
+              "Last Price": "376.8",
+              "Percent Change": "52.04%",
+              "Volume": "480",
+              "Turnover": "238491"
+            },
+            {
+              "Symbol": "NRIC",
+              "Current Price": "1087.1",
+              "Last Price": "911",
+              "Percent Change": "19.33%",
+              "Volume": "796218",
+              "Turnover": "857769979"
+            },
+            {
+              "Symbol": "CFCL",
+              "Current Price": "585.9",
+              "Last Price": "504.9",
+              "Percent Change": "16.04%",
+              "Volume": "541647",
+              "Turnover": "313320386"
+            },
+            {
+              "Symbol": "SPHL",
+              "Current Price": "619.7",
+              "Last Price": "547",
+              "Percent Change": "13.29%",
+              "Volume": "138753",
+              "Turnover": "81371557"
+            },
+            {
+              "Symbol": "NLG",
+              "Current Price": "650",
+              "Last Price": "574",
+              "Percent Change": "13.24%",
+              "Volume": "152703",
+              "Turnover": "96347828"
+            },
+            {
+              "Symbol": "SGIC",
+              "Current Price": "516",
+              "Last Price": "465.4",
+              "Percent Change": "10.87%",
+              "Volume": "262284",
+              "Turnover": "130537629"
+            },
+            {
+              "Symbol": "NICL",
+              "Current Price": "559.1",
+              "Last Price": "510",
+              "Percent Change": "9.63%",
+              "Volume": "378608",
+              "Turnover": "206008767"
+            },
+            {
+              "Symbol": "HEI",
+              "Current Price": "586",
+              "Last Price": "536",
+              "Percent Change": "9.33%",
+              "Volume": "159659",
+              "Turnover": "91338093"
+            },
+            {
+              "Symbol": "UAIL",
+              "Current Price": "483.5",
+              "Last Price": "445",
+              "Percent Change": "8.65%",
+              "Volume": "190720",
+              "Turnover": "90595929"
+            },
+            {
+              "Symbol": "VLBS",
+              "Current Price": "747",
+              "Last Price": "690",
+              "Percent Change": "8.26%",
+              "Volume": "15383",
+              "Turnover": "10865603"
+            }
+          ]
+        },
+        {
+          "headers": [
+            "Symbol",
+            "Current Price",
+            "Turn Over"
+          ],
+          "rows": [
+            {
+              "Symbol": "AKJCL",
+              "Current Price": "440",
+              "Turn Over": "NPR 442,307,279.80"
+            },
+            {
+              "Symbol": "NRIC",
+              "Current Price": "1087.1",
+              "Turn Over": "NPR 218,594,122.70"
+            },
+            {
+              "Symbol": "RIDI",
+              "Current Price": "364",
+              "Turn Over": "NPR 204,946,915.40"
+            },
+            {
+              "Symbol": "NICL",
+              "Current Price": "559.1",
+              "Turn Over": "NPR 151,725,683.20"
+            },
+            {
+              "Symbol": "NHPC",
+              "Current Price": "293.5",
+              "Turn Over": "NPR 128,217,613.00"
+            },
+            {
+              "Symbol": "NRN",
+              "Current Price": "1388.9",
+              "Turn Over": "NPR 124,182,171.30"
+            },
+            {
+              "Symbol": "API",
+              "Current Price": "356.6",
+              "Turn Over": "NPR 116,625,094.90"
+            },
+            {
+              "Symbol": "HRL",
+              "Current Price": "669.5",
+              "Turn Over": "NPR 93,876,618.60"
+            },
+            {
+              "Symbol": "RSML",
+              "Current Price": "3652",
+              "Turn Over": "NPR 91,905,451.60"
+            },
+            {
+              "Symbol": "KKHC",
+              "Current Price": "279",
+              "Turn Over": "NPR 83,956,369.80"
+            }
+          ]
+        },
+        {
+          "headers": [
+            "Symbol",
+            "Current Price",
+            "Turn Over"
+          ],
+          "rows": [
+            {
+              "Symbol": "AKJCL",
+              "Current Price": "440",
+              "Turn Over": "NPR 3,121,929,793.00"
+            },
+            {
+              "Symbol": "RIDI",
+              "Current Price": "364",
+              "Turn Over": "NPR 1,544,167,722.10"
+            },
+            {
+              "Symbol": "NHPC",
+              "Current Price": "293.5",
+              "Turn Over": "NPR 934,531,363.00"
+            },
+            {
+              "Symbol": "API",
+              "Current Price": "356.6",
+              "Turn Over": "NPR 899,915,580.30"
+            },
+            {
+              "Symbol": "NRIC",
+              "Current Price": "1087.1",
+              "Turn Over": "NPR 895,711,488.40"
+            },
+            {
+              "Symbol": "SAHAS",
+              "Current Price": "667.1",
+              "Turn Over": "NPR 706,177,832.20"
+            },
+            {
+              "Symbol": "HRL",
+              "Current Price": "669.5",
+              "Turn Over": "NPR 650,132,054.50"
+            },
+            {
+              "Symbol": "NGPL",
+              "Current Price": "445.5",
+              "Turn Over": "NPR 636,757,758.00"
+            },
+            {
+              "Symbol": "RSML",
+              "Current Price": "3652",
+              "Turn Over": "NPR 598,606,176.80"
+            },
+            {
+              "Symbol": "SHIVM",
+              "Current Price": "675.1",
+              "Turn Over": "NPR 581,931,856.60"
+            }
+          ]
+        },
+        {
+          "headers": [
+            "Symbol",
+            "Current Price",
+            "Turn Over"
+          ],
+          "rows": [
+            {
+              "Symbol": "AKJCL",
+              "Current Price": "440",
+              "Turn Over": "NPR 1,340,417,829.60"
+            },
+            {
+              "Symbol": "NRIC",
+              "Current Price": "1087.1",
+              "Turn Over": "NPR 857,769,978.50"
+            },
+            {
+              "Symbol": "RIDI",
+              "Current Price": "364",
+              "Turn Over": "NPR 643,720,511.40"
+            },
+            {
+              "Symbol": "HRL",
+              "Current Price": "669.5",
+              "Turn Over": "NPR 505,166,829.30"
+            },
+            {
+              "Symbol": "NHPC",
+              "Current Price": "293.5",
+              "Turn Over": "NPR 381,901,134.90"
+            },
+            {
+              "Symbol": "API",
+              "Current Price": "356.6",
+              "Turn Over": "NPR 375,957,535.90"
+            },
+            {
+              "Symbol": "CFCL",
+              "Current Price": "585.9",
+              "Turn Over": "NPR 313,320,385.80"
+            },
+            {
+              "Symbol": "SHIVM",
+              "Current Price": "675.1",
+              "Turn Over": "NPR 304,873,486.60"
+            },
+            {
+              "Symbol": "BHCL",
+              "Current Price": "600.8",
+              "Turn Over": "NPR 299,233,458.00"
+            },
+            {
+              "Symbol": "RSML",
+              "Current Price": "3652",
+              "Turn Over": "NPR 298,867,485.50"
             }
           ]
         },
@@ -501,94 +501,94 @@
           ],
           "rows": [
             {
+              "Symbol": "VLBS",
+              "Price(NPR)": "715.00",
+              "Change": "-4.28%",
+              "Volume": "939.00",
+              "R-Volume": "12.04 %",
+              "Float Cap": "144.97 Cr.",
+              "Market Cap": "566.08 Cr."
+            },
+            {
               "Symbol": "MLBS",
-              "Price(NPR)": "1,240.00",
-              "Change": "-4.10%",
-              "Volume": "50.00",
-              "R-Volume": "6.19 %",
-              "Float Cap": "48.83 Cr.",
-              "Market Cap": "135.63 Cr."
+              "Price(NPR)": "1,239.10",
+              "Change": "-2.97%",
+              "Volume": "10.00",
+              "R-Volume": "1.28 %",
+              "Float Cap": "48.79 Cr.",
+              "Market Cap": "135.53 Cr."
             },
             {
-              "Symbol": "SBLPO",
-              "Price(NPR)": "216.40",
-              "Change": "-2.96%",
-              "Volume": "450,000.00",
-              "R-Volume": "-",
-              "Float Cap": "- Cr.",
-              "Market Cap": "0.00 Cr."
-            },
-            {
-              "Symbol": "GLBSL",
-              "Price(NPR)": "1,770.00",
-              "Change": "-2.85%",
-              "Volume": "23.00",
-              "R-Volume": "2.77 %",
-              "Float Cap": "75.58 Cr.",
-              "Market Cap": "234.27 Cr."
-            },
-            {
-              "Symbol": "NESDO",
-              "Price(NPR)": "1,532.00",
-              "Change": "-2.73%",
+              "Symbol": "MSHL",
+              "Price(NPR)": "670.00",
+              "Change": "-2.62%",
               "Volume": "11.00",
-              "R-Volume": "0.76 %",
-              "Float Cap": "145.06 Cr.",
-              "Market Cap": "446.33 Cr."
+              "R-Volume": "0.94 %",
+              "Float Cap": "56.51 Cr.",
+              "Market Cap": "576.64 Cr."
             },
             {
-              "Symbol": "TVCL",
-              "Price(NPR)": "517.00",
-              "Change": "-2.64%",
-              "Volume": "1,620.00",
-              "R-Volume": "8.83 %",
-              "Float Cap": "925.00 Cr.",
-              "Market Cap": "925.00 Cr."
+              "Symbol": "PPCL",
+              "Price(NPR)": "380.40",
+              "Change": "-2.21%",
+              "Volume": "10.00",
+              "R-Volume": "0.03 %",
+              "Float Cap": "366.13 Cr.",
+              "Market Cap": "366.13 Cr."
             },
             {
-              "Symbol": "HLBSL",
-              "Price(NPR)": "878.00",
-              "Change": "-2.55%",
-              "Volume": "26.00",
-              "R-Volume": "0.89 %",
-              "Float Cap": "146.74 Cr.",
-              "Market Cap": "299.47 Cr."
+              "Symbol": "MMKJL",
+              "Price(NPR)": "527.00",
+              "Change": "-2.04%",
+              "Volume": "1,661.00",
+              "R-Volume": "27.51 %",
+              "Float Cap": "79.53 Cr.",
+              "Market Cap": "527.00 Cr."
+            },
+            {
+              "Symbol": "SPIL",
+              "Price(NPR)": "730.10",
+              "Change": "-2.01%",
+              "Volume": "500.00",
+              "R-Volume": "5.78 %",
+              "Float Cap": "1,004.04 Cr.",
+              "Market Cap": "2,049.06 Cr."
+            },
+            {
+              "Symbol": "JHAPA",
+              "Price(NPR)": "1,392.10",
+              "Change": "-1.96%",
+              "Volume": "971.00",
+              "R-Volume": "4.07 %",
+              "Float Cap": "132.32 Cr.",
+              "Market Cap": "529.26 Cr."
             },
             {
               "Symbol": "TSHL",
-              "Price(NPR)": "570.20",
-              "Change": "-2.20%",
-              "Volume": "10.00",
-              "R-Volume": "0.20 %",
-              "Float Cap": "41.28 Cr.",
-              "Market Cap": "280.82 Cr."
-            },
-            {
-              "Symbol": "ENL",
-              "Price(NPR)": "871.80",
-              "Change": "-2.11%",
-              "Volume": "20.00",
-              "R-Volume": "1.49 %",
-              "Float Cap": "484.37 Cr.",
-              "Market Cap": "484.37 Cr."
-            },
-            {
-              "Symbol": "ALBSL",
-              "Price(NPR)": "1,096.00",
-              "Change": "-2.06%",
-              "Volume": "114.00",
-              "R-Volume": "0.80 %",
-              "Float Cap": "285.92 Cr.",
-              "Market Cap": "879.74 Cr."
-            },
-            {
-              "Symbol": "VLUCL",
-              "Price(NPR)": "488.00",
+              "Price(NPR)": "565.10",
               "Change": "-1.91%",
-              "Volume": "100.00",
-              "R-Volume": "1.64 %",
-              "Float Cap": "91.46 Cr.",
-              "Market Cap": "933.30 Cr."
+              "Volume": "10.00",
+              "R-Volume": "0.22 %",
+              "Float Cap": "40.91 Cr.",
+              "Market Cap": "278.31 Cr."
+            },
+            {
+              "Symbol": "STC",
+              "Price(NPR)": "5,382.10",
+              "Change": "-1.88%",
+              "Volume": "186.00",
+              "R-Volume": "8.51 %",
+              "Float Cap": "1,637.10 Cr.",
+              "Market Cap": "2,079.12 Cr."
+            },
+            {
+              "Symbol": "NLICL",
+              "Price(NPR)": "588.10",
+              "Change": "-1.82%",
+              "Volume": "120.00",
+              "R-Volume": "0.70 %",
+              "Float Cap": "1,171.54 Cr.",
+              "Market Cap": "3,347.26 Cr."
             }
           ]
         },
@@ -604,83 +604,83 @@
           "rows": [
             {
               "Symbol": "BUNGAL",
-              "Current Price": "697.2",
+              "Current Price": "732",
               "Last Price": "841",
-              "Percent Change": "-17.10%",
-              "Volume": "196596",
-              "Turnover": "141877777"
-            },
-            {
-              "Symbol": "CREST",
-              "Current Price": "1226.2",
-              "Last Price": "1350",
-              "Percent Change": "-9.17%",
-              "Volume": "31181",
-              "Turnover": "39171189"
-            },
-            {
-              "Symbol": "NRM",
-              "Current Price": "362",
-              "Last Price": "393.3",
-              "Percent Change": "-7.96%",
-              "Volume": "88231",
-              "Turnover": "32582850"
-            },
-            {
-              "Symbol": "JHAPA",
-              "Current Price": "1418",
-              "Last Price": "1525",
-              "Percent Change": "-7.02%",
-              "Volume": "43678",
-              "Turnover": "62791778"
+              "Percent Change": "-12.96%",
+              "Volume": "265394",
+              "Turnover": "191733483"
             },
             {
               "Symbol": "RLEL",
-              "Current Price": "1010",
+              "Current Price": "990",
               "Last Price": "1075",
-              "Percent Change": "-6.05%",
-              "Volume": "40355",
-              "Turnover": "41180666"
+              "Percent Change": "-7.91%",
+              "Volume": "59341",
+              "Turnover": "60106478"
             },
             {
-              "Symbol": "BBC",
-              "Current Price": "4580",
-              "Last Price": "4836",
-              "Percent Change": "-5.29%",
-              "Volume": "5892",
-              "Turnover": "26558242"
+              "Symbol": "NRM",
+              "Current Price": "365",
+              "Last Price": "393.3",
+              "Percent Change": "-7.20%",
+              "Volume": "118359",
+              "Turnover": "43594283"
+            },
+            {
+              "Symbol": "JHAPA",
+              "Current Price": "1420",
+              "Last Price": "1525",
+              "Percent Change": "-6.89%",
+              "Volume": "60677",
+              "Turnover": "86657375"
             },
             {
               "Symbol": "SIPD",
-              "Current Price": "796.6",
+              "Current Price": "783",
               "Last Price": "830",
-              "Percent Change": "-4.02%",
-              "Volume": "45035",
-              "Turnover": "36065430"
+              "Percent Change": "-5.66%",
+              "Volume": "62676",
+              "Turnover": "50024726"
             },
             {
-              "Symbol": "RHGCL",
-              "Current Price": "294.8",
-              "Last Price": "306.6",
-              "Percent Change": "-3.85%",
-              "Volume": "104237",
-              "Turnover": "30933072"
+              "Symbol": "BBC",
+              "Current Price": "4570",
+              "Last Price": "4836",
+              "Percent Change": "-5.50%",
+              "Volume": "6372",
+              "Turnover": "28746706"
             },
             {
-              "Symbol": "BJHL",
-              "Current Price": "900.1",
-              "Last Price": "936",
-              "Percent Change": "-3.84%",
-              "Volume": "23150",
-              "Turnover": "21161658"
+              "Symbol": "CREST",
+              "Current Price": "1280",
+              "Last Price": "1350",
+              "Percent Change": "-5.19%",
+              "Volume": "57091",
+              "Turnover": "72173836"
+            },
+            {
+              "Symbol": "TVCL",
+              "Current Price": "513",
+              "Last Price": "540",
+              "Percent Change": "-5.00%",
+              "Volume": "36005",
+              "Turnover": "18705230"
             },
             {
               "Symbol": "NABBC",
-              "Current Price": "925",
+              "Current Price": "914.9",
               "Last Price": "960",
-              "Percent Change": "-3.65%",
-              "Volume": "6406",
-              "Turnover": "5987767"
+              "Percent Change": "-4.70%",
+              "Volume": "16543",
+              "Turnover": "15158915"
+            },
+            {
+              "Symbol": "IHL",
+              "Current Price": "409",
+              "Last Price": "428",
+              "Percent Change": "-4.44%",
+              "Volume": "69002",
+              "Turnover": "28548163"
             }
           ]
         },
@@ -696,83 +696,83 @@
           "rows": [
             {
               "Symbol": "BUNGAL",
-              "Current Price": "697.2",
+              "Current Price": "732",
               "Last Price": "841",
-              "Percent Change": "-17.10%",
-              "Volume": "196596",
-              "Turnover": "141877777"
-            },
-            {
-              "Symbol": "CREST",
-              "Current Price": "1226.2",
-              "Last Price": "1350",
-              "Percent Change": "-9.17%",
-              "Volume": "31181",
-              "Turnover": "39171189"
-            },
-            {
-              "Symbol": "NRM",
-              "Current Price": "362",
-              "Last Price": "393.3",
-              "Percent Change": "-7.96%",
-              "Volume": "88231",
-              "Turnover": "32582850"
-            },
-            {
-              "Symbol": "JHAPA",
-              "Current Price": "1418",
-              "Last Price": "1525",
-              "Percent Change": "-7.02%",
-              "Volume": "43678",
-              "Turnover": "62791778"
+              "Percent Change": "-12.96%",
+              "Volume": "265394",
+              "Turnover": "191733483"
             },
             {
               "Symbol": "RLEL",
-              "Current Price": "1010",
+              "Current Price": "990",
               "Last Price": "1075",
-              "Percent Change": "-6.05%",
-              "Volume": "40355",
-              "Turnover": "41180666"
+              "Percent Change": "-7.91%",
+              "Volume": "59341",
+              "Turnover": "60106478"
             },
             {
-              "Symbol": "BBC",
-              "Current Price": "4580",
-              "Last Price": "4836",
-              "Percent Change": "-5.29%",
-              "Volume": "5892",
-              "Turnover": "26558242"
+              "Symbol": "NRM",
+              "Current Price": "365",
+              "Last Price": "393.3",
+              "Percent Change": "-7.20%",
+              "Volume": "118359",
+              "Turnover": "43594283"
+            },
+            {
+              "Symbol": "JHAPA",
+              "Current Price": "1420",
+              "Last Price": "1525",
+              "Percent Change": "-6.89%",
+              "Volume": "60677",
+              "Turnover": "86657375"
             },
             {
               "Symbol": "SIPD",
-              "Current Price": "796.6",
+              "Current Price": "783",
               "Last Price": "830",
-              "Percent Change": "-4.02%",
-              "Volume": "45035",
-              "Turnover": "36065430"
+              "Percent Change": "-5.66%",
+              "Volume": "62676",
+              "Turnover": "50024726"
             },
             {
-              "Symbol": "RHGCL",
-              "Current Price": "294.8",
-              "Last Price": "306.6",
-              "Percent Change": "-3.85%",
-              "Volume": "104237",
-              "Turnover": "30933072"
+              "Symbol": "BBC",
+              "Current Price": "4570",
+              "Last Price": "4836",
+              "Percent Change": "-5.50%",
+              "Volume": "6372",
+              "Turnover": "28746706"
             },
             {
-              "Symbol": "BJHL",
-              "Current Price": "900.1",
-              "Last Price": "936",
-              "Percent Change": "-3.84%",
-              "Volume": "23150",
-              "Turnover": "21161658"
+              "Symbol": "CREST",
+              "Current Price": "1280",
+              "Last Price": "1350",
+              "Percent Change": "-5.19%",
+              "Volume": "57091",
+              "Turnover": "72173836"
+            },
+            {
+              "Symbol": "TVCL",
+              "Current Price": "513",
+              "Last Price": "540",
+              "Percent Change": "-5.00%",
+              "Volume": "36005",
+              "Turnover": "18705230"
             },
             {
               "Symbol": "NABBC",
-              "Current Price": "925",
+              "Current Price": "914.9",
               "Last Price": "960",
-              "Percent Change": "-3.65%",
-              "Volume": "6406",
-              "Turnover": "5987767"
+              "Percent Change": "-4.70%",
+              "Volume": "16543",
+              "Turnover": "15158915"
+            },
+            {
+              "Symbol": "IHL",
+              "Current Price": "409",
+              "Last Price": "428",
+              "Percent Change": "-4.44%",
+              "Volume": "69002",
+              "Turnover": "28548163"
             }
           ]
         },
@@ -809,7 +809,7 @@
               "Sector": "Finance",
               "0-15": "0",
               "15-30": "2",
-              "30-50": "4",
+              "30-50": "3",
               "50-75": "2",
               "75-100": "1",
               "> 100": "3"
@@ -930,9 +930,9 @@
               "Sector": "Finance",
               "0-1": "0",
               "1-2": "0",
-              "2-4": "5",
+              "2-4": "6",
               "4-6": "7",
-              "6-10": "2",
+              "6-10": "1",
               "> 10": "0"
             },
             {
@@ -949,7 +949,7 @@
               "0-1": "0",
               "1-2": "0",
               "2-4": "40",
-              "4-6": "40",
+              "4-6": "39",
               "6-10": "16",
               "> 10": "6"
             },
@@ -966,9 +966,9 @@
               "Sector": "Life Insurance",
               "0-1": "0",
               "1-2": "0",
-              "2-4": "9",
+              "2-4": "8",
               "4-6": "3",
-              "6-10": "0",
+              "6-10": "1",
               "> 10": "2"
             },
             {
@@ -1042,8 +1042,8 @@
               "Sector": "Development Banks",
               "1-100": "0",
               "100-300": "0",
-              "300-500": "8",
-              "500-1000": "5",
+              "300-500": "7",
+              "500-1000": "6",
               "1000-2500": "3",
               "> 2500": "0"
             },
@@ -1069,9 +1069,9 @@
               "Sector": "Hydro Power",
               "1-100": "0",
               "100-300": "21",
-              "300-500": "39",
+              "300-500": "40",
               "500-1000": "41",
-              "1000-2500": "3",
+              "1000-2500": "2",
               "> 2500": "0"
             },
             {
@@ -1114,8 +1114,8 @@
               "Sector": "Non Life Insurance",
               "1-100": "0",
               "100-300": "0",
-              "300-500": "4",
-              "500-1000": "8",
+              "300-500": "3",
+              "500-1000": "9",
               "1000-2500": "1",
               "> 2500": "1"
             },
@@ -1185,8 +1185,8 @@
             },
             {
               "Sector": "Life Insurance",
-              "0-2.5%": "3",
-              "2.5%-5%": "8",
+              "0-2.5%": "5",
+              "2.5%-5%": "6",
               ">5%": "0"
             },
             {
@@ -1226,90 +1226,90 @@
           "rows": [
             {
               "Col_0": "Commercial Banking",
-              "Col_1": "55 %",
-              "Col_2": "75 %",
-              "Col_3": "45 %",
-              "Col_4": "75 %",
+              "Col_1": "45 %",
+              "Col_2": "65 %",
+              "Col_3": "40 %",
+              "Col_4": "80 %",
               "Col_5": "95 %"
             },
             {
               "Col_0": "Development Bank",
-              "Col_1": "62.5 %",
-              "Col_2": "75 %",
-              "Col_3": "25 %",
-              "Col_4": "43.75 %",
-              "Col_5": "62.5 %"
+              "Col_1": "75 %",
+              "Col_2": "81.25 %",
+              "Col_3": "50 %",
+              "Col_4": "62.5 %",
+              "Col_5": "56.25 %"
             },
             {
               "Col_0": "Finance",
-              "Col_1": "100 %",
+              "Col_1": "93.33 %",
               "Col_2": "100 %",
-              "Col_3": "86.67 %",
+              "Col_3": "80 %",
               "Col_4": "60 %",
               "Col_5": "46.67 %"
             },
             {
               "Col_0": "Hotels and Tourism",
-              "Col_1": "25 %",
-              "Col_2": "50 %",
-              "Col_3": "37.5 %",
+              "Col_1": "62.5 %",
+              "Col_2": "62.5 %",
+              "Col_3": "50 %",
               "Col_4": "12.5 %",
               "Col_5": "12.5 %"
             },
             {
               "Col_0": "Hydropower",
-              "Col_1": "46.15 %",
-              "Col_2": "76.92 %",
-              "Col_3": "18.27 %",
+              "Col_1": "39.42 %",
+              "Col_2": "70.19 %",
+              "Col_3": "17.31 %",
               "Col_4": "35.58 %",
               "Col_5": "43.27 %"
             },
             {
               "Col_0": "INVESTMENT",
-              "Col_1": "37.5 %",
-              "Col_2": "37.5 %",
+              "Col_1": "12.5 %",
+              "Col_2": "25 %",
               "Col_3": "0 %",
               "Col_4": "0 %",
               "Col_5": "12.5 %"
             },
             {
               "Col_0": "Life Insurance",
-              "Col_1": "71.43 %",
-              "Col_2": "92.86 %",
-              "Col_3": "7.14 %",
-              "Col_4": "14.29 %",
+              "Col_1": "100 %",
+              "Col_2": "100 %",
+              "Col_3": "71.43 %",
+              "Col_4": "50 %",
               "Col_5": "21.43 %"
             },
             {
               "Col_0": "Manufacturing and Processing",
-              "Col_1": "40 %",
-              "Col_2": "53.33 %",
-              "Col_3": "26.67 %",
-              "Col_4": "33.33 %",
+              "Col_1": "20 %",
+              "Col_2": "46.67 %",
+              "Col_3": "20 %",
+              "Col_4": "26.67 %",
               "Col_5": "26.67 %"
             },
             {
               "Col_0": "Microfinance",
-              "Col_1": "54 %",
-              "Col_2": "50 %",
-              "Col_3": "8 %",
-              "Col_4": "14 %",
-              "Col_5": "26 %"
+              "Col_1": "56 %",
+              "Col_2": "58 %",
+              "Col_3": "10 %",
+              "Col_4": "18 %",
+              "Col_5": "18 %"
             },
             {
               "Col_0": "Nonlife Insurance",
-              "Col_1": "85.71 %",
+              "Col_1": "92.86 %",
               "Col_2": "92.86 %",
-              "Col_3": "71.43 %",
-              "Col_4": "42.86 %",
-              "Col_5": "21.43 %"
+              "Col_3": "85.71 %",
+              "Col_4": "78.57 %",
+              "Col_5": "28.57 %"
             },
             {
               "Col_0": "Others",
               "Col_1": "22.22 %",
               "Col_2": "33.33 %",
               "Col_3": "11.11 %",
-              "Col_4": "0 %",
+              "Col_4": "11.11 %",
               "Col_5": "11.11 %"
             },
             {
@@ -1365,225 +1365,219 @@
     "topStocks": [
       {
         "symbol": "KHPL",
-        "ltp": 572.9,
+        "ltp": 658.8,
         "change": "14.99%",
-        "volume": 80
+        "volume": 90
       },
       {
-        "symbol": "CREST",
-        "ltp": 1269,
-        "change": "3.49%",
-        "volume": 5617
+        "symbol": "CFCL",
+        "ltp": 610,
+        "change": "4.11%",
+        "volume": 98029
       },
       {
-        "symbol": "AKJCL",
-        "ltp": 453,
-        "change": "2.98%",
-        "volume": 411502
-      },
-      {
-        "symbol": "BJHL",
-        "ltp": 926.9,
-        "change": "2.98%",
-        "volume": 2495
-      },
-      {
-        "symbol": "KKHC",
-        "ltp": 282,
-        "change": "2.92%",
-        "volume": 89716
-      },
-      {
-        "symbol": "CKHL",
-        "ltp": 694,
-        "change": "2.81%",
-        "volume": 20
+        "symbol": "RLFL",
+        "ltp": 484,
+        "change": "3.42%",
+        "volume": 30407
       },
       {
         "symbol": "KBSH",
-        "ltp": 1600,
-        "change": "2.56%",
+        "ltp": 1598.5,
+        "change": "3.00%",
+        "volume": 11
+      },
+      {
+        "symbol": "MATRI",
+        "ltp": 911,
+        "change": "3.00%",
+        "volume": 550
+      },
+      {
+        "symbol": "SHLB",
+        "ltp": 1520,
+        "change": "2.91%",
+        "volume": 130
+      },
+      {
+        "symbol": "HEIP",
+        "ltp": 357,
+        "change": "2.88%",
+        "volume": 4300
+      },
+      {
+        "symbol": "BNT",
+        "ltp": 11980,
+        "change": "2.83%",
         "volume": 10
       },
       {
-        "symbol": "SPL",
-        "ltp": 718.7,
-        "change": "2.54%",
-        "volume": 145
+        "symbol": "USHL",
+        "ltp": 622,
+        "change": "2.47%",
+        "volume": 21
       },
       {
-        "symbol": "UAIL",
-        "ltp": 480,
-        "change": "2.45%",
-        "volume": 20595
-      },
-      {
-        "symbol": "DHEL",
-        "ltp": 645,
-        "change": "2.40%",
-        "volume": 3428
+        "symbol": "BHCL",
+        "ltp": 615.1,
+        "change": "2.38%",
+        "volume": 71225
       },
       {
         "symbol": "NRIC",
         "ltp": 911,
-        "change": "25.85%",
-        "volume": 601114
+        "change": "19.33%",
+        "volume": 796218
       },
       {
-        "symbol": "CFCL",
-        "ltp": 504.9,
-        "change": "20.22%",
-        "volume": 431702
-      },
-      {
-        "symbol": "NFS",
-        "ltp": 570,
-        "change": "8.07%",
-        "volume": 92514
-      },
-      {
-        "symbol": "GFCL",
-        "ltp": 623,
-        "change": "8.01%",
-        "volume": 108200
-      },
-      {
-        "symbol": "RLFL",
-        "ltp": 436.2,
-        "change": "7.52%",
-        "volume": 103940
-      },
-      {
-        "symbol": "GUFL",
-        "ltp": 538,
-        "change": "7.21%",
-        "volume": 88310
+        "symbol": "SPHL",
+        "ltp": 547,
+        "change": "13.29%",
+        "volume": 138753
       },
       {
         "symbol": "NLG",
         "ltp": 574,
-        "change": "6.97%",
-        "volume": 65445
+        "change": "13.24%",
+        "volume": 152703
       },
       {
-        "symbol": "GMLI",
-        "ltp": 1282,
-        "change": "6.86%",
-        "volume": 11363
+        "symbol": "SGIC",
+        "ltp": 465.4,
+        "change": "10.87%",
+        "volume": 262284
       },
       {
-        "symbol": "HRL",
-        "ltp": 650,
-        "change": "6.62%",
-        "volume": 602903
+        "symbol": "NICL",
+        "ltp": 510,
+        "change": "9.63%",
+        "volume": 378608
+      },
+      {
+        "symbol": "HEI",
+        "ltp": 536,
+        "change": "9.33%",
+        "volume": 159659
+      },
+      {
+        "symbol": "UAIL",
+        "ltp": 445,
+        "change": "8.65%",
+        "volume": 190720
+      },
+      {
+        "symbol": "VLBS",
+        "ltp": 690,
+        "change": "8.26%",
+        "volume": 15383
       },
       {
         "symbol": "MLBS",
-        "ltp": 1240,
-        "change": "-4.10%",
-        "volume": 50
-      },
-      {
-        "symbol": "SBLPO",
-        "ltp": 216.4,
-        "change": "-2.96%",
-        "volume": 450000
-      },
-      {
-        "symbol": "GLBSL",
-        "ltp": 1770,
-        "change": "-2.85%",
-        "volume": 23
-      },
-      {
-        "symbol": "NESDO",
-        "ltp": 1532,
-        "change": "-2.73%",
-        "volume": 11
-      },
-      {
-        "symbol": "TVCL",
-        "ltp": 517,
-        "change": "-2.64%",
-        "volume": 1620
-      },
-      {
-        "symbol": "HLBSL",
-        "ltp": 878,
-        "change": "-2.55%",
-        "volume": 26
-      },
-      {
-        "symbol": "TSHL",
-        "ltp": 570.2,
-        "change": "-2.20%",
+        "ltp": 1239.1,
+        "change": "-2.97%",
         "volume": 10
       },
       {
-        "symbol": "ENL",
-        "ltp": 871.8,
-        "change": "-2.11%",
-        "volume": 20
+        "symbol": "MSHL",
+        "ltp": 670,
+        "change": "-2.62%",
+        "volume": 11
       },
       {
-        "symbol": "ALBSL",
-        "ltp": 1096,
-        "change": "-2.06%",
-        "volume": 114
+        "symbol": "PPCL",
+        "ltp": 380.4,
+        "change": "-2.21%",
+        "volume": 10
       },
       {
-        "symbol": "VLUCL",
-        "ltp": 488,
+        "symbol": "MMKJL",
+        "ltp": 527,
+        "change": "-2.04%",
+        "volume": 1661
+      },
+      {
+        "symbol": "SPIL",
+        "ltp": 730.1,
+        "change": "-2.01%",
+        "volume": 500
+      },
+      {
+        "symbol": "JHAPA",
+        "ltp": 1392.1,
+        "change": "-1.96%",
+        "volume": 971
+      },
+      {
+        "symbol": "TSHL",
+        "ltp": 565.1,
         "change": "-1.91%",
-        "volume": 100
+        "volume": 10
+      },
+      {
+        "symbol": "STC",
+        "ltp": 5382.1,
+        "change": "-1.88%",
+        "volume": 186
+      },
+      {
+        "symbol": "NLICL",
+        "ltp": 588.1,
+        "change": "-1.82%",
+        "volume": 120
       },
       {
         "symbol": "BUNGAL",
         "ltp": 841,
-        "change": "-17.10%",
-        "volume": 196596
-      },
-      {
-        "symbol": "NRM",
-        "ltp": 393.3,
-        "change": "-7.96%",
-        "volume": 88231
-      },
-      {
-        "symbol": "JHAPA",
-        "ltp": 1525,
-        "change": "-7.02%",
-        "volume": 43678
+        "change": "-12.96%",
+        "volume": 265394
       },
       {
         "symbol": "RLEL",
         "ltp": 1075,
-        "change": "-6.05%",
-        "volume": 40355
+        "change": "-7.91%",
+        "volume": 59341
       },
       {
-        "symbol": "BBC",
-        "ltp": 4836,
-        "change": "-5.29%",
-        "volume": 5892
+        "symbol": "NRM",
+        "ltp": 393.3,
+        "change": "-7.20%",
+        "volume": 118359
       },
       {
         "symbol": "SIPD",
         "ltp": 830,
-        "change": "-4.02%",
-        "volume": 45035
+        "change": "-5.66%",
+        "volume": 62676
       },
       {
-        "symbol": "RHGCL",
-        "ltp": 306.6,
-        "change": "-3.85%",
-        "volume": 104237
+        "symbol": "BBC",
+        "ltp": 4836,
+        "change": "-5.50%",
+        "volume": 6372
+      },
+      {
+        "symbol": "CREST",
+        "ltp": 1350,
+        "change": "-5.19%",
+        "volume": 57091
+      },
+      {
+        "symbol": "TVCL",
+        "ltp": 540,
+        "change": "-5.00%",
+        "volume": 36005
       },
       {
         "symbol": "NABBC",
         "ltp": 960,
-        "change": "-3.65%",
-        "volume": 6406
+        "change": "-4.70%",
+        "volume": 16543
+      },
+      {
+        "symbol": "IHL",
+        "ltp": 428,
+        "change": "-4.44%",
+        "volume": 69002
       }
     ],
     "brokerData": [],
@@ -1737,7 +1731,7 @@
     "floorsheet": []
   },
   "summary": {
-    "stockCount": 37,
+    "stockCount": 36,
     "brokerRecords": 0,
     "swingSignals": 0,
     "hasMarketIndex": false,
