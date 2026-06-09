@@ -1,8 +1,21 @@
 {
-  "lastUpdated": "2026-06-08T06:08:34.810Z",
-  "totalCount": 53,
-  "newCount": 0,
+  "lastUpdated": "2026-06-09T05:18:27.539Z",
+  "totalCount": 54,
+  "newCount": 1,
   "notices": [
+    {
+      "id": "nrbnepalinvitationforexpress_mq66vnjb",
+      "title": "Invitation for Expression of Interest (EOI) for the Design, Develop, Install, Commissioning and Maintenance of Salary and Wage Index (SWI) Software",
+      "source": "NRB Nepal",
+      "category": "Banking",
+      "badge": "NRB",
+      "badgeColor": "#e65100",
+      "link": "https://www.nrb.org.np/gsd/invitation-for-expression-of-interest-eoi-for-the-design-develop-install-commissioning-and-maintenance-of-salary-and-wage-index-swi-software/",
+      "summary": "New Banking update from NRB Nepal: Invitation for Expression of Interest (EOI) for the Design, Develop, Install, Commissioning and Maintenance of Salary and Wage Index (SWI) Software",
+      "detectedAt": "2026-06-09T05:18:22.439Z",
+      "isNew": true,
+      "emailedAt": null
+    },
     {
       "id": "nrbnepalnrbwp63economicstabi_mpz3hsac",
       "title": "NRB-WP-63 – Economic Stability and Central Banking in Nepal: Achievements and Future Directions –Rajan Krishna Panta, PhD",

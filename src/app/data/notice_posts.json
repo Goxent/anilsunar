@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-06-08T06:08:46.576Z",
-  "totalPosts": 13,
+  "lastUpdated": "2026-06-09T05:18:39.686Z",
+  "totalPosts": 14,
   "posts": {
     "ocrnepal_moqq27ad": {
       "headline": "OCR Nepal: वार्षिक विवरण अभिलेखनका पत्रहरू स्वचालित रूपमा प्राप्त ",
@@ -261,6 +261,26 @@
       "badgeColor": "#e65100",
       "link": "https://www.nrb.org.np/red/nrb-wp-63-economic-stability-and-central-banking-in-nepal-achievements-and-future-directions-rajan-krishna-panta-phd/",
       "createdAt": "2026-06-04T06:09:30.573Z"
+    },
+    "nrbnepalinvitationforexpress_mq66vnjb": {
+      "headline": "NRB Nepal: Invitation for Expression of Interest (EOI) for the Des",
+      "body": "🏦 Nepal Rastra Bank has a new directive!\n\n📌 Invitation for Expression of Interest (EOI) for the Design, Develop, Install, Commissioning and Maintenance of Salary and Wage Index (SWI) Software\n\nThis update from NRB Nepal may affect banking compliance requirements for Nepal professionals.\n\n✅ Review the full notice and consult your advisor.\n\n🔗 https://www.nrb.org.np/gsd/invitation-for-expression-of-interest-eoi-for-the-design-develop-install-commissioning-and-maintenance-of-salary-and-wage-index-swi-software/",
+      "callToAction": "Share this with your team if relevant.",
+      "hashtags": [
+        "#Nepal",
+        "#Compliance",
+        "#CA",
+        "#NRBNepal"
+      ],
+      "bestTimeToPost": "Morning",
+      "topicBadge": "Banking",
+      "isTemplate": true,
+      "noticeId": "nrbnepalinvitationforexpress_mq66vnjb",
+      "noticeTitle": "Invitation for Expression of Interest (EOI) for the Design, Develop, Install, Commissioning and Maintenance of Salary and Wage Index (SWI) Software",
+      "source": "NRB Nepal",
+      "badgeColor": "#e65100",
+      "link": "https://www.nrb.org.np/gsd/invitation-for-expression-of-interest-eoi-for-the-design-develop-install-commissioning-and-maintenance-of-salary-and-wage-index-swi-software/",
+      "createdAt": "2026-06-09T05:18:39.686Z"
     }
   }
 }

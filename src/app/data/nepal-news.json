@@ -1,5 +1,5 @@
 {
-  "scrapedAt": "2026-06-08T06:07:55.642Z",
+  "scrapedAt": "2026-06-09T05:17:55.819Z",
   "totalCount": 23,
   "nepalCount": 15,
   "globalCount": 8,
@@ -16,23 +16,73 @@
   ],
   "articles": [
     {
-      "title": "लगानीकर्ता बजेटप्रति सकारात्मक भए पनि बढेन बजार",
-      "url": "https://www.karobardaily.com/news/382800",
+      "title": "साना व्यवसायीले डिजिटल माध्यमबाट १० लाखसम्म कर्जा पाउने",
+      "url": "https://www.karobardaily.com/news/383189",
       "source": "Karobar Daily",
       "badge": "KD",
       "category": "Nepal Business",
-      "scrapedAt": "2026-06-08T06:07:35.407Z",
-      "summary": "लगानीकर्ता बजेटप्रति सकारात्मक भए पनि बढेन बजार",
+      "scrapedAt": "2026-06-09T05:17:33.863Z",
+      "summary": "साना व्यवसायीले डिजिटल माध्यमबाट १० लाखसम्म कर्जा पाउने",
       "isGlobal": false
     },
     {
-      "title": "बैंक खाता छोरीको: सुरक्षा जीवनभरीको कार्यक्रम हट्यो",
-      "url": "https://www.karobardaily.com/news/382552",
+      "title": "अर्थतन्त्रका सबै समस्या एउटै बजेटले पूरा गर्न सक्दैनः अर्थमन्त्री",
+      "url": "https://www.karobardaily.com/news/383184",
       "source": "Karobar Daily",
       "badge": "KD",
       "category": "Nepal Business",
-      "scrapedAt": "2026-06-08T06:07:35.407Z",
-      "summary": "बैंक खाता छोरीको: सुरक्षा जीवनभरीको कार्यक्रम हट्यो",
+      "scrapedAt": "2026-06-09T05:17:33.863Z",
+      "summary": "अर्थतन्त्रका सबै समस्या एउटै बजेटले पूरा गर्न सक्दैनः अर्थमन्त्री",
+      "isGlobal": false
+    },
+    {
+      "title": "संघ सरकारबाट प्रदेशलाई जाने अनुदान कर्णाली र मधेसलाई सबैभन्दा बढी",
+      "url": "https://www.karobardaily.com/news/383099",
+      "source": "Karobar Daily",
+      "badge": "KD",
+      "category": "Nepal Business",
+      "scrapedAt": "2026-06-09T05:17:33.863Z",
+      "summary": "संघ सरकारबाट प्रदेशलाई जाने अनुदान कर्णाली र मधेसलाई सबैभन्दा बढी",
+      "isGlobal": false
+    },
+    {
+      "title": "आइएमएफद्वारा नेपालको विस्तारित कर्जा सुविधाअन्तर्गतको अन्तिम समीक्षा सम्पन्न",
+      "url": "https://www.karobardaily.com/news/383082",
+      "source": "Karobar Daily",
+      "badge": "KD",
+      "category": "Nepal Business",
+      "scrapedAt": "2026-06-09T05:17:33.863Z",
+      "summary": "आइएमएफद्वारा नेपालको विस्तारित कर्जा सुविधाअन्तर्गतको अन्तिम समीक्षा सम्पन्न",
+      "isGlobal": false
+    },
+    {
+      "title": "कृषि विकास बैंक संचालक समितिको अध्यक्षमा टंकप्रसाद पाण्डेय नियुक्त",
+      "url": "https://www.karobardaily.com/news/383146",
+      "source": "Karobar Daily",
+      "badge": "KD",
+      "category": "Nepal Business",
+      "scrapedAt": "2026-06-09T05:17:33.863Z",
+      "summary": "कृषि विकास बैंक संचालक समितिको अध्यक्षमा टंकप्रसाद पाण्डेय नियुक्त",
+      "isGlobal": false
+    },
+    {
+      "title": "जलवायु अनुकूलनका लागि बैंक, वित्तीय संस्था र बीमा कम्पनीको लगानी बढाउन आग्रह",
+      "url": "https://www.karobardaily.com/news/383111",
+      "source": "Karobar Daily",
+      "badge": "KD",
+      "category": "Nepal Business",
+      "scrapedAt": "2026-06-09T05:17:33.863Z",
+      "summary": "जलवायु अनुकूलनका लागि बैंक, वित्तीय संस्था र बीमा कम्पनीको लगानी बढाउन आग्रह",
+      "isGlobal": false
+    },
+    {
+      "title": "प्रदेश सरकारको योजना बैंकमा १७ हजार आयोजना",
+      "url": "https://www.karobardaily.com/news/382935",
+      "source": "Karobar Daily",
+      "badge": "KD",
+      "category": "Nepal Business",
+      "scrapedAt": "2026-06-09T05:17:33.863Z",
+      "summary": "प्रदेश सरकारको योजना बैंकमा १७ हजार आयोजना",
       "isGlobal": false
     },
     {
@@ -41,58 +91,8 @@
       "source": "Karobar Daily",
       "badge": "KD",
       "category": "Nepal Business",
-      "scrapedAt": "2026-06-08T06:07:35.407Z",
+      "scrapedAt": "2026-06-09T05:17:33.863Z",
       "summary": "अधिक तरलताले बढायो चिन्ता, बढेन कर्जा",
-      "isGlobal": false
-    },
-    {
-      "title": "फिनटेक मार्केटप्लेस राष्ट्र बैंकको नेतृत्वमा सञ्चालन हुनेछ: गभर्नर",
-      "url": "https://www.karobardaily.com/news/380412",
-      "source": "Karobar Daily",
-      "badge": "KD",
-      "category": "Nepal Business",
-      "scrapedAt": "2026-06-08T06:07:35.407Z",
-      "summary": "फिनटेक मार्केटप्लेस राष्ट्र बैंकको नेतृत्वमा सञ्चालन हुनेछ: गभर्नर",
-      "isGlobal": false
-    },
-    {
-      "title": "बैंकिङ, पुँजीबजार तथा बीमा क्षेत्र ‘भाइब्रेन्ट’ बनाउने विश्वास",
-      "url": "https://www.karobardaily.com/news/380077",
-      "source": "Karobar Daily",
-      "badge": "KD",
-      "category": "Nepal Business",
-      "scrapedAt": "2026-06-08T06:07:35.407Z",
-      "summary": "बैंकिङ, पुँजीबजार तथा बीमा क्षेत्र ‘भाइब्रेन्ट’ बनाउने विश्वास",
-      "isGlobal": false
-    },
-    {
-      "title": "निक्षेप फिर्ता लम्बिँदा बचतकर्ता तनावमा",
-      "url": "https://www.karobardaily.com/news/378463",
-      "source": "Karobar Daily",
-      "badge": "KD",
-      "category": "Nepal Business",
-      "scrapedAt": "2026-06-08T06:07:35.407Z",
-      "summary": "निक्षेप फिर्ता लम्बिँदा बचतकर्ता तनावमा",
-      "isGlobal": false
-    },
-    {
-      "title": "सरकारी पुनर्बिमा कम्पनीलाई बलियो बनाउने योजना",
-      "url": "https://www.karobardaily.com/news/380365",
-      "source": "Karobar Daily",
-      "badge": "KD",
-      "category": "Nepal Business",
-      "scrapedAt": "2026-06-08T06:07:35.407Z",
-      "summary": "सरकारी पुनर्बिमा कम्पनीलाई बलियो बनाउने योजना",
-      "isGlobal": false
-    },
-    {
-      "title": "कुमारी बैंक र बी एण्ड बी अस्पतालबीच सम्झौता",
-      "url": "https://www.karobardaily.com/news/382691",
-      "source": "Karobar Daily",
-      "badge": "KD",
-      "category": "Nepal Business",
-      "scrapedAt": "2026-06-08T06:07:35.407Z",
-      "summary": "कुमारी बैंक र बी एण्ड बी अस्पतालबीच सम्झौता",
       "isGlobal": false
     },
     {
@@ -101,17 +101,17 @@
       "source": "Sharesansar",
       "badge": "SS",
       "category": "Nepal Stock",
-      "scrapedAt": "2026-06-08T06:07:37.395Z",
+      "scrapedAt": "2026-06-09T05:17:35.615Z",
       "summary": "Proposed Dividend",
       "isGlobal": false
     },
     {
       "title": "Dividend, Bonus & Rights",
-      "url": "https://www.sharesansar.com/newsdetail/nic-asia-bank-agm-approves-financial-reports-21-rights-share-issue-and-elects-new-board-members-2026-06-02",
+      "url": "https://www.sharesansar.com/newsdetail/no-dividend-to-aviyan-laghubitta-shareholders-for-fy-208182-2026-06-08",
       "source": "Sharesansar",
       "badge": "SS",
       "category": "Nepal Stock",
-      "scrapedAt": "2026-06-08T06:07:37.395Z",
+      "scrapedAt": "2026-06-09T05:17:35.615Z",
       "summary": "Dividend, Bonus & Rights",
       "isGlobal": false
     },
@@ -121,7 +121,7 @@
       "source": "Sharesansar",
       "badge": "SS",
       "category": "Nepal Stock",
-      "scrapedAt": "2026-06-08T06:07:37.395Z",
+      "scrapedAt": "2026-06-09T05:17:35.615Z",
       "summary": "NEPSE Concludes The Week With 0.96% Loss and Turnover of Rs 26.94 Arba; Weekly Summary with Sector Comparison, Major Highlights, and More",
       "isGlobal": false
     },
@@ -131,7 +131,7 @@
       "source": "Sharesansar",
       "badge": "SS",
       "category": "Nepal Stock",
-      "scrapedAt": "2026-06-08T06:07:37.395Z",
+      "scrapedAt": "2026-06-09T05:17:35.615Z",
       "summary": "Snow River IPO Opens Today; Should You Invest in This Hydro? Take a Closer Look",
       "isGlobal": false
     },
@@ -141,7 +141,7 @@
       "source": "Nepali Paisa",
       "badge": "NP",
       "category": "Nepal Finance",
-      "scrapedAt": "2026-06-08T06:07:39.498Z",
+      "scrapedAt": "2026-06-09T05:17:37.887Z",
       "summary": "Market Overview",
       "isGlobal": false
     },
@@ -151,7 +151,7 @@
       "source": "Nepali Paisa",
       "badge": "NP",
       "category": "Nepal Finance",
-      "scrapedAt": "2026-06-08T06:07:39.498Z",
+      "scrapedAt": "2026-06-09T05:17:37.887Z",
       "summary": "Stocks Up & Down",
       "isGlobal": false
     },
@@ -161,7 +161,7 @@
       "source": "Nepali Paisa",
       "badge": "NP",
       "category": "Nepal Finance",
-      "scrapedAt": "2026-06-08T06:07:39.498Z",
+      "scrapedAt": "2026-06-09T05:17:37.887Z",
       "summary": "Business & Economy",
       "isGlobal": false
     }
@@ -173,78 +173,78 @@
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-06-08T06:07:54.139Z",
+      "scrapedAt": "2026-06-09T05:17:54.316Z",
       "summary": "Markets just got Conversational",
       "isGlobal": true
     },
     {
-      "title": "Groww among 4 stocks showing bullish RSI upswing​",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/news/groww-among-4-stocks-showing-bullish-rsi-upswing/slideshow/131577817.cms",
+      "title": "Ather Energy among 5 stocks closing below VWAP",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/ather-energy-among-5-stocks-closing-below-vwap/slideshow/131601670.cms",
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-06-08T06:07:54.139Z",
-      "summary": "Groww among 4 stocks showing bullish RSI upswing​",
+      "scrapedAt": "2026-06-09T05:17:54.317Z",
+      "summary": "Ather Energy among 5 stocks closing below VWAP",
       "isGlobal": true
     },
     {
-      "title": "Adani Green Energy among 5 stocks flashing bullish signals, hinting at a possible uptrend",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/news/adani-green-energy-among-5-stocks-flashing-bullish-signals-hinting-at-a-possible-uptrend/slideshow/131577535.cms",
+      "title": "Stocks to buy in 2026 for long term: Kotak Bank, Titan among 5 stocks that could give 10-20% return",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/stocks-to-buy-in-2026-for-long-term-kotak-bank-titan-among-5-stocks-that-could-give-10-20-return/slideshow/131601218.cms",
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-06-08T06:07:54.139Z",
-      "summary": "Adani Green Energy among 5 stocks flashing bullish signals, hinting at a possible uptrend",
+      "scrapedAt": "2026-06-09T05:17:54.317Z",
+      "summary": "Stocks to buy in 2026 for long term: Kotak Bank, Titan among 5 stocks that could give 10-20% return",
       "isGlobal": true
     },
     {
-      "title": "Negative Breakout: These 9 stocks closed below their 200 DMAs",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/news/negative-breakout-these-9-stocks-closed-below-their-200-dmas/slideshow/131576985.cms",
+      "title": "CCL Products among 4 stocks showing bullish RSI upswing",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/ccl-products-among-4-stocks-showing-bullish-rsi-upswing/slideshow/131600313.cms",
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-06-08T06:07:54.139Z",
-      "summary": "Negative Breakout: These 9 stocks closed below their 200 DMAs",
+      "scrapedAt": "2026-06-09T05:17:54.317Z",
+      "summary": "CCL Products among 4 stocks showing bullish RSI upswing",
       "isGlobal": true
     },
     {
-      "title": "Market Trading Guide: Adani Green among 2 stock recommendations for Monday",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/news/market-trading-guide-adani-green-among-2-stock-recommendations-for-monday/slideshow/131564462.cms",
+      "title": "Negative Breakout: These 11 stocks dropped below their 200 DMAs",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/negative-breakout-these-11-stocks-dropped-below-their-200-dmas/slideshow/131600097.cms",
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-06-08T06:07:54.139Z",
-      "summary": "Market Trading Guide: Adani Green among 2 stock recommendations for Monday",
+      "scrapedAt": "2026-06-09T05:17:54.317Z",
+      "summary": "Negative Breakout: These 11 stocks dropped below their 200 DMAs",
       "isGlobal": true
     },
     {
-      "title": "Top Nifty50 stocks analysts suggest buying in this volatile week",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/news/top-nifty50-stocks-analysts-suggest-buying-in-this-volatile-week/articleshow/131578010.cms",
+      "title": "Ather Energy among 7 consumer discretionary stocks that hit 52-week highs & rallied up to 50% in a month",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/ather-energy-among-7-consumer-discretionary-stocks-that-hit-52-week-highs-amp-rallied-up-to-50-in-a-month/slideshow/131586861.cms",
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-06-08T06:07:54.139Z",
-      "summary": "Top Nifty50 stocks analysts suggest buying in this volatile week",
+      "scrapedAt": "2026-06-09T05:17:54.317Z",
+      "summary": "Ather Energy among 7 consumer discretionary stocks that hit 52-week highs & rallied up to 50% in a month",
       "isGlobal": true
     },
     {
-      "title": "India&#x27;s new GDP yardstick: What changed, what did not, and what every investor should now read differently",
-      "url": "https://economictimes.indiatimes.com/intelligent-investing/macro-economics/indias-new-gdp-yardstick-what-changed-what-did-not-and-what-every-investor-should-now-read-differently/articleshow/131565481.cms",
+      "title": "Weekly Top Picks: These stocks scored 10 on 10 on Stock Reports Plus",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/weekly-top-picks-these-stocks-scored-10-on-10-on-stock-reports-plus/articleshow/131584961.cms",
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-06-08T06:07:54.139Z",
-      "summary": "India&#x27;s new GDP yardstick: What changed, what did not, and what every investor should now read differently",
+      "scrapedAt": "2026-06-09T05:17:54.317Z",
+      "summary": "Weekly Top Picks: These stocks scored 10 on 10 on Stock Reports Plus",
       "isGlobal": true
     },
     {
-      "title": "Stock picks of the week: 6 stocks with consistent score improvement and upside potential of up to 29%",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/news/stock-picks-of-the-week-6-stocks-with-consistent-score-improvement-and-upside-potential-of-up-to-29/articleshow/131543004.cms",
+      "title": "Stock picks of the week; 5 stocks with consistent score improvement and upside potential of up to 25%",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/stock-picks-of-the-week-5-stocks-with-consistent-score-improvement-and-upside-potential-of-up-to-25/articleshow/131583303.cms",
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-06-08T06:07:54.139Z",
-      "summary": "Stock picks of the week: 6 stocks with consistent score improvement and upside potential of up to 29%",
+      "scrapedAt": "2026-06-09T05:17:54.317Z",
+      "summary": "Stock picks of the week; 5 stocks with consistent score improvement and upside potential of up to 25%",
       "isGlobal": true
     }
   ]
