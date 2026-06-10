@@ -1,5 +1,5 @@
 {
-  "scrapedAt": "2026-06-09T05:17:55.819Z",
+  "scrapedAt": "2026-06-10T05:49:18.388Z",
   "totalCount": 23,
   "nepalCount": 15,
   "globalCount": 8,
@@ -16,13 +16,33 @@
   ],
   "articles": [
     {
-      "title": "साना व्यवसायीले डिजिटल माध्यमबाट १० लाखसम्म कर्जा पाउने",
-      "url": "https://www.karobardaily.com/news/383189",
+      "title": "बजेटको सूचना चुहावट भएको प्रचारमा सत्यता छैन: अर्थमन्त्री",
+      "url": "https://www.karobardaily.com/news/383670",
       "source": "Karobar Daily",
       "badge": "KD",
       "category": "Nepal Business",
-      "scrapedAt": "2026-06-09T05:17:33.863Z",
-      "summary": "साना व्यवसायीले डिजिटल माध्यमबाट १० लाखसम्म कर्जा पाउने",
+      "scrapedAt": "2026-06-10T05:49:00.693Z",
+      "summary": "बजेटको सूचना चुहावट भएको प्रचारमा सत्यता छैन: अर्थमन्त्री",
+      "isGlobal": false
+    },
+    {
+      "title": "निजी क्षेत्रमा कर्जा विस्तार ५.७ प्रतिशतमात्र",
+      "url": "https://www.karobardaily.com/news/383603",
+      "source": "Karobar Daily",
+      "badge": "KD",
+      "category": "Nepal Business",
+      "scrapedAt": "2026-06-10T05:49:00.693Z",
+      "summary": "निजी क्षेत्रमा कर्जा विस्तार ५.७ प्रतिशतमात्र",
+      "isGlobal": false
+    },
+    {
+      "title": "अर्थतन्त्रको विकासमा रूपान्तरणको आवश्यकता",
+      "url": "https://www.karobardaily.com/news/383586",
+      "source": "Karobar Daily",
+      "badge": "KD",
+      "category": "Nepal Business",
+      "scrapedAt": "2026-06-10T05:49:00.693Z",
+      "summary": "अर्थतन्त्रको विकासमा रूपान्तरणको आवश्यकता",
       "isGlobal": false
     },
     {
@@ -31,38 +51,8 @@
       "source": "Karobar Daily",
       "badge": "KD",
       "category": "Nepal Business",
-      "scrapedAt": "2026-06-09T05:17:33.863Z",
+      "scrapedAt": "2026-06-10T05:49:00.693Z",
       "summary": "अर्थतन्त्रका सबै समस्या एउटै बजेटले पूरा गर्न सक्दैनः अर्थमन्त्री",
-      "isGlobal": false
-    },
-    {
-      "title": "संघ सरकारबाट प्रदेशलाई जाने अनुदान कर्णाली र मधेसलाई सबैभन्दा बढी",
-      "url": "https://www.karobardaily.com/news/383099",
-      "source": "Karobar Daily",
-      "badge": "KD",
-      "category": "Nepal Business",
-      "scrapedAt": "2026-06-09T05:17:33.863Z",
-      "summary": "संघ सरकारबाट प्रदेशलाई जाने अनुदान कर्णाली र मधेसलाई सबैभन्दा बढी",
-      "isGlobal": false
-    },
-    {
-      "title": "आइएमएफद्वारा नेपालको विस्तारित कर्जा सुविधाअन्तर्गतको अन्तिम समीक्षा सम्पन्न",
-      "url": "https://www.karobardaily.com/news/383082",
-      "source": "Karobar Daily",
-      "badge": "KD",
-      "category": "Nepal Business",
-      "scrapedAt": "2026-06-09T05:17:33.863Z",
-      "summary": "आइएमएफद्वारा नेपालको विस्तारित कर्जा सुविधाअन्तर्गतको अन्तिम समीक्षा सम्पन्न",
-      "isGlobal": false
-    },
-    {
-      "title": "कृषि विकास बैंक संचालक समितिको अध्यक्षमा टंकप्रसाद पाण्डेय नियुक्त",
-      "url": "https://www.karobardaily.com/news/383146",
-      "source": "Karobar Daily",
-      "badge": "KD",
-      "category": "Nepal Business",
-      "scrapedAt": "2026-06-09T05:17:33.863Z",
-      "summary": "कृषि विकास बैंक संचालक समितिको अध्यक्षमा टंकप्रसाद पाण्डेय नियुक्त",
       "isGlobal": false
     },
     {
@@ -71,18 +61,18 @@
       "source": "Karobar Daily",
       "badge": "KD",
       "category": "Nepal Business",
-      "scrapedAt": "2026-06-09T05:17:33.863Z",
+      "scrapedAt": "2026-06-10T05:49:00.693Z",
       "summary": "जलवायु अनुकूलनका लागि बैंक, वित्तीय संस्था र बीमा कम्पनीको लगानी बढाउन आग्रह",
       "isGlobal": false
     },
     {
-      "title": "प्रदेश सरकारको योजना बैंकमा १७ हजार आयोजना",
-      "url": "https://www.karobardaily.com/news/382935",
+      "title": "साना व्यवसायीले डिजिटल माध्यमबाट १० लाखसम्म कर्जा पाउने",
+      "url": "https://www.karobardaily.com/news/383189",
       "source": "Karobar Daily",
       "badge": "KD",
       "category": "Nepal Business",
-      "scrapedAt": "2026-06-09T05:17:33.863Z",
-      "summary": "प्रदेश सरकारको योजना बैंकमा १७ हजार आयोजना",
+      "scrapedAt": "2026-06-10T05:49:00.693Z",
+      "summary": "साना व्यवसायीले डिजिटल माध्यमबाट १० लाखसम्म कर्जा पाउने",
       "isGlobal": false
     },
     {
@@ -91,8 +81,18 @@
       "source": "Karobar Daily",
       "badge": "KD",
       "category": "Nepal Business",
-      "scrapedAt": "2026-06-09T05:17:33.863Z",
+      "scrapedAt": "2026-06-10T05:49:00.693Z",
       "summary": "अधिक तरलताले बढायो चिन्ता, बढेन कर्जा",
+      "isGlobal": false
+    },
+    {
+      "title": "फिनटेक मार्केटप्लेस राष्ट्र बैंकको नेतृत्वमा सञ्चालन हुनेछ: गभर्नर",
+      "url": "https://www.karobardaily.com/news/380412",
+      "source": "Karobar Daily",
+      "badge": "KD",
+      "category": "Nepal Business",
+      "scrapedAt": "2026-06-10T05:49:00.694Z",
+      "summary": "फिनटेक मार्केटप्लेस राष्ट्र बैंकको नेतृत्वमा सञ्चालन हुनेछ: गभर्नर",
       "isGlobal": false
     },
     {
@@ -101,7 +101,7 @@
       "source": "Sharesansar",
       "badge": "SS",
       "category": "Nepal Stock",
-      "scrapedAt": "2026-06-09T05:17:35.615Z",
+      "scrapedAt": "2026-06-10T05:49:02.736Z",
       "summary": "Proposed Dividend",
       "isGlobal": false
     },
@@ -111,7 +111,7 @@
       "source": "Sharesansar",
       "badge": "SS",
       "category": "Nepal Stock",
-      "scrapedAt": "2026-06-09T05:17:35.615Z",
+      "scrapedAt": "2026-06-10T05:49:02.736Z",
       "summary": "Dividend, Bonus & Rights",
       "isGlobal": false
     },
@@ -121,7 +121,7 @@
       "source": "Sharesansar",
       "badge": "SS",
       "category": "Nepal Stock",
-      "scrapedAt": "2026-06-09T05:17:35.615Z",
+      "scrapedAt": "2026-06-10T05:49:02.737Z",
       "summary": "NEPSE Concludes The Week With 0.96% Loss and Turnover of Rs 26.94 Arba; Weekly Summary with Sector Comparison, Major Highlights, and More",
       "isGlobal": false
     },
@@ -131,7 +131,7 @@
       "source": "Sharesansar",
       "badge": "SS",
       "category": "Nepal Stock",
-      "scrapedAt": "2026-06-09T05:17:35.615Z",
+      "scrapedAt": "2026-06-10T05:49:02.737Z",
       "summary": "Snow River IPO Opens Today; Should You Invest in This Hydro? Take a Closer Look",
       "isGlobal": false
     },
@@ -141,7 +141,7 @@
       "source": "Nepali Paisa",
       "badge": "NP",
       "category": "Nepal Finance",
-      "scrapedAt": "2026-06-09T05:17:37.887Z",
+      "scrapedAt": "2026-06-10T05:49:04.812Z",
       "summary": "Market Overview",
       "isGlobal": false
     },
@@ -151,7 +151,7 @@
       "source": "Nepali Paisa",
       "badge": "NP",
       "category": "Nepal Finance",
-      "scrapedAt": "2026-06-09T05:17:37.887Z",
+      "scrapedAt": "2026-06-10T05:49:04.812Z",
       "summary": "Stocks Up & Down",
       "isGlobal": false
     },
@@ -161,7 +161,7 @@
       "source": "Nepali Paisa",
       "badge": "NP",
       "category": "Nepal Finance",
-      "scrapedAt": "2026-06-09T05:17:37.887Z",
+      "scrapedAt": "2026-06-10T05:49:04.812Z",
       "summary": "Business & Economy",
       "isGlobal": false
     }
@@ -173,58 +173,68 @@
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-06-09T05:17:54.316Z",
+      "scrapedAt": "2026-06-10T05:49:16.885Z",
       "summary": "Markets just got Conversational",
       "isGlobal": true
     },
     {
-      "title": "Ather Energy among 5 stocks closing below VWAP",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/news/ather-energy-among-5-stocks-closing-below-vwap/slideshow/131601670.cms",
+      "title": "Brokerages initiate coverage on Meesho, Bharti Airtel, 6 other stocks with up to 33% upside. Do you own any?",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/brokerages-initiate-coverage-on-meesho-bharti-airtel-6-other-stocks-with-up-to-33-upside-do-you-own-any/slideshow/131625609.cms",
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-06-09T05:17:54.317Z",
-      "summary": "Ather Energy among 5 stocks closing below VWAP",
+      "scrapedAt": "2026-06-10T05:49:16.886Z",
+      "summary": "Brokerages initiate coverage on Meesho, Bharti Airtel, 6 other stocks with up to 33% upside. Do you own any?",
       "isGlobal": true
     },
     {
-      "title": "Stocks to buy in 2026 for long term: Kotak Bank, Titan among 5 stocks that could give 10-20% return",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/news/stocks-to-buy-in-2026-for-long-term-kotak-bank-titan-among-5-stocks-that-could-give-10-20-return/slideshow/131601218.cms",
+      "title": "Stocks to buy in 2026 for long term: Bharti Airtel, IndiGo among 5 stocks that could give 10-30% return",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/stocks-to-buy-in-2026-for-long-term-bharti-airtel-indigo-among-5-stocks-that-could-give-10-30-return/slideshow/131624371.cms",
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-06-09T05:17:54.317Z",
-      "summary": "Stocks to buy in 2026 for long term: Kotak Bank, Titan among 5 stocks that could give 10-20% return",
+      "scrapedAt": "2026-06-10T05:49:16.886Z",
+      "summary": "Stocks to buy in 2026 for long term: Bharti Airtel, IndiGo among 5 stocks that could give 10-30% return",
       "isGlobal": true
     },
     {
-      "title": "CCL Products among 4 stocks showing bullish RSI upswing",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/news/ccl-products-among-4-stocks-showing-bullish-rsi-upswing/slideshow/131600313.cms",
+      "title": "Bank of Baroda among 4 stocks flashing bullish signals, hinting at a possible uptrend",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/bank-of-baroda-among-4-stocks-flashing-bullish-signals-hinting-at-a-possible-uptrend/slideshow/131623953.cms",
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-06-09T05:17:54.317Z",
-      "summary": "CCL Products among 4 stocks showing bullish RSI upswing",
+      "scrapedAt": "2026-06-10T05:49:16.886Z",
+      "summary": "Bank of Baroda among 4 stocks flashing bullish signals, hinting at a possible uptrend",
       "isGlobal": true
     },
     {
-      "title": "Negative Breakout: These 11 stocks dropped below their 200 DMAs",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/news/negative-breakout-these-11-stocks-dropped-below-their-200-dmas/slideshow/131600097.cms",
+      "title": "Canara Bank among five stocks showing bullish RSI upswing",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/canara-bank-among-five-stocks-showing-bullish-rsi-upswing/slideshow/131623849.cms",
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-06-09T05:17:54.317Z",
-      "summary": "Negative Breakout: These 11 stocks dropped below their 200 DMAs",
+      "scrapedAt": "2026-06-10T05:49:16.886Z",
+      "summary": "Canara Bank among five stocks showing bullish RSI upswing",
       "isGlobal": true
     },
     {
-      "title": "Ather Energy among 7 consumer discretionary stocks that hit 52-week highs & rallied up to 50% in a month",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/news/ather-energy-among-7-consumer-discretionary-stocks-that-hit-52-week-highs-amp-rallied-up-to-50-in-a-month/slideshow/131586861.cms",
+      "title": "These 8 banking stocks have an upside potential of up to 26% in 1 year, according to analysts",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/these-8-banking-stocks-have-an-upside-potential-of-up-to-26-in-1-year-according-to-analysts/articleshow/131619310.cms",
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-06-09T05:17:54.317Z",
-      "summary": "Ather Energy among 7 consumer discretionary stocks that hit 52-week highs & rallied up to 50% in a month",
+      "scrapedAt": "2026-06-10T05:49:16.886Z",
+      "summary": "These 8 banking stocks have an upside potential of up to 26% in 1 year, according to analysts",
+      "isGlobal": true
+    },
+    {
+      "title": "5 mid-cap stocks from different sectors with an upside potential of 13 to 24% in one year, according to analysts",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/5-mid-cap-stocks-from-different-sectors-with-an-upside-potential-of-13-to-24-in-one-year-according-to-analysts/articleshow/131605700.cms",
+      "source": "Economic Times Markets",
+      "badge": "ET",
+      "category": "India Markets",
+      "scrapedAt": "2026-06-10T05:49:16.886Z",
+      "summary": "5 mid-cap stocks from different sectors with an upside potential of 13 to 24% in one year, according to analysts",
       "isGlobal": true
     },
     {
@@ -233,18 +243,8 @@
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-06-09T05:17:54.317Z",
+      "scrapedAt": "2026-06-10T05:49:16.886Z",
       "summary": "Weekly Top Picks: These stocks scored 10 on 10 on Stock Reports Plus",
-      "isGlobal": true
-    },
-    {
-      "title": "Stock picks of the week; 5 stocks with consistent score improvement and upside potential of up to 25%",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/news/stock-picks-of-the-week-5-stocks-with-consistent-score-improvement-and-upside-potential-of-up-to-25/articleshow/131583303.cms",
-      "source": "Economic Times Markets",
-      "badge": "ET",
-      "category": "India Markets",
-      "scrapedAt": "2026-06-09T05:17:54.317Z",
-      "summary": "Stock picks of the week; 5 stocks with consistent score improvement and upside potential of up to 25%",
       "isGlobal": true
     }
   ]
