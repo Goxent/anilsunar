@@ -1,8 +1,21 @@
 {
-  "lastUpdated": "2026-06-11T06:06:34.400Z",
-  "totalCount": 54,
-  "newCount": 0,
+  "lastUpdated": "2026-06-12T06:02:48.980Z",
+  "totalCount": 55,
+  "newCount": 1,
   "notices": [
+    {
+      "id": "ocrnepal_mqairxqv",
+      "title": "असम्बन्धित व्यक्तिको प्रवेश निेषेध सम्बन्धी सूचना - २०८३।२।२५",
+      "source": "OCR Nepal",
+      "category": "Corporate Law",
+      "badge": "OCR",
+      "badgeColor": "#1a73e8",
+      "link": "https://ocr.gov.np/content/83/notice-regarding-ban-on-entry-of-unrelated/",
+      "summary": "New Corporate Law update from OCR Nepal: असम्बन्धित व्यक्तिको प्रवेश निेषेध सम्बन्धी सूचना - २०८३।२।२५",
+      "detectedAt": "2026-06-12T06:02:29.143Z",
+      "isNew": true,
+      "emailedAt": null
+    },
     {
       "id": "nrbnepalinvitationforexpress_mq66vnjb",
       "title": "Invitation for Expression of Interest (EOI) for the Design, Develop, Install, Commissioning and Maintenance of Salary and Wage Index (SWI) Software",
