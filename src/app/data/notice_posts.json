@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-06-12T06:03:01.087Z",
-  "totalPosts": 15,
+  "lastUpdated": "2026-06-15T06:39:38.104Z",
+  "totalPosts": 16,
   "posts": {
     "ocrnepal_moqq27ad": {
       "headline": "OCR Nepal: वार्षिक विवरण अभिलेखनका पत्रहरू स्वचालित रूपमा प्राप्त ",
@@ -301,6 +301,26 @@
       "badgeColor": "#1a73e8",
       "link": "https://ocr.gov.np/content/83/notice-regarding-ban-on-entry-of-unrelated/",
       "createdAt": "2026-06-12T06:03:01.087Z"
+    },
+    "nrbnepaladdendumnoticeforthe_mqeuewbe": {
+      "headline": "NRB Nepal: Addendum Notice for The Procurement of The Supply, Deli",
+      "body": "🏦 Nepal Rastra Bank has a new directive!\n\n📌 Addendum Notice for The Procurement of The Supply, Delivery and Installation of Endpoint Detection and Response (EDR) Solution\n\nThis update from NRB Nepal may affect banking compliance requirements for Nepal professionals.\n\n✅ Review the full notice and consult your advisor.\n\n🔗 https://www.nrb.org.np/gsd/addendum-notice-for-the-procurement-of-the-supply-delivery-and-installation-of-endpoint-detection-and-response-edr-solution/",
+      "callToAction": "Share this with your team if relevant.",
+      "hashtags": [
+        "#Nepal",
+        "#Compliance",
+        "#CA",
+        "#NRBNepal"
+      ],
+      "bestTimeToPost": "Morning",
+      "topicBadge": "Banking",
+      "isTemplate": true,
+      "noticeId": "nrbnepaladdendumnoticeforthe_mqeuewbe",
+      "noticeTitle": "Addendum Notice for The Procurement of The Supply, Delivery and Installation of Endpoint Detection and Response (EDR) Solution",
+      "source": "NRB Nepal",
+      "badgeColor": "#e65100",
+      "link": "https://www.nrb.org.np/gsd/addendum-notice-for-the-procurement-of-the-supply-delivery-and-installation-of-endpoint-detection-and-response-edr-solution/",
+      "createdAt": "2026-06-15T06:39:38.104Z"
     }
   }
 }

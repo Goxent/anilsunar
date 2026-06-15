@@ -1,8 +1,21 @@
 {
-  "lastUpdated": "2026-06-12T06:02:48.980Z",
-  "totalCount": 55,
+  "lastUpdated": "2026-06-15T06:39:26.017Z",
+  "totalCount": 56,
   "newCount": 1,
   "notices": [
+    {
+      "id": "nrbnepaladdendumnoticeforthe_mqeuewbe",
+      "title": "Addendum Notice for The Procurement of The Supply, Delivery and Installation of Endpoint Detection and Response (EDR) Solution",
+      "source": "NRB Nepal",
+      "category": "Banking",
+      "badge": "NRB",
+      "badgeColor": "#e65100",
+      "link": "https://www.nrb.org.np/gsd/addendum-notice-for-the-procurement-of-the-supply-delivery-and-installation-of-endpoint-detection-and-response-edr-solution/",
+      "summary": "New Banking update from NRB Nepal: Addendum Notice for The Procurement of The Supply, Delivery and Installation of Endpoint Detection and Response (EDR) Solution",
+      "detectedAt": "2026-06-15T06:39:20.858Z",
+      "isNew": true,
+      "emailedAt": null
+    },
     {
       "id": "ocrnepal_mqairxqv",
       "title": "असम्बन्धित व्यक्तिको प्रवेश निेषेध सम्बन्धी सूचना - २०८३।२।२५",
