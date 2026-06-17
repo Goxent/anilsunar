@@ -1,5 +1,5 @@
 {
-  "scrapedAt": "2026-06-16T06:43:54.422Z",
+  "scrapedAt": "2026-06-17T06:28:04.834Z",
   "totalCount": 23,
   "nepalCount": 15,
   "globalCount": 8,
@@ -16,33 +16,23 @@
   ],
   "articles": [
     {
-      "title": "साढे ५४ करोड घटाइयो बागमतीको बजेट",
-      "url": "https://www.karobardaily.com/news/385317",
+      "title": "नवीकरणीय ऊर्जा वैदेशिक सहायतामा निर्भर",
+      "url": "https://www.karobardaily.com/news/386006",
       "source": "Karobar Daily",
       "badge": "KD",
       "category": "Nepal Business",
-      "scrapedAt": "2026-06-16T06:43:26.675Z",
-      "summary": "साढे ५४ करोड घटाइयो बागमतीको बजेट",
+      "scrapedAt": "2026-06-17T06:27:43.822Z",
+      "summary": "नवीकरणीय ऊर्जा वैदेशिक सहायतामा निर्भर",
       "isGlobal": false
     },
     {
-      "title": "कुमारी बैंकलाई अन्तर्राष्ट्रिय नवप्रवर्तन सम्मान",
-      "url": "https://www.karobardaily.com/news/385471",
+      "title": "जेठमा घर जग्गा कारोबारबाट पाँच अर्ब २४ करोड राजस्व संकलन",
+      "url": "https://www.karobardaily.com/news/385744",
       "source": "Karobar Daily",
       "badge": "KD",
       "category": "Nepal Business",
-      "scrapedAt": "2026-06-16T06:43:26.676Z",
-      "summary": "कुमारी बैंकलाई अन्तर्राष्ट्रिय नवप्रवर्तन सम्मान",
-      "isGlobal": false
-    },
-    {
-      "title": "मधेस प्रदेश बजेट : ४१ अर्ब १३ करोड विनियोजन",
-      "url": "https://www.karobardaily.com/news/385236",
-      "source": "Karobar Daily",
-      "badge": "KD",
-      "category": "Nepal Business",
-      "scrapedAt": "2026-06-16T06:43:26.676Z",
-      "summary": "मधेस प्रदेश बजेट : ४१ अर्ब १३ करोड विनियोजन",
+      "scrapedAt": "2026-06-17T06:27:43.822Z",
+      "summary": "जेठमा घर जग्गा कारोबारबाट पाँच अर्ब २४ करोड राजस्व संकलन",
       "isGlobal": false
     },
     {
@@ -51,7 +41,7 @@
       "source": "Karobar Daily",
       "badge": "KD",
       "category": "Nepal Business",
-      "scrapedAt": "2026-06-16T06:43:26.676Z",
+      "scrapedAt": "2026-06-17T06:27:43.822Z",
       "summary": "असारका लागि पनि घट्यो बैंक ब्याजदर",
       "isGlobal": false
     },
@@ -61,7 +51,7 @@
       "source": "Karobar Daily",
       "badge": "KD",
       "category": "Nepal Business",
-      "scrapedAt": "2026-06-16T06:43:26.676Z",
+      "scrapedAt": "2026-06-17T06:27:43.822Z",
       "summary": "निजी क्षेत्रमा कर्जा विस्तार ५.७ प्रतिशतमात्र",
       "isGlobal": false
     },
@@ -71,7 +61,7 @@
       "source": "Karobar Daily",
       "badge": "KD",
       "category": "Nepal Business",
-      "scrapedAt": "2026-06-16T06:43:26.676Z",
+      "scrapedAt": "2026-06-17T06:27:43.822Z",
       "summary": "साना व्यवसायीले डिजिटल माध्यमबाट १० लाखसम्म कर्जा पाउने",
       "isGlobal": false
     },
@@ -81,7 +71,7 @@
       "source": "Karobar Daily",
       "badge": "KD",
       "category": "Nepal Business",
-      "scrapedAt": "2026-06-16T06:43:26.676Z",
+      "scrapedAt": "2026-06-17T06:27:43.822Z",
       "summary": "अधिक तरलताले बढायो चिन्ता, बढेन कर्जा",
       "isGlobal": false
     },
@@ -91,8 +81,18 @@
       "source": "Karobar Daily",
       "badge": "KD",
       "category": "Nepal Business",
-      "scrapedAt": "2026-06-16T06:43:26.676Z",
+      "scrapedAt": "2026-06-17T06:27:43.822Z",
       "summary": "सरकारी पुनर्बिमा कम्पनीलाई बलियो बनाउने योजना",
+      "isGlobal": false
+    },
+    {
+      "title": "नेपाल बैंकका ग्राहक र कर्मचारीलाई इन्द्रप्रस्थ अपोलो अस्पतालमा छुट",
+      "url": "https://www.karobardaily.com/news/385489",
+      "source": "Karobar Daily",
+      "badge": "KD",
+      "category": "Nepal Business",
+      "scrapedAt": "2026-06-17T06:27:43.822Z",
+      "summary": "नेपाल बैंकका ग्राहक र कर्मचारीलाई इन्द्रप्रस्थ अपोलो अस्पतालमा छुट",
       "isGlobal": false
     },
     {
@@ -101,7 +101,7 @@
       "source": "Sharesansar",
       "badge": "SS",
       "category": "Nepal Stock",
-      "scrapedAt": "2026-06-16T06:43:28.586Z",
+      "scrapedAt": "2026-06-17T06:27:45.872Z",
       "summary": "Proposed Dividend",
       "isGlobal": false
     },
@@ -111,7 +111,7 @@
       "source": "Sharesansar",
       "badge": "SS",
       "category": "Nepal Stock",
-      "scrapedAt": "2026-06-16T06:43:28.586Z",
+      "scrapedAt": "2026-06-17T06:27:45.872Z",
       "summary": "Dividend, Bonus & Rights",
       "isGlobal": false
     },
@@ -121,7 +121,7 @@
       "source": "Sharesansar",
       "badge": "SS",
       "category": "Nepal Stock",
-      "scrapedAt": "2026-06-16T06:43:28.586Z",
+      "scrapedAt": "2026-06-17T06:27:45.872Z",
       "summary": "NEPSE Concludes The Week With 1.14% Loss and Turnover of Rs 23.07 Arba; Weekly Summary with Sector Comparison, Major Highlights, and More",
       "isGlobal": false
     },
@@ -131,7 +131,7 @@
       "source": "Sharesansar",
       "badge": "SS",
       "category": "Nepal Stock",
-      "scrapedAt": "2026-06-16T06:43:28.586Z",
+      "scrapedAt": "2026-06-17T06:27:45.872Z",
       "summary": "Snow River IPO Opens Today; Should You Invest in This Hydro? Take a Closer Look",
       "isGlobal": false
     },
@@ -141,7 +141,7 @@
       "source": "Nepali Paisa",
       "badge": "NP",
       "category": "Nepal Finance",
-      "scrapedAt": "2026-06-16T06:43:30.636Z",
+      "scrapedAt": "2026-06-17T06:27:48.904Z",
       "summary": "Market Overview",
       "isGlobal": false
     },
@@ -151,7 +151,7 @@
       "source": "Nepali Paisa",
       "badge": "NP",
       "category": "Nepal Finance",
-      "scrapedAt": "2026-06-16T06:43:30.636Z",
+      "scrapedAt": "2026-06-17T06:27:48.904Z",
       "summary": "Stocks Up & Down",
       "isGlobal": false
     },
@@ -161,7 +161,7 @@
       "source": "Nepali Paisa",
       "badge": "NP",
       "category": "Nepal Finance",
-      "scrapedAt": "2026-06-16T06:43:30.636Z",
+      "scrapedAt": "2026-06-17T06:27:48.904Z",
       "summary": "Business & Economy",
       "isGlobal": false
     }
@@ -173,58 +173,68 @@
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-06-16T06:43:52.919Z",
+      "scrapedAt": "2026-06-17T06:28:03.331Z",
       "summary": "Markets just got Conversational",
       "isGlobal": true
     },
     {
-      "title": "Motilal Oswal Financial Services among 5 F&O stocks with a sharp rise in futures open interest",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/news/motilal-oswal-financial-services-among-5-fampo-stocks-with-a-sharp-rise-in-futures-open-interest/slideshow/131759200.cms",
+      "title": "Vishal Mega Mart among 7 F&O stocks with a sharp rise in futures open interest",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/vishal-mega-mart-among-7-fampo-stocks-with-a-sharp-rise-in-futures-open-interest/slideshow/131786038.cms",
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-06-16T06:43:52.920Z",
-      "summary": "Motilal Oswal Financial Services among 5 F&O stocks with a sharp rise in futures open interest",
+      "scrapedAt": "2026-06-17T06:28:03.332Z",
+      "summary": "Vishal Mega Mart among 7 F&O stocks with a sharp rise in futures open interest",
       "isGlobal": true
     },
     {
-      "title": "HDFC AMC among 4 stocks flash bullish signals, indicating a possible uptrend",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/news/hdfc-amc-among-4-stocks-flash-bullish-signals-indicating-a-possible-uptrend/slideshow/131758659.cms",
+      "title": "Sonata Software among 4 stocks flashing bullish signals, hinting at a possible uptrend",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/sonata-software-among-4-stocks-flashing-bullish-signals-hinting-at-a-possible-uptrend/slideshow/131785077.cms",
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-06-16T06:43:52.920Z",
-      "summary": "HDFC AMC among 4 stocks flash bullish signals, indicating a possible uptrend",
+      "scrapedAt": "2026-06-17T06:28:03.332Z",
+      "summary": "Sonata Software among 4 stocks flashing bullish signals, hinting at a possible uptrend",
       "isGlobal": true
     },
     {
-      "title": "Kalyan Jewellers among 6 stocks showing bullish RSI upswing",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/news/kalyan-jewellers-among-6-stocks-showing-bullish-rsi-upswing/slideshow/131758384.cms",
+      "title": "Reliance Industries among 6 largecap stocks showing bullish RSI upswing",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/reliance-industries-among-6-largecap-stocks-showing-bullish-rsi-upswing/slideshow/131784870.cms",
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-06-16T06:43:52.920Z",
-      "summary": "Kalyan Jewellers among 6 stocks showing bullish RSI upswing",
+      "scrapedAt": "2026-06-17T06:28:03.332Z",
+      "summary": "Reliance Industries among 6 largecap stocks showing bullish RSI upswing",
       "isGlobal": true
     },
     {
-      "title": "Stocks to buy in 2026 for long term: Avanti feeds, Suzlon Energy among 5 stocks that could give 10-20% return",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/news/stocks-to-buy-in-2026-for-long-term-avanti-feeds-suzlon-energy-among-5-stocks-that-could-give-10-20-return/slideshow/131757516.cms",
+      "title": "Positive Breakout: These 11 stocks cross above their 200 DMAs",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/positive-breakout-these-11-stocks-cross-above-their-200-dmas/slideshow/131784302.cms",
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-06-16T06:43:52.920Z",
-      "summary": "Stocks to buy in 2026 for long term: Avanti feeds, Suzlon Energy among 5 stocks that could give 10-20% return",
+      "scrapedAt": "2026-06-17T06:28:03.332Z",
+      "summary": "Positive Breakout: These 11 stocks cross above their 200 DMAs",
       "isGlobal": true
     },
     {
-      "title": "Positive Breakout: These 14 stocks cross above their 200 DMAs",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/news/positive-breakout-these-14-stocks-cross-above-their-200-dmas/slideshow/131757393.cms",
+      "title": "Market Trading Guide: Netweb Technologies, Rane Holdings among 5 stock recommendations for Wednesday",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/market-trading-guide-netweb-technologies-rane-holdings-among-5-stock-recommendations-for-wednesday/slideshow/131774981.cms",
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-06-16T06:43:52.920Z",
-      "summary": "Positive Breakout: These 14 stocks cross above their 200 DMAs",
+      "scrapedAt": "2026-06-17T06:28:03.332Z",
+      "summary": "Market Trading Guide: Netweb Technologies, Rane Holdings among 5 stock recommendations for Wednesday",
+      "isGlobal": true
+    },
+    {
+      "title": "These 7 private and public banking stocks have an upside of up to 26% in one year, according to analysts",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/these-7-private-and-public-banking-stocks-have-an-upside-of-up-to-26-in-one-year-according-to-analysts/articleshow/131783711.cms",
+      "source": "Economic Times Markets",
+      "badge": "ET",
+      "category": "India Markets",
+      "scrapedAt": "2026-06-17T06:28:03.332Z",
+      "summary": "These 7 private and public banking stocks have an upside of up to 26% in one year, according to analysts",
       "isGlobal": true
     },
     {
@@ -233,18 +243,8 @@
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-06-16T06:43:52.920Z",
+      "scrapedAt": "2026-06-17T06:28:03.332Z",
       "summary": "Time for investors and traders to think alike? 7 Nifty Auto stocks with an upside potential of up to 19%",
-      "isGlobal": true
-    },
-    {
-      "title": "Weekly Top Picks: These stocks scored 10 on 10 on Stock Reports Plus",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/news/weekly-top-picks-these-stocks-scored-10-on-10-on-stock-reports-plus/articleshow/131741549.cms",
-      "source": "Economic Times Markets",
-      "badge": "ET",
-      "category": "India Markets",
-      "scrapedAt": "2026-06-16T06:43:52.920Z",
-      "summary": "Weekly Top Picks: These stocks scored 10 on 10 on Stock Reports Plus",
       "isGlobal": true
     }
   ]

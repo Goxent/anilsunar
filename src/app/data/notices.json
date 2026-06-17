@@ -1,8 +1,21 @@
 {
-  "lastUpdated": "2026-06-16T06:44:27.093Z",
-  "totalCount": 56,
-  "newCount": 0,
+  "lastUpdated": "2026-06-17T06:28:35.379Z",
+  "totalCount": 57,
+  "newCount": 1,
   "notices": [
+    {
+      "id": "ocrnepal_mqhowc1u",
+      "title": "कार्यालयको अनलाइन सेवा प्रवाह सुचारु रहेको सूचना ।।",
+      "source": "OCR Nepal",
+      "category": "Corporate Law",
+      "badge": "OCR",
+      "badgeColor": "#1a73e8",
+      "link": "https://ocr.gov.np/content/84/notice-that-the-online-service-delivery-of/",
+      "summary": "New Corporate Law update from OCR Nepal: कार्यालयको अनलाइन सेवा प्रवाह सुचारु रहेको सूचना ।।",
+      "detectedAt": "2026-06-17T06:28:15.234Z",
+      "isNew": true,
+      "emailedAt": null
+    },
     {
       "id": "nrbnepaladdendumnoticeforthe_mqeuewbe",
       "title": "Addendum Notice for The Procurement of The Supply, Delivery and Installation of Endpoint Detection and Response (EDR) Solution",

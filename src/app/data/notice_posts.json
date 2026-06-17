@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-06-16T06:44:39.181Z",
-  "totalPosts": 16,
+  "lastUpdated": "2026-06-17T06:28:47.490Z",
+  "totalPosts": 17,
   "posts": {
     "ocrnepal_moqq27ad": {
       "headline": "OCR Nepal: वार्षिक विवरण अभिलेखनका पत्रहरू स्वचालित रूपमा प्राप्त ",
@@ -321,6 +321,26 @@
       "badgeColor": "#e65100",
       "link": "https://www.nrb.org.np/gsd/addendum-notice-for-the-procurement-of-the-supply-delivery-and-installation-of-endpoint-detection-and-response-edr-solution/",
       "createdAt": "2026-06-15T06:39:38.104Z"
+    },
+    "ocrnepal_mqhowc1u": {
+      "headline": "OCR Nepal: कार्यालयको अनलाइन सेवा प्रवाह सुचारु रहेको सूचना ।।",
+      "body": "🏢 Company compliance update from OCR Nepal!\n\n📌 कार्यालयको अनलाइन सेवा प्रवाह सुचारु रहेको सूचना ।।\n\nThis update from OCR Nepal may affect corporate law compliance requirements for Nepal professionals.\n\n✅ Review the full notice and consult your advisor.\n\n🔗 https://ocr.gov.np/content/84/notice-that-the-online-service-delivery-of/",
+      "callToAction": "Share this with your team if relevant.",
+      "hashtags": [
+        "#Nepal",
+        "#Compliance",
+        "#CA",
+        "#OCRNepal"
+      ],
+      "bestTimeToPost": "Morning",
+      "topicBadge": "Corporate Law",
+      "isTemplate": true,
+      "noticeId": "ocrnepal_mqhowc1u",
+      "noticeTitle": "कार्यालयको अनलाइन सेवा प्रवाह सुचारु रहेको सूचना ।।",
+      "source": "OCR Nepal",
+      "badgeColor": "#1a73e8",
+      "link": "https://ocr.gov.np/content/84/notice-that-the-online-service-delivery-of/",
+      "createdAt": "2026-06-17T06:28:47.490Z"
     }
   }
 }
