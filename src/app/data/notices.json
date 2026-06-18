@@ -1,8 +1,34 @@
 {
-  "lastUpdated": "2026-06-17T06:28:35.379Z",
-  "totalCount": 57,
-  "newCount": 1,
+  "lastUpdated": "2026-06-18T06:11:18.286Z",
+  "totalCount": 59,
+  "newCount": 2,
   "notices": [
+    {
+      "id": "ocrnepal_mqj3ptnk",
+      "title": "कम्पनी ऐन, २०६३ बमोजिम लाग्ने कर, शुल्क, दस्तुर तथा जरिवाना मिनाहा सम्बन्धी सूचना ।",
+      "source": "OCR Nepal",
+      "category": "Corporate Law",
+      "badge": "OCR",
+      "badgeColor": "#1a73e8",
+      "link": "https://ocr.gov.np/content/85/notification-regarding-exemption-of-tax--duty--duty/",
+      "summary": "New Corporate Law update from OCR Nepal: कम्पनी ऐन, २०६३ बमोजिम लाग्ने कर, शुल्क, दस्तुर तथा जरिवाना मिनाहा सम्बन्धी सूचना ।",
+      "detectedAt": "2026-06-18T06:10:51.872Z",
+      "isNew": true,
+      "emailedAt": null
+    },
+    {
+      "id": "nrbnepalrequestforexpression_mqj3q9y5",
+      "title": "Request for Expression of Interest for the Design, Develop, Customize, Install, Commissioning and Maintenance of “Budget Management Information System (BMIS",
+      "source": "NRB Nepal",
+      "category": "Banking",
+      "badge": "NRB",
+      "badgeColor": "#e65100",
+      "link": "https://www.nrb.org.np/gsd/request-for-expression-of-interest-for-the-design-develop-customize-install-commissioning-and-maintenance-of-budget-management-information-system-bmis/",
+      "summary": "New Banking update from NRB Nepal: Request for Expression of Interest for the Design, Develop, Customize, Install, Commissioning and Maintenance of “Budget Management Information System (BMIS",
+      "detectedAt": "2026-06-18T06:11:12.989Z",
+      "isNew": true,
+      "emailedAt": null
+    },
     {
       "id": "ocrnepal_mqhowc1u",
       "title": "कार्यालयको अनलाइन सेवा प्रवाह सुचारु रहेको सूचना ।।",

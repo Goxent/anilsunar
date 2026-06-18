@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-06-17T06:28:47.490Z",
-  "totalPosts": 17,
+  "lastUpdated": "2026-06-18T06:11:30.226Z",
+  "totalPosts": 19,
   "posts": {
     "ocrnepal_moqq27ad": {
       "headline": "OCR Nepal: वार्षिक विवरण अभिलेखनका पत्रहरू स्वचालित रूपमा प्राप्त ",
@@ -341,6 +341,46 @@
       "badgeColor": "#1a73e8",
       "link": "https://ocr.gov.np/content/84/notice-that-the-online-service-delivery-of/",
       "createdAt": "2026-06-17T06:28:47.490Z"
+    },
+    "ocrnepal_mqj3ptnk": {
+      "headline": "OCR Nepal: कम्पनी ऐन, २०६३ बमोजिम लाग्ने कर, शुल्क, दस्तुर तथा जरि",
+      "body": "🏢 Company compliance update from OCR Nepal!\n\n📌 कम्पनी ऐन, २०६३ बमोजिम लाग्ने कर, शुल्क, दस्तुर तथा जरिवाना मिनाहा सम्बन्धी सूचना ।\n\nThis update from OCR Nepal may affect corporate law compliance requirements for Nepal professionals.\n\n✅ Review the full notice and consult your advisor.\n\n🔗 https://ocr.gov.np/content/85/notification-regarding-exemption-of-tax--duty--duty/",
+      "callToAction": "Share this with your team if relevant.",
+      "hashtags": [
+        "#Nepal",
+        "#Compliance",
+        "#CA",
+        "#OCRNepal"
+      ],
+      "bestTimeToPost": "Morning",
+      "topicBadge": "Corporate Law",
+      "isTemplate": true,
+      "noticeId": "ocrnepal_mqj3ptnk",
+      "noticeTitle": "कम्पनी ऐन, २०६३ बमोजिम लाग्ने कर, शुल्क, दस्तुर तथा जरिवाना मिनाहा सम्बन्धी सूचना ।",
+      "source": "OCR Nepal",
+      "badgeColor": "#1a73e8",
+      "link": "https://ocr.gov.np/content/85/notification-regarding-exemption-of-tax--duty--duty/",
+      "createdAt": "2026-06-18T06:11:30.226Z"
+    },
+    "nrbnepalrequestforexpression_mqj3q9y5": {
+      "headline": "NRB Nepal: Request for Expression of Interest for the Design, Deve",
+      "body": "🏦 Nepal Rastra Bank has a new directive!\n\n📌 Request for Expression of Interest for the Design, Develop, Customize, Install, Commissioning and Maintenance of “Budget Management Information System (BMIS\n\nThis update from NRB Nepal may affect banking compliance requirements for Nepal professionals.\n\n✅ Review the full notice and consult your advisor.\n\n🔗 https://www.nrb.org.np/gsd/request-for-expression-of-interest-for-the-design-develop-customize-install-commissioning-and-maintenance-of-budget-management-information-system-bmis/",
+      "callToAction": "Share this with your team if relevant.",
+      "hashtags": [
+        "#Nepal",
+        "#Compliance",
+        "#CA",
+        "#NRBNepal"
+      ],
+      "bestTimeToPost": "Morning",
+      "topicBadge": "Banking",
+      "isTemplate": true,
+      "noticeId": "nrbnepalrequestforexpression_mqj3q9y5",
+      "noticeTitle": "Request for Expression of Interest for the Design, Develop, Customize, Install, Commissioning and Maintenance of “Budget Management Information System (BMIS",
+      "source": "NRB Nepal",
+      "badgeColor": "#e65100",
+      "link": "https://www.nrb.org.np/gsd/request-for-expression-of-interest-for-the-design-develop-customize-install-commissioning-and-maintenance-of-budget-management-information-system-bmis/",
+      "createdAt": "2026-06-18T06:11:30.226Z"
     }
   }
 }
