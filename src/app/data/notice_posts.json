@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-06-22T06:42:21.426Z",
-  "totalPosts": 23,
+  "lastUpdated": "2026-06-23T05:16:05.290Z",
+  "totalPosts": 26,
   "posts": {
     "ocrnepal_moqq27ad": {
       "headline": "OCR Nepal: वार्षिक विवरण अभिलेखनका पत्रहरू स्वचालित रूपमा प्राप्त ",
@@ -461,6 +461,66 @@
       "badgeColor": "#e53935",
       "link": "https://ird.gov.np/content/13344/official-notification-of-the-government-of-nepal-s/",
       "createdAt": "2026-06-22T06:42:21.426Z"
+    },
+    "irdnepal_mqq6xy1i": {
+      "headline": "IRD Nepal: सूचना संग्रह",
+      "body": "💰 Tax update from Inland Revenue Department!\n\n📌 सूचना संग्रह\n\nThis update from IRD Nepal may affect taxation compliance requirements for Nepal professionals.\n\n✅ Review the full notice and consult your advisor.\n\n🔗 https://ird.gov.np/category/notice/",
+      "callToAction": "Share this with your team if relevant.",
+      "hashtags": [
+        "#Nepal",
+        "#Compliance",
+        "#CA",
+        "#IRDNepal"
+      ],
+      "bestTimeToPost": "Morning",
+      "topicBadge": "Taxation",
+      "isTemplate": true,
+      "noticeId": "irdnepal_mqq6xy1i",
+      "noticeTitle": "सूचना संग्रह",
+      "source": "IRD Nepal",
+      "badgeColor": "#e53935",
+      "link": "https://ird.gov.np/category/notice/",
+      "createdAt": "2026-06-23T05:16:05.290Z"
+    },
+    "irdnepalqrcodeonlinetaxclear_mqoul148": {
+      "headline": "IRD Nepal: एकल रोजगारदाता मात्र भएका करदाले QR Code सहितको Online ",
+      "body": "💰 Tax update from Inland Revenue Department!\n\n📌 एकल रोजगारदाता मात्र भएका करदाले QR Code सहितको Online Tax Clearance Certificate जारी गर्ने प्रकृया\n\nThis update from IRD Nepal may affect taxation compliance requirements for Nepal professionals.\n\n✅ Review the full notice and consult your advisor.\n\n🔗 https://youtu.be/TfIF-BTsTfc?si=bSUbNcxAq_OIrLpb",
+      "callToAction": "Share this with your team if relevant.",
+      "hashtags": [
+        "#Nepal",
+        "#Compliance",
+        "#CA",
+        "#IRDNepal"
+      ],
+      "bestTimeToPost": "Morning",
+      "topicBadge": "Taxation",
+      "isTemplate": true,
+      "noticeId": "irdnepalqrcodeonlinetaxclear_mqoul148",
+      "noticeTitle": "एकल रोजगारदाता मात्र भएका करदाले QR Code सहितको Online Tax Clearance Certificate जारी गर्ने प्रकृया",
+      "source": "IRD Nepal",
+      "badgeColor": "#e53935",
+      "link": "https://youtu.be/TfIF-BTsTfc?si=bSUbNcxAq_OIrLpb",
+      "createdAt": "2026-06-23T05:16:05.290Z"
+    },
+    "irdnepaltaxmovienepal_mqoul148": {
+      "headline": "IRD Nepal: Tax movie Nepal",
+      "body": "💰 Tax update from Inland Revenue Department!\n\n📌 Tax movie Nepal\n\nThis update from IRD Nepal may affect taxation compliance requirements for Nepal professionals.\n\n✅ Review the full notice and consult your advisor.\n\n🔗 https://youtu.be/xAswLoqOmS0?si=oiCys_-gse9HhtQU",
+      "callToAction": "Share this with your team if relevant.",
+      "hashtags": [
+        "#Nepal",
+        "#Compliance",
+        "#CA",
+        "#IRDNepal"
+      ],
+      "bestTimeToPost": "Morning",
+      "topicBadge": "Taxation",
+      "isTemplate": true,
+      "noticeId": "irdnepaltaxmovienepal_mqoul148",
+      "noticeTitle": "Tax movie Nepal",
+      "source": "IRD Nepal",
+      "badgeColor": "#e53935",
+      "link": "https://youtu.be/xAswLoqOmS0?si=oiCys_-gse9HhtQU",
+      "createdAt": "2026-06-23T05:16:05.290Z"
     }
   }
 }

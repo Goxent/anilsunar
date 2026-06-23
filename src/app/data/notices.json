@@ -1,8 +1,21 @@
 {
-  "lastUpdated": "2026-06-22T06:42:09.381Z",
-  "totalCount": 71,
-  "newCount": 12,
+  "lastUpdated": "2026-06-23T05:15:53.319Z",
+  "totalCount": 72,
+  "newCount": 1,
   "notices": [
+    {
+      "id": "irdnepal_mqq6xy1i",
+      "title": "सूचना संग्रह",
+      "source": "IRD Nepal",
+      "category": "Taxation",
+      "badge": "IRD",
+      "badgeColor": "#e53935",
+      "link": "https://ird.gov.np/category/notice/",
+      "summary": "New Taxation update from IRD Nepal: सूचना संग्रह",
+      "detectedAt": "2026-06-23T05:15:32.886Z",
+      "isNew": true,
+      "emailedAt": null
+    },
     {
       "id": "irdnepal_mqoul147",
       "title": "कार्यालयगत सूचना अधिकारीको सम्पर्क नम्बर",

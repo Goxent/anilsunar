@@ -1,5 +1,5 @@
 {
-  "scrapedAt": "2026-06-22T06:41:35.275Z",
+  "scrapedAt": "2026-06-23T05:15:18.762Z",
   "totalCount": 23,
   "nepalCount": 15,
   "globalCount": 8,
@@ -16,23 +16,53 @@
   ],
   "articles": [
     {
-      "title": "१० अर्ब ५६ करोड खर्चेर बनेको भेरी बबई डाइभर्सन सुरुङ प्रयोगविहीन",
-      "url": "https://www.karobardaily.com/news/387585",
+      "title": "सम्पत्ति शुद्धीकरण निवारणमा नेपाल अझै ग्रे लिस्टमै",
+      "url": "https://www.karobardaily.com/news/387977",
       "source": "Karobar Daily",
       "badge": "KD",
       "category": "Nepal Business",
-      "scrapedAt": "2026-06-22T06:41:11.203Z",
-      "summary": "१० अर्ब ५६ करोड खर्चेर बनेको भेरी बबई डाइभर्सन सुरुङ प्रयोगविहीन",
+      "scrapedAt": "2026-06-23T05:15:01.559Z",
+      "summary": "सम्पत्ति शुद्धीकरण निवारणमा नेपाल अझै ग्रे लिस्टमै",
       "isGlobal": false
     },
     {
-      "title": "घरजग्गा कारोबारमा ६ अर्ब २९ करोड बढ्यो राजस्व",
-      "url": "https://www.karobardaily.com/news/387562",
+      "title": "गरिबी न्यूनीकरणमा सहयोगी कार्यक्रम",
+      "url": "https://www.karobardaily.com/news/387938",
       "source": "Karobar Daily",
       "badge": "KD",
       "category": "Nepal Business",
-      "scrapedAt": "2026-06-22T06:41:11.204Z",
-      "summary": "घरजग्गा कारोबारमा ६ अर्ब २९ करोड बढ्यो राजस्व",
+      "scrapedAt": "2026-06-23T05:15:01.559Z",
+      "summary": "गरिबी न्यूनीकरणमा सहयोगी कार्यक्रम",
+      "isGlobal": false
+    },
+    {
+      "title": "राहदानी प्रकरणमा अर्यालसहित १८ विरुद्ध मुद्दा दायर",
+      "url": "https://www.karobardaily.com/news/387934",
+      "source": "Karobar Daily",
+      "badge": "KD",
+      "category": "Nepal Business",
+      "scrapedAt": "2026-06-23T05:15:01.559Z",
+      "summary": "राहदानी प्रकरणमा अर्यालसहित १८ विरुद्ध मुद्दा दायर",
+      "isGlobal": false
+    },
+    {
+      "title": "कानुनी कारबाही अगाडि बढेपछि १८ कम्पनीको क्रेडिट रेटिङ नकारात्मक सूचीमा",
+      "url": "https://www.karobardaily.com/news/387970",
+      "source": "Karobar Daily",
+      "badge": "KD",
+      "category": "Nepal Business",
+      "scrapedAt": "2026-06-23T05:15:01.559Z",
+      "summary": "कानुनी कारबाही अगाडि बढेपछि १८ कम्पनीको क्रेडिट रेटिङ नकारात्मक सूचीमा",
+      "isGlobal": false
+    },
+    {
+      "title": "गैंडाकोटले ल्यायो एक अर्ब २८ करोडको बजेट",
+      "url": "https://www.karobardaily.com/news/387788",
+      "source": "Karobar Daily",
+      "badge": "KD",
+      "category": "Nepal Business",
+      "scrapedAt": "2026-06-23T05:15:01.559Z",
+      "summary": "गैंडाकोटले ल्यायो एक अर्ब २८ करोडको बजेट",
       "isGlobal": false
     },
     {
@@ -41,7 +71,7 @@
       "source": "Karobar Daily",
       "badge": "KD",
       "category": "Nepal Business",
-      "scrapedAt": "2026-06-22T06:41:11.204Z",
+      "scrapedAt": "2026-06-23T05:15:01.559Z",
       "summary": "नेपाल राष्ट्र बैंकद्वारा तलब भत्तासम्बन्धी मार्गदर्शन जारी",
       "isGlobal": false
     },
@@ -51,7 +81,7 @@
       "source": "Karobar Daily",
       "badge": "KD",
       "category": "Nepal Business",
-      "scrapedAt": "2026-06-22T06:41:11.204Z",
+      "scrapedAt": "2026-06-23T05:15:01.559Z",
       "summary": "राष्ट्र बैंकद्वारा ४५ अर्बको निक्षेप संकलन आह्वान",
       "isGlobal": false
     },
@@ -61,38 +91,8 @@
       "source": "Karobar Daily",
       "badge": "KD",
       "category": "Nepal Business",
-      "scrapedAt": "2026-06-22T06:41:11.204Z",
+      "scrapedAt": "2026-06-23T05:15:01.559Z",
       "summary": "असारका लागि पनि घट्यो बैंक ब्याजदर",
-      "isGlobal": false
-    },
-    {
-      "title": "निजी क्षेत्रमा कर्जा विस्तार ५.७ प्रतिशतमात्र",
-      "url": "https://www.karobardaily.com/news/383603",
-      "source": "Karobar Daily",
-      "badge": "KD",
-      "category": "Nepal Business",
-      "scrapedAt": "2026-06-22T06:41:11.204Z",
-      "summary": "निजी क्षेत्रमा कर्जा विस्तार ५.७ प्रतिशतमात्र",
-      "isGlobal": false
-    },
-    {
-      "title": "सरकारी पुनर्बिमा कम्पनीलाई बलियो बनाउने योजना",
-      "url": "https://www.karobardaily.com/news/380365",
-      "source": "Karobar Daily",
-      "badge": "KD",
-      "category": "Nepal Business",
-      "scrapedAt": "2026-06-22T06:41:11.204Z",
-      "summary": "सरकारी पुनर्बिमा कम्पनीलाई बलियो बनाउने योजना",
-      "isGlobal": false
-    },
-    {
-      "title": "नेपाल एसबिआई बैंकले अन्तर्राष्ट्रिय योग दिवस मनायो",
-      "url": "https://www.karobardaily.com/news/387481",
-      "source": "Karobar Daily",
-      "badge": "KD",
-      "category": "Nepal Business",
-      "scrapedAt": "2026-06-22T06:41:11.204Z",
-      "summary": "नेपाल एसबिआई बैंकले अन्तर्राष्ट्रिय योग दिवस मनायो",
       "isGlobal": false
     },
     {
@@ -101,17 +101,17 @@
       "source": "Sharesansar",
       "badge": "SS",
       "category": "Nepal Stock",
-      "scrapedAt": "2026-06-22T06:41:13.359Z",
+      "scrapedAt": "2026-06-23T05:15:03.717Z",
       "summary": "Proposed Dividend",
       "isGlobal": false
     },
     {
       "title": "Dividend, Bonus & Rights",
-      "url": "https://www.sharesansar.com/newsdetail/united-ajod-insurance-limited-proposes-45113-dividend-for-fiscal-year-208182-how-much-in-bonus-shares-and-cash-2026-06-19",
+      "url": "https://www.sharesansar.com/newsdetail/excel-development-bank-decides-not-to-distribute-dividend-for-fy-208182-2026-06-22",
       "source": "Sharesansar",
       "badge": "SS",
       "category": "Nepal Stock",
-      "scrapedAt": "2026-06-22T06:41:13.359Z",
+      "scrapedAt": "2026-06-23T05:15:03.717Z",
       "summary": "Dividend, Bonus & Rights",
       "isGlobal": false
     },
@@ -121,7 +121,7 @@
       "source": "Sharesansar",
       "badge": "SS",
       "category": "Nepal Stock",
-      "scrapedAt": "2026-06-22T06:41:13.359Z",
+      "scrapedAt": "2026-06-23T05:15:03.717Z",
       "summary": "NEPSE Concludes The Week With 0.80% Loss and Turnover of Rs 20.04 Arba; Weekly Summary with Sector Comparison, Major Highlights, and More",
       "isGlobal": false
     },
@@ -131,7 +131,7 @@
       "source": "Sharesansar",
       "badge": "SS",
       "category": "Nepal Stock",
-      "scrapedAt": "2026-06-22T06:41:13.359Z",
+      "scrapedAt": "2026-06-23T05:15:03.717Z",
       "summary": "Snow River IPO Opens Today; Should You Invest in This Hydro? Take a Closer Look",
       "isGlobal": false
     },
@@ -141,7 +141,7 @@
       "source": "Nepali Paisa",
       "badge": "NP",
       "category": "Nepal Finance",
-      "scrapedAt": "2026-06-22T06:41:15.431Z",
+      "scrapedAt": "2026-06-23T05:15:05.703Z",
       "summary": "Market Overview",
       "isGlobal": false
     },
@@ -151,7 +151,7 @@
       "source": "Nepali Paisa",
       "badge": "NP",
       "category": "Nepal Finance",
-      "scrapedAt": "2026-06-22T06:41:15.431Z",
+      "scrapedAt": "2026-06-23T05:15:05.703Z",
       "summary": "Stocks Up & Down",
       "isGlobal": false
     },
@@ -161,7 +161,7 @@
       "source": "Nepali Paisa",
       "badge": "NP",
       "category": "Nepal Finance",
-      "scrapedAt": "2026-06-22T06:41:15.431Z",
+      "scrapedAt": "2026-06-23T05:15:05.703Z",
       "summary": "Business & Economy",
       "isGlobal": false
     }
@@ -173,78 +173,78 @@
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-06-22T06:41:33.774Z",
+      "scrapedAt": "2026-06-23T05:15:17.259Z",
       "summary": "Markets just got Conversational",
       "isGlobal": true
     },
     {
-      "title": "Ceasefire, Inflation, Elections: 5 themes driving global markets this week",
-      "url": "https://economictimes.indiatimes.com/markets/us-stocks/news/ceasefire-inflation-elections-5-themes-driving-global-markets-this-week/slideshow/131902241.cms",
+      "title": "Jio IPO: Google, Meta, 8 others retain their stake in India’s largest offer worth Rs 35,000 crore",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/jio-ipo-google-meta-8-others-retain-their-stake-in-indias-largest-offer-worth-rs-35000-crore/slideshow/131924644.cms",
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-06-22T06:41:33.774Z",
-      "summary": "Ceasefire, Inflation, Elections: 5 themes driving global markets this week",
+      "scrapedAt": "2026-06-23T05:15:17.260Z",
+      "summary": "Jio IPO: Google, Meta, 8 others retain their stake in India’s largest offer worth Rs 35,000 crore",
       "isGlobal": true
     },
     {
-      "title": "Bharat Dynamics among 4 stocks flashing bullish signals, indicating possible uptrend",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/news/bharat-dynamics-among-4-stocks-flashing-bullish-signals-indicating-possible-uptrend/slideshow/131900712.cms",
+      "title": "Aditya Birla Capital among 3 stocks flashing bullish signals, hinting at a possible uptrend",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/aditya-birla-capital-among-3-stocks-flashing-bullish-signals-hinting-at-a-possible-uptrend/slideshow/131924520.cms",
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-06-22T06:41:33.774Z",
-      "summary": "Bharat Dynamics among 4 stocks flashing bullish signals, indicating possible uptrend",
+      "scrapedAt": "2026-06-23T05:15:17.260Z",
+      "summary": "Aditya Birla Capital among 3 stocks flashing bullish signals, hinting at a possible uptrend",
       "isGlobal": true
     },
     {
-      "title": "ITC among 8 stocks showing bullish RSI upswing",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/news/itc-among-8-stocks-showing-bullish-rsi-upswing/slideshow/131900542.cms",
+      "title": "Jefferies picks 9 power stocks with upside potential of up to 31%. How many do you own?",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/jefferies-picks-9-power-stocks-with-upside-potential-of-up-to-31-how-many-do-you-own/slideshow/131924423.cms",
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-06-22T06:41:33.774Z",
-      "summary": "ITC among 8 stocks showing bullish RSI upswing",
+      "scrapedAt": "2026-06-23T05:15:17.260Z",
+      "summary": "Jefferies picks 9 power stocks with upside potential of up to 31%. How many do you own?",
       "isGlobal": true
     },
     {
-      "title": "Stocks to buy in 2026 for long term: BSE, Nykaa among 5 stocks that could give 10-20% return",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/news/stocks-to-buy-in-2026-for-long-term-bse-nykaa-among-5-stocks-that-could-give-10-20-return/slideshow/131899993.cms",
+      "title": "Reliance Industries among 5 Nifty stocks showing bullish RSI upswing",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/reliance-industries-among-5-nifty-stocks-showing-bullish-rsi-upswing/slideshow/131923614.cms",
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-06-22T06:41:33.774Z",
-      "summary": "Stocks to buy in 2026 for long term: BSE, Nykaa among 5 stocks that could give 10-20% return",
+      "scrapedAt": "2026-06-23T05:15:17.260Z",
+      "summary": "Reliance Industries among 5 Nifty stocks showing bullish RSI upswing",
       "isGlobal": true
     },
     {
-      "title": "Top Nifty50 stocks analysts suggest buying in this volatile week",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/news/top-nifty50-stocks-analysts-suggest-buying-in-this-volatile-week/articleshow/131900778.cms",
+      "title": "Stocks to buy in 2026 for long term: Delhivery, Kirloskar Oil among 5 stocks that could give 10-30% return",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/stocks-to-buy-in-2026-for-long-term-delhivery-kirloskar-oil-among-5-stocks-that-could-give-10-30-return/slideshow/131923249.cms",
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-06-22T06:41:33.775Z",
-      "summary": "Top Nifty50 stocks analysts suggest buying in this volatile week",
+      "scrapedAt": "2026-06-23T05:15:17.260Z",
+      "summary": "Stocks to buy in 2026 for long term: Delhivery, Kirloskar Oil among 5 stocks that could give 10-30% return",
       "isGlobal": true
     },
     {
-      "title": "For long-term investors: Boring portfolio that wins difficult years; 5 large-cap stocks with upside potential up to 20%",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/news/for-long-term-investors-boring-portfolio-that-wins-difficult-years-5-large-cap-stocks-with-upside-potential-up-to-20/articleshow/131882055.cms",
+      "title": "Weekly Top Picks: These stocks scored 10 on 10 on Stock Reports Plus",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/weekly-top-picks-these-stocks-scored-10-on-10-on-stock-reports-plus/articleshow/131912135.cms",
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-06-22T06:41:33.775Z",
-      "summary": "For long-term investors: Boring portfolio that wins difficult years; 5 large-cap stocks with upside potential up to 20%",
+      "scrapedAt": "2026-06-23T05:15:17.260Z",
+      "summary": "Weekly Top Picks: These stocks scored 10 on 10 on Stock Reports Plus",
       "isGlobal": true
     },
     {
-      "title": "Auto ancillary stocks: Time for a re-rating as transformation nears the finish line? 6 stocks with upside potential of up to 34%",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/news/auto-ancillary-stocks-time-for-a-re-rating-as-transformation-nears-the-finish-line-6-stocks-with-upside-potential-of-up-to-34/articleshow/131880686.cms",
+      "title": "Stock picks of the week: 5 stocks with consistent score improvement and upside potential of up to 26%",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/stock-picks-of-the-week-5-stocks-with-consistent-score-improvement-and-upside-potential-of-up-to-26/articleshow/131904809.cms",
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-06-22T06:41:33.775Z",
-      "summary": "Auto ancillary stocks: Time for a re-rating as transformation nears the finish line? 6 stocks with upside potential of up to 34%",
+      "scrapedAt": "2026-06-23T05:15:17.260Z",
+      "summary": "Stock picks of the week: 5 stocks with consistent score improvement and upside potential of up to 26%",
       "isGlobal": true
     }
   ]
