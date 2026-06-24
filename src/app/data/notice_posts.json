@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-06-23T05:16:05.290Z",
-  "totalPosts": 26,
+  "lastUpdated": "2026-06-24T05:13:37.515Z",
+  "totalPosts": 27,
   "posts": {
     "ocrnepal_moqq27ad": {
       "headline": "OCR Nepal: वार्षिक विवरण अभिलेखनका पत्रहरू स्वचालित रूपमा प्राप्त ",
@@ -521,6 +521,26 @@
       "badgeColor": "#e53935",
       "link": "https://youtu.be/xAswLoqOmS0?si=oiCys_-gse9HhtQU",
       "createdAt": "2026-06-23T05:16:05.290Z"
+    },
+    "irdnepal_mqrmappn": {
+      "headline": "IRD Nepal: हिरामा मूल्य अभिवृद्धि कर लाग्ने सम्बन्धी सार्वजनिक सूच",
+      "body": "💰 Tax update from Inland Revenue Department!\n\n📌 हिरामा मूल्य अभिवृद्धि कर लाग्ने सम्बन्धी सार्वजनिक सूचना।\n\nThis update from IRD Nepal may affect taxation compliance requirements for Nepal professionals.\n\n✅ Review the full notice and consult your advisor.\n\n🔗 https://ird.gov.np/content/13558/public-notice-regarding-levy-of-value-added/",
+      "callToAction": "Share this with your team if relevant.",
+      "hashtags": [
+        "#Nepal",
+        "#Compliance",
+        "#CA",
+        "#IRDNepal"
+      ],
+      "bestTimeToPost": "Morning",
+      "topicBadge": "Taxation",
+      "isTemplate": true,
+      "noticeId": "irdnepal_mqrmappn",
+      "noticeTitle": "हिरामा मूल्य अभिवृद्धि कर लाग्ने सम्बन्धी सार्वजनिक सूचना।",
+      "source": "IRD Nepal",
+      "badgeColor": "#e53935",
+      "link": "https://ird.gov.np/content/13558/public-notice-regarding-levy-of-value-added/",
+      "createdAt": "2026-06-24T05:13:37.515Z"
     }
   }
 }

@@ -1,8 +1,21 @@
 {
-  "lastUpdated": "2026-06-23T05:15:53.319Z",
-  "totalCount": 72,
+  "lastUpdated": "2026-06-24T05:13:25.267Z",
+  "totalCount": 73,
   "newCount": 1,
   "notices": [
+    {
+      "id": "irdnepal_mqrmappn",
+      "title": "हिरामा मूल्य अभिवृद्धि कर लाग्ने सम्बन्धी सार्वजनिक सूचना।",
+      "source": "IRD Nepal",
+      "category": "Taxation",
+      "badge": "IRD",
+      "badgeColor": "#e53935",
+      "link": "https://ird.gov.np/content/13558/public-notice-regarding-levy-of-value-added/",
+      "summary": "New Taxation update from IRD Nepal: हिरामा मूल्य अभिवृद्धि कर लाग्ने सम्बन्धी सार्वजनिक सूचना।",
+      "detectedAt": "2026-06-24T05:13:09.035Z",
+      "isNew": true,
+      "emailedAt": null
+    },
     {
       "id": "irdnepal_mqq6xy1i",
       "title": "सूचना संग्रह",
