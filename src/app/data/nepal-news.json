@@ -1,5 +1,5 @@
 {
-  "scrapedAt": "2026-06-24T05:12:55.157Z",
+  "scrapedAt": "2026-06-25T05:16:45.962Z",
   "totalCount": 23,
   "nepalCount": 15,
   "globalCount": 8,
@@ -16,53 +16,73 @@
   ],
   "articles": [
     {
-      "title": "१० अर्ब ५ करोड खर्चेर बनेको सुनकोसी डाइभर्सन सुरुङ उपयोगविहीन",
-      "url": "https://www.karobardaily.com/news/388301",
+      "title": "जीवन बीमा कम्पनीको व्यापार १२.६२ प्रतिशतले बढ्यो",
+      "url": "https://www.karobardaily.com/news/388612",
       "source": "Karobar Daily",
       "badge": "KD",
       "category": "Nepal Business",
-      "scrapedAt": "2026-06-24T05:12:28.709Z",
-      "summary": "१० अर्ब ५ करोड खर्चेर बनेको सुनकोसी डाइभर्सन सुरुङ उपयोगविहीन",
+      "scrapedAt": "2026-06-25T05:16:18.984Z",
+      "summary": "जीवन बीमा कम्पनीको व्यापार १२.६२ प्रतिशतले बढ्यो",
       "isGlobal": false
     },
     {
-      "title": "स्पेनी लगानीकर्ता र नेपाली निजी क्षेत्रबीच सहकार्य बढाउने प्रयास",
-      "url": "https://www.karobardaily.com/news/388207",
+      "title": "बैंक तथा वित्तीय संस्थासम्बन्धी फैसलाको सन्देश",
+      "url": "https://www.karobardaily.com/news/388564",
       "source": "Karobar Daily",
       "badge": "KD",
       "category": "Nepal Business",
-      "scrapedAt": "2026-06-24T05:12:28.710Z",
-      "summary": "स्पेनी लगानीकर्ता र नेपाली निजी क्षेत्रबीच सहकार्य बढाउने प्रयास",
+      "scrapedAt": "2026-06-25T05:16:18.984Z",
+      "summary": "बैंक तथा वित्तीय संस्थासम्बन्धी फैसलाको सन्देश",
       "isGlobal": false
     },
     {
-      "title": "तीन पालिकाको बजेट १ अर्ब ४६ करोड",
-      "url": "https://www.karobardaily.com/news/388200",
+      "title": "नेपालमा उदारीकरणको महत्व तथा यसको प्रभाव-२",
+      "url": "https://www.karobardaily.com/news/388574",
       "source": "Karobar Daily",
       "badge": "KD",
       "category": "Nepal Business",
-      "scrapedAt": "2026-06-24T05:12:28.710Z",
-      "summary": "तीन पालिकाको बजेट १ अर्ब ४६ करोड",
+      "scrapedAt": "2026-06-25T05:16:18.984Z",
+      "summary": "नेपालमा उदारीकरणको महत्व तथा यसको प्रभाव-२",
       "isGlobal": false
     },
     {
-      "title": "स्याङ्जाका स्थानीय तहलाई २५ करोड बढी अनुदान",
-      "url": "https://www.karobardaily.com/news/388179",
+      "title": "नेपालगञ्जले ल्यायो एक अर्ब ७६ करोडको बजेट",
+      "url": "https://www.karobardaily.com/news/388542",
       "source": "Karobar Daily",
       "badge": "KD",
       "category": "Nepal Business",
-      "scrapedAt": "2026-06-24T05:12:28.710Z",
-      "summary": "स्याङ्जाका स्थानीय तहलाई २५ करोड बढी अनुदान",
+      "scrapedAt": "2026-06-25T05:16:18.984Z",
+      "summary": "नेपालगञ्जले ल्यायो एक अर्ब ७६ करोडको बजेट",
       "isGlobal": false
     },
     {
-      "title": "मादी गाउँपालिकाको बजेट ६५ करोड १२ लाख",
-      "url": "https://www.karobardaily.com/news/388127",
+      "title": "छ हजार बचतकर्ताको रकम फिर्ताका लागि आवेदन",
+      "url": "https://www.karobardaily.com/news/388496",
       "source": "Karobar Daily",
       "badge": "KD",
       "category": "Nepal Business",
-      "scrapedAt": "2026-06-24T05:12:28.710Z",
-      "summary": "मादी गाउँपालिकाको बजेट ६५ करोड १२ लाख",
+      "scrapedAt": "2026-06-25T05:16:18.984Z",
+      "summary": "छ हजार बचतकर्ताको रकम फिर्ताका लागि आवेदन",
+      "isGlobal": false
+    },
+    {
+      "title": "लुम्बिनीको आन्तरिक राजस्व पाँच अर्ब १४ करोड नाघ्यो",
+      "url": "https://www.karobardaily.com/news/388488",
+      "source": "Karobar Daily",
+      "badge": "KD",
+      "category": "Nepal Business",
+      "scrapedAt": "2026-06-25T05:16:18.984Z",
+      "summary": "लुम्बिनीको आन्तरिक राजस्व पाँच अर्ब १४ करोड नाघ्यो",
+      "isGlobal": false
+    },
+    {
+      "title": "रूपा गाउँपालिकाको बजेट ५५ करोड ३८ लाख",
+      "url": "https://www.karobardaily.com/news/388475",
+      "source": "Karobar Daily",
+      "badge": "KD",
+      "category": "Nepal Business",
+      "scrapedAt": "2026-06-25T05:16:18.984Z",
+      "summary": "रूपा गाउँपालिकाको बजेट ५५ करोड ३८ लाख",
       "isGlobal": false
     },
     {
@@ -71,28 +91,8 @@
       "source": "Karobar Daily",
       "badge": "KD",
       "category": "Nepal Business",
-      "scrapedAt": "2026-06-24T05:12:28.710Z",
+      "scrapedAt": "2026-06-25T05:16:18.984Z",
       "summary": "नेपाल राष्ट्र बैंकद्वारा तलब भत्तासम्बन्धी मार्गदर्शन जारी",
-      "isGlobal": false
-    },
-    {
-      "title": "राष्ट्र बैंकद्वारा ४५ अर्बको निक्षेप संकलन आह्वान",
-      "url": "https://www.karobardaily.com/news/386083",
-      "source": "Karobar Daily",
-      "badge": "KD",
-      "category": "Nepal Business",
-      "scrapedAt": "2026-06-24T05:12:28.710Z",
-      "summary": "राष्ट्र बैंकद्वारा ४५ अर्बको निक्षेप संकलन आह्वान",
-      "isGlobal": false
-    },
-    {
-      "title": "असारका लागि पनि घट्यो बैंक ब्याजदर",
-      "url": "https://www.karobardaily.com/news/385132",
-      "source": "Karobar Daily",
-      "badge": "KD",
-      "category": "Nepal Business",
-      "scrapedAt": "2026-06-24T05:12:28.710Z",
-      "summary": "असारका लागि पनि घट्यो बैंक ब्याजदर",
       "isGlobal": false
     },
     {
@@ -101,17 +101,17 @@
       "source": "Sharesansar",
       "badge": "SS",
       "category": "Nepal Stock",
-      "scrapedAt": "2026-06-24T05:12:30.498Z",
+      "scrapedAt": "2026-06-25T05:16:21.027Z",
       "summary": "Proposed Dividend",
       "isGlobal": false
     },
     {
       "title": "Dividend, Bonus & Rights",
-      "url": "https://www.sharesansar.com/newsdetail/bids-received-in-auction-of-himalayan-power-partner-limited-ordinary-shares-opened-what-is-the-cut-off-rate-2026-06-23",
+      "url": "https://www.sharesansar.com/newsdetail/bonus-shares-of-asian-life-insurance-company-limited-listed-in-nepse-2026-06-24",
       "source": "Sharesansar",
       "badge": "SS",
       "category": "Nepal Stock",
-      "scrapedAt": "2026-06-24T05:12:30.498Z",
+      "scrapedAt": "2026-06-25T05:16:21.027Z",
       "summary": "Dividend, Bonus & Rights",
       "isGlobal": false
     },
@@ -121,7 +121,7 @@
       "source": "Sharesansar",
       "badge": "SS",
       "category": "Nepal Stock",
-      "scrapedAt": "2026-06-24T05:12:30.498Z",
+      "scrapedAt": "2026-06-25T05:16:21.027Z",
       "summary": "NEPSE Concludes The Week With 0.80% Loss and Turnover of Rs 20.04 Arba; Weekly Summary with Sector Comparison, Major Highlights, and More",
       "isGlobal": false
     },
@@ -131,7 +131,7 @@
       "source": "Sharesansar",
       "badge": "SS",
       "category": "Nepal Stock",
-      "scrapedAt": "2026-06-24T05:12:30.498Z",
+      "scrapedAt": "2026-06-25T05:16:21.027Z",
       "summary": "Snow River IPO Opens Today; Should You Invest in This Hydro? Take a Closer Look",
       "isGlobal": false
     },
@@ -141,7 +141,7 @@
       "source": "Nepali Paisa",
       "badge": "NP",
       "category": "Nepal Finance",
-      "scrapedAt": "2026-06-24T05:12:32.482Z",
+      "scrapedAt": "2026-06-25T05:16:23.599Z",
       "summary": "Market Overview",
       "isGlobal": false
     },
@@ -151,7 +151,7 @@
       "source": "Nepali Paisa",
       "badge": "NP",
       "category": "Nepal Finance",
-      "scrapedAt": "2026-06-24T05:12:32.482Z",
+      "scrapedAt": "2026-06-25T05:16:23.599Z",
       "summary": "Stocks Up & Down",
       "isGlobal": false
     },
@@ -161,7 +161,7 @@
       "source": "Nepali Paisa",
       "badge": "NP",
       "category": "Nepal Finance",
-      "scrapedAt": "2026-06-24T05:12:32.482Z",
+      "scrapedAt": "2026-06-25T05:16:23.599Z",
       "summary": "Business & Economy",
       "isGlobal": false
     }
@@ -173,58 +173,68 @@
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-06-24T05:12:53.655Z",
+      "scrapedAt": "2026-06-25T05:16:44.460Z",
       "summary": "Markets just got Conversational",
       "isGlobal": true
     },
     {
-      "title": "Vedanta among 5 F&O stocks saw a high increase in futures open interest",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/news/vedanta-among-5-fampo-stocks-saw-a-high-increase-in-futures-open-interest/slideshow/131954836.cms",
+      "title": "Interglobe Aviation among 5 F&O stocks with a sharp rise in futures open interest",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/interglobe-aviation-among-5-fampo-stocks-with-a-sharp-rise-in-futures-open-interest/slideshow/131981736.cms",
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-06-24T05:12:53.656Z",
-      "summary": "Vedanta among 5 F&O stocks saw a high increase in futures open interest",
+      "scrapedAt": "2026-06-25T05:16:44.461Z",
+      "summary": "Interglobe Aviation among 5 F&O stocks with a sharp rise in futures open interest",
       "isGlobal": true
     },
     {
-      "title": "TCS, Infosys, 8 other IT stocks plunge up to 38% in 2026. How many do you own?",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/news/tcs-infosys-8-other-it-stocks-plunge-up-to-38-in-2026-how-many-do-you-own/slideshow/131954451.cms",
+      "title": "Tech Mahindra among 7 largecap stocks showing bullish RSI upswing",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/tech-mahindra-among-7-largecap-stocks-showing-bullish-rsi-upswing/slideshow/131980906.cms",
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-06-24T05:12:53.656Z",
-      "summary": "TCS, Infosys, 8 other IT stocks plunge up to 38% in 2026. How many do you own?",
+      "scrapedAt": "2026-06-25T05:16:44.461Z",
+      "summary": "Tech Mahindra among 7 largecap stocks showing bullish RSI upswing",
       "isGlobal": true
     },
     {
-      "title": "Info Edge among 4 stocks showing bullish RSI upswing",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/news/info-edge-among-4-stocks-showing-bullish-rsi-upswing/slideshow/131953833.cms",
+      "title": "Stocks to buy in 2026 for long term: Tata Capital, Tata Motors among 5 stocks that could give 10-20% return",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/stocks-to-buy-in-2026-for-long-term-tata-capital-tata-motors-among-5-stocks-that-could-give-10-20-return/slideshow/131980297.cms",
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-06-24T05:12:53.656Z",
-      "summary": "Info Edge among 4 stocks showing bullish RSI upswing",
+      "scrapedAt": "2026-06-25T05:16:44.461Z",
+      "summary": "Stocks to buy in 2026 for long term: Tata Capital, Tata Motors among 5 stocks that could give 10-20% return",
       "isGlobal": true
     },
     {
-      "title": "Stocks to buy in 2026 for long term: Ather Energy, Stove Kraft among 5 stocks that could give 10-20% return",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/news/stocks-to-buy-in-2026-for-long-term-ather-energy-stove-kraft-among-5-stocks-that-could-give-10-20-return/slideshow/131953328.cms",
+      "title": "Positive Breakout: These 9 stocks cross above their 200 DMAs",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/positive-breakout-these-9-stocks-cross-above-their-200-dmas/slideshow/131980209.cms",
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-06-24T05:12:53.656Z",
-      "summary": "Stocks to buy in 2026 for long term: Ather Energy, Stove Kraft among 5 stocks that could give 10-20% return",
+      "scrapedAt": "2026-06-25T05:16:44.461Z",
+      "summary": "Positive Breakout: These 9 stocks cross above their 200 DMAs",
       "isGlobal": true
     },
     {
-      "title": "Negative Breakout: These 10 stocks cross below their 200 DMAs",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/news/negative-breakout-these-10-stocks-cross-below-their-200-dmas/slideshow/131952766.cms",
+      "title": "Market trading guide: IndiGo among 2 stock recommendations for Thursday",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/market-trading-guide-indigo-among-2-stock-recommendations-for-thursday/slideshow/131971260.cms",
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-06-24T05:12:53.656Z",
-      "summary": "Negative Breakout: These 10 stocks cross below their 200 DMAs",
+      "scrapedAt": "2026-06-25T05:16:44.461Z",
+      "summary": "Market trading guide: IndiGo among 2 stock recommendations for Thursday",
+      "isGlobal": true
+    },
+    {
+      "title": "These mid-cap stocks with ‘Strong Buy’ & ‘Buy’ recos can rally over 25%, according to analysts",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/these-mid-cap-stocks-with-strong-buy-buy-recos-can-rally-over-25-according-to-analysts/articleshow/131974086.cms",
+      "source": "Economic Times Markets",
+      "badge": "ET",
+      "category": "India Markets",
+      "scrapedAt": "2026-06-25T05:16:44.461Z",
+      "summary": "These mid-cap stocks with ‘Strong Buy’ & ‘Buy’ recos can rally over 25%, according to analysts",
       "isGlobal": true
     },
     {
@@ -233,18 +243,8 @@
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-06-24T05:12:53.656Z",
+      "scrapedAt": "2026-06-25T05:16:44.461Z",
       "summary": "These 6 private and public banking stocks have an upside of up to 26% in one year, according to analysts",
-      "isGlobal": true
-    },
-    {
-      "title": "For investors who focus on the long term: 5 mid-cap stocks from different sectors with upside potential up to 28%",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/news/for-investors-who-focus-on-the-long-term-5-mid-cap-stocks-from-different-sectors-with-upside-potential-up-to-28/articleshow/131931405.cms",
-      "source": "Economic Times Markets",
-      "badge": "ET",
-      "category": "India Markets",
-      "scrapedAt": "2026-06-24T05:12:53.656Z",
-      "summary": "For investors who focus on the long term: 5 mid-cap stocks from different sectors with upside potential up to 28%",
       "isGlobal": true
     }
   ]
