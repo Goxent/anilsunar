@@ -1,5 +1,5 @@
 {
-  "scrapedAt": "2026-06-26T05:22:27.710Z",
+  "scrapedAt": "2026-06-26T05:40:12.568Z",
   "totalCount": 23,
   "nepalCount": 15,
   "globalCount": 8,
@@ -21,7 +21,7 @@
       "source": "Karobar Daily",
       "badge": "KD",
       "category": "Nepal Business",
-      "scrapedAt": "2026-06-26T05:22:04.224Z",
+      "scrapedAt": "2026-06-26T05:39:49.301Z",
       "summary": "विद्युत प्राधिकरणको पुनर्संरचना तयार गर्न कार्यदल गठन",
       "isGlobal": false
     },
@@ -31,7 +31,7 @@
       "source": "Karobar Daily",
       "badge": "KD",
       "category": "Nepal Business",
-      "scrapedAt": "2026-06-26T05:22:04.224Z",
+      "scrapedAt": "2026-06-26T05:39:49.301Z",
       "summary": "नेप्से २६५१ विन्दुमा, कारोबार रकम पनि घट्यो",
       "isGlobal": false
     },
@@ -41,18 +41,8 @@
       "source": "Karobar Daily",
       "badge": "KD",
       "category": "Nepal Business",
-      "scrapedAt": "2026-06-26T05:22:04.224Z",
+      "scrapedAt": "2026-06-26T05:39:49.301Z",
       "summary": "विद्यालयको सेयर दिने आश्वासनमा करोडौं रकम उठाएका बलबहादुर प्रहरी हिरासतमा",
-      "isGlobal": false
-    },
-    {
-      "title": "कुमारी बैंक र नेसनल प्याथ ल्याबबीच सम्झौता",
-      "url": "https://www.karobardaily.com/news/388917",
-      "source": "Karobar Daily",
-      "badge": "KD",
-      "category": "Nepal Business",
-      "scrapedAt": "2026-06-26T05:22:04.224Z",
-      "summary": "कुमारी बैंक र नेसनल प्याथ ल्याबबीच सम्झौता",
       "isGlobal": false
     },
     {
@@ -61,7 +51,7 @@
       "source": "Karobar Daily",
       "badge": "KD",
       "category": "Nepal Business",
-      "scrapedAt": "2026-06-26T05:22:04.224Z",
+      "scrapedAt": "2026-06-26T05:39:49.301Z",
       "summary": "तनहुँका स्थानीय तहद्वारा सात अर्ब ७८ करोडको बजेट प्रस्तुत",
       "isGlobal": false
     },
@@ -71,7 +61,7 @@
       "source": "Karobar Daily",
       "badge": "KD",
       "category": "Nepal Business",
-      "scrapedAt": "2026-06-26T05:22:04.224Z",
+      "scrapedAt": "2026-06-26T05:39:49.301Z",
       "summary": "बुटवलको बजेट ३ अर्ब ९९ करोड",
       "isGlobal": false
     },
@@ -81,7 +71,7 @@
       "source": "Karobar Daily",
       "badge": "KD",
       "category": "Nepal Business",
-      "scrapedAt": "2026-06-26T05:22:04.224Z",
+      "scrapedAt": "2026-06-26T05:39:49.301Z",
       "summary": "तिलोत्तमाको बजेट ३ अर्ब ५ करोड",
       "isGlobal": false
     },
@@ -91,8 +81,18 @@
       "source": "Karobar Daily",
       "badge": "KD",
       "category": "Nepal Business",
-      "scrapedAt": "2026-06-26T05:22:04.224Z",
+      "scrapedAt": "2026-06-26T05:39:49.301Z",
       "summary": "माछापुच्छ्र्रे गाउँपालिकाको बजेट ७० करोड ४६ लाख",
+      "isGlobal": false
+    },
+    {
+      "title": "नेपाल राष्ट्र बैंकद्वारा तलब भत्तासम्बन्धी मार्गदर्शन जारी",
+      "url": "https://www.karobardaily.com/news/386951",
+      "source": "Karobar Daily",
+      "badge": "KD",
+      "category": "Nepal Business",
+      "scrapedAt": "2026-06-26T05:39:49.301Z",
+      "summary": "नेपाल राष्ट्र बैंकद्वारा तलब भत्तासम्बन्धी मार्गदर्शन जारी",
       "isGlobal": false
     },
     {
@@ -101,7 +101,7 @@
       "source": "Sharesansar",
       "badge": "SS",
       "category": "Nepal Stock",
-      "scrapedAt": "2026-06-26T05:22:06.109Z",
+      "scrapedAt": "2026-06-26T05:39:51.292Z",
       "summary": "Proposed Dividend",
       "isGlobal": false
     },
@@ -111,7 +111,7 @@
       "source": "Sharesansar",
       "badge": "SS",
       "category": "Nepal Stock",
-      "scrapedAt": "2026-06-26T05:22:06.109Z",
+      "scrapedAt": "2026-06-26T05:39:51.292Z",
       "summary": "Dividend, Bonus & Rights",
       "isGlobal": false
     },
@@ -121,7 +121,7 @@
       "source": "Sharesansar",
       "badge": "SS",
       "category": "Nepal Stock",
-      "scrapedAt": "2026-06-26T05:22:06.109Z",
+      "scrapedAt": "2026-06-26T05:39:51.292Z",
       "summary": "NEPSE Concludes The Week With 0.80% Loss and Turnover of Rs 20.04 Arba; Weekly Summary with Sector Comparison, Major Highlights, and More",
       "isGlobal": false
     },
@@ -131,7 +131,7 @@
       "source": "Sharesansar",
       "badge": "SS",
       "category": "Nepal Stock",
-      "scrapedAt": "2026-06-26T05:22:06.109Z",
+      "scrapedAt": "2026-06-26T05:39:51.292Z",
       "summary": "Snow River IPO Opens Today; Should You Invest in This Hydro? Take a Closer Look",
       "isGlobal": false
     },
@@ -141,7 +141,7 @@
       "source": "Nepali Paisa",
       "badge": "NP",
       "category": "Nepal Finance",
-      "scrapedAt": "2026-06-26T05:22:08.325Z",
+      "scrapedAt": "2026-06-26T05:39:53.451Z",
       "summary": "Market Overview",
       "isGlobal": false
     },
@@ -151,7 +151,7 @@
       "source": "Nepali Paisa",
       "badge": "NP",
       "category": "Nepal Finance",
-      "scrapedAt": "2026-06-26T05:22:08.325Z",
+      "scrapedAt": "2026-06-26T05:39:53.451Z",
       "summary": "Stocks Up & Down",
       "isGlobal": false
     },
@@ -161,7 +161,7 @@
       "source": "Nepali Paisa",
       "badge": "NP",
       "category": "Nepal Finance",
-      "scrapedAt": "2026-06-26T05:22:08.325Z",
+      "scrapedAt": "2026-06-26T05:39:53.451Z",
       "summary": "Business & Economy",
       "isGlobal": false
     }
@@ -173,7 +173,7 @@
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-06-26T05:22:26.208Z",
+      "scrapedAt": "2026-06-26T05:40:11.067Z",
       "summary": "Markets just got Conversational",
       "isGlobal": true
     },
@@ -183,7 +183,7 @@
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-06-26T05:22:26.209Z",
+      "scrapedAt": "2026-06-26T05:40:11.067Z",
       "summary": "ITC, HUL among 10 FMCG stocks that have tumbled up to 31% in 2026. How many do you have?",
       "isGlobal": true
     },
@@ -193,7 +193,7 @@
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-06-26T05:22:26.209Z",
+      "scrapedAt": "2026-06-26T05:40:11.067Z",
       "summary": "Up to 42% upside! 9 stocks Jefferies, Motilal Oswal, others started coverage on. Do you own any?",
       "isGlobal": true
     },
@@ -203,7 +203,7 @@
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-06-26T05:22:26.209Z",
+      "scrapedAt": "2026-06-26T05:40:11.067Z",
       "summary": "Stocks to buy in 2026 for long term: Ambuja Cements, SRF among 5 stocks that could give 10-20% return",
       "isGlobal": true
     },
@@ -213,7 +213,7 @@
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-06-26T05:22:26.209Z",
+      "scrapedAt": "2026-06-26T05:40:11.067Z",
       "summary": "These large-, mid- and small-cap stocks can give more than 25% return in 1 year, according to analysts",
       "isGlobal": true
     },
@@ -223,7 +223,7 @@
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-06-26T05:22:26.209Z",
+      "scrapedAt": "2026-06-26T05:40:11.067Z",
       "summary": "Weekly Top Picks: These stocks scored 10 on 10 on Stock Reports Plus",
       "isGlobal": true
     },
@@ -233,7 +233,7 @@
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-06-26T05:22:26.209Z",
+      "scrapedAt": "2026-06-26T05:40:11.067Z",
       "summary": "Stock Radar: Torrent Power stock showing signs of bottoming out after falling 20% from April 2026 highs",
       "isGlobal": true
     },
@@ -243,7 +243,7 @@
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-06-26T05:22:26.209Z",
+      "scrapedAt": "2026-06-26T05:40:11.067Z",
       "summary": "These mid-cap stocks with ‘Strong Buy’ & ‘Buy’ recos can rally over 25%, according to analysts",
       "isGlobal": true
     }
