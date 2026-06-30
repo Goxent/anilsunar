@@ -1,7 +1,7 @@
 {
-  "scrapedAt": "2026-06-29T06:06:18.393Z",
-  "totalCount": 23,
-  "nepalCount": 15,
+  "scrapedAt": "2026-06-30T05:18:02.857Z",
+  "totalCount": 24,
+  "nepalCount": 16,
   "globalCount": 8,
   "sources": [
     "Onlinekhabar Finance",
@@ -16,13 +16,33 @@
   ],
   "articles": [
     {
-      "title": "बैंकिङ क्षेत्रको अवस्था र सुधारको दिशा",
-      "url": "https://www.karobardaily.com/news/389493",
+      "title": "सेयर हस्तान्तरणमा १ प्रतिशत शुल्क विवाद: लगानीकर्ता आतंकित, बजार प्रभावित",
+      "url": "https://www.karobardaily.com/news/389627",
       "source": "Karobar Daily",
       "badge": "KD",
       "category": "Nepal Business",
-      "scrapedAt": "2026-06-29T06:05:52.484Z",
-      "summary": "बैंकिङ क्षेत्रको अवस्था र सुधारको दिशा",
+      "scrapedAt": "2026-06-30T05:17:40.479Z",
+      "summary": "सेयर हस्तान्तरणमा १ प्रतिशत शुल्क विवाद: लगानीकर्ता आतंकित, बजार प्रभावित",
+      "isGlobal": false
+    },
+    {
+      "title": "राहदानी छपाइ प्रकरण महानिर्देशकसहित ५ जनालाई धरौटीमा छाडन आदेश",
+      "url": "https://www.karobardaily.com/news/389602",
+      "source": "Karobar Daily",
+      "badge": "KD",
+      "category": "Nepal Business",
+      "scrapedAt": "2026-06-30T05:17:40.479Z",
+      "summary": "राहदानी छपाइ प्रकरण महानिर्देशकसहित ५ जनालाई धरौटीमा छाडन आदेश",
+      "isGlobal": false
+    },
+    {
+      "title": "पूर्व अर्थमन्त्री पौडेललाई थप तीन दिन थुनामा राख्न अनुमति",
+      "url": "https://www.karobardaily.com/news/389595",
+      "source": "Karobar Daily",
+      "badge": "KD",
+      "category": "Nepal Business",
+      "scrapedAt": "2026-06-30T05:17:40.479Z",
+      "summary": "पूर्व अर्थमन्त्री पौडेललाई थप तीन दिन थुनामा राख्न अनुमति",
       "isGlobal": false
     },
     {
@@ -31,7 +51,7 @@
       "source": "Karobar Daily",
       "badge": "KD",
       "category": "Nepal Business",
-      "scrapedAt": "2026-06-29T06:05:52.484Z",
+      "scrapedAt": "2026-06-30T05:17:40.479Z",
       "summary": "विश्व बैंक, एडिबीभन्दा चीन भारतले दिने ऋणको ब्याजदर महँगो",
       "isGlobal": false
     },
@@ -41,7 +61,7 @@
       "source": "Karobar Daily",
       "badge": "KD",
       "category": "Nepal Business",
-      "scrapedAt": "2026-06-29T06:05:52.485Z",
+      "scrapedAt": "2026-06-30T05:17:40.479Z",
       "summary": "शिक्षाको समता करले भुइँमान्छेलाई छुँदैन- अर्थमन्त्री वाग्ले",
       "isGlobal": false
     },
@@ -51,18 +71,8 @@
       "source": "Karobar Daily",
       "badge": "KD",
       "category": "Nepal Business",
-      "scrapedAt": "2026-06-29T06:05:52.485Z",
+      "scrapedAt": "2026-06-30T05:17:40.479Z",
       "summary": "पेट्रोलियम पदार्थको मूल्यवृद्धि घट्न अझै केही समय लाग्नेछ- अर्थमन्त्री वाग्ले",
-      "isGlobal": false
-    },
-    {
-      "title": "सरकारको तीन महिनाः नेप्से परिसूचक ३ सय अंकले घट्यो",
-      "url": "https://www.karobardaily.com/news/389451",
-      "source": "Karobar Daily",
-      "badge": "KD",
-      "category": "Nepal Business",
-      "scrapedAt": "2026-06-29T06:05:52.485Z",
-      "summary": "सरकारको तीन महिनाः नेप्से परिसूचक ३ सय अंकले घट्यो",
       "isGlobal": false
     },
     {
@@ -71,7 +81,7 @@
       "source": "Karobar Daily",
       "badge": "KD",
       "category": "Nepal Business",
-      "scrapedAt": "2026-06-29T06:05:52.485Z",
+      "scrapedAt": "2026-06-30T05:17:40.479Z",
       "summary": "ग्लोबल आइएमई बैंकद्वारा ‘उद्यमशाला’ कार्यक्रमको शुभारम्भ",
       "isGlobal": false
     },
@@ -81,18 +91,18 @@
       "source": "Karobar Daily",
       "badge": "KD",
       "category": "Nepal Business",
-      "scrapedAt": "2026-06-29T06:05:52.485Z",
+      "scrapedAt": "2026-06-30T05:17:40.479Z",
       "summary": "नेपाल राष्ट्र बैंकद्वारा तलब भत्तासम्बन्धी मार्गदर्शन जारी",
       "isGlobal": false
     },
     {
-      "title": "राष्ट्र बैंकद्वारा ४५ अर्बको निक्षेप संकलन आह्वान",
-      "url": "https://www.karobardaily.com/news/386083",
-      "source": "Karobar Daily",
-      "badge": "KD",
-      "category": "Nepal Business",
-      "scrapedAt": "2026-06-29T06:05:52.485Z",
-      "summary": "राष्ट्र बैंकद्वारा ४५ अर्बको निक्षेप संकलन आह्वान",
+      "title": "Dividend Trends of Commercial Banks: Have the Golden Days Passed?",
+      "url": "https://www.sharesansar.com/newsdetail/dividend-trends-of-commercial-banks-have-the-golden-days-passed-2026-06-29",
+      "source": "Sharesansar",
+      "badge": "SS",
+      "category": "Nepal Stock",
+      "scrapedAt": "2026-06-30T05:17:42.495Z",
+      "summary": "Dividend Trends of Commercial Banks: Have the Golden Days Passed?",
       "isGlobal": false
     },
     {
@@ -101,17 +111,17 @@
       "source": "Sharesansar",
       "badge": "SS",
       "category": "Nepal Stock",
-      "scrapedAt": "2026-06-29T06:05:54.580Z",
+      "scrapedAt": "2026-06-30T05:17:42.495Z",
       "summary": "Proposed Dividend",
       "isGlobal": false
     },
     {
       "title": "Dividend, Bonus & Rights",
-      "url": "https://www.sharesansar.com/newsdetail/matribhumi-laghubitta-decides-not-to-distribute-dividend-for-fy-208182-2026-06-25",
+      "url": "https://www.sharesansar.com/newsdetail/bonus-shares-of-three-companies-have-been-listed-on-nepse-2026-06-29",
       "source": "Sharesansar",
       "badge": "SS",
       "category": "Nepal Stock",
-      "scrapedAt": "2026-06-29T06:05:54.581Z",
+      "scrapedAt": "2026-06-30T05:17:42.495Z",
       "summary": "Dividend, Bonus & Rights",
       "isGlobal": false
     },
@@ -121,7 +131,7 @@
       "source": "Sharesansar",
       "badge": "SS",
       "category": "Nepal Stock",
-      "scrapedAt": "2026-06-29T06:05:54.581Z",
+      "scrapedAt": "2026-06-30T05:17:42.495Z",
       "summary": "NEPSE Concludes The Week With 1.95% Loss and Turnover of Rs 20.01 Arba; Weekly Summary with Sector Comparison, Major Highlights, and More",
       "isGlobal": false
     },
@@ -131,7 +141,7 @@
       "source": "Sharesansar",
       "badge": "SS",
       "category": "Nepal Stock",
-      "scrapedAt": "2026-06-29T06:05:54.581Z",
+      "scrapedAt": "2026-06-30T05:17:42.495Z",
       "summary": "Snow River IPO Opens Today; Should You Invest in This Hydro? Take a Closer Look",
       "isGlobal": false
     },
@@ -141,7 +151,7 @@
       "source": "Nepali Paisa",
       "badge": "NP",
       "category": "Nepal Finance",
-      "scrapedAt": "2026-06-29T06:05:57.561Z",
+      "scrapedAt": "2026-06-30T05:17:44.482Z",
       "summary": "Market Overview",
       "isGlobal": false
     },
@@ -151,7 +161,7 @@
       "source": "Nepali Paisa",
       "badge": "NP",
       "category": "Nepal Finance",
-      "scrapedAt": "2026-06-29T06:05:57.561Z",
+      "scrapedAt": "2026-06-30T05:17:44.482Z",
       "summary": "Stocks Up & Down",
       "isGlobal": false
     },
@@ -161,7 +171,7 @@
       "source": "Nepali Paisa",
       "badge": "NP",
       "category": "Nepal Finance",
-      "scrapedAt": "2026-06-29T06:05:57.561Z",
+      "scrapedAt": "2026-06-30T05:17:44.482Z",
       "summary": "Business & Economy",
       "isGlobal": false
     }
@@ -173,78 +183,78 @@
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-06-29T06:06:16.891Z",
+      "scrapedAt": "2026-06-30T05:18:01.355Z",
       "summary": "Markets just got Conversational",
       "isGlobal": true
     },
     {
-      "title": "From the Fed to chip stocks: Key events that will drive global markets this week",
-      "url": "https://economictimes.indiatimes.com/markets/us-stocks/news/from-the-fed-to-chip-stocks-key-events-that-will-drive-global-markets-this-week/slideshow/132063865.cms",
+      "title": "Motilal Oswal&#x27;s top 4 banking picks ahead of Q1 earnings season. Do you own any?",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/motilal-oswals-top-4-banking-picks-ahead-of-q1-earnings-season-do-you-own-any/slideshow/132083638.cms",
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-06-29T06:06:16.891Z",
-      "summary": "From the Fed to chip stocks: Key events that will drive global markets this week",
+      "scrapedAt": "2026-06-30T05:18:01.355Z",
+      "summary": "Motilal Oswal&#x27;s top 4 banking picks ahead of Q1 earnings season. Do you own any?",
       "isGlobal": true
     },
     {
-      "title": "Interglobe Aviation among 4 stocks flashing bullish signals, hinting at a possible uptrend",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/news/interglobe-aviation-among-4-stocks-flashing-bullish-signals-hinting-at-a-possible-uptrend/slideshow/132062204.cms",
+      "title": "NHPC among 5 stocks flashing bullish signals, hinting at a possible uptrend",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/nhpc-among-5-stocks-flashing-bullish-signals-hinting-at-a-possible-uptrend/slideshow/132083321.cms",
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-06-29T06:06:16.891Z",
-      "summary": "Interglobe Aviation among 4 stocks flashing bullish signals, hinting at a possible uptrend",
+      "scrapedAt": "2026-06-30T05:18:01.355Z",
+      "summary": "NHPC among 5 stocks flashing bullish signals, hinting at a possible uptrend",
       "isGlobal": true
     },
     {
-      "title": "SBI Cards And Payment Services among 3 stocks showing bullish RSI upswing",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/news/sbi-cards-and-payment-services-among-3-stocks-showing-bullish-rsi-upswing/slideshow/132061819.cms",
+      "title": "Hexaware Technologies among 5 stocks showing bullish RSI upswing",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/hexaware-technologies-among-5-stocks-showing-bullish-rsi-upswing/slideshow/132082577.cms",
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-06-29T06:06:16.891Z",
-      "summary": "SBI Cards And Payment Services among 3 stocks showing bullish RSI upswing",
+      "scrapedAt": "2026-06-30T05:18:01.355Z",
+      "summary": "Hexaware Technologies among 5 stocks showing bullish RSI upswing",
       "isGlobal": true
     },
     {
-      "title": "Negative Breakout: These 8 stocks cross below their 200 DMAs",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/news/negative-breakout-these-8-stocks-cross-below-their-200-dmas/slideshow/132061203.cms",
+      "title": "Positive Breakout: These 8 stocks cross above their 200 DMAs",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/positive-breakout-these-8-stocks-cross-above-their-200-dmas/slideshow/132081997.cms",
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-06-29T06:06:16.891Z",
-      "summary": "Negative Breakout: These 8 stocks cross below their 200 DMAs",
+      "scrapedAt": "2026-06-30T05:18:01.355Z",
+      "summary": "Positive Breakout: These 8 stocks cross above their 200 DMAs",
       "isGlobal": true
     },
     {
-      "title": "Top Nifty50 stocks analysts suggest buying in this volatile week",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/news/top-nifty50-stocks-analysts-suggest-buying-in-this-volatile-week/articleshow/132062384.cms",
+      "title": "Aurobindo Pharma among 9 mid-cap stocks to hit 52-week highs & rally up to 20% in a month",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/aurobindo-pharma-among-9-mid-cap-stocks-to-hit-52-week-highs-amp-rally-up-to-20-in-a-month/slideshow/132071494.cms",
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-06-29T06:06:16.892Z",
-      "summary": "Top Nifty50 stocks analysts suggest buying in this volatile week",
+      "scrapedAt": "2026-06-30T05:18:01.355Z",
+      "summary": "Aurobindo Pharma among 9 mid-cap stocks to hit 52-week highs & rally up to 20% in a month",
       "isGlobal": true
     },
     {
-      "title": "For investors with ability – and patience to wait 3 years, not 3 months: 6 large-cap stocks with upside potential of up to 33%",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/news/for-investors-with-ability-and-patience-to-wait-3-years-not-3-months-6-large-cap-stocks-with-upside-potential-of-up-to-33/articleshow/132044256.cms",
+      "title": "Weekly Top Picks: These stocks scored 10 on 10 on Stock Reports Plus",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/weekly-top-picks-these-stocks-scored-10-on-10-on-stock-reports-plus/articleshow/132070896.cms",
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-06-29T06:06:16.892Z",
-      "summary": "For investors with ability – and patience to wait 3 years, not 3 months: 6 large-cap stocks with upside potential of up to 33%",
+      "scrapedAt": "2026-06-30T05:18:01.355Z",
+      "summary": "Weekly Top Picks: These stocks scored 10 on 10 on Stock Reports Plus",
       "isGlobal": true
     },
     {
-      "title": "Should they now be part of a long-term investing framework? 7 healthcare stocks with upside potential of up to 25%",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/news/should-they-now-be-part-of-a-long-term-investing-framework-7-healthcare-stocks-with-upside-potential-of-up-to-25/articleshow/132047904.cms",
+      "title": "Stock picks of the week: 5 stocks with consistent score improvement and upside potential of up to 28%",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/stock-picks-of-the-week-5-stocks-with-consistent-score-improvement-and-upside-potential-of-up-to-28/articleshow/132066950.cms",
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-06-29T06:06:16.892Z",
-      "summary": "Should they now be part of a long-term investing framework? 7 healthcare stocks with upside potential of up to 25%",
+      "scrapedAt": "2026-06-30T05:18:01.355Z",
+      "summary": "Stock picks of the week: 5 stocks with consistent score improvement and upside potential of up to 28%",
       "isGlobal": true
     }
   ]
