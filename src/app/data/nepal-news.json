@@ -1,5 +1,5 @@
 {
-  "scrapedAt": "2026-07-01T05:55:04.777Z",
+  "scrapedAt": "2026-07-02T05:10:33.315Z",
   "totalCount": 24,
   "nepalCount": 16,
   "globalCount": 8,
@@ -16,33 +16,63 @@
   ],
   "articles": [
     {
+      "title": "स्टार्टअप उद्यम कर्जा पाउने तीन गुणा बढे, ९६६ परियोजना सहुलियत कर्जाका लागि सिफारिस",
+      "url": "https://www.karobardaily.com/news/390126",
+      "source": "Karobar Daily",
+      "badge": "KD",
+      "category": "Nepal Business",
+      "scrapedAt": "2026-07-02T05:10:06.698Z",
+      "summary": "स्टार्टअप उद्यम कर्जा पाउने तीन गुणा बढे, ९६६ परियोजना सहुलियत कर्जाका लागि सिफारिस",
+      "isGlobal": false
+    },
+    {
+      "title": "बजेट नल्याउने स्थानीय तहलाई सामान्य प्रशासन मन्त्रालयको स्पष्टीकरण",
+      "url": "https://www.karobardaily.com/news/390032",
+      "source": "Karobar Daily",
+      "badge": "KD",
+      "category": "Nepal Business",
+      "scrapedAt": "2026-07-02T05:10:06.699Z",
+      "summary": "बजेट नल्याउने स्थानीय तहलाई सामान्य प्रशासन मन्त्रालयको स्पष्टीकरण",
+      "isGlobal": false
+    },
+    {
+      "title": "वायुसेवा कम्पनीबीच मर्जर आवश्यक",
+      "url": "https://www.karobardaily.com/news/389993",
+      "source": "Karobar Daily",
+      "badge": "KD",
+      "category": "Nepal Business",
+      "scrapedAt": "2026-07-02T05:10:06.699Z",
+      "summary": "वायुसेवा कम्पनीबीच मर्जर आवश्यक",
+      "isGlobal": false
+    },
+    {
+      "title": "तरकारी र खसीबोकाबाट महाशिलामा भित्रियो आठ करोड",
+      "url": "https://www.karobardaily.com/news/389913",
+      "source": "Karobar Daily",
+      "badge": "KD",
+      "category": "Nepal Business",
+      "scrapedAt": "2026-07-02T05:10:06.699Z",
+      "summary": "तरकारी र खसीबोकाबाट महाशिलामा भित्रियो आठ करोड",
+      "isGlobal": false
+    },
+    {
+      "title": "राष्ट्र बैंकले आज ४५ अर्बको ऋणपत्र निष्कासन गर्ने",
+      "url": "https://www.karobardaily.com/news/389837",
+      "source": "Karobar Daily",
+      "badge": "KD",
+      "category": "Nepal Business",
+      "scrapedAt": "2026-07-02T05:10:06.699Z",
+      "summary": "राष्ट्र बैंकले आज ४५ अर्बको ऋणपत्र निष्कासन गर्ने",
+      "isGlobal": false
+    },
+    {
       "title": "ऊर्जा क्षेत्रमा वाणिज्य बैंकहरूको पुग्यो ५ खर्ब लगानी",
       "url": "https://www.karobardaily.com/news/389742",
       "source": "Karobar Daily",
       "badge": "KD",
       "category": "Nepal Business",
-      "scrapedAt": "2026-07-01T05:54:41.268Z",
+      "scrapedAt": "2026-07-02T05:10:06.699Z",
       "summary": "ऊर्जा क्षेत्रमा वाणिज्य बैंकहरूको पुग्यो ५ खर्ब लगानी",
-      "isGlobal": false
-    },
-    {
-      "title": "अर्थतन्त्रमा ग्रे लिस्टले उब्जाएको प्रश्न",
-      "url": "https://www.karobardaily.com/news/389702",
-      "source": "Karobar Daily",
-      "badge": "KD",
-      "category": "Nepal Business",
-      "scrapedAt": "2026-07-01T05:54:41.269Z",
-      "summary": "अर्थतन्त्रमा ग्रे लिस्टले उब्जाएको प्रश्न",
-      "isGlobal": false
-    },
-    {
-      "title": "चिनियाँ कम्पनीले अलपत्र पारेको मर्स्याङ्दी करिडोर निजी क्षेत्रले बनायो",
-      "url": "https://www.karobardaily.com/news/389695",
-      "source": "Karobar Daily",
-      "badge": "KD",
-      "category": "Nepal Business",
-      "scrapedAt": "2026-07-01T05:54:41.269Z",
-      "summary": "चिनियाँ कम्पनीले अलपत्र पारेको मर्स्याङ्दी करिडोर निजी क्षेत्रले बनायो",
       "isGlobal": false
     },
     {
@@ -51,28 +81,8 @@
       "source": "Karobar Daily",
       "badge": "KD",
       "category": "Nepal Business",
-      "scrapedAt": "2026-07-01T05:54:41.269Z",
+      "scrapedAt": "2026-07-02T05:10:06.699Z",
       "summary": "मौद्रिक नीतिले बैंकिङ क्षेत्रलाई ‘ब्रिदिङ स्पेस’ दिनुपर्छ सन्तोष कोइराला",
-      "isGlobal": false
-    },
-    {
-      "title": "ग्लोबल आइएमई बैंकद्वारा ‘उद्यमशाला’ कार्यक्रमको शुभारम्भ",
-      "url": "https://www.karobardaily.com/news/389306",
-      "source": "Karobar Daily",
-      "badge": "KD",
-      "category": "Nepal Business",
-      "scrapedAt": "2026-07-01T05:54:41.269Z",
-      "summary": "ग्लोबल आइएमई बैंकद्वारा ‘उद्यमशाला’ कार्यक्रमको शुभारम्भ",
-      "isGlobal": false
-    },
-    {
-      "title": "नेपाल राष्ट्र बैंकद्वारा तलब भत्तासम्बन्धी मार्गदर्शन जारी",
-      "url": "https://www.karobardaily.com/news/386951",
-      "source": "Karobar Daily",
-      "badge": "KD",
-      "category": "Nepal Business",
-      "scrapedAt": "2026-07-01T05:54:41.269Z",
-      "summary": "नेपाल राष्ट्र बैंकद्वारा तलब भत्तासम्बन्धी मार्गदर्शन जारी",
       "isGlobal": false
     },
     {
@@ -81,18 +91,8 @@
       "source": "Karobar Daily",
       "badge": "KD",
       "category": "Nepal Business",
-      "scrapedAt": "2026-07-01T05:54:41.269Z",
+      "scrapedAt": "2026-07-02T05:10:06.699Z",
       "summary": "जीवन बीमा कम्पनीको व्यापार १२.६२ प्रतिशतले बढ्यो",
-      "isGlobal": false
-    },
-    {
-      "title": "सरकारी पुनर्बिमा कम्पनीलाई बलियो बनाउने योजना",
-      "url": "https://www.karobardaily.com/news/380365",
-      "source": "Karobar Daily",
-      "badge": "KD",
-      "category": "Nepal Business",
-      "scrapedAt": "2026-07-01T05:54:41.269Z",
-      "summary": "सरकारी पुनर्बिमा कम्पनीलाई बलियो बनाउने योजना",
       "isGlobal": false
     },
     {
@@ -101,7 +101,7 @@
       "source": "Sharesansar",
       "badge": "SS",
       "category": "Nepal Stock",
-      "scrapedAt": "2026-07-01T05:54:43.068Z",
+      "scrapedAt": "2026-07-02T05:10:08.722Z",
       "summary": "Dividend Trends of Commercial Banks: Have the Golden Days Passed?",
       "isGlobal": false
     },
@@ -111,7 +111,7 @@
       "source": "Sharesansar",
       "badge": "SS",
       "category": "Nepal Stock",
-      "scrapedAt": "2026-07-01T05:54:43.068Z",
+      "scrapedAt": "2026-07-02T05:10:08.722Z",
       "summary": "Proposed Dividend",
       "isGlobal": false
     },
@@ -121,7 +121,7 @@
       "source": "Sharesansar",
       "badge": "SS",
       "category": "Nepal Stock",
-      "scrapedAt": "2026-07-01T05:54:43.068Z",
+      "scrapedAt": "2026-07-02T05:10:08.722Z",
       "summary": "Dividend, Bonus & Rights",
       "isGlobal": false
     },
@@ -131,7 +131,7 @@
       "source": "Sharesansar",
       "badge": "SS",
       "category": "Nepal Stock",
-      "scrapedAt": "2026-07-01T05:54:43.068Z",
+      "scrapedAt": "2026-07-02T05:10:08.722Z",
       "summary": "NEPSE Concludes The Week With 1.95% Loss and Turnover of Rs 20.01 Arba; Weekly Summary with Sector Comparison, Major Highlights, and More",
       "isGlobal": false
     },
@@ -141,7 +141,7 @@
       "source": "Sharesansar",
       "badge": "SS",
       "category": "Nepal Stock",
-      "scrapedAt": "2026-07-01T05:54:43.068Z",
+      "scrapedAt": "2026-07-02T05:10:08.722Z",
       "summary": "Snow River IPO Opens Today; Should You Invest in This Hydro? Take a Closer Look",
       "isGlobal": false
     },
@@ -151,7 +151,7 @@
       "source": "Nepali Paisa",
       "badge": "NP",
       "category": "Nepal Finance",
-      "scrapedAt": "2026-07-01T05:54:45.080Z",
+      "scrapedAt": "2026-07-02T05:10:10.697Z",
       "summary": "Market Overview",
       "isGlobal": false
     },
@@ -161,7 +161,7 @@
       "source": "Nepali Paisa",
       "badge": "NP",
       "category": "Nepal Finance",
-      "scrapedAt": "2026-07-01T05:54:45.080Z",
+      "scrapedAt": "2026-07-02T05:10:10.697Z",
       "summary": "Stocks Up & Down",
       "isGlobal": false
     },
@@ -171,7 +171,7 @@
       "source": "Nepali Paisa",
       "badge": "NP",
       "category": "Nepal Finance",
-      "scrapedAt": "2026-07-01T05:54:45.080Z",
+      "scrapedAt": "2026-07-02T05:10:10.697Z",
       "summary": "Business & Economy",
       "isGlobal": false
     }
@@ -183,78 +183,78 @@
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-07-01T05:55:03.274Z",
+      "scrapedAt": "2026-07-02T05:10:31.812Z",
       "summary": "Markets just got Conversational",
       "isGlobal": true
     },
     {
-      "title": "From Energy to AI Enabler: Bloom Energy becomes market’s hot pick",
-      "url": "https://economictimes.indiatimes.com/markets/us-stocks/news/from-energy-to-ai-enabler-bloom-energy-becomes-markets-hot-pick/slideshow/132107081.cms",
+      "title": "10 smallcap stocks soar up to 212% this year, 3 turn multibaggers. Do you own any?",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/10-smallcap-stocks-soar-up-to-212-this-year-3-turn-multibaggers-do-you-own-any/slideshow/132128568.cms",
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-07-01T05:55:03.275Z",
-      "summary": "From Energy to AI Enabler: Bloom Energy becomes market’s hot pick",
+      "scrapedAt": "2026-07-02T05:10:31.813Z",
+      "summary": "10 smallcap stocks soar up to 212% this year, 3 turn multibaggers. Do you own any?",
       "isGlobal": true
     },
     {
-      "title": "Cochin Shipyard among 3 stocks flashing bullish signals, hinting at a possible uptrend",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/news/cochin-shipyard-among-3-stocks-flashing-bullish-signals-hinting-at-a-possible-uptrend/slideshow/132105103.cms",
+      "title": "Paytm among 4 stocks that closed crossing above VWAP",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/paytm-among-4-stocks-that-closed-crossing-above-vwap/slideshow/132128324.cms",
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-07-01T05:55:03.275Z",
-      "summary": "Cochin Shipyard among 3 stocks flashing bullish signals, hinting at a possible uptrend",
+      "scrapedAt": "2026-07-02T05:10:31.813Z",
+      "summary": "Paytm among 4 stocks that closed crossing above VWAP",
       "isGlobal": true
     },
     {
-      "title": "OLA Electric among 4 stocks showing bullish RSI upswing",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/news/ola-electric-among-4-stocks-showing-bullish-rsi-upswing/slideshow/132104811.cms",
+      "title": "Delhivery, Eternal among 6 stocks flashing bullish signals, hinting at a possible uptrend",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/delhivery-eternal-among-6-stocks-flashing-bullish-signals-hinting-at-a-possible-uptrend/slideshow/132127775.cms",
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-07-01T05:55:03.275Z",
-      "summary": "OLA Electric among 4 stocks showing bullish RSI upswing",
+      "scrapedAt": "2026-07-02T05:10:31.813Z",
+      "summary": "Delhivery, Eternal among 6 stocks flashing bullish signals, hinting at a possible uptrend",
       "isGlobal": true
     },
     {
-      "title": "Positive Breakout: These 11 stocks cross above their 200 DMAs",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/news/positive-breakout-these-11-stocks-cross-above-their-200-dmas/slideshow/132104063.cms",
+      "title": "Rites among 5 stocks showing bullish RSI upswing",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/rites-among-5-stocks-showing-bullish-rsi-upswing/slideshow/132127642.cms",
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-07-01T05:55:03.275Z",
-      "summary": "Positive Breakout: These 11 stocks cross above their 200 DMAs",
+      "scrapedAt": "2026-07-02T05:10:31.813Z",
+      "summary": "Rites among 5 stocks showing bullish RSI upswing",
       "isGlobal": true
     },
     {
-      "title": "These 7 private and public banking stocks have an upside of up to 24% in one year, according to analysts",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/news/these-7-private-and-public-banking-stocks-have-an-upside-of-up-to-24-in-one-year-according-to-analysts/articleshow/132103564.cms",
+      "title": "Positive Breakout: These 9 stocks cross above their 200 DMAs",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/positive-breakout-these-9-stocks-cross-above-their-200-dmas/slideshow/132127136.cms",
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-07-01T05:55:03.275Z",
-      "summary": "These 7 private and public banking stocks have an upside of up to 24% in one year, according to analysts",
+      "scrapedAt": "2026-07-02T05:10:31.813Z",
+      "summary": "Positive Breakout: These 9 stocks cross above their 200 DMAs",
       "isGlobal": true
     },
     {
-      "title": "For investors looking beyond the short-term horizon: 5 mid-cap stocks from different sectors with upside potential up to 28%",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/news/for-investors-looking-beyond-the-short-term-horizon-5-mid-cap-stocks-from-different-sectors-with-upside-potential-up-to-28/articleshow/132089527.cms",
+      "title": "These mid-cap stocks with ‘Strong Buy’ & ‘Buy’ recos can rally over 25%, according to analysts",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/these-mid-cap-stocks-with-strong-buy-buy-recos-can-rally-over-25-according-to-analysts/articleshow/132120530.cms",
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-07-01T05:55:03.275Z",
-      "summary": "For investors looking beyond the short-term horizon: 5 mid-cap stocks from different sectors with upside potential up to 28%",
+      "scrapedAt": "2026-07-02T05:10:31.813Z",
+      "summary": "These mid-cap stocks with ‘Strong Buy’ & ‘Buy’ recos can rally over 25%, according to analysts",
       "isGlobal": true
     },
     {
-      "title": "Stock Radar: Redington stock breaks out from a downward sloping trendline resistance; time to buy?",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/news/stock-radar-redington-stock-breaks-out-from-a-downward-sloping-trendline-resistance-time-to-buy/articleshow/132095374.cms",
+      "title": "ET Prime Special Series: Multibagger or Bankrupt - Part 65: This auto ancillary is making new moves. Separate signal from noise",
+      "url": "https://economictimes.indiatimes.com/intelligent-investing/sectoral-deep-dives/et-prime-special-series-multibagger-or-bankrupt-part-65-this-auto-ancillary-is-making-new-moves-separate-signal-from-noise/articleshow/132116110.cms",
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-07-01T05:55:03.275Z",
-      "summary": "Stock Radar: Redington stock breaks out from a downward sloping trendline resistance; time to buy?",
+      "scrapedAt": "2026-07-02T05:10:31.813Z",
+      "summary": "ET Prime Special Series: Multibagger or Bankrupt - Part 65: This auto ancillary is making new moves. Separate signal from noise",
       "isGlobal": true
     }
   ]
