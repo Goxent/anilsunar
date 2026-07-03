@@ -1,8 +1,21 @@
 {
-  "lastUpdated": "2026-07-02T05:11:13.364Z",
-  "totalCount": 73,
-  "newCount": 0,
+  "lastUpdated": "2026-07-03T04:57:47.815Z",
+  "totalCount": 74,
+  "newCount": 1,
   "notices": [
+    {
+      "id": "nrbnepalnoticeofinvitationfo_mr4gpixa",
+      "title": "Notice of Invitation for Re-bid (Third Publication) for The Procurement of The Supply, Delivery and Installation of Enterprise NAS",
+      "source": "NRB Nepal",
+      "category": "Banking",
+      "badge": "NRB",
+      "badgeColor": "#e65100",
+      "link": "https://www.nrb.org.np/gsd/notice-of-invitation-for-re-bid-third-publication-for-the-procurement-of-the-supply-delivery-and-installation-of-enterprise-nas/",
+      "summary": "New Banking update from NRB Nepal: Notice of Invitation for Re-bid (Third Publication) for The Procurement of The Supply, Delivery and Installation of Enterprise NAS",
+      "detectedAt": "2026-07-03T04:57:42.670Z",
+      "isNew": true,
+      "emailedAt": null
+    },
     {
       "id": "irdnepal_mqrmappn",
       "title": "हिरामा मूल्य अभिवृद्धि कर लाग्ने सम्बन्धी सार्वजनिक सूचना।",

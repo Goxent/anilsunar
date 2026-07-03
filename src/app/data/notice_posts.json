@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-07-02T05:11:25.319Z",
-  "totalPosts": 27,
+  "lastUpdated": "2026-07-03T04:57:59.913Z",
+  "totalPosts": 28,
   "posts": {
     "ocrnepal_moqq27ad": {
       "headline": "OCR Nepal: वार्षिक विवरण अभिलेखनका पत्रहरू स्वचालित रूपमा प्राप्त ",
@@ -541,6 +541,26 @@
       "badgeColor": "#e53935",
       "link": "https://ird.gov.np/content/13558/public-notice-regarding-levy-of-value-added/",
       "createdAt": "2026-06-24T05:13:37.515Z"
+    },
+    "nrbnepalnoticeofinvitationfo_mr4gpixa": {
+      "headline": "NRB Nepal: Notice of Invitation for Re-bid (Third Publication) for",
+      "body": "🏦 Nepal Rastra Bank has a new directive!\n\n📌 Notice of Invitation for Re-bid (Third Publication) for The Procurement of The Supply, Delivery and Installation of Enterprise NAS\n\nThis update from NRB Nepal may affect banking compliance requirements for Nepal professionals.\n\n✅ Review the full notice and consult your advisor.\n\n🔗 https://www.nrb.org.np/gsd/notice-of-invitation-for-re-bid-third-publication-for-the-procurement-of-the-supply-delivery-and-installation-of-enterprise-nas/",
+      "callToAction": "Share this with your team if relevant.",
+      "hashtags": [
+        "#Nepal",
+        "#Compliance",
+        "#CA",
+        "#NRBNepal"
+      ],
+      "bestTimeToPost": "Morning",
+      "topicBadge": "Banking",
+      "isTemplate": true,
+      "noticeId": "nrbnepalnoticeofinvitationfo_mr4gpixa",
+      "noticeTitle": "Notice of Invitation for Re-bid (Third Publication) for The Procurement of The Supply, Delivery and Installation of Enterprise NAS",
+      "source": "NRB Nepal",
+      "badgeColor": "#e65100",
+      "link": "https://www.nrb.org.np/gsd/notice-of-invitation-for-re-bid-third-publication-for-the-procurement-of-the-supply-delivery-and-installation-of-enterprise-nas/",
+      "createdAt": "2026-07-03T04:57:59.913Z"
     }
   }
 }
