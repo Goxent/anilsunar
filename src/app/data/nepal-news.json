@@ -1,5 +1,5 @@
 {
-  "scrapedAt": "2026-07-08T04:32:10.663Z",
+  "scrapedAt": "2026-07-09T05:06:14.512Z",
   "totalCount": 23,
   "nepalCount": 15,
   "globalCount": 8,
@@ -16,23 +16,73 @@
   ],
   "articles": [
     {
-      "title": "वैदेशिक रोजगारी, उपभोक्तावाद र बौद्ध अर्थशास्त्र",
-      "url": "https://www.karobardaily.com/news/392164",
+      "title": "मौद्रिक नीतिले सेयर लगानीकर्तामा ल्याएन उत्साह",
+      "url": "https://www.karobardaily.com/news/392605",
       "source": "Karobar Daily",
       "badge": "KD",
       "category": "Nepal Business",
-      "scrapedAt": "2026-07-08T04:31:53.746Z",
-      "summary": "वैदेशिक रोजगारी, उपभोक्तावाद र बौद्ध अर्थशास्त्र",
+      "scrapedAt": "2026-07-09T05:05:55.342Z",
+      "summary": "मौद्रिक नीतिले सेयर लगानीकर्तामा ल्याएन उत्साह",
       "isGlobal": false
     },
     {
-      "title": "नक्कली शरणार्थी प्रकरणमा २३ जना दोषी ठहर",
-      "url": "https://www.karobardaily.com/news/392199",
+      "title": "पुनरुत्पादक कृषि, बजार प्रणाली विकास र निजी क्षेत्र",
+      "url": "https://www.karobardaily.com/news/392577",
       "source": "Karobar Daily",
       "badge": "KD",
       "category": "Nepal Business",
-      "scrapedAt": "2026-07-08T04:31:53.747Z",
-      "summary": "नक्कली शरणार्थी प्रकरणमा २३ जना दोषी ठहर",
+      "scrapedAt": "2026-07-09T05:05:55.342Z",
+      "summary": "पुनरुत्पादक कृषि, बजार प्रणाली विकास र निजी क्षेत्र",
+      "isGlobal": false
+    },
+    {
+      "title": "मुक्तिनाथ विकास बैंकद्वारा मिड–डे मील कार्यक्रमलाई सहयोग",
+      "url": "https://www.karobardaily.com/news/392559",
+      "source": "Karobar Daily",
+      "badge": "KD",
+      "category": "Nepal Business",
+      "scrapedAt": "2026-07-09T05:05:55.342Z",
+      "summary": "मुक्तिनाथ विकास बैंकद्वारा मिड–डे मील कार्यक्रमलाई सहयोग",
+      "isGlobal": false
+    },
+    {
+      "title": "नेपाल एसबिआई बैंकले ३३औं वार्षिकोत्सव मनायो",
+      "url": "https://www.karobardaily.com/news/392544",
+      "source": "Karobar Daily",
+      "badge": "KD",
+      "category": "Nepal Business",
+      "scrapedAt": "2026-07-09T05:05:55.342Z",
+      "summary": "नेपाल एसबिआई बैंकले ३३औं वार्षिकोत्सव मनायो",
+      "isGlobal": false
+    },
+    {
+      "title": "अर्थतन्त्र विकासका लागि निजी क्षेत्रसँग सहकार्य गर्ने प्रधानमन्त्रीको प्रतिबद्धता",
+      "url": "https://www.karobardaily.com/news/392527",
+      "source": "Karobar Daily",
+      "badge": "KD",
+      "category": "Nepal Business",
+      "scrapedAt": "2026-07-09T05:05:55.342Z",
+      "summary": "अर्थतन्त्र विकासका लागि निजी क्षेत्रसँग सहकार्य गर्ने प्रधानमन्त्रीको प्रतिबद्धता",
+      "isGlobal": false
+    },
+    {
+      "title": "जलविद्युत् कम्पनीको आईपीओ र हकप्रद सेयर खुलाउन माग",
+      "url": "https://www.karobardaily.com/news/392500",
+      "source": "Karobar Daily",
+      "badge": "KD",
+      "category": "Nepal Business",
+      "scrapedAt": "2026-07-09T05:05:55.342Z",
+      "summary": "जलविद्युत् कम्पनीको आईपीओ र हकप्रद सेयर खुलाउन माग",
+      "isGlobal": false
+    },
+    {
+      "title": "राष्ट्र बैंकद्वारा २० अर्बको ऋणपत्र जारी",
+      "url": "https://www.karobardaily.com/news/392516",
+      "source": "Karobar Daily",
+      "badge": "KD",
+      "category": "Nepal Business",
+      "scrapedAt": "2026-07-09T05:05:55.342Z",
+      "summary": "राष्ट्र बैंकद्वारा २० अर्बको ऋणपत्र जारी",
       "isGlobal": false
     },
     {
@@ -41,58 +91,8 @@
       "source": "Karobar Daily",
       "badge": "KD",
       "category": "Nepal Business",
-      "scrapedAt": "2026-07-08T04:31:53.747Z",
+      "scrapedAt": "2026-07-09T05:05:55.342Z",
       "summary": "राष्ट्र बैंकद्वारा २५ अर्बको ऋणपत्र जारी",
-      "isGlobal": false
-    },
-    {
-      "title": "तीन पूर्व बैंकरका यस्ता छन् सुझाव",
-      "url": "https://www.karobardaily.com/news/391771",
-      "source": "Karobar Daily",
-      "badge": "KD",
-      "category": "Nepal Business",
-      "scrapedAt": "2026-07-08T04:31:53.747Z",
-      "summary": "तीन पूर्व बैंकरका यस्ता छन् सुझाव",
-      "isGlobal": false
-    },
-    {
-      "title": "जीवन बीमा कम्पनीको व्यापार १२.६२ प्रतिशतले बढ्यो",
-      "url": "https://www.karobardaily.com/news/388612",
-      "source": "Karobar Daily",
-      "badge": "KD",
-      "category": "Nepal Business",
-      "scrapedAt": "2026-07-08T04:31:53.747Z",
-      "summary": "जीवन बीमा कम्पनीको व्यापार १२.६२ प्रतिशतले बढ्यो",
-      "isGlobal": false
-    },
-    {
-      "title": "सरकारी पुनर्बिमा कम्पनीलाई बलियो बनाउने योजना",
-      "url": "https://www.karobardaily.com/news/380365",
-      "source": "Karobar Daily",
-      "badge": "KD",
-      "category": "Nepal Business",
-      "scrapedAt": "2026-07-08T04:31:53.747Z",
-      "summary": "सरकारी पुनर्बिमा कम्पनीलाई बलियो बनाउने योजना",
-      "isGlobal": false
-    },
-    {
-      "title": "सिटिजन्स बैंकद्वारा दृष्टिविहीन बालबालिकालाई ब्रेल शैक्षिक सामग्री सहयोग",
-      "url": "https://www.karobardaily.com/news/392102",
-      "source": "Karobar Daily",
-      "badge": "KD",
-      "category": "Nepal Business",
-      "scrapedAt": "2026-07-08T04:31:53.747Z",
-      "summary": "सिटिजन्स बैंकद्वारा दृष्टिविहीन बालबालिकालाई ब्रेल शैक्षिक सामग्री सहयोग",
-      "isGlobal": false
-    },
-    {
-      "title": "टाइम फर्मास्युटिकल्सको लगानीकर्ता छलफल",
-      "url": "https://www.karobardaily.com/news/391925",
-      "source": "Karobar Daily",
-      "badge": "KD",
-      "category": "Nepal Business",
-      "scrapedAt": "2026-07-08T04:31:53.747Z",
-      "summary": "टाइम फर्मास्युटिकल्सको लगानीकर्ता छलफल",
       "isGlobal": false
     },
     {
@@ -101,7 +101,7 @@
       "source": "Sharesansar",
       "badge": "SS",
       "category": "Nepal Stock",
-      "scrapedAt": "2026-07-08T04:31:55.602Z",
+      "scrapedAt": "2026-07-09T05:05:57.033Z",
       "summary": "Proposed Dividend",
       "isGlobal": false
     },
@@ -111,7 +111,7 @@
       "source": "Sharesansar",
       "badge": "SS",
       "category": "Nepal Stock",
-      "scrapedAt": "2026-07-08T04:31:55.602Z",
+      "scrapedAt": "2026-07-09T05:05:57.033Z",
       "summary": "Dividend, Bonus & Rights",
       "isGlobal": false
     },
@@ -121,7 +121,7 @@
       "source": "Sharesansar",
       "badge": "SS",
       "category": "Nepal Stock",
-      "scrapedAt": "2026-07-08T04:31:55.602Z",
+      "scrapedAt": "2026-07-09T05:05:57.033Z",
       "summary": "NEPSE Concludes The Week With 0.15% Gain and Turnover of Rs 18.32 Arba; Weekly Summary with Sector Comparison, Major Highlights, and More",
       "isGlobal": false
     },
@@ -131,7 +131,7 @@
       "source": "Sharesansar",
       "badge": "SS",
       "category": "Nepal Stock",
-      "scrapedAt": "2026-07-08T04:31:55.602Z",
+      "scrapedAt": "2026-07-09T05:05:57.033Z",
       "summary": "Snow River IPO Opens Today; Should You Invest in This Hydro? Take a Closer Look",
       "isGlobal": false
     },
@@ -141,7 +141,7 @@
       "source": "Nepali Paisa",
       "badge": "NP",
       "category": "Nepal Finance",
-      "scrapedAt": "2026-07-08T04:31:58.842Z",
+      "scrapedAt": "2026-07-09T05:06:00.322Z",
       "summary": "Market Overview",
       "isGlobal": false
     },
@@ -151,7 +151,7 @@
       "source": "Nepali Paisa",
       "badge": "NP",
       "category": "Nepal Finance",
-      "scrapedAt": "2026-07-08T04:31:58.842Z",
+      "scrapedAt": "2026-07-09T05:06:00.322Z",
       "summary": "Stocks Up & Down",
       "isGlobal": false
     },
@@ -161,7 +161,7 @@
       "source": "Nepali Paisa",
       "badge": "NP",
       "category": "Nepal Finance",
-      "scrapedAt": "2026-07-08T04:31:58.842Z",
+      "scrapedAt": "2026-07-09T05:06:00.322Z",
       "summary": "Business & Economy",
       "isGlobal": false
     }
@@ -173,78 +173,78 @@
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-07-08T04:32:09.160Z",
+      "scrapedAt": "2026-07-09T05:06:13.009Z",
       "summary": "Markets just got Conversational",
       "isGlobal": true
     },
     {
-      "title": "Eternal, ICICI Bank & 8 stocks with up to 27% upside. Do you own them?",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/news/eternal-icici-bank-amp-8-stocks-with-up-to-27-upside-do-you-own-them/slideshow/132253652.cms",
+      "title": "33% upside! Motilal Oswal adds 10 stocks to model portfolio as markets gear up for Q1",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/33-upside-motilal-oswal-adds-10-stocks-to-model-portfolio-as-markets-gear-up-for-q1/slideshow/132277271.cms",
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-07-08T04:32:09.161Z",
-      "summary": "Eternal, ICICI Bank & 8 stocks with up to 27% upside. Do you own them?",
+      "scrapedAt": "2026-07-09T05:06:13.010Z",
+      "summary": "33% upside! Motilal Oswal adds 10 stocks to model portfolio as markets gear up for Q1",
       "isGlobal": true
     },
     {
-      "title": "Trent among 5 F&O stocks with a sharp rise in futures open interest",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/news/trent-among-5-fampo-stocks-with-a-sharp-rise-in-futures-open-interest/slideshow/132253348.cms",
+      "title": "Cochin Shipyard among 5 F&O stocks with a sharp rise in futures open interest",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/cochin-shipyard-among-5-fampo-stocks-with-a-sharp-rise-in-futures-open-interest/slideshow/132276995.cms",
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-07-08T04:32:09.161Z",
-      "summary": "Trent among 5 F&O stocks with a sharp rise in futures open interest",
+      "scrapedAt": "2026-07-09T05:06:13.010Z",
+      "summary": "Cochin Shipyard among 5 F&O stocks with a sharp rise in futures open interest",
       "isGlobal": true
     },
     {
-      "title": "Himadri Speciality among 4 stocks that closed below VWAP",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/news/himadri-speciality-among-4-stocks-that-closed-below-vwap/slideshow/132253126.cms",
+      "title": "Ather Energy among 4 stocks closed above VWAP, signalling bullish shift",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/ather-energy-among-4-stocks-closed-above-vwap-signalling-bullish-shift/slideshow/132276358.cms",
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-07-08T04:32:09.161Z",
-      "summary": "Himadri Speciality among 4 stocks that closed below VWAP",
+      "scrapedAt": "2026-07-09T05:06:13.010Z",
+      "summary": "Ather Energy among 4 stocks closed above VWAP, signalling bullish shift",
       "isGlobal": true
     },
     {
-      "title": "Jubilant FoodWorks among 4 stocks closed above VWAP, signalling bullish shift",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/news/jubilant-foodworks-among-4-stocks-closed-above-vwap-signalling-bullish-shift/slideshow/132252782.cms",
+      "title": "Aegis Logistics among 4 stocks that closed below VWAP",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/aegis-logistics-among-4-stocks-that-closed-below-vwap/slideshow/132276266.cms",
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-07-08T04:32:09.161Z",
-      "summary": "Jubilant FoodWorks among 4 stocks closed above VWAP, signalling bullish shift",
+      "scrapedAt": "2026-07-09T05:06:13.010Z",
+      "summary": "Aegis Logistics among 4 stocks that closed below VWAP",
       "isGlobal": true
     },
     {
-      "title": "Info Edge among 3 stocks flashing bullish signals, hinting at a possible uptrend",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/news/info-edge-among-3-stocks-flashing-bullish-signals-hinting-at-a-possible-uptrend/slideshow/132252733.cms",
+      "title": "Premier Energies among 4 stocks showing bullish RSI upswing",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/premier-energies-among-4-stocks-showing-bullish-rsi-upswing/slideshow/132276058.cms",
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-07-08T04:32:09.161Z",
-      "summary": "Info Edge among 3 stocks flashing bullish signals, hinting at a possible uptrend",
+      "scrapedAt": "2026-07-09T05:06:13.010Z",
+      "summary": "Premier Energies among 4 stocks showing bullish RSI upswing",
       "isGlobal": true
     },
     {
-      "title": "These 9 private and public banking stocks have an upside potential of more than 28% in one year, according to analysts",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/news/these-9-private-and-public-banking-stocks-have-an-upside-potential-of-more-than-28-in-one-year-according-to-analysts/articleshow/132244811.cms",
+      "title": "These mid-cap stocks with ‘Strong Buy’ & ‘Buy’ recos can rally over 25%, according to analysts",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/these-mid-cap-stocks-with-strong-buy-buy-recos-can-rally-over-25-according-to-analysts/articleshow/132274773.cms",
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-07-08T04:32:09.161Z",
-      "summary": "These 9 private and public banking stocks have an upside potential of more than 28% in one year, according to analysts",
+      "scrapedAt": "2026-07-09T05:06:13.010Z",
+      "summary": "These mid-cap stocks with ‘Strong Buy’ & ‘Buy’ recos can rally over 25%, according to analysts",
       "isGlobal": true
     },
     {
-      "title": "Stock Radar: Delhivery stock hits fresh 52-week high in July; time to buy or book profits?",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/news/stock-radar-delhivery-stock-hits-fresh-52-week-high-in-july-time-to-buy-or-book-profits/articleshow/132237329.cms",
+      "title": "Land, then power, now water: India&#x27;s next scarcity. 5 stocks from the water ecosystem to look at with a long-term perspective",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/land-then-power-now-water-indias-next-scarcity-5-stocks-from-the-water-ecosystem-to-look-at-with-a-long-term-perspective/articleshow/132255907.cms",
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-07-08T04:32:09.161Z",
-      "summary": "Stock Radar: Delhivery stock hits fresh 52-week high in July; time to buy or book profits?",
+      "scrapedAt": "2026-07-09T05:06:13.010Z",
+      "summary": "Land, then power, now water: India&#x27;s next scarcity. 5 stocks from the water ecosystem to look at with a long-term perspective",
       "isGlobal": true
     }
   ]
