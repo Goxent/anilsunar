@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-07-10T05:11:23.240Z",
-  "totalPosts": 37,
+  "lastUpdated": "2026-07-13T04:47:11.525Z",
+  "totalPosts": 38,
   "posts": {
     "ocrnepal_moqq27ad": {
       "headline": "OCR Nepal: वार्षिक विवरण अभिलेखनका पत्रहरू स्वचालित रूपमा प्राप्त ",
@@ -741,6 +741,26 @@
       "badgeColor": "#e65100",
       "link": "https://www.nrb.org.np/forex/",
       "createdAt": "2026-07-06T05:37:30.734Z"
+    },
+    "irdnepal_mriqpwwh": {
+      "headline": "IRD Nepal: विल/बीजक जारी गर्ने सम्बन्धी सूचना।",
+      "body": "💰 Tax update from Inland Revenue Department!\n\n📌 विल/बीजक जारी गर्ने सम्बन्धी सूचना।\n\nThis update from IRD Nepal may affect taxation compliance requirements for Nepal professionals.\n\n✅ Review the full notice and consult your advisor.\n\n🔗 https://ird.gov.np/content/13574/notice-regarding-issuance-of-will-invoice-/",
+      "callToAction": "Share this with your team if relevant.",
+      "hashtags": [
+        "#Nepal",
+        "#Compliance",
+        "#CA",
+        "#IRDNepal"
+      ],
+      "bestTimeToPost": "Morning",
+      "topicBadge": "Taxation",
+      "isTemplate": true,
+      "noticeId": "irdnepal_mriqpwwh",
+      "noticeTitle": "विल/बीजक जारी गर्ने सम्बन्धी सूचना।",
+      "source": "IRD Nepal",
+      "badgeColor": "#e53935",
+      "link": "https://ird.gov.np/content/13574/notice-regarding-issuance-of-will-invoice-/",
+      "createdAt": "2026-07-13T04:47:11.525Z"
     }
   }
 }

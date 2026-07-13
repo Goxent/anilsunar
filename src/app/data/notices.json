@@ -1,8 +1,21 @@
 {
-  "lastUpdated": "2026-07-10T05:10:42.625Z",
-  "totalCount": 83,
-  "newCount": 0,
+  "lastUpdated": "2026-07-13T04:46:59.280Z",
+  "totalCount": 84,
+  "newCount": 1,
   "notices": [
+    {
+      "id": "irdnepal_mriqpwwh",
+      "title": "विल/बीजक जारी गर्ने सम्बन्धी सूचना।",
+      "source": "IRD Nepal",
+      "category": "Taxation",
+      "badge": "IRD",
+      "badgeColor": "#e53935",
+      "link": "https://ird.gov.np/content/13574/notice-regarding-issuance-of-will-invoice-/",
+      "summary": "New Taxation update from IRD Nepal: विल/बीजक जारी गर्ने सम्बन्धी सूचना।",
+      "detectedAt": "2026-07-13T04:46:43.409Z",
+      "isNew": true,
+      "emailedAt": null
+    },
     {
       "id": "sebonnepalnew_mr8sfry6",
       "title": "मुद्दती खातामा लगानी गर्न प्रकाशन गरिएको सूचना ।NEW",
@@ -1082,6 +1095,5 @@
       "isNew": false,
       "emailedAt": "2026-05-04T04:52:28.975Z"
     }
-  ],
-  "lastEmailSentAt": "2026-07-10T05:11:23.716Z"
+  ]
 }

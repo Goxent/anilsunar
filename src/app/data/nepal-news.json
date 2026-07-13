@@ -1,5 +1,5 @@
 {
-  "scrapedAt": "2026-07-10T05:11:14.761Z",
+  "scrapedAt": "2026-07-13T04:46:29.797Z",
   "totalCount": 23,
   "nepalCount": 15,
   "globalCount": 8,
@@ -16,12 +16,62 @@
   ],
   "articles": [
     {
+      "title": "बैंकिङ एण्ड बियोन्ड र एआई प्रविधिको नेतृत्व गर्दै भविष्यको यात्रा तय गर्ने प्रतिबद्धता",
+      "url": "https://www.karobardaily.com/news/393745",
+      "source": "Karobar Daily",
+      "badge": "KD",
+      "category": "Nepal Business",
+      "scrapedAt": "2026-07-13T04:46:13.384Z",
+      "summary": "बैंकिङ एण्ड बियोन्ड र एआई प्रविधिको नेतृत्व गर्दै भविष्यको यात्रा तय गर्ने प्रतिबद्धता",
+      "isGlobal": false
+    },
+    {
+      "title": "सिद्धार्थ बैंकको ‘सिद्धार्थ महिला समृद्धि कर्जा’ सञ्चालन",
+      "url": "https://www.karobardaily.com/news/393730",
+      "source": "Karobar Daily",
+      "badge": "KD",
+      "category": "Nepal Business",
+      "scrapedAt": "2026-07-13T04:46:13.385Z",
+      "summary": "सिद्धार्थ बैंकको ‘सिद्धार्थ महिला समृद्धि कर्जा’ सञ्चालन",
+      "isGlobal": false
+    },
+    {
+      "title": "शिक्षामा लगाएको तीन प्रतिशत समता कर खारेजी गर्न चार निजी शैक्षिक संस्थाको माग",
+      "url": "https://www.karobardaily.com/news/393713",
+      "source": "Karobar Daily",
+      "badge": "KD",
+      "category": "Nepal Business",
+      "scrapedAt": "2026-07-13T04:46:13.385Z",
+      "summary": "शिक्षामा लगाएको तीन प्रतिशत समता कर खारेजी गर्न चार निजी शैक्षिक संस्थाको माग",
+      "isGlobal": false
+    },
+    {
+      "title": "नेपालगन्ज उपमहानगरपालिकाको एक अर्ब ७६ करोड बजेट पारित",
+      "url": "https://www.karobardaily.com/news/393686",
+      "source": "Karobar Daily",
+      "badge": "KD",
+      "category": "Nepal Business",
+      "scrapedAt": "2026-07-13T04:46:13.385Z",
+      "summary": "नेपालगन्ज उपमहानगरपालिकाको एक अर्ब ७६ करोड बजेट पारित",
+      "isGlobal": false
+    },
+    {
+      "title": "राष्ट्र बैंकद्वारा निष्क्रिय खाता कार्ययोजना बनाई न्यूनीकरण गर्न निर्देशन",
+      "url": "https://www.karobardaily.com/news/393311",
+      "source": "Karobar Daily",
+      "badge": "KD",
+      "category": "Nepal Business",
+      "scrapedAt": "2026-07-13T04:46:13.385Z",
+      "summary": "राष्ट्र बैंकद्वारा निष्क्रिय खाता कार्ययोजना बनाई न्यूनीकरण गर्न निर्देशन",
+      "isGlobal": false
+    },
+    {
       "title": "राष्ट्र बैंकद्वारा ६० अर्ब निक्षेप संकलनका लागि बोलकबोल आह्वान",
       "url": "https://www.karobardaily.com/news/393043",
       "source": "Karobar Daily",
       "badge": "KD",
       "category": "Nepal Business",
-      "scrapedAt": "2026-07-10T05:10:57.343Z",
+      "scrapedAt": "2026-07-13T04:46:13.385Z",
       "summary": "राष्ट्र बैंकद्वारा ६० अर्ब निक्षेप संकलनका लागि बोलकबोल आह्वान",
       "isGlobal": false
     },
@@ -31,28 +81,8 @@
       "source": "Karobar Daily",
       "badge": "KD",
       "category": "Nepal Business",
-      "scrapedAt": "2026-07-10T05:10:57.344Z",
+      "scrapedAt": "2026-07-13T04:46:13.385Z",
       "summary": "राष्ट्रिय वाणिज्य बैंकको सवल वित्तीय सूचक",
-      "isGlobal": false
-    },
-    {
-      "title": "कामना सेवा विकास बैंकद्वारा विद्यालयलाई सहयोग",
-      "url": "https://www.karobardaily.com/news/392932",
-      "source": "Karobar Daily",
-      "badge": "KD",
-      "category": "Nepal Business",
-      "scrapedAt": "2026-07-10T05:10:57.344Z",
-      "summary": "कामना सेवा विकास बैंकद्वारा विद्यालयलाई सहयोग",
-      "isGlobal": false
-    },
-    {
-      "title": "राष्ट्र बैंकद्वारा २० अर्बको ऋणपत्र जारी",
-      "url": "https://www.karobardaily.com/news/392516",
-      "source": "Karobar Daily",
-      "badge": "KD",
-      "category": "Nepal Business",
-      "scrapedAt": "2026-07-10T05:10:57.344Z",
-      "summary": "राष्ट्र बैंकद्वारा २० अर्बको ऋणपत्र जारी",
       "isGlobal": false
     },
     {
@@ -61,38 +91,8 @@
       "source": "Karobar Daily",
       "badge": "KD",
       "category": "Nepal Business",
-      "scrapedAt": "2026-07-10T05:10:57.344Z",
+      "scrapedAt": "2026-07-13T04:46:13.385Z",
       "summary": "जीवन बीमा कम्पनीको व्यापार १२.६२ प्रतिशतले बढ्यो",
-      "isGlobal": false
-    },
-    {
-      "title": "सरकारी पुनर्बिमा कम्पनीलाई बलियो बनाउने योजना",
-      "url": "https://www.karobardaily.com/news/380365",
-      "source": "Karobar Daily",
-      "badge": "KD",
-      "category": "Nepal Business",
-      "scrapedAt": "2026-07-10T05:10:57.344Z",
-      "summary": "सरकारी पुनर्बिमा कम्पनीलाई बलियो बनाउने योजना",
-      "isGlobal": false
-    },
-    {
-      "title": "कुमारी बैंकद्वारा ६ सामुदायिक विद्यालयलाई स्मार्ट टेलिभिजन हस्तान्तरण",
-      "url": "https://www.karobardaily.com/news/392861",
-      "source": "Karobar Daily",
-      "badge": "KD",
-      "category": "Nepal Business",
-      "scrapedAt": "2026-07-10T05:10:57.344Z",
-      "summary": "कुमारी बैंकद्वारा ६ सामुदायिक विद्यालयलाई स्मार्ट टेलिभिजन हस्तान्तरण",
-      "isGlobal": false
-    },
-    {
-      "title": "न्यू किया के३ सेल्टोस बजारमा",
-      "url": "https://www.karobardaily.com/news/384815",
-      "source": "Karobar Daily",
-      "badge": "KD",
-      "category": "Nepal Business",
-      "scrapedAt": "2026-07-10T05:10:57.344Z",
-      "summary": "न्यू किया के३ सेल्टोस बजारमा",
       "isGlobal": false
     },
     {
@@ -101,28 +101,28 @@
       "source": "Sharesansar",
       "badge": "SS",
       "category": "Nepal Stock",
-      "scrapedAt": "2026-07-10T05:10:59.413Z",
+      "scrapedAt": "2026-07-13T04:46:15.098Z",
       "summary": "Proposed Dividend",
       "isGlobal": false
     },
     {
       "title": "Dividend, Bonus & Rights",
-      "url": "https://www.sharesansar.com/newsdetail/bonus-shares-of-nepal-hydro-developers-limited-listed-in-nepse-2026-07-02",
+      "url": "https://www.sharesansar.com/newsdetail/minting-multi-millionaire-investors-nabil-bank-celebrates-42-years-of-turning-rs-6000-into-over-25-million-2026-07-12",
       "source": "Sharesansar",
       "badge": "SS",
       "category": "Nepal Stock",
-      "scrapedAt": "2026-07-10T05:10:59.413Z",
+      "scrapedAt": "2026-07-13T04:46:15.098Z",
       "summary": "Dividend, Bonus & Rights",
       "isGlobal": false
     },
     {
-      "title": "NEPSE Concludes The Week With 0.15% Gain and Turnover of Rs 18.32 Arba; Weekly Summary with Sector Comparison, Major Highlights, and More",
+      "title": "NEPSE Concludes The Week With 1.98% Loss and Turnover of Rs 19.65 Arba; Weekly Summary with Sector Comparison, Major Highlights, and More",
       "url": "https://www.sharesansar.com/",
       "source": "Sharesansar",
       "badge": "SS",
       "category": "Nepal Stock",
-      "scrapedAt": "2026-07-10T05:10:59.414Z",
-      "summary": "NEPSE Concludes The Week With 0.15% Gain and Turnover of Rs 18.32 Arba; Weekly Summary with Sector Comparison, Major Highlights, and More",
+      "scrapedAt": "2026-07-13T04:46:15.098Z",
+      "summary": "NEPSE Concludes The Week With 1.98% Loss and Turnover of Rs 19.65 Arba; Weekly Summary with Sector Comparison, Major Highlights, and More",
       "isGlobal": false
     },
     {
@@ -131,7 +131,7 @@
       "source": "Sharesansar",
       "badge": "SS",
       "category": "Nepal Stock",
-      "scrapedAt": "2026-07-10T05:10:59.414Z",
+      "scrapedAt": "2026-07-13T04:46:15.098Z",
       "summary": "Snow River IPO Opens Today; Should You Invest in This Hydro? Take a Closer Look",
       "isGlobal": false
     },
@@ -141,7 +141,7 @@
       "source": "Nepali Paisa",
       "badge": "NP",
       "category": "Nepal Finance",
-      "scrapedAt": "2026-07-10T05:11:02.726Z",
+      "scrapedAt": "2026-07-13T04:46:17.037Z",
       "summary": "Market Overview",
       "isGlobal": false
     },
@@ -151,7 +151,7 @@
       "source": "Nepali Paisa",
       "badge": "NP",
       "category": "Nepal Finance",
-      "scrapedAt": "2026-07-10T05:11:02.726Z",
+      "scrapedAt": "2026-07-13T04:46:17.037Z",
       "summary": "Stocks Up & Down",
       "isGlobal": false
     },
@@ -161,7 +161,7 @@
       "source": "Nepali Paisa",
       "badge": "NP",
       "category": "Nepal Finance",
-      "scrapedAt": "2026-07-10T05:11:02.726Z",
+      "scrapedAt": "2026-07-13T04:46:17.037Z",
       "summary": "Business & Economy",
       "isGlobal": false
     }
@@ -173,78 +173,78 @@
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-07-10T05:11:13.258Z",
+      "scrapedAt": "2026-07-13T04:46:28.294Z",
       "summary": "Markets just got Conversational",
       "isGlobal": true
     },
     {
-      "title": "Dr. Reddy&#x27;s Lab among 4 F&O stocks that saw a high increase in futures open interest",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/news/dr-reddys-lab-among-4-fampo-stocks-that-saw-a-high-increase-in-futures-open-interest/slideshow/132303201.cms",
+      "title": "Paytm among 5 F&O stocks with a sharp rise in futures open interest",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/paytm-among-5-fampo-stocks-with-a-sharp-rise-in-futures-open-interest/slideshow/132355940.cms",
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-07-10T05:11:13.258Z",
-      "summary": "Dr. Reddy&#x27;s Lab among 4 F&O stocks that saw a high increase in futures open interest",
+      "scrapedAt": "2026-07-13T04:46:28.294Z",
+      "summary": "Paytm among 5 F&O stocks with a sharp rise in futures open interest",
       "isGlobal": true
     },
     {
-      "title": "Swiggy among 5 stocks flashing bullish signals, hinting at a possible uptrend",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/news/swiggy-among-5-stocks-flashing-bullish-signals-hinting-at-a-possible-uptrend/slideshow/132302673.cms",
+      "title": "CDSL among 5 stocks flashing bullish signals, hinting at a possible uptrend",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/cdsl-among-5-stocks-flashing-bullish-signals-hinting-at-a-possible-uptrend/slideshow/132355383.cms",
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-07-10T05:11:13.258Z",
-      "summary": "Swiggy among 5 stocks flashing bullish signals, hinting at a possible uptrend",
+      "scrapedAt": "2026-07-13T04:46:28.294Z",
+      "summary": "CDSL among 5 stocks flashing bullish signals, hinting at a possible uptrend",
       "isGlobal": true
     },
     {
-      "title": "Vedanta Aluminium, Adani Power, 4 other stocks with up to 24% upside. Do you own any?",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/news/vedanta-aluminium-adani-power-4-other-stocks-with-up-to-24-upside-do-you-own-any/slideshow/132302536.cms",
+      "title": "Indian Bank among 5 stocks showing bullish RSI upswing",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/indian-bank-among-5-stocks-showing-bullish-rsi-upswing/slideshow/132355330.cms",
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-07-10T05:11:13.258Z",
-      "summary": "Vedanta Aluminium, Adani Power, 4 other stocks with up to 24% upside. Do you own any?",
+      "scrapedAt": "2026-07-13T04:46:28.294Z",
+      "summary": "Indian Bank among 5 stocks showing bullish RSI upswing",
       "isGlobal": true
     },
     {
-      "title": "Kalyan Jewellers among 4 stocks closed above VWAP, signalling bullish shift",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/news/kalyan-jewellers-among-4-stocks-closed-above-vwap-signalling-bullish-shift/slideshow/132302096.cms",
+      "title": "Positive Breakout: These 13 stocks cross above their 200 DMAs",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/positive-breakout-these-13-stocks-cross-above-their-200-dmas/slideshow/132354595.cms",
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-07-10T05:11:13.258Z",
-      "summary": "Kalyan Jewellers among 4 stocks closed above VWAP, signalling bullish shift",
+      "scrapedAt": "2026-07-13T04:46:28.294Z",
+      "summary": "Positive Breakout: These 13 stocks cross above their 200 DMAs",
       "isGlobal": true
     },
     {
-      "title": "Kaynes Technology among 5 stocks showing bullish RSI upswing",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/news/kaynes-technology-among-5-stocks-showing-bullish-rsi-upswing/slideshow/132301605.cms",
+      "title": "SBI MF among 6 IPOs on investors&#x27; radar this week. GMPs indicate listing gains up to 118%",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/sbi-mf-among-6-ipos-on-investors-radar-this-week-gmps-indicate-listing-gains-up-to-118/slideshow/132341236.cms",
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-07-10T05:11:13.258Z",
-      "summary": "Kaynes Technology among 5 stocks showing bullish RSI upswing",
+      "scrapedAt": "2026-07-13T04:46:28.294Z",
+      "summary": "SBI MF among 6 IPOs on investors&#x27; radar this week. GMPs indicate listing gains up to 118%",
       "isGlobal": true
     },
     {
-      "title": "These large- and mid-cap stocks can give more than 25% return in 1 year, according to analysts",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/news/these-large-and-mid-cap-stocks-can-give-more-than-25-return-in-1-year-according-to-analysts/articleshow/132300603.cms",
+      "title": "Top Nifty50 stocks analysts suggest buying in this volatile week",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/top-nifty50-stocks-analysts-suggest-buying-in-this-volatile-week/articleshow/132356142.cms",
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-07-10T05:11:13.258Z",
-      "summary": "These large- and mid-cap stocks can give more than 25% return in 1 year, according to analysts",
+      "scrapedAt": "2026-07-13T04:46:28.294Z",
+      "summary": "Top Nifty50 stocks analysts suggest buying in this volatile week",
       "isGlobal": true
     },
     {
-      "title": "When Warren Buffett bought one company because of a book, and another on a handshake",
-      "url": "https://economictimes.indiatimes.com/intelligent-investing/warren-buffett/when-warren-buffett-bought-one-company-because-of-a-book-and-another-on-a-handshake/articleshow/132291971.cms",
+      "title": "For investors with an over 2-year perspective: 5 mid- and small-cap stocks from different sectors with an upside potential of up to 26%",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/businesses-that-inch-up-even-as-the-market-consolidates-5-mid-and-small-cap-stocks-with-an-upside-potential-of-up-to-26/articleshow/132339532.cms",
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-07-10T05:11:13.258Z",
-      "summary": "When Warren Buffett bought one company because of a book, and another on a handshake",
+      "scrapedAt": "2026-07-13T04:46:28.294Z",
+      "summary": "For investors with an over 2-year perspective: 5 mid- and small-cap stocks from different sectors with an upside potential of up to 26%",
       "isGlobal": true
     }
   ]
