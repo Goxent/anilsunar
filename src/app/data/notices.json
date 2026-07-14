@@ -1,8 +1,21 @@
 {
-  "lastUpdated": "2026-07-13T04:46:59.280Z",
-  "totalCount": 84,
+  "lastUpdated": "2026-07-14T04:17:50.139Z",
+  "totalCount": 85,
   "newCount": 1,
   "notices": [
+    {
+      "id": "irdnepal_mrk549pv",
+      "title": "बीजकको ढाँचा सम्बन्धी सार्वजनिक सूचना",
+      "source": "IRD Nepal",
+      "category": "Taxation",
+      "badge": "IRD",
+      "badgeColor": "#e53935",
+      "link": "https://ird.gov.np/content/13577/public-notice-regarding-format-of-invoice/",
+      "summary": "New Taxation update from IRD Nepal: बीजकको ढाँचा सम्बन्धी सार्वजनिक सूचना",
+      "detectedAt": "2026-07-14T04:17:34.003Z",
+      "isNew": true,
+      "emailedAt": null
+    },
     {
       "id": "irdnepal_mriqpwwh",
       "title": "विल/बीजक जारी गर्ने सम्बन्धी सूचना।",

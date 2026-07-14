@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-07-13T04:47:11.525Z",
-  "totalPosts": 38,
+  "lastUpdated": "2026-07-14T04:18:02.222Z",
+  "totalPosts": 39,
   "posts": {
     "ocrnepal_moqq27ad": {
       "headline": "OCR Nepal: वार्षिक विवरण अभिलेखनका पत्रहरू स्वचालित रूपमा प्राप्त ",
@@ -761,6 +761,26 @@
       "badgeColor": "#e53935",
       "link": "https://ird.gov.np/content/13574/notice-regarding-issuance-of-will-invoice-/",
       "createdAt": "2026-07-13T04:47:11.525Z"
+    },
+    "irdnepal_mrk549pv": {
+      "headline": "IRD Nepal: बीजकको ढाँचा सम्बन्धी सार्वजनिक सूचना",
+      "body": "💰 Tax update from Inland Revenue Department!\n\n📌 बीजकको ढाँचा सम्बन्धी सार्वजनिक सूचना\n\nThis update from IRD Nepal may affect taxation compliance requirements for Nepal professionals.\n\n✅ Review the full notice and consult your advisor.\n\n🔗 https://ird.gov.np/content/13577/public-notice-regarding-format-of-invoice/",
+      "callToAction": "Share this with your team if relevant.",
+      "hashtags": [
+        "#Nepal",
+        "#Compliance",
+        "#CA",
+        "#IRDNepal"
+      ],
+      "bestTimeToPost": "Morning",
+      "topicBadge": "Taxation",
+      "isTemplate": true,
+      "noticeId": "irdnepal_mrk549pv",
+      "noticeTitle": "बीजकको ढाँचा सम्बन्धी सार्वजनिक सूचना",
+      "source": "IRD Nepal",
+      "badgeColor": "#e53935",
+      "link": "https://ird.gov.np/content/13577/public-notice-regarding-format-of-invoice/",
+      "createdAt": "2026-07-14T04:18:02.222Z"
     }
   }
 }
