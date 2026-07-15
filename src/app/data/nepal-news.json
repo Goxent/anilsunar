@@ -1,5 +1,5 @@
 {
-  "scrapedAt": "2026-07-14T04:17:20.333Z",
+  "scrapedAt": "2026-07-15T04:17:23.146Z",
   "totalCount": 23,
   "nepalCount": 15,
   "globalCount": 8,
@@ -16,83 +16,83 @@
   ],
   "articles": [
     {
+      "title": "कर्जा विस्तारमा चुकेको चालु मौद्रिक नीति",
+      "url": "https://www.karobardaily.com/news/394578",
+      "source": "Karobar Daily",
+      "badge": "KD",
+      "category": "Nepal Business",
+      "scrapedAt": "2026-07-15T04:17:03.995Z",
+      "summary": "कर्जा विस्तारमा चुकेको चालु मौद्रिक नीति",
+      "isGlobal": false
+    },
+    {
+      "title": "राष्ट्रपतिबाट बजेटसम्बन्धी तीन विधेयक प्रमाणीकरण",
+      "url": "https://www.karobardaily.com/news/394545",
+      "source": "Karobar Daily",
+      "badge": "KD",
+      "category": "Nepal Business",
+      "scrapedAt": "2026-07-15T04:17:03.996Z",
+      "summary": "राष्ट्रपतिबाट बजेटसम्बन्धी तीन विधेयक प्रमाणीकरण",
+      "isGlobal": false
+    },
+    {
+      "title": "बीमा बजारको आकार १० खर्ब नाघ्यो, ५१ प्रतिशत जनसङ्ख्यामा पहुँच",
+      "url": "https://www.karobardaily.com/news/394407",
+      "source": "Karobar Daily",
+      "badge": "KD",
+      "category": "Nepal Business",
+      "scrapedAt": "2026-07-15T04:17:03.996Z",
+      "summary": "बीमा बजारको आकार १० खर्ब नाघ्यो, ५१ प्रतिशत जनसङ्ख्यामा पहुँच",
+      "isGlobal": false
+    },
+    {
+      "title": "कर्णालीमा देउतालाई बजेट",
+      "url": "https://www.karobardaily.com/news/394378",
+      "source": "Karobar Daily",
+      "badge": "KD",
+      "category": "Nepal Business",
+      "scrapedAt": "2026-07-15T04:17:03.996Z",
+      "summary": "कर्णालीमा देउतालाई बजेट",
+      "isGlobal": false
+    },
+    {
+      "title": "झापामा भारतीय नुनको तस्करी, उपभोक्ताको स्वास्थ्य जोखिममा",
+      "url": "https://www.karobardaily.com/news/394316",
+      "source": "Karobar Daily",
+      "badge": "KD",
+      "category": "Nepal Business",
+      "scrapedAt": "2026-07-15T04:17:03.996Z",
+      "summary": "झापामा भारतीय नुनको तस्करी, उपभोक्ताको स्वास्थ्य जोखिममा",
+      "isGlobal": false
+    },
+    {
+      "title": "अर्थमन्त्रीको स्वार्थमा आयो, कार्यान्वयनमा अन्योल",
+      "url": "https://www.karobardaily.com/news/394205",
+      "source": "Karobar Daily",
+      "badge": "KD",
+      "category": "Nepal Business",
+      "scrapedAt": "2026-07-15T04:17:03.996Z",
+      "summary": "अर्थमन्त्रीको स्वार्थमा आयो, कार्यान्वयनमा अन्योल",
+      "isGlobal": false
+    },
+    {
       "title": "निजी क्षेत्रमा जाने कर्जाको लक्ष्य चुम्न मौद्रिक नीति निरीह",
       "url": "https://www.karobardaily.com/news/394192",
       "source": "Karobar Daily",
       "badge": "KD",
       "category": "Nepal Business",
-      "scrapedAt": "2026-07-14T04:17:00.923Z",
+      "scrapedAt": "2026-07-15T04:17:03.996Z",
       "summary": "निजी क्षेत्रमा जाने कर्जाको लक्ष्य चुम्न मौद्रिक नीति निरीह",
       "isGlobal": false
     },
     {
-      "title": "रास्वपाद्वारा प्रेसलाई त्रसित बनाउने कदमको भर्त्सना गर्दै सरकारलाई ध्यानाकर्षण",
-      "url": "https://www.karobardaily.com/news/394167",
+      "title": "राष्ट्र बैंकद्वारा निष्क्रिय खाता कार्ययोजना बनाई न्यूनीकरण गर्न निर्देशन",
+      "url": "https://www.karobardaily.com/news/393311",
       "source": "Karobar Daily",
       "badge": "KD",
       "category": "Nepal Business",
-      "scrapedAt": "2026-07-14T04:17:00.924Z",
-      "summary": "रास्वपाद्वारा प्रेसलाई त्रसित बनाउने कदमको भर्त्सना गर्दै सरकारलाई ध्यानाकर्षण",
-      "isGlobal": false
-    },
-    {
-      "title": "सेयर बजारका सबै सूचक घटे",
-      "url": "https://www.karobardaily.com/news/394124",
-      "source": "Karobar Daily",
-      "badge": "KD",
-      "category": "Nepal Business",
-      "scrapedAt": "2026-07-14T04:17:00.924Z",
-      "summary": "सेयर बजारका सबै सूचक घटे",
-      "isGlobal": false
-    },
-    {
-      "title": "मुक्तिनाथ विकास बैंकद्वारा व्हीलचेयर तथा स्वच्छ खानेपानीका सामाग्री हस्तान्तरण",
-      "url": "https://www.karobardaily.com/news/394141",
-      "source": "Karobar Daily",
-      "badge": "KD",
-      "category": "Nepal Business",
-      "scrapedAt": "2026-07-14T04:17:00.924Z",
-      "summary": "मुक्तिनाथ विकास बैंकद्वारा व्हीलचेयर तथा स्वच्छ खानेपानीका सामाग्री हस्तान्तरण",
-      "isGlobal": false
-    },
-    {
-      "title": "तरकारीबाट सल्यानमा वार्षिक ५२ करोड भित्रियाे",
-      "url": "https://www.karobardaily.com/news/394056",
-      "source": "Karobar Daily",
-      "badge": "KD",
-      "category": "Nepal Business",
-      "scrapedAt": "2026-07-14T04:17:00.924Z",
-      "summary": "तरकारीबाट सल्यानमा वार्षिक ५२ करोड भित्रियाे",
-      "isGlobal": false
-    },
-    {
-      "title": "घोराहीमा पूर्वाधार विकासमा ८५ करोड ९१ लाख बजेट",
-      "url": "https://www.karobardaily.com/news/394049",
-      "source": "Karobar Daily",
-      "badge": "KD",
-      "category": "Nepal Business",
-      "scrapedAt": "2026-07-14T04:17:00.924Z",
-      "summary": "घोराहीमा पूर्वाधार विकासमा ८५ करोड ९१ लाख बजेट",
-      "isGlobal": false
-    },
-    {
-      "title": "कर्णालीको बजेट ६१ प्रतिशत मात्र कार्यान्वयन",
-      "url": "https://www.karobardaily.com/news/394040",
-      "source": "Karobar Daily",
-      "badge": "KD",
-      "category": "Nepal Business",
-      "scrapedAt": "2026-07-14T04:17:00.924Z",
-      "summary": "कर्णालीको बजेट ६१ प्रतिशत मात्र कार्यान्वयन",
-      "isGlobal": false
-    },
-    {
-      "title": "अर्थसँग सम्बन्धित चार ऐन र एक नियमावली खारेज गर्नेगरी विधेयक संसद्मा दर्ता",
-      "url": "https://www.karobardaily.com/news/393991",
-      "source": "Karobar Daily",
-      "badge": "KD",
-      "category": "Nepal Business",
-      "scrapedAt": "2026-07-14T04:17:00.924Z",
-      "summary": "अर्थसँग सम्बन्धित चार ऐन र एक नियमावली खारेज गर्नेगरी विधेयक संसद्मा दर्ता",
+      "scrapedAt": "2026-07-15T04:17:03.996Z",
+      "summary": "राष्ट्र बैंकद्वारा निष्क्रिय खाता कार्ययोजना बनाई न्यूनीकरण गर्न निर्देशन",
       "isGlobal": false
     },
     {
@@ -101,7 +101,7 @@
       "source": "Sharesansar",
       "badge": "SS",
       "category": "Nepal Stock",
-      "scrapedAt": "2026-07-14T04:17:02.885Z",
+      "scrapedAt": "2026-07-15T04:17:06.120Z",
       "summary": "Proposed Dividend",
       "isGlobal": false
     },
@@ -111,7 +111,7 @@
       "source": "Sharesansar",
       "badge": "SS",
       "category": "Nepal Stock",
-      "scrapedAt": "2026-07-14T04:17:02.885Z",
+      "scrapedAt": "2026-07-15T04:17:06.120Z",
       "summary": "Dividend, Bonus & Rights",
       "isGlobal": false
     },
@@ -121,7 +121,7 @@
       "source": "Sharesansar",
       "badge": "SS",
       "category": "Nepal Stock",
-      "scrapedAt": "2026-07-14T04:17:02.885Z",
+      "scrapedAt": "2026-07-15T04:17:06.120Z",
       "summary": "NEPSE Concludes The Week With 1.98% Loss and Turnover of Rs 19.65 Arba; Weekly Summary with Sector Comparison, Major Highlights, and More",
       "isGlobal": false
     },
@@ -131,7 +131,7 @@
       "source": "Sharesansar",
       "badge": "SS",
       "category": "Nepal Stock",
-      "scrapedAt": "2026-07-14T04:17:02.885Z",
+      "scrapedAt": "2026-07-15T04:17:06.120Z",
       "summary": "Snow River IPO Opens Today; Should You Invest in This Hydro? Take a Closer Look",
       "isGlobal": false
     },
@@ -141,7 +141,7 @@
       "source": "Nepali Paisa",
       "badge": "NP",
       "category": "Nepal Finance",
-      "scrapedAt": "2026-07-14T04:17:04.861Z",
+      "scrapedAt": "2026-07-15T04:17:09.416Z",
       "summary": "Market Overview",
       "isGlobal": false
     },
@@ -151,7 +151,7 @@
       "source": "Nepali Paisa",
       "badge": "NP",
       "category": "Nepal Finance",
-      "scrapedAt": "2026-07-14T04:17:04.861Z",
+      "scrapedAt": "2026-07-15T04:17:09.416Z",
       "summary": "Stocks Up & Down",
       "isGlobal": false
     },
@@ -161,7 +161,7 @@
       "source": "Nepali Paisa",
       "badge": "NP",
       "category": "Nepal Finance",
-      "scrapedAt": "2026-07-14T04:17:04.861Z",
+      "scrapedAt": "2026-07-15T04:17:09.416Z",
       "summary": "Business & Economy",
       "isGlobal": false
     }
@@ -173,78 +173,78 @@
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-07-14T04:17:18.830Z",
+      "scrapedAt": "2026-07-15T04:17:21.644Z",
       "summary": "Markets just got Conversational",
       "isGlobal": true
     },
     {
-      "title": "Axis Securities picks 6 small, midcap stocks that can rally up to 36%. How many are in your portfolio?",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/news/axis-securities-picks-6-small-midcap-stocks-that-can-rally-up-to-36-how-many-are-in-your-portfolio/slideshow/132380814.cms",
+      "title": "Zensar Tech among 4 stocks that closed crossing below VWAP",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/zensar-tech-among-4-stocks-that-closed-crossing-below-vwap/slideshow/132405263.cms",
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-07-14T04:17:18.831Z",
-      "summary": "Axis Securities picks 6 small, midcap stocks that can rally up to 36%. How many are in your portfolio?",
+      "scrapedAt": "2026-07-15T04:17:21.644Z",
+      "summary": "Zensar Tech among 4 stocks that closed crossing below VWAP",
       "isGlobal": true
     },
     {
-      "title": "Goldman Sachs stock picks! RIL, HDFC Bank, Adani Power, among 14 names brokerage is bullish on",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/news/goldman-sachs-stock-picks-ril-hdfc-bank-adani-power-among-14-names-brokerage-is-bullish-on/slideshow/132380450.cms",
+      "title": "Concor among 4 stocks flashing bullish signals, hinting at a possible uptrend",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/concor-among-4-stocks-flashing-bullish-signals-hinting-at-a-possible-uptrend/slideshow/132405013.cms",
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-07-14T04:17:18.831Z",
-      "summary": "Goldman Sachs stock picks! RIL, HDFC Bank, Adani Power, among 14 names brokerage is bullish on",
+      "scrapedAt": "2026-07-15T04:17:21.644Z",
+      "summary": "Concor among 4 stocks flashing bullish signals, hinting at a possible uptrend",
       "isGlobal": true
     },
     {
-      "title": "Newgen Software among 4 stocks that closed above VWAP, signaling bullish shift",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/news/newgen-software-among-4-stocks-that-closed-above-vwap-signaling-bullish-shift/slideshow/132380316.cms",
+      "title": "Biocon among 4 stocks showing bullish RSI upswing",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/biocon-among-4-stocks-showing-bullish-rsi-upswing/slideshow/132404813.cms",
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-07-14T04:17:18.831Z",
-      "summary": "Newgen Software among 4 stocks that closed above VWAP, signaling bullish shift",
+      "scrapedAt": "2026-07-15T04:17:21.644Z",
+      "summary": "Biocon among 4 stocks showing bullish RSI upswing",
       "isGlobal": true
     },
     {
-      "title": "RR Kabel among 5 stocks flashing bullish signals, hinting at a possible uptrend",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/news/rr-kabel-among-5-stocks-flashing-bullish-signals-hinting-at-a-possible-uptrend/slideshow/132379693.cms",
+      "title": "Stocks to buy in 2026 for long term: HCL Tech, Indian Hotels among 5 stocks that could give 10-20% return",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/stocks-to-buy-in-2026-for-long-term-hcl-tech-indian-hotels-among-5-stocks-that-could-give-10-20-return/slideshow/132404246.cms",
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-07-14T04:17:18.831Z",
-      "summary": "RR Kabel among 5 stocks flashing bullish signals, hinting at a possible uptrend",
+      "scrapedAt": "2026-07-15T04:17:21.644Z",
+      "summary": "Stocks to buy in 2026 for long term: HCL Tech, Indian Hotels among 5 stocks that could give 10-20% return",
       "isGlobal": true
     },
     {
-      "title": "TCS among 5 stocks showing bullish RSI upswing",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/news/tcs-among-5-stocks-showing-bullish-rsi-upswing/slideshow/132379628.cms",
+      "title": "Negative Breakout: These 12 stocks cross below their 200 DMAs",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/negative-breakout-these-12-stocks-cross-below-their-200-dmas/slideshow/132404082.cms",
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-07-14T04:17:18.831Z",
-      "summary": "TCS among 5 stocks showing bullish RSI upswing",
+      "scrapedAt": "2026-07-15T04:17:21.644Z",
+      "summary": "Negative Breakout: These 12 stocks cross below their 200 DMAs",
       "isGlobal": true
     },
     {
-      "title": "Weekly Top Picks: These stocks scored 10 on 10 on Stock Reports Plus",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/news/weekly-top-picks-these-stocks-scored-10-on-10-on-stock-reports-plus/articleshow/132368583.cms",
+      "title": "These 9 banking stocks have an upside potential of up to 28% in 1 year, according to analysts",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/these-9-banking-stocks-have-an-upside-potential-of-up-to-28-in-1-year-according-to-analysts/articleshow/132398183.cms",
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-07-14T04:17:18.831Z",
-      "summary": "Weekly Top Picks: These stocks scored 10 on 10 on Stock Reports Plus",
+      "scrapedAt": "2026-07-15T04:17:21.644Z",
+      "summary": "These 9 banking stocks have an upside potential of up to 28% in 1 year, according to analysts",
       "isGlobal": true
     },
     {
-      "title": "For long-term investors: Look beyond strength of balance sheet; 5 stocks from different sectors with upside potential of up to 31%",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/news/for-long-term-investors-look-beyond-strength-of-balance-sheet-5-stocks-from-different-sectors-with-upside-potential-of-up-to-31/articleshow/132360242.cms",
+      "title": "Housing finance stocks: Is the worst of perception over? Time for a relook? 11 HFC stocks with upside potential from a low 6% to 30%",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/housing-finance-stocks-is-the-worst-of-perception-over-time-for-a-relook-11-hfc-stocks-with-upside-potential-from-a-low-6-to-30/articleshow/132388362.cms",
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-07-14T04:17:18.831Z",
-      "summary": "For long-term investors: Look beyond strength of balance sheet; 5 stocks from different sectors with upside potential of up to 31%",
+      "scrapedAt": "2026-07-15T04:17:21.644Z",
+      "summary": "Housing finance stocks: Is the worst of perception over? Time for a relook? 11 HFC stocks with upside potential from a low 6% to 30%",
       "isGlobal": true
     }
   ]
