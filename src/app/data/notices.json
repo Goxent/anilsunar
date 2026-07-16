@@ -1,8 +1,34 @@
 {
-  "lastUpdated": "2026-07-15T04:17:52.955Z",
-  "totalCount": 85,
-  "newCount": 0,
+  "lastUpdated": "2026-07-16T04:26:31.563Z",
+  "totalCount": 87,
+  "newCount": 2,
   "notices": [
+    {
+      "id": "irdnepal2083_mrn0b55p",
+      "title": "सार्वजनिक सूचना - राइड सेयरिङ सेवामा मूल्य अभिवृद्धि कर सम्बन्धी सार्वजनिक सूचना, 2083",
+      "source": "IRD Nepal",
+      "category": "Taxation",
+      "badge": "IRD",
+      "badgeColor": "#e53935",
+      "link": "https://ird.gov.np/content/13580/public-notice---public-notice-regarding-value/",
+      "summary": "New Taxation update from IRD Nepal: सार्वजनिक सूचना - राइड सेयरिङ सेवामा मूल्य अभिवृद्धि कर सम्बन्धी सार्वजनिक सूचना, 2083",
+      "detectedAt": "2026-07-16T04:26:15.133Z",
+      "isNew": true,
+      "emailedAt": null
+    },
+    {
+      "id": "irdnepal_mrn0b55p",
+      "title": "स्थायी लेखा नम्बर लीने सम्बन्धी सूचना",
+      "source": "IRD Nepal",
+      "category": "Taxation",
+      "badge": "IRD",
+      "badgeColor": "#e53935",
+      "link": "https://ird.gov.np/content/13579/notice-regarding-taking-permanent-account-number/",
+      "summary": "New Taxation update from IRD Nepal: स्थायी लेखा नम्बर लीने सम्बन्धी सूचना",
+      "detectedAt": "2026-07-16T04:26:15.133Z",
+      "isNew": true,
+      "emailedAt": null
+    },
     {
       "id": "irdnepal_mrk549pv",
       "title": "बीजकको ढाँचा सम्बन्धी सार्वजनिक सूचना",

@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-07-15T04:17:53.924Z",
-  "totalPosts": 39,
+  "lastUpdated": "2026-07-16T04:26:32.360Z",
+  "totalPosts": 41,
   "posts": {
     "ocrnepal_moqq27ad": {
       "headline": "OCR Nepal: वार्षिक विवरण अभिलेखनका पत्रहरू स्वचालित रूपमा प्राप्त ",
@@ -781,6 +781,46 @@
       "badgeColor": "#e53935",
       "link": "https://ird.gov.np/content/13577/public-notice-regarding-format-of-invoice/",
       "createdAt": "2026-07-14T04:18:02.222Z"
+    },
+    "irdnepal2083_mrn0b55p": {
+      "headline": "IRD Nepal: सार्वजनिक सूचना - राइड सेयरिङ सेवामा मूल्य अभिवृद्धि कर",
+      "body": "💰 Tax update from Inland Revenue Department!\n\n📌 सार्वजनिक सूचना - राइड सेयरिङ सेवामा मूल्य अभिवृद्धि कर सम्बन्धी सार्वजनिक सूचना, 2083\n\nThis update from IRD Nepal may affect taxation compliance requirements for Nepal professionals.\n\n✅ Review the full notice and consult your advisor.\n\n🔗 https://ird.gov.np/content/13580/public-notice---public-notice-regarding-value/",
+      "callToAction": "Share this with your team if relevant.",
+      "hashtags": [
+        "#Nepal",
+        "#Compliance",
+        "#CA",
+        "#IRDNepal"
+      ],
+      "bestTimeToPost": "Morning",
+      "topicBadge": "Taxation",
+      "isTemplate": true,
+      "noticeId": "irdnepal2083_mrn0b55p",
+      "noticeTitle": "सार्वजनिक सूचना - राइड सेयरिङ सेवामा मूल्य अभिवृद्धि कर सम्बन्धी सार्वजनिक सूचना, 2083",
+      "source": "IRD Nepal",
+      "badgeColor": "#e53935",
+      "link": "https://ird.gov.np/content/13580/public-notice---public-notice-regarding-value/",
+      "createdAt": "2026-07-16T04:26:32.359Z"
+    },
+    "irdnepal_mrn0b55p": {
+      "headline": "IRD Nepal: स्थायी लेखा नम्बर लीने सम्बन्धी सूचना",
+      "body": "💰 Tax update from Inland Revenue Department!\n\n📌 स्थायी लेखा नम्बर लीने सम्बन्धी सूचना\n\nThis update from IRD Nepal may affect taxation compliance requirements for Nepal professionals.\n\n✅ Review the full notice and consult your advisor.\n\n🔗 https://ird.gov.np/content/13579/notice-regarding-taking-permanent-account-number/",
+      "callToAction": "Share this with your team if relevant.",
+      "hashtags": [
+        "#Nepal",
+        "#Compliance",
+        "#CA",
+        "#IRDNepal"
+      ],
+      "bestTimeToPost": "Morning",
+      "topicBadge": "Taxation",
+      "isTemplate": true,
+      "noticeId": "irdnepal_mrn0b55p",
+      "noticeTitle": "स्थायी लेखा नम्बर लीने सम्बन्धी सूचना",
+      "source": "IRD Nepal",
+      "badgeColor": "#e53935",
+      "link": "https://ird.gov.np/content/13579/notice-regarding-taking-permanent-account-number/",
+      "createdAt": "2026-07-16T04:26:32.360Z"
     }
   }
 }
