@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-17T04:25:26.259Z",
+  "lastUpdated": "2026-07-17T04:27:46.204Z",
   "totalCount": 87,
   "newCount": 0,
   "notices": [
@@ -13,8 +13,8 @@
       "link": "https://ird.gov.np/content/13580/public-notice---public-notice-regarding-value/",
       "summary": "New Taxation update from IRD Nepal: सार्वजनिक सूचना - राइड सेयरिङ सेवामा मूल्य अभिवृद्धि कर सम्बन्धी सार्वजनिक सूचना, 2083",
       "detectedAt": "2026-07-16T04:26:15.133Z",
-      "isNew": true,
-      "emailedAt": null
+      "isNew": false,
+      "emailedAt": "2026-07-17T04:28:14.827Z"
     },
     {
       "id": "irdnepal_mrn0b55p",
@@ -26,8 +26,8 @@
       "link": "https://ird.gov.np/content/13579/notice-regarding-taking-permanent-account-number/",
       "summary": "New Taxation update from IRD Nepal: स्थायी लेखा नम्बर लीने सम्बन्धी सूचना",
       "detectedAt": "2026-07-16T04:26:15.133Z",
-      "isNew": true,
-      "emailedAt": null
+      "isNew": false,
+      "emailedAt": "2026-07-17T04:28:14.827Z"
     },
     {
       "id": "irdnepal_mrk549pv",
@@ -39,8 +39,8 @@
       "link": "https://ird.gov.np/content/13577/public-notice-regarding-format-of-invoice/",
       "summary": "New Taxation update from IRD Nepal: बीजकको ढाँचा सम्बन्धी सार्वजनिक सूचना",
       "detectedAt": "2026-07-14T04:17:34.003Z",
-      "isNew": true,
-      "emailedAt": null
+      "isNew": false,
+      "emailedAt": "2026-07-17T04:28:14.827Z"
     },
     {
       "id": "irdnepal_mriqpwwh",
@@ -52,8 +52,8 @@
       "link": "https://ird.gov.np/content/13574/notice-regarding-issuance-of-will-invoice-/",
       "summary": "New Taxation update from IRD Nepal: विल/बीजक जारी गर्ने सम्बन्धी सूचना।",
       "detectedAt": "2026-07-13T04:46:43.409Z",
-      "isNew": true,
-      "emailedAt": null
+      "isNew": false,
+      "emailedAt": "2026-07-17T04:28:14.827Z"
     },
     {
       "id": "sebonnepalnew_mr8sfry6",
@@ -1134,5 +1134,6 @@
       "isNew": false,
       "emailedAt": "2026-05-04T04:52:28.975Z"
     }
-  ]
+  ],
+  "lastEmailSentAt": "2026-07-17T04:28:14.827Z"
 }
