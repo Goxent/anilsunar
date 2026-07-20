@@ -1,7 +1,7 @@
 {
-  "scrapedAt": "2026-07-17T04:28:05.898Z",
-  "totalCount": 22,
-  "nepalCount": 14,
+  "scrapedAt": "2026-07-20T04:52:26.282Z",
+  "totalCount": 23,
+  "nepalCount": 15,
   "globalCount": 8,
   "sources": [
     "Onlinekhabar Finance",
@@ -16,13 +16,53 @@
   ],
   "articles": [
     {
-      "title": "मिटरब्याज पीडितसँग वार्ता गर्न प्रधानमन्त्री कार्यलयका सचिवको नेतृत्वमा समिति गठन गरिने",
-      "url": "https://www.karobardaily.com/news/395308",
+      "title": "चार वर्गमा वर्गीकरण गरेर जलविद्युत आयोजनाको आरसीओडी म्याद थपको तयारी",
+      "url": "https://www.karobardaily.com/news/396266",
       "source": "Karobar Daily",
       "badge": "KD",
       "category": "Nepal Business",
-      "scrapedAt": "2026-07-17T04:27:49.660Z",
-      "summary": "मिटरब्याज पीडितसँग वार्ता गर्न प्रधानमन्त्री कार्यलयका सचिवको नेतृत्वमा समिति गठन गरिने",
+      "scrapedAt": "2026-07-20T04:52:06.484Z",
+      "summary": "चार वर्गमा वर्गीकरण गरेर जलविद्युत आयोजनाको आरसीओडी म्याद थपको तयारी",
+      "isGlobal": false
+    },
+    {
+      "title": "औद्योगिक क्षेत्रको ४६ करोड बक्यौता राज्यकोषमा",
+      "url": "https://www.karobardaily.com/news/396172",
+      "source": "Karobar Daily",
+      "badge": "KD",
+      "category": "Nepal Business",
+      "scrapedAt": "2026-07-20T04:52:06.484Z",
+      "summary": "औद्योगिक क्षेत्रको ४६ करोड बक्यौता राज्यकोषमा",
+      "isGlobal": false
+    },
+    {
+      "title": "बैंकर्सहरु भन्छन्, ‘सहकारीको नियमन गर्ने जिम्मा राष्ट्र बैंकलाई दिनुपर्छ’",
+      "url": "https://www.karobardaily.com/news/396153",
+      "source": "Karobar Daily",
+      "badge": "KD",
+      "category": "Nepal Business",
+      "scrapedAt": "2026-07-20T04:52:06.484Z",
+      "summary": "बैंकर्सहरु भन्छन्, ‘सहकारीको नियमन गर्ने जिम्मा राष्ट्र बैंकलाई दिनुपर्छ’",
+      "isGlobal": false
+    },
+    {
+      "title": "सुदूरपश्चिमको ५० करोड फ्रिज",
+      "url": "https://www.karobardaily.com/news/396118",
+      "source": "Karobar Daily",
+      "badge": "KD",
+      "category": "Nepal Business",
+      "scrapedAt": "2026-07-20T04:52:06.484Z",
+      "summary": "सुदूरपश्चिमको ५० करोड फ्रिज",
+      "isGlobal": false
+    },
+    {
+      "title": "बैंकरहरू उत्साहित, कर्जाको लक्ष्य भेट्न चुनौती",
+      "url": "https://www.karobardaily.com/news/395547",
+      "source": "Karobar Daily",
+      "badge": "KD",
+      "category": "Nepal Business",
+      "scrapedAt": "2026-07-20T04:52:06.484Z",
+      "summary": "बैंकरहरू उत्साहित, कर्जाको लक्ष्य भेट्न चुनौती",
       "isGlobal": false
     },
     {
@@ -31,7 +71,7 @@
       "source": "Karobar Daily",
       "badge": "KD",
       "category": "Nepal Business",
-      "scrapedAt": "2026-07-17T04:27:49.660Z",
+      "scrapedAt": "2026-07-20T04:52:06.484Z",
       "summary": "ब्याज उठाउन साउन १५ सम्मको समय, सेयर कर्जा र विद्युतीय बसमा विशेष सुविधा",
       "isGlobal": false
     },
@@ -41,18 +81,8 @@
       "source": "Karobar Daily",
       "badge": "KD",
       "category": "Nepal Business",
-      "scrapedAt": "2026-07-17T04:27:49.660Z",
+      "scrapedAt": "2026-07-20T04:52:06.484Z",
       "summary": "निजी क्षेत्रमा जाने कर्जाको लक्ष्य चुम्न मौद्रिक नीति निरीह",
-      "isGlobal": false
-    },
-    {
-      "title": "राष्ट्र बैंकद्वारा निष्क्रिय खाता कार्ययोजना बनाई न्यूनीकरण गर्न निर्देशन",
-      "url": "https://www.karobardaily.com/news/393311",
-      "source": "Karobar Daily",
-      "badge": "KD",
-      "category": "Nepal Business",
-      "scrapedAt": "2026-07-17T04:27:49.660Z",
-      "summary": "राष्ट्र बैंकद्वारा निष्क्रिय खाता कार्ययोजना बनाई न्यूनीकरण गर्न निर्देशन",
       "isGlobal": false
     },
     {
@@ -61,38 +91,18 @@
       "source": "Karobar Daily",
       "badge": "KD",
       "category": "Nepal Business",
-      "scrapedAt": "2026-07-17T04:27:49.660Z",
+      "scrapedAt": "2026-07-20T04:52:06.484Z",
       "summary": "११ महिनादेखि प्राधिकरण अध्यक्षविहीनः बीमा क्षेत्रको नियमन लथालिंग",
       "isGlobal": false
     },
     {
-      "title": "जीवन बीमा कम्पनीको व्यापार १२.६२ प्रतिशतले बढ्यो",
-      "url": "https://www.karobardaily.com/news/388612",
-      "source": "Karobar Daily",
-      "badge": "KD",
-      "category": "Nepal Business",
-      "scrapedAt": "2026-07-17T04:27:49.660Z",
-      "summary": "जीवन बीमा कम्पनीको व्यापार १२.६२ प्रतिशतले बढ्यो",
-      "isGlobal": false
-    },
-    {
-      "title": "सरकारी पुनर्बिमा कम्पनीलाई बलियो बनाउने योजना",
-      "url": "https://www.karobardaily.com/news/380365",
-      "source": "Karobar Daily",
-      "badge": "KD",
-      "category": "Nepal Business",
-      "scrapedAt": "2026-07-17T04:27:49.660Z",
-      "summary": "सरकारी पुनर्बिमा कम्पनीलाई बलियो बनाउने योजना",
-      "isGlobal": false
-    },
-    {
-      "title": "महालक्ष्मी विकास बैंकद्वारा विभिन्न कार्यक्रमहरु सम्पन्न",
-      "url": "https://www.karobardaily.com/news/395283",
-      "source": "Karobar Daily",
-      "badge": "KD",
-      "category": "Nepal Business",
-      "scrapedAt": "2026-07-17T04:27:49.660Z",
-      "summary": "महालक्ष्मी विकास बैंकद्वारा विभिन्न कार्यक्रमहरु सम्पन्न",
+      "title": "How to Outperform Professional Fund Managers with Just 4 High Quality Stocks",
+      "url": "https://www.sharesansar.com/newsdetail/how-to-outperform-professional-fund-managers-with-just-4-high-quality-stocks-2026-07-13",
+      "source": "Sharesansar",
+      "badge": "SS",
+      "category": "Nepal Stock",
+      "scrapedAt": "2026-07-20T04:52:08.181Z",
+      "summary": "How to Outperform Professional Fund Managers with Just 4 High Quality Stocks",
       "isGlobal": false
     },
     {
@@ -101,7 +111,7 @@
       "source": "Sharesansar",
       "badge": "SS",
       "category": "Nepal Stock",
-      "scrapedAt": "2026-07-17T04:27:51.726Z",
+      "scrapedAt": "2026-07-20T04:52:08.181Z",
       "summary": "Proposed Dividend",
       "isGlobal": false
     },
@@ -111,18 +121,18 @@
       "source": "Sharesansar",
       "badge": "SS",
       "category": "Nepal Stock",
-      "scrapedAt": "2026-07-17T04:27:51.726Z",
+      "scrapedAt": "2026-07-20T04:52:08.181Z",
       "summary": "Dividend, Bonus & Rights",
       "isGlobal": false
     },
     {
-      "title": "NEPSE Concludes The Week With 1.98% Loss and Turnover of Rs 19.65 Arba; Weekly Summary with Sector Comparison, Major Highlights, and More",
+      "title": "NEPSE Concludes The Week With 2.95% Gain and Turnover of Rs 29.19 Arba; Weekly Summary with Sector Comparison, Major Highlights, and More",
       "url": "https://www.sharesansar.com/",
       "source": "Sharesansar",
       "badge": "SS",
       "category": "Nepal Stock",
-      "scrapedAt": "2026-07-17T04:27:51.726Z",
-      "summary": "NEPSE Concludes The Week With 1.98% Loss and Turnover of Rs 19.65 Arba; Weekly Summary with Sector Comparison, Major Highlights, and More",
+      "scrapedAt": "2026-07-20T04:52:08.181Z",
+      "summary": "NEPSE Concludes The Week With 2.95% Gain and Turnover of Rs 29.19 Arba; Weekly Summary with Sector Comparison, Major Highlights, and More",
       "isGlobal": false
     },
     {
@@ -131,7 +141,7 @@
       "source": "Nepali Paisa",
       "badge": "NP",
       "category": "Nepal Finance",
-      "scrapedAt": "2026-07-17T04:27:53.737Z",
+      "scrapedAt": "2026-07-20T04:52:10.161Z",
       "summary": "Market Overview",
       "isGlobal": false
     },
@@ -141,7 +151,7 @@
       "source": "Nepali Paisa",
       "badge": "NP",
       "category": "Nepal Finance",
-      "scrapedAt": "2026-07-17T04:27:53.737Z",
+      "scrapedAt": "2026-07-20T04:52:10.161Z",
       "summary": "Stocks Up & Down",
       "isGlobal": false
     },
@@ -151,7 +161,7 @@
       "source": "Nepali Paisa",
       "badge": "NP",
       "category": "Nepal Finance",
-      "scrapedAt": "2026-07-17T04:27:53.737Z",
+      "scrapedAt": "2026-07-20T04:52:10.161Z",
       "summary": "Business & Economy",
       "isGlobal": false
     }
@@ -163,78 +173,78 @@
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-07-17T04:28:04.396Z",
+      "scrapedAt": "2026-07-20T04:52:24.779Z",
       "summary": "Markets just got Conversational",
       "isGlobal": true
     },
     {
-      "title": "10 smallcap stocks soar up to 230% this year, 3 turn multibaggers. Do you own any?",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/news/10-smallcap-stocks-soar-up-to-230-this-year-3-turn-multibaggers-do-you-own-any/slideshow/132451895.cms",
+      "title": "Emmvee Photovoltaic among 5 stocks closed below VWAP, signalling bearish shift",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/emmvee-photovoltaic-among-5-stocks-closed-below-vwap-signalling-bearish-shift/slideshow/132505113.cms",
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-07-17T04:28:04.397Z",
-      "summary": "10 smallcap stocks soar up to 230% this year, 3 turn multibaggers. Do you own any?",
+      "scrapedAt": "2026-07-20T04:52:24.780Z",
+      "summary": "Emmvee Photovoltaic among 5 stocks closed below VWAP, signalling bearish shift",
       "isGlobal": true
     },
     {
-      "title": "UPL among 5 stocks that closed above VWAP, signaling bullish shift",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/news/upl-among-5-stocks-that-closed-above-vwap-signaling-bullish-shift/slideshow/132451770.cms",
+      "title": "Federal Bank among 5 stocks closed above VWAP, signalling bullish shift",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/federal-bank-among-5-stocks-closed-above-vwap-signalling-bullish-shift/slideshow/132504968.cms",
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-07-17T04:28:04.397Z",
-      "summary": "UPL among 5 stocks that closed above VWAP, signaling bullish shift",
+      "scrapedAt": "2026-07-20T04:52:24.780Z",
+      "summary": "Federal Bank among 5 stocks closed above VWAP, signalling bullish shift",
       "isGlobal": true
     },
     {
-      "title": "IEX among 5 stocks with bullish RSI crossover",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/news/iex-among-5-stocks-with-bullish-rsi-crossover/slideshow/132451707.cms",
+      "title": "Jio Financial Services among 6 stocks showing bullish RSI upswing",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/jio-financial-services-among-6-stocks-showing-bullish-rsi-upswing/slideshow/132504884.cms",
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-07-17T04:28:04.397Z",
-      "summary": "IEX among 5 stocks with bullish RSI crossover",
+      "scrapedAt": "2026-07-20T04:52:24.780Z",
+      "summary": "Jio Financial Services among 6 stocks showing bullish RSI upswing",
       "isGlobal": true
     },
     {
-      "title": "IIFL Finance among 3 stocks flashing bullish signals, hinting at a possible uptrend",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/news/iifl-finance-among-3-stocks-flashing-bullish-signals-hinting-at-a-possible-uptrend/slideshow/132451621.cms",
+      "title": "Positive Breakout: These 9 stocks cross above their 200 DMAs",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/positive-breakout-these-9-stocks-cross-above-their-200-dmas/slideshow/132504158.cms",
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-07-17T04:28:04.397Z",
-      "summary": "IIFL Finance among 3 stocks flashing bullish signals, hinting at a possible uptrend",
+      "scrapedAt": "2026-07-20T04:52:24.780Z",
+      "summary": "Positive Breakout: These 9 stocks cross above their 200 DMAs",
       "isGlobal": true
     },
     {
-      "title": "Stocks to buy in 2026 for long term: Jindal Saw, SBI Life among 5 stocks that could give 10-20% return",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/news/stocks-to-buy-in-2026-for-long-term-jindal-saw-sbi-life-among-5-stocks-that-could-give-10-20-return/slideshow/132450793.cms",
+      "title": "8 Sensex stocks with up to 30% upside potential. Are these in your portfolio?",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/8-sensex-stocks-with-up-to-30-upside-potential-are-these-in-your-portfolio/slideshow/132491327.cms",
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-07-17T04:28:04.397Z",
-      "summary": "Stocks to buy in 2026 for long term: Jindal Saw, SBI Life among 5 stocks that could give 10-20% return",
+      "scrapedAt": "2026-07-20T04:52:24.780Z",
+      "summary": "8 Sensex stocks with up to 30% upside potential. Are these in your portfolio?",
       "isGlobal": true
     },
     {
-      "title": "These large- and mid-cap stocks can give more than 25% return in 1 year, according to analysts",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/news/these-large-and-mid-cap-stocks-can-give-more-than-25-return-in-1-year-according-to-analysts/articleshow/132445426.cms",
+      "title": "Top Nifty50 stocks analysts suggest buying in this volatile week",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/top-nifty50-stocks-analysts-suggest-buying-in-this-volatile-week/articleshow/132505514.cms",
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-07-17T04:28:04.397Z",
-      "summary": "These large- and mid-cap stocks can give more than 25% return in 1 year, according to analysts",
+      "scrapedAt": "2026-07-20T04:52:24.780Z",
+      "summary": "Top Nifty50 stocks analysts suggest buying in this volatile week",
       "isGlobal": true
     },
     {
-      "title": "Weekly Top Picks: These stocks scored 10 on 10 on Stock Reports Plus",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/news/weekly-top-picks-these-stocks-scored-10-on-10-on-stock-reports-plus/articleshow/132440666.cms",
+      "title": "For investors with 1- to 2-year perspective and ability to ignore volatility: 6 stocks with an upside potential of up to 26%",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/for-investors-with-1-to-2-year-perspective-and-ability-to-ignore-volatility-6-stocks-with-an-upside-potential-of-up-to-26/articleshow/132488919.cms",
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-07-17T04:28:04.397Z",
-      "summary": "Weekly Top Picks: These stocks scored 10 on 10 on Stock Reports Plus",
+      "scrapedAt": "2026-07-20T04:52:24.780Z",
+      "summary": "For investors with 1- to 2-year perspective and ability to ignore volatility: 6 stocks with an upside potential of up to 26%",
       "isGlobal": true
     }
   ]
