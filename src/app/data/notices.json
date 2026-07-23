@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-23T04:34:30.818Z",
+  "lastUpdated": "2026-07-23T04:37:13.684Z",
   "totalCount": 89,
   "newCount": 0,
   "notices": [
@@ -13,8 +13,8 @@
       "link": "https://sebon.gov.np/notices/मुद्दती-खातामा-लगानी-गर्ने-प्रक्रिया-रद्द-गरिएको-सूचना-।",
       "summary": "New Securities Law update from SEBON Nepal: मुद्दती खातामा लगानी गर्ने प्रक्रिया रद्द गरिएको सूचना ।NEW",
       "detectedAt": "2026-07-21T04:32:37.865Z",
-      "isNew": true,
-      "emailedAt": null
+      "isNew": false,
+      "emailedAt": "2026-07-23T04:37:41.951Z"
     },
     {
       "id": "sebonnepal_mru5qlt6",
@@ -26,8 +26,8 @@
       "link": "https://sebon.gov.np/notices/मुद्दती-खातामा-लगानी-गर्ने-प्रक्रिया-रद्द-गरिएको-सूचना-।",
       "summary": "New Securities Law update from SEBON Nepal: मुद्दती खातामा लगानी गर्ने प्रक्रिया रद्द गरिएको सूचना ।",
       "detectedAt": "2026-07-21T04:32:37.866Z",
-      "isNew": true,
-      "emailedAt": null
+      "isNew": false,
+      "emailedAt": "2026-07-23T04:37:41.951Z"
     },
     {
       "id": "irdnepal2083_mrn0b55p",
@@ -1160,5 +1160,6 @@
       "isNew": false,
       "emailedAt": "2026-05-04T04:52:28.975Z"
     }
-  ]
+  ],
+  "lastEmailSentAt": "2026-07-23T04:37:41.951Z"
 }
