@@ -1,5 +1,5 @@
 {
-  "scrapedAt": "2026-07-23T04:37:33.355Z",
+  "scrapedAt": "2026-07-24T04:32:11.865Z",
   "totalCount": 23,
   "nepalCount": 15,
   "globalCount": 8,
@@ -16,13 +16,33 @@
   ],
   "articles": [
     {
-      "title": "रोल्पाको वन क्षेत्रबाट २५ करोडभन्दा बढीको कारोबार",
-      "url": "https://www.karobardaily.com/news/397184",
+      "title": "प्रधानमन्त्रीद्वारा अर्ग्यानिक उत्पादन प्रमाणीकरणको व्यवस्था स्वदेशमै मिलाउन निर्देशन",
+      "url": "https://www.karobardaily.com/news/397742",
       "source": "Karobar Daily",
       "badge": "KD",
       "category": "Nepal Business",
-      "scrapedAt": "2026-07-23T04:37:17.217Z",
-      "summary": "रोल्पाको वन क्षेत्रबाट २५ करोडभन्दा बढीको कारोबार",
+      "scrapedAt": "2026-07-24T04:31:54.135Z",
+      "summary": "प्रधानमन्त्रीद्वारा अर्ग्यानिक उत्पादन प्रमाणीकरणको व्यवस्था स्वदेशमै मिलाउन निर्देशन",
+      "isGlobal": false
+    },
+    {
+      "title": "नेपाल ‘ग्रे लिष्ट’ बाट निस्कने अर्थमन्त्रीको विश्वास",
+      "url": "https://www.karobardaily.com/news/397727",
+      "source": "Karobar Daily",
+      "badge": "KD",
+      "category": "Nepal Business",
+      "scrapedAt": "2026-07-24T04:31:54.136Z",
+      "summary": "नेपाल ‘ग्रे लिष्ट’ बाट निस्कने अर्थमन्त्रीको विश्वास",
+      "isGlobal": false
+    },
+    {
+      "title": "दाङबाट दुई अर्ब आठ करोड २८ लाखभन्दा बढी पुँजीगत बजेट फिर्ता",
+      "url": "https://www.karobardaily.com/news/397650",
+      "source": "Karobar Daily",
+      "badge": "KD",
+      "category": "Nepal Business",
+      "scrapedAt": "2026-07-24T04:31:54.136Z",
+      "summary": "दाङबाट दुई अर्ब आठ करोड २८ लाखभन्दा बढी पुँजीगत बजेट फिर्ता",
       "isGlobal": false
     },
     {
@@ -31,7 +51,7 @@
       "source": "Karobar Daily",
       "badge": "KD",
       "category": "Nepal Business",
-      "scrapedAt": "2026-07-23T04:37:17.217Z",
+      "scrapedAt": "2026-07-24T04:31:54.136Z",
       "summary": "एक खर्ब निक्षेप संकलन गर्दै राष्ट्र बैंक",
       "isGlobal": false
     },
@@ -41,7 +61,7 @@
       "source": "Karobar Daily",
       "badge": "KD",
       "category": "Nepal Business",
-      "scrapedAt": "2026-07-23T04:37:17.217Z",
+      "scrapedAt": "2026-07-24T04:31:54.136Z",
       "summary": "बैंकरहरू उत्साहित, कर्जाको लक्ष्य भेट्न चुनौती",
       "isGlobal": false
     },
@@ -51,7 +71,7 @@
       "source": "Karobar Daily",
       "badge": "KD",
       "category": "Nepal Business",
-      "scrapedAt": "2026-07-23T04:37:17.217Z",
+      "scrapedAt": "2026-07-24T04:31:54.136Z",
       "summary": "ब्याज उठाउन साउन १५ सम्मको समय, सेयर कर्जा र विद्युतीय बसमा विशेष सुविधा",
       "isGlobal": false
     },
@@ -61,7 +81,7 @@
       "source": "Karobar Daily",
       "badge": "KD",
       "category": "Nepal Business",
-      "scrapedAt": "2026-07-23T04:37:17.217Z",
+      "scrapedAt": "2026-07-24T04:31:54.136Z",
       "summary": "११ महिनादेखि प्राधिकरण अध्यक्षविहीनः बीमा क्षेत्रको नियमन लथालिंग",
       "isGlobal": false
     },
@@ -71,28 +91,8 @@
       "source": "Karobar Daily",
       "badge": "KD",
       "category": "Nepal Business",
-      "scrapedAt": "2026-07-23T04:37:17.217Z",
+      "scrapedAt": "2026-07-24T04:31:54.136Z",
       "summary": "जीवन बीमा कम्पनीको व्यापार १२.६२ प्रतिशतले बढ्यो",
-      "isGlobal": false
-    },
-    {
-      "title": "सरकारी पुनर्बिमा कम्पनीलाई बलियो बनाउने योजना",
-      "url": "https://www.karobardaily.com/news/380365",
-      "source": "Karobar Daily",
-      "badge": "KD",
-      "category": "Nepal Business",
-      "scrapedAt": "2026-07-23T04:37:17.217Z",
-      "summary": "सरकारी पुनर्बिमा कम्पनीलाई बलियो बनाउने योजना",
-      "isGlobal": false
-    },
-    {
-      "title": "माछापुच्छ्रे बैंकमा दुई पदाधिकारीको बढुवा",
-      "url": "https://www.karobardaily.com/news/396777",
-      "source": "Karobar Daily",
-      "badge": "KD",
-      "category": "Nepal Business",
-      "scrapedAt": "2026-07-23T04:37:17.217Z",
-      "summary": "माछापुच्छ्रे बैंकमा दुई पदाधिकारीको बढुवा",
       "isGlobal": false
     },
     {
@@ -101,28 +101,28 @@
       "source": "Sharesansar",
       "badge": "SS",
       "category": "Nepal Stock",
-      "scrapedAt": "2026-07-23T04:37:19.252Z",
+      "scrapedAt": "2026-07-24T04:31:55.850Z",
       "summary": "Proposed Dividend",
       "isGlobal": false
     },
     {
       "title": "Dividend, Bonus & Rights",
-      "url": "https://www.sharesansar.com/newsdetail/united-ajod-insurance-approves-42857-bonus-shares-at-32nd-agm-2026-07-16",
+      "url": "https://www.sharesansar.com/newsdetail/nabil-bank-gives-employees-three-months-salary-as-advance-bonus-2026-07-23",
       "source": "Sharesansar",
       "badge": "SS",
       "category": "Nepal Stock",
-      "scrapedAt": "2026-07-23T04:37:19.252Z",
+      "scrapedAt": "2026-07-24T04:31:55.850Z",
       "summary": "Dividend, Bonus & Rights",
       "isGlobal": false
     },
     {
-      "title": "How to Outperform Professional Fund Managers with Just 4 High Quality Stocks",
-      "url": "https://www.sharesansar.com/newsdetail/how-to-outperform-professional-fund-managers-with-just-4-high-quality-stocks-2026-07-13",
+      "title": "Know the Stocks Near 52-Week High and Low: Key Stock to Watch",
+      "url": "https://www.sharesansar.com/newsdetail/know-the-stocks-near-52-week-high-and-low-key-stock-to-watch-2026-07-23",
       "source": "Sharesansar",
       "badge": "SS",
       "category": "Nepal Stock",
-      "scrapedAt": "2026-07-23T04:37:19.252Z",
-      "summary": "How to Outperform Professional Fund Managers with Just 4 High Quality Stocks",
+      "scrapedAt": "2026-07-24T04:31:55.850Z",
+      "summary": "Know the Stocks Near 52-Week High and Low: Key Stock to Watch",
       "isGlobal": false
     },
     {
@@ -131,7 +131,7 @@
       "source": "Sharesansar",
       "badge": "SS",
       "category": "Nepal Stock",
-      "scrapedAt": "2026-07-23T04:37:19.252Z",
+      "scrapedAt": "2026-07-24T04:31:55.850Z",
       "summary": "NEPSE Concludes The Week With 2.95% Gain and Turnover of Rs 29.19 Arba; Weekly Summary with Sector Comparison, Major Highlights, and More",
       "isGlobal": false
     },
@@ -141,7 +141,7 @@
       "source": "Nepali Paisa",
       "badge": "NP",
       "category": "Nepal Finance",
-      "scrapedAt": "2026-07-23T04:37:21.153Z",
+      "scrapedAt": "2026-07-24T04:31:57.887Z",
       "summary": "Market Overview",
       "isGlobal": false
     },
@@ -151,7 +151,7 @@
       "source": "Nepali Paisa",
       "badge": "NP",
       "category": "Nepal Finance",
-      "scrapedAt": "2026-07-23T04:37:21.153Z",
+      "scrapedAt": "2026-07-24T04:31:57.887Z",
       "summary": "Stocks Up & Down",
       "isGlobal": false
     },
@@ -161,7 +161,7 @@
       "source": "Nepali Paisa",
       "badge": "NP",
       "category": "Nepal Finance",
-      "scrapedAt": "2026-07-23T04:37:21.153Z",
+      "scrapedAt": "2026-07-24T04:31:57.887Z",
       "summary": "Business & Economy",
       "isGlobal": false
     }
@@ -173,8 +173,28 @@
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-07-23T04:37:31.852Z",
+      "scrapedAt": "2026-07-24T04:32:10.363Z",
       "summary": "Markets just got Conversational",
+      "isGlobal": true
+    },
+    {
+      "title": "Ashish Kacholia&#x27;s Q1 portfolio: 13 stocks the ace investor bought, sold or likely exited. Full list",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/ashish-kacholias-q1-portfolio-13-stocks-the-ace-investor-bought-sold-or-likely-exited-full-list/slideshow/132596092.cms",
+      "source": "Economic Times Markets",
+      "badge": "ET",
+      "category": "India Markets",
+      "scrapedAt": "2026-07-24T04:32:10.364Z",
+      "summary": "Ashish Kacholia&#x27;s Q1 portfolio: 13 stocks the ace investor bought, sold or likely exited. Full list",
+      "isGlobal": true
+    },
+    {
+      "title": "Stocks to buy in 2026 for long term: Adani Power, JSW Energy among 5 stocks that could give 10-20% return",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/stocks-to-buy-in-2026-for-long-term-adani-power-jsw-energy-among-5-stocks-that-could-give-10-20-return/slideshow/132594720.cms",
+      "source": "Economic Times Markets",
+      "badge": "ET",
+      "category": "India Markets",
+      "scrapedAt": "2026-07-24T04:32:10.364Z",
+      "summary": "Stocks to buy in 2026 for long term: Adani Power, JSW Energy among 5 stocks that could give 10-20% return",
       "isGlobal": true
     },
     {
@@ -183,58 +203,38 @@
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-07-23T04:37:31.853Z",
+      "scrapedAt": "2026-07-24T04:32:10.364Z",
       "summary": "12 stocks that Goldman Sachs, Axis, InCred Equities are bullish on. Here’s the full list",
       "isGlobal": true
     },
     {
-      "title": "Emami among 4 stocks closed above VWAP, signalling bullish shift",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/news/emami-among-4-stocks-closed-above-vwap-signalling-bullish-shift/slideshow/132571064.cms",
+      "title": "These large-, mid- and small-cap stocks can give more than 25% return in 1 year, according to analysts",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/these-large-mid-and-small-cap-stocks-can-give-more-than-25-return-in-1-year-according-to-analysts/articleshow/132588802.cms",
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-07-23T04:37:31.853Z",
-      "summary": "Emami among 4 stocks closed above VWAP, signalling bullish shift",
+      "scrapedAt": "2026-07-24T04:32:10.364Z",
+      "summary": "These large-, mid- and small-cap stocks can give more than 25% return in 1 year, according to analysts",
       "isGlobal": true
     },
     {
-      "title": "Data Patterns among 4 stocks showing bullish RSI upswing",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/news/data-patterns-among-4-stocks-showing-bullish-rsi-upswing/slideshow/132571014.cms",
+      "title": "Weekly Top Picks: These stocks scored 10 on 10 on Stock Reports Plus",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/weekly-top-picks-these-stocks-scored-10-on-10-on-stock-reports-plus/articleshow/132582767.cms",
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-07-23T04:37:31.853Z",
-      "summary": "Data Patterns among 4 stocks showing bullish RSI upswing",
+      "scrapedAt": "2026-07-24T04:32:10.364Z",
+      "summary": "Weekly Top Picks: These stocks scored 10 on 10 on Stock Reports Plus",
       "isGlobal": true
     },
     {
-      "title": "Negative Breakout: These 15 stocks cross below their 200 DMAs",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/news/negative-breakout-these-15-stocks-cross-below-their-200-dmas/slideshow/132570536.cms",
+      "title": "Stock Radar: SBI Cards & Payment Services stock showing signs of turnaround after falling over 30% from highs; time to buy?",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/stock-radar-sbi-cards-payment-services-stock-showing-signs-of-turnaround-after-falling-over-30-from-highs-time-to-buy/articleshow/132556265.cms",
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-07-23T04:37:31.853Z",
-      "summary": "Negative Breakout: These 15 stocks cross below their 200 DMAs",
-      "isGlobal": true
-    },
-    {
-      "title": "Market Trading Guide: Bajaj Auto among 7 stock recommendations for Thursday",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/news/market-trading-guide-bajaj-auto-among-7-stock-recommendations-for-thursday/slideshow/132562171.cms",
-      "source": "Economic Times Markets",
-      "badge": "ET",
-      "category": "India Markets",
-      "scrapedAt": "2026-07-23T04:37:31.853Z",
-      "summary": "Market Trading Guide: Bajaj Auto among 7 stock recommendations for Thursday",
-      "isGlobal": true
-    },
-    {
-      "title": "These mid-cap stocks with ‘Strong Buy’ & ‘Buy’ recos can rally over 25%, according to analysts",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/news/these-mid-cap-stocks-with-strong-buy-buy-recos-can-rally-over-25-according-to-analysts/articleshow/132563482.cms",
-      "source": "Economic Times Markets",
-      "badge": "ET",
-      "category": "India Markets",
-      "scrapedAt": "2026-07-23T04:37:31.853Z",
-      "summary": "These mid-cap stocks with ‘Strong Buy’ & ‘Buy’ recos can rally over 25%, according to analysts",
+      "scrapedAt": "2026-07-24T04:32:10.364Z",
+      "summary": "Stock Radar: SBI Cards & Payment Services stock showing signs of turnaround after falling over 30% from highs; time to buy?",
       "isGlobal": true
     },
     {
@@ -243,7 +243,7 @@
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-07-23T04:37:31.853Z",
+      "scrapedAt": "2026-07-24T04:32:10.364Z",
       "summary": "ET Prime Special Series: Multibagger or IBC - Part 68: Is this company, part of a southern group, getting simpler, or more complicated?",
       "isGlobal": true
     }

@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-23T04:37:13.684Z",
+  "lastUpdated": "2026-07-24T04:32:49.052Z",
   "totalCount": 89,
   "newCount": 0,
   "notices": [
@@ -1160,6 +1160,5 @@
       "isNew": false,
       "emailedAt": "2026-05-04T04:52:28.975Z"
     }
-  ],
-  "lastEmailSentAt": "2026-07-23T04:37:41.951Z"
+  ]
 }
