@@ -1,5 +1,5 @@
 {
-  "scrapedAt": "2026-07-24T04:35:50.133Z",
+  "scrapedAt": "2026-07-27T04:51:49.836Z",
   "totalCount": 23,
   "nepalCount": 15,
   "globalCount": 8,
@@ -16,33 +16,13 @@
   ],
   "articles": [
     {
-      "title": "प्रधानमन्त्रीद्वारा अर्ग्यानिक उत्पादन प्रमाणीकरणको व्यवस्था स्वदेशमै मिलाउन निर्देशन",
-      "url": "https://www.karobardaily.com/news/397742",
+      "title": "लगानीकर्तामा २०६५ सालको क्रेज दोहोरिएला ?",
+      "url": "https://www.karobardaily.com/news/398341",
       "source": "Karobar Daily",
       "badge": "KD",
       "category": "Nepal Business",
-      "scrapedAt": "2026-07-24T04:35:32.555Z",
-      "summary": "प्रधानमन्त्रीद्वारा अर्ग्यानिक उत्पादन प्रमाणीकरणको व्यवस्था स्वदेशमै मिलाउन निर्देशन",
-      "isGlobal": false
-    },
-    {
-      "title": "नेपाल ‘ग्रे लिष्ट’ बाट निस्कने अर्थमन्त्रीको विश्वास",
-      "url": "https://www.karobardaily.com/news/397727",
-      "source": "Karobar Daily",
-      "badge": "KD",
-      "category": "Nepal Business",
-      "scrapedAt": "2026-07-24T04:35:32.556Z",
-      "summary": "नेपाल ‘ग्रे लिष्ट’ बाट निस्कने अर्थमन्त्रीको विश्वास",
-      "isGlobal": false
-    },
-    {
-      "title": "दाङबाट दुई अर्ब आठ करोड २८ लाखभन्दा बढी पुँजीगत बजेट फिर्ता",
-      "url": "https://www.karobardaily.com/news/397650",
-      "source": "Karobar Daily",
-      "badge": "KD",
-      "category": "Nepal Business",
-      "scrapedAt": "2026-07-24T04:35:32.556Z",
-      "summary": "दाङबाट दुई अर्ब आठ करोड २८ लाखभन्दा बढी पुँजीगत बजेट फिर्ता",
+      "scrapedAt": "2026-07-27T04:51:33.870Z",
+      "summary": "लगानीकर्तामा २०६५ सालको क्रेज दोहोरिएला ?",
       "isGlobal": false
     },
     {
@@ -51,7 +31,7 @@
       "source": "Karobar Daily",
       "badge": "KD",
       "category": "Nepal Business",
-      "scrapedAt": "2026-07-24T04:35:32.556Z",
+      "scrapedAt": "2026-07-27T04:51:33.870Z",
       "summary": "एक खर्ब निक्षेप संकलन गर्दै राष्ट्र बैंक",
       "isGlobal": false
     },
@@ -61,7 +41,7 @@
       "source": "Karobar Daily",
       "badge": "KD",
       "category": "Nepal Business",
-      "scrapedAt": "2026-07-24T04:35:32.556Z",
+      "scrapedAt": "2026-07-27T04:51:33.870Z",
       "summary": "बैंकरहरू उत्साहित, कर्जाको लक्ष्य भेट्न चुनौती",
       "isGlobal": false
     },
@@ -71,7 +51,7 @@
       "source": "Karobar Daily",
       "badge": "KD",
       "category": "Nepal Business",
-      "scrapedAt": "2026-07-24T04:35:32.556Z",
+      "scrapedAt": "2026-07-27T04:51:33.870Z",
       "summary": "ब्याज उठाउन साउन १५ सम्मको समय, सेयर कर्जा र विद्युतीय बसमा विशेष सुविधा",
       "isGlobal": false
     },
@@ -81,7 +61,7 @@
       "source": "Karobar Daily",
       "badge": "KD",
       "category": "Nepal Business",
-      "scrapedAt": "2026-07-24T04:35:32.556Z",
+      "scrapedAt": "2026-07-27T04:51:33.870Z",
       "summary": "११ महिनादेखि प्राधिकरण अध्यक्षविहीनः बीमा क्षेत्रको नियमन लथालिंग",
       "isGlobal": false
     },
@@ -91,8 +71,28 @@
       "source": "Karobar Daily",
       "badge": "KD",
       "category": "Nepal Business",
-      "scrapedAt": "2026-07-24T04:35:32.556Z",
+      "scrapedAt": "2026-07-27T04:51:33.870Z",
       "summary": "जीवन बीमा कम्पनीको व्यापार १२.६२ प्रतिशतले बढ्यो",
+      "isGlobal": false
+    },
+    {
+      "title": "सरकारी पुनर्बिमा कम्पनीलाई बलियो बनाउने योजना",
+      "url": "https://www.karobardaily.com/news/380365",
+      "source": "Karobar Daily",
+      "badge": "KD",
+      "category": "Nepal Business",
+      "scrapedAt": "2026-07-27T04:51:33.870Z",
+      "summary": "सरकारी पुनर्बिमा कम्पनीलाई बलियो बनाउने योजना",
+      "isGlobal": false
+    },
+    {
+      "title": "महालक्ष्मी विकास बैंक इन्डियन चेम्बर अफ कमर्सको प्रतिष्ठित अवार्डबाट सम्मानित",
+      "url": "https://www.karobardaily.com/news/398590",
+      "source": "Karobar Daily",
+      "badge": "KD",
+      "category": "Nepal Business",
+      "scrapedAt": "2026-07-27T04:51:33.870Z",
+      "summary": "महालक्ष्मी विकास बैंक इन्डियन चेम्बर अफ कमर्सको प्रतिष्ठित अवार्डबाट सम्मानित",
       "isGlobal": false
     },
     {
@@ -101,17 +101,17 @@
       "source": "Sharesansar",
       "badge": "SS",
       "category": "Nepal Stock",
-      "scrapedAt": "2026-07-24T04:35:34.323Z",
+      "scrapedAt": "2026-07-27T04:51:35.580Z",
       "summary": "Proposed Dividend",
       "isGlobal": false
     },
     {
       "title": "Dividend, Bonus & Rights",
-      "url": "https://www.sharesansar.com/newsdetail/nabil-bank-gives-employees-three-months-salary-as-advance-bonus-2026-07-23",
+      "url": "https://www.sharesansar.com/newsdetail/laxmi-sunrise-bank-employees-to-receive-advance-bonus-after-shrawan-15-2026-07-24",
       "source": "Sharesansar",
       "badge": "SS",
       "category": "Nepal Stock",
-      "scrapedAt": "2026-07-24T04:35:34.323Z",
+      "scrapedAt": "2026-07-27T04:51:35.580Z",
       "summary": "Dividend, Bonus & Rights",
       "isGlobal": false
     },
@@ -121,18 +121,18 @@
       "source": "Sharesansar",
       "badge": "SS",
       "category": "Nepal Stock",
-      "scrapedAt": "2026-07-24T04:35:34.323Z",
+      "scrapedAt": "2026-07-27T04:51:35.580Z",
       "summary": "Know the Stocks Near 52-Week High and Low: Key Stock to Watch",
       "isGlobal": false
     },
     {
-      "title": "NEPSE Concludes The Week With 2.95% Gain and Turnover of Rs 29.19 Arba; Weekly Summary with Sector Comparison, Major Highlights, and More",
+      "title": "NEPSE Concludes The Week With 2.13% Gain and Turnover of Rs 28.33 Arba; Weekly Summary with Sector Comparison, Major Highlights, and More",
       "url": "https://www.sharesansar.com/",
       "source": "Sharesansar",
       "badge": "SS",
       "category": "Nepal Stock",
-      "scrapedAt": "2026-07-24T04:35:34.323Z",
-      "summary": "NEPSE Concludes The Week With 2.95% Gain and Turnover of Rs 29.19 Arba; Weekly Summary with Sector Comparison, Major Highlights, and More",
+      "scrapedAt": "2026-07-27T04:51:35.580Z",
+      "summary": "NEPSE Concludes The Week With 2.13% Gain and Turnover of Rs 28.33 Arba; Weekly Summary with Sector Comparison, Major Highlights, and More",
       "isGlobal": false
     },
     {
@@ -141,7 +141,7 @@
       "source": "Nepali Paisa",
       "badge": "NP",
       "category": "Nepal Finance",
-      "scrapedAt": "2026-07-24T04:35:37.652Z",
+      "scrapedAt": "2026-07-27T04:51:37.544Z",
       "summary": "Market Overview",
       "isGlobal": false
     },
@@ -151,7 +151,7 @@
       "source": "Nepali Paisa",
       "badge": "NP",
       "category": "Nepal Finance",
-      "scrapedAt": "2026-07-24T04:35:37.652Z",
+      "scrapedAt": "2026-07-27T04:51:37.544Z",
       "summary": "Stocks Up & Down",
       "isGlobal": false
     },
@@ -161,7 +161,7 @@
       "source": "Nepali Paisa",
       "badge": "NP",
       "category": "Nepal Finance",
-      "scrapedAt": "2026-07-24T04:35:37.652Z",
+      "scrapedAt": "2026-07-27T04:51:37.544Z",
       "summary": "Business & Economy",
       "isGlobal": false
     }
@@ -173,78 +173,78 @@
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-07-24T04:35:48.631Z",
+      "scrapedAt": "2026-07-27T04:51:48.334Z",
       "summary": "Markets just got Conversational",
       "isGlobal": true
     },
     {
-      "title": "Ashish Kacholia&#x27;s Q1 portfolio: 13 stocks the ace investor bought, sold or likely exited. Full list",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/news/ashish-kacholias-q1-portfolio-13-stocks-the-ace-investor-bought-sold-or-likely-exited-full-list/slideshow/132596092.cms",
+      "title": "Saregama India among 5 stocks that closed above VWAP, signaling bullish shift",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/saregama-india-among-5-stocks-that-closed-above-vwap-signaling-bullish-shift/slideshow/132651835.cms",
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-07-24T04:35:48.632Z",
-      "summary": "Ashish Kacholia&#x27;s Q1 portfolio: 13 stocks the ace investor bought, sold or likely exited. Full list",
+      "scrapedAt": "2026-07-27T04:51:48.334Z",
+      "summary": "Saregama India among 5 stocks that closed above VWAP, signaling bullish shift",
       "isGlobal": true
     },
     {
-      "title": "Stocks to buy in 2026 for long term: Adani Power, JSW Energy among 5 stocks that could give 10-20% return",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/news/stocks-to-buy-in-2026-for-long-term-adani-power-jsw-energy-among-5-stocks-that-could-give-10-20-return/slideshow/132594720.cms",
+      "title": "PVR Inox among 5 stocks flashing bullish signals, hinting at a possible uptrend",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/pvr-inox-among-5-stocks-flashing-bullish-signals-hinting-at-a-possible-uptrend/slideshow/132651429.cms",
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-07-24T04:35:48.632Z",
-      "summary": "Stocks to buy in 2026 for long term: Adani Power, JSW Energy among 5 stocks that could give 10-20% return",
+      "scrapedAt": "2026-07-27T04:51:48.334Z",
+      "summary": "PVR Inox among 5 stocks flashing bullish signals, hinting at a possible uptrend",
       "isGlobal": true
     },
     {
-      "title": "12 stocks that Goldman Sachs, Axis, InCred Equities are bullish on. Here’s the full list",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/news/12-stocks-that-goldman-sachs-axis-incred-equities-are-bullish-on-heres-the-full-list/slideshow/132571220.cms",
+      "title": "Atul among 5 stocks showing bullish RSI upswing",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/atul-among-5-stocks-showing-bullish-rsi-upswing/slideshow/132651388.cms",
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-07-24T04:35:48.632Z",
-      "summary": "12 stocks that Goldman Sachs, Axis, InCred Equities are bullish on. Here’s the full list",
+      "scrapedAt": "2026-07-27T04:51:48.334Z",
+      "summary": "Atul among 5 stocks showing bullish RSI upswing",
       "isGlobal": true
     },
     {
-      "title": "These large-, mid- and small-cap stocks can give more than 25% return in 1 year, according to analysts",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/news/these-large-mid-and-small-cap-stocks-can-give-more-than-25-return-in-1-year-according-to-analysts/articleshow/132588802.cms",
+      "title": "Stocks to buy in 2026 for long term: RIL, Infosys among 5 stocks that could give 10-20% return",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/stocks-to-buy-in-2026-for-long-term-ril-infosys-among-5-stocks-that-could-give-10-20-return/slideshow/132651050.cms",
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-07-24T04:35:48.632Z",
-      "summary": "These large-, mid- and small-cap stocks can give more than 25% return in 1 year, according to analysts",
+      "scrapedAt": "2026-07-27T04:51:48.334Z",
+      "summary": "Stocks to buy in 2026 for long term: RIL, Infosys among 5 stocks that could give 10-20% return",
       "isGlobal": true
     },
     {
-      "title": "Weekly Top Picks: These stocks scored 10 on 10 on Stock Reports Plus",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/news/weekly-top-picks-these-stocks-scored-10-on-10-on-stock-reports-plus/articleshow/132582767.cms",
+      "title": "Stocks to buy in 2026 for long term: Dr Lal PathLabs, IDFC First Bank among 5 stocks that could give 10-30% return",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/stocks-to-buy-in-2026-for-long-term-dr-lal-pathlabs-idfc-first-bank-among-5-stocks-that-could-give-10-30-return/slideshow/132650892.cms",
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-07-24T04:35:48.632Z",
-      "summary": "Weekly Top Picks: These stocks scored 10 on 10 on Stock Reports Plus",
+      "scrapedAt": "2026-07-27T04:51:48.334Z",
+      "summary": "Stocks to buy in 2026 for long term: Dr Lal PathLabs, IDFC First Bank among 5 stocks that could give 10-30% return",
       "isGlobal": true
     },
     {
-      "title": "Stock Radar: SBI Cards & Payment Services stock showing signs of turnaround after falling over 30% from highs; time to buy?",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/news/stock-radar-sbi-cards-payment-services-stock-showing-signs-of-turnaround-after-falling-over-30-from-highs-time-to-buy/articleshow/132556265.cms",
+      "title": "Top Nifty50 stocks analysts suggest buying in this volatile week",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/top-nifty50-stocks-analysts-suggest-buying-in-this-volatile-week/articleshow/132652008.cms",
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-07-24T04:35:48.632Z",
-      "summary": "Stock Radar: SBI Cards & Payment Services stock showing signs of turnaround after falling over 30% from highs; time to buy?",
+      "scrapedAt": "2026-07-27T04:51:48.335Z",
+      "summary": "Top Nifty50 stocks analysts suggest buying in this volatile week",
       "isGlobal": true
     },
     {
-      "title": "ET Prime Special Series: Multibagger or IBC - Part 68: Is this company, part of a southern group, getting simpler, or more complicated?",
-      "url": "https://economictimes.indiatimes.com/intelligent-investing/sectoral-deep-dives/et-prime-special-series-multibagger-or-ibc-part-68-is-this-company-part-of-a-southern-group-getting-simpler-or-more-complicated/articleshow/132560710.cms",
+      "title": "Forget the next 3 weeks; think about the next 3 years. 5 large-cap stocks with upside potential of up to 31%",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/forget-the-next-3-weeks-think-about-the-next-3-years-5-large-cap-stocks-with-upside-potential-of-up-to-31/articleshow/132635519.cms",
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-07-24T04:35:48.632Z",
-      "summary": "ET Prime Special Series: Multibagger or IBC - Part 68: Is this company, part of a southern group, getting simpler, or more complicated?",
+      "scrapedAt": "2026-07-27T04:51:48.335Z",
+      "summary": "Forget the next 3 weeks; think about the next 3 years. 5 large-cap stocks with upside potential of up to 31%",
       "isGlobal": true
     }
   ]
