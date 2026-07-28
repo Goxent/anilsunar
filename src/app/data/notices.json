@@ -1,7 +1,7 @@
 {
-  "lastUpdated": "2026-07-28T04:28:45.179Z",
+  "lastUpdated": "2026-07-28T04:31:14.996Z",
   "totalCount": 90,
-  "newCount": 1,
+  "newCount": 0,
   "notices": [
     {
       "id": "irdnepal_ms45o51c",
@@ -13,8 +13,8 @@
       "link": "https://ird.gov.np/content/13588/public-notice-regarding-value-added-tax-on/",
       "summary": "New Taxation update from IRD Nepal: २०८३ असार महिनामा खपत भएको विद्युत सेवामा मूल्य अभिवृद्धि कर सम्बन्धी सार्वजनिक सूचना",
       "detectedAt": "2026-07-28T04:28:24.576Z",
-      "isNew": true,
-      "emailedAt": null
+      "isNew": false,
+      "emailedAt": "2026-07-28T04:31:52.070Z"
     },
     {
       "id": "sebonnepalnew_mru5qlt5",
@@ -1173,5 +1173,6 @@
       "isNew": false,
       "emailedAt": "2026-05-04T04:52:28.975Z"
     }
-  ]
+  ],
+  "lastEmailSentAt": "2026-07-28T04:31:52.071Z"
 }
