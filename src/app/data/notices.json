@@ -1,8 +1,21 @@
 {
-  "lastUpdated": "2026-07-27T04:52:18.868Z",
-  "totalCount": 89,
-  "newCount": 0,
+  "lastUpdated": "2026-07-28T04:28:45.179Z",
+  "totalCount": 90,
+  "newCount": 1,
   "notices": [
+    {
+      "id": "irdnepal_ms45o51c",
+      "title": "२०८३ असार महिनामा खपत भएको विद्युत सेवामा मूल्य अभिवृद्धि कर सम्बन्धी सार्वजनिक सूचना",
+      "source": "IRD Nepal",
+      "category": "Taxation",
+      "badge": "IRD",
+      "badgeColor": "#e53935",
+      "link": "https://ird.gov.np/content/13588/public-notice-regarding-value-added-tax-on/",
+      "summary": "New Taxation update from IRD Nepal: २०८३ असार महिनामा खपत भएको विद्युत सेवामा मूल्य अभिवृद्धि कर सम्बन्धी सार्वजनिक सूचना",
+      "detectedAt": "2026-07-28T04:28:24.576Z",
+      "isNew": true,
+      "emailedAt": null
+    },
     {
       "id": "sebonnepalnew_mru5qlt5",
       "title": "मुद्दती खातामा लगानी गर्ने प्रक्रिया रद्द गरिएको सूचना ।NEW",

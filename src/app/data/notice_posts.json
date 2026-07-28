@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-07-27T04:52:26.989Z",
-  "totalPosts": 43,
+  "lastUpdated": "2026-07-28T04:28:52.862Z",
+  "totalPosts": 44,
   "posts": {
     "ocrnepal_moqq27ad": {
       "headline": "OCR Nepal: वार्षिक विवरण अभिलेखनका पत्रहरू स्वचालित रूपमा प्राप्त ",
@@ -861,6 +861,26 @@
       "badgeColor": "#6a1b9a",
       "link": "https://sebon.gov.np/notices/मुद्दती-खातामा-लगानी-गर्ने-प्रक्रिया-रद्द-गरिएको-सूचना-।",
       "createdAt": "2026-07-21T04:32:48.425Z"
+    },
+    "irdnepal_ms45o51c": {
+      "headline": "IRD Nepal: २०८३ असार महिनामा खपत भएको विद्युत सेवामा मूल्य अभिवृद्",
+      "body": "💰 Tax update from Inland Revenue Department!\n\n📌 २०८३ असार महिनामा खपत भएको विद्युत सेवामा मूल्य अभिवृद्धि कर सम्बन्धी सार्वजनिक सूचना\n\nThis update from IRD Nepal may affect taxation compliance requirements for Nepal professionals.\n\n✅ Review the full notice and consult your advisor.\n\n🔗 https://ird.gov.np/content/13588/public-notice-regarding-value-added-tax-on/",
+      "callToAction": "Share this with your team if relevant.",
+      "hashtags": [
+        "#Nepal",
+        "#Compliance",
+        "#CA",
+        "#IRDNepal"
+      ],
+      "bestTimeToPost": "Morning",
+      "topicBadge": "Taxation",
+      "isTemplate": true,
+      "noticeId": "irdnepal_ms45o51c",
+      "noticeTitle": "२०८३ असार महिनामा खपत भएको विद्युत सेवामा मूल्य अभिवृद्धि कर सम्बन्धी सार्वजनिक सूचना",
+      "source": "IRD Nepal",
+      "badgeColor": "#e53935",
+      "link": "https://ird.gov.np/content/13588/public-notice-regarding-value-added-tax-on/",
+      "createdAt": "2026-07-28T04:28:52.862Z"
     }
   }
 }
