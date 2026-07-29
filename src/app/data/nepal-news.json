@@ -1,5 +1,5 @@
 {
-  "scrapedAt": "2026-07-28T04:31:43.382Z",
+  "scrapedAt": "2026-07-29T04:32:18.797Z",
   "totalCount": 23,
   "nepalCount": 15,
   "globalCount": 8,
@@ -16,33 +16,73 @@
   ],
   "articles": [
     {
-      "title": "प्रिमियम मूल्यमा आईपीओ जारी गर्न बीमा कम्पनीलाई सर्वोच्चको रोक",
-      "url": "https://www.karobardaily.com/news/399097",
+      "title": "बैंक ब्याजदर हरेक महिना घट्दो",
+      "url": "https://www.karobardaily.com/news/399635",
       "source": "Karobar Daily",
       "badge": "KD",
       "category": "Nepal Business",
-      "scrapedAt": "2026-07-28T04:31:26.180Z",
-      "summary": "प्रिमियम मूल्यमा आईपीओ जारी गर्न बीमा कम्पनीलाई सर्वोच्चको रोक",
+      "scrapedAt": "2026-07-29T04:32:01.042Z",
+      "summary": "बैंक ब्याजदर हरेक महिना घट्दो",
       "isGlobal": false
     },
     {
-      "title": "दोषीलाई कानुन बमोजिम कारबाही गर्नुपर्ने माग गर्दै स्वास्थ्यकर्मीद्वारा प्रदर्शन",
-      "url": "https://www.karobardaily.com/news/399068",
+      "title": "तरलताको पासो र अर्थतन्त्रले खोजेको निकास",
+      "url": "https://www.karobardaily.com/news/399605",
       "source": "Karobar Daily",
       "badge": "KD",
       "category": "Nepal Business",
-      "scrapedAt": "2026-07-28T04:31:26.181Z",
-      "summary": "दोषीलाई कानुन बमोजिम कारबाही गर्नुपर्ने माग गर्दै स्वास्थ्यकर्मीद्वारा प्रदर्शन",
+      "scrapedAt": "2026-07-29T04:32:01.042Z",
+      "summary": "तरलताको पासो र अर्थतन्त्रले खोजेको निकास",
       "isGlobal": false
     },
     {
-      "title": "दाङमा उद्योग–व्यवसायमा करिब डेढ अर्ब लगानी",
-      "url": "https://www.karobardaily.com/news/398852",
+      "title": "निर्यातमुखी अर्थतन्त्र निर्माणको नेतृत्व गर्न उद्यमीलाई अर्थमन्त्रीको आग्रह",
+      "url": "https://www.karobardaily.com/news/399555",
       "source": "Karobar Daily",
       "badge": "KD",
       "category": "Nepal Business",
-      "scrapedAt": "2026-07-28T04:31:26.181Z",
-      "summary": "दाङमा उद्योग–व्यवसायमा करिब डेढ अर्ब लगानी",
+      "scrapedAt": "2026-07-29T04:32:01.042Z",
+      "summary": "निर्यातमुखी अर्थतन्त्र निर्माणको नेतृत्व गर्न उद्यमीलाई अर्थमन्त्रीको आग्रह",
+      "isGlobal": false
+    },
+    {
+      "title": "एनआईसी एशिया बैंकद्वारा नेपाल पे कार्डमार्फत हुने भुक्तानी प्राप्ति सेवा सुरु",
+      "url": "https://www.karobardaily.com/news/399566",
+      "source": "Karobar Daily",
+      "badge": "KD",
+      "category": "Nepal Business",
+      "scrapedAt": "2026-07-29T04:32:01.042Z",
+      "summary": "एनआईसी एशिया बैंकद्वारा नेपाल पे कार्डमार्फत हुने भुक्तानी प्राप्ति सेवा सुरु",
+      "isGlobal": false
+    },
+    {
+      "title": "नेप्से घटेर २६९६ विन्दुमा झर्‍यो, ४ अर्ब ४२ करोडको सेयर किनबेच",
+      "url": "https://www.karobardaily.com/news/399532",
+      "source": "Karobar Daily",
+      "badge": "KD",
+      "category": "Nepal Business",
+      "scrapedAt": "2026-07-29T04:32:01.042Z",
+      "summary": "नेप्से घटेर २६९६ विन्दुमा झर्‍यो, ४ अर्ब ४२ करोडको सेयर किनबेच",
+      "isGlobal": false
+    },
+    {
+      "title": "२५ लाखसम्मको कृषि आयमा कर नलाग्ने",
+      "url": "https://www.karobardaily.com/news/399323",
+      "source": "Karobar Daily",
+      "badge": "KD",
+      "category": "Nepal Business",
+      "scrapedAt": "2026-07-29T04:32:01.043Z",
+      "summary": "२५ लाखसम्मको कृषि आयमा कर नलाग्ने",
+      "isGlobal": false
+    },
+    {
+      "title": "जुम्लामा संघको एक अर्ब ४३ करोड बजेट फ्रिज",
+      "url": "https://www.karobardaily.com/news/399297",
+      "source": "Karobar Daily",
+      "badge": "KD",
+      "category": "Nepal Business",
+      "scrapedAt": "2026-07-29T04:32:01.043Z",
+      "summary": "जुम्लामा संघको एक अर्ब ४३ करोड बजेट फ्रिज",
       "isGlobal": false
     },
     {
@@ -51,48 +91,8 @@
       "source": "Karobar Daily",
       "badge": "KD",
       "category": "Nepal Business",
-      "scrapedAt": "2026-07-28T04:31:26.181Z",
+      "scrapedAt": "2026-07-29T04:32:01.043Z",
       "summary": "एक खर्ब निक्षेप संकलन गर्दै राष्ट्र बैंक",
-      "isGlobal": false
-    },
-    {
-      "title": "बैंकरहरू उत्साहित, कर्जाको लक्ष्य भेट्न चुनौती",
-      "url": "https://www.karobardaily.com/news/395547",
-      "source": "Karobar Daily",
-      "badge": "KD",
-      "category": "Nepal Business",
-      "scrapedAt": "2026-07-28T04:31:26.181Z",
-      "summary": "बैंकरहरू उत्साहित, कर्जाको लक्ष्य भेट्न चुनौती",
-      "isGlobal": false
-    },
-    {
-      "title": "ब्याज उठाउन साउन १५ सम्मको समय, सेयर कर्जा र विद्युतीय बसमा विशेष सुविधा",
-      "url": "https://www.karobardaily.com/news/395200",
-      "source": "Karobar Daily",
-      "badge": "KD",
-      "category": "Nepal Business",
-      "scrapedAt": "2026-07-28T04:31:26.181Z",
-      "summary": "ब्याज उठाउन साउन १५ सम्मको समय, सेयर कर्जा र विद्युतीय बसमा विशेष सुविधा",
-      "isGlobal": false
-    },
-    {
-      "title": "११ महिनादेखि प्राधिकरण अध्यक्षविहीनः बीमा क्षेत्रको नियमन लथालिंग",
-      "url": "https://www.karobardaily.com/news/394632",
-      "source": "Karobar Daily",
-      "badge": "KD",
-      "category": "Nepal Business",
-      "scrapedAt": "2026-07-28T04:31:26.181Z",
-      "summary": "११ महिनादेखि प्राधिकरण अध्यक्षविहीनः बीमा क्षेत्रको नियमन लथालिंग",
-      "isGlobal": false
-    },
-    {
-      "title": "जीवन बीमा कम्पनीको व्यापार १२.६२ प्रतिशतले बढ्यो",
-      "url": "https://www.karobardaily.com/news/388612",
-      "source": "Karobar Daily",
-      "badge": "KD",
-      "category": "Nepal Business",
-      "scrapedAt": "2026-07-28T04:31:26.181Z",
-      "summary": "जीवन बीमा कम्पनीको व्यापार १२.६२ प्रतिशतले बढ्यो",
       "isGlobal": false
     },
     {
@@ -101,17 +101,17 @@
       "source": "Sharesansar",
       "badge": "SS",
       "category": "Nepal Stock",
-      "scrapedAt": "2026-07-28T04:31:27.893Z",
+      "scrapedAt": "2026-07-29T04:32:03.141Z",
       "summary": "Proposed Dividend",
       "isGlobal": false
     },
     {
       "title": "Dividend, Bonus & Rights",
-      "url": "https://www.sharesansar.com/newsdetail/laxmi-sunrise-bank-employees-to-receive-advance-bonus-after-shrawan-15-2026-07-24",
+      "url": "https://www.sharesansar.com/newsdetail/right-shares-of-nic-asia-bank-chandragiri-hills-limited-added-in-sebon-pipeline-2026-07-28",
       "source": "Sharesansar",
       "badge": "SS",
       "category": "Nepal Stock",
-      "scrapedAt": "2026-07-28T04:31:27.893Z",
+      "scrapedAt": "2026-07-29T04:32:03.141Z",
       "summary": "Dividend, Bonus & Rights",
       "isGlobal": false
     },
@@ -121,7 +121,7 @@
       "source": "Sharesansar",
       "badge": "SS",
       "category": "Nepal Stock",
-      "scrapedAt": "2026-07-28T04:31:27.893Z",
+      "scrapedAt": "2026-07-29T04:32:03.141Z",
       "summary": "Know the Stocks Near 52-Week High and Low: Key Stock to Watch",
       "isGlobal": false
     },
@@ -131,7 +131,7 @@
       "source": "Sharesansar",
       "badge": "SS",
       "category": "Nepal Stock",
-      "scrapedAt": "2026-07-28T04:31:27.893Z",
+      "scrapedAt": "2026-07-29T04:32:03.141Z",
       "summary": "NEPSE Concludes The Week With 2.13% Gain and Turnover of Rs 28.33 Arba; Weekly Summary with Sector Comparison, Major Highlights, and More",
       "isGlobal": false
     },
@@ -141,7 +141,7 @@
       "source": "Nepali Paisa",
       "badge": "NP",
       "category": "Nepal Finance",
-      "scrapedAt": "2026-07-28T04:31:31.323Z",
+      "scrapedAt": "2026-07-29T04:32:05.369Z",
       "summary": "Market Overview",
       "isGlobal": false
     },
@@ -151,7 +151,7 @@
       "source": "Nepali Paisa",
       "badge": "NP",
       "category": "Nepal Finance",
-      "scrapedAt": "2026-07-28T04:31:31.323Z",
+      "scrapedAt": "2026-07-29T04:32:05.369Z",
       "summary": "Stocks Up & Down",
       "isGlobal": false
     },
@@ -161,7 +161,7 @@
       "source": "Nepali Paisa",
       "badge": "NP",
       "category": "Nepal Finance",
-      "scrapedAt": "2026-07-28T04:31:31.323Z",
+      "scrapedAt": "2026-07-29T04:32:05.369Z",
       "summary": "Business & Economy",
       "isGlobal": false
     }
@@ -173,78 +173,78 @@
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-07-28T04:31:41.879Z",
+      "scrapedAt": "2026-07-29T04:32:17.295Z",
       "summary": "Markets just got Conversational",
       "isGlobal": true
     },
     {
-      "title": "Eternal among 4 stocks flashing bullish signals, hinting at a possible uptrend",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/news/eternal-among-4-stocks-flashing-bullish-signals-hinting-at-a-possible-uptrend/slideshow/132674117.cms",
+      "title": "Mukul Agrawal, Ashish Kacholia, Dolly Khanna likely exited these 11 stocks in Q1. Do you own any?",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/mukul-agrawal-ashish-kacholia-dolly-khanna-likely-exited-these-11-stocks-in-q1-do-you-own-any/slideshow/132700017.cms",
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-07-28T04:31:41.880Z",
-      "summary": "Eternal among 4 stocks flashing bullish signals, hinting at a possible uptrend",
+      "scrapedAt": "2026-07-29T04:32:17.296Z",
+      "summary": "Mukul Agrawal, Ashish Kacholia, Dolly Khanna likely exited these 11 stocks in Q1. Do you own any?",
       "isGlobal": true
     },
     {
-      "title": "KFin Technologies among 4 stocks showing bullish RSI upswing",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/news/kfin-technologies-among-4-stocks-showing-bullish-rsi-upswing/slideshow/132674067.cms",
+      "title": "Hindustan Unilever among 5 stocks crossing below VWAP, signalling bearish trend",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/hindustan-unilever-among-5-stocks-crossing-below-vwap-signalling-bearish-trend/slideshow/132699249.cms",
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-07-28T04:31:41.880Z",
-      "summary": "KFin Technologies among 4 stocks showing bullish RSI upswing",
+      "scrapedAt": "2026-07-29T04:32:17.296Z",
+      "summary": "Hindustan Unilever among 5 stocks crossing below VWAP, signalling bearish trend",
       "isGlobal": true
     },
     {
-      "title": "CarTrade Tech among 5 stocks closed above VWAP, signalling bullish shift",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/news/cartrade-tech-among-5-stocks-closed-above-vwap-signalling-bullish-shift/slideshow/132673993.cms",
+      "title": "Radico Khaitan among 4 stocks that closed above VWAP, signalling bullish shift",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/radico-khaitan-among-4-stocks-that-closed-above-vwap-signalling-bullish-shift/slideshow/132698835.cms",
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-07-28T04:31:41.880Z",
-      "summary": "CarTrade Tech among 5 stocks closed above VWAP, signalling bullish shift",
+      "scrapedAt": "2026-07-29T04:32:17.296Z",
+      "summary": "Radico Khaitan among 4 stocks that closed above VWAP, signalling bullish shift",
       "isGlobal": true
     },
     {
-      "title": "Positive Breakout: These 14 stocks cross above their 200 DMAs",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/news/positive-breakout-these-14-stocks-cross-above-their-200-dmas/slideshow/132673512.cms",
+      "title": "TVS Motor among 6 Nifty 500 stocks flashing bullish White Marubozu signal",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/tvs-motor-among-6-nifty-500-stocks-flashing-bullish-white-marubozu-signal/slideshow/132697940.cms",
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-07-28T04:31:41.880Z",
-      "summary": "Positive Breakout: These 14 stocks cross above their 200 DMAs",
+      "scrapedAt": "2026-07-29T04:32:17.296Z",
+      "summary": "TVS Motor among 6 Nifty 500 stocks flashing bullish White Marubozu signal",
       "isGlobal": true
     },
     {
-      "title": "Laurus Labs among 7 midcap stocks that hit 52-week highs and rallied up to 20% in a month",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/news/laurus-labs-among-7-midcap-stocks-that-hit-52-week-highs-and-rallied-up-to-20-in-a-month/slideshow/132660496.cms",
+      "title": "Swiggy among 4 stocks showing bullish RSI upswing",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/swiggy-among-4-stocks-showing-bullish-rsi-upswing/slideshow/132697819.cms",
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-07-28T04:31:41.880Z",
-      "summary": "Laurus Labs among 7 midcap stocks that hit 52-week highs and rallied up to 20% in a month",
+      "scrapedAt": "2026-07-29T04:32:17.296Z",
+      "summary": "Swiggy among 4 stocks showing bullish RSI upswing",
       "isGlobal": true
     },
     {
-      "title": "Weekly Top Picks: These stocks scored 10 on 10 on Stock Reports Plus",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/news/weekly-top-picks-these-stocks-scored-10-on-10-on-stock-reports-plus/articleshow/132662535.cms",
+      "title": "These 7 private and public banking stocks have an upside of up to 29% in one year, according to analysts",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/these-7-private-and-public-banking-stocks-have-an-upside-of-up-to-29-in-one-year-according-to-analysts/articleshow/132690964.cms",
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-07-28T04:31:41.880Z",
-      "summary": "Weekly Top Picks: These stocks scored 10 on 10 on Stock Reports Plus",
+      "scrapedAt": "2026-07-29T04:32:17.296Z",
+      "summary": "These 7 private and public banking stocks have an upside of up to 29% in one year, according to analysts",
       "isGlobal": true
     },
     {
-      "title": "Stock picks of the week: 5 stocks with consistent score improvement and upside potential of up to 27%",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/news/stock-picks-of-the-week-5-stocks-with-consistent-score-improvement-and-upside-potential-of-up-to-27/articleshow/132657202.cms",
+      "title": "Time to re-look at a not-so-glamorous part of healthcare ecosystem: 4 diagnostics stocks with upside potential of up to 18%",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/time-to-re-look-at-a-not-so-glamorous-part-of-healthcare-ecosystem-4-diagnostics-stocks-with-upside-potential-of-up-to-18/articleshow/132678716.cms",
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-07-28T04:31:41.880Z",
-      "summary": "Stock picks of the week: 5 stocks with consistent score improvement and upside potential of up to 27%",
+      "scrapedAt": "2026-07-29T04:32:17.296Z",
+      "summary": "Time to re-look at a not-so-glamorous part of healthcare ecosystem: 4 diagnostics stocks with upside potential of up to 18%",
       "isGlobal": true
     }
   ]
