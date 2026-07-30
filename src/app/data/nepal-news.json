@@ -1,5 +1,5 @@
 {
-  "scrapedAt": "2026-07-29T04:32:18.797Z",
+  "scrapedAt": "2026-07-30T04:20:11.387Z",
   "totalCount": 23,
   "nepalCount": 15,
   "globalCount": 8,
@@ -16,23 +16,33 @@
   ],
   "articles": [
     {
-      "title": "बैंक ब्याजदर हरेक महिना घट्दो",
-      "url": "https://www.karobardaily.com/news/399635",
+      "title": "माछापुच्छ्रे बैंक र कर्मचारी सञ्चय कोषबीच सम्झौता हस्ताक्षर",
+      "url": "https://www.karobardaily.com/news/400112",
       "source": "Karobar Daily",
       "badge": "KD",
       "category": "Nepal Business",
-      "scrapedAt": "2026-07-29T04:32:01.042Z",
-      "summary": "बैंक ब्याजदर हरेक महिना घट्दो",
+      "scrapedAt": "2026-07-30T04:19:52.906Z",
+      "summary": "माछापुच्छ्रे बैंक र कर्मचारी सञ्चय कोषबीच सम्झौता हस्ताक्षर",
       "isGlobal": false
     },
     {
-      "title": "तरलताको पासो र अर्थतन्त्रले खोजेको निकास",
-      "url": "https://www.karobardaily.com/news/399605",
+      "title": "गोल्छा अर्गनाइजेसनद्वारा कीर्तिपुर अस्पताललाई डायलाइसिस उपकरण हस्तान्तरण",
+      "url": "https://www.karobardaily.com/news/400103",
       "source": "Karobar Daily",
       "badge": "KD",
       "category": "Nepal Business",
-      "scrapedAt": "2026-07-29T04:32:01.042Z",
-      "summary": "तरलताको पासो र अर्थतन्त्रले खोजेको निकास",
+      "scrapedAt": "2026-07-30T04:19:52.906Z",
+      "summary": "गोल्छा अर्गनाइजेसनद्वारा कीर्तिपुर अस्पताललाई डायलाइसिस उपकरण हस्तान्तरण",
+      "isGlobal": false
+    },
+    {
+      "title": "चिकित्सा शिक्षा आयोगका लागि ६ अर्ब ५५ करोडको बजेट स्वीकृत",
+      "url": "https://www.karobardaily.com/news/399985",
+      "source": "Karobar Daily",
+      "badge": "KD",
+      "category": "Nepal Business",
+      "scrapedAt": "2026-07-30T04:19:52.906Z",
+      "summary": "चिकित्सा शिक्षा आयोगका लागि ६ अर्ब ५५ करोडको बजेट स्वीकृत",
       "isGlobal": false
     },
     {
@@ -41,28 +51,8 @@
       "source": "Karobar Daily",
       "badge": "KD",
       "category": "Nepal Business",
-      "scrapedAt": "2026-07-29T04:32:01.042Z",
+      "scrapedAt": "2026-07-30T04:19:52.906Z",
       "summary": "निर्यातमुखी अर्थतन्त्र निर्माणको नेतृत्व गर्न उद्यमीलाई अर्थमन्त्रीको आग्रह",
-      "isGlobal": false
-    },
-    {
-      "title": "एनआईसी एशिया बैंकद्वारा नेपाल पे कार्डमार्फत हुने भुक्तानी प्राप्ति सेवा सुरु",
-      "url": "https://www.karobardaily.com/news/399566",
-      "source": "Karobar Daily",
-      "badge": "KD",
-      "category": "Nepal Business",
-      "scrapedAt": "2026-07-29T04:32:01.042Z",
-      "summary": "एनआईसी एशिया बैंकद्वारा नेपाल पे कार्डमार्फत हुने भुक्तानी प्राप्ति सेवा सुरु",
-      "isGlobal": false
-    },
-    {
-      "title": "नेप्से घटेर २६९६ विन्दुमा झर्‍यो, ४ अर्ब ४२ करोडको सेयर किनबेच",
-      "url": "https://www.karobardaily.com/news/399532",
-      "source": "Karobar Daily",
-      "badge": "KD",
-      "category": "Nepal Business",
-      "scrapedAt": "2026-07-29T04:32:01.042Z",
-      "summary": "नेप्से घटेर २६९६ विन्दुमा झर्‍यो, ४ अर्ब ४२ करोडको सेयर किनबेच",
       "isGlobal": false
     },
     {
@@ -71,18 +61,18 @@
       "source": "Karobar Daily",
       "badge": "KD",
       "category": "Nepal Business",
-      "scrapedAt": "2026-07-29T04:32:01.043Z",
+      "scrapedAt": "2026-07-30T04:19:52.906Z",
       "summary": "२५ लाखसम्मको कृषि आयमा कर नलाग्ने",
       "isGlobal": false
     },
     {
-      "title": "जुम्लामा संघको एक अर्ब ४३ करोड बजेट फ्रिज",
-      "url": "https://www.karobardaily.com/news/399297",
+      "title": "बैंक ब्याजदर हरेक महिना घट्दो",
+      "url": "https://www.karobardaily.com/news/399635",
       "source": "Karobar Daily",
       "badge": "KD",
       "category": "Nepal Business",
-      "scrapedAt": "2026-07-29T04:32:01.043Z",
-      "summary": "जुम्लामा संघको एक अर्ब ४३ करोड बजेट फ्रिज",
+      "scrapedAt": "2026-07-30T04:19:52.906Z",
+      "summary": "बैंक ब्याजदर हरेक महिना घट्दो",
       "isGlobal": false
     },
     {
@@ -91,8 +81,18 @@
       "source": "Karobar Daily",
       "badge": "KD",
       "category": "Nepal Business",
-      "scrapedAt": "2026-07-29T04:32:01.043Z",
+      "scrapedAt": "2026-07-30T04:19:52.906Z",
       "summary": "एक खर्ब निक्षेप संकलन गर्दै राष्ट्र बैंक",
+      "isGlobal": false
+    },
+    {
+      "title": "बैंकरहरू उत्साहित, कर्जाको लक्ष्य भेट्न चुनौती",
+      "url": "https://www.karobardaily.com/news/395547",
+      "source": "Karobar Daily",
+      "badge": "KD",
+      "category": "Nepal Business",
+      "scrapedAt": "2026-07-30T04:19:52.906Z",
+      "summary": "बैंकरहरू उत्साहित, कर्जाको लक्ष्य भेट्न चुनौती",
       "isGlobal": false
     },
     {
@@ -101,7 +101,7 @@
       "source": "Sharesansar",
       "badge": "SS",
       "category": "Nepal Stock",
-      "scrapedAt": "2026-07-29T04:32:03.141Z",
+      "scrapedAt": "2026-07-30T04:19:54.996Z",
       "summary": "Proposed Dividend",
       "isGlobal": false
     },
@@ -111,7 +111,7 @@
       "source": "Sharesansar",
       "badge": "SS",
       "category": "Nepal Stock",
-      "scrapedAt": "2026-07-29T04:32:03.141Z",
+      "scrapedAt": "2026-07-30T04:19:54.996Z",
       "summary": "Dividend, Bonus & Rights",
       "isGlobal": false
     },
@@ -121,7 +121,7 @@
       "source": "Sharesansar",
       "badge": "SS",
       "category": "Nepal Stock",
-      "scrapedAt": "2026-07-29T04:32:03.141Z",
+      "scrapedAt": "2026-07-30T04:19:54.996Z",
       "summary": "Know the Stocks Near 52-Week High and Low: Key Stock to Watch",
       "isGlobal": false
     },
@@ -131,7 +131,7 @@
       "source": "Sharesansar",
       "badge": "SS",
       "category": "Nepal Stock",
-      "scrapedAt": "2026-07-29T04:32:03.141Z",
+      "scrapedAt": "2026-07-30T04:19:54.996Z",
       "summary": "NEPSE Concludes The Week With 2.13% Gain and Turnover of Rs 28.33 Arba; Weekly Summary with Sector Comparison, Major Highlights, and More",
       "isGlobal": false
     },
@@ -141,7 +141,7 @@
       "source": "Nepali Paisa",
       "badge": "NP",
       "category": "Nepal Finance",
-      "scrapedAt": "2026-07-29T04:32:05.369Z",
+      "scrapedAt": "2026-07-30T04:19:58.393Z",
       "summary": "Market Overview",
       "isGlobal": false
     },
@@ -151,7 +151,7 @@
       "source": "Nepali Paisa",
       "badge": "NP",
       "category": "Nepal Finance",
-      "scrapedAt": "2026-07-29T04:32:05.369Z",
+      "scrapedAt": "2026-07-30T04:19:58.393Z",
       "summary": "Stocks Up & Down",
       "isGlobal": false
     },
@@ -161,7 +161,7 @@
       "source": "Nepali Paisa",
       "badge": "NP",
       "category": "Nepal Finance",
-      "scrapedAt": "2026-07-29T04:32:05.369Z",
+      "scrapedAt": "2026-07-30T04:19:58.393Z",
       "summary": "Business & Economy",
       "isGlobal": false
     }
@@ -173,78 +173,78 @@
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-07-29T04:32:17.295Z",
+      "scrapedAt": "2026-07-30T04:20:09.885Z",
       "summary": "Markets just got Conversational",
       "isGlobal": true
     },
     {
-      "title": "Mukul Agrawal, Ashish Kacholia, Dolly Khanna likely exited these 11 stocks in Q1. Do you own any?",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/news/mukul-agrawal-ashish-kacholia-dolly-khanna-likely-exited-these-11-stocks-in-q1-do-you-own-any/slideshow/132700017.cms",
+      "title": "Pine Labs among 4 stocks that closed crossing below VWAP",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/pine-labs-among-4-stocks-that-closed-crossing-below-vwap/slideshow/132726617.cms",
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-07-29T04:32:17.296Z",
-      "summary": "Mukul Agrawal, Ashish Kacholia, Dolly Khanna likely exited these 11 stocks in Q1. Do you own any?",
+      "scrapedAt": "2026-07-30T04:20:09.885Z",
+      "summary": "Pine Labs among 4 stocks that closed crossing below VWAP",
       "isGlobal": true
     },
     {
-      "title": "Hindustan Unilever among 5 stocks crossing below VWAP, signalling bearish trend",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/news/hindustan-unilever-among-5-stocks-crossing-below-vwap-signalling-bearish-trend/slideshow/132699249.cms",
+      "title": "3 ace investors bought, added stake in these 8 stocks. How many are in your portfolio?",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/3-ace-investors-bought-added-stake-in-these-8-stocks-how-many-are-in-your-portfolio/slideshow/132726393.cms",
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-07-29T04:32:17.296Z",
-      "summary": "Hindustan Unilever among 5 stocks crossing below VWAP, signalling bearish trend",
+      "scrapedAt": "2026-07-30T04:20:09.885Z",
+      "summary": "3 ace investors bought, added stake in these 8 stocks. How many are in your portfolio?",
       "isGlobal": true
     },
     {
-      "title": "Radico Khaitan among 4 stocks that closed above VWAP, signalling bullish shift",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/news/radico-khaitan-among-4-stocks-that-closed-above-vwap-signalling-bullish-shift/slideshow/132698835.cms",
+      "title": "PCBL Chemical among 4 stocks closing above VWAP, signalling bullish shift",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/pcbl-chemical-among-4-stocks-closing-above-vwap-signalling-bullish-shift/slideshow/132726020.cms",
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-07-29T04:32:17.296Z",
-      "summary": "Radico Khaitan among 4 stocks that closed above VWAP, signalling bullish shift",
+      "scrapedAt": "2026-07-30T04:20:09.885Z",
+      "summary": "PCBL Chemical among 4 stocks closing above VWAP, signalling bullish shift",
       "isGlobal": true
     },
     {
-      "title": "TVS Motor among 6 Nifty 500 stocks flashing bullish White Marubozu signal",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/news/tvs-motor-among-6-nifty-500-stocks-flashing-bullish-white-marubozu-signal/slideshow/132697940.cms",
+      "title": "Blue Jet Healthcare among 4 stocks flashing bullish signals, hinting at a possible uptrend",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/blue-jet-healthcare-among-4-stocks-flashing-bullish-signals-hinting-at-a-possible-uptrend/slideshow/132725973.cms",
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-07-29T04:32:17.296Z",
-      "summary": "TVS Motor among 6 Nifty 500 stocks flashing bullish White Marubozu signal",
+      "scrapedAt": "2026-07-30T04:20:09.885Z",
+      "summary": "Blue Jet Healthcare among 4 stocks flashing bullish signals, hinting at a possible uptrend",
       "isGlobal": true
     },
     {
-      "title": "Swiggy among 4 stocks showing bullish RSI upswing",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/news/swiggy-among-4-stocks-showing-bullish-rsi-upswing/slideshow/132697819.cms",
+      "title": "Kaynes Technology among 9 stocks showing bullish RSI upswing",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/kaynes-technology-among-9-stocks-showing-bullish-rsi-upswing/slideshow/132725932.cms",
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-07-29T04:32:17.296Z",
-      "summary": "Swiggy among 4 stocks showing bullish RSI upswing",
+      "scrapedAt": "2026-07-30T04:20:09.885Z",
+      "summary": "Kaynes Technology among 9 stocks showing bullish RSI upswing",
       "isGlobal": true
     },
     {
-      "title": "These 7 private and public banking stocks have an upside of up to 29% in one year, according to analysts",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/news/these-7-private-and-public-banking-stocks-have-an-upside-of-up-to-29-in-one-year-according-to-analysts/articleshow/132690964.cms",
+      "title": "These mid-cap stocks with ‘Strong Buy’ & ‘Buy’ recos can rally over 25%, according to analysts",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/these-mid-cap-stocks-with-strong-buy-buy-recos-can-rally-over-25-according-to-analysts/articleshow/132724325.cms",
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-07-29T04:32:17.296Z",
-      "summary": "These 7 private and public banking stocks have an upside of up to 29% in one year, according to analysts",
+      "scrapedAt": "2026-07-30T04:20:09.885Z",
+      "summary": "These mid-cap stocks with ‘Strong Buy’ & ‘Buy’ recos can rally over 25%, according to analysts",
       "isGlobal": true
     },
     {
-      "title": "Time to re-look at a not-so-glamorous part of healthcare ecosystem: 4 diagnostics stocks with upside potential of up to 18%",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/news/time-to-re-look-at-a-not-so-glamorous-part-of-healthcare-ecosystem-4-diagnostics-stocks-with-upside-potential-of-up-to-18/articleshow/132678716.cms",
+      "title": "Time to take a little risk with a 1- to 2-year perspective? 5 mid-cap stocks from different sectors with upside potential up to 20%",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/time-to-take-a-little-risk-with-a-1-to-2-year-perspective-5-mid-cap-stocks-from-different-sectors-with-upside-potential-up-to-20/articleshow/132704740.cms",
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-07-29T04:32:17.296Z",
-      "summary": "Time to re-look at a not-so-glamorous part of healthcare ecosystem: 4 diagnostics stocks with upside potential of up to 18%",
+      "scrapedAt": "2026-07-30T04:20:09.885Z",
+      "summary": "Time to take a little risk with a 1- to 2-year perspective? 5 mid-cap stocks from different sectors with upside potential up to 20%",
       "isGlobal": true
     }
   ]
