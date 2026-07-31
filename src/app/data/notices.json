@@ -1,7 +1,7 @@
 {
-  "lastUpdated": "2026-07-31T04:40:31.647Z",
+  "lastUpdated": "2026-07-31T04:44:37.512Z",
   "totalCount": 91,
-  "newCount": 1,
+  "newCount": 0,
   "notices": [
     {
       "id": "sebonnepalsecuritiesfinancin_ms8gf2ov",
@@ -13,8 +13,8 @@
       "link": "https://sebon.gov.np/news/नयाँ-धितोपत्र-वित्तीय-सेवा-securities-financing-services-संचालनका-लागि-market-readiness-तथा-सरोकारवाला-पक्षहरूको-राय-सुझाव-लिन-बोर्डबाट-पहिलोपटक-consultation-paper-सार्वजनिक-।",
       "summary": "New Securities Law update from SEBON Nepal: नयाँ धितोपत्र वित्तीय सेवा (Securities Financing Services) संचालनका लागि Market Readiness तथा सरोकारवाला पक्षहरूको राय/सुझाव लिन बोर्डबाट पहिलोपटक Consultation Paper सार्वजनिक ।NEW",
       "detectedAt": "2026-07-31T04:40:22.111Z",
-      "isNew": true,
-      "emailedAt": null
+      "isNew": false,
+      "emailedAt": "2026-07-31T04:45:12.447Z"
     },
     {
       "id": "irdnepal_ms45o51c",
@@ -1186,5 +1186,6 @@
       "isNew": false,
       "emailedAt": "2026-05-04T04:52:28.975Z"
     }
-  ]
+  ],
+  "lastEmailSentAt": "2026-07-31T04:45:12.447Z"
 }
