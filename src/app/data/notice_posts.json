@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-07-31T04:45:12.074Z",
-  "totalPosts": 45,
+  "lastUpdated": "2026-08-03T04:48:06.910Z",
+  "totalPosts": 47,
   "posts": {
     "ocrnepal_moqq27ad": {
       "headline": "OCR Nepal: वार्षिक विवरण अभिलेखनका पत्रहरू स्वचालित रूपमा प्राप्त ",
@@ -901,6 +901,46 @@
       "badgeColor": "#6a1b9a",
       "link": "https://sebon.gov.np/news/नयाँ-धितोपत्र-वित्तीय-सेवा-securities-financing-services-संचालनका-लागि-market-readiness-तथा-सरोकारवाला-पक्षहरूको-राय-सुझाव-लिन-बोर्डबाट-पहिलोपटक-consultation-paper-सार्वजनिक-।",
       "createdAt": "2026-07-31T04:40:32.914Z"
+    },
+    "irdnepal_mscr0803": {
+      "headline": "IRD Nepal: शिक्षा तथा स्वास्थ्य समता शुल्कमा छुट सम्बन्धी सूचना (र",
+      "body": "💰 Tax update from Inland Revenue Department!\n\n📌 शिक्षा तथा स्वास्थ्य समता शुल्कमा छुट सम्बन्धी सूचना (राजपत्रमा प्रकाशित मिति २०८३।०४।०६) १५ साउन, २०८३\n\nThis update from IRD Nepal may affect taxation compliance requirements for Nepal professionals.\n\n✅ Review the full notice and consult your advisor.\n\n🔗 https://ird.gov.np/content/13597/notice-regarding-exemption-in-education-and-health/",
+      "callToAction": "Share this with your team if relevant.",
+      "hashtags": [
+        "#Nepal",
+        "#Compliance",
+        "#CA",
+        "#IRDNepal"
+      ],
+      "bestTimeToPost": "Morning",
+      "topicBadge": "Taxation",
+      "isTemplate": true,
+      "noticeId": "irdnepal_mscr0803",
+      "noticeTitle": "शिक्षा तथा स्वास्थ्य समता शुल्कमा छुट सम्बन्धी सूचना (राजपत्रमा प्रकाशित मिति २०८३।०४।०६) १५ साउन, २०८३",
+      "source": "IRD Nepal",
+      "badgeColor": "#e53935",
+      "link": "https://ird.gov.np/content/13597/notice-regarding-exemption-in-education-and-health/",
+      "createdAt": "2026-08-03T04:48:06.910Z"
+    },
+    "irdnepalrti2082083_mscr0803": {
+      "headline": "IRD Nepal: सूचनाको हक( RTI 2082.083 ) कार्तिक-पौष २० चैत, २०८२",
+      "body": "💰 Tax update from Inland Revenue Department!\n\n📌 सूचनाको हक( RTI 2082.083 ) कार्तिक-पौष २० चैत, २०८२\n\nThis update from IRD Nepal may affect taxation compliance requirements for Nepal professionals.\n\n✅ Review the full notice and consult your advisor.\n\n🔗 https://ird.gov.np/content/13451/right-to-information--rti-2082-083--kartik-paush/",
+      "callToAction": "Share this with your team if relevant.",
+      "hashtags": [
+        "#Nepal",
+        "#Compliance",
+        "#CA",
+        "#IRDNepal"
+      ],
+      "bestTimeToPost": "Morning",
+      "topicBadge": "Taxation",
+      "isTemplate": true,
+      "noticeId": "irdnepalrti2082083_mscr0803",
+      "noticeTitle": "सूचनाको हक( RTI 2082.083 ) कार्तिक-पौष २० चैत, २०८२",
+      "source": "IRD Nepal",
+      "badgeColor": "#e53935",
+      "link": "https://ird.gov.np/content/13451/right-to-information--rti-2082-083--kartik-paush/",
+      "createdAt": "2026-08-03T04:48:06.910Z"
     }
   }
 }

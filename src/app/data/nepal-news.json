@@ -1,7 +1,7 @@
 {
-  "scrapedAt": "2026-07-31T04:45:03.872Z",
-  "totalCount": 23,
-  "nepalCount": 15,
+  "scrapedAt": "2026-08-03T04:47:36.251Z",
+  "totalCount": 24,
+  "nepalCount": 16,
   "globalCount": 8,
   "sources": [
     "Onlinekhabar Finance",
@@ -16,33 +16,43 @@
   ],
   "articles": [
     {
-      "title": "पर्यटनः अर्थव्यवस्थाको ढुकढुकी",
-      "url": "https://www.karobardaily.com/news/400566",
+      "title": "जुम्लामा राजस्व लक्ष्यभन्दा १६ करोड कम",
+      "url": "https://www.karobardaily.com/news/401310",
       "source": "Karobar Daily",
       "badge": "KD",
       "category": "Nepal Business",
-      "scrapedAt": "2026-07-31T04:44:47.732Z",
-      "summary": "पर्यटनः अर्थव्यवस्थाको ढुकढुकी",
+      "scrapedAt": "2026-08-03T04:47:18.812Z",
+      "summary": "जुम्लामा राजस्व लक्ष्यभन्दा १६ करोड कम",
       "isGlobal": false
     },
     {
-      "title": "मुक्तिनाथ विकास बैंक र नागार्जुन नगरपालिकाबीच सहुलियतपूर्ण कर्जा प्रवाहसम्बन्धी सम्झौता",
-      "url": "https://www.karobardaily.com/news/400558",
+      "title": "बजारमा ग्यास अभाव, चुलो बाल्न सकस",
+      "url": "https://www.karobardaily.com/news/401297",
       "source": "Karobar Daily",
       "badge": "KD",
       "category": "Nepal Business",
-      "scrapedAt": "2026-07-31T04:44:47.733Z",
-      "summary": "मुक्तिनाथ विकास बैंक र नागार्जुन नगरपालिकाबीच सहुलियतपूर्ण कर्जा प्रवाहसम्बन्धी सम्झौता",
+      "scrapedAt": "2026-08-03T04:47:18.812Z",
+      "summary": "बजारमा ग्यास अभाव, चुलो बाल्न सकस",
       "isGlobal": false
     },
     {
-      "title": "लुम्बिनीमा दुई अर्ब ३९ करोड राजस्व संकलन",
-      "url": "https://www.karobardaily.com/news/400431",
+      "title": "भारतको गुरुग्राममा जिम्बु थकालीको शाखा, तीन करोड लगानी",
+      "url": "https://www.karobardaily.com/news/401268",
       "source": "Karobar Daily",
       "badge": "KD",
       "category": "Nepal Business",
-      "scrapedAt": "2026-07-31T04:44:47.733Z",
-      "summary": "लुम्बिनीमा दुई अर्ब ३९ करोड राजस्व संकलन",
+      "scrapedAt": "2026-08-03T04:47:18.812Z",
+      "summary": "भारतको गुरुग्राममा जिम्बु थकालीको शाखा, तीन करोड लगानी",
+      "isGlobal": false
+    },
+    {
+      "title": "२५ अर्ब निक्षेप संकलन गर्दै राष्ट्र बैंक",
+      "url": "https://www.karobardaily.com/news/400860",
+      "source": "Karobar Daily",
+      "badge": "KD",
+      "category": "Nepal Business",
+      "scrapedAt": "2026-08-03T04:47:18.812Z",
+      "summary": "२५ अर्ब निक्षेप संकलन गर्दै राष्ट्र बैंक",
       "isGlobal": false
     },
     {
@@ -51,7 +61,7 @@
       "source": "Karobar Daily",
       "badge": "KD",
       "category": "Nepal Business",
-      "scrapedAt": "2026-07-31T04:44:47.733Z",
+      "scrapedAt": "2026-08-03T04:47:18.812Z",
       "summary": "बैंक ब्याजदर हरेक महिना घट्दो",
       "isGlobal": false
     },
@@ -61,7 +71,7 @@
       "source": "Karobar Daily",
       "badge": "KD",
       "category": "Nepal Business",
-      "scrapedAt": "2026-07-31T04:44:47.733Z",
+      "scrapedAt": "2026-08-03T04:47:18.812Z",
       "summary": "एक खर्ब निक्षेप संकलन गर्दै राष्ट्र बैंक",
       "isGlobal": false
     },
@@ -71,18 +81,8 @@
       "source": "Karobar Daily",
       "badge": "KD",
       "category": "Nepal Business",
-      "scrapedAt": "2026-07-31T04:44:47.733Z",
+      "scrapedAt": "2026-08-03T04:47:18.812Z",
       "summary": "बैंकरहरू उत्साहित, कर्जाको लक्ष्य भेट्न चुनौती",
-      "isGlobal": false
-    },
-    {
-      "title": "ब्याज उठाउन साउन १५ सम्मको समय, सेयर कर्जा र विद्युतीय बसमा विशेष सुविधा",
-      "url": "https://www.karobardaily.com/news/395200",
-      "source": "Karobar Daily",
-      "badge": "KD",
-      "category": "Nepal Business",
-      "scrapedAt": "2026-07-31T04:44:47.733Z",
-      "summary": "ब्याज उठाउन साउन १५ सम्मको समय, सेयर कर्जा र विद्युतीय बसमा विशेष सुविधा",
       "isGlobal": false
     },
     {
@@ -91,8 +91,18 @@
       "source": "Karobar Daily",
       "badge": "KD",
       "category": "Nepal Business",
-      "scrapedAt": "2026-07-31T04:44:47.733Z",
+      "scrapedAt": "2026-08-03T04:47:18.812Z",
       "summary": "११ महिनादेखि प्राधिकरण अध्यक्षविहीनः बीमा क्षेत्रको नियमन लथालिंग",
+      "isGlobal": false
+    },
+    {
+      "title": "Eroded Capital, Elevated Prices: Where Is the Real Value Hiding in NEPSE?",
+      "url": "https://www.sharesansar.com/newsdetail/eroded-capital-elevated-prices-where-is-the-real-value-hiding-in-nepse-2026-07-27",
+      "source": "Sharesansar",
+      "badge": "SS",
+      "category": "Nepal Stock",
+      "scrapedAt": "2026-08-03T04:47:20.701Z",
+      "summary": "Eroded Capital, Elevated Prices: Where Is the Real Value Hiding in NEPSE?",
       "isGlobal": false
     },
     {
@@ -101,7 +111,7 @@
       "source": "Sharesansar",
       "badge": "SS",
       "category": "Nepal Stock",
-      "scrapedAt": "2026-07-31T04:44:49.553Z",
+      "scrapedAt": "2026-08-03T04:47:20.701Z",
       "summary": "Proposed Dividend",
       "isGlobal": false
     },
@@ -111,7 +121,7 @@
       "source": "Sharesansar",
       "badge": "SS",
       "category": "Nepal Stock",
-      "scrapedAt": "2026-07-31T04:44:49.553Z",
+      "scrapedAt": "2026-08-03T04:47:20.701Z",
       "summary": "Dividend, Bonus & Rights",
       "isGlobal": false
     },
@@ -121,18 +131,18 @@
       "source": "Sharesansar",
       "badge": "SS",
       "category": "Nepal Stock",
-      "scrapedAt": "2026-07-31T04:44:49.553Z",
+      "scrapedAt": "2026-08-03T04:47:20.701Z",
       "summary": "Know the Stocks Near 52-Week High and Low: Key Stock to Watch",
       "isGlobal": false
     },
     {
-      "title": "NEPSE Concludes The Week With 2.13% Gain and Turnover of Rs 28.33 Arba; Weekly Summary with Sector Comparison, Major Highlights, and More",
+      "title": "NEPSE Concludes The Week With 1.79% Loss and Turnover of Rs. 21.67 Arba; Weekly Summary with Sector Comparison, Major Highlights, and More",
       "url": "https://www.sharesansar.com/",
       "source": "Sharesansar",
       "badge": "SS",
       "category": "Nepal Stock",
-      "scrapedAt": "2026-07-31T04:44:49.553Z",
-      "summary": "NEPSE Concludes The Week With 2.13% Gain and Turnover of Rs 28.33 Arba; Weekly Summary with Sector Comparison, Major Highlights, and More",
+      "scrapedAt": "2026-08-03T04:47:20.701Z",
+      "summary": "NEPSE Concludes The Week With 1.79% Loss and Turnover of Rs. 21.67 Arba; Weekly Summary with Sector Comparison, Major Highlights, and More",
       "isGlobal": false
     },
     {
@@ -141,7 +151,7 @@
       "source": "Nepali Paisa",
       "badge": "NP",
       "category": "Nepal Finance",
-      "scrapedAt": "2026-07-31T04:44:51.590Z",
+      "scrapedAt": "2026-08-03T04:47:22.989Z",
       "summary": "Market Overview",
       "isGlobal": false
     },
@@ -151,7 +161,7 @@
       "source": "Nepali Paisa",
       "badge": "NP",
       "category": "Nepal Finance",
-      "scrapedAt": "2026-07-31T04:44:51.590Z",
+      "scrapedAt": "2026-08-03T04:47:22.989Z",
       "summary": "Stocks Up & Down",
       "isGlobal": false
     },
@@ -161,7 +171,7 @@
       "source": "Nepali Paisa",
       "badge": "NP",
       "category": "Nepal Finance",
-      "scrapedAt": "2026-07-31T04:44:51.590Z",
+      "scrapedAt": "2026-08-03T04:47:22.989Z",
       "summary": "Business & Economy",
       "isGlobal": false
     }
@@ -173,78 +183,78 @@
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-07-31T04:45:02.368Z",
+      "scrapedAt": "2026-08-03T04:47:34.751Z",
       "summary": "Markets just got Conversational",
       "isGlobal": true
     },
     {
-      "title": "Meesho among 3 stocks that closed above VWAP, signaling bullish shift",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/news/meesho-among-3-stocks-that-closed-above-vwap-signaling-bullish-shift/slideshow/132755218.cms",
+      "title": "High dividend yield stocks: Vedanta, Coal India among 15 largecap stocks with high dividend yields. Do you own any?",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/high-dividend-yield-stocks-vedanta-coal-india-among-15-largecap-stocks-with-high-dividend-yields-do-you-own-any/slideshow/132817939.cms",
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-07-31T04:45:02.369Z",
-      "summary": "Meesho among 3 stocks that closed above VWAP, signaling bullish shift",
+      "scrapedAt": "2026-08-03T04:47:34.751Z",
+      "summary": "High dividend yield stocks: Vedanta, Coal India among 15 largecap stocks with high dividend yields. Do you own any?",
       "isGlobal": true
     },
     {
-      "title": "Karnataka Bank among 4 stocks flashing bullish signals, hinting at a possible uptrend",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/news/karnataka-bank-among-4-stocks-flashing-bullish-signals-hinting-at-a-possible-uptrend/slideshow/132755168.cms",
+      "title": "Thermax among 5 stocks closed above VWAP, signaling bullish shift",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/thermax-among-5-stocks-closed-above-vwap-signaling-bullish-shift/slideshow/132817468.cms",
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-07-31T04:45:02.369Z",
-      "summary": "Karnataka Bank among 4 stocks flashing bullish signals, hinting at a possible uptrend",
+      "scrapedAt": "2026-08-03T04:47:34.751Z",
+      "summary": "Thermax among 5 stocks closed above VWAP, signaling bullish shift",
       "isGlobal": true
     },
     {
-      "title": "Balkrishna Industries among 4 stocks showing bullish RSI upswing",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/news/balkrishna-industries-among-4-stocks-showing-bullish-rsi-upswing/slideshow/132754188.cms",
+      "title": "Bajaj Finserv among 4 stocks flashing bullish signals, hinting at a possible uptrend",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/bajaj-finserv-among-4-stocks-flashing-bullish-signals-hinting-at-a-possible-uptrend/slideshow/132817402.cms",
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-07-31T04:45:02.369Z",
-      "summary": "Balkrishna Industries among 4 stocks showing bullish RSI upswing",
+      "scrapedAt": "2026-08-03T04:47:34.751Z",
+      "summary": "Bajaj Finserv among 4 stocks flashing bullish signals, hinting at a possible uptrend",
       "isGlobal": true
     },
     {
-      "title": "Positive Breakout: These 10 stocks cross above their 200 DMAs",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/news/positive-breakout-these-10-stocks-cross-above-their-200-dmas/slideshow/132753585.cms",
+      "title": "Jaiprakash Power Ventures among 5 stocks showing bullish RSI upswing",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/jaiprakash-power-ventures-among-5-stocks-showing-bullish-rsi-upswing/slideshow/132817328.cms",
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-07-31T04:45:02.369Z",
-      "summary": "Positive Breakout: These 10 stocks cross above their 200 DMAs",
+      "scrapedAt": "2026-08-03T04:47:34.751Z",
+      "summary": "Jaiprakash Power Ventures among 5 stocks showing bullish RSI upswing",
       "isGlobal": true
     },
     {
-      "title": "Stocks to buy in 2026 for long term: Adani Ports, Phoenix Mills among 5 stocks that could give 10-30% return",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/news/stocks-to-buy-in-2026-for-long-term-adani-ports-phoenix-mills-among-5-stocks-that-could-give-10-30-return/slideshow/132753494.cms",
+      "title": "Stocks to buy in 2026 for long term: M&M, Bajaj Finance among 5 stocks that could give 10-30% return",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/stocks-to-buy-in-2026-for-long-term-mampm-bajaj-finance-among-5-stocks-that-could-give-10-30-return/slideshow/132816686.cms",
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-07-31T04:45:02.369Z",
-      "summary": "Stocks to buy in 2026 for long term: Adani Ports, Phoenix Mills among 5 stocks that could give 10-30% return",
+      "scrapedAt": "2026-08-03T04:47:34.751Z",
+      "summary": "Stocks to buy in 2026 for long term: M&M, Bajaj Finance among 5 stocks that could give 10-30% return",
       "isGlobal": true
     },
     {
-      "title": "These large- and mid-cap stocks can give more than 25% return in 1 year, according to analysts",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/news/these-large-and-mid-cap-stocks-can-give-more-than-25-return-in-1-year-according-to-analysts/articleshow/132752982.cms",
+      "title": "For investors with some patience: 6 mid-cap stocks from different sectors with upside potential of up to 20%",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/for-investors-with-some-patience-6-mid-cap-stocks-from-different-sectors-with-upside-potential-of-up-to-20/articleshow/132794515.cms",
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-07-31T04:45:02.369Z",
-      "summary": "These large- and mid-cap stocks can give more than 25% return in 1 year, according to analysts",
+      "scrapedAt": "2026-08-03T04:47:34.751Z",
+      "summary": "For investors with some patience: 6 mid-cap stocks from different sectors with upside potential of up to 20%",
       "isGlobal": true
     },
     {
-      "title": "Weekly Top Picks: These stocks scored 10 on 10 on Stock Reports Plus",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/news/weekly-top-picks-these-stocks-scored-10-on-10-on-stock-reports-plus/articleshow/132741605.cms",
+      "title": "The ethanol story is changing. Is investing in the ecosystem the better way? 15 stocks across different market cap segments",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/the-ethanol-story-is-changing-is-investing-in-the-ecosystem-the-better-way-15-stocks-across-different-market-cap-segments/articleshow/132804616.cms",
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-07-31T04:45:02.369Z",
-      "summary": "Weekly Top Picks: These stocks scored 10 on 10 on Stock Reports Plus",
+      "scrapedAt": "2026-08-03T04:47:34.751Z",
+      "summary": "The ethanol story is changing. Is investing in the ecosystem the better way? 15 stocks across different market cap segments",
       "isGlobal": true
     }
   ]
