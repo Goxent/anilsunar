@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-04T04:31:18.431Z",
+  "lastUpdated": "2026-08-04T04:33:41.122Z",
   "totalCount": 95,
   "newCount": 0,
   "notices": [
@@ -13,8 +13,8 @@
       "link": "https://ird.gov.np/content/13545/notice-of-intent/",
       "summary": "New Taxation update from IRD Nepal: आशयको सूचना २८ जेठ, २०८३",
       "detectedAt": "2026-08-03T04:47:49.635Z",
-      "isNew": true,
-      "emailedAt": null
+      "isNew": false,
+      "emailedAt": "2026-08-04T04:34:09.086Z"
     },
     {
       "id": "irdnepal_mscr0803",
@@ -26,8 +26,8 @@
       "link": "https://ird.gov.np/content/13598/public-notice-regarding-taxpayer-incentive-gift-program/",
       "summary": "New Taxation update from IRD Nepal: करदाता प्रोत्साहन उपहार कार्यक्रम सम्बन्धी सार्वजनिक सूचना १६ साउन, २०८३",
       "detectedAt": "2026-08-03T04:47:49.635Z",
-      "isNew": true,
-      "emailedAt": null
+      "isNew": false,
+      "emailedAt": "2026-08-04T04:34:09.087Z"
     },
     {
       "id": "irdnepal_mscr0803",
@@ -39,8 +39,8 @@
       "link": "https://ird.gov.np/content/13597/notice-regarding-exemption-in-education-and-health/",
       "summary": "New Taxation update from IRD Nepal: शिक्षा तथा स्वास्थ्य समता शुल्कमा छुट सम्बन्धी सूचना (राजपत्रमा प्रकाशित मिति २०८३।०४।०६) १५ साउन, २०८३",
       "detectedAt": "2026-08-03T04:47:49.635Z",
-      "isNew": true,
-      "emailedAt": null
+      "isNew": false,
+      "emailedAt": "2026-08-04T04:34:09.087Z"
     },
     {
       "id": "irdnepalrti2082083_mscr0803",
@@ -52,8 +52,8 @@
       "link": "https://ird.gov.np/content/13451/right-to-information--rti-2082-083--kartik-paush/",
       "summary": "New Taxation update from IRD Nepal: सूचनाको हक( RTI 2082.083 ) कार्तिक-पौष २० चैत, २०८२",
       "detectedAt": "2026-08-03T04:47:49.635Z",
-      "isNew": true,
-      "emailedAt": null
+      "isNew": false,
+      "emailedAt": "2026-08-04T04:34:09.087Z"
     },
     {
       "id": "sebonnepalsecuritiesfinancin_ms8gf2ov",
@@ -1238,5 +1238,6 @@
       "isNew": false,
       "emailedAt": "2026-05-04T04:52:28.975Z"
     }
-  ]
+  ],
+  "lastEmailSentAt": "2026-08-04T04:34:09.087Z"
 }
