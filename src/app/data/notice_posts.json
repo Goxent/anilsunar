@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-08-04T04:34:08.642Z",
-  "totalPosts": 47,
+  "lastUpdated": "2026-08-05T04:30:03.490Z",
+  "totalPosts": 49,
   "posts": {
     "ocrnepal_moqq27ad": {
       "headline": "OCR Nepal: वार्षिक विवरण अभिलेखनका पत्रहरू स्वचालित रूपमा प्राप्त ",
@@ -941,6 +941,46 @@
       "badgeColor": "#e53935",
       "link": "https://ird.gov.np/content/13451/right-to-information--rti-2082-083--kartik-paush/",
       "createdAt": "2026-08-03T04:48:06.910Z"
+    },
+    "irdnepal_msfl8p6u": {
+      "headline": "IRD Nepal: बीजक लिने/दिने सम्बन्धी सार्वजनिक सूचना। १९ साउन, २०८३",
+      "body": "💰 Tax update from Inland Revenue Department!\n\n📌 बीजक लिने/दिने सम्बन्धी सार्वजनिक सूचना। १९ साउन, २०८३\n\nThis update from IRD Nepal may affect taxation compliance requirements for Nepal professionals.\n\n✅ Review the full notice and consult your advisor.\n\n🔗 https://ird.gov.np/content/13601/public-notice-regarding-receipt-issuance-of-invoices-/",
+      "callToAction": "Share this with your team if relevant.",
+      "hashtags": [
+        "#Nepal",
+        "#Compliance",
+        "#CA",
+        "#IRDNepal"
+      ],
+      "bestTimeToPost": "Morning",
+      "topicBadge": "Taxation",
+      "isTemplate": true,
+      "noticeId": "irdnepal_msfl8p6u",
+      "noticeTitle": "बीजक लिने/दिने सम्बन्धी सार्वजनिक सूचना। १९ साउन, २०८३",
+      "source": "IRD Nepal",
+      "badgeColor": "#e53935",
+      "link": "https://ird.gov.np/content/13601/public-notice-regarding-receipt-issuance-of-invoices-/",
+      "createdAt": "2026-08-05T04:30:03.489Z"
+    },
+    "irdnepalrti2082083_msfl8p6u": {
+      "headline": "IRD Nepal: सूचनाको हक ( RTI 2082.083 ) वैशाख-असार १९ साउन, २०८३",
+      "body": "💰 Tax update from Inland Revenue Department!\n\n📌 सूचनाको हक ( RTI 2082.083 ) वैशाख-असार १९ साउन, २०८३\n\nThis update from IRD Nepal may affect taxation compliance requirements for Nepal professionals.\n\n✅ Review the full notice and consult your advisor.\n\n🔗 https://ird.gov.np/content/13600/right-to-information---rti-2082-083--/",
+      "callToAction": "Share this with your team if relevant.",
+      "hashtags": [
+        "#Nepal",
+        "#Compliance",
+        "#CA",
+        "#IRDNepal"
+      ],
+      "bestTimeToPost": "Morning",
+      "topicBadge": "Taxation",
+      "isTemplate": true,
+      "noticeId": "irdnepalrti2082083_msfl8p6u",
+      "noticeTitle": "सूचनाको हक ( RTI 2082.083 ) वैशाख-असार १९ साउन, २०८३",
+      "source": "IRD Nepal",
+      "badgeColor": "#e53935",
+      "link": "https://ird.gov.np/content/13600/right-to-information---rti-2082-083--/",
+      "createdAt": "2026-08-05T04:30:03.490Z"
     }
   }
 }
