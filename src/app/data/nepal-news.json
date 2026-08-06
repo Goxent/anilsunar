@@ -1,5 +1,5 @@
 {
-  "scrapedAt": "2026-08-05T04:29:31.571Z",
+  "scrapedAt": "2026-08-06T04:31:36.758Z",
   "totalCount": 24,
   "nepalCount": 16,
   "globalCount": 8,
@@ -16,33 +16,43 @@
   ],
   "articles": [
     {
-      "title": "स्थायित्वको खोजीमा ब्याजदर कोरिडोर प्रणाली",
-      "url": "https://www.karobardaily.com/news/402372",
+      "title": "बहस अर्थतन्त्रको, नजर योग्य डेपुटी गभर्नरमा",
+      "url": "https://www.karobardaily.com/news/402824",
       "source": "Karobar Daily",
       "badge": "KD",
       "category": "Nepal Business",
-      "scrapedAt": "2026-08-05T04:29:15.591Z",
-      "summary": "स्थायित्वको खोजीमा ब्याजदर कोरिडोर प्रणाली",
+      "scrapedAt": "2026-08-06T04:31:19.387Z",
+      "summary": "बहस अर्थतन्त्रको, नजर योग्य डेपुटी गभर्नरमा",
       "isGlobal": false
     },
     {
-      "title": "दुई डेपुटी यथावत्, सञ्चालक समितिमा अर्थसचिव सहित एक महिला अनिवार्य",
-      "url": "https://www.karobardaily.com/news/402406",
+      "title": "गर्भनरको पदावधिबारे अर्थ समितिमा छलफल",
+      "url": "https://www.karobardaily.com/news/402744",
       "source": "Karobar Daily",
       "badge": "KD",
       "category": "Nepal Business",
-      "scrapedAt": "2026-08-05T04:29:15.591Z",
-      "summary": "दुई डेपुटी यथावत्, सञ्चालक समितिमा अर्थसचिव सहित एक महिला अनिवार्य",
+      "scrapedAt": "2026-08-06T04:31:19.387Z",
+      "summary": "गर्भनरको पदावधिबारे अर्थ समितिमा छलफल",
       "isGlobal": false
     },
     {
-      "title": "ब्याज सस्तो हुँदा पनि किन बढेन कर्जा ? अर्थमन्त्री, ऋण दिँदा थुनिने अवस्था यसको जिम्मेवारः बैंकर",
-      "url": "https://www.karobardaily.com/news/402399",
+      "title": "कृत्रिम बौद्धिकता विकासशील अर्थतन्त्रको अविश्वसनीय विकासको आधार बन्न सक्ने",
+      "url": "https://www.karobardaily.com/news/402667",
       "source": "Karobar Daily",
       "badge": "KD",
       "category": "Nepal Business",
-      "scrapedAt": "2026-08-05T04:29:15.591Z",
-      "summary": "ब्याज सस्तो हुँदा पनि किन बढेन कर्जा ? अर्थमन्त्री, ऋण दिँदा थुनिने अवस्था यसको जिम्मेवारः बैंकर",
+      "scrapedAt": "2026-08-06T04:31:19.387Z",
+      "summary": "कृत्रिम बौद्धिकता विकासशील अर्थतन्त्रको अविश्वसनीय विकासको आधार बन्न सक्ने",
+      "isGlobal": false
+    },
+    {
+      "title": "८५ अर्बको तीनमहिने निक्षेप संकलन गर्दै राष्ट्र बैंक",
+      "url": "https://www.karobardaily.com/news/402484",
+      "source": "Karobar Daily",
+      "badge": "KD",
+      "category": "Nepal Business",
+      "scrapedAt": "2026-08-06T04:31:19.387Z",
+      "summary": "८५ अर्बको तीनमहिने निक्षेप संकलन गर्दै राष्ट्र बैंक",
       "isGlobal": false
     },
     {
@@ -51,7 +61,7 @@
       "source": "Karobar Daily",
       "badge": "KD",
       "category": "Nepal Business",
-      "scrapedAt": "2026-08-05T04:29:15.591Z",
+      "scrapedAt": "2026-08-06T04:31:19.387Z",
       "summary": "२५ अर्ब निक्षेप संकलन गर्दै राष्ट्र बैंक",
       "isGlobal": false
     },
@@ -61,7 +71,7 @@
       "source": "Karobar Daily",
       "badge": "KD",
       "category": "Nepal Business",
-      "scrapedAt": "2026-08-05T04:29:15.591Z",
+      "scrapedAt": "2026-08-06T04:31:19.387Z",
       "summary": "बैंक ब्याजदर हरेक महिना घट्दो",
       "isGlobal": false
     },
@@ -71,18 +81,8 @@
       "source": "Karobar Daily",
       "badge": "KD",
       "category": "Nepal Business",
-      "scrapedAt": "2026-08-05T04:29:15.591Z",
+      "scrapedAt": "2026-08-06T04:31:19.387Z",
       "summary": "एक खर्ब निक्षेप संकलन गर्दै राष्ट्र बैंक",
-      "isGlobal": false
-    },
-    {
-      "title": "बैंकरहरू उत्साहित, कर्जाको लक्ष्य भेट्न चुनौती",
-      "url": "https://www.karobardaily.com/news/395547",
-      "source": "Karobar Daily",
-      "badge": "KD",
-      "category": "Nepal Business",
-      "scrapedAt": "2026-08-05T04:29:15.591Z",
-      "summary": "बैंकरहरू उत्साहित, कर्जाको लक्ष्य भेट्न चुनौती",
       "isGlobal": false
     },
     {
@@ -91,7 +91,7 @@
       "source": "Karobar Daily",
       "badge": "KD",
       "category": "Nepal Business",
-      "scrapedAt": "2026-08-05T04:29:15.592Z",
+      "scrapedAt": "2026-08-06T04:31:19.387Z",
       "summary": "११ महिनादेखि प्राधिकरण अध्यक्षविहीनः बीमा क्षेत्रको नियमन लथालिंग",
       "isGlobal": false
     },
@@ -101,7 +101,7 @@
       "source": "Sharesansar",
       "badge": "SS",
       "category": "Nepal Stock",
-      "scrapedAt": "2026-08-05T04:29:17.712Z",
+      "scrapedAt": "2026-08-06T04:31:21.455Z",
       "summary": "Eroded Capital, Elevated Prices: Where Is the Real Value Hiding in NEPSE?",
       "isGlobal": false
     },
@@ -111,7 +111,7 @@
       "source": "Sharesansar",
       "badge": "SS",
       "category": "Nepal Stock",
-      "scrapedAt": "2026-08-05T04:29:17.712Z",
+      "scrapedAt": "2026-08-06T04:31:21.455Z",
       "summary": "Proposed Dividend",
       "isGlobal": false
     },
@@ -121,7 +121,7 @@
       "source": "Sharesansar",
       "badge": "SS",
       "category": "Nepal Stock",
-      "scrapedAt": "2026-08-05T04:29:17.712Z",
+      "scrapedAt": "2026-08-06T04:31:21.455Z",
       "summary": "Dividend, Bonus & Rights",
       "isGlobal": false
     },
@@ -131,7 +131,7 @@
       "source": "Sharesansar",
       "badge": "SS",
       "category": "Nepal Stock",
-      "scrapedAt": "2026-08-05T04:29:17.712Z",
+      "scrapedAt": "2026-08-06T04:31:21.455Z",
       "summary": "Know the Stocks Near 52-Week High and Low: Key Stock to Watch",
       "isGlobal": false
     },
@@ -141,7 +141,7 @@
       "source": "Sharesansar",
       "badge": "SS",
       "category": "Nepal Stock",
-      "scrapedAt": "2026-08-05T04:29:17.712Z",
+      "scrapedAt": "2026-08-06T04:31:21.455Z",
       "summary": "NEPSE Concludes The Week With 1.79% Loss and Turnover of Rs. 21.67 Arba; Weekly Summary with Sector Comparison, Major Highlights, and More",
       "isGlobal": false
     },
@@ -151,7 +151,7 @@
       "source": "Nepali Paisa",
       "badge": "NP",
       "category": "Nepal Finance",
-      "scrapedAt": "2026-08-05T04:29:19.673Z",
+      "scrapedAt": "2026-08-06T04:31:24.492Z",
       "summary": "Market Overview",
       "isGlobal": false
     },
@@ -161,7 +161,7 @@
       "source": "Nepali Paisa",
       "badge": "NP",
       "category": "Nepal Finance",
-      "scrapedAt": "2026-08-05T04:29:19.673Z",
+      "scrapedAt": "2026-08-06T04:31:24.492Z",
       "summary": "Stocks Up & Down",
       "isGlobal": false
     },
@@ -171,7 +171,7 @@
       "source": "Nepali Paisa",
       "badge": "NP",
       "category": "Nepal Finance",
-      "scrapedAt": "2026-08-05T04:29:19.673Z",
+      "scrapedAt": "2026-08-06T04:31:24.492Z",
       "summary": "Business & Economy",
       "isGlobal": false
     }
@@ -183,78 +183,78 @@
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-08-05T04:29:30.068Z",
+      "scrapedAt": "2026-08-06T04:31:35.255Z",
       "summary": "Markets just got Conversational",
       "isGlobal": true
     },
     {
-      "title": "Canara Bank, Bank of Baroda among 7 bank stocks with up to 26% upside potential. Own any?",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/news/canara-bank-bank-of-baroda-among-7-bank-stocks-with-up-to-26-upside-potential-own-any/slideshow/132887658.cms",
+      "title": "RR Kabel among 5 stocks flashing bullish signals, hinting at a possible uptrend",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/rr-kabel-among-5-stocks-flashing-bullish-signals-hinting-at-a-possible-uptrend/slideshow/132980955.cms",
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-08-05T04:29:30.069Z",
-      "summary": "Canara Bank, Bank of Baroda among 7 bank stocks with up to 26% upside potential. Own any?",
+      "scrapedAt": "2026-08-06T04:31:35.256Z",
+      "summary": "RR Kabel among 5 stocks flashing bullish signals, hinting at a possible uptrend",
       "isGlobal": true
     },
     {
-      "title": "5 Nifty stocks trading at significant discounts of up to 36% to historical averages. How many do you have?",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/news/5-nifty-stocks-trading-at-significant-discounts-of-up-to-36-to-historical-averages-how-many-do-you-have/slideshow/132887298.cms",
+      "title": "MCX India among 5 F&O stocks with a sharp rise in futures open interest",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/mcx-india-among-5-fampo-stocks-with-a-sharp-rise-in-futures-open-interest/slideshow/132980530.cms",
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-08-05T04:29:30.069Z",
-      "summary": "5 Nifty stocks trading at significant discounts of up to 36% to historical averages. How many do you have?",
+      "scrapedAt": "2026-08-06T04:31:35.256Z",
+      "summary": "MCX India among 5 F&O stocks with a sharp rise in futures open interest",
       "isGlobal": true
     },
     {
-      "title": "PVR Inox among 5 stocks flashing bullish signals, hinting at a possible uptrend",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/news/pvr-inox-among-5-stocks-flashing-bullish-signals-hinting-at-a-possible-uptrend/slideshow/132887130.cms",
+      "title": "HSBC’s top picks: Adani Ports, Titan Company among 10 stocks with upside potential of 37%. See full list",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/hsbcs-top-picks-adani-ports-titan-company-among-10-stocks-with-upside-potential-of-37-see-full-list/slideshow/132980435.cms",
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-08-05T04:29:30.069Z",
-      "summary": "PVR Inox among 5 stocks flashing bullish signals, hinting at a possible uptrend",
+      "scrapedAt": "2026-08-06T04:31:35.256Z",
+      "summary": "HSBC’s top picks: Adani Ports, Titan Company among 10 stocks with upside potential of 37%. See full list",
       "isGlobal": true
     },
     {
-      "title": "Saregama India among 4 stocks closed above VWAP, signalling bullish shift",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/news/saregama-india-among-4-stocks-closed-above-vwap-signalling-bullish-shift/slideshow/132886944.cms",
+      "title": "New India Assurance among 5 stocks showing bullish RSI upswing",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/new-india-assurance-among-5-stocks-showing-bullish-rsi-upswing/slideshow/132979831.cms",
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-08-05T04:29:30.069Z",
-      "summary": "Saregama India among 4 stocks closed above VWAP, signalling bullish shift",
+      "scrapedAt": "2026-08-06T04:31:35.256Z",
+      "summary": "New India Assurance among 5 stocks showing bullish RSI upswing",
       "isGlobal": true
     },
     {
-      "title": "KEI Industries among 6 stocks showing bullish RSI upswing",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/news/kei-industries-among-6-stocks-showing-bullish-rsi-upswing/slideshow/132886761.cms",
+      "title": "These mid-cap stocks with ‘Strong Buy’ & ‘Buy’ recos can rally over 25%, according to analysts",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/these-mid-cap-stocks-with-strong-buy-buy-recos-can-rally-over-25-according-to-analysts/articleshow/132957173.cms",
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-08-05T04:29:30.069Z",
-      "summary": "KEI Industries among 6 stocks showing bullish RSI upswing",
+      "scrapedAt": "2026-08-06T04:31:35.256Z",
+      "summary": "These mid-cap stocks with ‘Strong Buy’ & ‘Buy’ recos can rally over 25%, according to analysts",
       "isGlobal": true
     },
     {
-      "title": "These 7 banking stocks have an upside potential of up to 25% in 1 year, according to analysts",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/news/these-7-banking-stocks-have-an-upside-potential-of-up-to-25-in-1-year-according-to-analysts/articleshow/132868184.cms",
+      "title": "ET Prime Special Series: Multibagger or IBC - Part 70: Almost nobody tracks this company. That may be why its turnaround was missed",
+      "url": "https://economictimes.indiatimes.com/intelligent-investing/sectoral-deep-dives/et-prime-special-series-multibagger-or-ibc-part-70-almost-nobody-tracks-this-company-that-may-be-why-its-turnaround-was-missed/articleshow/132935048.cms",
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-08-05T04:29:30.069Z",
-      "summary": "These 7 banking stocks have an upside potential of up to 25% in 1 year, according to analysts",
+      "scrapedAt": "2026-08-06T04:31:35.256Z",
+      "summary": "ET Prime Special Series: Multibagger or IBC - Part 70: Almost nobody tracks this company. That may be why its turnaround was missed",
       "isGlobal": true
     },
     {
-      "title": "For those with an investment horizon of over 1 year: 5 mid-cap stocks from different sectors with upside potential up to 30%",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/news/for-those-with-an-investment-horizon-of-over-1-year-5-mid-cap-stocks-from-different-sectors-with-upside-potential-up-to-30/articleshow/132852998.cms",
+      "title": "Small-cap stocks: Quantitative and qualitative – or nothing: 5 small-caps from different sectors with upside potential of up to 31%",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/small-cap-stocks-quantitative-and-qualitative-or-nothing-5-small-caps-from-different-sectors-with-upside-potential-of-up-to-31/articleshow/132883398.cms",
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-08-05T04:29:30.069Z",
-      "summary": "For those with an investment horizon of over 1 year: 5 mid-cap stocks from different sectors with upside potential up to 30%",
+      "scrapedAt": "2026-08-06T04:31:35.256Z",
+      "summary": "Small-cap stocks: Quantitative and qualitative – or nothing: 5 small-caps from different sectors with upside potential of up to 31%",
       "isGlobal": true
     }
   ]
