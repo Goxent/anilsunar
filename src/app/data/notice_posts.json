@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-08-07T04:04:53.469Z",
-  "totalPosts": 49,
+  "lastUpdated": "2026-08-10T03:20:24.735Z",
+  "totalPosts": 50,
   "posts": {
     "ocrnepal_moqq27ad": {
       "headline": "OCR Nepal: वार्षिक विवरण अभिलेखनका पत्रहरू स्वचालित रूपमा प्राप्त ",
@@ -981,6 +981,26 @@
       "badgeColor": "#e53935",
       "link": "https://ird.gov.np/content/13600/right-to-information---rti-2082-083--/",
       "createdAt": "2026-08-05T04:30:03.490Z"
+    },
+    "irdnepal_msmnye85": {
+      "headline": "IRD Nepal: सूचनाको हक (श्रावण -असोज २०८२) २२ मंसिर, २०८२",
+      "body": "💰 Tax update from Inland Revenue Department!\n\n📌 सूचनाको हक (श्रावण -असोज २०८२) २२ मंसिर, २०८२\n\nThis update from IRD Nepal may affect taxation compliance requirements for Nepal professionals.\n\n✅ Review the full notice and consult your advisor.\n\n🔗 https://ird.gov.np/content/13346/right-to-information--shravan-azoj-2082-/",
+      "callToAction": "Share this with your team if relevant.",
+      "hashtags": [
+        "#Nepal",
+        "#Compliance",
+        "#CA",
+        "#IRDNepal"
+      ],
+      "bestTimeToPost": "Morning",
+      "topicBadge": "Taxation",
+      "isTemplate": true,
+      "noticeId": "irdnepal_msmnye85",
+      "noticeTitle": "सूचनाको हक (श्रावण -असोज २०८२) २२ मंसिर, २०८२",
+      "source": "IRD Nepal",
+      "badgeColor": "#e53935",
+      "link": "https://ird.gov.np/content/13346/right-to-information--shravan-azoj-2082-/",
+      "createdAt": "2026-08-10T03:20:24.735Z"
     }
   }
 }
