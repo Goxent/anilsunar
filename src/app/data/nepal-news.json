@@ -1,5 +1,5 @@
 {
-  "scrapedAt": "2026-08-10T03:19:53.547Z",
+  "scrapedAt": "2026-08-11T03:12:14.293Z",
   "totalCount": 24,
   "nepalCount": 16,
   "globalCount": 8,
@@ -21,28 +21,8 @@
       "source": "Karobar Daily",
       "badge": "KD",
       "category": "Nepal Business",
-      "scrapedAt": "2026-08-10T03:19:36.880Z",
+      "scrapedAt": "2026-08-11T03:11:57.164Z",
       "summary": "ग्यासको कालोबजारी रोक्न अनुगमन तीव्र",
-      "isGlobal": false
-    },
-    {
-      "title": "सांग्रिला डेभलपमेन्ट बैंकका ग्राहक र कर्मचारीलाई ट्रांक्यूलिटि स्पामा छुट",
-      "url": "https://www.karobardaily.com/news/403856",
-      "source": "Karobar Daily",
-      "badge": "KD",
-      "category": "Nepal Business",
-      "scrapedAt": "2026-08-10T03:19:36.880Z",
-      "summary": "सांग्रिला डेभलपमेन्ट बैंकका ग्राहक र कर्मचारीलाई ट्रांक्यूलिटि स्पामा छुट",
-      "isGlobal": false
-    },
-    {
-      "title": "मानव सेवा आश्रमको महायज्ञबाट साढे १ करोड उठ्न बाँकी",
-      "url": "https://www.karobardaily.com/news/403796",
-      "source": "Karobar Daily",
-      "badge": "KD",
-      "category": "Nepal Business",
-      "scrapedAt": "2026-08-10T03:19:36.880Z",
-      "summary": "मानव सेवा आश्रमको महायज्ञबाट साढे १ करोड उठ्न बाँकी",
       "isGlobal": false
     },
     {
@@ -51,7 +31,7 @@
       "source": "Karobar Daily",
       "badge": "KD",
       "category": "Nepal Business",
-      "scrapedAt": "2026-08-10T03:19:36.880Z",
+      "scrapedAt": "2026-08-11T03:11:57.164Z",
       "summary": "६० अर्बको एकमहिने निक्षेप संकलन गर्दै राष्ट्र बैंक",
       "isGlobal": false
     },
@@ -61,7 +41,7 @@
       "source": "Karobar Daily",
       "badge": "KD",
       "category": "Nepal Business",
-      "scrapedAt": "2026-08-10T03:19:36.880Z",
+      "scrapedAt": "2026-08-11T03:11:57.164Z",
       "summary": "‘डिजिटल’ बन्दै खुला बजार कारोबार",
       "isGlobal": false
     },
@@ -71,7 +51,7 @@
       "source": "Karobar Daily",
       "badge": "KD",
       "category": "Nepal Business",
-      "scrapedAt": "2026-08-10T03:19:36.880Z",
+      "scrapedAt": "2026-08-11T03:11:57.164Z",
       "summary": "८५ अर्बको तीनमहिने निक्षेप संकलन गर्दै राष्ट्र बैंक",
       "isGlobal": false
     },
@@ -81,7 +61,7 @@
       "source": "Karobar Daily",
       "badge": "KD",
       "category": "Nepal Business",
-      "scrapedAt": "2026-08-10T03:19:36.880Z",
+      "scrapedAt": "2026-08-11T03:11:57.164Z",
       "summary": "२५ अर्ब निक्षेप संकलन गर्दै राष्ट्र बैंक",
       "isGlobal": false
     },
@@ -91,8 +71,28 @@
       "source": "Karobar Daily",
       "badge": "KD",
       "category": "Nepal Business",
-      "scrapedAt": "2026-08-10T03:19:36.881Z",
+      "scrapedAt": "2026-08-11T03:11:57.164Z",
       "summary": "११ महिनादेखि प्राधिकरण अध्यक्षविहीनः बीमा क्षेत्रको नियमन लथालिंग",
+      "isGlobal": false
+    },
+    {
+      "title": "जीवन बीमा कम्पनीको व्यापार १२.६२ प्रतिशतले बढ्यो",
+      "url": "https://www.karobardaily.com/news/388612",
+      "source": "Karobar Daily",
+      "badge": "KD",
+      "category": "Nepal Business",
+      "scrapedAt": "2026-08-11T03:11:57.164Z",
+      "summary": "जीवन बीमा कम्पनीको व्यापार १२.६२ प्रतिशतले बढ्यो",
+      "isGlobal": false
+    },
+    {
+      "title": "सांग्रिला डेभलपमेन्ट बैंकका ग्राहक र कर्मचारीलाई ट्रांक्यूलिटि स्पामा छुट",
+      "url": "https://www.karobardaily.com/news/403856",
+      "source": "Karobar Daily",
+      "badge": "KD",
+      "category": "Nepal Business",
+      "scrapedAt": "2026-08-11T03:11:57.164Z",
+      "summary": "सांग्रिला डेभलपमेन्ट बैंकका ग्राहक र कर्मचारीलाई ट्रांक्यूलिटि स्पामा छुट",
       "isGlobal": false
     },
     {
@@ -101,7 +101,7 @@
       "source": "Sharesansar",
       "badge": "SS",
       "category": "Nepal Stock",
-      "scrapedAt": "2026-08-10T03:19:38.657Z",
+      "scrapedAt": "2026-08-11T03:11:59.286Z",
       "summary": "Nepals Stock Market at a Historic Turning Point: Can Short Selling End the One-Way Market?",
       "isGlobal": false
     },
@@ -111,7 +111,7 @@
       "source": "Sharesansar",
       "badge": "SS",
       "category": "Nepal Stock",
-      "scrapedAt": "2026-08-10T03:19:38.657Z",
+      "scrapedAt": "2026-08-11T03:11:59.286Z",
       "summary": "Proposed Dividend",
       "isGlobal": false
     },
@@ -121,7 +121,7 @@
       "source": "Sharesansar",
       "badge": "SS",
       "category": "Nepal Stock",
-      "scrapedAt": "2026-08-10T03:19:38.657Z",
+      "scrapedAt": "2026-08-11T03:11:59.286Z",
       "summary": "Dividend, Bonus & Rights",
       "isGlobal": false
     },
@@ -131,7 +131,7 @@
       "source": "Sharesansar",
       "badge": "SS",
       "category": "Nepal Stock",
-      "scrapedAt": "2026-08-10T03:19:38.657Z",
+      "scrapedAt": "2026-08-11T03:11:59.286Z",
       "summary": "Know the Stocks Near 52-Week High and Low: Key Stock to Watch",
       "isGlobal": false
     },
@@ -141,7 +141,7 @@
       "source": "Sharesansar",
       "badge": "SS",
       "category": "Nepal Stock",
-      "scrapedAt": "2026-08-10T03:19:38.657Z",
+      "scrapedAt": "2026-08-11T03:11:59.286Z",
       "summary": "NEPSE Concludes The Week With 1.32% Loss and Turnover of Rs. 21.44 Arba; Weekly Summary with Sector Comparison, Major Highlights, and More",
       "isGlobal": false
     },
@@ -151,7 +151,7 @@
       "source": "Nepali Paisa",
       "badge": "NP",
       "category": "Nepal Finance",
-      "scrapedAt": "2026-08-10T03:19:41.910Z",
+      "scrapedAt": "2026-08-11T03:12:01.226Z",
       "summary": "Market Overview",
       "isGlobal": false
     },
@@ -161,7 +161,7 @@
       "source": "Nepali Paisa",
       "badge": "NP",
       "category": "Nepal Finance",
-      "scrapedAt": "2026-08-10T03:19:41.910Z",
+      "scrapedAt": "2026-08-11T03:12:01.226Z",
       "summary": "Stocks Up & Down",
       "isGlobal": false
     },
@@ -171,7 +171,7 @@
       "source": "Nepali Paisa",
       "badge": "NP",
       "category": "Nepal Finance",
-      "scrapedAt": "2026-08-10T03:19:41.910Z",
+      "scrapedAt": "2026-08-11T03:12:01.226Z",
       "summary": "Business & Economy",
       "isGlobal": false
     }
@@ -183,78 +183,78 @@
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-08-10T03:19:52.045Z",
+      "scrapedAt": "2026-08-11T03:12:12.790Z",
       "summary": "Markets just got Conversational",
       "isGlobal": true
     },
     {
-      "title": "Positive Breakout: These 10 stocks cross above their 200 DMAs",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/news/positive-breakout-these-10-stocks-cross-above-their-200-dmas/slideshow/133077553.cms",
+      "title": "Stocks to buy in 2026 for long term: Indian Metal & Ferro Alloys, SBI among 5 stocks that could give 10-30% return",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/stocks-to-buy-in-2026-for-long-term-indian-metal-amp-ferro-alloys-sbi-among-5-stocks-that-could-give-10-30-return/slideshow/133140812.cms",
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-08-10T03:19:52.046Z",
-      "summary": "Positive Breakout: These 10 stocks cross above their 200 DMAs",
+      "scrapedAt": "2026-08-11T03:12:12.791Z",
+      "summary": "Stocks to buy in 2026 for long term: Indian Metal & Ferro Alloys, SBI among 5 stocks that could give 10-30% return",
       "isGlobal": true
     },
     {
-      "title": "Market Trading Guide: Jindal Saw among 2 stock recommendations for Monday",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/news/market-trading-guide-jindal-saw-among-2-stock-recommendations-for-monday/slideshow/133065621.cms",
+      "title": "Positive Breakout: These 9 stocks cross above their 200 DMAs",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/positive-breakout-these-9-stocks-cross-above-their-200-dmas/slideshow/133140624.cms",
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-08-10T03:19:52.046Z",
-      "summary": "Market Trading Guide: Jindal Saw among 2 stock recommendations for Monday",
+      "scrapedAt": "2026-08-11T03:12:12.791Z",
+      "summary": "Positive Breakout: These 9 stocks cross above their 200 DMAs",
       "isGlobal": true
     },
     {
-      "title": "9 Nifty 500 stocks with up to 50% upside potential: Do you own any?",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/news/9-nifty-500-stocks-with-up-to-50-upside-potential-do-you-own-any/slideshow/133064784.cms",
+      "title": "Paytm among 6 stocks hitting 52-week highs; surge up to 27% in a month",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/paytm-among-6-stocks-hitting-52-week-highs-surge-up-to-27-in-a-month/slideshow/133106021.cms",
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-08-10T03:19:52.046Z",
-      "summary": "9 Nifty 500 stocks with up to 50% upside potential: Do you own any?",
+      "scrapedAt": "2026-08-11T03:12:12.791Z",
+      "summary": "Paytm among 6 stocks hitting 52-week highs; surge up to 27% in a month",
       "isGlobal": true
     },
     {
-      "title": "GMPs indicate 15 IPOs opening or listing this week could offer investors up to 37% returns",
-      "url": "https://economictimes.indiatimes.com/markets/ipos/fpos/gmps-indicate-15-ipos-opening-or-listing-this-week-could-offer-investors-up-to-37-returns/slideshow/133064592.cms",
+      "title": "​FIIs more than doubled their stake in these 11 multibagger stocks. Do you own any?",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/fiis-more-than-doubled-their-stakes-in-11-multibaggers-in-june-quarter-do-you-own-any/slideshow/133096409.cms",
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-08-10T03:19:52.046Z",
-      "summary": "GMPs indicate 15 IPOs opening or listing this week could offer investors up to 37% returns",
+      "scrapedAt": "2026-08-11T03:12:12.791Z",
+      "summary": "​FIIs more than doubled their stake in these 11 multibagger stocks. Do you own any?",
       "isGlobal": true
     },
     {
-      "title": "14 penny stocks plunge up to 85% in 6 months. Are you holding any?",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/news/14-penny-stocks-plunge-up-to-85-in-6-months-are-you-holding-any/slideshow/133064275.cms",
+      "title": "5 key market themes to watch this week",
+      "url": "https://economictimes.indiatimes.com/markets/us-stocks/news/5-key-market-themes-to-watch-this-week/slideshow/133091907.cms",
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-08-10T03:19:52.046Z",
-      "summary": "14 penny stocks plunge up to 85% in 6 months. Are you holding any?",
+      "scrapedAt": "2026-08-11T03:12:12.791Z",
+      "summary": "5 key market themes to watch this week",
       "isGlobal": true
     },
     {
-      "title": "Picking the right pharma stock is getting harder; so pick a portfolio: 20 stocks with -23% to +22% downside to upside potential",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/news/picking-the-right-pharma-stock-is-getting-harder-so-pick-a-portfolio-20-stocks-with-23-to-22-downside-to-upside-potential/articleshow/133073192.cms",
+      "title": "Weekly Top Picks: These stocks scored 10 on 10 on Stock Reports Plus",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/weekly-top-picks-these-stocks-scored-10-on-10-on-stock-reports-plus/articleshow/133109357.cms",
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-08-10T03:19:52.046Z",
-      "summary": "Picking the right pharma stock is getting harder; so pick a portfolio: 20 stocks with -23% to +22% downside to upside potential",
+      "scrapedAt": "2026-08-11T03:12:12.791Z",
+      "summary": "Weekly Top Picks: These stocks scored 10 on 10 on Stock Reports Plus",
       "isGlobal": true
     },
     {
-      "title": "Defence stocks: Time to change strategy? 18 stocks with downside and upside potential from minus 26% to plus 26%",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/news/defence-stocks-time-to-change-strategy-18-stocks-with-downside-and-upside-potential-from-minus-26-to-plus-26/articleshow/133064859.cms",
+      "title": "Stock picks of the week: 5 stocks with consistent score improvement and upside potential of upto 30%",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/stock-picks-of-the-week-5-stocks-with-consistent-score-improvement-and-upside-potential-of-upto-30/articleshow/133091415.cms",
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-08-10T03:19:52.046Z",
-      "summary": "Defence stocks: Time to change strategy? 18 stocks with downside and upside potential from minus 26% to plus 26%",
+      "scrapedAt": "2026-08-11T03:12:12.791Z",
+      "summary": "Stock picks of the week: 5 stocks with consistent score improvement and upside potential of upto 30%",
       "isGlobal": true
     }
   ]
