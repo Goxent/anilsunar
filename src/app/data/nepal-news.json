@@ -1,7 +1,7 @@
 {
-  "scrapedAt": "2026-08-12T03:30:54.787Z",
-  "totalCount": 16,
-  "nepalCount": 8,
+  "scrapedAt": "2026-08-13T03:33:54.470Z",
+  "totalCount": 23,
+  "nepalCount": 15,
   "globalCount": 8,
   "sources": [
     "Onlinekhabar Finance",
@@ -16,13 +16,83 @@
   ],
   "articles": [
     {
-      "title": "Nepals Stock Market at a Historic Turning Point: Can Short Selling End the One-Way Market?",
-      "url": "https://www.sharesansar.com/newsdetail/nepals-stock-market-at-a-historic-turning-point-can-short-selling-end-the-one-way-market-2026-08-02",
-      "source": "Sharesansar",
-      "badge": "SS",
-      "category": "Nepal Stock",
-      "scrapedAt": "2026-08-12T03:30:40.342Z",
-      "summary": "Nepals Stock Market at a Historic Turning Point: Can Short Selling End the One-Way Market?",
+      "title": "पुँजी बजारलाई १० वर्षमा आर्थिक विकासको मुख्य आधार बनाउने लक्ष्य",
+      "url": "https://www.karobardaily.com/news/404987",
+      "source": "Karobar Daily",
+      "badge": "KD",
+      "category": "Nepal Business",
+      "scrapedAt": "2026-08-13T03:33:37.178Z",
+      "summary": "पुँजी बजारलाई १० वर्षमा आर्थिक विकासको मुख्य आधार बनाउने लक्ष्य",
+      "isGlobal": false
+    },
+    {
+      "title": "समानीकरण अनुदान घट्दै, सशर्त अनुदान बढ्दै गयो: वित्त आयोग",
+      "url": "https://www.karobardaily.com/news/404862",
+      "source": "Karobar Daily",
+      "badge": "KD",
+      "category": "Nepal Business",
+      "scrapedAt": "2026-08-13T03:33:37.178Z",
+      "summary": "समानीकरण अनुदान घट्दै, सशर्त अनुदान बढ्दै गयो: वित्त आयोग",
+      "isGlobal": false
+    },
+    {
+      "title": "कालोबजारी गर्ने पेट्रोलपम्प र ग्यास डिलरको इजाजत खारेज गर्न निर्देशन",
+      "url": "https://www.karobardaily.com/news/404937",
+      "source": "Karobar Daily",
+      "badge": "KD",
+      "category": "Nepal Business",
+      "scrapedAt": "2026-08-13T03:33:37.178Z",
+      "summary": "कालोबजारी गर्ने पेट्रोलपम्प र ग्यास डिलरको इजाजत खारेज गर्न निर्देशन",
+      "isGlobal": false
+    },
+    {
+      "title": "उपभोक्ता ग्यास अभाव र कालोबजारी भोग्न बाध्य",
+      "url": "https://www.karobardaily.com/news/404918",
+      "source": "Karobar Daily",
+      "badge": "KD",
+      "category": "Nepal Business",
+      "scrapedAt": "2026-08-13T03:33:37.178Z",
+      "summary": "उपभोक्ता ग्यास अभाव र कालोबजारी भोग्न बाध्य",
+      "isGlobal": false
+    },
+    {
+      "title": "बजारलाई कानुनी दायरामा ल्याऊ",
+      "url": "https://www.karobardaily.com/news/404911",
+      "source": "Karobar Daily",
+      "badge": "KD",
+      "category": "Nepal Business",
+      "scrapedAt": "2026-08-13T03:33:37.178Z",
+      "summary": "बजारलाई कानुनी दायरामा ल्याऊ",
+      "isGlobal": false
+    },
+    {
+      "title": "हायर पर्चेज कम्पनीको नवीकरणमा लचकता",
+      "url": "https://www.karobardaily.com/news/404808",
+      "source": "Karobar Daily",
+      "badge": "KD",
+      "category": "Nepal Business",
+      "scrapedAt": "2026-08-13T03:33:37.178Z",
+      "summary": "हायर पर्चेज कम्पनीको नवीकरणमा लचकता",
+      "isGlobal": false
+    },
+    {
+      "title": "६० अर्बको एकमहिने निक्षेप संकलन गर्दै राष्ट्र बैंक",
+      "url": "https://www.karobardaily.com/news/403399",
+      "source": "Karobar Daily",
+      "badge": "KD",
+      "category": "Nepal Business",
+      "scrapedAt": "2026-08-13T03:33:37.178Z",
+      "summary": "६० अर्बको एकमहिने निक्षेप संकलन गर्दै राष्ट्र बैंक",
+      "isGlobal": false
+    },
+    {
+      "title": "‘डिजिटल’ बन्दै खुला बजार कारोबार",
+      "url": "https://www.karobardaily.com/news/402903",
+      "source": "Karobar Daily",
+      "badge": "KD",
+      "category": "Nepal Business",
+      "scrapedAt": "2026-08-13T03:33:37.178Z",
+      "summary": "‘डिजिटल’ बन्दै खुला बजार कारोबार",
       "isGlobal": false
     },
     {
@@ -31,17 +101,17 @@
       "source": "Sharesansar",
       "badge": "SS",
       "category": "Nepal Stock",
-      "scrapedAt": "2026-08-12T03:30:40.342Z",
+      "scrapedAt": "2026-08-13T03:33:38.858Z",
       "summary": "Proposed Dividend",
       "isGlobal": false
     },
     {
       "title": "Dividend, Bonus & Rights",
-      "url": "https://www.sharesansar.com/newsdetail/kamana-sewa-bikas-bank-proposes-first-dividend-of-fy-208283-announces-15-cash-dividend-2026-08-07",
+      "url": "https://www.sharesansar.com/newsdetail/nic-asia-capital-declares-50-cash-dividend-for-financial-year-208283-calls-agm-on-bhadra-26-2026-08-12",
       "source": "Sharesansar",
       "badge": "SS",
       "category": "Nepal Stock",
-      "scrapedAt": "2026-08-12T03:30:40.342Z",
+      "scrapedAt": "2026-08-13T03:33:38.858Z",
       "summary": "Dividend, Bonus & Rights",
       "isGlobal": false
     },
@@ -51,7 +121,7 @@
       "source": "Sharesansar",
       "badge": "SS",
       "category": "Nepal Stock",
-      "scrapedAt": "2026-08-12T03:30:40.342Z",
+      "scrapedAt": "2026-08-13T03:33:38.858Z",
       "summary": "Know the Stocks Near 52-Week High and Low: Key Stock to Watch",
       "isGlobal": false
     },
@@ -61,7 +131,7 @@
       "source": "Sharesansar",
       "badge": "SS",
       "category": "Nepal Stock",
-      "scrapedAt": "2026-08-12T03:30:40.342Z",
+      "scrapedAt": "2026-08-13T03:33:38.858Z",
       "summary": "NEPSE Concludes The Week With 1.32% Loss and Turnover of Rs. 21.44 Arba; Weekly Summary with Sector Comparison, Major Highlights, and More",
       "isGlobal": false
     },
@@ -71,7 +141,7 @@
       "source": "Nepali Paisa",
       "badge": "NP",
       "category": "Nepal Finance",
-      "scrapedAt": "2026-08-12T03:30:42.485Z",
+      "scrapedAt": "2026-08-13T03:33:42.087Z",
       "summary": "Market Overview",
       "isGlobal": false
     },
@@ -81,7 +151,7 @@
       "source": "Nepali Paisa",
       "badge": "NP",
       "category": "Nepal Finance",
-      "scrapedAt": "2026-08-12T03:30:42.485Z",
+      "scrapedAt": "2026-08-13T03:33:42.087Z",
       "summary": "Stocks Up & Down",
       "isGlobal": false
     },
@@ -91,7 +161,7 @@
       "source": "Nepali Paisa",
       "badge": "NP",
       "category": "Nepal Finance",
-      "scrapedAt": "2026-08-12T03:30:42.485Z",
+      "scrapedAt": "2026-08-13T03:33:42.087Z",
       "summary": "Business & Economy",
       "isGlobal": false
     }
@@ -103,78 +173,78 @@
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-08-12T03:30:53.285Z",
+      "scrapedAt": "2026-08-13T03:33:52.968Z",
       "summary": "Markets just got Conversational",
       "isGlobal": true
     },
     {
-      "title": "Stocks to buy in 2026 for long term: Gland Pharma, Star Cement among 5 stocks that could give 10-30% return",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/news/stocks-to-buy-in-2026-for-long-term-gland-pharma-star-cement-among-5-stocks-that-could-give-10-30-return/slideshow/133168232.cms",
+      "title": "Nalco among 5 stocks flashing bullish signals, hinting at a possible uptrend",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/nalco-among-5-stocks-flashing-bullish-signals-hinting-at-a-possible-uptrend/slideshow/133196791.cms",
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-08-12T03:30:53.285Z",
-      "summary": "Stocks to buy in 2026 for long term: Gland Pharma, Star Cement among 5 stocks that could give 10-30% return",
+      "scrapedAt": "2026-08-13T03:33:52.968Z",
+      "summary": "Nalco among 5 stocks flashing bullish signals, hinting at a possible uptrend",
       "isGlobal": true
     },
     {
-      "title": "Titan Company among 4 stocks to hit 52-week highs and surge up to 25% in a month",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/news/titan-company-among-4-stocks-to-hit-52-week-highs-and-surge-up-to-25-in-a-month/slideshow/133154265.cms",
+      "title": "Bharat Heavy Electricals among 5 stocks showing bullish RSI upswing",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/bharat-heavy-electricals-among-5-stocks-showing-bullish-rsi-upswing/slideshow/133196739.cms",
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-08-12T03:30:53.285Z",
-      "summary": "Titan Company among 4 stocks to hit 52-week highs and surge up to 25% in a month",
+      "scrapedAt": "2026-08-13T03:33:52.968Z",
+      "summary": "Bharat Heavy Electricals among 5 stocks showing bullish RSI upswing",
       "isGlobal": true
     },
     {
-      "title": "Axis Direct highlights 3 stocks showing bullish momentum for August. Do you own any?",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/news/axis-direct-highlights-3-stocks-showing-bullish-momentum-for-august-do-you-own-any/slideshow/133149615.cms",
+      "title": "Stocks to buy in 2026 for long term: Siemens, Zydus Lifesciences among 5 stocks that could give 10-20% return",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/stocks-to-buy-in-2026-for-long-term-siemens-zydus-lifesciences-among-5-stocks-that-could-give-10-20-return/slideshow/133196131.cms",
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-08-12T03:30:53.285Z",
-      "summary": "Axis Direct highlights 3 stocks showing bullish momentum for August. Do you own any?",
+      "scrapedAt": "2026-08-13T03:33:52.968Z",
+      "summary": "Stocks to buy in 2026 for long term: Siemens, Zydus Lifesciences among 5 stocks that could give 10-20% return",
       "isGlobal": true
     },
     {
-      "title": "MFs pull back: Stakes cut in 12 smallcap stocks after two quarters of buying; stocks fall up to 40%",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/news/mfs-pull-back-stakes-cut-in-12-smallcap-stocks-after-two-quarters-of-buying-stocks-fall-up-to-40/slideshow/133149530.cms",
+      "title": "Positive Breakout: These 9 stocks cross above their 200 DMAs",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/positive-breakout-these-9-stocks-cross-above-their-200-dmas/slideshow/133195924.cms",
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-08-12T03:30:53.285Z",
-      "summary": "MFs pull back: Stakes cut in 12 smallcap stocks after two quarters of buying; stocks fall up to 40%",
+      "scrapedAt": "2026-08-13T03:33:52.968Z",
+      "summary": "Positive Breakout: These 9 stocks cross above their 200 DMAs",
       "isGlobal": true
     },
     {
-      "title": "Intel’s $15 billion stock sale. Why shares fell despite AI boom",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/news/intels-15-billion-stock-sale-why-shares-fell-despite-ai-boom/slideshow/133148896.cms",
+      "title": "Market Trading Guide: 4 stock picks with strong technical setups for this week",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/market-trading-guide-4-stock-picks-with-strong-technical-setups-for-this-week/slideshow/133174984.cms",
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-08-12T03:30:53.285Z",
-      "summary": "Intel’s $15 billion stock sale. Why shares fell despite AI boom",
+      "scrapedAt": "2026-08-13T03:33:52.968Z",
+      "summary": "Market Trading Guide: 4 stock picks with strong technical setups for this week",
       "isGlobal": true
     },
     {
-      "title": "These 6 banking stocks have an upside potential of up to 25% in 1 year, according to analysts",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/news/these-6-banking-stocks-have-an-upside-potential-of-up-to-25-in-1-year-according-to-analysts/articleshow/133167382.cms",
+      "title": "These mid-cap stocks with ‘Strong Buy’ & ‘Buy’ recos can rally over 25%, according to analysts",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/these-mid-cap-stocks-with-strong-buy-buy-recos-can-rally-over-25-according-to-analysts/articleshow/133191222.cms",
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-08-12T03:30:53.286Z",
-      "summary": "These 6 banking stocks have an upside potential of up to 25% in 1 year, according to analysts",
+      "scrapedAt": "2026-08-13T03:33:52.969Z",
+      "summary": "These mid-cap stocks with ‘Strong Buy’ & ‘Buy’ recos can rally over 25%, according to analysts",
       "isGlobal": true
     },
     {
-      "title": "Mid-cap stocks: Time for a change of stance? 6 mid-caps from different sectors with an upside potential up to 29%",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/news/mid-cap-stocks-time-for-a-change-of-stance-6-mid-caps-from-different-sectors-with-an-upside-potential-up-to-29/articleshow/133150446.cms",
+      "title": "Business is one thing. Stock price is another. 4 small-caps from different sectors with upside potential of up to 33%",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/business-is-one-thing-stock-price-is-another-4-small-caps-from-different-sectors-with-upside-potential-of-up-to-33/articleshow/133175906.cms",
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-08-12T03:30:53.286Z",
-      "summary": "Mid-cap stocks: Time for a change of stance? 6 mid-caps from different sectors with an upside potential up to 29%",
+      "scrapedAt": "2026-08-13T03:33:52.969Z",
+      "summary": "Business is one thing. Stock price is another. 4 small-caps from different sectors with upside potential of up to 33%",
       "isGlobal": true
     }
   ]
