@@ -1,8 +1,21 @@
 {
-  "lastUpdated": "2026-08-13T03:34:24.367Z",
-  "totalCount": 98,
-  "newCount": 0,
+  "lastUpdated": "2026-08-14T03:31:08.645Z",
+  "totalCount": 99,
+  "newCount": 1,
   "notices": [
+    {
+      "id": "irdnepal_msse3k5c",
+      "title": "मसलन्द तथा कार्यालय सामान खरिद सम्बन्धी बोलपत्र आव्हानको सूचना २८ साउन, २०८३",
+      "source": "IRD Nepal",
+      "category": "Taxation",
+      "badge": "IRD",
+      "badgeColor": "#e53935",
+      "link": "https://ird.gov.np/content/13616/notice-of-invitation-to-tender-for-procurement/",
+      "summary": "New Taxation update from IRD Nepal: मसलन्द तथा कार्यालय सामान खरिद सम्बन्धी बोलपत्र आव्हानको सूचना २८ साउन, २०८३",
+      "detectedAt": "2026-08-14T03:30:49.152Z",
+      "isNew": true,
+      "emailedAt": null
+    },
     {
       "id": "irdnepal_msmnye85",
       "title": "सूचनाको हक (श्रावण -असोज २०८२) २२ मंसिर, २०८२",

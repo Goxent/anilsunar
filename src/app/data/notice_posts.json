@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-08-13T03:34:25.258Z",
-  "totalPosts": 50,
+  "lastUpdated": "2026-08-14T03:31:08.896Z",
+  "totalPosts": 51,
   "posts": {
     "ocrnepal_moqq27ad": {
       "headline": "OCR Nepal: वार्षिक विवरण अभिलेखनका पत्रहरू स्वचालित रूपमा प्राप्त ",
@@ -1001,6 +1001,26 @@
       "badgeColor": "#e53935",
       "link": "https://ird.gov.np/content/13346/right-to-information--shravan-azoj-2082-/",
       "createdAt": "2026-08-10T03:20:24.735Z"
+    },
+    "irdnepal_msse3k5c": {
+      "headline": "IRD Nepal: मसलन्द तथा कार्यालय सामान खरिद सम्बन्धी बोलपत्र आव्हानक",
+      "body": "💰 Tax update from Inland Revenue Department!\n\n📌 मसलन्द तथा कार्यालय सामान खरिद सम्बन्धी बोलपत्र आव्हानको सूचना २८ साउन, २०८३\n\nThis update from IRD Nepal may affect taxation compliance requirements for Nepal professionals.\n\n✅ Review the full notice and consult your advisor.\n\n🔗 https://ird.gov.np/content/13616/notice-of-invitation-to-tender-for-procurement/",
+      "callToAction": "Share this with your team if relevant.",
+      "hashtags": [
+        "#Nepal",
+        "#Compliance",
+        "#CA",
+        "#IRDNepal"
+      ],
+      "bestTimeToPost": "Morning",
+      "topicBadge": "Taxation",
+      "isTemplate": true,
+      "noticeId": "irdnepal_msse3k5c",
+      "noticeTitle": "मसलन्द तथा कार्यालय सामान खरिद सम्बन्धी बोलपत्र आव्हानको सूचना २८ साउन, २०८३",
+      "source": "IRD Nepal",
+      "badgeColor": "#e53935",
+      "link": "https://ird.gov.np/content/13616/notice-of-invitation-to-tender-for-procurement/",
+      "createdAt": "2026-08-14T03:31:08.896Z"
     }
   }
 }
