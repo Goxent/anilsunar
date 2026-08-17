@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-08-14T03:31:08.896Z",
-  "totalPosts": 51,
+  "lastUpdated": "2026-08-17T02:35:22.192Z",
+  "totalPosts": 52,
   "posts": {
     "ocrnepal_moqq27ad": {
       "headline": "OCR Nepal: वार्षिक विवरण अभिलेखनका पत्रहरू स्वचालित रूपमा प्राप्त ",
@@ -1021,6 +1021,26 @@
       "badgeColor": "#e53935",
       "link": "https://ird.gov.np/content/13616/notice-of-invitation-to-tender-for-procurement/",
       "createdAt": "2026-08-14T03:31:08.896Z"
+    },
+    "irdnepal_mswmffqx": {
+      "headline": "IRD Nepal: सरसफाई तथा सुरक्षा सेवा खरिद सम्बन्धी दरभाउपत्र आव्हानक",
+      "body": "💰 Tax update from Inland Revenue Department!\n\n📌 सरसफाई तथा सुरक्षा सेवा खरिद सम्बन्धी दरभाउपत्र आव्हानको सूचना २९ साउन, २०८३\n\nThis update from IRD Nepal may affect taxation compliance requirements for Nepal professionals.\n\n✅ Review the full notice and consult your advisor.\n\n🔗 https://ird.gov.np/content/13617/notice-of-tender-invitation-for-procurement-of/",
+      "callToAction": "Share this with your team if relevant.",
+      "hashtags": [
+        "#Nepal",
+        "#Compliance",
+        "#CA",
+        "#IRDNepal"
+      ],
+      "bestTimeToPost": "Morning",
+      "topicBadge": "Taxation",
+      "isTemplate": true,
+      "noticeId": "irdnepal_mswmffqx",
+      "noticeTitle": "सरसफाई तथा सुरक्षा सेवा खरिद सम्बन्धी दरभाउपत्र आव्हानको सूचना २९ साउन, २०८३",
+      "source": "IRD Nepal",
+      "badgeColor": "#e53935",
+      "link": "https://ird.gov.np/content/13617/notice-of-tender-invitation-for-procurement-of/",
+      "createdAt": "2026-08-17T02:35:22.192Z"
     }
   }
 }

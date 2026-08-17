@@ -1,8 +1,21 @@
 {
-  "lastUpdated": "2026-08-14T03:31:08.645Z",
-  "totalCount": 99,
+  "lastUpdated": "2026-08-17T02:35:20.924Z",
+  "totalCount": 100,
   "newCount": 1,
   "notices": [
+    {
+      "id": "irdnepal_mswmffqx",
+      "title": "सरसफाई तथा सुरक्षा सेवा खरिद सम्बन्धी दरभाउपत्र आव्हानको सूचना २९ साउन, २०८३",
+      "source": "IRD Nepal",
+      "category": "Taxation",
+      "badge": "IRD",
+      "badgeColor": "#e53935",
+      "link": "https://ird.gov.np/content/13617/notice-of-tender-invitation-for-procurement-of/",
+      "summary": "New Taxation update from IRD Nepal: सरसफाई तथा सुरक्षा सेवा खरिद सम्बन्धी दरभाउपत्र आव्हानको सूचना २९ साउन, २०८३",
+      "detectedAt": "2026-08-17T02:35:04.953Z",
+      "isNew": true,
+      "emailedAt": null
+    },
     {
       "id": "irdnepal_msse3k5c",
       "title": "मसलन्द तथा कार्यालय सामान खरिद सम्बन्धी बोलपत्र आव्हानको सूचना २८ साउन, २०८३",
