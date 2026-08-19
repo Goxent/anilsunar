@@ -1,5 +1,5 @@
 {
-  "scrapedAt": "2026-08-18T02:21:41.077Z",
+  "scrapedAt": "2026-08-19T02:32:48.890Z",
   "totalCount": 23,
   "nepalCount": 15,
   "globalCount": 8,
@@ -16,23 +16,13 @@
   ],
   "articles": [
     {
-      "title": "जडित विद्युत उत्पादन क्षमता ४ हजार १२० मेगावाट पुग्यो, वार्षिक नाफा ५ अर्ब ४ करोड",
-      "url": "https://www.karobardaily.com/news/406494",
+      "title": "साउनमा ३ अर्ब ७७ करोड विदेशी लगानी प्रतिबद्धता",
+      "url": "https://www.karobardaily.com/news/406976",
       "source": "Karobar Daily",
       "badge": "KD",
       "category": "Nepal Business",
-      "scrapedAt": "2026-08-18T02:21:24.358Z",
-      "summary": "जडित विद्युत उत्पादन क्षमता ४ हजार १२० मेगावाट पुग्यो, वार्षिक नाफा ५ अर्ब ४ करोड",
-      "isGlobal": false
-    },
-    {
-      "title": "नेप्से २६४१ विन्दुमा, साढे ५ अर्बको सेयर किनबेच",
-      "url": "https://www.karobardaily.com/news/406429",
-      "source": "Karobar Daily",
-      "badge": "KD",
-      "category": "Nepal Business",
-      "scrapedAt": "2026-08-18T02:21:24.358Z",
-      "summary": "नेप्से २६४१ विन्दुमा, साढे ५ अर्बको सेयर किनबेच",
+      "scrapedAt": "2026-08-19T02:32:33.077Z",
+      "summary": "साउनमा ३ अर्ब ७७ करोड विदेशी लगानी प्रतिबद्धता",
       "isGlobal": false
     },
     {
@@ -41,7 +31,7 @@
       "source": "Karobar Daily",
       "badge": "KD",
       "category": "Nepal Business",
-      "scrapedAt": "2026-08-18T02:21:24.358Z",
+      "scrapedAt": "2026-08-19T02:32:33.077Z",
       "summary": "प्रोभिजन रकम घट्दा बढ्यो बैंकहरूको नाफा, निष्क्रिय कर्जामा दबाब बढ्दै",
       "isGlobal": false
     },
@@ -51,7 +41,7 @@
       "source": "Karobar Daily",
       "badge": "KD",
       "category": "Nepal Business",
-      "scrapedAt": "2026-08-18T02:21:24.358Z",
+      "scrapedAt": "2026-08-19T02:32:33.077Z",
       "summary": "बैंकमा पैसा थुप्रिँदा व्यक्तिगत बचतको ब्याजदर झनै घट्यो",
       "isGlobal": false
     },
@@ -61,7 +51,7 @@
       "source": "Karobar Daily",
       "badge": "KD",
       "category": "Nepal Business",
-      "scrapedAt": "2026-08-18T02:21:24.359Z",
+      "scrapedAt": "2026-08-19T02:32:33.077Z",
       "summary": "इन्भेष्टमेण्ट मेगा बैंकको दैनिक कार्य सञ्चालनमा असर पर्दैन : राष्ट्र बैंक",
       "isGlobal": false
     },
@@ -71,7 +61,7 @@
       "source": "Karobar Daily",
       "badge": "KD",
       "category": "Nepal Business",
-      "scrapedAt": "2026-08-18T02:21:24.359Z",
+      "scrapedAt": "2026-08-19T02:32:33.077Z",
       "summary": "विकास बैंकको सुध्रिएको वित्तीय विवरणले बैंकरहरू उत्साहित",
       "isGlobal": false
     },
@@ -81,7 +71,7 @@
       "source": "Karobar Daily",
       "badge": "KD",
       "category": "Nepal Business",
-      "scrapedAt": "2026-08-18T02:21:24.359Z",
+      "scrapedAt": "2026-08-19T02:32:33.077Z",
       "summary": "११ महिनादेखि प्राधिकरण अध्यक्षविहीनः बीमा क्षेत्रको नियमन लथालिंग",
       "isGlobal": false
     },
@@ -91,8 +81,18 @@
       "source": "Karobar Daily",
       "badge": "KD",
       "category": "Nepal Business",
-      "scrapedAt": "2026-08-18T02:21:24.359Z",
+      "scrapedAt": "2026-08-19T02:32:33.077Z",
       "summary": "जीवन बीमा कम्पनीको व्यापार १२.६२ प्रतिशतले बढ्यो",
+      "isGlobal": false
+    },
+    {
+      "title": "जापानी बजारमा हाइलाइफका नेपाली खाद्य उत्पादन",
+      "url": "https://www.karobardaily.com/news/406707",
+      "source": "Karobar Daily",
+      "badge": "KD",
+      "category": "Nepal Business",
+      "scrapedAt": "2026-08-19T02:32:33.077Z",
+      "summary": "जापानी बजारमा हाइलाइफका नेपाली खाद्य उत्पादन",
       "isGlobal": false
     },
     {
@@ -101,17 +101,17 @@
       "source": "Sharesansar",
       "badge": "SS",
       "category": "Nepal Stock",
-      "scrapedAt": "2026-08-18T02:21:26.419Z",
+      "scrapedAt": "2026-08-19T02:32:34.753Z",
       "summary": "Proposed Dividend",
       "isGlobal": false
     },
     {
       "title": "Dividend, Bonus & Rights",
-      "url": "https://www.sharesansar.com/newsdetail/nmb50-proposes-315-nmbhf2-45-and-nsif2-10-cash-dividend-when-is-the-book-closure-2026-08-17",
+      "url": "https://www.sharesansar.com/newsdetail/sigs3-proposes-10-and-sigs2-8-cash-dividend-for-the-fy-208283-2026-08-18",
       "source": "Sharesansar",
       "badge": "SS",
       "category": "Nepal Stock",
-      "scrapedAt": "2026-08-18T02:21:26.419Z",
+      "scrapedAt": "2026-08-19T02:32:34.753Z",
       "summary": "Dividend, Bonus & Rights",
       "isGlobal": false
     },
@@ -121,7 +121,7 @@
       "source": "Sharesansar",
       "badge": "SS",
       "category": "Nepal Stock",
-      "scrapedAt": "2026-08-18T02:21:26.419Z",
+      "scrapedAt": "2026-08-19T02:32:34.753Z",
       "summary": "Eroded Capital, Elevated Prices: Where Is the Real Value Hiding in NEPSE?",
       "isGlobal": false
     },
@@ -131,7 +131,7 @@
       "source": "Sharesansar",
       "badge": "SS",
       "category": "Nepal Stock",
-      "scrapedAt": "2026-08-18T02:21:26.419Z",
+      "scrapedAt": "2026-08-19T02:32:34.753Z",
       "summary": "NEPSE Concludes The Week With 0.24% Loss and Turnover of Rs. 19.31 Arba; Weekly Summary with Sector Comparison, Major Highlights, and More",
       "isGlobal": false
     },
@@ -141,7 +141,7 @@
       "source": "Nepali Paisa",
       "badge": "NP",
       "category": "Nepal Finance",
-      "scrapedAt": "2026-08-18T02:21:28.634Z",
+      "scrapedAt": "2026-08-19T02:32:36.997Z",
       "summary": "Market Overview",
       "isGlobal": false
     },
@@ -151,7 +151,7 @@
       "source": "Nepali Paisa",
       "badge": "NP",
       "category": "Nepal Finance",
-      "scrapedAt": "2026-08-18T02:21:28.634Z",
+      "scrapedAt": "2026-08-19T02:32:36.997Z",
       "summary": "Stocks Up & Down",
       "isGlobal": false
     },
@@ -161,7 +161,7 @@
       "source": "Nepali Paisa",
       "badge": "NP",
       "category": "Nepal Finance",
-      "scrapedAt": "2026-08-18T02:21:28.634Z",
+      "scrapedAt": "2026-08-19T02:32:36.997Z",
       "summary": "Business & Economy",
       "isGlobal": false
     }
@@ -173,78 +173,78 @@
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-08-18T02:21:39.575Z",
+      "scrapedAt": "2026-08-19T02:32:47.387Z",
       "summary": "Markets just got Conversational",
       "isGlobal": true
     },
     {
-      "title": "Positive Breakout: These 7 stocks cross above their 200 DMAs",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/news/positive-breakout-these-7-stocks-cross-above-their-200-dmas/slideshow/133309392.cms",
+      "title": "Negative Breakout: These 13 stocks cross below their 200 DMAs",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/negative-breakout-these-13-stocks-cross-below-their-200-dmas/slideshow/133335353.cms",
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-08-18T02:21:39.576Z",
-      "summary": "Positive Breakout: These 7 stocks cross above their 200 DMAs",
+      "scrapedAt": "2026-08-19T02:32:47.387Z",
+      "summary": "Negative Breakout: These 13 stocks cross below their 200 DMAs",
       "isGlobal": true
     },
     {
-      "title": "KEI Industries among 4 midcap stocks to hit 52-week highs & surge up to 15% in a month",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/news/kei-industries-among-4-midcap-stocks-to-hit-52-week-highs-amp-surge-up-to-15-in-a-month/slideshow/133295787.cms",
+      "title": "Ajanta Pharma among 5 midcap stocks to hit 52-week highs & surge up to 18% in a month",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/ajanta-pharma-among-5-midcap-stocks-to-hit-52-week-highs-amp-surge-up-to-18-in-a-month/slideshow/133321586.cms",
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-08-18T02:21:39.576Z",
-      "summary": "KEI Industries among 4 midcap stocks to hit 52-week highs & surge up to 15% in a month",
+      "scrapedAt": "2026-08-19T02:32:47.387Z",
+      "summary": "Ajanta Pharma among 5 midcap stocks to hit 52-week highs & surge up to 18% in a month",
       "isGlobal": true
     },
     {
-      "title": "FIIs raise stakes in 12 stocks for three straight quarters; shares surge up to 130%, 3 turn multibaggers",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/news/fiis-raise-stakes-in-12-stocks-for-three-straight-quarters-shares-surge-up-to-130-3-turn-multibaggers/slideshow/133291970.cms",
+      "title": "Unique Picks: 10 stocks held by a single MF scheme in July; rally up to 125% in 6 months",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/unique-picks-10-stocks-held-by-a-single-mf-scheme-in-july-rally-up-to-125-in-6-months/slideshow/133316871.cms",
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-08-18T02:21:39.576Z",
-      "summary": "FIIs raise stakes in 12 stocks for three straight quarters; shares surge up to 130%, 3 turn multibaggers",
+      "scrapedAt": "2026-08-19T02:32:47.387Z",
+      "summary": "Unique Picks: 10 stocks held by a single MF scheme in July; rally up to 125% in 6 months",
       "isGlobal": true
     },
     {
-      "title": "Global Markets: 5 big triggers to watch this week",
-      "url": "https://economictimes.indiatimes.com/markets/us-stocks/news/global-markets-5-big-triggers-to-watch-this-week/slideshow/133291128.cms",
+      "title": "Cerebras Stock Outlook: Can CBRS extend its rally?",
+      "url": "https://economictimes.indiatimes.com/markets/us-stocks/news/cerebras-stock-outlook-can-cbrs-extend-its-rally/slideshow/133313722.cms",
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-08-18T02:21:39.576Z",
-      "summary": "Global Markets: 5 big triggers to watch this week",
+      "scrapedAt": "2026-08-19T02:32:47.387Z",
+      "summary": "Cerebras Stock Outlook: Can CBRS extend its rally?",
       "isGlobal": true
     },
     {
-      "title": "Weekly Top Picks: These stocks scored 10 on 10 on Stock Reports Plus",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/news/weekly-top-picks-these-stocks-scored-10-on-10-on-stock-reports-plus/articleshow/133298835.cms",
+      "title": "Microsoft stock under pressure: AI capex math faces investor scrutiny",
+      "url": "https://economictimes.indiatimes.com/markets/us-stocks/news/microsoft-stock-under-pressure-ai-capex-math-faces-investor-scrutiny/slideshow/133312682.cms",
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-08-18T02:21:39.576Z",
-      "summary": "Weekly Top Picks: These stocks scored 10 on 10 on Stock Reports Plus",
+      "scrapedAt": "2026-08-19T02:32:47.387Z",
+      "summary": "Microsoft stock under pressure: AI capex math faces investor scrutiny",
       "isGlobal": true
     },
     {
-      "title": "Stock picks of the week: 5 stocks with consistent score improvement and upside potential of up to 23%",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/news/stock-picks-of-the-week-5-stocks-with-consistent-score-improvement-and-upside-potential-of-up-to-23/articleshow/133296229.cms",
+      "title": "These 7 bank stocks have an upside potential of up to 27% in one year, according to analysts",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/these-7-bank-stocks-have-an-upside-potential-of-up-to-27-in-one-year-according-to-analysts/articleshow/133329016.cms",
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-08-18T02:21:39.576Z",
-      "summary": "Stock picks of the week: 5 stocks with consistent score improvement and upside potential of up to 23%",
+      "scrapedAt": "2026-08-19T02:32:47.387Z",
+      "summary": "These 7 bank stocks have an upside potential of up to 27% in one year, according to analysts",
       "isGlobal": true
     },
     {
-      "title": "Stock Radar: TD Power Systems stock hits fresh record highs in August; time to buy or book profits?",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/news/stock-radar-td-power-systems-stock-hits-fresh-record-highs-in-august-time-to-buy-or-book-profits/articleshow/133293369.cms",
+      "title": "For investors with ability to ignore short-term volatility: 5 mid-cap stocks from different sectors with upside potential up to 19%",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/for-investors-with-ability-to-ignore-short-term-volatility-5-mid-cap-stocks-from-different-sectors-with-upside-potential-up-to-19/articleshow/133317196.cms",
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-08-18T02:21:39.576Z",
-      "summary": "Stock Radar: TD Power Systems stock hits fresh record highs in August; time to buy or book profits?",
+      "scrapedAt": "2026-08-19T02:32:47.387Z",
+      "summary": "For investors with ability to ignore short-term volatility: 5 mid-cap stocks from different sectors with upside potential up to 19%",
       "isGlobal": true
     }
   ]
