@@ -1,8 +1,60 @@
 {
-  "lastUpdated": "2026-08-19T02:33:20.010Z",
-  "totalCount": 100,
-  "newCount": 0,
+  "lastUpdated": "2026-08-20T02:32:05.554Z",
+  "totalCount": 104,
+  "newCount": 4,
   "notices": [
+    {
+      "id": "irdnepal_mt0wmru2",
+      "title": "गैरबासिन्दा व्यक्तिले प्रदान गर्ने विद्युतीय सेवामा मूल्य अभिवृद्धि कर सम्बन्धी कार्यविधि, २०७९” को स्पष्टताको लागि आन्तरिक राजस्व विभागवाट जारी गरिएको सूचना",
+      "source": "IRD Nepal",
+      "category": "Taxation",
+      "badge": "IRD",
+      "badgeColor": "#e53935",
+      "link": "https://ird.gov.np/content/13621/nrntax/",
+      "summary": "New Taxation update from IRD Nepal: गैरबासिन्दा व्यक्तिले प्रदान गर्ने विद्युतीय सेवामा मूल्य अभिवृद्धि कर सम्बन्धी कार्यविधि, २०७९” को स्पष्टताको लागि आन्तरिक राजस्व विभागवाट जारी गरिएको सूचना",
+      "detectedAt": "2026-08-20T02:31:48.074Z",
+      "isNew": true,
+      "emailedAt": null
+    },
+    {
+      "id": "irdnepal_mt0wmru3",
+      "title": "गैरबासिन्दा व्यक्तिले प्रदान गर्ने विद्युतीय सेवामा मूल्य अभिवृद्धि कर सम्बन्धी कार्यविधि, २०७९” को स्पष्टताको लागि आन्तरिक राजस्व विभागवाट जारी गरिएको सूचना ३ भदौ, २०८३",
+      "source": "IRD Nepal",
+      "category": "Taxation",
+      "badge": "IRD",
+      "badgeColor": "#e53935",
+      "link": "https://ird.gov.np/content/13621/nrntax/",
+      "summary": "New Taxation update from IRD Nepal: गैरबासिन्दा व्यक्तिले प्रदान गर्ने विद्युतीय सेवामा मूल्य अभिवृद्धि कर सम्बन्धी कार्यविधि, २०७९” को स्पष्टताको लागि आन्तरिक राजस्व विभागवाट जारी गरिएको सूचना ३ भदौ, २०८३",
+      "detectedAt": "2026-08-20T02:31:48.075Z",
+      "isNew": true,
+      "emailedAt": null
+    },
+    {
+      "id": "sebonnepalsebonjournalvolume_mt0wmxdq",
+      "title": "SEBON Journal Volume XIII Manuscript Submission NoticeNEW",
+      "source": "SEBON Nepal",
+      "category": "Securities Law",
+      "badge": "SEBON",
+      "badgeColor": "#6a1b9a",
+      "link": "https://sebon.gov.np/notices/sebon-journal-volume-xiii-manuscript-submission-notice",
+      "summary": "New Securities Law update from SEBON Nepal: SEBON Journal Volume XIII Manuscript Submission NoticeNEW",
+      "detectedAt": "2026-08-20T02:31:55.262Z",
+      "isNew": true,
+      "emailedAt": null
+    },
+    {
+      "id": "sebonnepalsebonjournalvolume_mt0wmxdq",
+      "title": "SEBON Journal Volume XIII Manuscript Submission Notice",
+      "source": "SEBON Nepal",
+      "category": "Securities Law",
+      "badge": "SEBON",
+      "badgeColor": "#6a1b9a",
+      "link": "https://sebon.gov.np/notices/sebon-journal-volume-xiii-manuscript-submission-notice",
+      "summary": "New Securities Law update from SEBON Nepal: SEBON Journal Volume XIII Manuscript Submission Notice",
+      "detectedAt": "2026-08-20T02:31:55.262Z",
+      "isNew": true,
+      "emailedAt": null
+    },
     {
       "id": "irdnepal_mswmffqx",
       "title": "सरसफाई तथा सुरक्षा सेवा खरिद सम्बन्धी दरभाउपत्र आव्हानको सूचना २९ साउन, २०८३",
