@@ -1,5 +1,5 @@
 {
-  "scrapedAt": "2026-08-20T02:31:34.104Z",
+  "scrapedAt": "2026-08-21T02:37:37.154Z",
   "totalCount": 23,
   "nepalCount": 15,
   "globalCount": 8,
@@ -16,43 +16,33 @@
   ],
   "articles": [
     {
-      "title": "नेपालमा बैंकिङ यात्राः लक्ष्यसँगै उपलब्धि, वृद्धिसँगै समृद्धि",
-      "url": "https://www.karobardaily.com/news/407341",
+      "title": "हलो काटेर मुढो बनाउने हाम्रो अर्थतन्त्र",
+      "url": "https://www.karobardaily.com/news/407797",
       "source": "Karobar Daily",
       "badge": "KD",
       "category": "Nepal Business",
-      "scrapedAt": "2026-08-20T02:31:18.268Z",
-      "summary": "नेपालमा बैंकिङ यात्राः लक्ष्यसँगै उपलब्धि, वृद्धिसँगै समृद्धि",
+      "scrapedAt": "2026-08-21T02:37:19.807Z",
+      "summary": "हलो काटेर मुढो बनाउने हाम्रो अर्थतन्त्र",
       "isGlobal": false
     },
     {
-      "title": "विमानस्थल सुधारका लागि जापानी अनुदान स्वीकृत, विद्यालय कर्मचारीको पारिश्रमिक वृद्धि गर्ने निर्णय",
-      "url": "https://www.karobardaily.com/news/407331",
+      "title": "७ अंकले बढेको सेयर बजारमा ४ अर्ब ४० करोडको कारोबार",
+      "url": "https://www.karobardaily.com/news/407672",
       "source": "Karobar Daily",
       "badge": "KD",
       "category": "Nepal Business",
-      "scrapedAt": "2026-08-20T02:31:18.269Z",
-      "summary": "विमानस्थल सुधारका लागि जापानी अनुदान स्वीकृत, विद्यालय कर्मचारीको पारिश्रमिक वृद्धि गर्ने निर्णय",
+      "scrapedAt": "2026-08-21T02:37:19.807Z",
+      "summary": "७ अंकले बढेको सेयर बजारमा ४ अर्ब ४० करोडको कारोबार",
       "isGlobal": false
     },
     {
-      "title": "कर्णालीमा मन्त्रालय बाँडफाँटसहित सत्ता गठबन्धन दलबीच छ बुँदे सहमति",
-      "url": "https://www.karobardaily.com/news/407311",
+      "title": "वित्तीय अनुशासनमा कर्णाली प्रदेश कमजोर",
+      "url": "https://www.karobardaily.com/news/407601",
       "source": "Karobar Daily",
       "badge": "KD",
       "category": "Nepal Business",
-      "scrapedAt": "2026-08-20T02:31:18.269Z",
-      "summary": "कर्णालीमा मन्त्रालय बाँडफाँटसहित सत्ता गठबन्धन दलबीच छ बुँदे सहमति",
-      "isGlobal": false
-    },
-    {
-      "title": "नेप्से परिसूचकसँगै कारोबार घट्यो",
-      "url": "https://www.karobardaily.com/news/407281",
-      "source": "Karobar Daily",
-      "badge": "KD",
-      "category": "Nepal Business",
-      "scrapedAt": "2026-08-20T02:31:18.269Z",
-      "summary": "नेप्से परिसूचकसँगै कारोबार घट्यो",
+      "scrapedAt": "2026-08-21T02:37:19.807Z",
+      "summary": "वित्तीय अनुशासनमा कर्णाली प्रदेश कमजोर",
       "isGlobal": false
     },
     {
@@ -61,7 +51,7 @@
       "source": "Karobar Daily",
       "badge": "KD",
       "category": "Nepal Business",
-      "scrapedAt": "2026-08-20T02:31:18.269Z",
+      "scrapedAt": "2026-08-21T02:37:19.807Z",
       "summary": "प्राधिकरणको नाफा लगातार दोस्रो वर्ष पनि घट्यो",
       "isGlobal": false
     },
@@ -71,18 +61,8 @@
       "source": "Karobar Daily",
       "badge": "KD",
       "category": "Nepal Business",
-      "scrapedAt": "2026-08-20T02:31:18.269Z",
+      "scrapedAt": "2026-08-21T02:37:19.807Z",
       "summary": "चार करोडसम्मको सवारीसाधन खरिद गर्न पाइने",
-      "isGlobal": false
-    },
-    {
-      "title": "साउनमा ३ अर्ब ७७ करोड विदेशी लगानी प्रतिबद्धता",
-      "url": "https://www.karobardaily.com/news/406976",
-      "source": "Karobar Daily",
-      "badge": "KD",
-      "category": "Nepal Business",
-      "scrapedAt": "2026-08-20T02:31:18.269Z",
-      "summary": "साउनमा ३ अर्ब ७७ करोड विदेशी लगानी प्रतिबद्धता",
       "isGlobal": false
     },
     {
@@ -91,8 +71,28 @@
       "source": "Karobar Daily",
       "badge": "KD",
       "category": "Nepal Business",
-      "scrapedAt": "2026-08-20T02:31:18.269Z",
+      "scrapedAt": "2026-08-21T02:37:19.807Z",
       "summary": "लाभांश वितरण गर्न १६ बैंक मात्रै सक्षम",
+      "isGlobal": false
+    },
+    {
+      "title": "राष्ट्र बैंक ३५ अर्बको छ महिने निक्षेप संकलन गर्दै",
+      "url": "https://www.karobardaily.com/news/407034",
+      "source": "Karobar Daily",
+      "badge": "KD",
+      "category": "Nepal Business",
+      "scrapedAt": "2026-08-21T02:37:19.807Z",
+      "summary": "राष्ट्र बैंक ३५ अर्बको छ महिने निक्षेप संकलन गर्दै",
+      "isGlobal": false
+    },
+    {
+      "title": "प्रोभिजन रकम घट्दा बढ्यो बैंकहरूको नाफा, निष्क्रिय कर्जामा दबाब बढ्दै",
+      "url": "https://www.karobardaily.com/news/406331",
+      "source": "Karobar Daily",
+      "badge": "KD",
+      "category": "Nepal Business",
+      "scrapedAt": "2026-08-21T02:37:19.808Z",
+      "summary": "प्रोभिजन रकम घट्दा बढ्यो बैंकहरूको नाफा, निष्क्रिय कर्जामा दबाब बढ्दै",
       "isGlobal": false
     },
     {
@@ -101,17 +101,17 @@
       "source": "Sharesansar",
       "badge": "SS",
       "category": "Nepal Stock",
-      "scrapedAt": "2026-08-20T02:31:20.312Z",
+      "scrapedAt": "2026-08-21T02:37:21.626Z",
       "summary": "Proposed Dividend",
       "isGlobal": false
     },
     {
       "title": "Dividend, Bonus & Rights",
-      "url": "https://www.sharesansar.com/newsdetail/10-right-shares-of-united-ajod-insurance-limited-limited-listed-on-nepse-2026-08-19",
+      "url": "https://www.sharesansar.com/newsdetail/bonus-shares-of-sanima-gic-insurance-limited-listed-on-nepse-2026-08-20",
       "source": "Sharesansar",
       "badge": "SS",
       "category": "Nepal Stock",
-      "scrapedAt": "2026-08-20T02:31:20.312Z",
+      "scrapedAt": "2026-08-21T02:37:21.626Z",
       "summary": "Dividend, Bonus & Rights",
       "isGlobal": false
     },
@@ -121,7 +121,7 @@
       "source": "Sharesansar",
       "badge": "SS",
       "category": "Nepal Stock",
-      "scrapedAt": "2026-08-20T02:31:20.312Z",
+      "scrapedAt": "2026-08-21T02:37:21.626Z",
       "summary": "Eroded Capital, Elevated Prices: Where Is the Real Value Hiding in NEPSE?",
       "isGlobal": false
     },
@@ -131,7 +131,7 @@
       "source": "Sharesansar",
       "badge": "SS",
       "category": "Nepal Stock",
-      "scrapedAt": "2026-08-20T02:31:20.312Z",
+      "scrapedAt": "2026-08-21T02:37:21.626Z",
       "summary": "NEPSE Concludes The Week With 0.24% Loss and Turnover of Rs. 19.31 Arba; Weekly Summary with Sector Comparison, Major Highlights, and More",
       "isGlobal": false
     },
@@ -141,7 +141,7 @@
       "source": "Nepali Paisa",
       "badge": "NP",
       "category": "Nepal Finance",
-      "scrapedAt": "2026-08-20T02:31:22.171Z",
+      "scrapedAt": "2026-08-21T02:37:24.773Z",
       "summary": "Market Overview",
       "isGlobal": false
     },
@@ -151,7 +151,7 @@
       "source": "Nepali Paisa",
       "badge": "NP",
       "category": "Nepal Finance",
-      "scrapedAt": "2026-08-20T02:31:22.171Z",
+      "scrapedAt": "2026-08-21T02:37:24.773Z",
       "summary": "Stocks Up & Down",
       "isGlobal": false
     },
@@ -161,7 +161,7 @@
       "source": "Nepali Paisa",
       "badge": "NP",
       "category": "Nepal Finance",
-      "scrapedAt": "2026-08-20T02:31:22.171Z",
+      "scrapedAt": "2026-08-21T02:37:24.773Z",
       "summary": "Business & Economy",
       "isGlobal": false
     }
@@ -173,78 +173,78 @@
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-08-20T02:31:32.601Z",
+      "scrapedAt": "2026-08-21T02:37:35.652Z",
       "summary": "Markets just got Conversational",
       "isGlobal": true
     },
     {
-      "title": "Negative Breakout: These 8 stocks cross below their 200 DMAs",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/news/negative-breakout-these-8-stocks-cross-below-their-200-dmas/slideshow/133361923.cms",
+      "title": "Stocks to buy in 2026 for long term: TVS Motor, Siemens among 5 stocks that could give 10-30% return",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/stocks-to-buy-in-2026-for-long-term-tvs-motor-siemens-among-5-stocks-that-could-give-10-30-return/slideshow/133390999.cms",
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-08-20T02:31:32.602Z",
-      "summary": "Negative Breakout: These 8 stocks cross below their 200 DMAs",
+      "scrapedAt": "2026-08-21T02:37:35.653Z",
+      "summary": "Stocks to buy in 2026 for long term: TVS Motor, Siemens among 5 stocks that could give 10-30% return",
       "isGlobal": true
     },
     {
-      "title": "Lenskart Solutions among 4 stocks to hit 52-week highs & surge up to 25% in a month",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/news/lenskart-solutions-among-4-stocks-to-hit-52-week-highs-amp-surge-up-to-25-in-a-month/slideshow/133348316.cms",
+      "title": "Positive Breakout: These 8 stocks cross above their 200 DMAs",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/positive-breakout-these-8-stocks-cross-above-their-200-dmas/slideshow/133390898.cms",
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-08-20T02:31:32.602Z",
-      "summary": "Lenskart Solutions among 4 stocks to hit 52-week highs & surge up to 25% in a month",
+      "scrapedAt": "2026-08-21T02:37:35.653Z",
+      "summary": "Positive Breakout: These 8 stocks cross above their 200 DMAs",
       "isGlobal": true
     },
     {
-      "title": "Volume Shocker: MFs added 1 crore+ shares to 8 stocks in July &#x27;26; rally up to 76%",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/news/volume-shocker-mfs-added-1-crore-shares-to-8-stocks-in-july-26-rally-up-to-76/slideshow/133342058.cms",
+      "title": "Tourism Finance Corporation among 6 financial services stocks to hit 52-week highs & surge up to 60% in a month",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/tourism-finance-corporation-among-6-financial-services-stocks-to-hit-52-week-highs-amp-surge-up-to-60-in-a-month/slideshow/133380020.cms",
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-08-20T02:31:32.602Z",
-      "summary": "Volume Shocker: MFs added 1 crore+ shares to 8 stocks in July &#x27;26; rally up to 76%",
+      "scrapedAt": "2026-08-21T02:37:35.653Z",
+      "summary": "Tourism Finance Corporation among 6 financial services stocks to hit 52-week highs & surge up to 60% in a month",
       "isGlobal": true
     },
     {
-      "title": "Fabrinet stock plunges 19%: Why investors are selling after Q4 beat",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/news/fabrinet-stock-plunges-19-why-investors-are-selling-after-q4-beat/slideshow/133341895.cms",
+      "title": "Webull stock surges: 5 things to know about its Q2 earnings",
+      "url": "https://economictimes.indiatimes.com/markets/us-stocks/news/webull-stock-surges-5-things-to-know-about-its-q2-earnings/slideshow/133371601.cms",
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-08-20T02:31:32.602Z",
-      "summary": "Fabrinet stock plunges 19%: Why investors are selling after Q4 beat",
+      "scrapedAt": "2026-08-21T02:37:35.653Z",
+      "summary": "Webull stock surges: 5 things to know about its Q2 earnings",
       "isGlobal": true
     },
     {
-      "title": "Cerebras stock tumbles: Will CS-4 revive the AI chipmaker?",
-      "url": "https://economictimes.indiatimes.com/markets/us-stocks/news/cerebras-stock-tumbles-will-cs-4-revive-the-ai-chipmaker/slideshow/133338829.cms",
+      "title": "14 smallcap stocks zoom up to 217% in last 6 months, 6 turn multibaggers. Do you own any?",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/14-smallcap-stocks-zoom-up-to-217-in-last-6-months-6-turn-multibaggers-do-you-own-any/slideshow/133370910.cms",
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-08-20T02:31:32.602Z",
-      "summary": "Cerebras stock tumbles: Will CS-4 revive the AI chipmaker?",
+      "scrapedAt": "2026-08-21T02:37:35.653Z",
+      "summary": "14 smallcap stocks zoom up to 217% in last 6 months, 6 turn multibaggers. Do you own any?",
       "isGlobal": true
     },
     {
-      "title": "These mid-cap stocks with ‘Strong Buy’ & ‘Buy’ recos can rally over 25%, according to analysts",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/news/these-mid-cap-stocks-with-strong-buy-buy-recos-can-rally-over-25-according-to-analysts/articleshow/133361124.cms",
+      "title": "These large-, mid- and small-cap stocks can give more than 20% return in 1 year, according to analysts",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/these-large-mid-and-small-cap-stocks-can-give-more-than-20-return-in-1-year-according-to-analysts/articleshow/133390489.cms",
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-08-20T02:31:32.602Z",
-      "summary": "These mid-cap stocks with ‘Strong Buy’ & ‘Buy’ recos can rally over 25%, according to analysts",
+      "scrapedAt": "2026-08-21T02:37:35.653Z",
+      "summary": "These large-, mid- and small-cap stocks can give more than 20% return in 1 year, according to analysts",
       "isGlobal": true
     },
     {
-      "title": "Time to take some risk, but with guardrails? 5 small-cap stocks with an upside potential of up to 30%",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/news/time-to-take-some-risk-but-with-guardrails-5-small-cap-stocks-with-an-upside-potential-of-up-to-30/articleshow/133339977.cms",
+      "title": "Weekly Top Picks: These stocks scored 10 on 10 on Stock Reports Plus",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/weekly-top-picks-these-stocks-scored-10-on-10-on-stock-reports-plus/articleshow/133375164.cms",
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-08-20T02:31:32.602Z",
-      "summary": "Time to take some risk, but with guardrails? 5 small-cap stocks with an upside potential of up to 30%",
+      "scrapedAt": "2026-08-21T02:37:35.653Z",
+      "summary": "Weekly Top Picks: These stocks scored 10 on 10 on Stock Reports Plus",
       "isGlobal": true
     }
   ]
