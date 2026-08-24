@@ -1,5 +1,5 @@
 {
-  "scrapedAt": "2026-08-21T02:37:37.154Z",
+  "scrapedAt": "2026-08-24T02:38:12.405Z",
   "totalCount": 23,
   "nepalCount": 15,
   "globalCount": 8,
@@ -16,53 +16,23 @@
   ],
   "articles": [
     {
-      "title": "हलो काटेर मुढो बनाउने हाम्रो अर्थतन्त्र",
-      "url": "https://www.karobardaily.com/news/407797",
+      "title": "मलेसिया कामदार पठाउन २५ कम्पनी छनोट",
+      "url": "https://www.karobardaily.com/news/408689",
       "source": "Karobar Daily",
       "badge": "KD",
       "category": "Nepal Business",
-      "scrapedAt": "2026-08-21T02:37:19.807Z",
-      "summary": "हलो काटेर मुढो बनाउने हाम्रो अर्थतन्त्र",
+      "scrapedAt": "2026-08-24T02:37:55.847Z",
+      "summary": "मलेसिया कामदार पठाउन २५ कम्पनी छनोट",
       "isGlobal": false
     },
     {
-      "title": "७ अंकले बढेको सेयर बजारमा ४ अर्ब ४० करोडको कारोबार",
-      "url": "https://www.karobardaily.com/news/407672",
+      "title": "नेपाल राष्ट्र बैंकको गभर्नर र सञ्चालकको योग्यतासम्बन्धी प्रावधान परिमार्जन गरिँदै",
+      "url": "https://www.karobardaily.com/news/408167",
       "source": "Karobar Daily",
       "badge": "KD",
       "category": "Nepal Business",
-      "scrapedAt": "2026-08-21T02:37:19.807Z",
-      "summary": "७ अंकले बढेको सेयर बजारमा ४ अर्ब ४० करोडको कारोबार",
-      "isGlobal": false
-    },
-    {
-      "title": "वित्तीय अनुशासनमा कर्णाली प्रदेश कमजोर",
-      "url": "https://www.karobardaily.com/news/407601",
-      "source": "Karobar Daily",
-      "badge": "KD",
-      "category": "Nepal Business",
-      "scrapedAt": "2026-08-21T02:37:19.807Z",
-      "summary": "वित्तीय अनुशासनमा कर्णाली प्रदेश कमजोर",
-      "isGlobal": false
-    },
-    {
-      "title": "प्राधिकरणको नाफा लगातार दोस्रो वर्ष पनि घट्यो",
-      "url": "https://www.karobardaily.com/news/407274",
-      "source": "Karobar Daily",
-      "badge": "KD",
-      "category": "Nepal Business",
-      "scrapedAt": "2026-08-21T02:37:19.807Z",
-      "summary": "प्राधिकरणको नाफा लगातार दोस्रो वर्ष पनि घट्यो",
-      "isGlobal": false
-    },
-    {
-      "title": "चार करोडसम्मको सवारीसाधन खरिद गर्न पाइने",
-      "url": "https://www.karobardaily.com/news/407226",
-      "source": "Karobar Daily",
-      "badge": "KD",
-      "category": "Nepal Business",
-      "scrapedAt": "2026-08-21T02:37:19.807Z",
-      "summary": "चार करोडसम्मको सवारीसाधन खरिद गर्न पाइने",
+      "scrapedAt": "2026-08-24T02:37:55.848Z",
+      "summary": "नेपाल राष्ट्र बैंकको गभर्नर र सञ्चालकको योग्यतासम्बन्धी प्रावधान परिमार्जन गरिँदै",
       "isGlobal": false
     },
     {
@@ -71,7 +41,7 @@
       "source": "Karobar Daily",
       "badge": "KD",
       "category": "Nepal Business",
-      "scrapedAt": "2026-08-21T02:37:19.807Z",
+      "scrapedAt": "2026-08-24T02:37:55.848Z",
       "summary": "लाभांश वितरण गर्न १६ बैंक मात्रै सक्षम",
       "isGlobal": false
     },
@@ -81,7 +51,7 @@
       "source": "Karobar Daily",
       "badge": "KD",
       "category": "Nepal Business",
-      "scrapedAt": "2026-08-21T02:37:19.807Z",
+      "scrapedAt": "2026-08-24T02:37:55.848Z",
       "summary": "राष्ट्र बैंक ३५ अर्बको छ महिने निक्षेप संकलन गर्दै",
       "isGlobal": false
     },
@@ -91,8 +61,38 @@
       "source": "Karobar Daily",
       "badge": "KD",
       "category": "Nepal Business",
-      "scrapedAt": "2026-08-21T02:37:19.808Z",
+      "scrapedAt": "2026-08-24T02:37:55.848Z",
       "summary": "प्रोभिजन रकम घट्दा बढ्यो बैंकहरूको नाफा, निष्क्रिय कर्जामा दबाब बढ्दै",
+      "isGlobal": false
+    },
+    {
+      "title": "११ महिनादेखि प्राधिकरण अध्यक्षविहीनः बीमा क्षेत्रको नियमन लथालिंग",
+      "url": "https://www.karobardaily.com/news/394632",
+      "source": "Karobar Daily",
+      "badge": "KD",
+      "category": "Nepal Business",
+      "scrapedAt": "2026-08-24T02:37:55.848Z",
+      "summary": "११ महिनादेखि प्राधिकरण अध्यक्षविहीनः बीमा क्षेत्रको नियमन लथालिंग",
+      "isGlobal": false
+    },
+    {
+      "title": "नाडा अटो शोमा कारदेखि ग्यारेज उपकरणसम्मको प्रदर्शनी",
+      "url": "https://www.karobardaily.com/news/408552",
+      "source": "Karobar Daily",
+      "badge": "KD",
+      "category": "Nepal Business",
+      "scrapedAt": "2026-08-24T02:37:55.848Z",
+      "summary": "नाडा अटो शोमा कारदेखि ग्यारेज उपकरणसम्मको प्रदर्शनी",
+      "isGlobal": false
+    },
+    {
+      "title": "नामी भिगो ई-२: नाडा अटो शोमा ५ लाख रुपैयाँ सस्तोमा नयाँ संस्करण सार्वजनिक",
+      "url": "https://www.karobardaily.com/news/408131",
+      "source": "Karobar Daily",
+      "badge": "KD",
+      "category": "Nepal Business",
+      "scrapedAt": "2026-08-24T02:37:55.848Z",
+      "summary": "नामी भिगो ई-२: नाडा अटो शोमा ५ लाख रुपैयाँ सस्तोमा नयाँ संस्करण सार्वजनिक",
       "isGlobal": false
     },
     {
@@ -101,17 +101,17 @@
       "source": "Sharesansar",
       "badge": "SS",
       "category": "Nepal Stock",
-      "scrapedAt": "2026-08-21T02:37:21.626Z",
+      "scrapedAt": "2026-08-24T02:37:57.574Z",
       "summary": "Proposed Dividend",
       "isGlobal": false
     },
     {
       "title": "Dividend, Bonus & Rights",
-      "url": "https://www.sharesansar.com/newsdetail/bonus-shares-of-sanima-gic-insurance-limited-listed-on-nepse-2026-08-20",
+      "url": "https://www.sharesansar.com/newsdetail/reminder-last-trading-day-to-secure-dividend-of-nmb-50-nmb-hybrid-fund-l-ii-and-nmb-sulav-investment-fund-ii-2026-08-21",
       "source": "Sharesansar",
       "badge": "SS",
       "category": "Nepal Stock",
-      "scrapedAt": "2026-08-21T02:37:21.626Z",
+      "scrapedAt": "2026-08-24T02:37:57.574Z",
       "summary": "Dividend, Bonus & Rights",
       "isGlobal": false
     },
@@ -121,18 +121,18 @@
       "source": "Sharesansar",
       "badge": "SS",
       "category": "Nepal Stock",
-      "scrapedAt": "2026-08-21T02:37:21.626Z",
+      "scrapedAt": "2026-08-24T02:37:57.575Z",
       "summary": "Eroded Capital, Elevated Prices: Where Is the Real Value Hiding in NEPSE?",
       "isGlobal": false
     },
     {
-      "title": "NEPSE Concludes The Week With 0.24% Loss and Turnover of Rs. 19.31 Arba; Weekly Summary with Sector Comparison, Major Highlights, and More",
+      "title": "NEPSE Concludes The Week With 0.95% Loss and Turnover of Rs. 22.46 Arba; Weekly Summary with Sector Comparison, Major Highlights, and More",
       "url": "https://www.sharesansar.com/",
       "source": "Sharesansar",
       "badge": "SS",
       "category": "Nepal Stock",
-      "scrapedAt": "2026-08-21T02:37:21.626Z",
-      "summary": "NEPSE Concludes The Week With 0.24% Loss and Turnover of Rs. 19.31 Arba; Weekly Summary with Sector Comparison, Major Highlights, and More",
+      "scrapedAt": "2026-08-24T02:37:57.575Z",
+      "summary": "NEPSE Concludes The Week With 0.95% Loss and Turnover of Rs. 22.46 Arba; Weekly Summary with Sector Comparison, Major Highlights, and More",
       "isGlobal": false
     },
     {
@@ -141,7 +141,7 @@
       "source": "Nepali Paisa",
       "badge": "NP",
       "category": "Nepal Finance",
-      "scrapedAt": "2026-08-21T02:37:24.773Z",
+      "scrapedAt": "2026-08-24T02:38:00.779Z",
       "summary": "Market Overview",
       "isGlobal": false
     },
@@ -151,7 +151,7 @@
       "source": "Nepali Paisa",
       "badge": "NP",
       "category": "Nepal Finance",
-      "scrapedAt": "2026-08-21T02:37:24.773Z",
+      "scrapedAt": "2026-08-24T02:38:00.779Z",
       "summary": "Stocks Up & Down",
       "isGlobal": false
     },
@@ -161,7 +161,7 @@
       "source": "Nepali Paisa",
       "badge": "NP",
       "category": "Nepal Finance",
-      "scrapedAt": "2026-08-21T02:37:24.773Z",
+      "scrapedAt": "2026-08-24T02:38:00.779Z",
       "summary": "Business & Economy",
       "isGlobal": false
     }
@@ -173,78 +173,78 @@
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-08-21T02:37:35.652Z",
+      "scrapedAt": "2026-08-24T02:38:10.904Z",
       "summary": "Markets just got Conversational",
       "isGlobal": true
     },
     {
-      "title": "Stocks to buy in 2026 for long term: TVS Motor, Siemens among 5 stocks that could give 10-30% return",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/news/stocks-to-buy-in-2026-for-long-term-tvs-motor-siemens-among-5-stocks-that-could-give-10-30-return/slideshow/133390999.cms",
+      "title": "Stocks to buy in 2026 for long term: Jubilant FoodWorks, Max Financial among 5 stocks that could give 10-30% return",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/stocks-to-buy-in-2026-for-long-term-jubilant-foodworks-max-financial-among-5-stocks-that-could-give-10-30-return/slideshow/133449559.cms",
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-08-21T02:37:35.653Z",
-      "summary": "Stocks to buy in 2026 for long term: TVS Motor, Siemens among 5 stocks that could give 10-30% return",
+      "scrapedAt": "2026-08-24T02:38:10.905Z",
+      "summary": "Stocks to buy in 2026 for long term: Jubilant FoodWorks, Max Financial among 5 stocks that could give 10-30% return",
       "isGlobal": true
     },
     {
-      "title": "Positive Breakout: These 8 stocks cross above their 200 DMAs",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/news/positive-breakout-these-8-stocks-cross-above-their-200-dmas/slideshow/133390898.cms",
+      "title": "Negative Breakout: These 7 stocks cross below their 200 DMAs",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/negative-breakout-these-7-stocks-cross-below-their-200-dmas/slideshow/133449630.cms",
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-08-21T02:37:35.653Z",
-      "summary": "Positive Breakout: These 8 stocks cross above their 200 DMAs",
+      "scrapedAt": "2026-08-24T02:38:10.905Z",
+      "summary": "Negative Breakout: These 7 stocks cross below their 200 DMAs",
       "isGlobal": true
     },
     {
-      "title": "Tourism Finance Corporation among 6 financial services stocks to hit 52-week highs & surge up to 60% in a month",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/news/tourism-finance-corporation-among-6-financial-services-stocks-to-hit-52-week-highs-amp-surge-up-to-60-in-a-month/slideshow/133380020.cms",
+      "title": "20 IPOs on investors&#x27; radar next week. GMPs indicate up to 90% returns",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/20-ipos-on-investors-radar-next-week-gmps-indicate-up-to-90-returns/slideshow/133436601.cms",
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-08-21T02:37:35.653Z",
-      "summary": "Tourism Finance Corporation among 6 financial services stocks to hit 52-week highs & surge up to 60% in a month",
+      "scrapedAt": "2026-08-24T02:38:10.905Z",
+      "summary": "20 IPOs on investors&#x27; radar next week. GMPs indicate up to 90% returns",
       "isGlobal": true
     },
     {
-      "title": "Webull stock surges: 5 things to know about its Q2 earnings",
-      "url": "https://economictimes.indiatimes.com/markets/us-stocks/news/webull-stock-surges-5-things-to-know-about-its-q2-earnings/slideshow/133371601.cms",
+      "title": "10 midcap stocks with massive upside potential of up to 55%! Do you own any?",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/10-midcap-stocks-with-massive-upside-potential-of-up-to-55-do-you-own-any/slideshow/133435442.cms",
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-08-21T02:37:35.653Z",
-      "summary": "Webull stock surges: 5 things to know about its Q2 earnings",
+      "scrapedAt": "2026-08-24T02:38:10.905Z",
+      "summary": "10 midcap stocks with massive upside potential of up to 55%! Do you own any?",
       "isGlobal": true
     },
     {
-      "title": "14 smallcap stocks zoom up to 217% in last 6 months, 6 turn multibaggers. Do you own any?",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/news/14-smallcap-stocks-zoom-up-to-217-in-last-6-months-6-turn-multibaggers-do-you-own-any/slideshow/133370910.cms",
+      "title": "15 penny stocks crash up to 50% in 3 months: Are you holding any?",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/15-penny-stocks-crash-up-to-50-in-3-months-are-you-holding-any/slideshow/133435070.cms",
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-08-21T02:37:35.653Z",
-      "summary": "14 smallcap stocks zoom up to 217% in last 6 months, 6 turn multibaggers. Do you own any?",
+      "scrapedAt": "2026-08-24T02:38:10.905Z",
+      "summary": "15 penny stocks crash up to 50% in 3 months: Are you holding any?",
       "isGlobal": true
     },
     {
-      "title": "These large-, mid- and small-cap stocks can give more than 20% return in 1 year, according to analysts",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/news/these-large-mid-and-small-cap-stocks-can-give-more-than-20-return-in-1-year-according-to-analysts/articleshow/133390489.cms",
+      "title": "Long-term investing: One reason is good enough, and a must, to own a business. 8 stocks with an upside potential of up to 36%",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/long-term-investing-one-reason-is-good-enough-and-a-must-to-own-a-business-8-stocks-with-an-upside-potential-of-up-to-36/articleshow/133427857.cms",
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-08-21T02:37:35.653Z",
-      "summary": "These large-, mid- and small-cap stocks can give more than 20% return in 1 year, according to analysts",
+      "scrapedAt": "2026-08-24T02:38:10.905Z",
+      "summary": "Long-term investing: One reason is good enough, and a must, to own a business. 8 stocks with an upside potential of up to 36%",
       "isGlobal": true
     },
     {
-      "title": "Weekly Top Picks: These stocks scored 10 on 10 on Stock Reports Plus",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/news/weekly-top-picks-these-stocks-scored-10-on-10-on-stock-reports-plus/articleshow/133375164.cms",
+      "title": "Power sector stocks: Rising demand, uneven risk; best owned as a basket. 10 power stocks with upside potential of up to 28%",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/power-sector-stocks-rising-demand-uneven-risk-best-owned-as-a-basket-10-power-stocks-with-upside-potential-of-up-to-28/articleshow/133429052.cms",
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-08-21T02:37:35.653Z",
-      "summary": "Weekly Top Picks: These stocks scored 10 on 10 on Stock Reports Plus",
+      "scrapedAt": "2026-08-24T02:38:10.905Z",
+      "summary": "Power sector stocks: Rising demand, uneven risk; best owned as a basket. 10 power stocks with upside potential of up to 28%",
       "isGlobal": true
     }
   ]
