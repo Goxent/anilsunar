@@ -1,7 +1,7 @@
 {
-  "scrapedAt": "2026-08-25T02:31:58.236Z",
-  "totalCount": 23,
-  "nepalCount": 15,
+  "scrapedAt": "2026-08-26T02:39:47.847Z",
+  "totalCount": 22,
+  "nepalCount": 14,
   "globalCount": 8,
   "sources": [
     "Onlinekhabar Finance",
@@ -16,12 +16,52 @@
   ],
   "articles": [
     {
+      "title": "पाँच अंकले घटेको सेयर बजारमा ४ अर्ब १० करोडको कारोबार",
+      "url": "https://www.karobardaily.com/news/409314",
+      "source": "Karobar Daily",
+      "badge": "KD",
+      "category": "Nepal Business",
+      "scrapedAt": "2026-08-26T02:39:31.612Z",
+      "summary": "पाँच अंकले घटेको सेयर बजारमा ४ अर्ब १० करोडको कारोबार",
+      "isGlobal": false
+    },
+    {
+      "title": "एनआईएमबीको आकर्षक गाडी कर्जा योजना: ५.१३ प्रतिशत ब्याजदरमा कर्जा, ३ कार्यदिनमै कर्जा प्रवाह",
+      "url": "https://www.karobardaily.com/news/409378",
+      "source": "Karobar Daily",
+      "badge": "KD",
+      "category": "Nepal Business",
+      "scrapedAt": "2026-08-26T02:39:31.612Z",
+      "summary": "एनआईएमबीको आकर्षक गाडी कर्जा योजना: ५.१३ प्रतिशत ब्याजदरमा कर्जा, ३ कार्यदिनमै कर्जा प्रवाह",
+      "isGlobal": false
+    },
+    {
+      "title": "महालक्ष्मी विकास बैंक नाडा अटो शो २०२६ मा पनि",
+      "url": "https://www.karobardaily.com/news/409343",
+      "source": "Karobar Daily",
+      "badge": "KD",
+      "category": "Nepal Business",
+      "scrapedAt": "2026-08-26T02:39:31.612Z",
+      "summary": "महालक्ष्मी विकास बैंक नाडा अटो शो २०२६ मा पनि",
+      "isGlobal": false
+    },
+    {
+      "title": "अर्थतन्त्रको ‘रि–इञ्जिनियरिङ’ आवश्यक, अटोमोबाइल क्षेत्रलाई हेर्ने दृष्टिकोण बदल्न सरकारसँग माग",
+      "url": "https://www.karobardaily.com/news/409154",
+      "source": "Karobar Daily",
+      "badge": "KD",
+      "category": "Nepal Business",
+      "scrapedAt": "2026-08-26T02:39:31.612Z",
+      "summary": "अर्थतन्त्रको ‘रि–इञ्जिनियरिङ’ आवश्यक, अटोमोबाइल क्षेत्रलाई हेर्ने दृष्टिकोण बदल्न सरकारसँग माग",
+      "isGlobal": false
+    },
+    {
       "title": "निजी क्षेत्रका समस्या समाधान गर्न र लगानी सहजीकरणका लागि सुझाव माग",
       "url": "https://www.karobardaily.com/news/409022",
       "source": "Karobar Daily",
       "badge": "KD",
       "category": "Nepal Business",
-      "scrapedAt": "2026-08-25T02:31:40.976Z",
+      "scrapedAt": "2026-08-26T02:39:31.612Z",
       "summary": "निजी क्षेत्रका समस्या समाधान गर्न र लगानी सहजीकरणका लागि सुझाव माग",
       "isGlobal": false
     },
@@ -31,58 +71,8 @@
       "source": "Karobar Daily",
       "badge": "KD",
       "category": "Nepal Business",
-      "scrapedAt": "2026-08-25T02:31:40.976Z",
+      "scrapedAt": "2026-08-26T02:39:31.612Z",
       "summary": "सञ्चालकको अयोग्यतासम्बन्धी व्यवस्था बाफियामै स्पष्ट गर्न अर्थमन्त्रीको आग्रह",
-      "isGlobal": false
-    },
-    {
-      "title": "सेयर बजार घटेर २५९९ विन्दुमा, कारोबार रकममा पनि कमी",
-      "url": "https://www.karobardaily.com/news/408934",
-      "source": "Karobar Daily",
-      "badge": "KD",
-      "category": "Nepal Business",
-      "scrapedAt": "2026-08-25T02:31:40.976Z",
-      "summary": "सेयर बजार घटेर २५९९ विन्दुमा, कारोबार रकममा पनि कमी",
-      "isGlobal": false
-    },
-    {
-      "title": "एनआईएमबी बैंकद्वारा ५.७५ प्रतिशत ब्याजदरमा एसएमई कर्जा योजना सार्वजनिक",
-      "url": "https://www.karobardaily.com/news/409012",
-      "source": "Karobar Daily",
-      "badge": "KD",
-      "category": "Nepal Business",
-      "scrapedAt": "2026-08-25T02:31:40.976Z",
-      "summary": "एनआईएमबी बैंकद्वारा ५.७५ प्रतिशत ब्याजदरमा एसएमई कर्जा योजना सार्वजनिक",
-      "isGlobal": false
-    },
-    {
-      "title": "पर्यटन क्षेत्रमा करोडौँ लगानी, गतिविधि न्यून",
-      "url": "https://www.karobardaily.com/news/408926",
-      "source": "Karobar Daily",
-      "badge": "KD",
-      "category": "Nepal Business",
-      "scrapedAt": "2026-08-25T02:31:40.976Z",
-      "summary": "पर्यटन क्षेत्रमा करोडौँ लगानी, गतिविधि न्यून",
-      "isGlobal": false
-    },
-    {
-      "title": "स्याङ्जाको अर्जुनचौपारीमा करदाता सेवा",
-      "url": "https://www.karobardaily.com/news/408908",
-      "source": "Karobar Daily",
-      "badge": "KD",
-      "category": "Nepal Business",
-      "scrapedAt": "2026-08-25T02:31:40.976Z",
-      "summary": "स्याङ्जाको अर्जुनचौपारीमा करदाता सेवा",
-      "isGlobal": false
-    },
-    {
-      "title": "बैंकले कर्जा दिन धितो राखेको सम्पत्ति सरकारले लैजान मिल्छ ?",
-      "url": "https://www.karobardaily.com/news/408703",
-      "source": "Karobar Daily",
-      "badge": "KD",
-      "category": "Nepal Business",
-      "scrapedAt": "2026-08-25T02:31:40.976Z",
-      "summary": "बैंकले कर्जा दिन धितो राखेको सम्पत्ति सरकारले लैजान मिल्छ ?",
       "isGlobal": false
     },
     {
@@ -91,8 +81,18 @@
       "source": "Karobar Daily",
       "badge": "KD",
       "category": "Nepal Business",
-      "scrapedAt": "2026-08-25T02:31:40.976Z",
+      "scrapedAt": "2026-08-26T02:39:31.612Z",
       "summary": "लाभांश वितरण गर्न १६ बैंक मात्रै सक्षम",
+      "isGlobal": false
+    },
+    {
+      "title": "राष्ट्र बैंक ३५ अर्बको छ महिने निक्षेप संकलन गर्दै",
+      "url": "https://www.karobardaily.com/news/407034",
+      "source": "Karobar Daily",
+      "badge": "KD",
+      "category": "Nepal Business",
+      "scrapedAt": "2026-08-26T02:39:31.612Z",
+      "summary": "राष्ट्र बैंक ३५ अर्बको छ महिने निक्षेप संकलन गर्दै",
       "isGlobal": false
     },
     {
@@ -101,28 +101,18 @@
       "source": "Sharesansar",
       "badge": "SS",
       "category": "Nepal Stock",
-      "scrapedAt": "2026-08-25T02:31:42.704Z",
+      "scrapedAt": "2026-08-26T02:39:33.623Z",
       "summary": "Proposed Dividend",
       "isGlobal": false
     },
     {
       "title": "Dividend, Bonus & Rights",
-      "url": "https://www.sharesansar.com/newsdetail/sanima-growth-fund-announces-5-cash-dividend-for-fy-208283-2026-08-24",
+      "url": "https://www.sharesansar.com/newsdetail/super-madi-hydropower-limited-proposes-1578947-dividend-for-fiscal-year-208283-how-much-in-bonus-shares-and-cash-2026-08-25",
       "source": "Sharesansar",
       "badge": "SS",
       "category": "Nepal Stock",
-      "scrapedAt": "2026-08-25T02:31:42.704Z",
+      "scrapedAt": "2026-08-26T02:39:33.623Z",
       "summary": "Dividend, Bonus & Rights",
-      "isGlobal": false
-    },
-    {
-      "title": "Eroded Capital, Elevated Prices: Where Is the Real Value Hiding in NEPSE?",
-      "url": "https://www.sharesansar.com/newsdetail/eroded-capital-elevated-prices-where-is-the-real-value-hiding-in-nepse-2026-07-27",
-      "source": "Sharesansar",
-      "badge": "SS",
-      "category": "Nepal Stock",
-      "scrapedAt": "2026-08-25T02:31:42.705Z",
-      "summary": "Eroded Capital, Elevated Prices: Where Is the Real Value Hiding in NEPSE?",
       "isGlobal": false
     },
     {
@@ -131,7 +121,7 @@
       "source": "Sharesansar",
       "badge": "SS",
       "category": "Nepal Stock",
-      "scrapedAt": "2026-08-25T02:31:42.705Z",
+      "scrapedAt": "2026-08-26T02:39:33.623Z",
       "summary": "NEPSE Concludes The Week With 0.95% Loss and Turnover of Rs. 22.46 Arba; Weekly Summary with Sector Comparison, Major Highlights, and More",
       "isGlobal": false
     },
@@ -141,7 +131,7 @@
       "source": "Nepali Paisa",
       "badge": "NP",
       "category": "Nepal Finance",
-      "scrapedAt": "2026-08-25T02:31:46.076Z",
+      "scrapedAt": "2026-08-26T02:39:35.575Z",
       "summary": "Market Overview",
       "isGlobal": false
     },
@@ -151,7 +141,7 @@
       "source": "Nepali Paisa",
       "badge": "NP",
       "category": "Nepal Finance",
-      "scrapedAt": "2026-08-25T02:31:46.076Z",
+      "scrapedAt": "2026-08-26T02:39:35.575Z",
       "summary": "Stocks Up & Down",
       "isGlobal": false
     },
@@ -161,7 +151,7 @@
       "source": "Nepali Paisa",
       "badge": "NP",
       "category": "Nepal Finance",
-      "scrapedAt": "2026-08-25T02:31:46.076Z",
+      "scrapedAt": "2026-08-26T02:39:35.575Z",
       "summary": "Business & Economy",
       "isGlobal": false
     }
@@ -173,78 +163,78 @@
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-08-25T02:31:56.734Z",
+      "scrapedAt": "2026-08-26T02:39:46.343Z",
       "summary": "Markets just got Conversational",
       "isGlobal": true
     },
     {
-      "title": "Vishal Mega Mart among 4 stocks showing bullish RSI upswing",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/news/vishal-mega-mart-among-4-stocks-showing-bullish-rsi-upswing/slideshow/133487508.cms",
+      "title": "Stocks to buy in 2026 for long term: Cummins India, Indian Hotels among 5 stocks that could give 10-20% return",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/stocks-to-buy-in-2026-for-long-term-cummins-india-indian-hotels-among-5-stocks-that-could-give-10-20-return/slideshow/133527502.cms",
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-08-25T02:31:56.735Z",
-      "summary": "Vishal Mega Mart among 4 stocks showing bullish RSI upswing",
+      "scrapedAt": "2026-08-26T02:39:46.344Z",
+      "summary": "Stocks to buy in 2026 for long term: Cummins India, Indian Hotels among 5 stocks that could give 10-20% return",
       "isGlobal": true
     },
     {
-      "title": "Positive Breakout: These 8 stocks cross above their 200 DMAs",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/news/positive-breakout-these-8-stocks-cross-above-their-200-dmas/slideshow/133487410.cms",
+      "title": "Market Trading Guide: Adani Enterprises, Dixon Tech among 4 stock recommendations for Wednesday",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/market-trading-guide-adani-enterprises-dixontechamong-4-stock-recommendations-for-wednesday/slideshow/133515517.cms",
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-08-25T02:31:56.735Z",
-      "summary": "Positive Breakout: These 8 stocks cross above their 200 DMAs",
+      "scrapedAt": "2026-08-26T02:39:46.344Z",
+      "summary": "Market Trading Guide: Adani Enterprises, Dixon Tech among 4 stock recommendations for Wednesday",
       "isGlobal": true
     },
     {
-      "title": "Lenskart Solutions among 4 stocks to hit 52-week highs & surge up to 20% in a month",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/news/lenskart-solutions-among-4-stocks-to-hit-52-week-highs-amp-surge-up-to-20-in-a-month/slideshow/133468092.cms",
+      "title": "Paytm among 4 stocks hitting 52-week highs; surge up to 35% in a month",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/paytm-among-4-stocks-hitting-52-week-highs-surge-up-to-35-in-a-month/slideshow/133510158.cms",
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-08-25T02:31:56.735Z",
-      "summary": "Lenskart Solutions among 4 stocks to hit 52-week highs & surge up to 20% in a month",
+      "scrapedAt": "2026-08-26T02:39:46.344Z",
+      "summary": "Paytm among 4 stocks hitting 52-week highs; surge up to 35% in a month",
       "isGlobal": true
     },
     {
-      "title": "FIIs trim holdings in 11 midcap stocks over two quarters; shares fall up to 50% in 2026",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/news/fiis-trim-holdings-in-11-midcap-stocks-over-two-quarters-shares-fall-up-to-50-in-2026/slideshow/133460029.cms",
+      "title": "Multibagger stocks: Ather Energy, Hind Copper, MCX among stocks which surged up to 250% in one year",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/multibagger-stocks-ather-energy-hind-copper-mcx-among-stocks-which-surged-up-to-250-in-one-year/slideshow/133506231.cms",
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-08-25T02:31:56.735Z",
-      "summary": "FIIs trim holdings in 11 midcap stocks over two quarters; shares fall up to 50% in 2026",
+      "scrapedAt": "2026-08-26T02:39:46.344Z",
+      "summary": "Multibagger stocks: Ather Energy, Hind Copper, MCX among stocks which surged up to 250% in one year",
       "isGlobal": true
     },
     {
-      "title": "5 key themes set to drive global markets this week",
-      "url": "https://economictimes.indiatimes.com/markets/us-stocks/news/5-key-themes-set-to-drive-global-markets-this-week/slideshow/133452590.cms",
+      "title": "MFs kept buying these 9 largecap stocks for 2 quarters; shares surged up to 50%",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/mfs-kept-buying-these-9-largecap-stocks-for-2-quarters-shares-surged-up-to-50/slideshow/133505362.cms",
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-08-25T02:31:56.735Z",
-      "summary": "5 key themes set to drive global markets this week",
+      "scrapedAt": "2026-08-26T02:39:46.344Z",
+      "summary": "MFs kept buying these 9 largecap stocks for 2 quarters; shares surged up to 50%",
       "isGlobal": true
     },
     {
-      "title": "Weekly Top Picks: These stocks scored 10 on 10 on Stock Reports Plus",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/news/weekly-top-picks-these-stocks-scored-10-on-10-on-stock-reports-plus/articleshow/133471487.cms",
+      "title": "These 8 banking stocks have an upside potential of up to 22% in 1 year, according to analysts",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/these-8-banking-stocks-have-an-upside-potential-of-up-to-22-in-1-year-according-to-analysts/articleshow/133520222.cms",
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-08-25T02:31:56.735Z",
-      "summary": "Weekly Top Picks: These stocks scored 10 on 10 on Stock Reports Plus",
+      "scrapedAt": "2026-08-26T02:39:46.344Z",
+      "summary": "These 8 banking stocks have an upside potential of up to 22% in 1 year, according to analysts",
       "isGlobal": true
     },
     {
-      "title": "Stock picks of the week: 5 stocks with consistent score improvement and upside potential of up to 28%",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/news/stock-picks-of-the-week-5-stocks-with-consistent-score-improvement-and-upside-potential-of-up-to-28/articleshow/133458753.cms",
+      "title": "For investors who can hold stocks for 1 to 2 years: 6 mid-cap stocks from different sectors with an upside potential up to 21%",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/for-investors-who-can-hold-stocks-for-1-to-2-years-6-mid-cap-stocks-from-different-sectors-with-an-upside-potential-up-to-21/articleshow/133503979.cms",
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-08-25T02:31:56.735Z",
-      "summary": "Stock picks of the week: 5 stocks with consistent score improvement and upside potential of up to 28%",
+      "scrapedAt": "2026-08-26T02:39:46.344Z",
+      "summary": "For investors who can hold stocks for 1 to 2 years: 6 mid-cap stocks from different sectors with an upside potential up to 21%",
       "isGlobal": true
     }
   ]
