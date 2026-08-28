@@ -1,5 +1,5 @@
 {
-  "scrapedAt": "2026-08-27T11:12:43.798Z",
+  "scrapedAt": "2026-08-28T12:47:35.988Z",
   "totalCount": 22,
   "nepalCount": 14,
   "globalCount": 8,
@@ -16,33 +16,43 @@
   ],
   "articles": [
     {
-      "title": "सेयर बजारमा बाढीको असर, नेप्सेसँगै कारोबार रकम पनि घट्यो",
-      "url": "https://www.karobardaily.com/news/410397",
+      "title": "प्रधानमन्त्री दैवी प्रकोप उद्धार कोषमा एक अर्ब ९१ करोड सहयोग रकम संकलन",
+      "url": "https://www.karobardaily.com/news/410828",
       "source": "Karobar Daily",
       "badge": "KD",
       "category": "Nepal Business",
-      "scrapedAt": "2026-08-27T11:12:26.415Z",
-      "summary": "सेयर बजारमा बाढीको असर, नेप्सेसँगै कारोबार रकम पनि घट्यो",
+      "scrapedAt": "2026-08-28T12:47:18.629Z",
+      "summary": "प्रधानमन्त्री दैवी प्रकोप उद्धार कोषमा एक अर्ब ९१ करोड सहयोग रकम संकलन",
       "isGlobal": false
     },
     {
-      "title": "अपर त्रिशूली थ्री बि आयोजनामा कार्यरत १२ जना कर्मचारी सम्पर्कविहीन",
-      "url": "https://www.karobardaily.com/news/410341",
+      "title": "रसुवागढी जलविद्युत् केन्द्रभित्र फसेका चार कर्मचारीको सकुशल उद्धार",
+      "url": "https://www.karobardaily.com/news/410799",
       "source": "Karobar Daily",
       "badge": "KD",
       "category": "Nepal Business",
-      "scrapedAt": "2026-08-27T11:12:26.415Z",
-      "summary": "अपर त्रिशूली थ्री बि आयोजनामा कार्यरत १२ जना कर्मचारी सम्पर्कविहीन",
+      "scrapedAt": "2026-08-28T12:47:18.630Z",
+      "summary": "रसुवागढी जलविद्युत् केन्द्रभित्र फसेका चार कर्मचारीको सकुशल उद्धार",
       "isGlobal": false
     },
     {
-      "title": "बाढीपीडितलाई ७ करोड सहयोग गर्ने बीवाईडी र साइमेक्स इन्कको घोषणा",
-      "url": "https://www.karobardaily.com/news/410361",
+      "title": "वीरगन्ज औद्योगिक करिडोरका उद्योगको सात अर्ब विद्युत् बक्यौता",
+      "url": "https://www.karobardaily.com/news/410749",
       "source": "Karobar Daily",
       "badge": "KD",
       "category": "Nepal Business",
-      "scrapedAt": "2026-08-27T11:12:26.415Z",
-      "summary": "बाढीपीडितलाई ७ करोड सहयोग गर्ने बीवाईडी र साइमेक्स इन्कको घोषणा",
+      "scrapedAt": "2026-08-28T12:47:18.630Z",
+      "summary": "वीरगन्ज औद्योगिक करिडोरका उद्योगको सात अर्ब विद्युत् बक्यौता",
+      "isGlobal": false
+    },
+    {
+      "title": "जलविद्युत् आयोजनामा फसेका कर्मचारी उद्धारमा प्राधिकरणको तदारुकता",
+      "url": "https://www.karobardaily.com/news/410734",
+      "source": "Karobar Daily",
+      "badge": "KD",
+      "category": "Nepal Business",
+      "scrapedAt": "2026-08-28T12:47:18.630Z",
+      "summary": "जलविद्युत् आयोजनामा फसेका कर्मचारी उद्धारमा प्राधिकरणको तदारुकता",
       "isGlobal": false
     },
     {
@@ -51,28 +61,8 @@
       "source": "Karobar Daily",
       "badge": "KD",
       "category": "Nepal Business",
-      "scrapedAt": "2026-08-27T11:12:26.415Z",
+      "scrapedAt": "2026-08-28T12:47:18.630Z",
       "summary": "विपद् व्यवस्थापनका लागि करिब २५ अर्ब वैदेशिक सहायता सुनिश्चित",
-      "isGlobal": false
-    },
-    {
-      "title": "आइएफआरसीद्वारा भोटेकोशी बाढी प्रभावितलाई तत्काल करिब १९ करोड सहयोग घोषणा",
-      "url": "https://www.karobardaily.com/news/410095",
-      "source": "Karobar Daily",
-      "badge": "KD",
-      "category": "Nepal Business",
-      "scrapedAt": "2026-08-27T11:12:26.415Z",
-      "summary": "आइएफआरसीद्वारा भोटेकोशी बाढी प्रभावितलाई तत्काल करिब १९ करोड सहयोग घोषणा",
-      "isGlobal": false
-    },
-    {
-      "title": "दैनिक १२ करोड राजस्व लक्ष्यमा धक्का",
-      "url": "https://www.karobardaily.com/news/409650",
-      "source": "Karobar Daily",
-      "badge": "KD",
-      "category": "Nepal Business",
-      "scrapedAt": "2026-08-27T11:12:26.415Z",
-      "summary": "दैनिक १२ करोड राजस्व लक्ष्यमा धक्का",
       "isGlobal": false
     },
     {
@@ -81,7 +71,7 @@
       "source": "Karobar Daily",
       "badge": "KD",
       "category": "Nepal Business",
-      "scrapedAt": "2026-08-27T11:12:26.415Z",
+      "scrapedAt": "2026-08-28T12:47:18.630Z",
       "summary": "ब्याजदर घटाएरै सवारी कर्जा दिन बैंकबीच प्रतिस्पर्धा",
       "isGlobal": false
     },
@@ -91,8 +81,18 @@
       "source": "Karobar Daily",
       "badge": "KD",
       "category": "Nepal Business",
-      "scrapedAt": "2026-08-27T11:12:26.415Z",
+      "scrapedAt": "2026-08-28T12:47:18.630Z",
       "summary": "लाभांश वितरण गर्न १६ बैंक मात्रै सक्षम",
+      "isGlobal": false
+    },
+    {
+      "title": "११ महिनादेखि प्राधिकरण अध्यक्षविहीनः बीमा क्षेत्रको नियमन लथालिंग",
+      "url": "https://www.karobardaily.com/news/394632",
+      "source": "Karobar Daily",
+      "badge": "KD",
+      "category": "Nepal Business",
+      "scrapedAt": "2026-08-28T12:47:18.630Z",
+      "summary": "११ महिनादेखि प्राधिकरण अध्यक्षविहीनः बीमा क्षेत्रको नियमन लथालिंग",
       "isGlobal": false
     },
     {
@@ -101,17 +101,17 @@
       "source": "Sharesansar",
       "badge": "SS",
       "category": "Nepal Stock",
-      "scrapedAt": "2026-08-27T11:12:28.278Z",
+      "scrapedAt": "2026-08-28T12:47:20.479Z",
       "summary": "Proposed Dividend",
       "isGlobal": false
     },
     {
       "title": "Dividend, Bonus & Rights",
-      "url": "https://www.sharesansar.com/newsdetail/eastern-hydropower-limited-receives-preliminary-approval-from-erc-to-issue-right-shares-at-the-ratio-of-1-0871-2026-08-26",
+      "url": "https://www.sharesansar.com/newsdetail/everest-bank-limited-proposes-15-dividend-for-fy-208283-how-much-in-bonus-shares-and-cash-2026-08-27",
       "source": "Sharesansar",
       "badge": "SS",
       "category": "Nepal Stock",
-      "scrapedAt": "2026-08-27T11:12:28.278Z",
+      "scrapedAt": "2026-08-28T12:47:20.479Z",
       "summary": "Dividend, Bonus & Rights",
       "isGlobal": false
     },
@@ -121,7 +121,7 @@
       "source": "Sharesansar",
       "badge": "SS",
       "category": "Nepal Stock",
-      "scrapedAt": "2026-08-27T11:12:28.278Z",
+      "scrapedAt": "2026-08-28T12:47:20.479Z",
       "summary": "NEPSE Concludes The Week With 0.95% Loss and Turnover of Rs. 22.46 Arba; Weekly Summary with Sector Comparison, Major Highlights, and More",
       "isGlobal": false
     },
@@ -131,7 +131,7 @@
       "source": "Nepali Paisa",
       "badge": "NP",
       "category": "Nepal Finance",
-      "scrapedAt": "2026-08-27T11:12:31.501Z",
+      "scrapedAt": "2026-08-28T12:47:23.778Z",
       "summary": "Market Overview",
       "isGlobal": false
     },
@@ -141,7 +141,7 @@
       "source": "Nepali Paisa",
       "badge": "NP",
       "category": "Nepal Finance",
-      "scrapedAt": "2026-08-27T11:12:31.501Z",
+      "scrapedAt": "2026-08-28T12:47:23.778Z",
       "summary": "Stocks Up & Down",
       "isGlobal": false
     },
@@ -151,7 +151,7 @@
       "source": "Nepali Paisa",
       "badge": "NP",
       "category": "Nepal Finance",
-      "scrapedAt": "2026-08-27T11:12:31.501Z",
+      "scrapedAt": "2026-08-28T12:47:23.778Z",
       "summary": "Business & Economy",
       "isGlobal": false
     }
@@ -163,78 +163,78 @@
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-08-27T11:12:42.296Z",
+      "scrapedAt": "2026-08-28T12:47:34.485Z",
       "summary": "Markets just got Conversational",
       "isGlobal": true
     },
     {
-      "title": "Abercrombie & Fitch stock surges: Why ANF is on fire",
-      "url": "https://economictimes.indiatimes.com/markets/us-stocks/news/abercrombie-amp-fitch-stock-surges-why-anf-is-on-fire/slideshow/133560450.cms",
+      "title": "Laurus Labs among 5 stocks hitting 52-week highs; surge up to 20% in a month",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/laurus-labs-among-5-stocks-hitting-52-week-highs-surge-up-to-20-in-a-month/slideshow/133590529.cms",
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-08-27T11:12:42.297Z",
-      "summary": "Abercrombie & Fitch stock surges: Why ANF is on fire",
+      "scrapedAt": "2026-08-28T12:47:34.485Z",
+      "summary": "Laurus Labs among 5 stocks hitting 52-week highs; surge up to 20% in a month",
       "isGlobal": true
     },
     {
-      "title": "Titan, Infosys among 10 stocks with highest HNI holdings in Q1; check full list",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/news/titan-infosys-among-10-stocks-with-highest-hni-holdings-in-q1-check-full-list/slideshow/133558046.cms",
+      "title": "Retail investors bet big on these 12 smallcap stocks that rallied up to 150%; 3 turned multibaggers",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/retail-investors-bet-big-on-these-12-smallcap-stocks-that-rallied-up-to-150-3-turned-multibaggers/slideshow/133588430.cms",
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-08-27T11:12:42.297Z",
-      "summary": "Titan, Infosys among 10 stocks with highest HNI holdings in Q1; check full list",
+      "scrapedAt": "2026-08-28T12:47:34.485Z",
+      "summary": "Retail investors bet big on these 12 smallcap stocks that rallied up to 150%; 3 turned multibaggers",
       "isGlobal": true
     },
     {
-      "title": "Vijay Kedia’s portfolio: How the ace investor’s top 5 stock holdings performed in a month",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/news/vijay-kedias-portfolio-how-the-ace-investors-top-5-stock-holdings-performed-in-a-month/slideshow/133557194.cms",
+      "title": "15 mainboard IPOs doubled investor money on listing day in last 6 years. See full list",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/15-mainboard-ipos-that-doubled-investor-money-on-listing-day-in-last-6-years-see-full-list/slideshow/133585668.cms",
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-08-27T11:12:42.297Z",
-      "summary": "Vijay Kedia’s portfolio: How the ace investor’s top 5 stock holdings performed in a month",
+      "scrapedAt": "2026-08-28T12:47:34.485Z",
+      "summary": "15 mainboard IPOs doubled investor money on listing day in last 6 years. See full list",
       "isGlobal": true
     },
     {
-      "title": "These mid-cap stocks with ‘Strong Buy’ & ‘Buy’ recos can rally over 25%, according to analysts",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/news/these-mid-cap-stocks-with-strong-buy-buy-recos-can-rally-over-25-according-to-analysts/articleshow/133547134.cms",
+      "title": "IREN stock slumps after Q4 miss as AI cloud revenue surges",
+      "url": "https://economictimes.indiatimes.com/markets/us-stocks/news/iren-stock-slumps-after-q4-miss-as-ai-cloud-revenue-surges/slideshow/133583923.cms",
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-08-27T11:12:42.297Z",
-      "summary": "These mid-cap stocks with ‘Strong Buy’ & ‘Buy’ recos can rally over 25%, according to analysts",
+      "scrapedAt": "2026-08-28T12:47:34.485Z",
+      "summary": "IREN stock slumps after Q4 miss as AI cloud revenue surges",
       "isGlobal": true
     },
     {
-      "title": "Stock Radar: Narayana Hrudayalaya stock showing signs of bottoming out; time to buy?",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/news/stock-radar-narayana-hrudayalaya-stock-showing-signs-of-bottoming-out-time-to-buy/articleshow/133537374.cms",
+      "title": "The most expensive half-sentence in market history, and Warren Buffett wrote the other half",
+      "url": "https://economictimes.indiatimes.com/intelligent-investing/warren-buffett/the-most-expensive-half-sentence-in-market-history-and-warren-buffett-wrote-the-other-half/articleshow/133574855.cms",
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-08-27T11:12:42.297Z",
-      "summary": "Stock Radar: Narayana Hrudayalaya stock showing signs of bottoming out; time to buy?",
+      "scrapedAt": "2026-08-28T12:47:34.485Z",
+      "summary": "The most expensive half-sentence in market history, and Warren Buffett wrote the other half",
       "isGlobal": true
     },
     {
-      "title": "Two Trades for Today: A maker of stainless steel hoses for a 6.3% gain, a mid-cap NBFC stock for rise of 7%",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/news/two-trades-for-today-a-maker-of-stainless-steel-hoses-for-a-6-3-gain-a-mid-cap-nbfc-stock-for-rise-of-7/articleshow/133543952.cms",
+      "title": "These large-, mid- and small-cap stocks can give more than 20% return in 1 year, according to analysts",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/these-large-mid-and-small-cap-stocks-can-give-more-than-20-return-in-1-year-according-to-analysts/articleshow/133580851.cms",
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-08-27T11:12:42.297Z",
-      "summary": "Two Trades for Today: A maker of stainless steel hoses for a 6.3% gain, a mid-cap NBFC stock for rise of 7%",
+      "scrapedAt": "2026-08-28T12:47:34.485Z",
+      "summary": "These large-, mid- and small-cap stocks can give more than 20% return in 1 year, according to analysts",
       "isGlobal": true
     },
     {
-      "title": "Auto ancillary sector: Time for another re-rating? 5 stocks from the auto ancillary space with upside potential of up to 30%",
-      "url": "https://economictimes.indiatimes.com/intelligent-investing/sectoral-deep-dives/auto-ancillary-sector-time-for-another-re-rating-5-stocks-from-the-auto-ancillary-space-with-upside-potential-of-up-to-30/articleshow/133543526.cms",
+      "title": "Weekly Top Picks: These stocks scored 10 on 10 on Stock Reports Plus",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/weekly-top-picks-these-stocks-scored-10-on-10-on-stock-reports-plus/articleshow/133570382.cms",
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-08-27T11:12:42.297Z",
-      "summary": "Auto ancillary sector: Time for another re-rating? 5 stocks from the auto ancillary space with upside potential of up to 30%",
+      "scrapedAt": "2026-08-28T12:47:34.485Z",
+      "summary": "Weekly Top Picks: These stocks scored 10 on 10 on Stock Reports Plus",
       "isGlobal": true
     }
   ]
