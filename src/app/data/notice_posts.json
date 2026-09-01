@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-08-31T07:03:22.611Z",
-  "totalPosts": 56,
+  "lastUpdated": "2026-09-01T06:16:01.467Z",
+  "totalPosts": 58,
   "posts": {
     "ocrnepal_moqq27ad": {
       "headline": "OCR Nepal: वार्षिक विवरण अभिलेखनका पत्रहरू स्वचालित रूपमा प्राप्त ",
@@ -1121,6 +1121,46 @@
       "badgeColor": "#e53935",
       "link": "https://ird.gov.np/content/13622/invitation-for-sealed-quotation-for-the-procurement/",
       "createdAt": "2026-08-21T02:38:07.928Z"
+    },
+    "sebonnepalnew_mti9x4bg": {
+      "headline": "SEBON Nepal: बोलपत्र रद्द गरिएको सूचना ।NEW",
+      "body": "📈 New securities regulation from SEBON!\n\n📌 बोलपत्र रद्द गरिएको सूचना ।NEW\n\nThis update from SEBON Nepal may affect securities law compliance requirements for Nepal professionals.\n\n✅ Review the full notice and consult your advisor.\n\n🔗 https://sebon.gov.np/notices/बोलपत्र-रद्द-गरिएको-सूचना-।",
+      "callToAction": "Share this with your team if relevant.",
+      "hashtags": [
+        "#Nepal",
+        "#Compliance",
+        "#CA",
+        "#SEBONNepal"
+      ],
+      "bestTimeToPost": "Morning",
+      "topicBadge": "Securities Law",
+      "isTemplate": true,
+      "noticeId": "sebonnepalnew_mti9x4bg",
+      "noticeTitle": "बोलपत्र रद्द गरिएको सूचना ।NEW",
+      "source": "SEBON Nepal",
+      "badgeColor": "#6a1b9a",
+      "link": "https://sebon.gov.np/notices/बोलपत्र-रद्द-गरिएको-सूचना-।",
+      "createdAt": "2026-09-01T06:16:01.467Z"
+    },
+    "sebonnepal_mti9x4bg": {
+      "headline": "SEBON Nepal: बोलपत्र रद्द गरिएको सूचना ।",
+      "body": "📈 New securities regulation from SEBON!\n\n📌 बोलपत्र रद्द गरिएको सूचना ।\n\nThis update from SEBON Nepal may affect securities law compliance requirements for Nepal professionals.\n\n✅ Review the full notice and consult your advisor.\n\n🔗 https://sebon.gov.np/notices/बोलपत्र-रद्द-गरिएको-सूचना-।",
+      "callToAction": "Share this with your team if relevant.",
+      "hashtags": [
+        "#Nepal",
+        "#Compliance",
+        "#CA",
+        "#SEBONNepal"
+      ],
+      "bestTimeToPost": "Morning",
+      "topicBadge": "Securities Law",
+      "isTemplate": true,
+      "noticeId": "sebonnepal_mti9x4bg",
+      "noticeTitle": "बोलपत्र रद्द गरिएको सूचना ।",
+      "source": "SEBON Nepal",
+      "badgeColor": "#6a1b9a",
+      "link": "https://sebon.gov.np/notices/बोलपत्र-रद्द-गरिएको-सूचना-।",
+      "createdAt": "2026-09-01T06:16:01.467Z"
     }
   }
 }
