@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-09-01T06:16:01.467Z",
-  "totalPosts": 58,
+  "lastUpdated": "2026-09-02T05:50:55.972Z",
+  "totalPosts": 59,
   "posts": {
     "ocrnepal_moqq27ad": {
       "headline": "OCR Nepal: वार्षिक विवरण अभिलेखनका पत्रहरू स्वचालित रूपमा प्राप्त ",
@@ -1161,6 +1161,26 @@
       "badgeColor": "#6a1b9a",
       "link": "https://sebon.gov.np/notices/बोलपत्र-रद्द-गरिएको-सूचना-।",
       "createdAt": "2026-09-01T06:16:01.467Z"
+    },
+    "irdnepal_mtjogeyo": {
+      "headline": "IRD Nepal: उपहार विजेता छनोट कार्यक्रम स्थगित भएको सूचना ! १६ भदौ,",
+      "body": "💰 Tax update from Inland Revenue Department!\n\n📌 उपहार विजेता छनोट कार्यक्रम स्थगित भएको सूचना ! १६ भदौ, २०८३\n\nThis update from IRD Nepal may affect taxation compliance requirements for Nepal professionals.\n\n✅ Review the full notice and consult your advisor.\n\n🔗 https://ird.gov.np/content/13627/notice-that-the-gift-winner-selection-program/",
+      "callToAction": "Share this with your team if relevant.",
+      "hashtags": [
+        "#Nepal",
+        "#Compliance",
+        "#CA",
+        "#IRDNepal"
+      ],
+      "bestTimeToPost": "Morning",
+      "topicBadge": "Taxation",
+      "isTemplate": true,
+      "noticeId": "irdnepal_mtjogeyo",
+      "noticeTitle": "उपहार विजेता छनोट कार्यक्रम स्थगित भएको सूचना ! १६ भदौ, २०८३",
+      "source": "IRD Nepal",
+      "badgeColor": "#e53935",
+      "link": "https://ird.gov.np/content/13627/notice-that-the-gift-winner-selection-program/",
+      "createdAt": "2026-09-02T05:50:55.972Z"
     }
   }
 }

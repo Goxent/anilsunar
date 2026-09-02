@@ -1,8 +1,21 @@
 {
-  "lastUpdated": "2026-09-01T06:16:01.303Z",
-  "totalCount": 107,
-  "newCount": 2,
+  "lastUpdated": "2026-09-02T05:50:47.449Z",
+  "totalCount": 108,
+  "newCount": 1,
   "notices": [
+    {
+      "id": "irdnepal_mtjogeyo",
+      "title": "उपहार विजेता छनोट कार्यक्रम स्थगित भएको सूचना ! १६ भदौ, २०८३",
+      "source": "IRD Nepal",
+      "category": "Taxation",
+      "badge": "IRD",
+      "badgeColor": "#e53935",
+      "link": "https://ird.gov.np/content/13627/notice-that-the-gift-winner-selection-program/",
+      "summary": "New Taxation update from IRD Nepal: उपहार विजेता छनोट कार्यक्रम स्थगित भएको सूचना ! १६ भदौ, २०८३",
+      "detectedAt": "2026-09-02T05:50:31.872Z",
+      "isNew": true,
+      "emailedAt": null
+    },
     {
       "id": "sebonnepalnew_mti9x4bg",
       "title": "बोलपत्र रद्द गरिएको सूचना ।NEW",
