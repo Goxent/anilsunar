@@ -1,5 +1,5 @@
 {
-  "scrapedAt": "2026-09-03T05:48:49.250Z",
+  "scrapedAt": "2026-09-04T05:55:56.615Z",
   "totalCount": 23,
   "nepalCount": 15,
   "globalCount": 8,
@@ -16,13 +16,23 @@
   ],
   "articles": [
     {
-      "title": "स्याउबाटै जुम्लाको समृद्धि, मूल्य र बजार अभाव, वार्षिक करोडौं कमाइ",
-      "url": "https://www.karobardaily.com/news/412893",
+      "title": "कर र भन्सारमा पूर्ण छुटदेखि ऋण पुनर्संरचनासम्मको सुविधा",
+      "url": "https://www.karobardaily.com/news/413552",
       "source": "Karobar Daily",
       "badge": "KD",
       "category": "Nepal Business",
-      "scrapedAt": "2026-09-03T05:48:30.407Z",
-      "summary": "स्याउबाटै जुम्लाको समृद्धि, मूल्य र बजार अभाव, वार्षिक करोडौं कमाइ",
+      "scrapedAt": "2026-09-04T05:55:33.871Z",
+      "summary": "कर र भन्सारमा पूर्ण छुटदेखि ऋण पुनर्संरचनासम्मको सुविधा",
+      "isGlobal": false
+    },
+    {
+      "title": "मधेस सरकारको एक करोड ९६ लाखबराबरको राहत सामग्री",
+      "url": "https://www.karobardaily.com/news/413279",
+      "source": "Karobar Daily",
+      "badge": "KD",
+      "category": "Nepal Business",
+      "scrapedAt": "2026-09-04T05:55:33.871Z",
+      "summary": "मधेस सरकारको एक करोड ९६ लाखबराबरको राहत सामग्री",
       "isGlobal": false
     },
     {
@@ -31,7 +41,7 @@
       "source": "Karobar Daily",
       "badge": "KD",
       "category": "Nepal Business",
-      "scrapedAt": "2026-09-03T05:48:30.407Z",
+      "scrapedAt": "2026-09-04T05:55:33.871Z",
       "summary": "विपद्पीडित ग्राहकका लागि बैंकिङ सेवा थप सहज बनाउन राष्ट्र बैंकको निर्देशन",
       "isGlobal": false
     },
@@ -41,7 +51,7 @@
       "source": "Karobar Daily",
       "badge": "KD",
       "category": "Nepal Business",
-      "scrapedAt": "2026-09-03T05:48:30.407Z",
+      "scrapedAt": "2026-09-04T05:55:33.871Z",
       "summary": "बाढीले बैंकका १६ शाखामा ६० करोड क्षति",
       "isGlobal": false
     },
@@ -51,48 +61,38 @@
       "source": "Karobar Daily",
       "badge": "KD",
       "category": "Nepal Business",
-      "scrapedAt": "2026-09-03T05:48:30.407Z",
+      "scrapedAt": "2026-09-04T05:55:33.871Z",
       "summary": "ब्याजदर घटाएरै सवारी कर्जा दिन बैंकबीच प्रतिस्पर्धा",
       "isGlobal": false
     },
     {
-      "title": "वनस्पति घ्यू तेल उत्पादक संघको १ करोड १ लाख",
-      "url": "https://www.karobardaily.com/news/413174",
+      "title": "बाढी पीडितका लागि बीमा कम्पनीहरूद्वारा ३ करोड ४७ लाख हस्तान्तरण",
+      "url": "https://www.karobardaily.com/news/413485",
       "source": "Karobar Daily",
       "badge": "KD",
       "category": "Nepal Business",
-      "scrapedAt": "2026-09-03T05:48:30.407Z",
-      "summary": "वनस्पति घ्यू तेल उत्पादक संघको १ करोड १ लाख",
+      "scrapedAt": "2026-09-04T05:55:33.871Z",
+      "summary": "बाढी पीडितका लागि बीमा कम्पनीहरूद्वारा ३ करोड ४७ लाख हस्तान्तरण",
       "isGlobal": false
     },
     {
-      "title": "एभरेष्ट बैंक र कर्मचारीहरूबाट बाढी प्रभावितका लागि ३ करोड ११ लाखभन्दा बढी सहयोग",
-      "url": "https://www.karobardaily.com/news/412842",
+      "title": "सिद्धार्थ प्रिमियरको १ करोड १ लाख सहयोग",
+      "url": "https://www.karobardaily.com/news/413214",
       "source": "Karobar Daily",
       "badge": "KD",
       "category": "Nepal Business",
-      "scrapedAt": "2026-09-03T05:48:30.407Z",
-      "summary": "एभरेष्ट बैंक र कर्मचारीहरूबाट बाढी प्रभावितका लागि ३ करोड ११ लाखभन्दा बढी सहयोग",
+      "scrapedAt": "2026-09-04T05:55:33.871Z",
+      "summary": "सिद्धार्थ प्रिमियरको १ करोड १ लाख सहयोग",
       "isGlobal": false
     },
     {
-      "title": "अर्थतन्त्रको ‘रि–इञ्जिनियरिङ’ आवश्यक, अटोमोबाइल क्षेत्रलाई हेर्ने दृष्टिकोण बदल्न सरकारसँग माग",
-      "url": "https://www.karobardaily.com/news/409154",
+      "title": "दया फाउन्डेसनको १ करोड सहयोग",
+      "url": "https://www.karobardaily.com/news/413190",
       "source": "Karobar Daily",
       "badge": "KD",
       "category": "Nepal Business",
-      "scrapedAt": "2026-09-03T05:48:30.407Z",
-      "summary": "अर्थतन्त्रको ‘रि–इञ्जिनियरिङ’ आवश्यक, अटोमोबाइल क्षेत्रलाई हेर्ने दृष्टिकोण बदल्न सरकारसँग माग",
-      "isGlobal": false
-    },
-    {
-      "title": "नाडा अटो शोमा कारदेखि ग्यारेज उपकरणसम्मको प्रदर्शनी",
-      "url": "https://www.karobardaily.com/news/408552",
-      "source": "Karobar Daily",
-      "badge": "KD",
-      "category": "Nepal Business",
-      "scrapedAt": "2026-09-03T05:48:30.407Z",
-      "summary": "नाडा अटो शोमा कारदेखि ग्यारेज उपकरणसम्मको प्रदर्शनी",
+      "scrapedAt": "2026-09-04T05:55:33.871Z",
+      "summary": "दया फाउन्डेसनको १ करोड सहयोग",
       "isGlobal": false
     },
     {
@@ -101,17 +101,17 @@
       "source": "Sharesansar",
       "badge": "SS",
       "category": "Nepal Stock",
-      "scrapedAt": "2026-09-03T05:48:32.529Z",
+      "scrapedAt": "2026-09-04T05:55:35.704Z",
       "summary": "Proposed Dividend",
       "isGlobal": false
     },
     {
       "title": "Dividend, Bonus & Rights",
-      "url": "https://www.sharesansar.com/newsdetail/eastern-hydropower-receives-amended-regulatory-approval-to-issue-54-lakh-right-shares-2026-09-02",
+      "url": "https://www.sharesansar.com/newsdetail/maya-khola-hydropower-company-limited-receives-preliminary-approval-from-erc-to-issue-right-shares-at-the-ratio-of-1-1-2026-09-03",
       "source": "Sharesansar",
       "badge": "SS",
       "category": "Nepal Stock",
-      "scrapedAt": "2026-09-03T05:48:32.529Z",
+      "scrapedAt": "2026-09-04T05:55:35.704Z",
       "summary": "Dividend, Bonus & Rights",
       "isGlobal": false
     },
@@ -121,7 +121,7 @@
       "source": "Sharesansar",
       "badge": "SS",
       "category": "Nepal Stock",
-      "scrapedAt": "2026-09-03T05:48:32.529Z",
+      "scrapedAt": "2026-09-04T05:55:35.704Z",
       "summary": "Top 10 Low Float Development Banks in NEPSE: Key EPS, P/E, and NPL Insights",
       "isGlobal": false
     },
@@ -131,7 +131,7 @@
       "source": "Sharesansar",
       "badge": "SS",
       "category": "Nepal Stock",
-      "scrapedAt": "2026-09-03T05:48:32.529Z",
+      "scrapedAt": "2026-09-04T05:55:35.704Z",
       "summary": "NEPSE Concludes The Week With 2.35% Loss and Turnover of Rs. 15.90 Arba; Weekly Summary with Sector Comparison, Major Highlights, and More",
       "isGlobal": false
     },
@@ -141,7 +141,7 @@
       "source": "Nepali Paisa",
       "badge": "NP",
       "category": "Nepal Finance",
-      "scrapedAt": "2026-09-03T05:48:34.718Z",
+      "scrapedAt": "2026-09-04T05:55:39.083Z",
       "summary": "Market Overview",
       "isGlobal": false
     },
@@ -151,7 +151,7 @@
       "source": "Nepali Paisa",
       "badge": "NP",
       "category": "Nepal Finance",
-      "scrapedAt": "2026-09-03T05:48:34.718Z",
+      "scrapedAt": "2026-09-04T05:55:39.083Z",
       "summary": "Stocks Up & Down",
       "isGlobal": false
     },
@@ -161,7 +161,7 @@
       "source": "Nepali Paisa",
       "badge": "NP",
       "category": "Nepal Finance",
-      "scrapedAt": "2026-09-03T05:48:34.718Z",
+      "scrapedAt": "2026-09-04T05:55:39.083Z",
       "summary": "Business & Economy",
       "isGlobal": false
     }
@@ -173,78 +173,78 @@
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-09-03T05:48:47.747Z",
+      "scrapedAt": "2026-09-04T05:55:55.113Z",
       "summary": "Markets just got Conversational",
       "isGlobal": true
     },
     {
-      "title": "5 smallcap stocks with upside potential of up 32%. How many do you have?",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/news/5-smallcap-stocks-with-upside-potential-of-up-32-how-many-do-you-have/slideshow/133726489.cms",
+      "title": "Robinhood stock surges: Why HOOD is rallying and what Wall Street sees next",
+      "url": "https://economictimes.indiatimes.com/markets/us-stocks/news/robinhood-stock-surges-why-hood-is-rallying-and-what-wall-street-sees-next/slideshow/133752990.cms",
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-09-03T05:48:47.747Z",
-      "summary": "5 smallcap stocks with upside potential of up 32%. How many do you have?",
+      "scrapedAt": "2026-09-04T05:55:55.114Z",
+      "summary": "Robinhood stock surges: Why HOOD is rallying and what Wall Street sees next",
       "isGlobal": true
     },
     {
-      "title": "Multibaggers: These 9 midcap stocks surged up to 300% in two years. Do you own any?",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/news/multibaggers-these-9-midcap-stocks-surged-up-to-300-in-two-years-do-you-own-any/slideshow/133703134.cms",
+      "title": "Eternal, ICICI Bank, 5 other largecap stocks with upside potential of up to 40%. Do you own any?",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/eternal-icici-bank-5-other-largecap-stocks-with-upside-potential-of-up-to-40-do-you-own-any/slideshow/133751438.cms",
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-09-03T05:48:47.747Z",
-      "summary": "Multibaggers: These 9 midcap stocks surged up to 300% in two years. Do you own any?",
+      "scrapedAt": "2026-09-04T05:55:55.114Z",
+      "summary": "Eternal, ICICI Bank, 5 other largecap stocks with upside potential of up to 40%. Do you own any?",
       "isGlobal": true
     },
     {
-      "title": "Credo Technology: Strong AI tailwinds, but stock faces high expectations",
-      "url": "https://economictimes.indiatimes.com/markets/us-stocks/news/credo-technology-strong-ai-tailwinds-but-stock-faces-high-expectations/slideshow/133698866.cms",
+      "title": "​Finolex Cables among 4 stocks flashing bullish signals, hinting at a possible uptrend",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/finolex-cables-among-4-stocks-flashing-bullish-signals-hinting-at-a-possible-uptrend/slideshow/133750941.cms",
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-09-03T05:48:47.747Z",
-      "summary": "Credo Technology: Strong AI tailwinds, but stock faces high expectations",
+      "scrapedAt": "2026-09-04T05:55:55.114Z",
+      "summary": "​Finolex Cables among 4 stocks flashing bullish signals, hinting at a possible uptrend",
       "isGlobal": true
     },
     {
-      "title": "These mid-cap stocks with ‘Strong Buy’ & ‘Buy’ recos can rally over 25%, according to analysts",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/news/these-mid-cap-stocks-with-strong-buy-buy-recos-can-rally-over-25-according-to-analysts/articleshow/133716246.cms",
+      "title": "Anant Raj among 4 stocks showing bullish RSI upswing",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/anant-raj-among-4-stocks-showing-bullish-rsi-upswing/slideshow/133750831.cms",
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-09-03T05:48:47.747Z",
-      "summary": "These mid-cap stocks with ‘Strong Buy’ & ‘Buy’ recos can rally over 25%, according to analysts",
+      "scrapedAt": "2026-09-04T05:55:55.114Z",
+      "summary": "Anant Raj among 4 stocks showing bullish RSI upswing",
+      "isGlobal": true
+    },
+    {
+      "title": "Positive Breakout: These 7 stocks cross above their 200 DMAs",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/positive-breakout-these-7-stocks-cross-above-their-200-dmas/slideshow/133749691.cms",
+      "source": "Economic Times Markets",
+      "badge": "ET",
+      "category": "India Markets",
+      "scrapedAt": "2026-09-04T05:55:55.114Z",
+      "summary": "Positive Breakout: These 7 stocks cross above their 200 DMAs",
+      "isGlobal": true
+    },
+    {
+      "title": "These large- and mid-cap stocks can give more than 20% return in 1 year, according to analysts",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/these-large-and-mid-cap-stocks-can-give-more-than-20-return-in-1-year-according-to-analysts/articleshow/133748711.cms",
+      "source": "Economic Times Markets",
+      "badge": "ET",
+      "category": "India Markets",
+      "scrapedAt": "2026-09-04T05:55:55.114Z",
+      "summary": "These large- and mid-cap stocks can give more than 20% return in 1 year, according to analysts",
       "isGlobal": true
     },
     {
       "title": "Weekly Top Picks: These stocks scored 10 on 10 on Stock Reports Plus",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/news/weekly-top-picks-these-stocks-scored-10-on-10-on-stock-reports-plus/articleshow/133654396.cms",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/weekly-top-picks-these-stocks-scored-10-on-10-on-stock-reports-plus/articleshow/133737873.cms",
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-09-03T05:48:47.747Z",
+      "scrapedAt": "2026-09-04T05:55:55.114Z",
       "summary": "Weekly Top Picks: These stocks scored 10 on 10 on Stock Reports Plus",
-      "isGlobal": true
-    },
-    {
-      "title": "Two Trades for Today: A top ceramic tile maker for a 6.65% rise, a mid-cap private bank stock for an almost 6% gain",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/news/two-trades-for-today-a-top-ceramic-tile-maker-for-a-6-65-rise-a-mid-cap-private-bank-stock-for-an-almost-6-gain/articleshow/133713761.cms",
-      "source": "Economic Times Markets",
-      "badge": "ET",
-      "category": "India Markets",
-      "scrapedAt": "2026-09-03T05:48:47.747Z",
-      "summary": "Two Trades for Today: A top ceramic tile maker for a 6.65% rise, a mid-cap private bank stock for an almost 6% gain",
-      "isGlobal": true
-    },
-    {
-      "title": "Tough task: Staying invested in businesses while ignoring noise called Gulf war; 6 mid-cap stocks with upside potential of up to 23%",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/news/tough-task-staying-invested-in-businesses-while-ignoring-noise-called-gulf-war-6-mid-cap-stocks-with-upside-potential-of-up-to-23/articleshow/133703992.cms",
-      "source": "Economic Times Markets",
-      "badge": "ET",
-      "category": "India Markets",
-      "scrapedAt": "2026-09-03T05:48:47.747Z",
-      "summary": "Tough task: Staying invested in businesses while ignoring noise called Gulf war; 6 mid-cap stocks with upside potential of up to 23%",
       "isGlobal": true
     }
   ]
