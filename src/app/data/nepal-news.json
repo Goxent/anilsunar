@@ -1,5 +1,5 @@
 {
-  "scrapedAt": "2026-09-04T05:55:56.615Z",
+  "scrapedAt": "2026-09-07T06:06:57.046Z",
   "totalCount": 23,
   "nepalCount": 15,
   "globalCount": 8,
@@ -16,23 +16,43 @@
   ],
   "articles": [
     {
-      "title": "कर र भन्सारमा पूर्ण छुटदेखि ऋण पुनर्संरचनासम्मको सुविधा",
-      "url": "https://www.karobardaily.com/news/413552",
+      "title": "नेपालको अर्थ-राजनीतिमा भारतको दबदबा",
+      "url": "https://www.karobardaily.com/news/414349",
       "source": "Karobar Daily",
       "badge": "KD",
       "category": "Nepal Business",
-      "scrapedAt": "2026-09-04T05:55:33.871Z",
-      "summary": "कर र भन्सारमा पूर्ण छुटदेखि ऋण पुनर्संरचनासम्मको सुविधा",
+      "scrapedAt": "2026-09-07T06:06:30.330Z",
+      "summary": "नेपालको अर्थ-राजनीतिमा भारतको दबदबा",
       "isGlobal": false
     },
     {
-      "title": "मधेस सरकारको एक करोड ९६ लाखबराबरको राहत सामग्री",
-      "url": "https://www.karobardaily.com/news/413279",
+      "title": "पूर्वाधार बग्यो, बाटोमै रोकियो रसुवाको अर्थतन्त्र",
+      "url": "https://www.karobardaily.com/news/414382",
       "source": "Karobar Daily",
       "badge": "KD",
       "category": "Nepal Business",
-      "scrapedAt": "2026-09-04T05:55:33.871Z",
-      "summary": "मधेस सरकारको एक करोड ९६ लाखबराबरको राहत सामग्री",
+      "scrapedAt": "2026-09-07T06:06:30.330Z",
+      "summary": "पूर्वाधार बग्यो, बाटोमै रोकियो रसुवाको अर्थतन्त्र",
+      "isGlobal": false
+    },
+    {
+      "title": "स्याङ्जाका किसानलाई साढे दुई करोड",
+      "url": "https://www.karobardaily.com/news/414286",
+      "source": "Karobar Daily",
+      "badge": "KD",
+      "category": "Nepal Business",
+      "scrapedAt": "2026-09-07T06:06:30.330Z",
+      "summary": "स्याङ्जाका किसानलाई साढे दुई करोड",
+      "isGlobal": false
+    },
+    {
+      "title": "निगमको निमित्त महाप्रबन्धकमा जनकराज कालाखेती नियुक्त",
+      "url": "https://www.karobardaily.com/news/413893",
+      "source": "Karobar Daily",
+      "badge": "KD",
+      "category": "Nepal Business",
+      "scrapedAt": "2026-09-07T06:06:30.330Z",
+      "summary": "निगमको निमित्त महाप्रबन्धकमा जनकराज कालाखेती नियुक्त",
       "isGlobal": false
     },
     {
@@ -41,7 +61,7 @@
       "source": "Karobar Daily",
       "badge": "KD",
       "category": "Nepal Business",
-      "scrapedAt": "2026-09-04T05:55:33.871Z",
+      "scrapedAt": "2026-09-07T06:06:30.330Z",
       "summary": "विपद्पीडित ग्राहकका लागि बैंकिङ सेवा थप सहज बनाउन राष्ट्र बैंकको निर्देशन",
       "isGlobal": false
     },
@@ -51,7 +71,7 @@
       "source": "Karobar Daily",
       "badge": "KD",
       "category": "Nepal Business",
-      "scrapedAt": "2026-09-04T05:55:33.871Z",
+      "scrapedAt": "2026-09-07T06:06:30.330Z",
       "summary": "बाढीले बैंकका १६ शाखामा ६० करोड क्षति",
       "isGlobal": false
     },
@@ -61,38 +81,18 @@
       "source": "Karobar Daily",
       "badge": "KD",
       "category": "Nepal Business",
-      "scrapedAt": "2026-09-04T05:55:33.871Z",
+      "scrapedAt": "2026-09-07T06:06:30.330Z",
       "summary": "ब्याजदर घटाएरै सवारी कर्जा दिन बैंकबीच प्रतिस्पर्धा",
       "isGlobal": false
     },
     {
-      "title": "बाढी पीडितका लागि बीमा कम्पनीहरूद्वारा ३ करोड ४७ लाख हस्तान्तरण",
-      "url": "https://www.karobardaily.com/news/413485",
+      "title": "निर्जीवन बीमा कम्पनीको व्यापार २३ प्रतिशतले बढ्यो",
+      "url": "https://www.karobardaily.com/news/413733",
       "source": "Karobar Daily",
       "badge": "KD",
       "category": "Nepal Business",
-      "scrapedAt": "2026-09-04T05:55:33.871Z",
-      "summary": "बाढी पीडितका लागि बीमा कम्पनीहरूद्वारा ३ करोड ४७ लाख हस्तान्तरण",
-      "isGlobal": false
-    },
-    {
-      "title": "सिद्धार्थ प्रिमियरको १ करोड १ लाख सहयोग",
-      "url": "https://www.karobardaily.com/news/413214",
-      "source": "Karobar Daily",
-      "badge": "KD",
-      "category": "Nepal Business",
-      "scrapedAt": "2026-09-04T05:55:33.871Z",
-      "summary": "सिद्धार्थ प्रिमियरको १ करोड १ लाख सहयोग",
-      "isGlobal": false
-    },
-    {
-      "title": "दया फाउन्डेसनको १ करोड सहयोग",
-      "url": "https://www.karobardaily.com/news/413190",
-      "source": "Karobar Daily",
-      "badge": "KD",
-      "category": "Nepal Business",
-      "scrapedAt": "2026-09-04T05:55:33.871Z",
-      "summary": "दया फाउन्डेसनको १ करोड सहयोग",
+      "scrapedAt": "2026-09-07T06:06:30.330Z",
+      "summary": "निर्जीवन बीमा कम्पनीको व्यापार २३ प्रतिशतले बढ्यो",
       "isGlobal": false
     },
     {
@@ -101,17 +101,17 @@
       "source": "Sharesansar",
       "badge": "SS",
       "category": "Nepal Stock",
-      "scrapedAt": "2026-09-04T05:55:35.704Z",
+      "scrapedAt": "2026-09-07T06:06:32.151Z",
       "summary": "Proposed Dividend",
       "isGlobal": false
     },
     {
       "title": "Dividend, Bonus & Rights",
-      "url": "https://www.sharesansar.com/newsdetail/maya-khola-hydropower-company-limited-receives-preliminary-approval-from-erc-to-issue-right-shares-at-the-ratio-of-1-1-2026-09-03",
+      "url": "https://www.sharesansar.com/newsdetail/sanima-bank-unveils-book-closure-date-for-its-10-dividend-calls-agm-on-ashwin-12-2026-09-06",
       "source": "Sharesansar",
       "badge": "SS",
       "category": "Nepal Stock",
-      "scrapedAt": "2026-09-04T05:55:35.704Z",
+      "scrapedAt": "2026-09-07T06:06:32.151Z",
       "summary": "Dividend, Bonus & Rights",
       "isGlobal": false
     },
@@ -121,18 +121,18 @@
       "source": "Sharesansar",
       "badge": "SS",
       "category": "Nepal Stock",
-      "scrapedAt": "2026-09-04T05:55:35.704Z",
+      "scrapedAt": "2026-09-07T06:06:32.151Z",
       "summary": "Top 10 Low Float Development Banks in NEPSE: Key EPS, P/E, and NPL Insights",
       "isGlobal": false
     },
     {
-      "title": "NEPSE Concludes The Week With 2.35% Loss and Turnover of Rs. 15.90 Arba; Weekly Summary with Sector Comparison, Major Highlights, and More",
+      "title": "NEPSE Concludes The Week With 0.57% Loss and Turnover of Rs. 12.96 Arba; Weekly Summary with Sector Comparison, Major Highlights, and More",
       "url": "https://www.sharesansar.com/",
       "source": "Sharesansar",
       "badge": "SS",
       "category": "Nepal Stock",
-      "scrapedAt": "2026-09-04T05:55:35.704Z",
-      "summary": "NEPSE Concludes The Week With 2.35% Loss and Turnover of Rs. 15.90 Arba; Weekly Summary with Sector Comparison, Major Highlights, and More",
+      "scrapedAt": "2026-09-07T06:06:32.151Z",
+      "summary": "NEPSE Concludes The Week With 0.57% Loss and Turnover of Rs. 12.96 Arba; Weekly Summary with Sector Comparison, Major Highlights, and More",
       "isGlobal": false
     },
     {
@@ -141,7 +141,7 @@
       "source": "Nepali Paisa",
       "badge": "NP",
       "category": "Nepal Finance",
-      "scrapedAt": "2026-09-04T05:55:39.083Z",
+      "scrapedAt": "2026-09-07T06:06:34.201Z",
       "summary": "Market Overview",
       "isGlobal": false
     },
@@ -151,7 +151,7 @@
       "source": "Nepali Paisa",
       "badge": "NP",
       "category": "Nepal Finance",
-      "scrapedAt": "2026-09-04T05:55:39.083Z",
+      "scrapedAt": "2026-09-07T06:06:34.201Z",
       "summary": "Stocks Up & Down",
       "isGlobal": false
     },
@@ -161,7 +161,7 @@
       "source": "Nepali Paisa",
       "badge": "NP",
       "category": "Nepal Finance",
-      "scrapedAt": "2026-09-04T05:55:39.083Z",
+      "scrapedAt": "2026-09-07T06:06:34.201Z",
       "summary": "Business & Economy",
       "isGlobal": false
     }
@@ -173,78 +173,78 @@
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-09-04T05:55:55.113Z",
+      "scrapedAt": "2026-09-07T06:06:55.543Z",
       "summary": "Markets just got Conversational",
       "isGlobal": true
     },
     {
-      "title": "Robinhood stock surges: Why HOOD is rallying and what Wall Street sees next",
-      "url": "https://economictimes.indiatimes.com/markets/us-stocks/news/robinhood-stock-surges-why-hood-is-rallying-and-what-wall-street-sees-next/slideshow/133752990.cms",
+      "title": "Nuvoco Vistas among 4 stocks showing White Marubozu pattern",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/nuvoco-vistas-among-4-stocks-showing-white-marubozu-pattern/slideshow/133862469.cms",
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-09-04T05:55:55.114Z",
-      "summary": "Robinhood stock surges: Why HOOD is rallying and what Wall Street sees next",
+      "scrapedAt": "2026-09-07T06:06:55.544Z",
+      "summary": "Nuvoco Vistas among 4 stocks showing White Marubozu pattern",
       "isGlobal": true
     },
     {
-      "title": "Eternal, ICICI Bank, 5 other largecap stocks with upside potential of up to 40%. Do you own any?",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/news/eternal-icici-bank-5-other-largecap-stocks-with-upside-potential-of-up-to-40-do-you-own-any/slideshow/133751438.cms",
+      "title": "Indraprastha Gas among 5 stocks showing RSI Trending Up",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/indraprastha-gas-among-5-stocks-showing-rsi-trending-up/slideshow/133861065.cms",
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-09-04T05:55:55.114Z",
-      "summary": "Eternal, ICICI Bank, 5 other largecap stocks with upside potential of up to 40%. Do you own any?",
+      "scrapedAt": "2026-09-07T06:06:55.544Z",
+      "summary": "Indraprastha Gas among 5 stocks showing RSI Trending Up",
       "isGlobal": true
     },
     {
-      "title": "​Finolex Cables among 4 stocks flashing bullish signals, hinting at a possible uptrend",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/news/finolex-cables-among-4-stocks-flashing-bullish-signals-hinting-at-a-possible-uptrend/slideshow/133750941.cms",
+      "title": "Positive Breakout: These 5 stocks cross above their 200 DMAs",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/positive-breakout-these-5-stocks-cross-above-their-200-dmas/slideshow/133859765.cms",
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-09-04T05:55:55.114Z",
-      "summary": "​Finolex Cables among 4 stocks flashing bullish signals, hinting at a possible uptrend",
+      "scrapedAt": "2026-09-07T06:06:55.544Z",
+      "summary": "Positive Breakout: These 5 stocks cross above their 200 DMAs",
       "isGlobal": true
     },
     {
-      "title": "Anant Raj among 4 stocks showing bullish RSI upswing",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/news/anant-raj-among-4-stocks-showing-bullish-rsi-upswing/slideshow/133750831.cms",
+      "title": "Market Trading Guide: Emcure Pharma among 2 stock recommendations for Monday",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/market-trading-guide-emcure-pharma-among-2-stock-recommendations-for-monday/slideshow/133835557.cms",
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-09-04T05:55:55.114Z",
-      "summary": "Anant Raj among 4 stocks showing bullish RSI upswing",
+      "scrapedAt": "2026-09-07T06:06:55.544Z",
+      "summary": "Market Trading Guide: Emcure Pharma among 2 stock recommendations for Monday",
       "isGlobal": true
     },
     {
-      "title": "Positive Breakout: These 7 stocks cross above their 200 DMAs",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/news/positive-breakout-these-7-stocks-cross-above-their-200-dmas/slideshow/133749691.cms",
+      "title": "16 IPOs on investors&#x27; radar next week. GMPs signal up to 38% returns",
+      "url": "https://economictimes.indiatimes.com/markets/ipos/fpos/16-ipos-on-investors-radar-next-week-gmps-signal-up-to-38-returns/slideshow/133833526.cms",
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-09-04T05:55:55.114Z",
-      "summary": "Positive Breakout: These 7 stocks cross above their 200 DMAs",
+      "scrapedAt": "2026-09-07T06:06:55.544Z",
+      "summary": "16 IPOs on investors&#x27; radar next week. GMPs signal up to 38% returns",
       "isGlobal": true
     },
     {
-      "title": "These large- and mid-cap stocks can give more than 20% return in 1 year, according to analysts",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/news/these-large-and-mid-cap-stocks-can-give-more-than-20-return-in-1-year-according-to-analysts/articleshow/133748711.cms",
+      "title": "Top Nifty50 stocks analysts suggest buying in this volatile week",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/top-nifty50-stocks-analysts-suggest-buying-in-this-volatile-week/articleshow/133862365.cms",
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-09-04T05:55:55.114Z",
-      "summary": "These large- and mid-cap stocks can give more than 20% return in 1 year, according to analysts",
+      "scrapedAt": "2026-09-07T06:06:55.544Z",
+      "summary": "Top Nifty50 stocks analysts suggest buying in this volatile week",
       "isGlobal": true
     },
     {
-      "title": "Weekly Top Picks: These stocks scored 10 on 10 on Stock Reports Plus",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/news/weekly-top-picks-these-stocks-scored-10-on-10-on-stock-reports-plus/articleshow/133737873.cms",
+      "title": "No obvious sector to buy? So try an unconventional way: 7 stocks from different sectors with upside potential of up to 26%",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/no-obvious-sector-to-buy-so-try-an-unconventional-way-7-stocks-from-different-sectors-with-upside-potential-of-up-to-26/articleshow/133822877.cms",
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-09-04T05:55:55.114Z",
-      "summary": "Weekly Top Picks: These stocks scored 10 on 10 on Stock Reports Plus",
+      "scrapedAt": "2026-09-07T06:06:55.544Z",
+      "summary": "No obvious sector to buy? So try an unconventional way: 7 stocks from different sectors with upside potential of up to 26%",
       "isGlobal": true
     }
   ]

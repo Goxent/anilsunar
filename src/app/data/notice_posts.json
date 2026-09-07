@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-09-04T05:56:34.078Z",
-  "totalPosts": 68,
+  "lastUpdated": "2026-09-07T06:07:37.620Z",
+  "totalPosts": 71,
   "posts": {
     "ocrnepal_moqq27ad": {
       "headline": "OCR Nepal: वार्षिक विवरण अभिलेखनका पत्रहरू स्वचालित रूपमा प्राप्त ",
@@ -1361,6 +1361,66 @@
       "badgeColor": "#2e7d32",
       "link": "https://en.ican.org.np/site/show/AuditManualNepali",
       "createdAt": "2026-09-04T05:56:34.078Z"
+    },
+    "icannepalonlineboardexamform_mtmjjk9d": {
+      "headline": "ICAN Nepal: Online Board Exam Form",
+      "body": "📊 ICAN Nepal has issued a new notice!\n\n📌 Online Board Exam Form\n\nThis update from ICAN Nepal may affect auditing compliance requirements for Nepal professionals.\n\n✅ Review the full notice and consult your advisor.\n\n🔗 http://fbe.ican.org.np/",
+      "callToAction": "Share this with your team if relevant.",
+      "hashtags": [
+        "#Nepal",
+        "#Compliance",
+        "#CA",
+        "#ICANNepal"
+      ],
+      "bestTimeToPost": "Morning",
+      "topicBadge": "Auditing",
+      "isTemplate": true,
+      "noticeId": "icannepalonlineboardexamform_mtmjjk9d",
+      "noticeTitle": "Online Board Exam Form",
+      "source": "ICAN Nepal",
+      "badgeColor": "#2e7d32",
+      "link": "http://fbe.ican.org.np/",
+      "createdAt": "2026-09-07T06:07:37.619Z"
+    },
+    "icannepalonlinecamembershipe_mtmjjk9d": {
+      "headline": "ICAN Nepal: Online CA Membership Examination Form",
+      "body": "📊 ICAN Nepal has issued a new notice!\n\n📌 Online CA Membership Examination Form\n\nThis update from ICAN Nepal may affect auditing compliance requirements for Nepal professionals.\n\n✅ Review the full notice and consult your advisor.\n\n🔗 https://fbe.ican.org.np",
+      "callToAction": "Share this with your team if relevant.",
+      "hashtags": [
+        "#Nepal",
+        "#Compliance",
+        "#CA",
+        "#ICANNepal"
+      ],
+      "bestTimeToPost": "Morning",
+      "topicBadge": "Auditing",
+      "isTemplate": true,
+      "noticeId": "icannepalonlinecamembershipe_mtmjjk9d",
+      "noticeTitle": "Online CA Membership Examination Form",
+      "source": "ICAN Nepal",
+      "badgeColor": "#2e7d32",
+      "link": "https://fbe.ican.org.np",
+      "createdAt": "2026-09-07T06:07:37.620Z"
+    },
+    "icannepalmultipurposetrainin_mtmjjk9d": {
+      "headline": "ICAN Nepal: Multipurpose Training Registration Form",
+      "body": "📊 ICAN Nepal has issued a new notice!\n\n📌 Multipurpose Training Registration Form\n\nThis update from ICAN Nepal may affect auditing compliance requirements for Nepal professionals.\n\n✅ Review the full notice and consult your advisor.\n\n🔗 https://classregister.ican.org.np/mptrf",
+      "callToAction": "Share this with your team if relevant.",
+      "hashtags": [
+        "#Nepal",
+        "#Compliance",
+        "#CA",
+        "#ICANNepal"
+      ],
+      "bestTimeToPost": "Morning",
+      "topicBadge": "Auditing",
+      "isTemplate": true,
+      "noticeId": "icannepalmultipurposetrainin_mtmjjk9d",
+      "noticeTitle": "Multipurpose Training Registration Form",
+      "source": "ICAN Nepal",
+      "badgeColor": "#2e7d32",
+      "link": "https://classregister.ican.org.np/mptrf",
+      "createdAt": "2026-09-07T06:07:37.620Z"
     }
   }
 }
