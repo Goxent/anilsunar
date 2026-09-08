@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-09-07T06:07:37.620Z",
-  "totalPosts": 71,
+  "lastUpdated": "2026-09-08T05:59:41.450Z",
+  "totalPosts": 72,
   "posts": {
     "ocrnepal_moqq27ad": {
       "headline": "OCR Nepal: वार्षिक विवरण अभिलेखनका पत्रहरू स्वचालित रूपमा प्राप्त ",
@@ -1421,6 +1421,26 @@
       "badgeColor": "#2e7d32",
       "link": "https://classregister.ican.org.np/mptrf",
       "createdAt": "2026-09-07T06:07:37.620Z"
+    },
+    "irdnepal_mts9ev9w": {
+      "headline": "IRD Nepal: अनलाइन व्यवसाय गर्नेहरूका लागि जरूरी सूचना २२ भदौ, २०८३",
+      "body": "💰 Tax update from Inland Revenue Department!\n\n📌 अनलाइन व्यवसाय गर्नेहरूका लागि जरूरी सूचना २२ भदौ, २०८३\n\nThis update from IRD Nepal may affect taxation compliance requirements for Nepal professionals.\n\n✅ Review the full notice and consult your advisor.\n\n🔗 https://ird.gov.np/content/13631/important-notice-for-online-business-owners/",
+      "callToAction": "Share this with your team if relevant.",
+      "hashtags": [
+        "#Nepal",
+        "#Compliance",
+        "#CA",
+        "#IRDNepal"
+      ],
+      "bestTimeToPost": "Morning",
+      "topicBadge": "Taxation",
+      "isTemplate": true,
+      "noticeId": "irdnepal_mts9ev9w",
+      "noticeTitle": "अनलाइन व्यवसाय गर्नेहरूका लागि जरूरी सूचना २२ भदौ, २०८३",
+      "source": "IRD Nepal",
+      "badgeColor": "#e53935",
+      "link": "https://ird.gov.np/content/13631/important-notice-for-online-business-owners/",
+      "createdAt": "2026-09-08T05:59:41.450Z"
     }
   }
 }
