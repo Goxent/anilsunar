@@ -1,7 +1,7 @@
 {
-  "scrapedAt": "2026-09-08T05:59:06.693Z",
-  "totalCount": 23,
-  "nepalCount": 15,
+  "scrapedAt": "2026-09-09T05:59:47.583Z",
+  "totalCount": 22,
+  "nepalCount": 14,
   "globalCount": 8,
   "sources": [
     "Onlinekhabar Finance",
@@ -16,33 +16,23 @@
   ],
   "articles": [
     {
-      "title": "भोटेकोसी बाढीको अर्थ-सामाजिक असर",
-      "url": "https://www.karobardaily.com/news/414735",
+      "title": "जेनजी आन्दोलनको एक वर्ष: कर्जा प्रवाहको गति बढाउन असफल",
+      "url": "https://www.karobardaily.com/news/415181",
       "source": "Karobar Daily",
       "badge": "KD",
       "category": "Nepal Business",
-      "scrapedAt": "2026-09-08T05:58:37.605Z",
-      "summary": "भोटेकोसी बाढीको अर्थ-सामाजिक असर",
+      "scrapedAt": "2026-09-09T05:59:26.519Z",
+      "summary": "जेनजी आन्दोलनको एक वर्ष: कर्जा प्रवाहको गति बढाउन असफल",
       "isGlobal": false
     },
     {
-      "title": "करोडौंको स्याउ बोकेका ट्रक अलपत्र, किसान र व्यापारी चिन्तामा",
-      "url": "https://www.karobardaily.com/news/414777",
+      "title": "विराटनगर महानगरको एक करोड सहयोग",
+      "url": "https://www.karobardaily.com/news/414959",
       "source": "Karobar Daily",
       "badge": "KD",
       "category": "Nepal Business",
-      "scrapedAt": "2026-09-08T05:58:37.606Z",
-      "summary": "करोडौंको स्याउ बोकेका ट्रक अलपत्र, किसान र व्यापारी चिन्तामा",
-      "isGlobal": false
-    },
-    {
-      "title": "औद्योगिक करिडोरको उत्पादन घट्दै",
-      "url": "https://www.karobardaily.com/news/414580",
-      "source": "Karobar Daily",
-      "badge": "KD",
-      "category": "Nepal Business",
-      "scrapedAt": "2026-09-08T05:58:37.606Z",
-      "summary": "औद्योगिक करिडोरको उत्पादन घट्दै",
+      "scrapedAt": "2026-09-09T05:59:26.519Z",
+      "summary": "विराटनगर महानगरको एक करोड सहयोग",
       "isGlobal": false
     },
     {
@@ -51,7 +41,7 @@
       "source": "Karobar Daily",
       "badge": "KD",
       "category": "Nepal Business",
-      "scrapedAt": "2026-09-08T05:58:37.606Z",
+      "scrapedAt": "2026-09-09T05:59:26.519Z",
       "summary": "नेपाल राष्ट्र बैंकद्वारा एक करोड ३८ लाख रकम सहयोग",
       "isGlobal": false
     },
@@ -61,7 +51,7 @@
       "source": "Karobar Daily",
       "badge": "KD",
       "category": "Nepal Business",
-      "scrapedAt": "2026-09-08T05:58:37.606Z",
+      "scrapedAt": "2026-09-09T05:59:26.519Z",
       "summary": "धमाधम लाभांश घोषणा गर्दै बैंक तथा वित्तीय संस्था",
       "isGlobal": false
     },
@@ -71,18 +61,8 @@
       "source": "Karobar Daily",
       "badge": "KD",
       "category": "Nepal Business",
-      "scrapedAt": "2026-09-08T05:58:37.606Z",
+      "scrapedAt": "2026-09-09T05:59:26.519Z",
       "summary": "विपद्पीडित ग्राहकका लागि बैंकिङ सेवा थप सहज बनाउन राष्ट्र बैंकको निर्देशन",
-      "isGlobal": false
-    },
-    {
-      "title": "बाढीले बैंकका १६ शाखामा ६० करोड क्षति",
-      "url": "https://www.karobardaily.com/news/412280",
-      "source": "Karobar Daily",
-      "badge": "KD",
-      "category": "Nepal Business",
-      "scrapedAt": "2026-09-08T05:58:37.606Z",
-      "summary": "बाढीले बैंकका १६ शाखामा ६० करोड क्षति",
       "isGlobal": false
     },
     {
@@ -91,8 +71,28 @@
       "source": "Karobar Daily",
       "badge": "KD",
       "category": "Nepal Business",
-      "scrapedAt": "2026-09-08T05:58:37.606Z",
+      "scrapedAt": "2026-09-09T05:59:26.519Z",
       "summary": "निर्जीवन बीमा कम्पनीको व्यापार २३ प्रतिशतले बढ्यो",
+      "isGlobal": false
+    },
+    {
+      "title": "कुमारी बैंक पीसीएएफमा आबद्ध",
+      "url": "https://www.karobardaily.com/news/414926",
+      "source": "Karobar Daily",
+      "badge": "KD",
+      "category": "Nepal Business",
+      "scrapedAt": "2026-09-09T05:59:26.520Z",
+      "summary": "कुमारी बैंक पीसीएएफमा आबद्ध",
+      "isGlobal": false
+    },
+    {
+      "title": "एमभी दुगड ग्रुपको प्रधानमन्त्री उद्धार कोषमा १ करोड सहयोग",
+      "url": "https://www.karobardaily.com/news/414853",
+      "source": "Karobar Daily",
+      "badge": "KD",
+      "category": "Nepal Business",
+      "scrapedAt": "2026-09-09T05:59:26.520Z",
+      "summary": "एमभी दुगड ग्रुपको प्रधानमन्त्री उद्धार कोषमा १ करोड सहयोग",
       "isGlobal": false
     },
     {
@@ -101,7 +101,7 @@
       "source": "Sharesansar",
       "badge": "SS",
       "category": "Nepal Stock",
-      "scrapedAt": "2026-09-08T05:58:39.739Z",
+      "scrapedAt": "2026-09-09T05:59:28.272Z",
       "summary": "Proposed Dividend",
       "isGlobal": false
     },
@@ -111,18 +111,8 @@
       "source": "Sharesansar",
       "badge": "SS",
       "category": "Nepal Stock",
-      "scrapedAt": "2026-09-08T05:58:39.739Z",
+      "scrapedAt": "2026-09-09T05:59:28.272Z",
       "summary": "Dividend, Bonus & Rights",
-      "isGlobal": false
-    },
-    {
-      "title": "Top 10 Low Float Development Banks in NEPSE: Key EPS, P/E, and NPL Insights",
-      "url": "https://www.sharesansar.com/newsdetail/top-10-low-float-development-banks-in-nepse-key-eps-pe-and-npl-insights-2026-08-31",
-      "source": "Sharesansar",
-      "badge": "SS",
-      "category": "Nepal Stock",
-      "scrapedAt": "2026-09-08T05:58:39.739Z",
-      "summary": "Top 10 Low Float Development Banks in NEPSE: Key EPS, P/E, and NPL Insights",
       "isGlobal": false
     },
     {
@@ -131,7 +121,7 @@
       "source": "Sharesansar",
       "badge": "SS",
       "category": "Nepal Stock",
-      "scrapedAt": "2026-09-08T05:58:39.739Z",
+      "scrapedAt": "2026-09-09T05:59:28.272Z",
       "summary": "NEPSE Concludes The Week With 0.57% Loss and Turnover of Rs. 12.96 Arba; Weekly Summary with Sector Comparison, Major Highlights, and More",
       "isGlobal": false
     },
@@ -141,7 +131,7 @@
       "source": "Nepali Paisa",
       "badge": "NP",
       "category": "Nepal Finance",
-      "scrapedAt": "2026-09-08T05:58:42.755Z",
+      "scrapedAt": "2026-09-09T05:59:30.246Z",
       "summary": "Market Overview",
       "isGlobal": false
     },
@@ -151,7 +141,7 @@
       "source": "Nepali Paisa",
       "badge": "NP",
       "category": "Nepal Finance",
-      "scrapedAt": "2026-09-08T05:58:42.755Z",
+      "scrapedAt": "2026-09-09T05:59:30.246Z",
       "summary": "Stocks Up & Down",
       "isGlobal": false
     },
@@ -161,7 +151,7 @@
       "source": "Nepali Paisa",
       "badge": "NP",
       "category": "Nepal Finance",
-      "scrapedAt": "2026-09-08T05:58:42.755Z",
+      "scrapedAt": "2026-09-09T05:59:30.246Z",
       "summary": "Business & Economy",
       "isGlobal": false
     }
@@ -173,58 +163,48 @@
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-09-08T05:59:05.190Z",
+      "scrapedAt": "2026-09-09T05:59:46.079Z",
       "summary": "Markets just got Conversational",
       "isGlobal": true
     },
     {
-      "title": "Ashish Kacholia&#x27;s portfolio: How ace investor&#x27;s top 5 stock holdings performed in one month?",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/news/ashish-kacholias-portfolio-how-ace-investors-top-5-stock-holdings-performed-in-one-month/slideshow/133909732.cms",
+      "title": "Jefferies picks 5 defence stocks with upside potential of up to 39% after DAC’s Rs 1.1 lakh crore proposal",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/jefferies-picks-5-defence-stocks-with-upside-potential-of-up-to-39-after-dacs-rs-1-1-lakh-crore-proposal/slideshow/133951922.cms",
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-09-08T05:59:05.190Z",
-      "summary": "Ashish Kacholia&#x27;s portfolio: How ace investor&#x27;s top 5 stock holdings performed in one month?",
+      "scrapedAt": "2026-09-09T05:59:46.080Z",
+      "summary": "Jefferies picks 5 defence stocks with upside potential of up to 39% after DAC’s Rs 1.1 lakh crore proposal",
       "isGlobal": true
     },
     {
-      "title": "Broadcom’s $230 billion AI opportunity: Buy, Sell or Hold on the AVGO stock?",
-      "url": "https://economictimes.indiatimes.com/markets/us-stocks/news/broadcoms-230-billion-ai-opportunity-buy-sell-or-hold-on-the-avgo-stock/slideshow/133909251.cms",
+      "title": "PVR Inox among 5 stocks showing RSI trending up",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/pvr-inox-among-5-stocks-showing-rsi-trending-up/slideshow/133950619.cms",
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-09-08T05:59:05.190Z",
-      "summary": "Broadcom’s $230 billion AI opportunity: Buy, Sell or Hold on the AVGO stock?",
+      "scrapedAt": "2026-09-09T05:59:46.080Z",
+      "summary": "PVR Inox among 5 stocks showing RSI trending up",
       "isGlobal": true
     },
     {
-      "title": "Morgan Stanley’s top picks: Adani Power, Trent, among 10 stocks rated ‘overweight’ by Wall Street giant",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/news/morgan-stanleys-top-picks-adani-power-trent-among-10-stocks-rated-overweight-by-wall-street-giant/slideshow/133907244.cms",
+      "title": "Finolex Cables among 4 Nifty500 stocks flashing bullish signals",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/finolex-cables-among-4-nifty500-stocks-flashing-bullish-signals/slideshow/133950406.cms",
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-09-08T05:59:05.190Z",
-      "summary": "Morgan Stanley’s top picks: Adani Power, Trent, among 10 stocks rated ‘overweight’ by Wall Street giant",
+      "scrapedAt": "2026-09-09T05:59:46.080Z",
+      "summary": "Finolex Cables among 4 Nifty500 stocks flashing bullish signals",
       "isGlobal": true
     },
     {
-      "title": "Syrma SGS Technology among 4 stocks showing White Marubozu Pattern",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/news/syrma-sgs-technology-among-4-stocks-showing-white-marubozu-pattern/slideshow/133906108.cms",
+      "title": "These 6 banking stocks have an upside potential of up to 25% in 1 year, according to analysts",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/these-6-banking-stocks-have-an-upside-potential-of-up-to-25-in-1-year-according-to-analysts/articleshow/133947078.cms",
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-09-08T05:59:05.190Z",
-      "summary": "Syrma SGS Technology among 4 stocks showing White Marubozu Pattern",
-      "isGlobal": true
-    },
-    {
-      "title": "Supreme Industries among 4 stocks showing RSI trending up",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/news/supreme-industries-among-4-stocks-showing-rsi-trending-up/slideshow/133906003.cms",
-      "source": "Economic Times Markets",
-      "badge": "ET",
-      "category": "India Markets",
-      "scrapedAt": "2026-09-08T05:59:05.190Z",
-      "summary": "Supreme Industries among 4 stocks showing RSI trending up",
+      "scrapedAt": "2026-09-09T05:59:46.080Z",
+      "summary": "These 6 banking stocks have an upside potential of up to 25% in 1 year, according to analysts",
       "isGlobal": true
     },
     {
@@ -233,7 +213,7 @@
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-09-08T05:59:05.190Z",
+      "scrapedAt": "2026-09-09T05:59:46.080Z",
       "summary": "Weekly Top Picks: These stocks scored 10 on 10 on Stock Reports Plus",
       "isGlobal": true
     },
@@ -243,8 +223,18 @@
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-09-08T05:59:05.190Z",
+      "scrapedAt": "2026-09-09T05:59:46.080Z",
       "summary": "Stock picks of the week: 5 stocks with consistent score improvement and upside potential of up to 23%",
+      "isGlobal": true
+    },
+    {
+      "title": "Top Nifty50 stocks analysts suggest buying in this volatile week",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/top-nifty50-stocks-analysts-suggest-buying-in-this-volatile-week/articleshow/133862365.cms",
+      "source": "Economic Times Markets",
+      "badge": "ET",
+      "category": "India Markets",
+      "scrapedAt": "2026-09-09T05:59:46.080Z",
+      "summary": "Top Nifty50 stocks analysts suggest buying in this volatile week",
       "isGlobal": true
     }
   ]
