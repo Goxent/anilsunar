@@ -1,5 +1,5 @@
 {
-  "scrapedAt": "2026-09-10T05:59:02.314Z",
+  "scrapedAt": "2026-09-11T05:59:30.168Z",
   "totalCount": 22,
   "nepalCount": 14,
   "globalCount": 8,
@@ -16,23 +16,23 @@
   ],
   "articles": [
     {
-      "title": "सार्वजनिक स्रोत परिचालनको दुष्चक्र र संकुचित अर्थतन्त्र",
-      "url": "https://www.karobardaily.com/news/415371",
+      "title": "आयोजनाका समस्या द्रुत सम्बोधन गर्न ‘पूर्वाधार न्यायाधिकरण’",
+      "url": "https://www.karobardaily.com/news/415793",
       "source": "Karobar Daily",
       "badge": "KD",
       "category": "Nepal Business",
-      "scrapedAt": "2026-09-10T05:58:35.019Z",
-      "summary": "सार्वजनिक स्रोत परिचालनको दुष्चक्र र संकुचित अर्थतन्त्र",
+      "scrapedAt": "2026-09-11T05:59:00.508Z",
+      "summary": "आयोजनाका समस्या द्रुत सम्बोधन गर्न ‘पूर्वाधार न्यायाधिकरण’",
       "isGlobal": false
     },
     {
-      "title": "विराटनगर महानगरको एक करोड सहयोग",
-      "url": "https://www.karobardaily.com/news/414959",
+      "title": "नेपाल नेत्रज्योति संघद्वारा बाढीबाट प्रभावितका लागि एक करोड ४१ लाख भन्दा बढी सहयोग",
+      "url": "https://www.karobardaily.com/news/415475",
       "source": "Karobar Daily",
       "badge": "KD",
       "category": "Nepal Business",
-      "scrapedAt": "2026-09-10T05:58:35.019Z",
-      "summary": "विराटनगर महानगरको एक करोड सहयोग",
+      "scrapedAt": "2026-09-11T05:59:00.509Z",
+      "summary": "नेपाल नेत्रज्योति संघद्वारा बाढीबाट प्रभावितका लागि एक करोड ४१ लाख भन्दा बढी सहयोग",
       "isGlobal": false
     },
     {
@@ -41,7 +41,7 @@
       "source": "Karobar Daily",
       "badge": "KD",
       "category": "Nepal Business",
-      "scrapedAt": "2026-09-10T05:58:35.019Z",
+      "scrapedAt": "2026-09-11T05:59:00.509Z",
       "summary": "जेनजी आन्दोलनको एक वर्ष: कर्जा प्रवाहको गति बढाउन असफल",
       "isGlobal": false
     },
@@ -51,7 +51,7 @@
       "source": "Karobar Daily",
       "badge": "KD",
       "category": "Nepal Business",
-      "scrapedAt": "2026-09-10T05:58:35.019Z",
+      "scrapedAt": "2026-09-11T05:59:00.509Z",
       "summary": "नेपाल राष्ट्र बैंकद्वारा एक करोड ३८ लाख रकम सहयोग",
       "isGlobal": false
     },
@@ -61,7 +61,7 @@
       "source": "Karobar Daily",
       "badge": "KD",
       "category": "Nepal Business",
-      "scrapedAt": "2026-09-10T05:58:35.019Z",
+      "scrapedAt": "2026-09-11T05:59:00.509Z",
       "summary": "धमाधम लाभांश घोषणा गर्दै बैंक तथा वित्तीय संस्था",
       "isGlobal": false
     },
@@ -71,7 +71,7 @@
       "source": "Karobar Daily",
       "badge": "KD",
       "category": "Nepal Business",
-      "scrapedAt": "2026-09-10T05:58:35.019Z",
+      "scrapedAt": "2026-09-11T05:59:00.509Z",
       "summary": "विपद्पीडित ग्राहकका लागि बैंकिङ सेवा थप सहज बनाउन राष्ट्र बैंकको निर्देशन",
       "isGlobal": false
     },
@@ -81,18 +81,18 @@
       "source": "Karobar Daily",
       "badge": "KD",
       "category": "Nepal Business",
-      "scrapedAt": "2026-09-10T05:58:35.019Z",
+      "scrapedAt": "2026-09-11T05:59:00.509Z",
       "summary": "निर्जीवन बीमा कम्पनीको व्यापार २३ प्रतिशतले बढ्यो",
       "isGlobal": false
     },
     {
-      "title": "कुमारी बैंक पीसीएएफमा आबद्ध",
-      "url": "https://www.karobardaily.com/news/414926",
+      "title": "बेगानी ग्रुपको १ करोड ११ लाख सहयोग",
+      "url": "https://www.karobardaily.com/news/415842",
       "source": "Karobar Daily",
       "badge": "KD",
       "category": "Nepal Business",
-      "scrapedAt": "2026-09-10T05:58:35.019Z",
-      "summary": "कुमारी बैंक पीसीएएफमा आबद्ध",
+      "scrapedAt": "2026-09-11T05:59:00.509Z",
+      "summary": "बेगानी ग्रुपको १ करोड ११ लाख सहयोग",
       "isGlobal": false
     },
     {
@@ -101,17 +101,17 @@
       "source": "Sharesansar",
       "badge": "SS",
       "category": "Nepal Stock",
-      "scrapedAt": "2026-09-10T05:58:37.057Z",
+      "scrapedAt": "2026-09-11T05:59:02.534Z",
       "summary": "Proposed Dividend",
       "isGlobal": false
     },
     {
       "title": "Dividend, Bonus & Rights",
-      "url": "https://www.sharesansar.com/newsdetail/kalinchowk-darshan-limited-proposes-89474-dividend-for-fy-208283-2026-09-09",
+      "url": "https://www.sharesansar.com/newsdetail/kalinchowk-darshan-limited-unveils-book-closure-date-for-89474-dividend-calls-agm-on-ashwin-16-2026-09-10",
       "source": "Sharesansar",
       "badge": "SS",
       "category": "Nepal Stock",
-      "scrapedAt": "2026-09-10T05:58:37.057Z",
+      "scrapedAt": "2026-09-11T05:59:02.534Z",
       "summary": "Dividend, Bonus & Rights",
       "isGlobal": false
     },
@@ -121,7 +121,7 @@
       "source": "Sharesansar",
       "badge": "SS",
       "category": "Nepal Stock",
-      "scrapedAt": "2026-09-10T05:58:37.057Z",
+      "scrapedAt": "2026-09-11T05:59:02.534Z",
       "summary": "NEPSE Concludes The Week With 0.57% Loss and Turnover of Rs. 12.96 Arba; Weekly Summary with Sector Comparison, Major Highlights, and More",
       "isGlobal": false
     },
@@ -131,7 +131,7 @@
       "source": "Nepali Paisa",
       "badge": "NP",
       "category": "Nepal Finance",
-      "scrapedAt": "2026-09-10T05:58:40.071Z",
+      "scrapedAt": "2026-09-11T05:59:04.799Z",
       "summary": "Market Overview",
       "isGlobal": false
     },
@@ -141,7 +141,7 @@
       "source": "Nepali Paisa",
       "badge": "NP",
       "category": "Nepal Finance",
-      "scrapedAt": "2026-09-10T05:58:40.071Z",
+      "scrapedAt": "2026-09-11T05:59:04.799Z",
       "summary": "Stocks Up & Down",
       "isGlobal": false
     },
@@ -151,7 +151,7 @@
       "source": "Nepali Paisa",
       "badge": "NP",
       "category": "Nepal Finance",
-      "scrapedAt": "2026-09-10T05:58:40.071Z",
+      "scrapedAt": "2026-09-11T05:59:04.799Z",
       "summary": "Business & Economy",
       "isGlobal": false
     }
@@ -163,78 +163,78 @@
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-09-10T05:59:00.812Z",
+      "scrapedAt": "2026-09-11T05:59:28.666Z",
       "summary": "Markets just got Conversational",
       "isGlobal": true
     },
     {
-      "title": "Brokerages initiate coverage on BSE, Adani Power and 6 other stocks, see up to 60% upside. Own any?",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/news/brokerages-initiate-coverage-on-bse-adani-power-and-6-other-stocks-see-up-to-60-upside-own-any/slideshow/133994635.cms",
+      "title": "Oracle shares rally: Can strong AI demand sustain Oracle’s stock surge?",
+      "url": "https://economictimes.indiatimes.com/markets/us-stocks/news/oracle-shares-rally-can-strong-ai-demand-sustain-oracles-stock-surge/slideshow/134048334.cms",
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-09-10T05:59:00.812Z",
-      "summary": "Brokerages initiate coverage on BSE, Adani Power and 6 other stocks, see up to 60% upside. Own any?",
+      "scrapedAt": "2026-09-11T05:59:28.667Z",
+      "summary": "Oracle shares rally: Can strong AI demand sustain Oracle’s stock surge?",
       "isGlobal": true
     },
     {
-      "title": "Aegis Logistics among 4 stocks showing RSI trending up",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/news/aegis-logistics-among-4-stocks-showing-rsi-trending-up/slideshow/133992465.cms",
+      "title": "10 smallcap stocks zoom up to 235% in 1 year; 8 turn multibaggers! Own any?",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/10-smallcap-stocks-zoom-up-to-235-in-1-year-8-turn-multibaggers-own-any/slideshow/134046366.cms",
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-09-10T05:59:00.812Z",
-      "summary": "Aegis Logistics among 4 stocks showing RSI trending up",
+      "scrapedAt": "2026-09-11T05:59:28.667Z",
+      "summary": "10 smallcap stocks zoom up to 235% in 1 year; 8 turn multibaggers! Own any?",
       "isGlobal": true
     },
     {
-      "title": "Adani Power among 3 stocks showing White Marubozu Pattern",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/news/adani-power-among-3-stocks-showing-white-marubozu-pattern/slideshow/133992370.cms",
+      "title": "PVR Inox among 3 stocks closed crossing above VWAP",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/pvr-inox-among-3-stocks-closed-crossing-above-vwap/slideshow/134045344.cms",
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-09-10T05:59:00.812Z",
-      "summary": "Adani Power among 3 stocks showing White Marubozu Pattern",
+      "scrapedAt": "2026-09-11T05:59:28.667Z",
+      "summary": "PVR Inox among 3 stocks closed crossing above VWAP",
       "isGlobal": true
     },
     {
-      "title": "Negative Breakout: These 5 stocks cross below their 200 DMAs",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/news/negative-breakout-these-5-stocks-cross-below-their-200-dmas/slideshow/133990670.cms",
+      "title": "IRB Infrastructure among 6 stocks showing RSI trending up",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/irb-infrastructure-among-6-stocks-showing-rsi-trending-up/slideshow/134043297.cms",
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-09-10T05:59:00.813Z",
-      "summary": "Negative Breakout: These 5 stocks cross below their 200 DMAs",
+      "scrapedAt": "2026-09-11T05:59:28.667Z",
+      "summary": "IRB Infrastructure among 6 stocks showing RSI trending up",
       "isGlobal": true
     },
     {
-      "title": "Vodafone Idea among 4 stocks that hit 52-week highs & rallied up to 22% in a month",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/news/vodafone-idea-among-4-stocks-that-hit-52-week-highs-amp-rallied-up-to-22-in-a-month/slideshow/133967670.cms",
+      "title": "Acutaas Chemicals among 4 Nifty500 stocks flashing bullish signals",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/acutaas-chemicals-among-4-nifty500-stocks-flashing-bullish-signals/slideshow/134043074.cms",
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-09-10T05:59:00.813Z",
-      "summary": "Vodafone Idea among 4 stocks that hit 52-week highs & rallied up to 22% in a month",
+      "scrapedAt": "2026-09-11T05:59:28.667Z",
+      "summary": "Acutaas Chemicals among 4 Nifty500 stocks flashing bullish signals",
       "isGlobal": true
     },
     {
-      "title": "These mid-cap stocks with ‘Strong Buy’ & ‘Buy’ recos may rally over 21%, according to analysts",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/news/these-mid-cap-stocks-with-strong-buy-buy-recos-may-rally-over-21-according-to-analysts/articleshow/133988474.cms",
+      "title": "These large- and mid-cap stocks with ‘Strong Buy’ & ‘Buy’ recos have upside potential of up to 28%, according to analysts",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/these-large-and-mid-cap-stocks-with-strong-buy-buy-recos-have-upside-potential-of-up-to-28-according-to-analysts/articleshow/134037696.cms",
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-09-10T05:59:00.813Z",
-      "summary": "These mid-cap stocks with ‘Strong Buy’ & ‘Buy’ recos may rally over 21%, according to analysts",
+      "scrapedAt": "2026-09-11T05:59:28.667Z",
+      "summary": "These large- and mid-cap stocks with ‘Strong Buy’ & ‘Buy’ recos have upside potential of up to 28%, according to analysts",
       "isGlobal": true
     },
     {
-      "title": "These 6 banking stocks have an upside potential of up to 25% in 1 year, according to analysts",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/news/these-6-banking-stocks-have-an-upside-potential-of-up-to-25-in-1-year-according-to-analysts/articleshow/133947078.cms",
+      "title": "Weekly Top Picks: These stocks scored 10 on 10 on Stock Reports Plus",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/weekly-top-picks-these-stocks-scored-10-on-10-on-stock-reports-plus/articleshow/134011520.cms",
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-09-10T05:59:00.813Z",
-      "summary": "These 6 banking stocks have an upside potential of up to 25% in 1 year, according to analysts",
+      "scrapedAt": "2026-09-11T05:59:28.667Z",
+      "summary": "Weekly Top Picks: These stocks scored 10 on 10 on Stock Reports Plus",
       "isGlobal": true
     }
   ]
