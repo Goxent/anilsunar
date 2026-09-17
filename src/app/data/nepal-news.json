@@ -1,5 +1,5 @@
 {
-  "scrapedAt": "2026-09-16T06:02:06.163Z",
+  "scrapedAt": "2026-09-17T06:10:06.569Z",
   "totalCount": 22,
   "nepalCount": 14,
   "globalCount": 8,
@@ -16,33 +16,43 @@
   ],
   "articles": [
     {
-      "title": "कम्पनीको प्राविधिक मूल्यांकन सुरु, असोजभित्र टुंगो लाग्ने",
-      "url": "https://www.karobardaily.com/news/417149",
+      "title": "सहकारीको ऋणको अधिकतम ब्याजदर १३ प्रतिशत कायम",
+      "url": "https://www.karobardaily.com/news/417588",
       "source": "Karobar Daily",
       "badge": "KD",
       "category": "Nepal Business",
-      "scrapedAt": "2026-09-16T06:01:37.554Z",
-      "summary": "कम्पनीको प्राविधिक मूल्यांकन सुरु, असोजभित्र टुंगो लाग्ने",
+      "scrapedAt": "2026-09-17T06:09:41.214Z",
+      "summary": "सहकारीको ऋणको अधिकतम ब्याजदर १३ प्रतिशत कायम",
       "isGlobal": false
     },
     {
-      "title": "प्राधिकरणलाई स्मार्टपछि यूटीएल सम्हाल्ने चुनौती",
-      "url": "https://www.karobardaily.com/news/417137",
+      "title": "अर्थतन्त्रमा ब्याक गियर",
+      "url": "https://www.karobardaily.com/news/417523",
       "source": "Karobar Daily",
       "badge": "KD",
       "category": "Nepal Business",
-      "scrapedAt": "2026-09-16T06:01:37.554Z",
-      "summary": "प्राधिकरणलाई स्मार्टपछि यूटीएल सम्हाल्ने चुनौती",
+      "scrapedAt": "2026-09-17T06:09:41.214Z",
+      "summary": "अर्थतन्त्रमा ब्याक गियर",
       "isGlobal": false
     },
     {
-      "title": "आईपीओदेखि कर्पोरेट बन्डसम्म समावेश",
-      "url": "https://www.karobardaily.com/news/416989",
+      "title": "शंकर ग्रुपका उद्योगमा समस्या आएर एक खर्ब माथिको बैंक ऋण डुबे जिम्मेवारी कसले लिने ?",
+      "url": "https://www.karobardaily.com/news/417418",
       "source": "Karobar Daily",
       "badge": "KD",
       "category": "Nepal Business",
-      "scrapedAt": "2026-09-16T06:01:37.554Z",
-      "summary": "आईपीओदेखि कर्पोरेट बन्डसम्म समावेश",
+      "scrapedAt": "2026-09-17T06:09:41.214Z",
+      "summary": "शंकर ग्रुपका उद्योगमा समस्या आएर एक खर्ब माथिको बैंक ऋण डुबे जिम्मेवारी कसले लिने ?",
+      "isGlobal": false
+    },
+    {
+      "title": "राष्ट्र बैंक ऐन संशोधन विधेयकको प्रतिवेदन सर्वसम्मत पारित",
+      "url": "https://www.karobardaily.com/news/417359",
+      "source": "Karobar Daily",
+      "badge": "KD",
+      "category": "Nepal Business",
+      "scrapedAt": "2026-09-17T06:09:41.214Z",
+      "summary": "राष्ट्र बैंक ऐन संशोधन विधेयकको प्रतिवेदन सर्वसम्मत पारित",
       "isGlobal": false
     },
     {
@@ -51,7 +61,7 @@
       "source": "Karobar Daily",
       "badge": "KD",
       "category": "Nepal Business",
-      "scrapedAt": "2026-09-16T06:01:37.555Z",
+      "scrapedAt": "2026-09-17T06:09:41.214Z",
       "summary": "जेनजी आन्दोलनको एक वर्ष: कर्जा प्रवाहको गति बढाउन असफल",
       "isGlobal": false
     },
@@ -61,18 +71,8 @@
       "source": "Karobar Daily",
       "badge": "KD",
       "category": "Nepal Business",
-      "scrapedAt": "2026-09-16T06:01:37.555Z",
+      "scrapedAt": "2026-09-17T06:09:41.214Z",
       "summary": "नेपाल राष्ट्र बैंकद्वारा एक करोड ३८ लाख रकम सहयोग",
-      "isGlobal": false
-    },
-    {
-      "title": "धमाधम लाभांश घोषणा गर्दै बैंक तथा वित्तीय संस्था",
-      "url": "https://www.karobardaily.com/news/414571",
-      "source": "Karobar Daily",
-      "badge": "KD",
-      "category": "Nepal Business",
-      "scrapedAt": "2026-09-16T06:01:37.555Z",
-      "summary": "धमाधम लाभांश घोषणा गर्दै बैंक तथा वित्तीय संस्था",
       "isGlobal": false
     },
     {
@@ -81,18 +81,18 @@
       "source": "Karobar Daily",
       "badge": "KD",
       "category": "Nepal Business",
-      "scrapedAt": "2026-09-16T06:01:37.555Z",
+      "scrapedAt": "2026-09-17T06:09:41.214Z",
       "summary": "निर्जीवन बीमा कम्पनीको व्यापार २३ प्रतिशतले बढ्यो",
       "isGlobal": false
     },
     {
-      "title": "एनआईसी एशिया बैंक र आईएमई हस्पिटालिटी अन्तर्गतका होटल तथा केवलकारबीच सम्झाैता",
-      "url": "https://www.karobardaily.com/news/417070",
+      "title": "मुक्तिनाथ विकास र कर्मा रेसिडेन्सिज् कर्जा सम्झौता",
+      "url": "https://www.karobardaily.com/news/417649",
       "source": "Karobar Daily",
       "badge": "KD",
       "category": "Nepal Business",
-      "scrapedAt": "2026-09-16T06:01:37.555Z",
-      "summary": "एनआईसी एशिया बैंक र आईएमई हस्पिटालिटी अन्तर्गतका होटल तथा केवलकारबीच सम्झाैता",
+      "scrapedAt": "2026-09-17T06:09:41.214Z",
+      "summary": "मुक्तिनाथ विकास र कर्मा रेसिडेन्सिज् कर्जा सम्झौता",
       "isGlobal": false
     },
     {
@@ -101,17 +101,17 @@
       "source": "Sharesansar",
       "badge": "SS",
       "category": "Nepal Stock",
-      "scrapedAt": "2026-09-16T06:01:39.650Z",
+      "scrapedAt": "2026-09-17T06:09:43.389Z",
       "summary": "Proposed Dividend",
       "isGlobal": false
     },
     {
       "title": "Dividend, Bonus & Rights",
-      "url": "https://www.sharesansar.com/newsdetail/snow-rivers-limited-calls-agm-proposes-105263-dividend-to-its-shareholders-2026-09-15",
+      "url": "https://www.sharesansar.com/newsdetail/reliance-spinning-mills-unveils-book-closure-date-for-its-30-cash-dividend-calls-agm-on-ashoj-22-2026-09-16",
       "source": "Sharesansar",
       "badge": "SS",
       "category": "Nepal Stock",
-      "scrapedAt": "2026-09-16T06:01:39.650Z",
+      "scrapedAt": "2026-09-17T06:09:43.389Z",
       "summary": "Dividend, Bonus & Rights",
       "isGlobal": false
     },
@@ -121,7 +121,7 @@
       "source": "Sharesansar",
       "badge": "SS",
       "category": "Nepal Stock",
-      "scrapedAt": "2026-09-16T06:01:39.650Z",
+      "scrapedAt": "2026-09-17T06:09:43.389Z",
       "summary": "NEPSE Concludes The Week With 0.66% Gain and Turnover of Rs 16.39 Arba; Weekly Summary with Sector Comparison, Major Highlights, and More",
       "isGlobal": false
     },
@@ -131,7 +131,7 @@
       "source": "Nepali Paisa",
       "badge": "NP",
       "category": "Nepal Finance",
-      "scrapedAt": "2026-09-16T06:01:42.541Z",
+      "scrapedAt": "2026-09-17T06:09:45.928Z",
       "summary": "Market Overview",
       "isGlobal": false
     },
@@ -141,7 +141,7 @@
       "source": "Nepali Paisa",
       "badge": "NP",
       "category": "Nepal Finance",
-      "scrapedAt": "2026-09-16T06:01:42.541Z",
+      "scrapedAt": "2026-09-17T06:09:45.928Z",
       "summary": "Stocks Up & Down",
       "isGlobal": false
     },
@@ -151,7 +151,7 @@
       "source": "Nepali Paisa",
       "badge": "NP",
       "category": "Nepal Finance",
-      "scrapedAt": "2026-09-16T06:01:42.541Z",
+      "scrapedAt": "2026-09-17T06:09:45.928Z",
       "summary": "Business & Economy",
       "isGlobal": false
     }
@@ -163,58 +163,68 @@
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-09-16T06:02:04.660Z",
+      "scrapedAt": "2026-09-17T06:10:05.066Z",
       "summary": "Markets just got Conversational",
       "isGlobal": true
     },
     {
-      "title": "Stocks to buy: BofA lists 22 Indian stocks as key picks as it turns bullish on Nifty after 2 years",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/news/stocks-to-buy-bofa-lists-22-indian-stocks-as-key-picks-as-it-turns-bullish-on-nifty-after-2-years/slideshow/134278146.cms",
+      "title": "Top SME IPOs gave up to 435% returns this year. How many are in your portfolio?",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/top-sme-ipos-gave-up-to-435-returns-this-year-how-many-are-in-your-portfolio/slideshow/134302835.cms",
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-09-16T06:02:04.661Z",
-      "summary": "Stocks to buy: BofA lists 22 Indian stocks as key picks as it turns bullish on Nifty after 2 years",
+      "scrapedAt": "2026-09-17T06:10:05.067Z",
+      "summary": "Top SME IPOs gave up to 435% returns this year. How many are in your portfolio?",
       "isGlobal": true
     },
     {
-      "title": "Solar Industries among 4 F&O stocks with rising futures open interest",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/news/solar-industries-among-4-fampo-stocks-with-rising-futures-open-interest/slideshow/134278065.cms",
+      "title": "Why investors are turning bullish on Snap stock",
+      "url": "https://economictimes.indiatimes.com/markets/us-stocks/news/why-investors-are-turning-bullish-on-snap-stock/slideshow/134302933.cms",
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-09-16T06:02:04.661Z",
-      "summary": "Solar Industries among 4 F&O stocks with rising futures open interest",
+      "scrapedAt": "2026-09-17T06:10:05.067Z",
+      "summary": "Why investors are turning bullish on Snap stock",
       "isGlobal": true
     },
     {
-      "title": "ONGC among 3 stocks closing above VWAP",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/news/ongc-among-3-stocks-closing-above-vwap/slideshow/134277769.cms",
+      "title": "BEML among 4 stocks closing above VWAP",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/beml-among-4-stocks-closing-above-vwap/slideshow/134301415.cms",
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-09-16T06:02:04.661Z",
-      "summary": "ONGC among 3 stocks closing above VWAP",
+      "scrapedAt": "2026-09-17T06:10:05.067Z",
+      "summary": "BEML among 4 stocks closing above VWAP",
       "isGlobal": true
     },
     {
-      "title": "Tata Chemicals among 5 stocks showing RSI trending up",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/news/tata-chemicals-among-5-stocks-showing-rsi-trending-up/slideshow/134277285.cms",
+      "title": "Patanjali Foods among 4 stocks showing RSI uptrend",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/patanjali-foods-among-4-stocks-showing-rsi-uptrend/slideshow/134301182.cms",
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-09-16T06:02:04.661Z",
-      "summary": "Tata Chemicals among 5 stocks showing RSI trending up",
+      "scrapedAt": "2026-09-17T06:10:05.067Z",
+      "summary": "Patanjali Foods among 4 stocks showing RSI uptrend",
       "isGlobal": true
     },
     {
-      "title": "IDBI Bank among 4 stocks closing below VWAP",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/news/idbi-bank-among-4-stocks-closing-below-vwap/slideshow/134277133.cms",
+      "title": "Oracle Financial Services Software among 5 F&O stocks with sharp rise in futures open interest",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/oracle-financial-services-software-among-5-fampo-stocks-with-sharp-rise-in-futures-open-interest/slideshow/134300700.cms",
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-09-16T06:02:04.661Z",
-      "summary": "IDBI Bank among 4 stocks closing below VWAP",
+      "scrapedAt": "2026-09-17T06:10:05.067Z",
+      "summary": "Oracle Financial Services Software among 5 F&O stocks with sharp rise in futures open interest",
+      "isGlobal": true
+    },
+    {
+      "title": "For investors who know and accept that bears can roam the street longer: 5 mid-cap stocks with upside potential of up to 29%",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/for-investors-who-know-and-accept-that-bears-can-roam-the-street-longer-5-mid-cap-stocks-with-upside-potential-of-up-to-29/articleshow/134283086.cms",
+      "source": "Economic Times Markets",
+      "badge": "ET",
+      "category": "India Markets",
+      "scrapedAt": "2026-09-17T06:10:05.067Z",
+      "summary": "For investors who know and accept that bears can roam the street longer: 5 mid-cap stocks with upside potential of up to 29%",
       "isGlobal": true
     },
     {
@@ -223,18 +233,8 @@
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-09-16T06:02:04.661Z",
+      "scrapedAt": "2026-09-17T06:10:05.067Z",
       "summary": "These 6 banking stocks have an upside potential of up to 26% in 1 year, according to analysts",
-      "isGlobal": true
-    },
-    {
-      "title": "Weekly Top Picks: These stocks scored 10 on 10 on Stock Reports Plus",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/news/weekly-top-picks-these-stocks-scored-10-on-10-on-stock-reports-plus/articleshow/134241724.cms",
-      "source": "Economic Times Markets",
-      "badge": "ET",
-      "category": "India Markets",
-      "scrapedAt": "2026-09-16T06:02:04.661Z",
-      "summary": "Weekly Top Picks: These stocks scored 10 on 10 on Stock Reports Plus",
       "isGlobal": true
     }
   ]
