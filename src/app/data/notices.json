@@ -1,8 +1,21 @@
 {
-  "lastUpdated": "2026-09-21T06:20:48.922Z",
-  "totalCount": 123,
-  "newCount": 0,
+  "lastUpdated": "2026-09-22T06:14:02.898Z",
+  "totalCount": 124,
+  "newCount": 1,
   "notices": [
+    {
+      "id": "irdnepal_muca3c09",
+      "title": "मसलन्द तथा कार्यालय सामाग्री खरिद सम्बन्धी बोलपत्र आव्हानको सूचना । ६ असोज, २०८३",
+      "source": "IRD Nepal",
+      "category": "Taxation",
+      "badge": "IRD",
+      "badgeColor": "#e53935",
+      "link": "https://ird.gov.np/content/13641/notice-of-invitation-for-tenders-related-to/",
+      "summary": "New Taxation update from IRD Nepal: मसलन्द तथा कार्यालय सामाग्री खरिद सम्बन्धी बोलपत्र आव्हानको सूचना । ६ असोज, २०८३",
+      "detectedAt": "2026-09-22T06:13:45.993Z",
+      "isNew": true,
+      "emailedAt": null
+    },
     {
       "id": "irdnepal_mts9ev9w",
       "title": "आर्थिक ऐन, २०८३ बमोजिमका कर छुट, सहुलियत तथा सुविधा कार्यान्वयनमा देखिएका द्विविधाका विषयहरु स्पष्ट गर्न जारी गरिएको सार्वजनिक सूचना २२ भदौ, २०८३",
