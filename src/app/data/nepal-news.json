@@ -1,5 +1,5 @@
 {
-  "scrapedAt": "2026-09-22T06:13:32.072Z",
+  "scrapedAt": "2026-09-23T05:58:47.373Z",
   "totalCount": 22,
   "nepalCount": 14,
   "globalCount": 8,
@@ -16,13 +16,33 @@
   ],
   "articles": [
     {
-      "title": "लगानीकर्ताको लगानीसँगै डेटा सुरक्षामा उठ्यो गम्भीर प्रश्न",
-      "url": "https://www.karobardaily.com/news/419189",
+      "title": "राष्ट्र बैंकद्वारा छ लघुवित्त वित्तीय संस्थालाई कारवाही",
+      "url": "https://www.karobardaily.com/news/419836",
       "source": "Karobar Daily",
       "badge": "KD",
       "category": "Nepal Business",
-      "scrapedAt": "2026-09-22T06:13:06.068Z",
-      "summary": "लगानीकर्ताको लगानीसँगै डेटा सुरक्षामा उठ्यो गम्भीर प्रश्न",
+      "scrapedAt": "2026-09-23T05:58:24.375Z",
+      "summary": "राष्ट्र बैंकद्वारा छ लघुवित्त वित्तीय संस्थालाई कारवाही",
+      "isGlobal": false
+    },
+    {
+      "title": "घट्दो ब्याजदर र बढ्दो मुद्रास्फीति",
+      "url": "https://www.karobardaily.com/news/419676",
+      "source": "Karobar Daily",
+      "badge": "KD",
+      "category": "Nepal Business",
+      "scrapedAt": "2026-09-23T05:58:24.375Z",
+      "summary": "घट्दो ब्याजदर र बढ्दो मुद्रास्फीति",
+      "isGlobal": false
+    },
+    {
+      "title": "दमौली प्रसारण लाइन निर्माण: प्रभावितलाई दश करोड ३३ लाख मुआब्जा",
+      "url": "https://www.karobardaily.com/news/419658",
+      "source": "Karobar Daily",
+      "badge": "KD",
+      "category": "Nepal Business",
+      "scrapedAt": "2026-09-23T05:58:24.375Z",
+      "summary": "दमौली प्रसारण लाइन निर्माण: प्रभावितलाई दश करोड ३३ लाख मुआब्जा",
       "isGlobal": false
     },
     {
@@ -31,28 +51,8 @@
       "source": "Karobar Daily",
       "badge": "KD",
       "category": "Nepal Business",
-      "scrapedAt": "2026-09-22T06:13:06.068Z",
+      "scrapedAt": "2026-09-23T05:58:24.375Z",
       "summary": "औषधी उद्योगमा सरकारी लगानी १ अर्ब ३३ करोड, सञ्चित घाटा २३ अर्ब ६ करोड",
-      "isGlobal": false
-    },
-    {
-      "title": "वीरगन्ज भन्सारबाट २३ अर्ब ४६ करोड राजस्व संकलन",
-      "url": "https://www.karobardaily.com/news/419046",
-      "source": "Karobar Daily",
-      "badge": "KD",
-      "category": "Nepal Business",
-      "scrapedAt": "2026-09-22T06:13:06.068Z",
-      "summary": "वीरगन्ज भन्सारबाट २३ अर्ब ४६ करोड राजस्व संकलन",
-      "isGlobal": false
-    },
-    {
-      "title": "अनलाइनबाटै लाइसेन्स नवीकरण, साढे २ लाखले लिए लाभ",
-      "url": "https://www.karobardaily.com/news/418957",
-      "source": "Karobar Daily",
-      "badge": "KD",
-      "category": "Nepal Business",
-      "scrapedAt": "2026-09-22T06:13:06.068Z",
-      "summary": "अनलाइनबाटै लाइसेन्स नवीकरण, साढे २ लाखले लिए लाभ",
       "isGlobal": false
     },
     {
@@ -61,7 +61,7 @@
       "source": "Karobar Daily",
       "badge": "KD",
       "category": "Nepal Business",
-      "scrapedAt": "2026-09-22T06:13:06.068Z",
+      "scrapedAt": "2026-09-23T05:58:24.375Z",
       "summary": "बाढीले घर र जमिन दुवै बगायो, के हुन्छ बैंकको ऋण ?",
       "isGlobal": false
     },
@@ -71,28 +71,28 @@
       "source": "Karobar Daily",
       "badge": "KD",
       "category": "Nepal Business",
-      "scrapedAt": "2026-09-22T06:13:06.068Z",
+      "scrapedAt": "2026-09-23T05:58:24.376Z",
       "summary": "निर्जीवन बीमा कम्पनीको व्यापार २३ प्रतिशतले बढ्यो",
       "isGlobal": false
     },
     {
-      "title": "धनगढीमा एभरेष्ट बैंकको शाखा विस्तार",
-      "url": "https://www.karobardaily.com/news/419324",
+      "title": "एनआईसी एशिया बैंकद्वारा कैलालीका तीन विद्यालय र मकवानपुर मामाघर नेपाल संस्थालाई सहयोग",
+      "url": "https://www.karobardaily.com/news/419641",
       "source": "Karobar Daily",
       "badge": "KD",
       "category": "Nepal Business",
-      "scrapedAt": "2026-09-22T06:13:06.068Z",
-      "summary": "धनगढीमा एभरेष्ट बैंकको शाखा विस्तार",
+      "scrapedAt": "2026-09-23T05:58:24.376Z",
+      "summary": "एनआईसी एशिया बैंकद्वारा कैलालीका तीन विद्यालय र मकवानपुर मामाघर नेपाल संस्थालाई सहयोग",
       "isGlobal": false
     },
     {
-      "title": "नयाँ टियागो इभिसँग उत्सवको माहोल, जोयफुल विकमा आकर्षक अफर",
-      "url": "https://www.karobardaily.com/news/419121",
+      "title": "मुक्तिनाथ विकास बैंक र केजीएच ग्रुप अफ होटल एण्ड रिसोर्टबीच व्यावसायिक सम्झौता",
+      "url": "https://www.karobardaily.com/news/419633",
       "source": "Karobar Daily",
       "badge": "KD",
       "category": "Nepal Business",
-      "scrapedAt": "2026-09-22T06:13:06.068Z",
-      "summary": "नयाँ टियागो इभिसँग उत्सवको माहोल, जोयफुल विकमा आकर्षक अफर",
+      "scrapedAt": "2026-09-23T05:58:24.376Z",
+      "summary": "मुक्तिनाथ विकास बैंक र केजीएच ग्रुप अफ होटल एण्ड रिसोर्टबीच व्यावसायिक सम्झौता",
       "isGlobal": false
     },
     {
@@ -101,17 +101,17 @@
       "source": "Sharesansar",
       "badge": "SS",
       "category": "Nepal Stock",
-      "scrapedAt": "2026-09-22T06:13:07.950Z",
+      "scrapedAt": "2026-09-23T05:58:26.802Z",
       "summary": "Proposed Dividend",
       "isGlobal": false
     },
     {
       "title": "Dividend, Bonus & Rights",
-      "url": "https://www.sharesansar.com/newsdetail/shine-resunga-development-bank-unveils-book-closure-date-for-its-16-dividend-calls-agm-on-ashwin-28-2026-09-21",
+      "url": "https://www.sharesansar.com/newsdetail/does-dividend-matter-for-value-investors-2026-09-22",
       "source": "Sharesansar",
       "badge": "SS",
       "category": "Nepal Stock",
-      "scrapedAt": "2026-09-22T06:13:07.950Z",
+      "scrapedAt": "2026-09-23T05:58:26.802Z",
       "summary": "Dividend, Bonus & Rights",
       "isGlobal": false
     },
@@ -121,7 +121,7 @@
       "source": "Sharesansar",
       "badge": "SS",
       "category": "Nepal Stock",
-      "scrapedAt": "2026-09-22T06:13:07.950Z",
+      "scrapedAt": "2026-09-23T05:58:26.802Z",
       "summary": "NEPSE Concludes The Week With 3.43% Gain and Turnover of Rs 30.61 Arba; Weekly Summary with Sector Comparison, Major Highlights, and More",
       "isGlobal": false
     },
@@ -131,7 +131,7 @@
       "source": "Nepali Paisa",
       "badge": "NP",
       "category": "Nepal Finance",
-      "scrapedAt": "2026-09-22T06:13:10.244Z",
+      "scrapedAt": "2026-09-23T05:58:28.682Z",
       "summary": "Market Overview",
       "isGlobal": false
     },
@@ -141,7 +141,7 @@
       "source": "Nepali Paisa",
       "badge": "NP",
       "category": "Nepal Finance",
-      "scrapedAt": "2026-09-22T06:13:10.244Z",
+      "scrapedAt": "2026-09-23T05:58:28.682Z",
       "summary": "Stocks Up & Down",
       "isGlobal": false
     },
@@ -151,7 +151,7 @@
       "source": "Nepali Paisa",
       "badge": "NP",
       "category": "Nepal Finance",
-      "scrapedAt": "2026-09-22T06:13:10.244Z",
+      "scrapedAt": "2026-09-23T05:58:28.682Z",
       "summary": "Business & Economy",
       "isGlobal": false
     }
@@ -163,58 +163,68 @@
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-09-22T06:13:30.570Z",
+      "scrapedAt": "2026-09-23T05:58:45.870Z",
       "summary": "Markets just got Conversational",
       "isGlobal": true
     },
     {
-      "title": "Oracle Financial among 4 F&O stocks with a sharp rise in futures open interest",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/news/oracle-financial-among-4-fampo-stocks-with-a-sharp-rise-in-futures-open-interest/slideshow/134402151.cms",
+      "title": "Stock Rally: Why Innodata shares jumped 14.6% in one session",
+      "url": "https://economictimes.indiatimes.com/markets/us-stocks/news/stock-rally-why-innodata-shares-jumped-14-6-in-one-session/slideshow/134427013.cms",
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-09-22T06:13:30.571Z",
-      "summary": "Oracle Financial among 4 F&O stocks with a sharp rise in futures open interest",
+      "scrapedAt": "2026-09-23T05:58:45.871Z",
+      "summary": "Stock Rally: Why Innodata shares jumped 14.6% in one session",
       "isGlobal": true
     },
     {
-      "title": "Syngene International among 4 stocks that closed crossing above VWAP",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/news/syngene-international-among-4-stocks-that-closed-crossing-above-vwap/slideshow/134402030.cms",
+      "title": "Stocks to buy: Jefferies remains bullish on these 4 capital market stocks, sees up to 36% upside",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/stocks-to-buy-jefferies-remains-bullish-on-these-4-capital-market-stocks-sees-up-to-36-upside/slideshow/134426298.cms",
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-09-22T06:13:30.571Z",
-      "summary": "Syngene International among 4 stocks that closed crossing above VWAP",
+      "scrapedAt": "2026-09-23T05:58:45.871Z",
+      "summary": "Stocks to buy: Jefferies remains bullish on these 4 capital market stocks, sees up to 36% upside",
       "isGlobal": true
     },
     {
-      "title": "Cohance Lifesciences among 5 stocks showing RSI trending up",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/news/cohance-lifesciences-among-5-stocks-showing-rsi-trending-up/slideshow/134401982.cms",
+      "title": "Rajesh Exports, 9 other Nifty 500 stocks tumble up to 60% in 2026. How many do you own?",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/rajesh-exports-9-other-nifty-500-stocks-tumble-up-to-60-in-2026-how-many-do-you-own/slideshow/134425678.cms",
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-09-22T06:13:30.571Z",
-      "summary": "Cohance Lifesciences among 5 stocks showing RSI trending up",
+      "scrapedAt": "2026-09-23T05:58:45.871Z",
+      "summary": "Rajesh Exports, 9 other Nifty 500 stocks tumble up to 60% in 2026. How many do you own?",
       "isGlobal": true
     },
     {
-      "title": "Engineers India among 4 stocks showing White Marubozu pattern",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/news/engineers-india-among-4-stocks-showing-white-marubozu-pattern/slideshow/134401597.cms",
+      "title": "Ather Energy among 4 F&O stocks with a sharp rise in futures open interest",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/ather-energy-among-4-fampo-stocks-with-a-sharp-rise-in-futures-open-interest/slideshow/134425538.cms",
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-09-22T06:13:30.571Z",
-      "summary": "Engineers India among 4 stocks showing White Marubozu pattern",
+      "scrapedAt": "2026-09-23T05:58:45.871Z",
+      "summary": "Ather Energy among 4 F&O stocks with a sharp rise in futures open interest",
       "isGlobal": true
     },
     {
-      "title": "Negative Breakout: These 9 stocks cross below their 200 DMAs",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/news/negative-breakout-these-9-stocks-cross-below-their-200-dmas/slideshow/134400524.cms",
+      "title": "Cyient among 3 stocks closed above VWAP",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/cyient-among-3-stocks-closed-above-vwap/slideshow/134425536.cms",
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-09-22T06:13:30.571Z",
-      "summary": "Negative Breakout: These 9 stocks cross below their 200 DMAs",
+      "scrapedAt": "2026-09-23T05:58:45.871Z",
+      "summary": "Cyient among 3 stocks closed above VWAP",
+      "isGlobal": true
+    },
+    {
+      "title": "These 7 private and public banking stocks have an upside of up to 27% in one year, according to analysts",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/these-7-private-and-public-banking-stocks-have-an-upside-of-up-to-27-in-one-year-according-to-analysts/articleshow/134417678.cms",
+      "source": "Economic Times Markets",
+      "badge": "ET",
+      "category": "India Markets",
+      "scrapedAt": "2026-09-23T05:58:45.871Z",
+      "summary": "These 7 private and public banking stocks have an upside of up to 27% in one year, according to analysts",
       "isGlobal": true
     },
     {
@@ -223,18 +233,8 @@
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-09-22T06:13:30.571Z",
+      "scrapedAt": "2026-09-23T05:58:45.871Z",
       "summary": "These large-cap stocks have ‘strong buy’ & ‘buy’ recos and an upside potential of up to 29%, according to analysts",
-      "isGlobal": true
-    },
-    {
-      "title": "Weekly Top Picks: These stocks scored 10 on 10 on Stock Reports Plus",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/news/weekly-top-picks-these-stocks-scored-10-on-10-on-stock-reports-plus/articleshow/134390526.cms",
-      "source": "Economic Times Markets",
-      "badge": "ET",
-      "category": "India Markets",
-      "scrapedAt": "2026-09-22T06:13:30.571Z",
-      "summary": "Weekly Top Picks: These stocks scored 10 on 10 on Stock Reports Plus",
       "isGlobal": true
     }
   ]
