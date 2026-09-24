@@ -1,5 +1,5 @@
 {
-  "scrapedAt": "2026-09-23T05:58:47.373Z",
+  "scrapedAt": "2026-09-24T06:11:29.630Z",
   "totalCount": 22,
   "nepalCount": 14,
   "globalCount": 8,
@@ -16,23 +16,23 @@
   ],
   "articles": [
     {
-      "title": "राष्ट्र बैंकद्वारा छ लघुवित्त वित्तीय संस्थालाई कारवाही",
-      "url": "https://www.karobardaily.com/news/419836",
+      "title": "सरकार, कर्मचारी र व्यापारिक दुष्परिणामको मारमा नागरिक",
+      "url": "https://www.karobardaily.com/news/420025",
       "source": "Karobar Daily",
       "badge": "KD",
       "category": "Nepal Business",
-      "scrapedAt": "2026-09-23T05:58:24.375Z",
-      "summary": "राष्ट्र बैंकद्वारा छ लघुवित्त वित्तीय संस्थालाई कारवाही",
+      "scrapedAt": "2026-09-24T06:10:58.708Z",
+      "summary": "सरकार, कर्मचारी र व्यापारिक दुष्परिणामको मारमा नागरिक",
       "isGlobal": false
     },
     {
-      "title": "घट्दो ब्याजदर र बढ्दो मुद्रास्फीति",
-      "url": "https://www.karobardaily.com/news/419676",
+      "title": "डब्लुडब्लुएफ नेपालद्वारा डेढ करोड सहयोग",
+      "url": "https://www.karobardaily.com/news/420006",
       "source": "Karobar Daily",
       "badge": "KD",
       "category": "Nepal Business",
-      "scrapedAt": "2026-09-23T05:58:24.375Z",
-      "summary": "घट्दो ब्याजदर र बढ्दो मुद्रास्फीति",
+      "scrapedAt": "2026-09-24T06:10:58.708Z",
+      "summary": "डब्लुडब्लुएफ नेपालद्वारा डेढ करोड सहयोग",
       "isGlobal": false
     },
     {
@@ -41,18 +41,18 @@
       "source": "Karobar Daily",
       "badge": "KD",
       "category": "Nepal Business",
-      "scrapedAt": "2026-09-23T05:58:24.375Z",
+      "scrapedAt": "2026-09-24T06:10:58.708Z",
       "summary": "दमौली प्रसारण लाइन निर्माण: प्रभावितलाई दश करोड ३३ लाख मुआब्जा",
       "isGlobal": false
     },
     {
-      "title": "औषधी उद्योगमा सरकारी लगानी १ अर्ब ३३ करोड, सञ्चित घाटा २३ अर्ब ६ करोड",
-      "url": "https://www.karobardaily.com/news/419169",
+      "title": "राष्ट्र बैंकद्वारा छ लघुवित्त वित्तीय संस्थालाई कारवाही",
+      "url": "https://www.karobardaily.com/news/419836",
       "source": "Karobar Daily",
       "badge": "KD",
       "category": "Nepal Business",
-      "scrapedAt": "2026-09-23T05:58:24.375Z",
-      "summary": "औषधी उद्योगमा सरकारी लगानी १ अर्ब ३३ करोड, सञ्चित घाटा २३ अर्ब ६ करोड",
+      "scrapedAt": "2026-09-24T06:10:58.708Z",
+      "summary": "राष्ट्र बैंकद्वारा छ लघुवित्त वित्तीय संस्थालाई कारवाही",
       "isGlobal": false
     },
     {
@@ -61,7 +61,7 @@
       "source": "Karobar Daily",
       "badge": "KD",
       "category": "Nepal Business",
-      "scrapedAt": "2026-09-23T05:58:24.375Z",
+      "scrapedAt": "2026-09-24T06:10:58.708Z",
       "summary": "बाढीले घर र जमिन दुवै बगायो, के हुन्छ बैंकको ऋण ?",
       "isGlobal": false
     },
@@ -71,8 +71,18 @@
       "source": "Karobar Daily",
       "badge": "KD",
       "category": "Nepal Business",
-      "scrapedAt": "2026-09-23T05:58:24.376Z",
+      "scrapedAt": "2026-09-24T06:10:58.708Z",
       "summary": "निर्जीवन बीमा कम्पनीको व्यापार २३ प्रतिशतले बढ्यो",
+      "isGlobal": false
+    },
+    {
+      "title": "सिद्धार्थ बैंक–आँखा अस्पताल सम्झौता",
+      "url": "https://www.karobardaily.com/news/419886",
+      "source": "Karobar Daily",
+      "badge": "KD",
+      "category": "Nepal Business",
+      "scrapedAt": "2026-09-24T06:10:58.708Z",
+      "summary": "सिद्धार्थ बैंक–आँखा अस्पताल सम्झौता",
       "isGlobal": false
     },
     {
@@ -81,18 +91,8 @@
       "source": "Karobar Daily",
       "badge": "KD",
       "category": "Nepal Business",
-      "scrapedAt": "2026-09-23T05:58:24.376Z",
+      "scrapedAt": "2026-09-24T06:10:58.708Z",
       "summary": "एनआईसी एशिया बैंकद्वारा कैलालीका तीन विद्यालय र मकवानपुर मामाघर नेपाल संस्थालाई सहयोग",
-      "isGlobal": false
-    },
-    {
-      "title": "मुक्तिनाथ विकास बैंक र केजीएच ग्रुप अफ होटल एण्ड रिसोर्टबीच व्यावसायिक सम्झौता",
-      "url": "https://www.karobardaily.com/news/419633",
-      "source": "Karobar Daily",
-      "badge": "KD",
-      "category": "Nepal Business",
-      "scrapedAt": "2026-09-23T05:58:24.376Z",
-      "summary": "मुक्तिनाथ विकास बैंक र केजीएच ग्रुप अफ होटल एण्ड रिसोर्टबीच व्यावसायिक सम्झौता",
       "isGlobal": false
     },
     {
@@ -101,17 +101,17 @@
       "source": "Sharesansar",
       "badge": "SS",
       "category": "Nepal Stock",
-      "scrapedAt": "2026-09-23T05:58:26.802Z",
+      "scrapedAt": "2026-09-24T06:11:00.968Z",
       "summary": "Proposed Dividend",
       "isGlobal": false
     },
     {
       "title": "Dividend, Bonus & Rights",
-      "url": "https://www.sharesansar.com/newsdetail/does-dividend-matter-for-value-investors-2026-09-22",
+      "url": "https://www.sharesansar.com/newsdetail/reminder-last-trading-day-to-secure-dividend-of-five-companies-2026-09-23",
       "source": "Sharesansar",
       "badge": "SS",
       "category": "Nepal Stock",
-      "scrapedAt": "2026-09-23T05:58:26.802Z",
+      "scrapedAt": "2026-09-24T06:11:00.968Z",
       "summary": "Dividend, Bonus & Rights",
       "isGlobal": false
     },
@@ -121,7 +121,7 @@
       "source": "Sharesansar",
       "badge": "SS",
       "category": "Nepal Stock",
-      "scrapedAt": "2026-09-23T05:58:26.802Z",
+      "scrapedAt": "2026-09-24T06:11:00.968Z",
       "summary": "NEPSE Concludes The Week With 3.43% Gain and Turnover of Rs 30.61 Arba; Weekly Summary with Sector Comparison, Major Highlights, and More",
       "isGlobal": false
     },
@@ -131,7 +131,7 @@
       "source": "Nepali Paisa",
       "badge": "NP",
       "category": "Nepal Finance",
-      "scrapedAt": "2026-09-23T05:58:28.682Z",
+      "scrapedAt": "2026-09-24T06:11:04.077Z",
       "summary": "Market Overview",
       "isGlobal": false
     },
@@ -141,7 +141,7 @@
       "source": "Nepali Paisa",
       "badge": "NP",
       "category": "Nepal Finance",
-      "scrapedAt": "2026-09-23T05:58:28.682Z",
+      "scrapedAt": "2026-09-24T06:11:04.077Z",
       "summary": "Stocks Up & Down",
       "isGlobal": false
     },
@@ -151,7 +151,7 @@
       "source": "Nepali Paisa",
       "badge": "NP",
       "category": "Nepal Finance",
-      "scrapedAt": "2026-09-23T05:58:28.682Z",
+      "scrapedAt": "2026-09-24T06:11:04.077Z",
       "summary": "Business & Economy",
       "isGlobal": false
     }
@@ -163,78 +163,78 @@
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-09-23T05:58:45.870Z",
+      "scrapedAt": "2026-09-24T06:11:28.128Z",
       "summary": "Markets just got Conversational",
       "isGlobal": true
     },
     {
-      "title": "Stock Rally: Why Innodata shares jumped 14.6% in one session",
-      "url": "https://economictimes.indiatimes.com/markets/us-stocks/news/stock-rally-why-innodata-shares-jumped-14-6-in-one-session/slideshow/134427013.cms",
+      "title": "Stocks to buy: UBS picks 4 NBFC shares with upside potential of up to 36%",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/stocks-to-buy-ubs-picks-4-nbfc-shares-with-upside-potential-of-up-to-36/slideshow/134453126.cms",
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-09-23T05:58:45.871Z",
-      "summary": "Stock Rally: Why Innodata shares jumped 14.6% in one session",
+      "scrapedAt": "2026-09-24T06:11:28.128Z",
+      "summary": "Stocks to buy: UBS picks 4 NBFC shares with upside potential of up to 36%",
       "isGlobal": true
     },
     {
-      "title": "Stocks to buy: Jefferies remains bullish on these 4 capital market stocks, sees up to 36% upside",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/news/stocks-to-buy-jefferies-remains-bullish-on-these-4-capital-market-stocks-sees-up-to-36-upside/slideshow/134426298.cms",
+      "title": "PB Fintech among 4 F&O stocks with a sharp rise in futures open interest",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/pb-fintech-among-4-fampo-stocks-with-a-sharp-rise-in-futures-open-interest/slideshow/134451918.cms",
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-09-23T05:58:45.871Z",
-      "summary": "Stocks to buy: Jefferies remains bullish on these 4 capital market stocks, sees up to 36% upside",
+      "scrapedAt": "2026-09-24T06:11:28.128Z",
+      "summary": "PB Fintech among 4 F&O stocks with a sharp rise in futures open interest",
       "isGlobal": true
     },
     {
-      "title": "Rajesh Exports, 9 other Nifty 500 stocks tumble up to 60% in 2026. How many do you own?",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/news/rajesh-exports-9-other-nifty-500-stocks-tumble-up-to-60-in-2026-how-many-do-you-own/slideshow/134425678.cms",
+      "title": "Steel Authority of India among 3 stocks showing White Marubozu pattern",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/steel-authority-of-india-among-3-stocks-showing-white-marubozu-pattern/slideshow/134451812.cms",
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-09-23T05:58:45.871Z",
-      "summary": "Rajesh Exports, 9 other Nifty 500 stocks tumble up to 60% in 2026. How many do you own?",
+      "scrapedAt": "2026-09-24T06:11:28.128Z",
+      "summary": "Steel Authority of India among 3 stocks showing White Marubozu pattern",
       "isGlobal": true
     },
     {
-      "title": "Ather Energy among 4 F&O stocks with a sharp rise in futures open interest",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/news/ather-energy-among-4-fampo-stocks-with-a-sharp-rise-in-futures-open-interest/slideshow/134425538.cms",
+      "title": "Steel Authority of India among 4 stocks closing above VWAP",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/steel-authority-of-india-among-4-stocks-closing-above-vwap/slideshow/134450979.cms",
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-09-23T05:58:45.871Z",
-      "summary": "Ather Energy among 4 F&O stocks with a sharp rise in futures open interest",
+      "scrapedAt": "2026-09-24T06:11:28.129Z",
+      "summary": "Steel Authority of India among 4 stocks closing above VWAP",
       "isGlobal": true
     },
     {
-      "title": "Cyient among 3 stocks closed above VWAP",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/news/cyient-among-3-stocks-closed-above-vwap/slideshow/134425536.cms",
+      "title": "Whirlpool of India among five stocks showing RSI trending up",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/whirlpool-of-india-among-five-stocks-showing-rsi-trending-up/slideshow/134450357.cms",
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-09-23T05:58:45.871Z",
-      "summary": "Cyient among 3 stocks closed above VWAP",
+      "scrapedAt": "2026-09-24T06:11:28.129Z",
+      "summary": "Whirlpool of India among five stocks showing RSI trending up",
       "isGlobal": true
     },
     {
-      "title": "These 7 private and public banking stocks have an upside of up to 27% in one year, according to analysts",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/news/these-7-private-and-public-banking-stocks-have-an-upside-of-up-to-27-in-one-year-according-to-analysts/articleshow/134417678.cms",
+      "title": "EV story in auto ancillaries is known. A second change could matter more: 5 auto ancillary stocks, 3 with upside potential of 9% to 24%",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/ev-story-in-auto-ancillaries-is-known-a-second-change-could-matter-more-5-auto-ancillary-stocks-3-with-upside-potential-of-9-to-24/articleshow/134433981.cms",
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-09-23T05:58:45.871Z",
-      "summary": "These 7 private and public banking stocks have an upside of up to 27% in one year, according to analysts",
+      "scrapedAt": "2026-09-24T06:11:28.129Z",
+      "summary": "EV story in auto ancillaries is known. A second change could matter more: 5 auto ancillary stocks, 3 with upside potential of 9% to 24%",
       "isGlobal": true
     },
     {
-      "title": "These large-cap stocks have ‘strong buy’ & ‘buy’ recos and an upside potential of up to 29%, according to analysts",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/news/these-large-cap-stocks-have-strong-buy-buy-recos-and-an-upside-potential-of-up-to-29-according-to-analysts/articleshow/134394419.cms",
+      "title": "Stock Radar: Dabur India stock showing signs of bottoming out after falling by about 30% from highs; time to buy?",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/stock-radar-dabur-india-stock-showing-signs-of-bottoming-out-after-falling-by-about-30-from-highs-time-to-buy/articleshow/134410548.cms",
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-09-23T05:58:45.871Z",
-      "summary": "These large-cap stocks have ‘strong buy’ & ‘buy’ recos and an upside potential of up to 29%, according to analysts",
+      "scrapedAt": "2026-09-24T06:11:28.129Z",
+      "summary": "Stock Radar: Dabur India stock showing signs of bottoming out after falling by about 30% from highs; time to buy?",
       "isGlobal": true
     }
   ]
