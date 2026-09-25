@@ -1,5 +1,5 @@
 {
-  "scrapedAt": "2026-09-24T06:11:29.630Z",
+  "scrapedAt": "2026-09-25T06:10:39.811Z",
   "totalCount": 22,
   "nepalCount": 14,
   "globalCount": 8,
@@ -16,13 +16,13 @@
   ],
   "articles": [
     {
-      "title": "सरकार, कर्मचारी र व्यापारिक दुष्परिणामको मारमा नागरिक",
-      "url": "https://www.karobardaily.com/news/420025",
+      "title": "बैंकलाई सेयरमा लगानी गर्न खुकुलो नीति",
+      "url": "https://www.karobardaily.com/news/420392",
       "source": "Karobar Daily",
       "badge": "KD",
       "category": "Nepal Business",
-      "scrapedAt": "2026-09-24T06:10:58.708Z",
-      "summary": "सरकार, कर्मचारी र व्यापारिक दुष्परिणामको मारमा नागरिक",
+      "scrapedAt": "2026-09-25T06:10:12.274Z",
+      "summary": "बैंकलाई सेयरमा लगानी गर्न खुकुलो नीति",
       "isGlobal": false
     },
     {
@@ -31,18 +31,8 @@
       "source": "Karobar Daily",
       "badge": "KD",
       "category": "Nepal Business",
-      "scrapedAt": "2026-09-24T06:10:58.708Z",
+      "scrapedAt": "2026-09-25T06:10:12.275Z",
       "summary": "डब्लुडब्लुएफ नेपालद्वारा डेढ करोड सहयोग",
-      "isGlobal": false
-    },
-    {
-      "title": "दमौली प्रसारण लाइन निर्माण: प्रभावितलाई दश करोड ३३ लाख मुआब्जा",
-      "url": "https://www.karobardaily.com/news/419658",
-      "source": "Karobar Daily",
-      "badge": "KD",
-      "category": "Nepal Business",
-      "scrapedAt": "2026-09-24T06:10:58.708Z",
-      "summary": "दमौली प्रसारण लाइन निर्माण: प्रभावितलाई दश करोड ३३ लाख मुआब्जा",
       "isGlobal": false
     },
     {
@@ -51,7 +41,7 @@
       "source": "Karobar Daily",
       "badge": "KD",
       "category": "Nepal Business",
-      "scrapedAt": "2026-09-24T06:10:58.708Z",
+      "scrapedAt": "2026-09-25T06:10:12.275Z",
       "summary": "राष्ट्र बैंकद्वारा छ लघुवित्त वित्तीय संस्थालाई कारवाही",
       "isGlobal": false
     },
@@ -61,7 +51,7 @@
       "source": "Karobar Daily",
       "badge": "KD",
       "category": "Nepal Business",
-      "scrapedAt": "2026-09-24T06:10:58.708Z",
+      "scrapedAt": "2026-09-25T06:10:12.275Z",
       "summary": "बाढीले घर र जमिन दुवै बगायो, के हुन्छ बैंकको ऋण ?",
       "isGlobal": false
     },
@@ -71,7 +61,7 @@
       "source": "Karobar Daily",
       "badge": "KD",
       "category": "Nepal Business",
-      "scrapedAt": "2026-09-24T06:10:58.708Z",
+      "scrapedAt": "2026-09-25T06:10:12.275Z",
       "summary": "निर्जीवन बीमा कम्पनीको व्यापार २३ प्रतिशतले बढ्यो",
       "isGlobal": false
     },
@@ -81,18 +71,28 @@
       "source": "Karobar Daily",
       "badge": "KD",
       "category": "Nepal Business",
-      "scrapedAt": "2026-09-24T06:10:58.708Z",
+      "scrapedAt": "2026-09-25T06:10:12.275Z",
       "summary": "सिद्धार्थ बैंक–आँखा अस्पताल सम्झौता",
       "isGlobal": false
     },
     {
-      "title": "एनआईसी एशिया बैंकद्वारा कैलालीका तीन विद्यालय र मकवानपुर मामाघर नेपाल संस्थालाई सहयोग",
-      "url": "https://www.karobardaily.com/news/419641",
+      "title": "नयाँ टियागो इभिसँग उत्सवको माहोल, जोयफुल विकमा आकर्षक अफर",
+      "url": "https://www.karobardaily.com/news/419121",
       "source": "Karobar Daily",
       "badge": "KD",
       "category": "Nepal Business",
-      "scrapedAt": "2026-09-24T06:10:58.708Z",
-      "summary": "एनआईसी एशिया बैंकद्वारा कैलालीका तीन विद्यालय र मकवानपुर मामाघर नेपाल संस्थालाई सहयोग",
+      "scrapedAt": "2026-09-25T06:10:12.275Z",
+      "summary": "नयाँ टियागो इभिसँग उत्सवको माहोल, जोयफुल विकमा आकर्षक अफर",
+      "isGlobal": false
+    },
+    {
+      "title": "विश्वकर्मा पूजाको दिन नेपालभर १५० टाटा गाडी डेलिभरी",
+      "url": "https://www.karobardaily.com/news/417864",
+      "source": "Karobar Daily",
+      "badge": "KD",
+      "category": "Nepal Business",
+      "scrapedAt": "2026-09-25T06:10:12.275Z",
+      "summary": "विश्वकर्मा पूजाको दिन नेपालभर १५० टाटा गाडी डेलिभरी",
       "isGlobal": false
     },
     {
@@ -101,17 +101,17 @@
       "source": "Sharesansar",
       "badge": "SS",
       "category": "Nepal Stock",
-      "scrapedAt": "2026-09-24T06:11:00.968Z",
+      "scrapedAt": "2026-09-25T06:10:14.141Z",
       "summary": "Proposed Dividend",
       "isGlobal": false
     },
     {
       "title": "Dividend, Bonus & Rights",
-      "url": "https://www.sharesansar.com/newsdetail/reminder-last-trading-day-to-secure-dividend-of-five-companies-2026-09-23",
+      "url": "https://www.sharesansar.com/newsdetail/bonus-shares-of-synergy-power-development-limited-listed-on-nepse-2026-09-24",
       "source": "Sharesansar",
       "badge": "SS",
       "category": "Nepal Stock",
-      "scrapedAt": "2026-09-24T06:11:00.968Z",
+      "scrapedAt": "2026-09-25T06:10:14.141Z",
       "summary": "Dividend, Bonus & Rights",
       "isGlobal": false
     },
@@ -121,7 +121,7 @@
       "source": "Sharesansar",
       "badge": "SS",
       "category": "Nepal Stock",
-      "scrapedAt": "2026-09-24T06:11:00.968Z",
+      "scrapedAt": "2026-09-25T06:10:14.141Z",
       "summary": "NEPSE Concludes The Week With 3.43% Gain and Turnover of Rs 30.61 Arba; Weekly Summary with Sector Comparison, Major Highlights, and More",
       "isGlobal": false
     },
@@ -131,7 +131,7 @@
       "source": "Nepali Paisa",
       "badge": "NP",
       "category": "Nepal Finance",
-      "scrapedAt": "2026-09-24T06:11:04.077Z",
+      "scrapedAt": "2026-09-25T06:10:16.245Z",
       "summary": "Market Overview",
       "isGlobal": false
     },
@@ -141,7 +141,7 @@
       "source": "Nepali Paisa",
       "badge": "NP",
       "category": "Nepal Finance",
-      "scrapedAt": "2026-09-24T06:11:04.077Z",
+      "scrapedAt": "2026-09-25T06:10:16.245Z",
       "summary": "Stocks Up & Down",
       "isGlobal": false
     },
@@ -151,7 +151,7 @@
       "source": "Nepali Paisa",
       "badge": "NP",
       "category": "Nepal Finance",
-      "scrapedAt": "2026-09-24T06:11:04.077Z",
+      "scrapedAt": "2026-09-25T06:10:16.245Z",
       "summary": "Business & Economy",
       "isGlobal": false
     }
@@ -163,78 +163,78 @@
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-09-24T06:11:28.128Z",
+      "scrapedAt": "2026-09-25T06:10:38.309Z",
       "summary": "Markets just got Conversational",
       "isGlobal": true
     },
     {
-      "title": "Stocks to buy: UBS picks 4 NBFC shares with upside potential of up to 36%",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/news/stocks-to-buy-ubs-picks-4-nbfc-shares-with-upside-potential-of-up-to-36/slideshow/134453126.cms",
+      "title": "Jefferies is bullish on Adani Ports and 5 other logistics sector stocks. How many do you have?",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/jefferies-is-bullish-on-adani-ports-and-5-other-logistics-sector-stocks-how-many-do-you-have/slideshow/134474925.cms",
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-09-24T06:11:28.128Z",
-      "summary": "Stocks to buy: UBS picks 4 NBFC shares with upside potential of up to 36%",
+      "scrapedAt": "2026-09-25T06:10:38.310Z",
+      "summary": "Jefferies is bullish on Adani Ports and 5 other logistics sector stocks. How many do you have?",
+      "isGlobal": true
+    },
+    {
+      "title": "ICICI Lombard General Insurance among 3 stocks showing White Marubozu Pattern",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/icici-lombard-general-insurance-among-3-stocks-showing-white-marubozu-pattern/slideshow/134474718.cms",
+      "source": "Economic Times Markets",
+      "badge": "ET",
+      "category": "India Markets",
+      "scrapedAt": "2026-09-25T06:10:38.310Z",
+      "summary": "ICICI Lombard General Insurance among 3 stocks showing White Marubozu Pattern",
       "isGlobal": true
     },
     {
       "title": "PB Fintech among 4 F&O stocks with a sharp rise in futures open interest",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/news/pb-fintech-among-4-fampo-stocks-with-a-sharp-rise-in-futures-open-interest/slideshow/134451918.cms",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/pb-fintech-among-4-fampo-stocks-with-a-sharp-rise-in-futures-open-interest/slideshow/134474685.cms",
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-09-24T06:11:28.128Z",
+      "scrapedAt": "2026-09-25T06:10:38.310Z",
       "summary": "PB Fintech among 4 F&O stocks with a sharp rise in futures open interest",
       "isGlobal": true
     },
     {
-      "title": "Steel Authority of India among 3 stocks showing White Marubozu pattern",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/news/steel-authority-of-india-among-3-stocks-showing-white-marubozu-pattern/slideshow/134451812.cms",
+      "title": "Chalet Hotels among 3 stocks closed above VWAP",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/chalet-hotels-among-3-stocks-closed-above-vwap/slideshow/134474615.cms",
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-09-24T06:11:28.128Z",
-      "summary": "Steel Authority of India among 3 stocks showing White Marubozu pattern",
+      "scrapedAt": "2026-09-25T06:10:38.310Z",
+      "summary": "Chalet Hotels among 3 stocks closed above VWAP",
       "isGlobal": true
     },
     {
-      "title": "Steel Authority of India among 4 stocks closing above VWAP",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/news/steel-authority-of-india-among-4-stocks-closing-above-vwap/slideshow/134450979.cms",
+      "title": "JK Cement among 4 stocks showing RSI trending up",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/jk-cement-among-4-stocks-showing-rsi-trending-up/slideshow/134474469.cms",
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-09-24T06:11:28.129Z",
-      "summary": "Steel Authority of India among 4 stocks closing above VWAP",
+      "scrapedAt": "2026-09-25T06:10:38.310Z",
+      "summary": "JK Cement among 4 stocks showing RSI trending up",
       "isGlobal": true
     },
     {
-      "title": "Whirlpool of India among five stocks showing RSI trending up",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/news/whirlpool-of-india-among-five-stocks-showing-rsi-trending-up/slideshow/134450357.cms",
+      "title": "These large- and mid-cap stocks can give more than 20% return in 1 year, according to analysts",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/these-large-and-mid-cap-stocks-can-give-more-than-20-return-in-1-year-according-to-analysts/articleshow/134468554.cms",
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-09-24T06:11:28.129Z",
-      "summary": "Whirlpool of India among five stocks showing RSI trending up",
+      "scrapedAt": "2026-09-25T06:10:38.310Z",
+      "summary": "These large- and mid-cap stocks can give more than 20% return in 1 year, according to analysts",
       "isGlobal": true
     },
     {
-      "title": "EV story in auto ancillaries is known. A second change could matter more: 5 auto ancillary stocks, 3 with upside potential of 9% to 24%",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/news/ev-story-in-auto-ancillaries-is-known-a-second-change-could-matter-more-5-auto-ancillary-stocks-3-with-upside-potential-of-9-to-24/articleshow/134433981.cms",
+      "title": "Warren Buffett on the difference between investing in real estate and the stock market",
+      "url": "https://economictimes.indiatimes.com/intelligent-investing/warren-buffett/warren-buffett-on-the-difference-between-investing-in-real-estate-and-the-stock-market/articleshow/134465811.cms",
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-09-24T06:11:28.129Z",
-      "summary": "EV story in auto ancillaries is known. A second change could matter more: 5 auto ancillary stocks, 3 with upside potential of 9% to 24%",
-      "isGlobal": true
-    },
-    {
-      "title": "Stock Radar: Dabur India stock showing signs of bottoming out after falling by about 30% from highs; time to buy?",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/news/stock-radar-dabur-india-stock-showing-signs-of-bottoming-out-after-falling-by-about-30-from-highs-time-to-buy/articleshow/134410548.cms",
-      "source": "Economic Times Markets",
-      "badge": "ET",
-      "category": "India Markets",
-      "scrapedAt": "2026-09-24T06:11:28.129Z",
-      "summary": "Stock Radar: Dabur India stock showing signs of bottoming out after falling by about 30% from highs; time to buy?",
+      "scrapedAt": "2026-09-25T06:10:38.310Z",
+      "summary": "Warren Buffett on the difference between investing in real estate and the stock market",
       "isGlobal": true
     }
   ]
