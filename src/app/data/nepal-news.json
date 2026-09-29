@@ -1,5 +1,5 @@
 {
-  "scrapedAt": "2026-09-28T06:53:24.623Z",
+  "scrapedAt": "2026-09-29T06:54:32.968Z",
   "totalCount": 22,
   "nepalCount": 14,
   "globalCount": 8,
@@ -16,13 +16,13 @@
   ],
   "articles": [
     {
-      "title": "कर र भन्सार नीति पुनरावलोकन गर्न माग",
-      "url": "https://www.karobardaily.com/news/421100",
+      "title": "चार दिनको वर्षा: पाँच सय ४२ विपद्का घटना, पूर्वसूचनाबाट करिब १० लाखलाई चेतावनी",
+      "url": "https://www.karobardaily.com/news/421457",
       "source": "Karobar Daily",
       "badge": "KD",
       "category": "Nepal Business",
-      "scrapedAt": "2026-09-28T06:52:57.684Z",
-      "summary": "कर र भन्सार नीति पुनरावलोकन गर्न माग",
+      "scrapedAt": "2026-09-29T06:54:15.044Z",
+      "summary": "चार दिनको वर्षा: पाँच सय ४२ विपद्का घटना, पूर्वसूचनाबाट करिब १० लाखलाई चेतावनी",
       "isGlobal": false
     },
     {
@@ -31,7 +31,7 @@
       "source": "Karobar Daily",
       "badge": "KD",
       "category": "Nepal Business",
-      "scrapedAt": "2026-09-28T06:52:57.685Z",
+      "scrapedAt": "2026-09-29T06:54:15.045Z",
       "summary": "बैंकलाई सेयरमा लगानी गर्न खुकुलो नीति",
       "isGlobal": false
     },
@@ -41,7 +41,7 @@
       "source": "Karobar Daily",
       "badge": "KD",
       "category": "Nepal Business",
-      "scrapedAt": "2026-09-28T06:52:57.685Z",
+      "scrapedAt": "2026-09-29T06:54:15.045Z",
       "summary": "राष्ट्र बैंकद्वारा छ लघुवित्त वित्तीय संस्थालाई कारवाही",
       "isGlobal": false
     },
@@ -51,18 +51,8 @@
       "source": "Karobar Daily",
       "badge": "KD",
       "category": "Nepal Business",
-      "scrapedAt": "2026-09-28T06:52:57.685Z",
+      "scrapedAt": "2026-09-29T06:54:15.045Z",
       "summary": "बाढीले घर र जमिन दुवै बगायो, के हुन्छ बैंकको ऋण ?",
-      "isGlobal": false
-    },
-    {
-      "title": "निर्जीवन बीमा कम्पनीको व्यापार २३ प्रतिशतले बढ्यो",
-      "url": "https://www.karobardaily.com/news/413733",
-      "source": "Karobar Daily",
-      "badge": "KD",
-      "category": "Nepal Business",
-      "scrapedAt": "2026-09-28T06:52:57.685Z",
-      "summary": "निर्जीवन बीमा कम्पनीको व्यापार २३ प्रतिशतले बढ्यो",
       "isGlobal": false
     },
     {
@@ -71,7 +61,7 @@
       "source": "Karobar Daily",
       "badge": "KD",
       "category": "Nepal Business",
-      "scrapedAt": "2026-09-28T06:52:57.685Z",
+      "scrapedAt": "2026-09-29T06:54:15.045Z",
       "summary": "श्री निप्पोन फर्मास्युटिकलको आईपीओ निष्कासन तथा बिक्री प्रबन्धकमा नबिल इन्भेष्टमेण्ट बैंकिङ",
       "isGlobal": false
     },
@@ -81,18 +71,28 @@
       "source": "Karobar Daily",
       "badge": "KD",
       "category": "Nepal Business",
-      "scrapedAt": "2026-09-28T06:52:57.685Z",
+      "scrapedAt": "2026-09-29T06:54:15.045Z",
       "summary": "स्याकार ट्रेडिङ र एनआइसी एसिया बैंकबीच सम्झौता",
       "isGlobal": false
     },
     {
-      "title": "मुक्तिनाथ विकास र अटोवेज कर्जा सम्झौता",
-      "url": "https://www.karobardaily.com/news/420565",
+      "title": "नयाँ टियागो इभिसँग उत्सवको माहोल, जोयफुल विकमा आकर्षक अफर",
+      "url": "https://www.karobardaily.com/news/419121",
       "source": "Karobar Daily",
       "badge": "KD",
       "category": "Nepal Business",
-      "scrapedAt": "2026-09-28T06:52:57.685Z",
-      "summary": "मुक्तिनाथ विकास र अटोवेज कर्जा सम्झौता",
+      "scrapedAt": "2026-09-29T06:54:15.045Z",
+      "summary": "नयाँ टियागो इभिसँग उत्सवको माहोल, जोयफुल विकमा आकर्षक अफर",
+      "isGlobal": false
+    },
+    {
+      "title": "विश्वकर्मा पूजाको दिन नेपालभर १५० टाटा गाडी डेलिभरी",
+      "url": "https://www.karobardaily.com/news/417864",
+      "source": "Karobar Daily",
+      "badge": "KD",
+      "category": "Nepal Business",
+      "scrapedAt": "2026-09-29T06:54:15.045Z",
+      "summary": "विश्वकर्मा पूजाको दिन नेपालभर १५० टाटा गाडी डेलिभरी",
       "isGlobal": false
     },
     {
@@ -101,17 +101,17 @@
       "source": "Sharesansar",
       "badge": "SS",
       "category": "Nepal Stock",
-      "scrapedAt": "2026-09-28T06:52:59.715Z",
+      "scrapedAt": "2026-09-29T06:54:17.169Z",
       "summary": "Proposed Dividend",
       "isGlobal": false
     },
     {
       "title": "Dividend, Bonus & Rights",
-      "url": "https://www.sharesansar.com/newsdetail/bonus-shares-of-synergy-power-development-limited-listed-on-nepse-2026-09-24",
+      "url": "https://www.sharesansar.com/newsdetail/bonus-shares-of-united-ajod-insurance-limited-listed-on-nepse-2026-09-28",
       "source": "Sharesansar",
       "badge": "SS",
       "category": "Nepal Stock",
-      "scrapedAt": "2026-09-28T06:52:59.716Z",
+      "scrapedAt": "2026-09-29T06:54:17.169Z",
       "summary": "Dividend, Bonus & Rights",
       "isGlobal": false
     },
@@ -121,7 +121,7 @@
       "source": "Sharesansar",
       "badge": "SS",
       "category": "Nepal Stock",
-      "scrapedAt": "2026-09-28T06:52:59.716Z",
+      "scrapedAt": "2026-09-29T06:54:17.169Z",
       "summary": "NEPSE Concludes The Week With 0.66% Loss and Turnover of Rs. 18.85 Arba; Weekly Summary with Sector Comparison, Major Highlights, and More",
       "isGlobal": false
     },
@@ -131,7 +131,7 @@
       "source": "Nepali Paisa",
       "badge": "NP",
       "category": "Nepal Finance",
-      "scrapedAt": "2026-09-28T06:53:01.731Z",
+      "scrapedAt": "2026-09-29T06:54:19.246Z",
       "summary": "Market Overview",
       "isGlobal": false
     },
@@ -141,7 +141,7 @@
       "source": "Nepali Paisa",
       "badge": "NP",
       "category": "Nepal Finance",
-      "scrapedAt": "2026-09-28T06:53:01.731Z",
+      "scrapedAt": "2026-09-29T06:54:19.246Z",
       "summary": "Stocks Up & Down",
       "isGlobal": false
     },
@@ -151,7 +151,7 @@
       "source": "Nepali Paisa",
       "badge": "NP",
       "category": "Nepal Finance",
-      "scrapedAt": "2026-09-28T06:53:01.731Z",
+      "scrapedAt": "2026-09-29T06:54:19.246Z",
       "summary": "Business & Economy",
       "isGlobal": false
     }
@@ -163,78 +163,78 @@
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-09-28T06:53:23.120Z",
+      "scrapedAt": "2026-09-29T06:54:31.466Z",
       "summary": "Markets just got Conversational",
       "isGlobal": true
     },
     {
-      "title": "PB Fintech among 4 F&O stocks with a sharp rise in futures open interest",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/news/pb-fintech-among-4-fampo-stocks-with-a-sharp-rise-in-futures-open-interest/slideshow/134534458.cms",
+      "title": "Summit stock surges on $2 billion AstraZeneca investment",
+      "url": "https://economictimes.indiatimes.com/markets/us-stocks/news/summit-stock-surges-on-2-billion-astrazeneca-investment/slideshow/134558448.cms",
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-09-28T06:53:23.120Z",
-      "summary": "PB Fintech among 4 F&O stocks with a sharp rise in futures open interest",
+      "scrapedAt": "2026-09-29T06:54:31.466Z",
+      "summary": "Summit stock surges on $2 billion AstraZeneca investment",
       "isGlobal": true
     },
     {
-      "title": "Tech picks: Balrampur Chini Mills among 4 stocks to buy for up to 18% returns in short term",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/news/tech-picks-balrampur-chini-mills-among-4-stocks-to-buy-for-up-to-18-returns-in-short-term/slideshow/134534034.cms",
+      "title": "Nifty indices rejig: Which stocks will see the biggest inflows and outflows?",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/nifty-indices-rejig-which-stocks-will-see-the-biggest-inflows-and-outflows/slideshow/134558255.cms",
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-09-28T06:53:23.120Z",
-      "summary": "Tech picks: Balrampur Chini Mills among 4 stocks to buy for up to 18% returns in short term",
+      "scrapedAt": "2026-09-29T06:54:31.466Z",
+      "summary": "Nifty indices rejig: Which stocks will see the biggest inflows and outflows?",
       "isGlobal": true
     },
     {
-      "title": "5 key market themes investors need to watch this week",
-      "url": "https://economictimes.indiatimes.com/markets/us-stocks/news/5-key-market-themes-investors-need-to-watch-this-week/slideshow/134533697.cms",
+      "title": "Why are investors turning cautious on Tesla stock?",
+      "url": "https://economictimes.indiatimes.com/markets/us-stocks/news/why-are-investors-turning-cautious-on-tesla-stock/slideshow/134557734.cms",
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-09-28T06:53:23.120Z",
-      "summary": "5 key market themes investors need to watch this week",
+      "scrapedAt": "2026-09-29T06:54:31.466Z",
+      "summary": "Why are investors turning cautious on Tesla stock?",
       "isGlobal": true
     },
     {
-      "title": "Zen Technologies among 3 stocks that closed crossing above VWAP",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/news/zen-technologies-among-3-stocks-that-closed-crossing-above-vwap/slideshow/134531262.cms",
+      "title": "10 Nifty stocks that Motilal Oswal analysts are bullish on. How many do you own?",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/10-nifty-stocks-that-motilal-oswal-analysts-are-bullish-on-how-many-do-you-own/slideshow/134557589.cms",
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-09-28T06:53:23.120Z",
-      "summary": "Zen Technologies among 3 stocks that closed crossing above VWAP",
+      "scrapedAt": "2026-09-29T06:54:31.466Z",
+      "summary": "10 Nifty stocks that Motilal Oswal analysts are bullish on. How many do you own?",
       "isGlobal": true
     },
     {
-      "title": "Top Nifty50 stocks analysts suggest buying in this volatile week",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/news/top-nifty50-stocks-analysts-suggest-buying-in-this-volatile-week/articleshow/134531197.cms",
+      "title": "Stocks to buy: JM Financial expects soft Q2 season for IT majors; check target prices for Infosys, TCS, others",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/stocks-to-buy-jm-financial-expects-soft-q2-season-for-it-majors-check-target-prices-for-infosys-tcs-others/slideshow/134556958.cms",
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-09-28T06:53:23.120Z",
-      "summary": "Top Nifty50 stocks analysts suggest buying in this volatile week",
+      "scrapedAt": "2026-09-29T06:54:31.466Z",
+      "summary": "Stocks to buy: JM Financial expects soft Q2 season for IT majors; check target prices for Infosys, TCS, others",
       "isGlobal": true
     },
     {
-      "title": "For long-term investors who know and accept that more trouble might be on the way: 5 mid-cap stocks with upside potential of up to 32%",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/news/for-long-term-investors-who-know-and-accept-that-more-trouble-might-be-on-the-way-5-mid-cap-stocks-with-upside-potential-of-up-to-32/articleshow/134516747.cms",
+      "title": "Weekly Top Picks: These stocks scored 10 on 10 on Stock Reports Plus",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/weekly-top-picks-these-stocks-scored-10-on-10-on-stock-reports-plus/articleshow/134540125.cms",
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-09-28T06:53:23.120Z",
-      "summary": "For long-term investors who know and accept that more trouble might be on the way: 5 mid-cap stocks with upside potential of up to 32%",
+      "scrapedAt": "2026-09-29T06:54:31.466Z",
+      "summary": "Weekly Top Picks: These stocks scored 10 on 10 on Stock Reports Plus",
       "isGlobal": true
     },
     {
-      "title": "The most uncertain sector also pays the most to wait. Watchlist for patient investors: 5 stocks with upside potential of up to 25%",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/news/the-most-uncertain-sector-also-pays-the-most-to-wait-watchlist-for-patient-investors-5-stocks-with-upside-potential-of-up-to-25/articleshow/134513475.cms",
+      "title": "5 stocks with consistent score improvement and upside potential of up to 26% in 1 year, according to analysts",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/5-stocks-with-consistent-score-improvement-and-upside-potential-of-up-to-26-in-1-year-according-to-analysts/articleshow/134536032.cms",
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-09-28T06:53:23.120Z",
-      "summary": "The most uncertain sector also pays the most to wait. Watchlist for patient investors: 5 stocks with upside potential of up to 25%",
+      "scrapedAt": "2026-09-29T06:54:31.466Z",
+      "summary": "5 stocks with consistent score improvement and upside potential of up to 26% in 1 year, according to analysts",
       "isGlobal": true
     }
   ]
