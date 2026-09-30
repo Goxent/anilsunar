@@ -1,7 +1,7 @@
 {
-  "scrapedAt": "2026-09-29T06:54:32.968Z",
-  "totalCount": 22,
-  "nepalCount": 14,
+  "scrapedAt": "2026-09-30T06:43:13.095Z",
+  "totalCount": 23,
+  "nepalCount": 15,
   "globalCount": 8,
   "sources": [
     "Onlinekhabar Finance",
@@ -16,13 +16,33 @@
   ],
   "articles": [
     {
-      "title": "चार दिनको वर्षा: पाँच सय ४२ विपद्का घटना, पूर्वसूचनाबाट करिब १० लाखलाई चेतावनी",
-      "url": "https://www.karobardaily.com/news/421457",
+      "title": "पुँजी बजार सुधारका लागि धितोपत्र बोर्डद्वारा तीन चरणको रणनीति सार्वजनिक",
+      "url": "https://www.karobardaily.com/news/421925",
       "source": "Karobar Daily",
       "badge": "KD",
       "category": "Nepal Business",
-      "scrapedAt": "2026-09-29T06:54:15.044Z",
-      "summary": "चार दिनको वर्षा: पाँच सय ४२ विपद्का घटना, पूर्वसूचनाबाट करिब १० लाखलाई चेतावनी",
+      "scrapedAt": "2026-09-30T06:42:45.325Z",
+      "summary": "पुँजी बजार सुधारका लागि धितोपत्र बोर्डद्वारा तीन चरणको रणनीति सार्वजनिक",
+      "isGlobal": false
+    },
+    {
+      "title": "एसियाली पूर्वाधार लगानी बैंकको वार्षिक बैठकमा भाग लिएर अर्थमन्त्री स्वदेश फिर्ता",
+      "url": "https://www.karobardaily.com/news/421942",
+      "source": "Karobar Daily",
+      "badge": "KD",
+      "category": "Nepal Business",
+      "scrapedAt": "2026-09-30T06:42:45.325Z",
+      "summary": "एसियाली पूर्वाधार लगानी बैंकको वार्षिक बैठकमा भाग लिएर अर्थमन्त्री स्वदेश फिर्ता",
+      "isGlobal": false
+    },
+    {
+      "title": "कर्णालीबाट साढे ३ अर्बको कृषि उपज निर्यात",
+      "url": "https://www.karobardaily.com/news/421650",
+      "source": "Karobar Daily",
+      "badge": "KD",
+      "category": "Nepal Business",
+      "scrapedAt": "2026-09-30T06:42:45.325Z",
+      "summary": "कर्णालीबाट साढे ३ अर्बको कृषि उपज निर्यात",
       "isGlobal": false
     },
     {
@@ -31,7 +51,7 @@
       "source": "Karobar Daily",
       "badge": "KD",
       "category": "Nepal Business",
-      "scrapedAt": "2026-09-29T06:54:15.045Z",
+      "scrapedAt": "2026-09-30T06:42:45.325Z",
       "summary": "बैंकलाई सेयरमा लगानी गर्न खुकुलो नीति",
       "isGlobal": false
     },
@@ -41,7 +61,7 @@
       "source": "Karobar Daily",
       "badge": "KD",
       "category": "Nepal Business",
-      "scrapedAt": "2026-09-29T06:54:15.045Z",
+      "scrapedAt": "2026-09-30T06:42:45.325Z",
       "summary": "राष्ट्र बैंकद्वारा छ लघुवित्त वित्तीय संस्थालाई कारवाही",
       "isGlobal": false
     },
@@ -51,48 +71,38 @@
       "source": "Karobar Daily",
       "badge": "KD",
       "category": "Nepal Business",
-      "scrapedAt": "2026-09-29T06:54:15.045Z",
+      "scrapedAt": "2026-09-30T06:42:45.325Z",
       "summary": "बाढीले घर र जमिन दुवै बगायो, के हुन्छ बैंकको ऋण ?",
       "isGlobal": false
     },
     {
-      "title": "श्री निप्पोन फर्मास्युटिकलको आईपीओ निष्कासन तथा बिक्री प्रबन्धकमा नबिल इन्भेष्टमेण्ट बैंकिङ",
-      "url": "https://www.karobardaily.com/news/420797",
+      "title": "सागर डिस्टिलरीले नेप्से बुल्सलाई नयाँ रूपमा बजारमा फर्काउँदै",
+      "url": "https://www.karobardaily.com/news/421685",
       "source": "Karobar Daily",
       "badge": "KD",
       "category": "Nepal Business",
-      "scrapedAt": "2026-09-29T06:54:15.045Z",
-      "summary": "श्री निप्पोन फर्मास्युटिकलको आईपीओ निष्कासन तथा बिक्री प्रबन्धकमा नबिल इन्भेष्टमेण्ट बैंकिङ",
+      "scrapedAt": "2026-09-30T06:42:45.325Z",
+      "summary": "सागर डिस्टिलरीले नेप्से बुल्सलाई नयाँ रूपमा बजारमा फर्काउँदै",
       "isGlobal": false
     },
     {
-      "title": "स्याकार ट्रेडिङ र एनआइसी एसिया बैंकबीच सम्झौता",
-      "url": "https://www.karobardaily.com/news/420789",
+      "title": "कम्पनीको नाफा-नोक्सान देखाउने ढाँचा फेरिँदै",
+      "url": "https://www.karobardaily.com/news/421630",
       "source": "Karobar Daily",
       "badge": "KD",
       "category": "Nepal Business",
-      "scrapedAt": "2026-09-29T06:54:15.045Z",
-      "summary": "स्याकार ट्रेडिङ र एनआइसी एसिया बैंकबीच सम्झौता",
+      "scrapedAt": "2026-09-30T06:42:45.325Z",
+      "summary": "कम्पनीको नाफा-नोक्सान देखाउने ढाँचा फेरिँदै",
       "isGlobal": false
     },
     {
-      "title": "नयाँ टियागो इभिसँग उत्सवको माहोल, जोयफुल विकमा आकर्षक अफर",
-      "url": "https://www.karobardaily.com/news/419121",
-      "source": "Karobar Daily",
-      "badge": "KD",
-      "category": "Nepal Business",
-      "scrapedAt": "2026-09-29T06:54:15.045Z",
-      "summary": "नयाँ टियागो इभिसँग उत्सवको माहोल, जोयफुल विकमा आकर्षक अफर",
-      "isGlobal": false
-    },
-    {
-      "title": "विश्वकर्मा पूजाको दिन नेपालभर १५० टाटा गाडी डेलिभरी",
-      "url": "https://www.karobardaily.com/news/417864",
-      "source": "Karobar Daily",
-      "badge": "KD",
-      "category": "Nepal Business",
-      "scrapedAt": "2026-09-29T06:54:15.045Z",
-      "summary": "विश्वकर्मा पूजाको दिन नेपालभर १५० टाटा गाडी डेलिभरी",
+      "title": "Does Dividend Matter for Value Investors?",
+      "url": "https://www.sharesansar.com/newsdetail/does-dividend-matter-for-value-investors-2026-09-22",
+      "source": "Sharesansar",
+      "badge": "SS",
+      "category": "Nepal Stock",
+      "scrapedAt": "2026-09-30T06:42:47.426Z",
+      "summary": "Does Dividend Matter for Value Investors?",
       "isGlobal": false
     },
     {
@@ -101,17 +111,17 @@
       "source": "Sharesansar",
       "badge": "SS",
       "category": "Nepal Stock",
-      "scrapedAt": "2026-09-29T06:54:17.169Z",
+      "scrapedAt": "2026-09-30T06:42:47.426Z",
       "summary": "Proposed Dividend",
       "isGlobal": false
     },
     {
       "title": "Dividend, Bonus & Rights",
-      "url": "https://www.sharesansar.com/newsdetail/bonus-shares-of-united-ajod-insurance-limited-listed-on-nepse-2026-09-28",
+      "url": "https://www.sharesansar.com/newsdetail/bonus-shares-of-kalika-power-company-limited-listed-on-nepse-2026-09-29",
       "source": "Sharesansar",
       "badge": "SS",
       "category": "Nepal Stock",
-      "scrapedAt": "2026-09-29T06:54:17.169Z",
+      "scrapedAt": "2026-09-30T06:42:47.426Z",
       "summary": "Dividend, Bonus & Rights",
       "isGlobal": false
     },
@@ -121,7 +131,7 @@
       "source": "Sharesansar",
       "badge": "SS",
       "category": "Nepal Stock",
-      "scrapedAt": "2026-09-29T06:54:17.169Z",
+      "scrapedAt": "2026-09-30T06:42:47.426Z",
       "summary": "NEPSE Concludes The Week With 0.66% Loss and Turnover of Rs. 18.85 Arba; Weekly Summary with Sector Comparison, Major Highlights, and More",
       "isGlobal": false
     },
@@ -131,7 +141,7 @@
       "source": "Nepali Paisa",
       "badge": "NP",
       "category": "Nepal Finance",
-      "scrapedAt": "2026-09-29T06:54:19.246Z",
+      "scrapedAt": "2026-09-30T06:42:50.020Z",
       "summary": "Market Overview",
       "isGlobal": false
     },
@@ -141,7 +151,7 @@
       "source": "Nepali Paisa",
       "badge": "NP",
       "category": "Nepal Finance",
-      "scrapedAt": "2026-09-29T06:54:19.246Z",
+      "scrapedAt": "2026-09-30T06:42:50.020Z",
       "summary": "Stocks Up & Down",
       "isGlobal": false
     },
@@ -151,7 +161,7 @@
       "source": "Nepali Paisa",
       "badge": "NP",
       "category": "Nepal Finance",
-      "scrapedAt": "2026-09-29T06:54:19.246Z",
+      "scrapedAt": "2026-09-30T06:42:50.020Z",
       "summary": "Business & Economy",
       "isGlobal": false
     }
@@ -163,58 +173,58 @@
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-09-29T06:54:31.466Z",
+      "scrapedAt": "2026-09-30T06:43:11.593Z",
       "summary": "Markets just got Conversational",
       "isGlobal": true
     },
     {
-      "title": "Summit stock surges on $2 billion AstraZeneca investment",
-      "url": "https://economictimes.indiatimes.com/markets/us-stocks/news/summit-stock-surges-on-2-billion-astrazeneca-investment/slideshow/134558448.cms",
+      "title": "Cupid, Sterlite Tech among 10 smallcap stocks set for sharp fund flows after Nifty rejig. See full list",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/cupid-sterlite-tech-among-10-smallcap-stocks-set-for-sharp-fund-flows-after-nifty-rejig-see-full-list/slideshow/134582949.cms",
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-09-29T06:54:31.466Z",
-      "summary": "Summit stock surges on $2 billion AstraZeneca investment",
+      "scrapedAt": "2026-09-30T06:43:11.593Z",
+      "summary": "Cupid, Sterlite Tech among 10 smallcap stocks set for sharp fund flows after Nifty rejig. See full list",
       "isGlobal": true
     },
     {
-      "title": "Nifty indices rejig: Which stocks will see the biggest inflows and outflows?",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/news/nifty-indices-rejig-which-stocks-will-see-the-biggest-inflows-and-outflows/slideshow/134558255.cms",
+      "title": "LTM among 3 stocks that closed below VWAP",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/ltm-among-3-stocks-that-closed-below-vwap/slideshow/134581101.cms",
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-09-29T06:54:31.466Z",
-      "summary": "Nifty indices rejig: Which stocks will see the biggest inflows and outflows?",
+      "scrapedAt": "2026-09-30T06:43:11.593Z",
+      "summary": "LTM among 3 stocks that closed below VWAP",
       "isGlobal": true
     },
     {
-      "title": "Why are investors turning cautious on Tesla stock?",
-      "url": "https://economictimes.indiatimes.com/markets/us-stocks/news/why-are-investors-turning-cautious-on-tesla-stock/slideshow/134557734.cms",
+      "title": "Vishal Mega Mart among 3 stocks that closed crossing above VWAP",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/vishal-mega-mart-among-3-stocks-that-closed-crossing-above-vwap/slideshow/134580717.cms",
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-09-29T06:54:31.466Z",
-      "summary": "Why are investors turning cautious on Tesla stock?",
+      "scrapedAt": "2026-09-30T06:43:11.593Z",
+      "summary": "Vishal Mega Mart among 3 stocks that closed crossing above VWAP",
       "isGlobal": true
     },
     {
-      "title": "10 Nifty stocks that Motilal Oswal analysts are bullish on. How many do you own?",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/news/10-nifty-stocks-that-motilal-oswal-analysts-are-bullish-on-how-many-do-you-own/slideshow/134557589.cms",
+      "title": "MTAR Tech among 4 stocks showing White Marubozu pattern",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/mtar-tech-among-4-stocks-showing-white-marubozu-pattern/slideshow/134580303.cms",
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-09-29T06:54:31.466Z",
-      "summary": "10 Nifty stocks that Motilal Oswal analysts are bullish on. How many do you own?",
+      "scrapedAt": "2026-09-30T06:43:11.593Z",
+      "summary": "MTAR Tech among 4 stocks showing White Marubozu pattern",
       "isGlobal": true
     },
     {
-      "title": "Stocks to buy: JM Financial expects soft Q2 season for IT majors; check target prices for Infosys, TCS, others",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/news/stocks-to-buy-jm-financial-expects-soft-q2-season-for-it-majors-check-target-prices-for-infosys-tcs-others/slideshow/134556958.cms",
+      "title": "These 8 banking stocks have an upside potential of up to 26% in 1 year, according to analysts",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/these-8-banking-stocks-have-an-upside-potential-of-up-to-26-in-1-year-according-to-analysts/articleshow/134576671.cms",
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-09-29T06:54:31.466Z",
-      "summary": "Stocks to buy: JM Financial expects soft Q2 season for IT majors; check target prices for Infosys, TCS, others",
+      "scrapedAt": "2026-09-30T06:43:11.593Z",
+      "summary": "These 8 banking stocks have an upside potential of up to 26% in 1 year, according to analysts",
       "isGlobal": true
     },
     {
@@ -223,18 +233,18 @@
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-09-29T06:54:31.466Z",
+      "scrapedAt": "2026-09-30T06:43:11.593Z",
       "summary": "Weekly Top Picks: These stocks scored 10 on 10 on Stock Reports Plus",
       "isGlobal": true
     },
     {
-      "title": "5 stocks with consistent score improvement and upside potential of up to 26% in 1 year, according to analysts",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/news/5-stocks-with-consistent-score-improvement-and-upside-potential-of-up-to-26-in-1-year-according-to-analysts/articleshow/134536032.cms",
+      "title": "Stock Radar: HDFC Bank stock breaks out from upper trendline of falling wedge formation; time to buy after nearly 30% fall?",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/stock-radar-hdfc-bank-stock-breaks-out-from-upper-trendline-of-falling-wedge-formation-time-to-buy-after-nearly-30-fall/articleshow/134538973.cms",
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-09-29T06:54:31.466Z",
-      "summary": "5 stocks with consistent score improvement and upside potential of up to 26% in 1 year, according to analysts",
+      "scrapedAt": "2026-09-30T06:43:11.593Z",
+      "summary": "Stock Radar: HDFC Bank stock breaks out from upper trendline of falling wedge formation; time to buy after nearly 30% fall?",
       "isGlobal": true
     }
   ]
