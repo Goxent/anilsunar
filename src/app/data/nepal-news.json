@@ -1,5 +1,5 @@
 {
-  "scrapedAt": "2026-09-30T06:43:13.095Z",
+  "scrapedAt": "2026-10-01T07:11:58.090Z",
   "totalCount": 23,
   "nepalCount": 15,
   "globalCount": 8,
@@ -16,12 +16,32 @@
   ],
   "articles": [
     {
+      "title": "बागलुङ बजारमा खानेपानीको हाहाकार, दमकल र ट्याङ्करमार्फत बाडिँदै",
+      "url": "https://www.karobardaily.com/news/422408",
+      "source": "Karobar Daily",
+      "badge": "KD",
+      "category": "Nepal Business",
+      "scrapedAt": "2026-10-01T07:11:30.498Z",
+      "summary": "बागलुङ बजारमा खानेपानीको हाहाकार, दमकल र ट्याङ्करमार्फत बाडिँदै",
+      "isGlobal": false
+    },
+    {
+      "title": "दसैंलाई नयाँ नोट साट्न सहजीकरण",
+      "url": "https://www.karobardaily.com/news/422252",
+      "source": "Karobar Daily",
+      "badge": "KD",
+      "category": "Nepal Business",
+      "scrapedAt": "2026-10-01T07:11:30.499Z",
+      "summary": "दसैंलाई नयाँ नोट साट्न सहजीकरण",
+      "isGlobal": false
+    },
+    {
       "title": "पुँजी बजार सुधारका लागि धितोपत्र बोर्डद्वारा तीन चरणको रणनीति सार्वजनिक",
       "url": "https://www.karobardaily.com/news/421925",
       "source": "Karobar Daily",
       "badge": "KD",
       "category": "Nepal Business",
-      "scrapedAt": "2026-09-30T06:42:45.325Z",
+      "scrapedAt": "2026-10-01T07:11:30.499Z",
       "summary": "पुँजी बजार सुधारका लागि धितोपत्र बोर्डद्वारा तीन चरणको रणनीति सार्वजनिक",
       "isGlobal": false
     },
@@ -31,18 +51,8 @@
       "source": "Karobar Daily",
       "badge": "KD",
       "category": "Nepal Business",
-      "scrapedAt": "2026-09-30T06:42:45.325Z",
+      "scrapedAt": "2026-10-01T07:11:30.499Z",
       "summary": "एसियाली पूर्वाधार लगानी बैंकको वार्षिक बैठकमा भाग लिएर अर्थमन्त्री स्वदेश फिर्ता",
-      "isGlobal": false
-    },
-    {
-      "title": "कर्णालीबाट साढे ३ अर्बको कृषि उपज निर्यात",
-      "url": "https://www.karobardaily.com/news/421650",
-      "source": "Karobar Daily",
-      "badge": "KD",
-      "category": "Nepal Business",
-      "scrapedAt": "2026-09-30T06:42:45.325Z",
-      "summary": "कर्णालीबाट साढे ३ अर्बको कृषि उपज निर्यात",
       "isGlobal": false
     },
     {
@@ -51,7 +61,7 @@
       "source": "Karobar Daily",
       "badge": "KD",
       "category": "Nepal Business",
-      "scrapedAt": "2026-09-30T06:42:45.325Z",
+      "scrapedAt": "2026-10-01T07:11:30.499Z",
       "summary": "बैंकलाई सेयरमा लगानी गर्न खुकुलो नीति",
       "isGlobal": false
     },
@@ -61,7 +71,7 @@
       "source": "Karobar Daily",
       "badge": "KD",
       "category": "Nepal Business",
-      "scrapedAt": "2026-09-30T06:42:45.325Z",
+      "scrapedAt": "2026-10-01T07:11:30.499Z",
       "summary": "राष्ट्र बैंकद्वारा छ लघुवित्त वित्तीय संस्थालाई कारवाही",
       "isGlobal": false
     },
@@ -71,28 +81,18 @@
       "source": "Karobar Daily",
       "badge": "KD",
       "category": "Nepal Business",
-      "scrapedAt": "2026-09-30T06:42:45.325Z",
+      "scrapedAt": "2026-10-01T07:11:30.499Z",
       "summary": "बाढीले घर र जमिन दुवै बगायो, के हुन्छ बैंकको ऋण ?",
       "isGlobal": false
     },
     {
-      "title": "सागर डिस्टिलरीले नेप्से बुल्सलाई नयाँ रूपमा बजारमा फर्काउँदै",
-      "url": "https://www.karobardaily.com/news/421685",
+      "title": "नेशनल लाइफको कर्मचारी सीप कार्यक्रम सम्पन्न",
+      "url": "https://www.karobardaily.com/news/422038",
       "source": "Karobar Daily",
       "badge": "KD",
       "category": "Nepal Business",
-      "scrapedAt": "2026-09-30T06:42:45.325Z",
-      "summary": "सागर डिस्टिलरीले नेप्से बुल्सलाई नयाँ रूपमा बजारमा फर्काउँदै",
-      "isGlobal": false
-    },
-    {
-      "title": "कम्पनीको नाफा-नोक्सान देखाउने ढाँचा फेरिँदै",
-      "url": "https://www.karobardaily.com/news/421630",
-      "source": "Karobar Daily",
-      "badge": "KD",
-      "category": "Nepal Business",
-      "scrapedAt": "2026-09-30T06:42:45.325Z",
-      "summary": "कम्पनीको नाफा-नोक्सान देखाउने ढाँचा फेरिँदै",
+      "scrapedAt": "2026-10-01T07:11:30.499Z",
+      "summary": "नेशनल लाइफको कर्मचारी सीप कार्यक्रम सम्पन्न",
       "isGlobal": false
     },
     {
@@ -101,7 +101,7 @@
       "source": "Sharesansar",
       "badge": "SS",
       "category": "Nepal Stock",
-      "scrapedAt": "2026-09-30T06:42:47.426Z",
+      "scrapedAt": "2026-10-01T07:11:32.333Z",
       "summary": "Does Dividend Matter for Value Investors?",
       "isGlobal": false
     },
@@ -111,7 +111,7 @@
       "source": "Sharesansar",
       "badge": "SS",
       "category": "Nepal Stock",
-      "scrapedAt": "2026-09-30T06:42:47.426Z",
+      "scrapedAt": "2026-10-01T07:11:32.333Z",
       "summary": "Proposed Dividend",
       "isGlobal": false
     },
@@ -121,7 +121,7 @@
       "source": "Sharesansar",
       "badge": "SS",
       "category": "Nepal Stock",
-      "scrapedAt": "2026-09-30T06:42:47.426Z",
+      "scrapedAt": "2026-10-01T07:11:32.333Z",
       "summary": "Dividend, Bonus & Rights",
       "isGlobal": false
     },
@@ -131,7 +131,7 @@
       "source": "Sharesansar",
       "badge": "SS",
       "category": "Nepal Stock",
-      "scrapedAt": "2026-09-30T06:42:47.426Z",
+      "scrapedAt": "2026-10-01T07:11:32.333Z",
       "summary": "NEPSE Concludes The Week With 0.66% Loss and Turnover of Rs. 18.85 Arba; Weekly Summary with Sector Comparison, Major Highlights, and More",
       "isGlobal": false
     },
@@ -141,7 +141,7 @@
       "source": "Nepali Paisa",
       "badge": "NP",
       "category": "Nepal Finance",
-      "scrapedAt": "2026-09-30T06:42:50.020Z",
+      "scrapedAt": "2026-10-01T07:11:35.629Z",
       "summary": "Market Overview",
       "isGlobal": false
     },
@@ -151,7 +151,7 @@
       "source": "Nepali Paisa",
       "badge": "NP",
       "category": "Nepal Finance",
-      "scrapedAt": "2026-09-30T06:42:50.020Z",
+      "scrapedAt": "2026-10-01T07:11:35.629Z",
       "summary": "Stocks Up & Down",
       "isGlobal": false
     },
@@ -161,7 +161,7 @@
       "source": "Nepali Paisa",
       "badge": "NP",
       "category": "Nepal Finance",
-      "scrapedAt": "2026-09-30T06:42:50.020Z",
+      "scrapedAt": "2026-10-01T07:11:35.630Z",
       "summary": "Business & Economy",
       "isGlobal": false
     }
@@ -173,78 +173,78 @@
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-09-30T06:43:11.593Z",
+      "scrapedAt": "2026-10-01T07:11:56.589Z",
       "summary": "Markets just got Conversational",
       "isGlobal": true
     },
     {
-      "title": "Cupid, Sterlite Tech among 10 smallcap stocks set for sharp fund flows after Nifty rejig. See full list",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/news/cupid-sterlite-tech-among-10-smallcap-stocks-set-for-sharp-fund-flows-after-nifty-rejig-see-full-list/slideshow/134582949.cms",
+      "title": "Stocks to buy: Titan, Lenskart, Dabur among Nomura’s 17 consumer picks. Do you own any?",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/stocks-to-buy-titan-lenskart-dabur-among-nomuras-17-consumer-picks-do-you-own-any/slideshow/134609163.cms",
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-09-30T06:43:11.593Z",
-      "summary": "Cupid, Sterlite Tech among 10 smallcap stocks set for sharp fund flows after Nifty rejig. See full list",
+      "scrapedAt": "2026-10-01T07:11:56.590Z",
+      "summary": "Stocks to buy: Titan, Lenskart, Dabur among Nomura’s 17 consumer picks. Do you own any?",
       "isGlobal": true
     },
     {
-      "title": "LTM among 3 stocks that closed below VWAP",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/news/ltm-among-3-stocks-that-closed-below-vwap/slideshow/134581101.cms",
+      "title": "Jefferies is bearish TCS, Wipro, 6 other IT stocks ahead of Q2 results. How many do you own?",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/jefferies-is-bearish-tcs-wipro-6-other-it-stocks-ahead-of-q2-results-how-many-do-you-own/slideshow/134608396.cms",
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-09-30T06:43:11.593Z",
-      "summary": "LTM among 3 stocks that closed below VWAP",
+      "scrapedAt": "2026-10-01T07:11:56.590Z",
+      "summary": "Jefferies is bearish TCS, Wipro, 6 other IT stocks ahead of Q2 results. How many do you own?",
       "isGlobal": true
     },
     {
-      "title": "Vishal Mega Mart among 3 stocks that closed crossing above VWAP",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/news/vishal-mega-mart-among-3-stocks-that-closed-crossing-above-vwap/slideshow/134580717.cms",
+      "title": "Dr. Lal PathLabs among 3 stocks that closed above VWAP",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/dr-lal-pathlabs-among-3-stocks-that-closed-above-vwap/slideshow/134607466.cms",
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-09-30T06:43:11.593Z",
-      "summary": "Vishal Mega Mart among 3 stocks that closed crossing above VWAP",
+      "scrapedAt": "2026-10-01T07:11:56.590Z",
+      "summary": "Dr. Lal PathLabs among 3 stocks that closed above VWAP",
       "isGlobal": true
     },
     {
-      "title": "MTAR Tech among 4 stocks showing White Marubozu pattern",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/news/mtar-tech-among-4-stocks-showing-white-marubozu-pattern/slideshow/134580303.cms",
+      "title": "Max Healthcare Institute among 3 F&O stocks with a sharp rise in futures open interest",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/max-healthcare-institute-among-3-fampo-stocks-with-a-sharp-rise-in-futures-open-interest/slideshow/134607334.cms",
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-09-30T06:43:11.593Z",
-      "summary": "MTAR Tech among 4 stocks showing White Marubozu pattern",
+      "scrapedAt": "2026-10-01T07:11:56.590Z",
+      "summary": "Max Healthcare Institute among 3 F&O stocks with a sharp rise in futures open interest",
       "isGlobal": true
     },
     {
-      "title": "These 8 banking stocks have an upside potential of up to 26% in 1 year, according to analysts",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/news/these-8-banking-stocks-have-an-upside-potential-of-up-to-26-in-1-year-according-to-analysts/articleshow/134576671.cms",
+      "title": "ET Prime Special Series: Multibagger or IBC - Part 78: A tech company hiding inside an auto-parts maker. But with a weak spot",
+      "url": "https://economictimes.indiatimes.com/intelligent-investing/sectoral-deep-dives/et-prime-special-series-multibagger-or-ibc-part-78-a-tech-company-hiding-inside-an-auto-parts-maker-but-with-a-weak-spot/articleshow/134597239.cms",
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-09-30T06:43:11.593Z",
-      "summary": "These 8 banking stocks have an upside potential of up to 26% in 1 year, according to analysts",
+      "scrapedAt": "2026-10-01T07:11:56.590Z",
+      "summary": "ET Prime Special Series: Multibagger or IBC - Part 78: A tech company hiding inside an auto-parts maker. But with a weak spot",
       "isGlobal": true
     },
     {
-      "title": "Weekly Top Picks: These stocks scored 10 on 10 on Stock Reports Plus",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/news/weekly-top-picks-these-stocks-scored-10-on-10-on-stock-reports-plus/articleshow/134540125.cms",
+      "title": "The market is volatile. But is the business volatile? 5 stocks from different segments of a sector, with upside potential of up to 33%",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/the-market-is-volatile-but-is-the-business-volatile-5-stocks-from-different-segments-of-a-sector-with-upside-potential-of-up-to-33/articleshow/134590086.cms",
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-09-30T06:43:11.593Z",
-      "summary": "Weekly Top Picks: These stocks scored 10 on 10 on Stock Reports Plus",
+      "scrapedAt": "2026-10-01T07:11:56.590Z",
+      "summary": "The market is volatile. But is the business volatile? 5 stocks from different segments of a sector, with upside potential of up to 33%",
       "isGlobal": true
     },
     {
-      "title": "Stock Radar: HDFC Bank stock breaks out from upper trendline of falling wedge formation; time to buy after nearly 30% fall?",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/news/stock-radar-hdfc-bank-stock-breaks-out-from-upper-trendline-of-falling-wedge-formation-time-to-buy-after-nearly-30-fall/articleshow/134538973.cms",
+      "title": "Stock Radar: Varun Beverages stock showing signs of rebound after over 20% fall; time to buy?",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/stock-radar-varun-beverages-stock-showing-signs-of-rebound-after-over-20-fall-time-to-buy/articleshow/134590831.cms",
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-09-30T06:43:11.593Z",
-      "summary": "Stock Radar: HDFC Bank stock breaks out from upper trendline of falling wedge formation; time to buy after nearly 30% fall?",
+      "scrapedAt": "2026-10-01T07:11:56.590Z",
+      "summary": "Stock Radar: Varun Beverages stock showing signs of rebound after over 20% fall; time to buy?",
       "isGlobal": true
     }
   ]

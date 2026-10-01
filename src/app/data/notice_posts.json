@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-09-30T06:43:48.401Z",
-  "totalPosts": 74,
+  "lastUpdated": "2026-10-01T07:12:36.675Z",
+  "totalPosts": 75,
   "posts": {
     "ocrnepal_moqq27ad": {
       "headline": "OCR Nepal: वार्षिक विवरण अभिलेखनका पत्रहरू स्वचालित रूपमा प्राप्त ",
@@ -1481,6 +1481,26 @@
       "badgeColor": "#6a1b9a",
       "link": "https://sebon.gov.np/news/आधारभूत-शेयरधनीले-शेयर-बिक्री-गर्नु-अघि-धितोपत्र-बजारलाई-अग्रिम-सूचना-दिनुपर्ने-व्यवस्था-तथा-उक्त-व्यवस्थाको-औचित्य-अन्तर्राष्ट्रिय-अभ्यास-तथा-प्रस्तावित-नियामकीय-ढाँचा-सम्बन्धी-अवधारणापत्र-२०८३-सार्वजनिक-गरिएको-सम्बन्धमा।",
       "createdAt": "2026-09-24T06:12:02.404Z"
+    },
+    "irdnepal_mup755eg": {
+      "headline": "IRD Nepal: करदाता प्रोत्साहन उपहार कार्यक्रमको प्रणालीमा बीजक प्रव",
+      "body": "💰 Tax update from Inland Revenue Department!\n\n📌 करदाता प्रोत्साहन उपहार कार्यक्रमको प्रणालीमा बीजक प्रविष्टि सम्बन्धी सूचना। १५ असोज, २०८३\n\nThis update from IRD Nepal may affect taxation compliance requirements for Nepal professionals.\n\n✅ Review the full notice and consult your advisor.\n\n🔗 https://ird.gov.np/content/13655/notice-regarding-invoice-entry-in-the-taxpayer/",
+      "callToAction": "Share this with your team if relevant.",
+      "hashtags": [
+        "#Nepal",
+        "#Compliance",
+        "#CA",
+        "#IRDNepal"
+      ],
+      "bestTimeToPost": "Morning",
+      "topicBadge": "Taxation",
+      "isTemplate": true,
+      "noticeId": "irdnepal_mup755eg",
+      "noticeTitle": "करदाता प्रोत्साहन उपहार कार्यक्रमको प्रणालीमा बीजक प्रविष्टि सम्बन्धी सूचना। १५ असोज, २०८३",
+      "source": "IRD Nepal",
+      "badgeColor": "#e53935",
+      "link": "https://ird.gov.np/content/13655/notice-regarding-invoice-entry-in-the-taxpayer/",
+      "createdAt": "2026-10-01T07:12:36.675Z"
     }
   }
 }
