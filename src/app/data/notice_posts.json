@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-10-07T07:15:28.822Z",
-  "totalPosts": 76,
+  "lastUpdated": "2026-10-08T07:24:55.007Z",
+  "totalPosts": 77,
   "posts": {
     "ocrnepal_moqq27ad": {
       "headline": "OCR Nepal: वार्षिक विवरण अभिलेखनका पत्रहरू स्वचालित रूपमा प्राप्त ",
@@ -1521,6 +1521,26 @@
       "badgeColor": "#e53935",
       "link": "https://ird.gov.np/content/13657/notice-regarding-approval-of-sealed-bill/",
       "createdAt": "2026-10-02T07:01:20.970Z"
+    },
+    "irdnepal_muz7o33s": {
+      "headline": "IRD Nepal: \"स्मारिका\" प्रकाशनका लागि लेखरचना उपलब्ध गराउने सम्बन्ध",
+      "body": "💰 Tax update from Inland Revenue Department!\n\n📌 \"स्मारिका\" प्रकाशनका लागि लेखरचना उपलब्ध गराउने सम्बन्धी सूचना २१ असोज, २०८३\n\nThis update from IRD Nepal may affect taxation compliance requirements for Nepal professionals.\n\n✅ Review the full notice and consult your advisor.\n\n🔗 https://ird.gov.np/content/13660/-souvenir--notice-regarding-provision-of-manuscript-for/",
+      "callToAction": "Share this with your team if relevant.",
+      "hashtags": [
+        "#Nepal",
+        "#Compliance",
+        "#CA",
+        "#IRDNepal"
+      ],
+      "bestTimeToPost": "Morning",
+      "topicBadge": "Taxation",
+      "isTemplate": true,
+      "noticeId": "irdnepal_muz7o33s",
+      "noticeTitle": "\"स्मारिका\" प्रकाशनका लागि लेखरचना उपलब्ध गराउने सम्बन्धी सूचना २१ असोज, २०८३",
+      "source": "IRD Nepal",
+      "badgeColor": "#e53935",
+      "link": "https://ird.gov.np/content/13660/-souvenir--notice-regarding-provision-of-manuscript-for/",
+      "createdAt": "2026-10-08T07:24:55.007Z"
     }
   }
 }
