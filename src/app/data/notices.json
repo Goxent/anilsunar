@@ -1,8 +1,21 @@
 {
-  "lastUpdated": "2026-10-08T07:24:54.820Z",
-  "totalCount": 128,
+  "lastUpdated": "2026-10-09T07:24:30.020Z",
+  "totalCount": 129,
   "newCount": 1,
   "notices": [
+    {
+      "id": "irdnepal_mv0n3cad",
+      "title": "सिलबन्दी दरभाउपत्र स्वीकृत गरिएको सम्बन्धी सूचना २३ असोज, २०८३",
+      "source": "IRD Nepal",
+      "category": "Taxation",
+      "badge": "IRD",
+      "badgeColor": "#e53935",
+      "link": "https://ird.gov.np/content/13661/notice-regarding-acceptance-of-seal-bond/",
+      "summary": "New Taxation update from IRD Nepal: सिलबन्दी दरभाउपत्र स्वीकृत गरिएको सम्बन्धी सूचना २३ असोज, २०८३",
+      "detectedAt": "2026-10-09T07:24:09.589Z",
+      "isNew": true,
+      "emailedAt": null
+    },
     {
       "id": "irdnepal_muz7o33s",
       "title": "\"स्मारिका\" प्रकाशनका लागि लेखरचना उपलब्ध गराउने सम्बन्धी सूचना २१ असोज, २०८३",
