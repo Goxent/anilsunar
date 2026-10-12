@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-10-09T07:24:30.253Z",
-  "totalPosts": 78,
+  "lastUpdated": "2026-10-12T07:22:01.172Z",
+  "totalPosts": 79,
   "posts": {
     "ocrnepal_moqq27ad": {
       "headline": "OCR Nepal: वार्षिक विवरण अभिलेखनका पत्रहरू स्वचालित रूपमा प्राप्त ",
@@ -1561,6 +1561,26 @@
       "badgeColor": "#e53935",
       "link": "https://ird.gov.np/content/13661/notice-regarding-acceptance-of-seal-bond/",
       "createdAt": "2026-10-09T07:24:30.252Z"
+    },
+    "irdnepal_mv4xbmbq": {
+      "headline": "IRD Nepal: सिलबन्दी दरभाउपत्र स्वीकृत गरिएको सम्बन्धी सूचना २६ असो",
+      "body": "💰 Tax update from Inland Revenue Department!\n\n📌 सिलबन्दी दरभाउपत्र स्वीकृत गरिएको सम्बन्धी सूचना २६ असोज, २०८३\n\nThis update from IRD Nepal may affect taxation compliance requirements for Nepal professionals.\n\n✅ Review the full notice and consult your advisor.\n\n🔗 https://ird.gov.np/content/13669/loi/",
+      "callToAction": "Share this with your team if relevant.",
+      "hashtags": [
+        "#Nepal",
+        "#Compliance",
+        "#CA",
+        "#IRDNepal"
+      ],
+      "bestTimeToPost": "Morning",
+      "topicBadge": "Taxation",
+      "isTemplate": true,
+      "noticeId": "irdnepal_mv4xbmbq",
+      "noticeTitle": "सिलबन्दी दरभाउपत्र स्वीकृत गरिएको सम्बन्धी सूचना २६ असोज, २०८३",
+      "source": "IRD Nepal",
+      "badgeColor": "#e53935",
+      "link": "https://ird.gov.np/content/13669/loi/",
+      "createdAt": "2026-10-12T07:22:01.172Z"
     }
   }
 }
