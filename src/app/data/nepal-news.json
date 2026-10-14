@@ -1,5 +1,5 @@
 {
-  "scrapedAt": "2026-10-13T07:42:49.948Z",
+  "scrapedAt": "2026-10-14T06:08:42.975Z",
   "totalCount": 24,
   "nepalCount": 16,
   "globalCount": 8,
@@ -16,43 +16,43 @@
   ],
   "articles": [
     {
-      "title": "कर्णाली प्रदेशको पुँजीगत खर्च कमजोर, असारे विकासको निरन्तरता",
-      "url": "https://www.karobardaily.com/news/427187",
+      "title": "हरित अर्थतन्त्र, बौद्धदर्शन र दिगो विकास",
+      "url": "https://www.karobardaily.com/news/427495",
       "source": "Karobar Daily",
       "badge": "KD",
       "category": "Nepal Business",
-      "scrapedAt": "2026-10-13T07:42:22.242Z",
-      "summary": "कर्णाली प्रदेशको पुँजीगत खर्च कमजोर, असारे विकासको निरन्तरता",
+      "scrapedAt": "2026-10-14T06:08:12.989Z",
+      "summary": "हरित अर्थतन्त्र, बौद्धदर्शन र दिगो विकास",
       "isGlobal": false
     },
     {
-      "title": "चालु आवमा ६७ करोड ५० लाखको धान खरिद गरिने",
-      "url": "https://www.karobardaily.com/news/427004",
+      "title": "असोजमा मात्रै वाणिज्य बैंकहरूको कर्जा विस्तार ६० अर्ब नाघ्दै",
+      "url": "https://www.karobardaily.com/news/427489",
       "source": "Karobar Daily",
       "badge": "KD",
       "category": "Nepal Business",
-      "scrapedAt": "2026-10-13T07:42:22.242Z",
-      "summary": "चालु आवमा ६७ करोड ५० लाखको धान खरिद गरिने",
+      "scrapedAt": "2026-10-14T06:08:12.990Z",
+      "summary": "असोजमा मात्रै वाणिज्य बैंकहरूको कर्जा विस्तार ६० अर्ब नाघ्दै",
       "isGlobal": false
     },
     {
-      "title": "हल र वुडफोर्डलाई अर्थशास्त्रको नोवेल पुरस्कार",
-      "url": "https://www.karobardaily.com/news/426953",
+      "title": "बाढी प्रभावितलाई साँवा–ब्याज भुक्तानीको समय थप",
+      "url": "https://www.karobardaily.com/news/427467",
       "source": "Karobar Daily",
       "badge": "KD",
       "category": "Nepal Business",
-      "scrapedAt": "2026-10-13T07:42:22.242Z",
-      "summary": "हल र वुडफोर्डलाई अर्थशास्त्रको नोवेल पुरस्कार",
+      "scrapedAt": "2026-10-14T06:08:12.990Z",
+      "summary": "बाढी प्रभावितलाई साँवा–ब्याज भुक्तानीको समय थप",
       "isGlobal": false
     },
     {
-      "title": "निर्जीवन बीमा कम्पनीको व्यापार १० अर्ब",
-      "url": "https://www.karobardaily.com/news/426850",
+      "title": "अर्थमन्त्री स्वर्णिम वाग्ले ब्याङ्कक प्रस्थान",
+      "url": "https://www.karobardaily.com/news/427281",
       "source": "Karobar Daily",
       "badge": "KD",
       "category": "Nepal Business",
-      "scrapedAt": "2026-10-13T07:42:22.242Z",
-      "summary": "निर्जीवन बीमा कम्पनीको व्यापार १० अर्ब",
+      "scrapedAt": "2026-10-14T06:08:12.990Z",
+      "summary": "अर्थमन्त्री स्वर्णिम वाग्ले ब्याङ्कक प्रस्थान",
       "isGlobal": false
     },
     {
@@ -61,7 +61,7 @@
       "source": "Karobar Daily",
       "badge": "KD",
       "category": "Nepal Business",
-      "scrapedAt": "2026-10-13T07:42:22.242Z",
+      "scrapedAt": "2026-10-14T06:08:12.990Z",
       "summary": "७० अर्ब निक्षेप उठाउँदै राष्ट्र बैंक",
       "isGlobal": false
     },
@@ -71,8 +71,18 @@
       "source": "Karobar Daily",
       "badge": "KD",
       "category": "Nepal Business",
-      "scrapedAt": "2026-10-13T07:42:22.242Z",
+      "scrapedAt": "2026-10-14T06:08:12.990Z",
       "summary": "दसैँमा बैंकको एटिएमबाटै १०० रुपैयाँकाे नयाँ नोट पाइने",
+      "isGlobal": false
+    },
+    {
+      "title": "निर्जीवन बीमा कम्पनीको व्यापार १० अर्ब",
+      "url": "https://www.karobardaily.com/news/426850",
+      "source": "Karobar Daily",
+      "badge": "KD",
+      "category": "Nepal Business",
+      "scrapedAt": "2026-10-14T06:08:12.990Z",
+      "summary": "निर्जीवन बीमा कम्पनीको व्यापार १० अर्ब",
       "isGlobal": false
     },
     {
@@ -81,28 +91,18 @@
       "source": "Karobar Daily",
       "badge": "KD",
       "category": "Nepal Business",
-      "scrapedAt": "2026-10-13T07:42:22.243Z",
+      "scrapedAt": "2026-10-14T06:08:12.990Z",
       "summary": "गरिमाको २० प्रतिशत लाभांश पारित",
       "isGlobal": false
     },
     {
-      "title": "नयाँ टियागो इभिसँग उत्सवको माहोल, जोयफुल विकमा आकर्षक अफर",
-      "url": "https://www.karobardaily.com/news/419121",
-      "source": "Karobar Daily",
-      "badge": "KD",
-      "category": "Nepal Business",
-      "scrapedAt": "2026-10-13T07:42:22.243Z",
-      "summary": "नयाँ टियागो इभिसँग उत्सवको माहोल, जोयफुल विकमा आकर्षक अफर",
-      "isGlobal": false
-    },
-    {
-      "title": "Dashain Effect on NEPSE: What Does 10 Years of Data Tell Us?",
-      "url": "https://www.sharesansar.com/newsdetail/dashain-effect-on-nepse-what-does-10-years-of-data-tell-us-2026-10-05",
+      "title": "Too Much Money, Too Little Credit: Nepals Liquidity Puzzle and What It Means for NEPSE",
+      "url": "https://www.sharesansar.com/newsdetail/too-much-money-too-little-credit-nepals-liquidity-puzzle-and-what-it-means-for-nepse-2026-10-05",
       "source": "Sharesansar",
       "badge": "SS",
       "category": "Nepal Stock",
-      "scrapedAt": "2026-10-13T07:42:24.477Z",
-      "summary": "Dashain Effect on NEPSE: What Does 10 Years of Data Tell Us?",
+      "scrapedAt": "2026-10-14T06:08:14.926Z",
+      "summary": "Too Much Money, Too Little Credit: Nepals Liquidity Puzzle and What It Means for NEPSE",
       "isGlobal": false
     },
     {
@@ -111,17 +111,17 @@
       "source": "Sharesansar",
       "badge": "SS",
       "category": "Nepal Stock",
-      "scrapedAt": "2026-10-13T07:42:24.477Z",
+      "scrapedAt": "2026-10-14T06:08:14.926Z",
       "summary": "Proposed Dividend",
       "isGlobal": false
     },
     {
       "title": "Dividend, Bonus & Rights",
-      "url": "https://www.sharesansar.com/newsdetail/supermai-hydropower-limited-receives-preliminary-approval-from-erc-to-issue-right-shares-at-the-ratio-of-109252-2026-10-12",
+      "url": "https://www.sharesansar.com/newsdetail/barun-hydropower-company-limited-proposes-5-dividend-for-fy-208283-2026-10-13",
       "source": "Sharesansar",
       "badge": "SS",
       "category": "Nepal Stock",
-      "scrapedAt": "2026-10-13T07:42:24.477Z",
+      "scrapedAt": "2026-10-14T06:08:14.926Z",
       "summary": "Dividend, Bonus & Rights",
       "isGlobal": false
     },
@@ -131,7 +131,7 @@
       "source": "Sharesansar",
       "badge": "SS",
       "category": "Nepal Stock",
-      "scrapedAt": "2026-10-13T07:42:24.477Z",
+      "scrapedAt": "2026-10-14T06:08:14.926Z",
       "summary": "Is it Possible to Turn Your 1 lakh into 10 Lakh Via Trading in NEPSE?",
       "isGlobal": false
     },
@@ -141,7 +141,7 @@
       "source": "Sharesansar",
       "badge": "SS",
       "category": "Nepal Stock",
-      "scrapedAt": "2026-10-13T07:42:24.477Z",
+      "scrapedAt": "2026-10-14T06:08:14.926Z",
       "summary": "NEPSE Concludes The Week With 0.18% Gain and Turnover of Rs 18.93 Arba; Weekly Summary with Sector Comparison, Major Highlights, and More",
       "isGlobal": false
     },
@@ -151,7 +151,7 @@
       "source": "Nepali Paisa",
       "badge": "NP",
       "category": "Nepal Finance",
-      "scrapedAt": "2026-10-13T07:42:26.418Z",
+      "scrapedAt": "2026-10-14T06:08:17.927Z",
       "summary": "Market Overview",
       "isGlobal": false
     },
@@ -161,7 +161,7 @@
       "source": "Nepali Paisa",
       "badge": "NP",
       "category": "Nepal Finance",
-      "scrapedAt": "2026-10-13T07:42:26.418Z",
+      "scrapedAt": "2026-10-14T06:08:17.927Z",
       "summary": "Stocks Up & Down",
       "isGlobal": false
     },
@@ -171,7 +171,7 @@
       "source": "Nepali Paisa",
       "badge": "NP",
       "category": "Nepal Finance",
-      "scrapedAt": "2026-10-13T07:42:26.418Z",
+      "scrapedAt": "2026-10-14T06:08:17.927Z",
       "summary": "Business & Economy",
       "isGlobal": false
     }
@@ -183,78 +183,78 @@
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-10-13T07:42:48.446Z",
+      "scrapedAt": "2026-10-14T06:08:41.474Z",
       "summary": "Markets just got Conversational",
       "isGlobal": true
     },
     {
-      "title": "SpaceX Stock: Why Wall Street sees more upside ahead",
-      "url": "https://economictimes.indiatimes.com/markets/us-stocks/news/spacex-stock-why-wall-street-sees-more-upside-ahead/slideshow/134908990.cms",
+      "title": "Can AST SpaceMobile stock rebound after sharp sell-off?",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/can-ast-spacemobile-stock-rebound-after-sharp-sell-off/slideshow/134933605.cms",
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-10-13T07:42:48.447Z",
-      "summary": "SpaceX Stock: Why Wall Street sees more upside ahead",
+      "scrapedAt": "2026-10-14T06:08:41.474Z",
+      "summary": "Can AST SpaceMobile stock rebound after sharp sell-off?",
       "isGlobal": true
     },
     {
-      "title": "Nuvama Wealth Management among 5 stocks showing White Marubozu pattern",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/news/nuvama-wealth-management-among-5-stocks-showing-white-marubozu-pattern/slideshow/134907685.cms",
+      "title": "PL Capital picks 8 largecap stocks with upside potential of up to 41%. See full list",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/pl-capital-picks-8-largecap-stocks-with-upside-potential-of-up-to-41-see-full-list/slideshow/134932882.cms",
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-10-13T07:42:48.447Z",
-      "summary": "Nuvama Wealth Management among 5 stocks showing White Marubozu pattern",
+      "scrapedAt": "2026-10-14T06:08:41.474Z",
+      "summary": "PL Capital picks 8 largecap stocks with upside potential of up to 41%. See full list",
       "isGlobal": true
     },
     {
-      "title": "Gallantt Ispat among 5 stocks showing RSI trending up",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/news/gallantt-ispat-among-5-stocks-showing-rsi-trending-up/slideshow/134907490.cms",
+      "title": "Bandhan Bank among 5 stocks showing White Marubozu pattern",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/bandhan-bank-among-5-stocks-showing-white-marubozu-pattern/slideshow/134931496.cms",
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-10-13T07:42:48.447Z",
-      "summary": "Gallantt Ispat among 5 stocks showing RSI trending up",
+      "scrapedAt": "2026-10-14T06:08:41.474Z",
+      "summary": "Bandhan Bank among 5 stocks showing White Marubozu pattern",
       "isGlobal": true
     },
     {
-      "title": "UPL among 3 stocks closed that closed crossing above VWAP",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/news/upl-among-3-stocks-closed-that-closed-crossing-above-vwap/slideshow/134907184.cms",
+      "title": "RBL Bank among 4 F&O stocks with a sharp rise in futures open interest",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/rbl-bank-among-4-fampo-stocks-with-a-sharp-rise-in-futures-open-interest/slideshow/134931230.cms",
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-10-13T07:42:48.447Z",
-      "summary": "UPL among 3 stocks closed that closed crossing above VWAP",
+      "scrapedAt": "2026-10-14T06:08:41.474Z",
+      "summary": "RBL Bank among 4 F&O stocks with a sharp rise in futures open interest",
       "isGlobal": true
     },
     {
-      "title": "Weekly Top Picks: These stocks scored 10 on 10 on Stock Reports Plus",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/news/weekly-top-picks-these-stocks-scored-10-on-10-on-stock-reports-plus/articleshow/134889197.cms",
+      "title": "eClerx Services among 4 stocks that closed crossing above VWAP",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/eclerx-services-among-4-stocks-that-closed-crossing-above-vwap/slideshow/134931157.cms",
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-10-13T07:42:48.447Z",
-      "summary": "Weekly Top Picks: These stocks scored 10 on 10 on Stock Reports Plus",
+      "scrapedAt": "2026-10-14T06:08:41.474Z",
+      "summary": "eClerx Services among 4 stocks that closed crossing above VWAP",
       "isGlobal": true
     },
     {
-      "title": "Will analysts&#x27; predictions go wrong? 15 auto stocks with upside potential of up to 50% to as low as negative 1%",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/news/will-analysts-predictions-go-wrong-15-auto-stocks-with-upside-potential-of-up-to-50-to-as-low-as-negative-1/articleshow/134887737.cms",
+      "title": "These 7 private and public banking stocks have an upside of up to 25% in one year, according to analysts",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/these-7-private-and-public-banking-stocks-have-an-upside-of-up-to-25-in-one-year-according-to-analysts/articleshow/134929385.cms",
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-10-13T07:42:48.447Z",
-      "summary": "Will analysts&#x27; predictions go wrong? 15 auto stocks with upside potential of up to 50% to as low as negative 1%",
+      "scrapedAt": "2026-10-14T06:08:41.474Z",
+      "summary": "These 7 private and public banking stocks have an upside of up to 25% in one year, according to analysts",
       "isGlobal": true
     },
     {
-      "title": "Stock Radar: South Indian Bank stock takes support above 20-DMA after hitting record highs in September; time to buy the dip?",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/news/stock-radar-south-indian-bank-stock-takes-support-above-20-dma-after-hitting-record-highs-in-september-time-to-buy-the-dip/articleshow/134885484.cms",
+      "title": "Rethink the short term, but it is only about business in the long term: 5 mid-cap stocks with upside potential of up to 23%",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/rethink-the-short-term-but-it-is-only-about-business-in-the-long-term-5-mid-cap-stocks-with-upside-potential-of-up-to-23/articleshow/134913258.cms",
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-10-13T07:42:48.447Z",
-      "summary": "Stock Radar: South Indian Bank stock takes support above 20-DMA after hitting record highs in September; time to buy the dip?",
+      "scrapedAt": "2026-10-14T06:08:41.474Z",
+      "summary": "Rethink the short term, but it is only about business in the long term: 5 mid-cap stocks with upside potential of up to 23%",
       "isGlobal": true
     }
   ]
