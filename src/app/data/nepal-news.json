@@ -1,5 +1,5 @@
 {
-  "scrapedAt": "2026-10-26T06:12:36.313Z",
+  "scrapedAt": "2026-10-27T06:16:30.649Z",
   "totalCount": 24,
   "nepalCount": 16,
   "globalCount": 8,
@@ -16,23 +16,53 @@
   ],
   "articles": [
     {
-      "title": "सुदूरपश्चिमको कर नीति : साना सवारीलाई वृद्धि, ठूलालाई छुट",
-      "url": "https://www.karobardaily.com/news/429000",
+      "title": "अर्थशास्त्रको नोबेल पुरस्कारबाट नेपालले के सिक्ने ?",
+      "url": "https://www.karobardaily.com/news/429488",
       "source": "Karobar Daily",
       "badge": "KD",
       "category": "Nepal Business",
-      "scrapedAt": "2026-10-26T06:12:10.306Z",
-      "summary": "सुदूरपश्चिमको कर नीति : साना सवारीलाई वृद्धि, ठूलालाई छुट",
+      "scrapedAt": "2026-10-27T06:16:02.665Z",
+      "summary": "अर्थशास्त्रको नोबेल पुरस्कारबाट नेपालले के सिक्ने ?",
       "isGlobal": false
     },
     {
-      "title": "असोजमा पाँच अर्ब ९२ करोड को विद्युत् निर्यात",
-      "url": "https://www.karobardaily.com/news/428941",
+      "title": "बोर्डको नयाँ निर्देशनले लगानीकर्तामा अन्यौल",
+      "url": "https://www.karobardaily.com/news/429505",
       "source": "Karobar Daily",
       "badge": "KD",
       "category": "Nepal Business",
-      "scrapedAt": "2026-10-26T06:12:10.307Z",
-      "summary": "असोजमा पाँच अर्ब ९२ करोड को विद्युत् निर्यात",
+      "scrapedAt": "2026-10-27T06:16:02.666Z",
+      "summary": "बोर्डको नयाँ निर्देशनले लगानीकर्तामा अन्यौल",
+      "isGlobal": false
+    },
+    {
+      "title": "ग्लोबल आइएमई तेस्रोपटक ‘बेस्ट बैंक अवार्ड’बाट सम्मानित",
+      "url": "https://www.karobardaily.com/news/429610",
+      "source": "Karobar Daily",
+      "badge": "KD",
+      "category": "Nepal Business",
+      "scrapedAt": "2026-10-27T06:16:02.666Z",
+      "summary": "ग्लोबल आइएमई तेस्रोपटक ‘बेस्ट बैंक अवार्ड’बाट सम्मानित",
+      "isGlobal": false
+    },
+    {
+      "title": "सांस्कृतिक तथा राष्ट्रिय महत्त्वका चलचित्र निर्माणका लागि साढे तीन करोड अनुदान",
+      "url": "https://www.karobardaily.com/news/429583",
+      "source": "Karobar Daily",
+      "badge": "KD",
+      "category": "Nepal Business",
+      "scrapedAt": "2026-10-27T06:16:02.666Z",
+      "summary": "सांस्कृतिक तथा राष्ट्रिय महत्त्वका चलचित्र निर्माणका लागि साढे तीन करोड अनुदान",
+      "isGlobal": false
+    },
+    {
+      "title": "डीएनए परीक्षण कीट र एक करोड सरकारलाई हस्तान्तरण",
+      "url": "https://www.karobardaily.com/news/429432",
+      "source": "Karobar Daily",
+      "badge": "KD",
+      "category": "Nepal Business",
+      "scrapedAt": "2026-10-27T06:16:02.666Z",
+      "summary": "डीएनए परीक्षण कीट र एक करोड सरकारलाई हस्तान्तरण",
       "isGlobal": false
     },
     {
@@ -41,7 +71,7 @@
       "source": "Karobar Daily",
       "badge": "KD",
       "category": "Nepal Business",
-      "scrapedAt": "2026-10-26T06:12:10.307Z",
+      "scrapedAt": "2026-10-27T06:16:02.666Z",
       "summary": "वाणिज्य बैंकहरुले पौने १८ अर्ब बढी नाफा कमाए",
       "isGlobal": false
     },
@@ -51,7 +81,7 @@
       "source": "Karobar Daily",
       "badge": "KD",
       "category": "Nepal Business",
-      "scrapedAt": "2026-10-26T06:12:10.307Z",
+      "scrapedAt": "2026-10-27T06:16:02.666Z",
       "summary": "७० अर्ब निक्षेप उठाउँदै राष्ट्र बैंक",
       "isGlobal": false
     },
@@ -61,38 +91,8 @@
       "source": "Karobar Daily",
       "badge": "KD",
       "category": "Nepal Business",
-      "scrapedAt": "2026-10-26T06:12:10.307Z",
+      "scrapedAt": "2026-10-27T06:16:02.666Z",
       "summary": "दसैँमा बैंकको एटिएमबाटै १०० रुपैयाँकाे नयाँ नोट पाइने",
-      "isGlobal": false
-    },
-    {
-      "title": "निर्जीवन बीमा कम्पनीको व्यापार १० अर्ब",
-      "url": "https://www.karobardaily.com/news/426850",
-      "source": "Karobar Daily",
-      "badge": "KD",
-      "category": "Nepal Business",
-      "scrapedAt": "2026-10-26T06:12:10.307Z",
-      "summary": "निर्जीवन बीमा कम्पनीको व्यापार १० अर्ब",
-      "isGlobal": false
-    },
-    {
-      "title": "लक्ष्मी सन्राइज क्यापिटलको नगद लाभांश",
-      "url": "https://www.karobardaily.com/news/428280",
-      "source": "Karobar Daily",
-      "badge": "KD",
-      "category": "Nepal Business",
-      "scrapedAt": "2026-10-26T06:12:10.307Z",
-      "summary": "लक्ष्मी सन्राइज क्यापिटलको नगद लाभांश",
-      "isGlobal": false
-    },
-    {
-      "title": "नयाँ टियागो इभिसँग उत्सवको माहोल, जोयफुल विकमा आकर्षक अफर",
-      "url": "https://www.karobardaily.com/news/419121",
-      "source": "Karobar Daily",
-      "badge": "KD",
-      "category": "Nepal Business",
-      "scrapedAt": "2026-10-26T06:12:10.307Z",
-      "summary": "नयाँ टियागो इभिसँग उत्सवको माहोल, जोयफुल विकमा आकर्षक अफर",
       "isGlobal": false
     },
     {
@@ -101,7 +101,7 @@
       "source": "Sharesansar",
       "badge": "SS",
       "category": "Nepal Stock",
-      "scrapedAt": "2026-10-26T06:12:12.095Z",
+      "scrapedAt": "2026-10-27T06:16:04.645Z",
       "summary": "Too Much Money, Too Little Credit: Nepals Liquidity Puzzle and What It Means for NEPSE",
       "isGlobal": false
     },
@@ -111,17 +111,17 @@
       "source": "Sharesansar",
       "badge": "SS",
       "category": "Nepal Stock",
-      "scrapedAt": "2026-10-26T06:12:12.095Z",
+      "scrapedAt": "2026-10-27T06:16:04.645Z",
       "summary": "Proposed Dividend",
       "isGlobal": false
     },
     {
       "title": "Dividend, Bonus & Rights",
-      "url": "https://www.sharesansar.com/newsdetail/manjushree-finance-limited-unveils-book-closure-date-for-its-20-dividend-calls-agm-on-kartik-20-2026-10-16",
+      "url": "https://www.sharesansar.com/newsdetail/reminder-last-trading-day-to-secure-dividend-of-two-hydropower-companies-2026-10-26",
       "source": "Sharesansar",
       "badge": "SS",
       "category": "Nepal Stock",
-      "scrapedAt": "2026-10-26T06:12:12.095Z",
+      "scrapedAt": "2026-10-27T06:16:04.645Z",
       "summary": "Dividend, Bonus & Rights",
       "isGlobal": false
     },
@@ -131,7 +131,7 @@
       "source": "Sharesansar",
       "badge": "SS",
       "category": "Nepal Stock",
-      "scrapedAt": "2026-10-26T06:12:12.095Z",
+      "scrapedAt": "2026-10-27T06:16:04.645Z",
       "summary": "Is it Possible to Turn Your 1 lakh into 10 Lakh Via Trading in NEPSE?",
       "isGlobal": false
     },
@@ -141,7 +141,7 @@
       "source": "Sharesansar",
       "badge": "SS",
       "category": "Nepal Stock",
-      "scrapedAt": "2026-10-26T06:12:12.095Z",
+      "scrapedAt": "2026-10-27T06:16:04.646Z",
       "summary": "NEPSE Concludes The Week With 0.18% Gain and Turnover of Rs 18.93 Arba; Weekly Summary with Sector Comparison, Major Highlights, and More",
       "isGlobal": false
     },
@@ -151,7 +151,7 @@
       "source": "Nepali Paisa",
       "badge": "NP",
       "category": "Nepal Finance",
-      "scrapedAt": "2026-10-26T06:12:14.061Z",
+      "scrapedAt": "2026-10-27T06:16:06.648Z",
       "summary": "Market Overview",
       "isGlobal": false
     },
@@ -161,7 +161,7 @@
       "source": "Nepali Paisa",
       "badge": "NP",
       "category": "Nepal Finance",
-      "scrapedAt": "2026-10-26T06:12:14.061Z",
+      "scrapedAt": "2026-10-27T06:16:06.648Z",
       "summary": "Stocks Up & Down",
       "isGlobal": false
     },
@@ -171,7 +171,7 @@
       "source": "Nepali Paisa",
       "badge": "NP",
       "category": "Nepal Finance",
-      "scrapedAt": "2026-10-26T06:12:14.061Z",
+      "scrapedAt": "2026-10-27T06:16:06.648Z",
       "summary": "Business & Economy",
       "isGlobal": false
     }
@@ -183,78 +183,78 @@
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-10-26T06:12:34.810Z",
+      "scrapedAt": "2026-10-27T06:16:29.146Z",
       "summary": "Markets just got Conversational",
       "isGlobal": true
     },
     {
-      "title": "5 global market themes to watch out for this week",
-      "url": "https://economictimes.indiatimes.com/markets/us-stocks/news/5-global-market-themes-to-watch-out-for-this-week/slideshow/135203536.cms",
+      "title": "Anthropic IPO: Why Wall Street is bracing for an AI market test",
+      "url": "https://economictimes.indiatimes.com/markets/us-stocks/news/anthropic-ipo-why-wall-street-is-bracing-for-an-ai-market-test/slideshow/135225314.cms",
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-10-26T06:12:34.811Z",
-      "summary": "5 global market themes to watch out for this week",
+      "scrapedAt": "2026-10-27T06:16:29.147Z",
+      "summary": "Anthropic IPO: Why Wall Street is bracing for an AI market test",
       "isGlobal": true
     },
     {
-      "title": "Tech picks: Anand Rathi, Cyient among 5 stocks to buy for up to 18% returns in short term",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/news/tech-picks-anand-rathi-cyient-among-5-stocks-to-buy-for-up-to-18-returns-in-short-term/slideshow/135202421.cms",
+      "title": "Mankind Pharma among 5 F&O stocks with a sharp rise in futures open interest",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/mankind-pharma-among-5-fampo-stocks-with-a-sharp-rise-in-futures-open-interest/slideshow/135223707.cms",
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-10-26T06:12:34.811Z",
-      "summary": "Tech picks: Anand Rathi, Cyient among 5 stocks to buy for up to 18% returns in short term",
+      "scrapedAt": "2026-10-27T06:16:29.147Z",
+      "summary": "Mankind Pharma among 5 F&O stocks with a sharp rise in futures open interest",
       "isGlobal": true
     },
     {
-      "title": "FSN E-Commerce Ventures among 5 F&O stocks with a sharp rise in futures open interest",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/news/fsn-e-commerce-ventures-among-5-fampo-stocks-with-a-sharp-rise-in-futures-open-interest/slideshow/135202087.cms",
+      "title": "MTAR Technologies among 4 stocks closing above VWAP",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/mtar-technologies-among-4-stocks-closing-above-vwap/slideshow/135223257.cms",
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-10-26T06:12:34.811Z",
-      "summary": "FSN E-Commerce Ventures among 5 F&O stocks with a sharp rise in futures open interest",
+      "scrapedAt": "2026-10-27T06:16:29.147Z",
+      "summary": "MTAR Technologies among 4 stocks closing above VWAP",
       "isGlobal": true
     },
     {
-      "title": "Ipca Laboratories among 4 stocks showing RSI trending up",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/news/ipca-laboratories-among-4-stocks-showing-rsi-trending-up/slideshow/135201669.cms",
+      "title": "JSW Steel among 5 stocks showing the White Marubozu pattern",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/jsw-steel-among-5-stocks-showing-the-white-marubozu-pattern/slideshow/135223206.cms",
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-10-26T06:12:34.811Z",
-      "summary": "Ipca Laboratories among 4 stocks showing RSI trending up",
+      "scrapedAt": "2026-10-27T06:16:29.147Z",
+      "summary": "JSW Steel among 5 stocks showing the White Marubozu pattern",
       "isGlobal": true
     },
     {
-      "title": "Top Nifty50 stocks analysts suggest buying in this volatile week",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/news/top-nifty50-stocks-analysts-suggest-buying-in-this-volatile-week/articleshow/135202149.cms",
+      "title": "Ather Energy among 5 stocks showing RSI trending up",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/ather-energy-among-5-stocks-showing-rsi-trending-up/slideshow/135223123.cms",
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-10-26T06:12:34.811Z",
-      "summary": "Top Nifty50 stocks analysts suggest buying in this volatile week",
+      "scrapedAt": "2026-10-27T06:16:29.147Z",
+      "summary": "Ather Energy among 5 stocks showing RSI trending up",
       "isGlobal": true
     },
     {
-      "title": "When noise is high, separate short-term headwinds from long-term business. 5 large-cap stocks with upside potential of up to 23%",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/news/when-noise-is-high-separate-short-term-headwinds-from-long-term-business-5-large-cap-stocks-with-upside-potential-of-up-to-23/articleshow/135173366.cms",
+      "title": "Weekly Top Picks: These stocks scored 10 on 10 on Stock Reports Plus",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/weekly-top-picks-these-stocks-scored-10-on-10-on-stock-reports-plus/articleshow/135209130.cms",
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-10-26T06:12:34.811Z",
-      "summary": "When noise is high, separate short-term headwinds from long-term business. 5 large-cap stocks with upside potential of up to 23%",
+      "scrapedAt": "2026-10-27T06:16:29.147Z",
+      "summary": "Weekly Top Picks: These stocks scored 10 on 10 on Stock Reports Plus",
       "isGlobal": true
     },
     {
-      "title": "Tourism is the sector the market writes off in a downturn. Is it indicating something else? 7 stocks with upside potential of up to 27%",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/news/tourism-is-the-sector-the-market-writes-off-in-a-downturn-is-it-indicating-something-else-7-stocks-with-upside-potential-of-up-to-27/articleshow/135174608.cms",
+      "title": "5 stocks with consistent score improvement and upside potential of up to 30% in 1 year, according to analysts",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/5-stocks-with-consistent-score-improvement-and-upside-potential-of-up-to-30-in-1-year-according-to-analysts/articleshow/135206454.cms",
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-10-26T06:12:34.811Z",
-      "summary": "Tourism is the sector the market writes off in a downturn. Is it indicating something else? 7 stocks with upside potential of up to 27%",
+      "scrapedAt": "2026-10-27T06:16:29.147Z",
+      "summary": "5 stocks with consistent score improvement and upside potential of up to 30% in 1 year, according to analysts",
       "isGlobal": true
     }
   ]
