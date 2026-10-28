@@ -1,5 +1,5 @@
 {
-  "scrapedAt": "2026-10-27T06:16:30.649Z",
+  "scrapedAt": "2026-10-28T06:51:45.432Z",
   "totalCount": 24,
   "nepalCount": 16,
   "globalCount": 8,
@@ -16,53 +16,63 @@
   ],
   "articles": [
     {
-      "title": "अर्थशास्त्रको नोबेल पुरस्कारबाट नेपालले के सिक्ने ?",
-      "url": "https://www.karobardaily.com/news/429488",
+      "title": "औद्योगिक क्षेत्रका सर्भिस सेन्टर र वर्कसपको सम्झौता नवीकरण नहुने",
+      "url": "https://www.karobardaily.com/news/429848",
       "source": "Karobar Daily",
       "badge": "KD",
       "category": "Nepal Business",
-      "scrapedAt": "2026-10-27T06:16:02.665Z",
-      "summary": "अर्थशास्त्रको नोबेल पुरस्कारबाट नेपालले के सिक्ने ?",
+      "scrapedAt": "2026-10-28T06:51:18.959Z",
+      "summary": "औद्योगिक क्षेत्रका सर्भिस सेन्टर र वर्कसपको सम्झौता नवीकरण नहुने",
       "isGlobal": false
     },
     {
-      "title": "बोर्डको नयाँ निर्देशनले लगानीकर्तामा अन्यौल",
-      "url": "https://www.karobardaily.com/news/429505",
+      "title": "असोजमा मात्रै २० वाणिज्य बैंकले विस्तार गरे ८५ अर्ब ऋण",
+      "url": "https://www.karobardaily.com/news/429872",
       "source": "Karobar Daily",
       "badge": "KD",
       "category": "Nepal Business",
-      "scrapedAt": "2026-10-27T06:16:02.666Z",
-      "summary": "बोर्डको नयाँ निर्देशनले लगानीकर्तामा अन्यौल",
+      "scrapedAt": "2026-10-28T06:51:18.960Z",
+      "summary": "असोजमा मात्रै २० वाणिज्य बैंकले विस्तार गरे ८५ अर्ब ऋण",
       "isGlobal": false
     },
     {
-      "title": "ग्लोबल आइएमई तेस्रोपटक ‘बेस्ट बैंक अवार्ड’बाट सम्मानित",
-      "url": "https://www.karobardaily.com/news/429610",
+      "title": "कृषि विकासका लागि पाँच करोड ९६ लाख बजेट",
+      "url": "https://www.karobardaily.com/news/429962",
       "source": "Karobar Daily",
       "badge": "KD",
       "category": "Nepal Business",
-      "scrapedAt": "2026-10-27T06:16:02.666Z",
-      "summary": "ग्लोबल आइएमई तेस्रोपटक ‘बेस्ट बैंक अवार्ड’बाट सम्मानित",
+      "scrapedAt": "2026-10-28T06:51:18.960Z",
+      "summary": "कृषि विकासका लागि पाँच करोड ९६ लाख बजेट",
       "isGlobal": false
     },
     {
-      "title": "सांस्कृतिक तथा राष्ट्रिय महत्त्वका चलचित्र निर्माणका लागि साढे तीन करोड अनुदान",
-      "url": "https://www.karobardaily.com/news/429583",
+      "title": "औषधीमा पाँच करोड, मन्दिरमा सवा अर्ब",
+      "url": "https://www.karobardaily.com/news/430019",
       "source": "Karobar Daily",
       "badge": "KD",
       "category": "Nepal Business",
-      "scrapedAt": "2026-10-27T06:16:02.666Z",
-      "summary": "सांस्कृतिक तथा राष्ट्रिय महत्त्वका चलचित्र निर्माणका लागि साढे तीन करोड अनुदान",
+      "scrapedAt": "2026-10-28T06:51:18.960Z",
+      "summary": "औषधीमा पाँच करोड, मन्दिरमा सवा अर्ब",
       "isGlobal": false
     },
     {
-      "title": "डीएनए परीक्षण कीट र एक करोड सरकारलाई हस्तान्तरण",
-      "url": "https://www.karobardaily.com/news/429432",
+      "title": "जिल्ला क्रिकेट संघलाई डेढ करोड, अरु सबैलाई १० लाख",
+      "url": "https://www.karobardaily.com/news/429696",
       "source": "Karobar Daily",
       "badge": "KD",
       "category": "Nepal Business",
-      "scrapedAt": "2026-10-27T06:16:02.666Z",
-      "summary": "डीएनए परीक्षण कीट र एक करोड सरकारलाई हस्तान्तरण",
+      "scrapedAt": "2026-10-28T06:51:18.960Z",
+      "summary": "जिल्ला क्रिकेट संघलाई डेढ करोड, अरु सबैलाई १० लाख",
+      "isGlobal": false
+    },
+    {
+      "title": "कर्णालीमा हवाई उडान : सम्भाव्यता अध्ययन प्रतिवेदन बुझाउन निर्देशन",
+      "url": "https://www.karobardaily.com/news/429671",
+      "source": "Karobar Daily",
+      "badge": "KD",
+      "category": "Nepal Business",
+      "scrapedAt": "2026-10-28T06:51:18.960Z",
+      "summary": "कर्णालीमा हवाई उडान : सम्भाव्यता अध्ययन प्रतिवेदन बुझाउन निर्देशन",
       "isGlobal": false
     },
     {
@@ -71,7 +81,7 @@
       "source": "Karobar Daily",
       "badge": "KD",
       "category": "Nepal Business",
-      "scrapedAt": "2026-10-27T06:16:02.666Z",
+      "scrapedAt": "2026-10-28T06:51:18.960Z",
       "summary": "वाणिज्य बैंकहरुले पौने १८ अर्ब बढी नाफा कमाए",
       "isGlobal": false
     },
@@ -81,18 +91,8 @@
       "source": "Karobar Daily",
       "badge": "KD",
       "category": "Nepal Business",
-      "scrapedAt": "2026-10-27T06:16:02.666Z",
+      "scrapedAt": "2026-10-28T06:51:18.960Z",
       "summary": "७० अर्ब निक्षेप उठाउँदै राष्ट्र बैंक",
-      "isGlobal": false
-    },
-    {
-      "title": "दसैँमा बैंकको एटिएमबाटै १०० रुपैयाँकाे नयाँ नोट पाइने",
-      "url": "https://www.karobardaily.com/news/424922",
-      "source": "Karobar Daily",
-      "badge": "KD",
-      "category": "Nepal Business",
-      "scrapedAt": "2026-10-27T06:16:02.666Z",
-      "summary": "दसैँमा बैंकको एटिएमबाटै १०० रुपैयाँकाे नयाँ नोट पाइने",
       "isGlobal": false
     },
     {
@@ -101,7 +101,7 @@
       "source": "Sharesansar",
       "badge": "SS",
       "category": "Nepal Stock",
-      "scrapedAt": "2026-10-27T06:16:04.645Z",
+      "scrapedAt": "2026-10-28T06:51:20.856Z",
       "summary": "Too Much Money, Too Little Credit: Nepals Liquidity Puzzle and What It Means for NEPSE",
       "isGlobal": false
     },
@@ -111,17 +111,17 @@
       "source": "Sharesansar",
       "badge": "SS",
       "category": "Nepal Stock",
-      "scrapedAt": "2026-10-27T06:16:04.645Z",
+      "scrapedAt": "2026-10-28T06:51:20.856Z",
       "summary": "Proposed Dividend",
       "isGlobal": false
     },
     {
       "title": "Dividend, Bonus & Rights",
-      "url": "https://www.sharesansar.com/newsdetail/reminder-last-trading-day-to-secure-dividend-of-two-hydropower-companies-2026-10-26",
+      "url": "https://www.sharesansar.com/newsdetail/reminder-last-trading-day-to-secure-dividend-of-two-companies-2026-10-27",
       "source": "Sharesansar",
       "badge": "SS",
       "category": "Nepal Stock",
-      "scrapedAt": "2026-10-27T06:16:04.645Z",
+      "scrapedAt": "2026-10-28T06:51:20.856Z",
       "summary": "Dividend, Bonus & Rights",
       "isGlobal": false
     },
@@ -131,7 +131,7 @@
       "source": "Sharesansar",
       "badge": "SS",
       "category": "Nepal Stock",
-      "scrapedAt": "2026-10-27T06:16:04.645Z",
+      "scrapedAt": "2026-10-28T06:51:20.856Z",
       "summary": "Is it Possible to Turn Your 1 lakh into 10 Lakh Via Trading in NEPSE?",
       "isGlobal": false
     },
@@ -141,7 +141,7 @@
       "source": "Sharesansar",
       "badge": "SS",
       "category": "Nepal Stock",
-      "scrapedAt": "2026-10-27T06:16:04.646Z",
+      "scrapedAt": "2026-10-28T06:51:20.856Z",
       "summary": "NEPSE Concludes The Week With 0.18% Gain and Turnover of Rs 18.93 Arba; Weekly Summary with Sector Comparison, Major Highlights, and More",
       "isGlobal": false
     },
@@ -151,7 +151,7 @@
       "source": "Nepali Paisa",
       "badge": "NP",
       "category": "Nepal Finance",
-      "scrapedAt": "2026-10-27T06:16:06.648Z",
+      "scrapedAt": "2026-10-28T06:51:22.814Z",
       "summary": "Market Overview",
       "isGlobal": false
     },
@@ -161,7 +161,7 @@
       "source": "Nepali Paisa",
       "badge": "NP",
       "category": "Nepal Finance",
-      "scrapedAt": "2026-10-27T06:16:06.648Z",
+      "scrapedAt": "2026-10-28T06:51:22.814Z",
       "summary": "Stocks Up & Down",
       "isGlobal": false
     },
@@ -171,7 +171,7 @@
       "source": "Nepali Paisa",
       "badge": "NP",
       "category": "Nepal Finance",
-      "scrapedAt": "2026-10-27T06:16:06.648Z",
+      "scrapedAt": "2026-10-28T06:51:22.814Z",
       "summary": "Business & Economy",
       "isGlobal": false
     }
@@ -183,58 +183,48 @@
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-10-27T06:16:29.146Z",
+      "scrapedAt": "2026-10-28T06:51:43.930Z",
       "summary": "Markets just got Conversational",
       "isGlobal": true
     },
     {
-      "title": "Anthropic IPO: Why Wall Street is bracing for an AI market test",
-      "url": "https://economictimes.indiatimes.com/markets/us-stocks/news/anthropic-ipo-why-wall-street-is-bracing-for-an-ai-market-test/slideshow/135225314.cms",
+      "title": "UPL among 3 stocks closing above VWAP",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/upl-among-3-stocks-closing-above-vwap/slideshow/135252781.cms",
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-10-27T06:16:29.147Z",
-      "summary": "Anthropic IPO: Why Wall Street is bracing for an AI market test",
+      "scrapedAt": "2026-10-28T06:51:43.931Z",
+      "summary": "UPL among 3 stocks closing above VWAP",
       "isGlobal": true
     },
     {
-      "title": "Mankind Pharma among 5 F&O stocks with a sharp rise in futures open interest",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/news/mankind-pharma-among-5-fampo-stocks-with-a-sharp-rise-in-futures-open-interest/slideshow/135223707.cms",
+      "title": "Kotak adds 5 new midcap stocks which fell up to 16% in one month to its model portfolio. Take a look",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/kotak-adds-5-new-midcap-stocks-which-fell-up-to-16-in-one-month-to-its-model-portfolio-take-a-look/slideshow/135251652.cms",
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-10-27T06:16:29.147Z",
-      "summary": "Mankind Pharma among 5 F&O stocks with a sharp rise in futures open interest",
+      "scrapedAt": "2026-10-28T06:51:43.931Z",
+      "summary": "Kotak adds 5 new midcap stocks which fell up to 16% in one month to its model portfolio. Take a look",
       "isGlobal": true
     },
     {
-      "title": "MTAR Technologies among 4 stocks closing above VWAP",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/news/mtar-technologies-among-4-stocks-closing-above-vwap/slideshow/135223257.cms",
+      "title": "TD Power Systems among 3 stocks close crossing below VWAP",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/td-power-systems-among-3-stocks-close-crossing-below-vwap/slideshow/135251464.cms",
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-10-27T06:16:29.147Z",
-      "summary": "MTAR Technologies among 4 stocks closing above VWAP",
+      "scrapedAt": "2026-10-28T06:51:43.931Z",
+      "summary": "TD Power Systems among 3 stocks close crossing below VWAP",
       "isGlobal": true
     },
     {
-      "title": "JSW Steel among 5 stocks showing the White Marubozu pattern",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/news/jsw-steel-among-5-stocks-showing-the-white-marubozu-pattern/slideshow/135223206.cms",
+      "title": "Forget short-term pressure; in the long term, the right business is what pays: 5 mid-cap stocks with an upside potential of up to 36%",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/forget-short-term-pressure-in-the-long-term-the-right-business-is-what-pays-5-mid-cap-stocks-with-an-upside-potential-of-up-to-36/articleshow/135229593.cms",
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-10-27T06:16:29.147Z",
-      "summary": "JSW Steel among 5 stocks showing the White Marubozu pattern",
-      "isGlobal": true
-    },
-    {
-      "title": "Ather Energy among 5 stocks showing RSI trending up",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/news/ather-energy-among-5-stocks-showing-rsi-trending-up/slideshow/135223123.cms",
-      "source": "Economic Times Markets",
-      "badge": "ET",
-      "category": "India Markets",
-      "scrapedAt": "2026-10-27T06:16:29.147Z",
-      "summary": "Ather Energy among 5 stocks showing RSI trending up",
+      "scrapedAt": "2026-10-28T06:51:43.931Z",
+      "summary": "Forget short-term pressure; in the long term, the right business is what pays: 5 mid-cap stocks with an upside potential of up to 36%",
       "isGlobal": true
     },
     {
@@ -243,8 +233,18 @@
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-10-27T06:16:29.147Z",
+      "scrapedAt": "2026-10-28T06:51:43.931Z",
       "summary": "Weekly Top Picks: These stocks scored 10 on 10 on Stock Reports Plus",
+      "isGlobal": true
+    },
+    {
+      "title": "Stock Radar: Bharti Airtel stock takes support above 100-weeks WMA; will it cross 2,000 levels?",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/stock-radar-bharti-airtel-stock-takes-support-above-100-weeks-wma-will-it-cross-2000-levels/articleshow/135230825.cms",
+      "source": "Economic Times Markets",
+      "badge": "ET",
+      "category": "India Markets",
+      "scrapedAt": "2026-10-28T06:51:43.931Z",
+      "summary": "Stock Radar: Bharti Airtel stock takes support above 100-weeks WMA; will it cross 2,000 levels?",
       "isGlobal": true
     },
     {
@@ -253,7 +253,7 @@
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-10-27T06:16:29.147Z",
+      "scrapedAt": "2026-10-28T06:51:43.931Z",
       "summary": "5 stocks with consistent score improvement and upside potential of up to 30% in 1 year, according to analysts",
       "isGlobal": true
     }
