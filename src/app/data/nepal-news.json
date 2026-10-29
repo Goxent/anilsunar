@@ -1,5 +1,5 @@
 {
-  "scrapedAt": "2026-10-28T06:51:45.432Z",
+  "scrapedAt": "2026-10-29T07:04:09.572Z",
   "totalCount": 24,
   "nepalCount": 16,
   "globalCount": 8,
@@ -16,33 +16,13 @@
   ],
   "articles": [
     {
-      "title": "औद्योगिक क्षेत्रका सर्भिस सेन्टर र वर्कसपको सम्झौता नवीकरण नहुने",
-      "url": "https://www.karobardaily.com/news/429848",
+      "title": "मेची करिडोरको ठेक्का रद्द",
+      "url": "https://www.karobardaily.com/news/430365",
       "source": "Karobar Daily",
       "badge": "KD",
       "category": "Nepal Business",
-      "scrapedAt": "2026-10-28T06:51:18.959Z",
-      "summary": "औद्योगिक क्षेत्रका सर्भिस सेन्टर र वर्कसपको सम्झौता नवीकरण नहुने",
-      "isGlobal": false
-    },
-    {
-      "title": "असोजमा मात्रै २० वाणिज्य बैंकले विस्तार गरे ८५ अर्ब ऋण",
-      "url": "https://www.karobardaily.com/news/429872",
-      "source": "Karobar Daily",
-      "badge": "KD",
-      "category": "Nepal Business",
-      "scrapedAt": "2026-10-28T06:51:18.960Z",
-      "summary": "असोजमा मात्रै २० वाणिज्य बैंकले विस्तार गरे ८५ अर्ब ऋण",
-      "isGlobal": false
-    },
-    {
-      "title": "कृषि विकासका लागि पाँच करोड ९६ लाख बजेट",
-      "url": "https://www.karobardaily.com/news/429962",
-      "source": "Karobar Daily",
-      "badge": "KD",
-      "category": "Nepal Business",
-      "scrapedAt": "2026-10-28T06:51:18.960Z",
-      "summary": "कृषि विकासका लागि पाँच करोड ९६ लाख बजेट",
+      "scrapedAt": "2026-10-29T07:03:41.609Z",
+      "summary": "मेची करिडोरको ठेक्का रद्द",
       "isGlobal": false
     },
     {
@@ -51,28 +31,18 @@
       "source": "Karobar Daily",
       "badge": "KD",
       "category": "Nepal Business",
-      "scrapedAt": "2026-10-28T06:51:18.960Z",
+      "scrapedAt": "2026-10-29T07:03:41.609Z",
       "summary": "औषधीमा पाँच करोड, मन्दिरमा सवा अर्ब",
       "isGlobal": false
     },
     {
-      "title": "जिल्ला क्रिकेट संघलाई डेढ करोड, अरु सबैलाई १० लाख",
-      "url": "https://www.karobardaily.com/news/429696",
+      "title": "औद्योगिक क्षेत्रका सर्भिस सेन्टर र वर्कसपको सम्झौता नवीकरण नहुने",
+      "url": "https://www.karobardaily.com/news/429848",
       "source": "Karobar Daily",
       "badge": "KD",
       "category": "Nepal Business",
-      "scrapedAt": "2026-10-28T06:51:18.960Z",
-      "summary": "जिल्ला क्रिकेट संघलाई डेढ करोड, अरु सबैलाई १० लाख",
-      "isGlobal": false
-    },
-    {
-      "title": "कर्णालीमा हवाई उडान : सम्भाव्यता अध्ययन प्रतिवेदन बुझाउन निर्देशन",
-      "url": "https://www.karobardaily.com/news/429671",
-      "source": "Karobar Daily",
-      "badge": "KD",
-      "category": "Nepal Business",
-      "scrapedAt": "2026-10-28T06:51:18.960Z",
-      "summary": "कर्णालीमा हवाई उडान : सम्भाव्यता अध्ययन प्रतिवेदन बुझाउन निर्देशन",
+      "scrapedAt": "2026-10-29T07:03:41.610Z",
+      "summary": "औद्योगिक क्षेत्रका सर्भिस सेन्टर र वर्कसपको सम्झौता नवीकरण नहुने",
       "isGlobal": false
     },
     {
@@ -81,7 +51,7 @@
       "source": "Karobar Daily",
       "badge": "KD",
       "category": "Nepal Business",
-      "scrapedAt": "2026-10-28T06:51:18.960Z",
+      "scrapedAt": "2026-10-29T07:03:41.610Z",
       "summary": "वाणिज्य बैंकहरुले पौने १८ अर्ब बढी नाफा कमाए",
       "isGlobal": false
     },
@@ -91,8 +61,38 @@
       "source": "Karobar Daily",
       "badge": "KD",
       "category": "Nepal Business",
-      "scrapedAt": "2026-10-28T06:51:18.960Z",
+      "scrapedAt": "2026-10-29T07:03:41.610Z",
       "summary": "७० अर्ब निक्षेप उठाउँदै राष्ट्र बैंक",
+      "isGlobal": false
+    },
+    {
+      "title": "दसैँमा बैंकको एटिएमबाटै १०० रुपैयाँकाे नयाँ नोट पाइने",
+      "url": "https://www.karobardaily.com/news/424922",
+      "source": "Karobar Daily",
+      "badge": "KD",
+      "category": "Nepal Business",
+      "scrapedAt": "2026-10-29T07:03:41.610Z",
+      "summary": "दसैँमा बैंकको एटिएमबाटै १०० रुपैयाँकाे नयाँ नोट पाइने",
+      "isGlobal": false
+    },
+    {
+      "title": "निर्जीवन बीमा कम्पनीको व्यापार १० अर्ब",
+      "url": "https://www.karobardaily.com/news/426850",
+      "source": "Karobar Daily",
+      "badge": "KD",
+      "category": "Nepal Business",
+      "scrapedAt": "2026-10-29T07:03:41.610Z",
+      "summary": "निर्जीवन बीमा कम्पनीको व्यापार १० अर्ब",
+      "isGlobal": false
+    },
+    {
+      "title": "सिटिजन्स बैंक र एथलीट ल्यान्डबीच समझदारी",
+      "url": "https://www.karobardaily.com/news/430255",
+      "source": "Karobar Daily",
+      "badge": "KD",
+      "category": "Nepal Business",
+      "scrapedAt": "2026-10-29T07:03:41.610Z",
+      "summary": "सिटिजन्स बैंक र एथलीट ल्यान्डबीच समझदारी",
       "isGlobal": false
     },
     {
@@ -101,7 +101,7 @@
       "source": "Sharesansar",
       "badge": "SS",
       "category": "Nepal Stock",
-      "scrapedAt": "2026-10-28T06:51:20.856Z",
+      "scrapedAt": "2026-10-29T07:03:43.609Z",
       "summary": "Too Much Money, Too Little Credit: Nepals Liquidity Puzzle and What It Means for NEPSE",
       "isGlobal": false
     },
@@ -111,7 +111,7 @@
       "source": "Sharesansar",
       "badge": "SS",
       "category": "Nepal Stock",
-      "scrapedAt": "2026-10-28T06:51:20.856Z",
+      "scrapedAt": "2026-10-29T07:03:43.609Z",
       "summary": "Proposed Dividend",
       "isGlobal": false
     },
@@ -121,7 +121,7 @@
       "source": "Sharesansar",
       "badge": "SS",
       "category": "Nepal Stock",
-      "scrapedAt": "2026-10-28T06:51:20.856Z",
+      "scrapedAt": "2026-10-29T07:03:43.609Z",
       "summary": "Dividend, Bonus & Rights",
       "isGlobal": false
     },
@@ -131,7 +131,7 @@
       "source": "Sharesansar",
       "badge": "SS",
       "category": "Nepal Stock",
-      "scrapedAt": "2026-10-28T06:51:20.856Z",
+      "scrapedAt": "2026-10-29T07:03:43.609Z",
       "summary": "Is it Possible to Turn Your 1 lakh into 10 Lakh Via Trading in NEPSE?",
       "isGlobal": false
     },
@@ -141,7 +141,7 @@
       "source": "Sharesansar",
       "badge": "SS",
       "category": "Nepal Stock",
-      "scrapedAt": "2026-10-28T06:51:20.856Z",
+      "scrapedAt": "2026-10-29T07:03:43.609Z",
       "summary": "NEPSE Concludes The Week With 0.18% Gain and Turnover of Rs 18.93 Arba; Weekly Summary with Sector Comparison, Major Highlights, and More",
       "isGlobal": false
     },
@@ -151,7 +151,7 @@
       "source": "Nepali Paisa",
       "badge": "NP",
       "category": "Nepal Finance",
-      "scrapedAt": "2026-10-28T06:51:22.814Z",
+      "scrapedAt": "2026-10-29T07:03:45.626Z",
       "summary": "Market Overview",
       "isGlobal": false
     },
@@ -161,7 +161,7 @@
       "source": "Nepali Paisa",
       "badge": "NP",
       "category": "Nepal Finance",
-      "scrapedAt": "2026-10-28T06:51:22.814Z",
+      "scrapedAt": "2026-10-29T07:03:45.626Z",
       "summary": "Stocks Up & Down",
       "isGlobal": false
     },
@@ -171,7 +171,7 @@
       "source": "Nepali Paisa",
       "badge": "NP",
       "category": "Nepal Finance",
-      "scrapedAt": "2026-10-28T06:51:22.814Z",
+      "scrapedAt": "2026-10-29T07:03:45.626Z",
       "summary": "Business & Economy",
       "isGlobal": false
     }
@@ -183,78 +183,78 @@
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-10-28T06:51:43.930Z",
+      "scrapedAt": "2026-10-29T07:04:08.069Z",
       "summary": "Markets just got Conversational",
       "isGlobal": true
     },
     {
-      "title": "UPL among 3 stocks closing above VWAP",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/news/upl-among-3-stocks-closing-above-vwap/slideshow/135252781.cms",
+      "title": "Alphabet stocks slide after earnings miss: 7 key takeaways",
+      "url": "https://economictimes.indiatimes.com/markets/us-stocks/news/alphabet-stocks-slide-after-earnings-miss-7-key-takeaways/slideshow/135290644.cms",
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-10-28T06:51:43.931Z",
-      "summary": "UPL among 3 stocks closing above VWAP",
+      "scrapedAt": "2026-10-29T07:04:08.070Z",
+      "summary": "Alphabet stocks slide after earnings miss: 7 key takeaways",
       "isGlobal": true
     },
     {
-      "title": "Kotak adds 5 new midcap stocks which fell up to 16% in one month to its model portfolio. Take a look",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/news/kotak-adds-5-new-midcap-stocks-which-fell-up-to-16-in-one-month-to-its-model-portfolio-take-a-look/slideshow/135251652.cms",
+      "title": "Zee Entertainment among 4 stocks closing above VWAP",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/zee-entertainment-among-4-stocks-closing-above-vwap/slideshow/135289601.cms",
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-10-28T06:51:43.931Z",
-      "summary": "Kotak adds 5 new midcap stocks which fell up to 16% in one month to its model portfolio. Take a look",
+      "scrapedAt": "2026-10-29T07:04:08.070Z",
+      "summary": "Zee Entertainment among 4 stocks closing above VWAP",
       "isGlobal": true
     },
     {
-      "title": "TD Power Systems among 3 stocks close crossing below VWAP",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/news/td-power-systems-among-3-stocks-close-crossing-below-vwap/slideshow/135251464.cms",
+      "title": "Biocon among 4 stocks showing bullish White Marubozu pattern",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/biocon-among-4-stocks-showing-bullish-white-marubozu-pattern/slideshow/135287786.cms",
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-10-28T06:51:43.931Z",
-      "summary": "TD Power Systems among 3 stocks close crossing below VWAP",
+      "scrapedAt": "2026-10-29T07:04:08.070Z",
+      "summary": "Biocon among 4 stocks showing bullish White Marubozu pattern",
       "isGlobal": true
     },
     {
-      "title": "Forget short-term pressure; in the long term, the right business is what pays: 5 mid-cap stocks with an upside potential of up to 36%",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/news/forget-short-term-pressure-in-the-long-term-the-right-business-is-what-pays-5-mid-cap-stocks-with-an-upside-potential-of-up-to-36/articleshow/135229593.cms",
+      "title": "Piramal Pharma among 4 stocks showing RSI Trending Up",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/piramal-pharma-among-4-stocks-showing-rsi-trending-up/slideshow/135287674.cms",
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-10-28T06:51:43.931Z",
-      "summary": "Forget short-term pressure; in the long term, the right business is what pays: 5 mid-cap stocks with an upside potential of up to 36%",
+      "scrapedAt": "2026-10-29T07:04:08.070Z",
+      "summary": "Piramal Pharma among 4 stocks showing RSI Trending Up",
       "isGlobal": true
     },
     {
-      "title": "Weekly Top Picks: These stocks scored 10 on 10 on Stock Reports Plus",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/news/weekly-top-picks-these-stocks-scored-10-on-10-on-stock-reports-plus/articleshow/135209130.cms",
+      "title": "These 7 private and public banking stocks have an upside of up to 27% in one year, according to analysts",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/these-7-private-and-public-banking-stocks-have-an-upside-of-up-to-27-in-one-year-according-to-analysts/articleshow/135257622.cms",
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-10-28T06:51:43.931Z",
-      "summary": "Weekly Top Picks: These stocks scored 10 on 10 on Stock Reports Plus",
+      "scrapedAt": "2026-10-29T07:04:08.070Z",
+      "summary": "These 7 private and public banking stocks have an upside of up to 27% in one year, according to analysts",
       "isGlobal": true
     },
     {
-      "title": "Stock Radar: Bharti Airtel stock takes support above 100-weeks WMA; will it cross 2,000 levels?",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/news/stock-radar-bharti-airtel-stock-takes-support-above-100-weeks-wma-will-it-cross-2000-levels/articleshow/135230825.cms",
+      "title": "Stock Radar: RIL showing signs of recovery; forms triple bottom formation on weekly charts – time to buy?",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/stock-radar-ril-showing-signs-of-recovery-forms-triple-bottom-formation-on-weekly-charts-time-to-buy/articleshow/135261905.cms",
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-10-28T06:51:43.931Z",
-      "summary": "Stock Radar: Bharti Airtel stock takes support above 100-weeks WMA; will it cross 2,000 levels?",
+      "scrapedAt": "2026-10-29T07:04:08.070Z",
+      "summary": "Stock Radar: RIL showing signs of recovery; forms triple bottom formation on weekly charts – time to buy?",
       "isGlobal": true
     },
     {
-      "title": "5 stocks with consistent score improvement and upside potential of up to 30% in 1 year, according to analysts",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/news/5-stocks-with-consistent-score-improvement-and-upside-potential-of-up-to-30-in-1-year-according-to-analysts/articleshow/135206454.cms",
+      "title": "Tyre stocks: Hit by a headwind on costs, not on demand: 4 tyre stocks with upside potential of up to 29%, according to analysts",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/tyre-stocks-hit-by-a-headwind-on-costs-not-on-demand-4-tyre-stocks-with-upside-potential-of-up-to-29-according-to-analysts/articleshow/135259751.cms",
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-10-28T06:51:43.931Z",
-      "summary": "5 stocks with consistent score improvement and upside potential of up to 30% in 1 year, according to analysts",
+      "scrapedAt": "2026-10-29T07:04:08.070Z",
+      "summary": "Tyre stocks: Hit by a headwind on costs, not on demand: 4 tyre stocks with upside potential of up to 29%, according to analysts",
       "isGlobal": true
     }
   ]
