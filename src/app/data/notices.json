@@ -1,8 +1,47 @@
 {
-  "lastUpdated": "2026-11-02T07:42:17.440Z",
-  "totalCount": 130,
-  "newCount": 0,
+  "lastUpdated": "2026-11-03T07:55:54.299Z",
+  "totalCount": 133,
+  "newCount": 3,
   "notices": [
+    {
+      "id": "irdnepal_mw0e83ba",
+      "title": "दिनेश पाण्डे सूचना अधिकारी (निर्देशक)",
+      "source": "IRD Nepal",
+      "category": "Taxation",
+      "badge": "IRD",
+      "badgeColor": "#e53935",
+      "link": "https://ird.gov.np/our-team-detail/13194/",
+      "summary": "New Taxation update from IRD Nepal: दिनेश पाण्डे सूचना अधिकारी (निर्देशक)",
+      "detectedAt": "2026-11-03T07:55:37.030Z",
+      "isNew": true,
+      "emailedAt": null
+    },
+    {
+      "id": "irdnepalpowerbackupsystem_mw0e83ba",
+      "title": "Power Backup System खरिद सम्बन्धी बोलपत्र आव्हानको सूचना १८ कात्तिक, २०८३",
+      "source": "IRD Nepal",
+      "category": "Taxation",
+      "badge": "IRD",
+      "badgeColor": "#e53935",
+      "link": "https://ird.gov.np/content/13684/notice-of-invitation-to-bid-for-purchase/",
+      "summary": "New Taxation update from IRD Nepal: Power Backup System खरिद सम्बन्धी बोलपत्र आव्हानको सूचना १८ कात्तिक, २०८३",
+      "detectedAt": "2026-11-03T07:55:37.030Z",
+      "isNew": true,
+      "emailedAt": null
+    },
+    {
+      "id": "sebonnepal_mw0e89at",
+      "title": "नेपाल स्टक एक्सचेञ्ज लिमिटेडमा सूचीकृत कम्पनीका आधारभूत शेयरधनीले शेयर बिक्री गर्नु अघि धितोपत्र बजारलाई अग्रिम सूचना दिनुपर्ने व्यवस्था तथा सो व्यवस्थाको औचित्य, अन्तर्राष्ट्रिय अभ्यास तथा प्रस्तावित नियामकीय ढाँचा सम्बन्धी अवधारणापत्र, २०८३",
+      "source": "SEBON Nepal",
+      "category": "Securities Law",
+      "badge": "SEBON",
+      "badgeColor": "#6a1b9a",
+      "link": "https://sebon.gov.np/booklet/नेपाल-स्टक-एक्सचेञ्ज-लिमिटेडमा-सूचीकृत-कम्पनीका-आधारभूत-शेयरधनीले-शेयर-बिक्री-गर्नु-अघि-धितोपत्र-बजारलाई-अग्रिम-सूचना-दिनुपर्ने-व्यवस्था-तथा-सो-व्यवस्थाको-औचित्य-अन्तर्राष्ट्रिय-अभ्यास-तथा-प्रस्तावित-नियामकीय-ढाँचा-सम्बन्धी-अवधारणापत्र-२०८३",
+      "summary": "New Securities Law update from SEBON Nepal: नेपाल स्टक एक्सचेञ्ज लिमिटेडमा सूचीकृत कम्पनीका आधारभूत शेयरधनीले शेयर बिक्री गर्नु अघि धितोपत्र बजारलाई अग्रिम सूचना दिनुपर्ने व्यवस्था तथा सो व्यवस्थाको औचित्य, अन्तर्राष्ट्रिय अभ्यास तथा प्रस्तावित नियामकीय ढाँचा सम्बन्धी अवधारणापत्र, २०८३",
+      "detectedAt": "2026-11-03T07:55:44.789Z",
+      "isNew": true,
+      "emailedAt": null
+    },
     {
       "id": "irdnepal_mv4xbmbq",
       "title": "सिलबन्दी दरभाउपत्र स्वीकृत गरिएको सम्बन्धी सूचना २६ असोज, २०८३",

@@ -1,5 +1,5 @@
 {
-  "scrapedAt": "2026-11-02T07:41:46.413Z",
+  "scrapedAt": "2026-11-03T07:55:22.918Z",
   "totalCount": 24,
   "nepalCount": 16,
   "globalCount": 8,
@@ -16,13 +16,43 @@
   ],
   "articles": [
     {
-      "title": "करदाता प्रोत्साहन कार्यक्रम: १६ विजेता घोषणा",
-      "url": "https://www.karobardaily.com/news/431846",
+      "title": "निष्क्रिय कर्जा ५.६४ प्रतिशत, घट्यो प्रोभिजन रकम",
+      "url": "https://www.karobardaily.com/news/432092",
       "source": "Karobar Daily",
       "badge": "KD",
       "category": "Nepal Business",
-      "scrapedAt": "2026-11-02T07:41:22.908Z",
-      "summary": "करदाता प्रोत्साहन कार्यक्रम: १६ विजेता घोषणा",
+      "scrapedAt": "2026-11-03T07:54:56.564Z",
+      "summary": "निष्क्रिय कर्जा ५.६४ प्रतिशत, घट्यो प्रोभिजन रकम",
+      "isGlobal": false
+    },
+    {
+      "title": "बागलुङको राजस्व २७ करोड ३४ लाख",
+      "url": "https://www.karobardaily.com/news/432305",
+      "source": "Karobar Daily",
+      "badge": "KD",
+      "category": "Nepal Business",
+      "scrapedAt": "2026-11-03T07:54:56.564Z",
+      "summary": "बागलुङको राजस्व २७ करोड ३४ लाख",
+      "isGlobal": false
+    },
+    {
+      "title": "पोखरामा दुई करोडको फूल कारोबार हुने",
+      "url": "https://www.karobardaily.com/news/431956",
+      "source": "Karobar Daily",
+      "badge": "KD",
+      "category": "Nepal Business",
+      "scrapedAt": "2026-11-03T07:54:56.564Z",
+      "summary": "पोखरामा दुई करोडको फूल कारोबार हुने",
+      "isGlobal": false
+    },
+    {
+      "title": "फिनटेक इन्नोभेसनमा राष्ट्र बैंक",
+      "url": "https://www.karobardaily.com/news/432286",
+      "source": "Karobar Daily",
+      "badge": "KD",
+      "category": "Nepal Business",
+      "scrapedAt": "2026-11-03T07:54:56.564Z",
+      "summary": "फिनटेक इन्नोभेसनमा राष्ट्र बैंक",
       "isGlobal": false
     },
     {
@@ -31,28 +61,8 @@
       "source": "Karobar Daily",
       "badge": "KD",
       "category": "Nepal Business",
-      "scrapedAt": "2026-11-02T07:41:22.908Z",
+      "scrapedAt": "2026-11-03T07:54:56.564Z",
       "summary": "बैंकहरुको नाफा ४५ प्रतिशत बढ्दा ब्याज आम्दानी एक प्रतिशत तल",
-      "isGlobal": false
-    },
-    {
-      "title": "कर्णालीमा अर्बौं लागतका १९ आयोजना अलपत्र, ठेक्का तोड्ने तयारी",
-      "url": "https://www.karobardaily.com/news/431879",
-      "source": "Karobar Daily",
-      "badge": "KD",
-      "category": "Nepal Business",
-      "scrapedAt": "2026-11-02T07:41:22.909Z",
-      "summary": "कर्णालीमा अर्बौं लागतका १९ आयोजना अलपत्र, ठेक्का तोड्ने तयारी",
-      "isGlobal": false
-    },
-    {
-      "title": "यो सातादेखि धान खरिद गर्ने खाद्य कम्पनीको तयारी",
-      "url": "https://www.karobardaily.com/news/431708",
-      "source": "Karobar Daily",
-      "badge": "KD",
-      "category": "Nepal Business",
-      "scrapedAt": "2026-11-02T07:41:22.909Z",
-      "summary": "यो सातादेखि धान खरिद गर्ने खाद्य कम्पनीको तयारी",
       "isGlobal": false
     },
     {
@@ -61,28 +71,8 @@
       "source": "Karobar Daily",
       "badge": "KD",
       "category": "Nepal Business",
-      "scrapedAt": "2026-11-02T07:41:22.909Z",
+      "scrapedAt": "2026-11-03T07:54:56.564Z",
       "summary": "वाणिज्य बैंकको नाफा १९ अर्ब, गत वर्षभन्दा ६ अर्बले वृद्धि",
-      "isGlobal": false
-    },
-    {
-      "title": "वाणिज्य बैंकहरुले पौने १८ अर्ब बढी नाफा कमाए",
-      "url": "https://www.karobardaily.com/news/427761",
-      "source": "Karobar Daily",
-      "badge": "KD",
-      "category": "Nepal Business",
-      "scrapedAt": "2026-11-02T07:41:22.909Z",
-      "summary": "वाणिज्य बैंकहरुले पौने १८ अर्ब बढी नाफा कमाए",
-      "isGlobal": false
-    },
-    {
-      "title": "७० अर्ब निक्षेप उठाउँदै राष्ट्र बैंक",
-      "url": "https://www.karobardaily.com/news/425906",
-      "source": "Karobar Daily",
-      "badge": "KD",
-      "category": "Nepal Business",
-      "scrapedAt": "2026-11-02T07:41:22.909Z",
-      "summary": "७० अर्ब निक्षेप उठाउँदै राष्ट्र बैंक",
       "isGlobal": false
     },
     {
@@ -91,8 +81,18 @@
       "source": "Karobar Daily",
       "badge": "KD",
       "category": "Nepal Business",
-      "scrapedAt": "2026-11-02T07:41:22.909Z",
+      "scrapedAt": "2026-11-03T07:54:56.564Z",
       "summary": "निर्जीवन बीमा कम्पनीको व्यापार १० अर्ब",
+      "isGlobal": false
+    },
+    {
+      "title": "डेभलपमेन्ट बैंकर्स एसोसिएसनमा थकाली",
+      "url": "https://www.karobardaily.com/news/431478",
+      "source": "Karobar Daily",
+      "badge": "KD",
+      "category": "Nepal Business",
+      "scrapedAt": "2026-11-03T07:54:56.564Z",
+      "summary": "डेभलपमेन्ट बैंकर्स एसोसिएसनमा थकाली",
       "isGlobal": false
     },
     {
@@ -101,7 +101,7 @@
       "source": "Sharesansar",
       "badge": "SS",
       "category": "Nepal Stock",
-      "scrapedAt": "2026-11-02T07:41:24.540Z",
+      "scrapedAt": "2026-11-03T07:54:58.587Z",
       "summary": "Investing in NEPSE from Abroad: A Reality Check for Nepali Workers",
       "isGlobal": false
     },
@@ -111,17 +111,17 @@
       "source": "Sharesansar",
       "badge": "SS",
       "category": "Nepal Stock",
-      "scrapedAt": "2026-11-02T07:41:24.540Z",
+      "scrapedAt": "2026-11-03T07:54:58.588Z",
       "summary": "Proposed Dividend",
       "isGlobal": false
     },
     {
       "title": "Dividend, Bonus & Rights",
-      "url": "https://www.sharesansar.com/newsdetail/reminder-last-trading-day-to-secure-dividend-of-vision-lumbini-urja-company-limited-2026-10-30",
+      "url": "https://www.sharesansar.com/newsdetail/bonus-shares-of-super-madi-hydropower-limited-listed-on-nepse-2026-11-02",
       "source": "Sharesansar",
       "badge": "SS",
       "category": "Nepal Stock",
-      "scrapedAt": "2026-11-02T07:41:24.540Z",
+      "scrapedAt": "2026-11-03T07:54:58.588Z",
       "summary": "Dividend, Bonus & Rights",
       "isGlobal": false
     },
@@ -131,7 +131,7 @@
       "source": "Sharesansar",
       "badge": "SS",
       "category": "Nepal Stock",
-      "scrapedAt": "2026-11-02T07:41:24.540Z",
+      "scrapedAt": "2026-11-03T07:54:58.588Z",
       "summary": "Is it Possible to Turn Your 1 lakh into 10 Lakh Via Trading in NEPSE?",
       "isGlobal": false
     },
@@ -141,7 +141,7 @@
       "source": "Sharesansar",
       "badge": "SS",
       "category": "Nepal Stock",
-      "scrapedAt": "2026-11-02T07:41:24.540Z",
+      "scrapedAt": "2026-11-03T07:54:58.588Z",
       "summary": "NEPSE Concludes The Week With 0.18% Gain and Turnover of Rs 18.93 Arba; Weekly Summary with Sector Comparison, Major Highlights, and More",
       "isGlobal": false
     },
@@ -151,7 +151,7 @@
       "source": "Nepali Paisa",
       "badge": "NP",
       "category": "Nepal Finance",
-      "scrapedAt": "2026-11-02T07:41:26.495Z",
+      "scrapedAt": "2026-11-03T07:55:00.492Z",
       "summary": "Market Overview",
       "isGlobal": false
     },
@@ -161,7 +161,7 @@
       "source": "Nepali Paisa",
       "badge": "NP",
       "category": "Nepal Finance",
-      "scrapedAt": "2026-11-02T07:41:26.495Z",
+      "scrapedAt": "2026-11-03T07:55:00.492Z",
       "summary": "Stocks Up & Down",
       "isGlobal": false
     },
@@ -171,7 +171,7 @@
       "source": "Nepali Paisa",
       "badge": "NP",
       "category": "Nepal Finance",
-      "scrapedAt": "2026-11-02T07:41:26.495Z",
+      "scrapedAt": "2026-11-03T07:55:00.492Z",
       "summary": "Business & Economy",
       "isGlobal": false
     }
@@ -183,78 +183,78 @@
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-11-02T07:41:44.910Z",
+      "scrapedAt": "2026-11-03T07:55:21.416Z",
       "summary": "Markets just got Conversational",
       "isGlobal": true
     },
     {
-      "title": "Diwali stocks to buy! 8 stocks with upside potential of up to 52%",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/news/diwali-stocks-to-buy-8-stocks-with-upside-potential-of-up-to-52/slideshow/135446725.cms",
+      "title": "AST SpaceMobile Stock Crash: Why ASTS shares plunged 11% as SpaceX eyes Boost Mobile",
+      "url": "https://economictimes.indiatimes.com/markets/us-stocks/news/ast-spacemobile-stock-crash-why-asts-shares-plunged-11-as-spacex-eyes-boost-mobile/slideshow/135484806.cms",
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-11-02T07:41:44.910Z",
-      "summary": "Diwali stocks to buy! 8 stocks with upside potential of up to 52%",
+      "scrapedAt": "2026-11-03T07:55:21.416Z",
+      "summary": "AST SpaceMobile Stock Crash: Why ASTS shares plunged 11% as SpaceX eyes Boost Mobile",
       "isGlobal": true
     },
     {
-      "title": "5 key global market themes investors will watch this week",
-      "url": "https://economictimes.indiatimes.com/markets/us-stocks/news/5-key-global-market-themes-investors-will-watch-this-week/slideshow/135446004.cms",
+      "title": "Diwali stocks by Motilal Oswal: Eternal, Adani Ports among 10 stocks with upside of up to 40%. See full list",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/diwali-stocks-by-motilal-oswal-eternal-adani-ports-among-10-stocks-with-upside-of-up-to-40-see-full-list/slideshow/135483770.cms",
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-11-02T07:41:44.910Z",
-      "summary": "5 key global market themes investors will watch this week",
+      "scrapedAt": "2026-11-03T07:55:21.416Z",
+      "summary": "Diwali stocks by Motilal Oswal: Eternal, Adani Ports among 10 stocks with upside of up to 40%. See full list",
       "isGlobal": true
     },
     {
-      "title": "Tech picks: HCL Tech, Saregama among 5 stocks to buy for up to 11% returns in short term",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/news/tech-picks-hcl-tech-saregama-among-5-stocks-to-buy-for-up-to-11-returns-in-short-term/slideshow/135445432.cms",
+      "title": "Anthropic IPO: What its latest financial filing reveals about AI growth",
+      "url": "https://economictimes.indiatimes.com/markets/us-stocks/news/anthropic-ipo-what-its-latest-financial-filing-reveals-about-ai-growth/slideshow/135484180.cms",
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-11-02T07:41:44.910Z",
-      "summary": "Tech picks: HCL Tech, Saregama among 5 stocks to buy for up to 11% returns in short term",
+      "scrapedAt": "2026-11-03T07:55:21.416Z",
+      "summary": "Anthropic IPO: What its latest financial filing reveals about AI growth",
       "isGlobal": true
     },
     {
-      "title": "Diwali Muhurat Picks 2026: Swiggy among 6 stocks with up to 116% upside potential. See full list",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/news/diwali-muhurat-picks-2026-swiggy-among-6-stocks-with-up-to-116-upside-potential-see-full-list/slideshow/135444450.cms",
+      "title": "Smallcap stocks to buy this Diwali! 5 stocks with upside potential of up to 37%. Do you own any?",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/smallcap-stocks-to-buy-this-diwali-5-stocks-with-upside-potential-of-up-to-37-do-you-own-any/slideshow/135483093.cms",
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-11-02T07:41:44.910Z",
-      "summary": "Diwali Muhurat Picks 2026: Swiggy among 6 stocks with up to 116% upside potential. See full list",
+      "scrapedAt": "2026-11-03T07:55:21.416Z",
+      "summary": "Smallcap stocks to buy this Diwali! 5 stocks with upside potential of up to 37%. Do you own any?",
       "isGlobal": true
     },
     {
-      "title": "Top Nifty50 stocks analysts suggest buying in this volatile week",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/news/top-nifty50-stocks-analysts-suggest-buying-in-this-volatile-week/articleshow/135444521.cms",
+      "title": "Reliance Industries among 8 stocks showing RSI Trending Up",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/reliance-industries-among-8-stocks-showing-rsi-trending-up/slideshow/135481838.cms",
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-11-02T07:41:44.910Z",
-      "summary": "Top Nifty50 stocks analysts suggest buying in this volatile week",
+      "scrapedAt": "2026-11-03T07:55:21.416Z",
+      "summary": "Reliance Industries among 8 stocks showing RSI Trending Up",
       "isGlobal": true
     },
     {
-      "title": "Time to be be cautious in the market, convinced about the business: 5 large-cap stocks with upside potential of up to 22%",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/news/time-to-be-be-cautious-in-the-market-convinced-about-the-business-5-large-cap-stocks-with-upside-potential-of-up-to-22/articleshow/135404148.cms",
+      "title": "Weekly Top Picks: These stocks scored 10 on 10 on Stock Reports Plus",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/weekly-top-picks-these-stocks-scored-10-on-10-on-stock-reports-plus/articleshow/135464032.cms",
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-11-02T07:41:44.910Z",
-      "summary": "Time to be be cautious in the market, convinced about the business: 5 large-cap stocks with upside potential of up to 22%",
+      "scrapedAt": "2026-11-03T07:55:21.416Z",
+      "summary": "Weekly Top Picks: These stocks scored 10 on 10 on Stock Reports Plus",
       "isGlobal": true
     },
     {
-      "title": "Short-term headwinds, yes; owning the ecosystem is better: 20 healthcare stocks with downside risk of 23% to upside potential of 41%",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/news/short-term-headwinds-yes-owning-the-ecosystem-is-better-20-healthcare-stocks-with-downside-risk-of-23-to-upside-potential-of-41/articleshow/135409428.cms",
+      "title": "4 stocks with consistent score improvement and upside potential of up to 31% in 1 year, according to analysts",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/4-stocks-with-consistent-score-improvement-and-upside-potential-of-up-to-31-in-1-year-according-to-analysts/articleshow/135453349.cms",
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-11-02T07:41:44.911Z",
-      "summary": "Short-term headwinds, yes; owning the ecosystem is better: 20 healthcare stocks with downside risk of 23% to upside potential of 41%",
+      "scrapedAt": "2026-11-03T07:55:21.416Z",
+      "summary": "4 stocks with consistent score improvement and upside potential of up to 31% in 1 year, according to analysts",
       "isGlobal": true
     }
   ]
