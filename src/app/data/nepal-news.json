@@ -1,5 +1,5 @@
 {
-  "scrapedAt": "2026-11-04T07:30:20.785Z",
+  "scrapedAt": "2026-11-05T07:55:30.510Z",
   "totalCount": 24,
   "nepalCount": 16,
   "globalCount": 8,
@@ -16,23 +16,53 @@
   ],
   "articles": [
     {
+      "title": "प्रधानमन्त्री राहत कोषमा मौज्दात १८ अर्ब ३७ करोड नाघ्यो",
+      "url": "https://www.karobardaily.com/news/433083",
+      "source": "Karobar Daily",
+      "badge": "KD",
+      "category": "Nepal Business",
+      "scrapedAt": "2026-11-05T07:55:04.075Z",
+      "summary": "प्रधानमन्त्री राहत कोषमा मौज्दात १८ अर्ब ३७ करोड नाघ्यो",
+      "isGlobal": false
+    },
+    {
+      "title": "धनतेरसका लागि राष्ट्र बैंकले बेच्न थाल्यो सुन र चाँदीका सिक्का",
+      "url": "https://www.karobardaily.com/news/433024",
+      "source": "Karobar Daily",
+      "badge": "KD",
+      "category": "Nepal Business",
+      "scrapedAt": "2026-11-05T07:55:04.075Z",
+      "summary": "धनतेरसका लागि राष्ट्र बैंकले बेच्न थाल्यो सुन र चाँदीका सिक्का",
+      "isGlobal": false
+    },
+    {
+      "title": "पर्वतको पैंयुमा हाइटेक टनेल तथा स्मार्ट कृषि बजार परियोजना सञ्चालन",
+      "url": "https://www.karobardaily.com/news/433048",
+      "source": "Karobar Daily",
+      "badge": "KD",
+      "category": "Nepal Business",
+      "scrapedAt": "2026-11-05T07:55:04.076Z",
+      "summary": "पर्वतको पैंयुमा हाइटेक टनेल तथा स्मार्ट कृषि बजार परियोजना सञ्चालन",
+      "isGlobal": false
+    },
+    {
+      "title": "अर्थमन्त्री डा वाग्ले र भारतका विदेश सचिवबीच आर्थिक सहकार्यका विषयमा छलफल",
+      "url": "https://www.karobardaily.com/news/432789",
+      "source": "Karobar Daily",
+      "badge": "KD",
+      "category": "Nepal Business",
+      "scrapedAt": "2026-11-05T07:55:04.076Z",
+      "summary": "अर्थमन्त्री डा वाग्ले र भारतका विदेश सचिवबीच आर्थिक सहकार्यका विषयमा छलफल",
+      "isGlobal": false
+    },
+    {
       "title": "राष्ट्र बैंकको टक्सार महाशाखाबाट सुनको असर्फी र चाँदीका मेडालियन बिक्री गरिँदै",
       "url": "https://www.karobardaily.com/news/432574",
       "source": "Karobar Daily",
       "badge": "KD",
       "category": "Nepal Business",
-      "scrapedAt": "2026-11-04T07:29:52.675Z",
+      "scrapedAt": "2026-11-05T07:55:04.076Z",
       "summary": "राष्ट्र बैंकको टक्सार महाशाखाबाट सुनको असर्फी र चाँदीका मेडालियन बिक्री गरिँदै",
-      "isGlobal": false
-    },
-    {
-      "title": "बागलुङको राजस्व २७ करोड ३४ लाख",
-      "url": "https://www.karobardaily.com/news/432305",
-      "source": "Karobar Daily",
-      "badge": "KD",
-      "category": "Nepal Business",
-      "scrapedAt": "2026-11-04T07:29:52.675Z",
-      "summary": "बागलुङको राजस्व २७ करोड ३४ लाख",
       "isGlobal": false
     },
     {
@@ -41,7 +71,7 @@
       "source": "Karobar Daily",
       "badge": "KD",
       "category": "Nepal Business",
-      "scrapedAt": "2026-11-04T07:29:52.675Z",
+      "scrapedAt": "2026-11-05T07:55:04.076Z",
       "summary": "फिनटेक इन्नोभेसनमा राष्ट्र बैंक",
       "isGlobal": false
     },
@@ -51,7 +81,7 @@
       "source": "Karobar Daily",
       "badge": "KD",
       "category": "Nepal Business",
-      "scrapedAt": "2026-11-04T07:29:52.675Z",
+      "scrapedAt": "2026-11-05T07:55:04.076Z",
       "summary": "निष्क्रिय कर्जा ५.६४ प्रतिशत, घट्यो प्रोभिजन रकम",
       "isGlobal": false
     },
@@ -61,38 +91,8 @@
       "source": "Karobar Daily",
       "badge": "KD",
       "category": "Nepal Business",
-      "scrapedAt": "2026-11-04T07:29:52.675Z",
+      "scrapedAt": "2026-11-05T07:55:04.076Z",
       "summary": "बैंकहरुको नाफा ४५ प्रतिशत बढ्दा ब्याज आम्दानी एक प्रतिशत तल",
-      "isGlobal": false
-    },
-    {
-      "title": "निर्जीवन बीमा कम्पनीको व्यापार १० अर्ब",
-      "url": "https://www.karobardaily.com/news/426850",
-      "source": "Karobar Daily",
-      "badge": "KD",
-      "category": "Nepal Business",
-      "scrapedAt": "2026-11-04T07:29:52.675Z",
-      "summary": "निर्जीवन बीमा कम्पनीको व्यापार १० अर्ब",
-      "isGlobal": false
-    },
-    {
-      "title": "महालक्ष्मी विकास बैंक र दराज नेपाल बीच ११.११ अभियानका लागि सहकार्य",
-      "url": "https://www.karobardaily.com/news/432448",
-      "source": "Karobar Daily",
-      "badge": "KD",
-      "category": "Nepal Business",
-      "scrapedAt": "2026-11-04T07:29:52.676Z",
-      "summary": "महालक्ष्मी विकास बैंक र दराज नेपाल बीच ११.११ अभियानका लागि सहकार्य",
-      "isGlobal": false
-    },
-    {
-      "title": "नुवाकोटमा सिटिजन्स बैंकको बट्टार शाखा सञ्चालन, देवीघाट शाखा स्थानान्तरण",
-      "url": "https://www.karobardaily.com/news/432421",
-      "source": "Karobar Daily",
-      "badge": "KD",
-      "category": "Nepal Business",
-      "scrapedAt": "2026-11-04T07:29:52.676Z",
-      "summary": "नुवाकोटमा सिटिजन्स बैंकको बट्टार शाखा सञ्चालन, देवीघाट शाखा स्थानान्तरण",
       "isGlobal": false
     },
     {
@@ -101,7 +101,7 @@
       "source": "Sharesansar",
       "badge": "SS",
       "category": "Nepal Stock",
-      "scrapedAt": "2026-11-04T07:29:54.450Z",
+      "scrapedAt": "2026-11-05T07:55:06.351Z",
       "summary": "Investing in NEPSE from Abroad: A Reality Check for Nepali Workers",
       "isGlobal": false
     },
@@ -111,17 +111,17 @@
       "source": "Sharesansar",
       "badge": "SS",
       "category": "Nepal Stock",
-      "scrapedAt": "2026-11-04T07:29:54.450Z",
+      "scrapedAt": "2026-11-05T07:55:06.351Z",
       "summary": "Proposed Dividend",
       "isGlobal": false
     },
     {
       "title": "Dividend, Bonus & Rights",
-      "url": "https://www.sharesansar.com/newsdetail/bonus-shares-of-mandu-hydropower-limited-limited-listed-on-nepse-2026-11-03",
+      "url": "https://www.sharesansar.com/newsdetail/50-right-shares-of-nic-asia-bank-limited-approved-by-sebon-2026-11-04",
       "source": "Sharesansar",
       "badge": "SS",
       "category": "Nepal Stock",
-      "scrapedAt": "2026-11-04T07:29:54.450Z",
+      "scrapedAt": "2026-11-05T07:55:06.351Z",
       "summary": "Dividend, Bonus & Rights",
       "isGlobal": false
     },
@@ -131,7 +131,7 @@
       "source": "Sharesansar",
       "badge": "SS",
       "category": "Nepal Stock",
-      "scrapedAt": "2026-11-04T07:29:54.450Z",
+      "scrapedAt": "2026-11-05T07:55:06.351Z",
       "summary": "Is it Possible to Turn Your 1 lakh into 10 Lakh Via Trading in NEPSE?",
       "isGlobal": false
     },
@@ -141,7 +141,7 @@
       "source": "Sharesansar",
       "badge": "SS",
       "category": "Nepal Stock",
-      "scrapedAt": "2026-11-04T07:29:54.450Z",
+      "scrapedAt": "2026-11-05T07:55:06.351Z",
       "summary": "NEPSE Concludes The Week With 0.18% Gain and Turnover of Rs 18.93 Arba; Weekly Summary with Sector Comparison, Major Highlights, and More",
       "isGlobal": false
     },
@@ -151,7 +151,7 @@
       "source": "Nepali Paisa",
       "badge": "NP",
       "category": "Nepal Finance",
-      "scrapedAt": "2026-11-04T07:29:56.361Z",
+      "scrapedAt": "2026-11-05T07:55:08.331Z",
       "summary": "Market Overview",
       "isGlobal": false
     },
@@ -161,7 +161,7 @@
       "source": "Nepali Paisa",
       "badge": "NP",
       "category": "Nepal Finance",
-      "scrapedAt": "2026-11-04T07:29:56.361Z",
+      "scrapedAt": "2026-11-05T07:55:08.331Z",
       "summary": "Stocks Up & Down",
       "isGlobal": false
     },
@@ -171,7 +171,7 @@
       "source": "Nepali Paisa",
       "badge": "NP",
       "category": "Nepal Finance",
-      "scrapedAt": "2026-11-04T07:29:56.361Z",
+      "scrapedAt": "2026-11-05T07:55:08.331Z",
       "summary": "Business & Economy",
       "isGlobal": false
     }
@@ -183,78 +183,78 @@
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-11-04T07:30:19.282Z",
+      "scrapedAt": "2026-11-05T07:55:29.008Z",
       "summary": "Markets just got Conversational",
       "isGlobal": true
     },
     {
-      "title": "Super Micro stock soars: AI server boom drives record earnings",
-      "url": "https://economictimes.indiatimes.com/markets/us-stocks/news/super-micro-stock-soars-ai-server-boom-drives-record-earnings/slideshow/135529517.cms",
+      "title": "Alphabet stock jumps 5%: Why Google Parent shares rallied",
+      "url": "https://economictimes.indiatimes.com/markets/us-stocks/news/alphabet-stock-jumps-5-why-google-parent-shares-rallied/slideshow/135560292.cms",
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-11-04T07:30:19.283Z",
-      "summary": "Super Micro stock soars: AI server boom drives record earnings",
+      "scrapedAt": "2026-11-05T07:55:29.008Z",
+      "summary": "Alphabet stock jumps 5%: Why Google Parent shares rallied",
       "isGlobal": true
     },
     {
-      "title": "Can AMD stock extend its rally on an upbeat 2027 outlook?",
-      "url": "https://economictimes.indiatimes.com/markets/us-stocks/news/can-amd-stock-extend-its-rally-on-an-upbeat-2027-outlook/slideshow/135524436.cms",
+      "title": "Bharat Electronics among 5 stocks showing White Marubozu pattern",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/bharat-electronics-among-5-stocks-showing-white-marubozu-pattern/slideshow/135559687.cms",
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-11-04T07:30:19.283Z",
-      "summary": "Can AMD stock extend its rally on an upbeat 2027 outlook?",
+      "scrapedAt": "2026-11-05T07:55:29.008Z",
+      "summary": "Bharat Electronics among 5 stocks showing White Marubozu pattern",
       "isGlobal": true
     },
     {
-      "title": "Diwali dhamaka stocks: Eternal, ICICI Bank, among 10 with upside of up to 34%",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/news/diwali-dhamaka-stocks-eternal-icici-bank-among-10-with-upside-of-up-to-34/slideshow/135523989.cms",
+      "title": "Diwali Dhamaka stocks for portfolio: 10 shares with up to 34% upside potential ICICI Direct is bullish on",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/diwali-dhamaka-stocks-for-portfolio-10-shares-with-up-to-34-upside-potential-icici-direct-is-bullish-on/slideshow/135559522.cms",
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-11-04T07:30:19.283Z",
-      "summary": "Diwali dhamaka stocks: Eternal, ICICI Bank, among 10 with upside of up to 34%",
+      "scrapedAt": "2026-11-05T07:55:29.008Z",
+      "summary": "Diwali Dhamaka stocks for portfolio: 10 shares with up to 34% upside potential ICICI Direct is bullish on",
       "isGlobal": true
     },
     {
-      "title": "Samvat 2083 stock picks! Adani Power, Coal India, 8 others to add in your portfolio this festive season",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/news/samvat-2083-stock-picks-adani-power-coal-india-8-others-to-add-in-your-portfolio-this-festive-season/slideshow/135523639.cms",
+      "title": "Adani Enterprises among 4 Nifty 50 stocks showing bullish RSI upswing",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/adani-enterprises-among-4-nifty-50-stocks-showing-bullish-rsi-upswing/slideshow/135559417.cms",
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-11-04T07:30:19.283Z",
-      "summary": "Samvat 2083 stock picks! Adani Power, Coal India, 8 others to add in your portfolio this festive season",
+      "scrapedAt": "2026-11-05T07:55:29.008Z",
+      "summary": "Adani Enterprises among 4 Nifty 50 stocks showing bullish RSI upswing",
       "isGlobal": true
     },
     {
-      "title": "Marico among 7 stocks showing White Marubozu Pattern",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/news/marico-among-7-stocks-showing-white-marubozu-pattern/slideshow/135523394.cms",
+      "title": "Strong balance sheet, domestic focus, and a moat matter more: 5 large-cap stocks with upside potential of up to 24%",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/strong-balance-sheet-domestic-focus-and-a-moat-matter-more-5-large-cap-stocks-with-upside-potential-of-up-to-24/articleshow/135542992.cms",
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-11-04T07:30:19.283Z",
-      "summary": "Marico among 7 stocks showing White Marubozu Pattern",
+      "scrapedAt": "2026-11-05T07:55:29.008Z",
+      "summary": "Strong balance sheet, domestic focus, and a moat matter more: 5 large-cap stocks with upside potential of up to 24%",
       "isGlobal": true
     },
     {
-      "title": "Time to pick the right business, hold it longer: 5 stocks from the auto ancillary space with upside potential of up to 20%",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/news/time-to-pick-the-right-business-hold-it-longer-5-stocks-from-the-auto-ancillary-space-with-upside-potential-of-up-to-20/articleshow/135520705.cms",
+      "title": "Stock Radar: Down over 18% from highs! BSE stock breaks out from inverted head & shoulder pattern; time to buy?",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/stock-radar-down-over-18-from-highs-bse-stock-breaks-out-from-inverted-head-shoulder-pattern-time-to-buy/articleshow/135538107.cms",
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-11-04T07:30:19.283Z",
-      "summary": "Time to pick the right business, hold it longer: 5 stocks from the auto ancillary space with upside potential of up to 20%",
+      "scrapedAt": "2026-11-05T07:55:29.008Z",
+      "summary": "Stock Radar: Down over 18% from highs! BSE stock breaks out from inverted head & shoulder pattern; time to buy?",
       "isGlobal": true
     },
     {
-      "title": "For investors with a 3- to 5-year horizon: 5 mid-cap stocks from different sectors with upside potential of more than 19%",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/news/for-investors-with-a-3-to-5-year-horizon-5-mid-cap-stocks-from-different-sectors-with-upside-potential-of-more-than-19/articleshow/135502614.cms",
+      "title": "Two Trades for Today: A PSU defence major for a 7.9% upmove, a mid-cap diagnostics stock for a gain of 7%",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/two-trades-for-today-a-psu-defence-major-for-a-7-9-upmove-a-mid-cap-diagnostics-stock-for-a-gain-of-7/articleshow/135554790.cms",
       "source": "Economic Times Markets",
       "badge": "ET",
       "category": "India Markets",
-      "scrapedAt": "2026-11-04T07:30:19.283Z",
-      "summary": "For investors with a 3- to 5-year horizon: 5 mid-cap stocks from different sectors with upside potential of more than 19%",
+      "scrapedAt": "2026-11-05T07:55:29.008Z",
+      "summary": "Two Trades for Today: A PSU defence major for a 7.9% upmove, a mid-cap diagnostics stock for a gain of 7%",
       "isGlobal": true
     }
   ]

@@ -1,8 +1,21 @@
 {
-  "lastUpdated": "2026-11-04T07:30:52.289Z",
-  "totalCount": 136,
-  "newCount": 3,
+  "lastUpdated": "2026-11-05T07:56:02.356Z",
+  "totalCount": 137,
+  "newCount": 1,
   "notices": [
+    {
+      "id": "irdnepalpowerbackupsystem_mw393ykk",
+      "title": "Power Backup System खरिद सम्बन्धी बोलपत्र आव्हानको सूचना १७ कात्तिक, २०८३",
+      "source": "IRD Nepal",
+      "category": "Taxation",
+      "badge": "IRD",
+      "badgeColor": "#e53935",
+      "link": "https://ird.gov.np/content/13684/notice-of-invitation-to-bid-for-purchase/",
+      "summary": "New Taxation update from IRD Nepal: Power Backup System खरिद सम्बन्धी बोलपत्र आव्हानको सूचना १७ कात्तिक, २०८३",
+      "detectedAt": "2026-11-05T07:55:44.708Z",
+      "isNew": true,
+      "emailedAt": null
+    },
     {
       "id": "sebonnepal2083new_mw1srxel",
       "title": "नेपाल धितोपत्र बोर्ड सूचना प्रविधि नीति, 2083।NEW",
